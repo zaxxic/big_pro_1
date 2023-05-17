@@ -20,13 +20,13 @@
 			************ Common Css Files *************
 		************ -->
 		<!-- Bootstrap css -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ asset("Gmbslagi/css/bootstrap.min.css") }}">
 		
 		<!-- Icomoon Font Icons css -->
-		<link rel="stylesheet" href="fonts/style.css">
+		<link rel="stylesheet" href="{{ asset("Gmbslagi/fonts/style.css") }}">
 
 		<!-- Main css -->
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="{{ asset("Gmbslagi/css/main.css") }}">
 
 
 		<!-- *************
@@ -34,11 +34,11 @@
 		************ -->
 
 		<!-- Mega Menu -->
-		<link rel="stylesheet" href="vendor/megamenu/css/megamenu.css">
+		<link rel="stylesheet" href="{{ asset("Gmbslagi/vendor/megamenu/css/megamenu.css") }}">
 
 		<!-- Search Filter JS -->
-		<link rel="stylesheet" href="vendor/search-filter/search-filter.css">
-		<link rel="stylesheet" href="vendor/search-filter/custom-search-filter.css">
+		<link rel="stylesheet" href="{{ asset("Gmbslagi/vendor/search-filter/search-filter.css") }}">
+		<link rel="stylesheet" href="{{ asset("Gmbslagi/vendor/search-filter/custom-search-filter.css") }}">
 		
 	</head>
 	<body>
@@ -1647,42 +1647,42 @@
 			************ Required JavaScript Files *************
 		************* -->
 		<!-- Required jQuery first, then Bootstrap Bundle JS -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/modernizr.js"></script>
-		<script src="js/moment.js"></script>
+		<script src="Gmbslagi/js/jquery.min.js"></script>
+		<script src="Gmbslagi/js/bootstrap.bundle.min.js"></script>
+		<script src="Gmbslagi/js/modernizr.js"></script>
+		<script src="Gmbslagi/js/moment.js"></script>
 
 		<!-- *************
 			************ Vendor Js Files *************
 		************* -->
 		
 		<!-- Megamenu JS -->
-		<script src="vendor/megamenu/js/megamenu.js"></script>
-		<script src="vendor/megamenu/js/custom.js"></script>
+		<script src="Gmbslagi/vendor/megamenu/js/megamenu.js"></script>
+		<script src="Gmbslagi/vendor/megamenu/js/custom.js"></script>
 
 		<!-- Slimscroll JS -->
-		<script src="vendor/slimscroll/slimscroll.min.js"></script>
-		<script src="vendor/slimscroll/custom-scrollbar.js"></script>
+		<script src="Gmbslagi/endor/slimscroll/slimscroll.min.js"></script>
+		<script src="Gmbslagi/vendor/slimscroll/custom-scrollbar.js"></script>
 
 		<!-- Search Filter JS -->
-		<script src="vendor/search-filter/search-filter.js"></script>
+		<script src="Gmbslagi/vendor/search-filter/search-filter.js"></script>
 		<script src="vendor/search-filter/custom-search-filter.js"></script>
 
 		<!-- Apex Charts -->
-		<script src="vendor/apex/apexcharts.min.js"></script>
-		<script src="vendor/apex/custom/home/salesGraph.js"></script>
-		<script src="vendor/apex/custom/home/ordersGraph.js"></script>
-		<script src="vendor/apex/custom/home/earningsGraph.js"></script>
-		<script src="vendor/apex/custom/home/visitorsGraph.js"></script>
-		<script src="vendor/apex/custom/home/customersGraph.js"></script>
-		<script src="vendor/apex/custom/home/sparkline.js"></script>
+		<script src="Gmbslagi/vendor/apex/apexcharts.min.js"></script>
+		<script src="Gmbslagi/vendor/apex/custom/home/salesGraph.js"></script>
+		<script src="Gmbslagi/vendor/apex/custom/home/ordersGraph.js"></script>
+		<script src="Gmbslagi/vendor/apex/custom/home/earningsGraph.js"></script>
+		<script src="Gmbslagi/vendor/apex/custom/home/visitorsGraph.js"></script>
+		<script src="Gmbslagi/vendor/apex/custom/home/customersGraph.js"></script>
+		<script src="Gmbslagi/vendor/apex/custom/home/sparkline.js"></script>
 
 		<!-- Circleful Charts -->
-		<script src="vendor/circliful/circliful.min.js"></script>
+		<script src="Gmbslagi/vendor/circliful/circliful.min.js"></script>
 		<script src="vendor/circliful/circliful.custom.js"></script>
 
 		<!-- Main Js Required -->
-		<script src="js/main.js"></script>
+		<script src="Gmbslagi/js/main.js"></script>
 
 	</body>
 
