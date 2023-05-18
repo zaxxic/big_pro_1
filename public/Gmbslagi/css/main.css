@@ -4675,7 +4675,7 @@ ul.recent-orders li .order-details span.order-date {
 
 .login-container .login-about {
     height: 100%;
-    background: rgba(255, 255, 255, .6);
+    background: white;
     position: relative;
     padding: 3rem 3rem;
     display: -webkit-box;
@@ -4685,7 +4685,7 @@ ul.recent-orders li .order-details span.order-date {
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    -webkit-box-direction: normal;.login-about
     -ms-flex-direction: column;
     flex-direction: column;
     color: #262626;
@@ -4770,6 +4770,7 @@ ul.recent-orders li .order-details span.order-date {
     -ms-flex-pack: center;
     justify-content: center;
     position: relative;
+    background: white;
 }
 
 @media screen and (max-width:992px) {
@@ -4785,8 +4786,8 @@ ul.recent-orders li .order-details span.order-date {
     border-radius: 20px;
     -webkit-box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
     box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
-    min-width: 320px;
-    max-width: 320px;
+    min-width: 520px;
+    max-width: 520px;
 }
 
 .login-screen .login-logo {
