@@ -90,6 +90,7 @@ jQuery(document).ready(function($){
 		$('.cd-dropdown-trigger').removeClass('dropdown-is-active');
 	}); 
 
+	
 });
 
 
