@@ -407,7 +407,7 @@ p {
 } */
 
 .page-wrapper {
-    
+
 }
 
 .sidebar-wrapper {
@@ -476,7 +476,7 @@ p {
   .icon-done-all {
    padding-right: 16px;
   }
-  
+
   .droprow {
     position: absolute;
     right: 0;
@@ -487,8 +487,8 @@ p {
     transform: rotate(180deg);
     color: #3887FE;
   }
- 
-  
+
+
 .sidebar-wrapper .sidebar-tabs .nav a.nav-link {
     padding: 16px;
     display: -webkit-box;
@@ -8257,16 +8257,19 @@ fieldset:disabled .btn-outline-primary {
 }
 
 .btn-secondary {
+    padding: 5px 10px;
     color: #ffffff;
     background-color: #3887FE;
     border-color: #3887FE;
     border-radius: 10px;
+    border-radius:10px;
 }
 
 .btn-secondary:hover {
     color: #ffffff;
     background-color: #3887FE;
     border-color: #3887FE;
+    border-color:#3887FE;
 }
 
 .btn-check:focus+.btn-secondary,

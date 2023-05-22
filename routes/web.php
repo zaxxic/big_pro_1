@@ -3,6 +3,7 @@
 
 use App\Http\Controllers\ItemController;
 use Faker\Guesser\Name;
+use App\Http\Controllers\LaporanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -43,3 +44,5 @@ Route::get('tambah_pemasok', function () {
 Route::get('edit_pemasok', function () {
     return view('pembelian.pembelian_edit_pemasok');
 });
+
+Route::get('/laporan',[LaporanController::class, 'laporan'])->name('laporan');
