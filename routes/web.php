@@ -1,6 +1,8 @@
 <?php
 
 
+use App\Http\Controllers\ItemController;
+use Faker\Guesser\Name;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,6 +28,8 @@ Route::get('register', function () {
 Route::get('reset_password', function () {
     return view('reset_password');
 });
+Route::get('/itemindex',[ItemController::class,'itemindex'])->Name('item-index');
+Route::get('/tambah-item',[ItemController::class,'tambahitem'])->Name('item-tambah  ');
 Route::get('pembelian_pemasok', function () {
     return view('pembelian_pemasok');
 });

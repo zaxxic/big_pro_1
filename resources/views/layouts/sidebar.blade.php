@@ -53,9 +53,12 @@
 							<li>
 								<a href="index.html" class="sidebar-menu active" aria-selected="true"><i class="icon-home2" style=" font-size: 19px;"></i><span>&emsp;Dashboard</span></a>
 							</li>
-							<li class="mt-3">
-								<a href="{{url('index')}}" ><i class="icon-download1" style=" font-size: 19px;"></i><span>&emsp;Barang</span></a>
-							</li>
+							<li class="{{ Request::is('item-index') ? 'active' : '' }}">
+								<a href="{{ route('item-index') }}">
+								  <i class="icon-download1" style="font-size: 19px;"></i><span>&emsp;Barang</span>
+								</a>
+							  </li>
+							  
 							<li class="mt-3 ">
 							<a href="#" class="dropdown-btn" ><i class="icon-tag1" style=" font-size: 19px;"></i><span>&emsp;Penjualan</span><i class="icon-chevron-down1 droprow " ></i></a>
 								<ul class="dropdown-container">

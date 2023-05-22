@@ -16,6 +16,71 @@
 		<title>Uni Pro Admin Template - Admin Dashboard</title>
 
 
+<style>
+td,th{
+	padding: 20%;
+}
+.menu-row {
+  display: none;
+}
+
+.table-row:hover + .menu-row {
+  display: table-row;
+}
+
+.menu-container {
+  position: absolute;
+  z-index: 1;
+}
+
+.menu-card {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: -90%
+}
+
+.menu-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-icon {
+  color: #333;
+  text-decoration: none;
+}
+
+.edit-icon:hover,
+.delete-icon:hover,
+.view-icon:hover {
+  color: blue;
+}
+.searchcontainer{
+        width:90%;
+        font-size:20px;
+
+		.icon-search{
+            display:inline-block;
+            margin-right:50px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .search{
+            width:111%;
+            display:inline-block;
+            background-color: rgba(255, 255, 255, 0);
+            border:0px;
+            color:grey;
+            font-size:16px;
+            padding:10px 0px;
+            padding-left:25px;
+            border-bottom:1px solid grey;
+            &:focus{
+                outline: 0px;
+                border-bottom:1px solid #ccc;
+            }
+        }
+	}
+</style>
 		<!-- *************
 			************ Common Css Files *************
 		************ -->
@@ -44,32 +109,6 @@
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4.css")}}" />
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4-custom.css")}}" />
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
-        <style>
-            .searchcontainer{
-        width:90%;
-        font-size:20px;
-        .icon-search{
-            display:inline-block;
-            margin-right:50px;
-            color: rgba(255, 255, 255, 0.5);
-        }
-        .search{
-            width:111%;
-            display:inline-block;
-            background-color: rgba(255, 255, 255, 0);
-            border:0px;
-            color:grey;
-            font-size:16px;
-            padding:10px 0px;
-            padding-left:25px;
-            border-bottom:1px solid grey;
-            &:focus{
-                outline: 0px;
-                border-bottom:1px solid #ccc;
-            }
-        }
-        }
-        </style>
 
 	</head>
 	<body>
@@ -642,138 +681,103 @@
                                 <!-- Card start -->
                                 <div class="card">
                                     <div class="card-header">
-                                        <div class="card-title">Pemasok ☆</div>
+                                        <div class="card-title">Item</div>
                                         <div class="graph-day-selection" role="group">
-											<button type="button" class="btn active">Tambah Pemasok</button>
-										</div>     
+											<a href="/tambah-item">
+											<button type="button" class="btn active">Tambah Item</button>
+										</a>
+										</div>
                                     </div>
+									
                                     <div class="card-body">
-                                                    <!-- Row start -->
-                                    <div class="row gutters" style="margin-left: 10%; margin-bottom: -5%">
-                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                            <div class="stats-tile">
-                                                <div class="sale-icon">
-                                                    <p><b><i>Rp</i></b></p>
-                                                </div>
-                                                <div class="sale-details">
-                                                    <h2>25</h2>
-                                                    <p>Pendapatan</p>
-                                                </div>
-                                                <div class="sale-graph">
-                                                    <div id="sparklineLine1"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                            <div class="stats-tile">
-                                                <div class="sale-icon">
-                                                    <p><b><i>Rp</i></b></p>
-                                                </div>
-                                                <div class="sale-details">
-                                                    <h2>32</h2>
-                                                    <p>Biaya</p>
-                                                </div>
-                                                <div class="sale-graph">
-                                                    <div id="sparklineLine2"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                                            <div class="stats-tile">
-                                                <div class="sale-icon">
-                                                    <p><b><i>Rp</i></b></p>
-                                                </div>
-                                                <div class="sale-details">
-                                                    <h2>19</h2>
-                                                    <p>Keuntungan</p>
-                                                </div>
-                                                <div class="sale-graph">
-                                                    <div id="sparklineLine3"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Row end -->
-                                        <div class="content">
-                                            <div class="searchcontainer">
-                                              <i class="icon-search"></i><input class="search " type="text" placeholder="Cari Disini..." style="
-                                              margin-bottom: 2%; font-size:10pt "/>
-                                            </div>
-                                        </div>
-                                        <div class="table-responsive">
+										<div class="content">
+											<div class="searchcontainer">
+											  <i class="icon-search"></i><input class="search " type="text" placeholder="Cari Disini..." style="
+											  margin-bottom: 2%; font-size:10pt "/>
+											</div>
+										</div>
+                                        <div class="table-responsive">	
                                             <table class="table table-hover">
-                                                <thead>
-                                                  <tr>
-                                                    <th scope="col"> <input type="checkbox"></th>
-                                                    <th scope="col">Nama</th>
-                                                    <th scope="col">Email</th>
-                                                    <th scope="col">Negara</th>
-                                                    <th scope="col">Jatuh Tempo</th>
-                                                  </tr>
-                                                </thead>
-                                                <tbody>
-                                                  <tr>
-                                                    <td><input type="checkbox"></td>
-                                                    <td>Adi Alfa R.</td>
-                                                    <td>adialfa@gmail.com</td>
-                                                    <td>USSR</td>
-                                                    <td>N/A</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td><input type="checkbox"></td>
-                                                    <td>M Daffa Prasetyo</td>
-                                                    <td>daffa@gmail.com</td>
-                                                    <td>China</td>
-                                                    <td>N/A</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td><input type="checkbox"></td>
-                                                    <td>Gembes</td>
-                                                    <td>gembes@gmail.com</td>
-                                                    <td>Meksiko</td>
-                                                    <td>N/A</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td><input type="checkbox"></td>
-                                                    <td>Reno Dhzuri</td>
-                                                    <td>reno@gmail.com</td>
-                                                    <td>Singapore</td>
-                                                    <td>N/A</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td><input type="checkbox"></td>
-                                                    <td>Triski</td>
-                                                    <td>triski@gmail.com</td>
-                                                    <td>Indonesia</td>
-                                                    <td>N/A</td>
-                                                  </tr>
-                                                </tbody>
-                                              </table>
-                                                        <!-- Card start -->
-                                            <div class="card">
-                                                <div class="card-body" style="margin-left: -2.1%">
-
-                                                    <nav aria-label="Page navigation example">
-                                                        <ul class="pagination">
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">&laquo;</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">&raquo;</span>
-                                                            </a>
-                                                        </li>
-                                                        </ul>
-                                                    </nav>
-
-                                                </div>
-                                            </div>
-								<!-- Card end -->
+												<thead>
+												  <tr>
+													<th scope="col"><input type="checkbox" name="" id=""></th>
+													<th scope="col">Nama</th>
+													<th scope="col">Deskripsi</th>
+													<th scope="col">Kategori</th>
+													<th scope="col">Pajak</th>
+													<th scope="col">Harga Jual</th>
+													<th scope="col">Harga Beli</th>
+												  </tr>
+												</thead>
+												<tbody>
+												  <!-- Data 1 -->
+												  <tr class="table-row">
+													<td><input type="checkbox" name="" id=""></td>
+													<td>Adii</td>
+													<td>Entitas tak diketahui sejauh 500mm dari rumah</td>
+													<td>Manusia</td>
+													<td>N/A</td>
+													<td>Rp 10,000,000</td>
+													<td>Rp 12,200,000</td>
+												  </tr>
+												  <tr class="menu-row">
+													<td colspan="7" class="menu-container">
+													  <div class="menu-card">
+														<div class="menu-icons">
+														  <a href="#" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
+														  <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+														  <a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
+														</div>
+													  </div>
+													</td>
+												  </tr>
+											  
+												  <!-- Data 2 -->
+												  <tr class="table-row">
+													<td><input type="checkbox" name="" id=""></td>
+													<td>John Doe</td>
+													<td>Deskripsi data kedua</td>
+													<td>Kategori B</td>
+													<td>N/A</td>
+													<td>Rp 5,000,000</td>
+													<td>Rp 6,500,000</td>
+												  </tr>
+												  <tr class="menu-row">
+													<td colspan="7" class="menu-container">
+													  <div class="menu-card">
+														<div class="menu-icons">
+														  <a href="#" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
+														  <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+														  <a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
+														</div>
+													  </div>
+													</td>
+												  </tr>
+											  
+												  <!-- Data 3 -->
+												  <tr class="table-row">
+													<td><input type="checkbox" name="" id=""></td>
+													<td>Jane Smith</td>
+													<td>Deskripsi data ketiga</td>
+													<td>Kategori C</td>
+													<td>N/A</td>
+													<td>Rp 8,000,000</td>
+													<td>Rp 9,500,000</td>
+												  </tr>
+												  <tr class="menu-row">
+													<td colspan="7" class="menu-container">
+													  <div class="menu-card">
+														<div class="menu-icons">
+														  <a href="#" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
+														  <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+														  <a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
+														</div>
+													  </div>
+													</td>
+												  </tr>
+												</tbody>
+											  </table>
+											  
                                         </div>
                                     </div>
                                 </div>
@@ -798,7 +802,7 @@
 				************ Main container end *************
 			************* -->
 
-		</divkolaja>
+		</div>
 		<!-- Page wrapper end -->
 
 		<!-- *************
@@ -844,7 +848,7 @@
         
 		<!-- Main Js Required -->
 		<script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	</body>
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:54 GMT -->
