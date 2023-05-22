@@ -26,3 +26,12 @@ Route::get('register', function () {
 Route::get('reset_password', function () {
     return view('reset_password');
 });
+Route::get('pembelian_pemasok', function () {
+    return view('pembelian_pemasok');
+});
+Route::get('tambah_pemasok', function () {
+    return view('pembelian_tambah_pemasok');
+});
+Route::get('edit_pemasok', function () {
+    return view('pembelian_edit_pemasok');
+});
