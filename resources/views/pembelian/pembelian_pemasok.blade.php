@@ -757,7 +757,7 @@
                                                     <td>USSR</td>
                                                     <td>N/A</td>
 													<td>
-														<div class="menu-icons">
+														<div class="menu-icons" style="font-size: 15px;">
 															<a href="{{url('edit_pemasok')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
 															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 															<a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
@@ -773,7 +773,7 @@
                                                     <td>China</td>
                                                     <td>N/A</td>
 													<td>
-														<div class="menu-icons">
+														<div class="menu-icons" style="font-size: 15px;">
 															<a href="{{url('edit_pemasok')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
 															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 															<a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
@@ -790,7 +790,7 @@
                                                     <td>Meksiko</td>
                                                     <td>N/A</td>
 													<td>
-														<div class="menu-icons">
+														<div class="menu-icons" style="font-size: 15px;">
 															<a href="{{url('edit_pemasok')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
 															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 															<a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
@@ -805,7 +805,7 @@
                                                     <td>Singapore</td>
                                                     <td>N/A</td>
 													<td>
-														<div class="menu-icons">
+														<div class="menu-icons" style="font-size: 15px;">
 															<a href="{{url('edit_pemasok')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
 															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 															<a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
@@ -820,7 +820,7 @@
                                                     <td>Indonesia</td>
                                                     <td>N/A</td>
 													<td>
-														<div class="menu-icons">
+														<div class="menu-icons" style="font-size: 15px;">
 															<a href="{{url('edit_pemasok')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
 															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 															<a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
