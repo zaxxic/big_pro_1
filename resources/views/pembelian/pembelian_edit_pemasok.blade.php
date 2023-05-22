@@ -599,22 +599,31 @@
 
 						<!-- Row start -->
 						<div class="row gutters">
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="overflow: hidden;">
 
 								<!-- Card start -->
 								<div class="card">
 									<div class="card-header">
-										<div class="card-title">Edit Pemasok ☆</div>
+										<div class="card-title"><h3>Edit Pemasok<button type="button" style="border: none; background:none;">☆</button></h3></div>
 									</div>
 									<div class="card-body">
 										
 										<!-- Row start -->
 										<div class="row gutters">
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
+												
+												<div style="border-bottom: solid grey 1px;margin-bottom:1%">
+													<h6>Umum</h6>
+													<p>Informasi kontak penyedia Anda akan muncul di tagihan dan profil mereka. Anda dapat menambahkan informasi kontak dan logo mereka untuk digunakan dalam tagihan.</p>
+												</div>
+
+											</div>
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 												
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
-													<input class="form-control" type="text">
+													<input class="form-control" type="text" placeholder="Masukan Nama">
 													<div class="field-placeholder">Nama <span class="text-danger">*</span></div>
 													<div class="form-text">
 														Silakan masukkan nama lengkap Anda.
@@ -623,11 +632,11 @@
 												<!-- Field wrapper end -->
 
 											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 												
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
-													<input class="form-control" type="email">
+													<input class="form-control" type="email" placeholder="Masukan Email">
 													<div class="field-placeholder">Email <span class="text-danger">*</span></div>
 													<div class="form-text">
 														Kami tidak akan pernah membagikan email Anda kepada siapa pun.
@@ -636,7 +645,37 @@
 												<!-- Field wrapper end -->
 
 											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<input class="form-control" type="text" placeholder="Masukan Situs Web">
+													<div class="field-placeholder">Situs Web</div>
+												</div>
+												<!-- Field wrapper end -->
+												
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<input class="form-control" type="text" placeholder="Masukan Refrensi">
+													<div class="field-placeholder">Refrensi</div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<input class="form-control" type="number" placeholder="Masukan Nomor Telepon">
+													<div class="field-placeholder">Telepon</div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 												
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
@@ -646,95 +685,108 @@
 												<!-- Field wrapper end -->
 
 											</div>
-											<div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
 												
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<input class="form-control" type="text">
-													<div class="field-placeholder">Penagihan</div>
+												<div style="border-bottom: solid grey 1px;margin-bottom:1%">
+													<h6>Penagihan</h6>
+													<p>Nomor pajak muncul di setiap tagihan yang diterbitkan untuk Anda. Mata uang yang dipilih menjadi mata uang bawaan untuk penyedia ini.</p>
 												</div>
-												<!-- Field wrapper end -->
 
 											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 												
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
-													<input class="form-control" type="text">
-													<div class="field-placeholder">Situs Web</div>
-												</div>
-												<!-- Field wrapper end -->
-
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-												
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<input class="form-control" type="text">
-													<div class="field-placeholder">Refrensi</div>
-												</div>
-												<!-- Field wrapper end -->
-
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-												
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<input class="form-control" type="number">
+													<input class="form-control" type="number" placeholder="Masukan NPWP">
 													<div class="field-placeholder">NPWP</div>
 												</div>
 												<!-- Field wrapper end -->
 
 											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 												
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
-													<input class="form-control" type="text">
-													<div class="field-placeholder">Kota</div>
+													<select class="select-single js-states" title="Select Product Category" data-live-search="true">
+														<option>Rupiah Indonesia (IDR)</option>
+														<option>Dolar Amerika Serikat (USD)</option>
+														<option>Euro (EUR)</option>
+														<option>Yen Jepang (JPY)</option>
+														<option>Pound Inggris (GBP)</option>
+														<option>Dolar Australia (AUD)</option>
+														<option>Dolar Kanada (CAD)</option>
+														<option>Franc Swiss (CHF)</option>
+														<option>Dolar Hong Kong (HKD)</option>
+														<option>Won Korea Selatan (KRW)</option>
+														<option>Yuan Tiongkok (CNY)</option>
+														<option>Rupee India (INR)</option>
+														<option>Rubel Rusia (RUB)</option>
+														<option>Real Brasil (BRL)</option>
+														<option>Peso Meksiko (MXN)</option>
+														<option>Rand Afrika Selatan (ZAR)</option>
+													</select>
+													<div class="field-placeholder">Mata Uang</div>
 												</div>
 												<!-- Field wrapper end -->
 
 											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
 												
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<input class="form-control" type="number">
-													<div class="field-placeholder">Kode Pos</div>
+												<div style="border-bottom: solid grey 1px;margin-bottom:1%">
+													<h6>Alamat</h6>
+													<p>Alamat diperlukan untuk tagihan, jadi Anda perlu menambahkan detail alamat penagihan untuk penyedia Anda.</p>
 												</div>
-												<!-- Field wrapper end -->
-
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-												
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<input class="form-control" type="text">
-													<div class="field-placeholder">Provinsi</div>
-												</div>
-												<!-- Field wrapper end -->
-
-											</div>
-											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-												
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<input class="form-control" type="text">
-													<div class="field-placeholder">Negara</div>
-												</div>
-												<!-- Field wrapper end -->
 
 											</div>
 											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 												
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
-													<textarea class="form-control" rows="2"></textarea>
+													<textarea class="form-control" rows="2" placeholder="Masukan Alamat"></textarea>
 													<div class="field-placeholder">Alamat <span class="text-danger">*</span></div>
 													<div class="form-text">
 														Silakan masukkan Alamat lengkap Anda.
 													</div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<input class="form-control" type="text" placeholder="Masukan Kota">
+													<div class="field-placeholder">Kota</div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<input class="form-control" type="number" placeholder="Masukan Kode Pos">
+													<div class="field-placeholder">Kode Pos</div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<input class="form-control" type="text" placeholder="Masukan Provinsi">
+													<div class="field-placeholder">Provinsi</div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<input class="form-control" type="text" placeholder="Masukan Negara">
+													<div class="field-placeholder">Negara</div>
 												</div>
 												<!-- Field wrapper end -->
 

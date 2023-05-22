@@ -9174,11 +9174,16 @@ label {
 
 .table th,
 .table td {
+    padding: 25px;
+    font-size: 10pt;
+    font-weight: 600;
+    color: #072242;
+    border-bottom: 1px solid #c8d3df !important;
     white-space: nowrap;
 }
 
 .table th {
-    font-size: .725rem;
+    font-size: 10pt;
     font-weight: 600;
     color: #072242;
     border-bottom: 1px solid #c8d3df !important;
