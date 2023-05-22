@@ -54,6 +54,7 @@ $(".users-container .users-list li").on('click', function () {
 })(jQuery);
 
 
+
 // Task App
 $(function() {
 	$(".task-actions a.important").on('click', function () {
@@ -77,7 +78,9 @@ $(function() {
 });
 
 
-
+$('.pem-btn').click(function() {
+	$('pem-menu').toggleClass("show");
+});
 
 
 // Custom Default/Compact/Pinned Sidebars JS

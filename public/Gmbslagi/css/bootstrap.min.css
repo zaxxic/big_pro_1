@@ -3881,19 +3881,7 @@ fieldset:disabled .btn {
 .dropdown-menu {
     position: absolute;
     top: 100%;
-    z-index: 1000;
     display: none;
-    min-width: 10rem;
-    padding: .5rem 0;
-    margin: 0;
-    font-size: 1rem;
-    color: #212529;
-    text-align: left;
-    list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: .25rem
 }
 
 .dropdown-menu[data-bs-popper] {
@@ -4153,8 +4141,38 @@ fieldset:disabled .btn {
 }
 
 .dropdown-menu.show {
-    display: block
+    display: block;
 }
+
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+
+  .active {
+    color: white;
+  }
+
+  .dropdown-container {
+    display: none;
+    padding-left: 8px;
+  }
+
+/* .dropdown-drop.show {
+    display: block;
+} */
 
 .dropdown-header {
     display: block;
@@ -4325,8 +4343,9 @@ fieldset:disabled .btn {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 100px;
     list-style: none
+    
 }
 
 .nav-link {
@@ -4460,6 +4479,7 @@ fieldset:disabled .btn {
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
+    background-color: #3887FE;
     list-style: none
 }
 
