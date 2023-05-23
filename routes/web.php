@@ -44,7 +44,7 @@ Route::get('/itemindex',[ItemController::class,'itemindex'])->Name('item-index')
 Route::get('/add-item',[ItemController::class,'additem'])->Name('item-add');
 
 //perusahaan
-Route::get('/perusahaan',[CompanyController::class,'Perusahaan'])->Name('perusahaan-index');
+Route::get('/company',[CompanyController::class,'company'])->Name('company-index');
 
 Route::get('pembelian_pemasok', function () {
     return view('pembelian.pembelian_pemasok');
