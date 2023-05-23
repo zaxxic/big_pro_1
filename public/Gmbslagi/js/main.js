@@ -174,6 +174,8 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 	return new bootstrap.Popover(popoverTriggerEl)
 })
 
+
+
 // Tabs on Hover
 // jQuery('.sidebar-tabs .nav a.nav-link').hover(function(e){
 // 	e.preventDefault();

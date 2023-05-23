@@ -8,25 +8,27 @@ document.addEventListener('DOMContentLoaded', function() {
         right: 'dayGridMonth,timeGridWeek,timeGridDay'
       },
       initialDate: '2020-09-12',
-      navLinks: true, // can click day/week names to navigate views
       selectable: true,
       selectMirror: true,
       select: function(arg) {
-        var title = prompt('Event Title:');
-        if (title) {
-          calendar.addEvent({
-            title: title,
-            start: arg.start,
-            end: arg.end,
-            allDay: arg.allDay
-          })
-        }
+        $('#exampleModalCenter').modal('show')
+        // console.log('aaa')
+        // var title = prompt('Event Title:');
+        // if (title) {
+        //   calendar.addEvent({
+        //     title: title,
+        //     start: arg.start,
+        //     end: arg.end,
+        //     allDay: arg.allDay
+        //   })
+        // }
         calendar.unselect()
       },
       eventClick: function(arg) {
-        if (confirm('Are you sure you want to delete this event?')) {
-          arg.event.remove()
-        }
+        $('#exampleModalCenterhapus').modal('show')
+        // if (confirm('Are you sure you want to delete this event?')) {
+        //   arg.event.remove()
+        // }
       },
       editable: true,
       dayMaxEvents: true, // allow "more" link when too many events
