@@ -8,6 +8,7 @@ use Faker\Guesser\Name;
 use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\TransferController;
 
+use App\Http\Controllers\LaporanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('kalender', function () {
+    return view('kalender');
+});
 Route::get('login', function () {
     return view('login');
 });
@@ -36,10 +41,10 @@ Route::get('reset_password', function () {
 Route::get('/itemindex',[ItemController::class,'itemindex'])->Name('item-index');
 Route::get('/tambah-item',[ItemController::class,'tambahitem'])->Name('item-tambah  ');
 Route::get('pembelian_pemasok', function () {
-    return view('pembelian_pemasok');
+    return view('pembelian.pembelian_pemasok');
 });
 Route::get('tambah_pemasok', function () {
-    return view('pembelian_tambah_pemasok');
+    return view('pembelian.pembelian_tambah_pemasok');
 });
 Route::get('edit_pemasok', function () {
     return view('pembelian_edit_pemasok');
@@ -59,3 +64,7 @@ Route::get('/transaksi_berulang', [TransaksiController::class, 'transaksi_berula
 //transfer
 Route::get('/transfer', [TransferController::class, 'transfer'])->name('transfer');
 
+    return view('pembelian.pembelian_edit_pemasok');
+});
+
+Route::get('/laporan',[LaporanController::class, 'laporan'])->name('laporan');

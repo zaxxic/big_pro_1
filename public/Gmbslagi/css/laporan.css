@@ -1,0 +1,93 @@
+.pin{
+    display: grid;
+    height: 60px;
+    border-right: 2px solid #A9A9A9;
+    font-size: 0.875rem;
+}
+.body{
+   background-color: #FFFFFF;
+}
+
+.ringkasan .ringkasan-icon {
+    height: 60px;
+    width: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right: 37px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+}
+.ringkasan {
+    padding: 1rem;
+    margin: 0 0 0 0;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    position: relative;
+    background-color: #FFFFFF;
+}
+.ringkasan .ringkasan-icon i{
+    font-size: 2rem;
+    margin-right: 37;
+    background-color: #FFFFFF;
+}
+.sematkan {
+    padding: 1rem;
+    margin: 0 0 20px 0;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    min-height: 163px;
+    max-height: 163px;
+    width: 200px;
+    background-color: #FFFFFF;
+}
+.sematkan .sematkan-icon {
+    height: 60px;
+    width: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 100px;
+}
+.sematkan .sematkan-icon i {
+    font-size: 2rem;
+    background-color: #FFFFFF;
+}

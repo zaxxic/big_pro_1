@@ -43,7 +43,10 @@
     src: url("../fonts/rubik-mono/RubikMonoOne-Regular.ttf") format("truetype");
     font-style: normal;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+}
 html,
 body {
     height: 100%;
@@ -444,14 +447,12 @@ p {
 } */
 
 .page-wrapper {
-    
+
 }
 
 .sidebar-wrapper {
-    height: calc(100vh - 20px);
+    height:100vh;
     position: fixed;
-    top: 10px;
-    left: 10px;
     z-index: 999;
     -webkit-transition: left .3s ease, width .3s ease;
     transition: left .3s ease, width .3s ease;
@@ -465,7 +466,7 @@ p {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    height: calc(100vh - 20px);
+    height: 100vh;
 }
 
 .sidebar-wrapper .sidebar-tabs .nav {
@@ -478,9 +479,8 @@ p {
     align-items: center;
     width: 70px;
     padding: 1rem .5rem 1rem .5rem;
-    border-radius: 10px 0 0 10px;
     background: #3887FE;
-    height: calc(100vh - 20px);
+    height: 100vh;
 }
 
 .sidebar-wrapper .sidebar-tabs .nav a.logo {
@@ -516,7 +516,7 @@ p {
   .icon-done-all {
    padding-right: 16px;
   }
-  
+
   .droprow {
     position: absolute;
     right: 0;
@@ -527,8 +527,8 @@ p {
     transform: rotate(180deg);
     color: #3887FE;
   }
- 
-  
+
+
 .sidebar-wrapper .sidebar-tabs .nav a.nav-link {
     padding: 16px;
     display: -webkit-box;
@@ -996,7 +996,7 @@ p {
     width: 260px;
     padding: 0;
     background: #f6f6fd;
-    height: calc(100vh - 20px);
+    height:100vh;
     border-radius: 4px 0 0 4px
 }
 
@@ -1248,7 +1248,7 @@ p {
     width: 160px;
     padding: 0;
     background: #f6f6fd;
-    height: calc(100vh - 20px);
+    height: 100vh;
     border-radius: 4px 0 0 4px
 }
 
@@ -1442,7 +1442,7 @@ p {
     -webkit-transition: padding-left .3s ease;
     transition: padding-left .3s ease;
     padding: 0 0 0 310px;
-    height: calc(100vh - 20px);
+    height: 100vh;
 }
 
 @media screen and (max-width:1024px) {
@@ -8376,12 +8376,14 @@ fieldset:disabled .btn-outline-primary {
     background-color: #3887FE;
     border-color: #3887FE;
     border-radius: 10px;
+    border-radius:10px;
 }
 
 .btn-secondary:hover {
     color: #ffffff;
     background-color: #3887FE;
     border-color: #3887FE;
+    border-color:#3887FE;
 }
 
 .btn-check:focus+.btn-secondary,
