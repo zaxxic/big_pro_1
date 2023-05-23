@@ -9,7 +9,8 @@ use Faker\Guesser\Name;
 use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\TransferController;
 
-use App\Http\Controllers\LaporanController;
+use App\Http\Controllers\CalendarController;
+use App\Http\Controllers\ReportController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,10 +26,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
-
-Route::get('kalender', function () {
-    return view('kalender');
 });
 Route::get('login', function () {
     return view('login');
@@ -73,4 +70,9 @@ Route::get('/transfer', [TransferController::class, 'transfer'])->name('transfer
     return view('pembelian.pembelian_edit_pemasok');
 
 
-Route::get('/laporan',[LaporanController::class, 'laporan'])->name('laporan');
+
+//laporan
+Route::get('/report',[ReportController::class, 'report'])->name('report');
+
+//calendar
+Route::get('/calendar',[CalendarController::class, 'calendar'])->name('calendar');
