@@ -307,7 +307,7 @@ svg {
 
 table {
     caption-side: bottom;
-    border-collapse: collapse
+    border-collapse: collapse;
 }
 
 caption {
@@ -2023,7 +2023,7 @@ progress {
 }
 
 .table>:not(:last-child)>:last-child>* {
-    border-bottom-color: currentColor
+    border-bottom-color: #000;
 }
 
 .caption-top {
