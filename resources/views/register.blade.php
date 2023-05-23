@@ -108,15 +108,15 @@
 									</a>
 									<h6>Selamat Datang,<br>Login dan mulai manajemen keuangan anda</h6>
 									<div class="field-wrapper">
-										<input type="text" placeholder="Masukan nama anda" autofocus>
+										<input type="text" name="name" placeholder="Masukan nama anda" autofocus>
 										<div class="field-placeholder">Nama</div>
 									</div>
 									<div class="field-wrapper">
-										<input type="email" placeholder="Masukan email anda" autofocus>
+										<input type="email" name="email" placeholder="Masukan email anda" autofocus>
 										<div class="field-placeholder">Email</div>
 									</div>
 									<div class="field-wrapper">
-										<input type="password" placeholder="Masukan kata kunci" autofocus>
+										<input type="password" name="password" placeholder="Masukan kata kunci" autofocus>
 										<div class="field-placeholder">Kata Kunci</div>
 									</div>
 									<div class="field-wrapper mb-3">
