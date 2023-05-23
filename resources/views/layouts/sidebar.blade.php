@@ -59,6 +59,14 @@
 								</a>
 							  </li>
 
+							<!-- <li class="{{ Request::is('item-index') ? 'active' : '' }}">
+								<a href="{{ route('item-index') }}">
+								  <i class="icon-download1" style="font-size: 19px;"></i><span>&emsp;Barang</span>
+								</a>
+							  </li> -->
+							  <li class="mt-3">
+								<a href="saas.html" aria-selected="false"><i class="icon-download1" style=" font-size: 19px;"></i><span>&emsp;Barang</span></a>
+							</li>
 							<li class="mt-3 ">
 							<a href="#" class="dropdown-btn" ><i class="icon-tag1" style=" font-size: 19px;"></i><span>&emsp;Penjualan</span><i class="icon-chevron-down1 droprow " ></i></a>
 								<ul class="dropdown-container">
@@ -77,13 +85,16 @@
 							<a href="#" class="dropdown-btn" ><i class="icon-attach_money" style=" font-size: 19px;"></i><span>&emsp;Perbankan</span><i class="icon-chevron-down1 droprow" ></i></a>
 								<ul class="dropdown-container">
 									<li class="mt-2"><a href="" ><span style="margin-left: 20px;">&emsp;Akun</span></a></li>
-									<li class="mt-2"><a href="{{url('index')}}" ><span style="margin-left: 20px;">&emsp;Transaksi</span></a></li>
-									<li class="mt-2"><a href=""><span style="margin-left: 20px;">&emsp;Transfer</span></a></li>
+									<li class="mt-2"><a href="{{url('transaksi')}}" ><span style="margin-left: 20px;">&emsp;Transaksi</span></a></li>
+									<li class="mt-2"><a href="{{url('transfer')}}"><span style="margin-left: 20px;">&emsp;Transfer</span></a></li>
 								</ul>
 							</li>
 
 							<li class="mt-3">
 								<a href="saas.html" aria-selected="false"><i class="icon-file-text" style=" font-size: 19px;"></i><span>&emsp;Laporan</span></a>
+							</li>
+							<li class="mt-3">
+								<a href="saas.html" aria-selected="false"><i class="icon-calendar1" style=" font-size: 19px;"></i><span>&emsp;Kalender</span></a>
 							</li>
 						</ul>
 
