@@ -46,35 +46,74 @@
         }
 
         .half-width-container {
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
-}
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+        }
 
-input[type="radio"] {
+        input[type="radio"] {
+            display: none;
+        }
+label{
+    margin-bottom: 2%;
+}
+        .label {
+            width: 50%;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #D9D9D9;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        input[type="radio"]:checked+.label {
+            background-color: #038BBD;
+            color: #fff;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .label {
+            margin-right: 20px;
+        }
+
+        .toggle-checkbox {
   display: none;
 }
 
-label {
-  width: 50%;
-  text-align: center;
-  padding: 10px;
-  border: 1px solid #D9D9D9;
+.toggle-label {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  background-color: #CCCCCC; /* Warna abu-abu saat indikator tidak aktif */
+  border-radius: 15px;
+  position: relative;
   cursor: pointer;
-  border-radius: 10px;
+  overflow: hidden;
 }
 
-input[type="radio"]:checked + label {
-  background-color: #038BBD;
-  color: #fff;
-}
-input[type="radio"] {
-  margin-right: 10px;
+.toggle-label:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  width: 24px;
+  background-color: #FFFFFF; /* Warna biru saat indikator aktif */
+  border-radius: 50%;
+  transition: right 0.3s ease;
 }
 
-label {
-  margin-right: 20px;
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #336699; /* Warna biru saat toggle button aktif */
 }
+
+.toggle-checkbox:checked + .toggle-label:before {
+  right: calc(100% - 25px);
+}
+
 
 
     </style>
@@ -299,157 +338,146 @@ label {
                             <!-- Card start -->
                             <div class="card">
                                 <div class="card-header">
-                                    <div class="card-title">Tambah Pemasok ☆</div>
-                                </div>
-                                <div class="card-body">
+                                  
+                                    <div class="card-title"><h3>Tambah Item<button type="button" style="border: none; background:none;">☆</button></h3></div>
+                                        <div class="graph-day-selection" role="group" style="margin-left: 60%">
+											
+										</div>
+                                      
+                                <input type="checkbox" id="toggle" class="toggle-checkbox ">
+                                <label for="toggle" class="toggle-label custom-bg "></label>
+                            </div>
 
+                                <div class="card-body">
+                                    <div style="border-bottom: solid black 1px;margin-bottom:1%">
+                                        <b>Umum</b>
+                                        <p>Pilih kategori untuk membuat laporan Anda lebih detail. Deskripsi akan diisi saat item dipilih dalam faktur atau tagihan.</p>
+                                    </div>
                                     <!-- Row start -->
                                     <div class="row gutters">
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                             <div class="half-width-container">
-                                                <input type="radio" name="option" id="option1" value="Option 1">
-                                                <label for="option1">Option 1</label>
-                                              
-                                                <input type="radio" name="option" id="option2" value="Option 2">
-                                                <label for="option2">Option 2</label>
+                                                <input type="radio" name="option" id="option1"
+                                                    value="Option 1" checked>
+                                                <label class="label" for="option1">Option 1</label>
+
+                                                <input type="radio" name="option" id="option2"
+                                                    value="Option 2">
+                                                <label class="label" for="option2">Option 2</label>
+                                            </div>
+
+                                            <!-- Field wrapper start -->
+
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                                <input class="form-control" type="email" placeholder=" Masukan email anda">
+                                                <div class="field-placeholder" >Nama <span
+                                                        class="text-danger">*</span></div>
+                                                <div class="form-text">
+                                                   
+                                                </div>
+                                            </div>
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                                <div class="form-group">
+                                                    <div class="field-placeholder" >Kategori <span
+                                                        class="text-danger">*</span></div>
+                                                    <select class="form-control" id="dropdownSelect">
+                                                      <option disabled selected>Pilih salah satu</option>
+                                                      <option>Pilihan 1</option>
+                                                      <option>Pilihan 2</option>
+                                                      <option>Pilihan 3</option>
+                                                    </select>
+                                                  </div>
+                                                  
+                                            </div>
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                        
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                                            <!-- Field wrapper start -->
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 5%">
+
+                                                <!-- Field wrapper start -->
+                                                <div class="field-wrapper">
+                                                    <textarea class="form-control" rows="2"></textarea>
+                                                    <div class="field-placeholder">Alamat <span
+                                                            class="text-danger">*</span></div>
+                                                    <div class="form-text">
+                                                        Silakan masukkan Alamat lengkap Anda.
+                                                    </div>
+                                                </div>
+                                                <!-- Field wrapper end -->
+    
+                                            </div>
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                        <div style="border-bottom: solid black 1px;margin-bottom:1%">
+                                            <b>Penagihan</b>
+                                            <p>Informasi Penjualan digunakan dalam faktur, dan Informasi Pembelian digunakan dalam tagihan. Pajak akan diterapkan pada faktur dan tagihan.</p>
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <!-- Field wrapper start -->
+                                            
+                                              <div class="row">
+                                                <div class="col-md-6">
+                                                    <input type="checkbox" id="checkbox1" name="checkbox1" onchange="toggleInputsDisable(1)">
+                                                  <label for="checkbox1"> Informasi Penjualan</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="checkbox" id="checkbox2" name="checkbox2" onchange="toggleInputsDisable(2)">
+                                                  <label for="checkbox2"> Informasi Pembelian</label>
+                                                </div>
                                               </div>
-
+                                         
+                                            <!-- Field wrapper end -->
+                                          </div>
+                                          
+                                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
-                                                <input class="form-control" type="text">
-                                                <div class="field-placeholder">Nama <span class="text-danger">*</span>
-                                                </div>
-                                                <div class="form-text">
-                                                    Silakan masukkan nama lengkap Anda.
-                                                </div>
+                                              <input class="form-control" type="number" id="inputField1" name="inputField1" disabled>
+                                              <div class="field-placeholder">Harga Jual</div>
                                             </div>
                                             <!-- Field wrapper end -->
-
-                                        </div>
+                                          </div>
+                                          
+                                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                              <input class="form-control" type="text" id="inputField2" name="inputField2" disabled>
+                                              <div class="field-placeholder">Harga Beli</div>
+                                            </div>
+                                            <!-- Field wrapper end -->
+                                          </div>
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
-                                                <input class="form-control" type="email">
-                                                <div class="field-placeholder">Email <span
+                                                <div class="form-group">
+                                                    <div class="field-placeholder" >Mata uang <span
                                                         class="text-danger">*</span></div>
-                                                <div class="form-text">
-                                                    Kami tidak akan pernah membagikan email Anda kepada siapa pun.
-                                                </div>
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <input class="form-control" type="text">
-                                                <div class="field-placeholder">Situs Web</div>
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <input class="form-control" type="text">
-                                                <div class="field-placeholder">Refrensi</div>
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <input class="form-control" type="file">
-                                                <div class="field-placeholder">Gambar</div>
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <input class="form-control" type="text">
-                                                <div class="field-placeholder">Penagihan</div>
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <input class="form-control" type="number">
-                                                <div class="field-placeholder">NPWP</div>
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <input class="form-control" type="text">
-                                                <div class="field-placeholder">Mata Uang</div>
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <textarea class="form-control" rows="2"></textarea>
-                                                <div class="field-placeholder">Alamat <span
-                                                        class="text-danger">*</span></div>
-                                                <div class="form-text">
-                                                    Silakan masukkan Alamat lengkap Anda.
-                                                </div>
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <input class="form-control" type="text">
-                                                <div class="field-placeholder">Kota</div>
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <input class="form-control" type="number">
-                                                <div class="field-placeholder">Kode Pos</div>
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <input class="form-control" type="text">
-                                                <div class="field-placeholder">Provinsi</div>
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <input class="form-control" type="text">
-                                                <div class="field-placeholder">Negara</div>
+                                                    <select class="form-control" id="dropdownSelect">
+                                                      <option disabled selected>Pilih salah satu</option>
+                                                      <option>Pilihan 1</option>
+                                                      <option>Pilihan 2</option>
+                                                      <option>Pilihan 3</option>
+                                                    </select>
+                                                  </div>
+                                                  
                                             </div>
                                             <!-- Field wrapper end -->
 
@@ -516,5 +544,17 @@ label {
 
     <!-- Main Js Required -->
     <script src="{{ asset('Gmbslagi/js/main.js') }}"></script>
-
+    <script>
+        function toggleInputsDisable(checkboxNumber) {
+          var inputField1 = document.getElementById("inputField1");
+          var inputField2 = document.getElementById("inputField2");
+      
+          if (checkboxNumber === 1) {
+            inputField1.disabled = !inputField1.disabled;
+          } else if (checkboxNumber === 2) {
+            inputField2.disabled = !inputField2.disabled;
+          }
+        }
+      </script>
+      
 </body>

@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
       dayMaxEvents: true, // allow "more" link when too many events
       events: [
         {
-          title: 'All Day Event',
+          title: 'INV-00001',
+          
           start: '2020-09-01',
           color: '#ec4f3d'
         },

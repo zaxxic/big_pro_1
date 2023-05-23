@@ -35,7 +35,23 @@ for (i = 0; i < dropdown.length; i++) {
     this.classList.toggle("rotate");
   });
 
+  function switchPage() {
+    var dropdown = document.getElementById("myDropdown");
+    var selectedValue = dropdown.value;
+    
+    if (selectedValue !== "") {
+      window.location.href = selectedValue;
+    }
+  }
   
+  function openModal(modalText) {
+    document.getElementById("modalText").innerText = modalText;
+    document.getElementById("myModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
 
 
 }
