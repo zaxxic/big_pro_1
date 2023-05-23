@@ -28,3 +28,12 @@
     border-radius: .25rem;
     opacity: .5
 }
+.tambah-icon i {
+    font-size: 1.5rem;
+    background-color: #FFFFFF;
+}
+.nama-icon{
+font-size: 20px;
+    margin-left: 11px;
+    font-size: 18px;
+}

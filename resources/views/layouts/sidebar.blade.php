@@ -54,11 +54,11 @@
 								<a href="{{ url ('/')}}" class="sidebar-menu active" aria-selected="true"><i class="icon-home2" style=" font-size: 19px;"></i><span>&emsp;Dashboard</span></a>
 							</li>
 							<li class="{{ Request::is('item-index') ? 'active' : '' }}">
-								<a href="{{ route('item-index') }}">
+								<a href="/itemindex">
 								  <i class="icon-download1" style="font-size: 19px;"></i><span>&emsp;Barang</span>
 								</a>
 							  </li>
-							  
+
 							<li class="mt-3 ">
 							<a href="#" class="dropdown-btn" ><i class="icon-tag1" style=" font-size: 19px;"></i><span>&emsp;Penjualan</span><i class="icon-chevron-down1 droprow " ></i></a>
 								<ul class="dropdown-container">
@@ -81,7 +81,7 @@
 									<li class="mt-2"><a href=""><span style="margin-left: 20px;">&emsp;Transfer</span></a></li>
 								</ul>
 							</li>
-							
+
 							<li class="mt-3">
 								<a href="saas.html" aria-selected="false"><i class="icon-file-text" style=" font-size: 19px;"></i><span>&emsp;Laporan</span></a>
 							</li>

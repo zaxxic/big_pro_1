@@ -1243,15 +1243,42 @@
 														<h5 class="modal-judul" id="exampleModalCenterTitle">Tambah Baru</h5>
 														<button type="button" class="btn-tutup" data-bs-dismiss="modal" aria-label="Close"></button>
 													</div>
-													<div class="modal-badan">
+													<div class="d-flex">
+                                                    <a href="/laporan" class="modal-badan">
+                                                        <div class="tambah-icon ">
                                                         <div class="d-flex">
-                                                        <span class="icon-file-text"></span>
+                                                        <i class="icon-file-text"></i>
+                                                        <h6 class="nama-icon">Faktur</h6>
                                                         </div>
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-														<button type="button" class="btn btn-primary">Save changes</button>
-													</div>
+                                                        </div>
+                                                    </a>
+													<a href="/laporan" class="modal-badan" style="margin-left: 67px;">
+                                                        <div class="tambah-icon">
+                                                        <div class="d-flex">
+                                                        <i class="icon-file-text"></i>
+                                                        <h6 class="nama-icon">Pendapatan</h6>
+                                                        </div>
+                                                        </div>
+                                                    </a>
+                                                    </div>
+													<div class="d-flex">
+                                                    <a href="/laporan" class="modal-badan">
+                                                        <div class="tambah-icon">
+                                                        <div class="d-flex">
+                                                        <i class="icon-file-text"></i>
+                                                        <h6 class="nama-icon">Tagihan</h6>
+                                                        </div>
+                                                        </div>
+                                                    </a>
+													<a href="/laporan" class="modal-badan">
+                                                        <div class="tambah-icon">
+                                                        <div class="d-flex">
+                                                        <i class="icon-file-text"></i>
+                                                        <h6 class="nama-icon">Biaya</h6>
+                                                        </div>
+                                                        </div>
+                                                    </a>
+                                                    </div>
 											  	</div>
 											</div>
 										</div>
@@ -1259,16 +1286,12 @@
                                         <div class="modal fade" id="exampleModalCenterhapus" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 											<div class="modal-dialog modal-dialog-centered">
 											  	<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-														<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+													<div class="modal-tambah">
+														<h5 class="modal-judul" id="exampleModalCenterTitle">Modal title</h5>
+														<button type="button" class="btn-tutup" data-bs-dismiss="modal" aria-label="Close"></button>
 													</div>
-													<div class="modal-body">
+													<div class="modal-badan">
                                                         <p>apakah anda mau menghapus</p>
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-														<button type="button" class="btn btn-primary">Save changes</button>
 													</div>
 											  	</div>
 											</div>
