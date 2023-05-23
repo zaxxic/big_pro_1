@@ -76,3 +76,10 @@ Route::get('/report',[ReportController::class, 'report'])->name('report');
 
 //calendar
 Route::get('/calendar',[CalendarController::class, 'calendar'])->name('calendar');
+
+Route::get('impor_pembelian', function () {
+    return view('pembelian.pembelian_impor_pemasok');
+});
+Route::get('transaksi', function () {
+    return view('transaksi');
+});
