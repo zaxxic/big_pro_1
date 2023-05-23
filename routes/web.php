@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CompanyController;
 
 
 use App\Http\Controllers\ItemController;
@@ -35,8 +36,13 @@ Route::get('register', function () {
 Route::get('reset_password', function () {
     return view('reset_password');
 });
+//Item
 Route::get('/itemindex',[ItemController::class,'itemindex'])->Name('item-index');
-Route::get('/tambah-item',[ItemController::class,'tambahitem'])->Name('item-tambah');
+Route::get('/add-item',[ItemController::class,'additem'])->Name('item-add');
+
+//perusahaan
+Route::get('/perusahaan',[CompanyController::class,'Perusahaan'])->Name('perusahaan-index');
+
 Route::get('pembelian_pemasok', function () {
     return view('pembelian.pembelian_pemasok');
 });
@@ -60,6 +66,8 @@ Route::get('/transaksi_berulang', [TransaksiController::class, 'transaksi_berula
 
 //transfer
 Route::get('/transfer', [TransferController::class, 'transfer'])->name('transfer');
+
+    return view('pembelian.pembelian_edit_pemasok');
 
 
 
