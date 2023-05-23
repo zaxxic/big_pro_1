@@ -55,6 +55,33 @@ td,th{
 .view-icon:hover {
   color: blue;
 }
+.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            z-index: 1;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 10px;
+            border-radius: 4px;
+            right: 0; /* Mengarahkan dropdown ke arah kiri */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 5px 0;
+            text-decoration: none;
+            color: #333;
+        }
 .searchcontainer{
         width:90%;
         font-size:20px;
@@ -679,109 +706,156 @@ td,th{
 						    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             
                                 <!-- Card start -->
-                                <div class="card">
+								
                                     <div class="card-header">
-                                        <div class="card-title">Item</div>
-                                        <div class="graph-day-selection" role="group">
-											<a href="/tambah-item">
-											<button type="button" class="btn active">Tambah Item</button>
-										</a>
+                                        <div class="card-title"><h3>Item<button type="button" style="border: none; background:none;">☆</button></h3></div>
+                                        <div class="graph-day-selection" role="group" style="margin-left: 60%">
+											<a href="{{Route('item-tambah')}}">
+											<button type="button" class="btn active">Tambah item</button>
+											</a>
 										</div>
-                                    </div>
-									
-                                    <div class="card-body">
-										<div class="content">
-											<div class="searchcontainer">
-											  <i class="icon-search"></i><input class="search " type="text" placeholder="Cari Disini..." style="
-											  margin-bottom: 2%; font-size:10pt "/>
+										<div class="dropdown icon-dots-three-vertical">
+											<span></span>
+											<div class="dropdown-content">
+												<a href="#" class="icon-download"> Impor</a>
+												<a href="#" class="icon-folder"> Ekspor</a>
 											</div>
-										</div>
-                                        <div class="table-responsive">	
-                                            <table class="table table-hover">
+										</div>     
+                                    </div>
+                                    <div class="card-body">
+                                                    <!-- Row start -->
+                                
+                                     <!-- Row end -->
+                                        <div class="content">
+                                            <div class="searchcontainer">
+                                              <i class="icon-search"></i><input class="search " type="text" placeholder="Cari Disini..." style="
+                                              margin-bottom: 2%; font-size:10pt "/>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive">
+											<table class="table table-hover caption-top">
 												<thead>
 												  <tr>
-													<th scope="col"><input type="checkbox" name="" id=""></th>
-													<th scope="col">Nama</th>
-													<th scope="col">Deskripsi</th>
-													<th scope="col">Kategori</th>
-													<th scope="col">Pajak</th>
-													<th scope="col">Harga Jual</th>
-													<th scope="col">Harga Beli</th>
+													<th scope="col"> <input type="checkbox" id="select-all-checkbox"> </th>
+                                                    <th scope="col">Nama</th>
+                                                    <th scope="col">Email</th>
+                                                    <th scope="col">Negara</th>
+                                                    <th scope="col">Jatuh Tempo</th>
+													<th scope="col">Aksi</th>
 												  </tr>
 												</thead>
 												<tbody>
 												  <!-- Data 1 -->
 												  <tr class="table-row">
-													<td><input type="checkbox" name="" id=""></td>
-													<td>Adii</td>
-													<td>Entitas tak diketahui sejauh 500mm dari rumah</td>
-													<td>Manusia</td>
-													<td>N/A</td>
-													<td>Rp 10,000,000</td>
-													<td>Rp 12,200,000</td>
-												  </tr>
-												  <tr class="menu-row">
-													<td colspan="7" class="menu-container">
-													  <div class="menu-card">
-														<div class="menu-icons">
-														  <a href="#" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
-														  <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-														  <a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
-														</div>
-													  </div>
-													</td>
+													<td><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>Adi Alfa R.</td>
+                                                    <td>adialfa@gmail.com</td>
+                                                    <td>USSR</td>
+                                                    <td>N/A</td>
+													<td>
+														<div class="menu-icons" style="font-size: 15px;">
+															<a href="{{url('edit_pemasok')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
+															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+															<a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
+														  </div>
+													</td>	
 												  </tr>
 											  
 												  <!-- Data 2 -->
 												  <tr class="table-row">
-													<td><input type="checkbox" name="" id=""></td>
-													<td>John Doe</td>
-													<td>Deskripsi data kedua</td>
-													<td>Kategori B</td>
-													<td>N/A</td>
-													<td>Rp 5,000,000</td>
-													<td>Rp 6,500,000</td>
+													<td><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>M Daffa Prasetyo</td>
+                                                    <td>daffa@gmail.com</td>
+                                                    <td>China</td>
+                                                    <td>N/A</td>
+													<td>
+														<div class="menu-icons" style="font-size: 15px;">
+															<a href="{{url('edit_pemasok')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
+															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+															<a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
+														  </div>
+													</td>	
 												  </tr>
-												  <tr class="menu-row">
-													<td colspan="7" class="menu-container">
-													  <div class="menu-card">
-														<div class="menu-icons">
-														  <a href="#" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
-														  <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-														  <a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
-														</div>
-													  </div>
-													</td>
-												  </tr>
+												
 											  
 												  <!-- Data 3 -->
 												  <tr class="table-row">
-													<td><input type="checkbox" name="" id=""></td>
-													<td>Jane Smith</td>
-													<td>Deskripsi data ketiga</td>
-													<td>Kategori C</td>
-													<td>N/A</td>
-													<td>Rp 8,000,000</td>
-													<td>Rp 9,500,000</td>
+													<td><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>Gembes</td>
+                                                    <td>gembes@gmail.com</td>
+                                                    <td>Meksiko</td>
+                                                    <td>N/A</td>
+													<td>
+														<div class="menu-icons" style="font-size: 15px;">
+															<a href="{{url('edit_pemasok')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
+															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+															<a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
+														  </div>
+													</td>	
 												  </tr>
-												  <tr class="menu-row">
-													<td colspan="7" class="menu-container">
-													  <div class="menu-card">
-														<div class="menu-icons">
-														  <a href="#" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
-														  <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-														  <a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
-														</div>
-													  </div>
-													</td>
+												 
+												  <tr class="table-row">
+													<td><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>Reno Dhzuri</td>
+                                                    <td>reno@gmail.com</td>
+                                                    <td>Singapore</td>
+                                                    <td>N/A</td>
+													<td>
+														<div class="menu-icons" style="font-size: 15px;">
+															<a href="{{url('edit_pemasok')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
+															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+															<a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
+														  </div>
+													</td>	
 												  </tr>
+												  
+												  <tr class="table-row">
+													<td><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>Triski</td>
+                                                    <td>triski@gmail.com</td>
+                                                    <td>Indonesia</td>
+                                                    <td>N/A</td>
+													<td>
+														<div class="menu-icons" style="font-size: 15px;">
+															<a href="{{url('edit_pemasok')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
+															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+															<a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
+														  </div>
+													</td>	
+												  </tr>
+												 
 												</tbody>
 											  </table>
-											  
+                                                        <!-- Card start -->
+                                           
+                                                <div class="card-body" style="margin-left: -2.1%">
+
+                                                    <nav aria-label="Page navigation example">
+                                                        <ul class="pagination">
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#" aria-label="Next">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                            </a>
+                                                        </li>
+                                                        </ul>
+                                                    </nav>
+
+                                            
+                                            </div>
+								<!-- Card end -->
                                         </div>
                                     </div>
-                                </div>
+                                
                                 <!-- Card end -->
+
 
                             </div>
                         </div>
@@ -848,7 +922,39 @@ td,th{
         
 		<!-- Main Js Required -->
 		<script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>		
+<script>
+	// Ambil elemen-elemen yang diperlukan
+var selectAllCheckbox = document.getElementById('select-all-checkbox');
+var otherCheckboxes = document.getElementsByClassName('other-checkbox');
+
+// Tambahkan event listener pada checkbox "Select All"
+selectAllCheckbox.addEventListener('change', function() {
+// Periksa apakah checkbox "Select All" dicentang atau tidak
+var isChecked = selectAllCheckbox.checked;
+
+// Ubah status checked pada checkbox lainnya sesuai dengan checkbox "Select All"
+for (var i = 0; i < otherCheckboxes.length; i++) {
+	otherCheckboxes[i].checked = isChecked;
+}
+});
+
+// Tambahkan event listener pada checkbox lainnya
+for (var i = 0; i < otherCheckboxes.length; i++) {
+otherCheckboxes[i].addEventListener('change', function() {
+	// Periksa apakah semua checkbox lainnya telah dicentang
+	var allChecked = true;
+	for (var j = 0; j < otherCheckboxes.length; j++) {
+	if (!otherCheckboxes[j].checked) {
+		allChecked = false;
+		break;
+	}
+	}
+	
+	// Perbarui status checked pada checkbox "Select All" sesuai dengan kondisi di atas
+	selectAllCheckbox.checked = allChecked;
+});
+}
 	</body>
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:54 GMT -->

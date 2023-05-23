@@ -10,8 +10,8 @@ class ItemController extends Controller
     {
       return view('item.index');
     }
-    public function tambahitem()
+    public function additem()
     {
-      return view('item.tambah');
+      return view('item.addd');
     }
 }
