@@ -13,7 +13,7 @@
 		<link rel="shortcut icon" href="img/fav.png" />
 
 		<!-- Title -->
-		<title>Register</title>
+		<title>Reset Kata Kunci</title>
 
 
 		<!-- *************
@@ -100,62 +100,23 @@
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 					<div class="login-wrapper">
-						<form action="{{ route('register_store') }}" method="POST">
-							@csrf
+						<form action="">
 							<div class="login-screen">
 								<div class="login-body">
 									<a href="crm.html" class="login-logo">
 										<img src="{{ asset ("gmbslagi/img/logo.svg")}}" alt="iChat">
 									</a>
-									<h6>Selamat Datang,<br>Login dan mulai manajemen keuangan anda</h6>
+									<h6>Selamat Datang,<br>Atur Ulang Kata Sandi Anda</h6>
 									<div class="field-wrapper">
-										<input id="name" type="text"
-                                            class="form-control @error('name') is-invalid @enderror" name="name"
-                                            value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Masukan Nama">
-
-                                        @error('name')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-
-										<div class="field-placeholder">Nama</div>
-									</div>
-									<div class="field-wrapper">
-
-                                        <input id="email" placeholder="Masukan Email" type="email"
-                                            class="form-control @error('email') is-invalid @enderror" name="email"
-                                            value="{{ old('email') }}" required autocomplete="email">
-
-                                        @error('email')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror										<div class="field-placeholder">Email</div>
-									</div>
-									<div class="field-wrapper">
-										 <input placeholder="Masukan Katasandi" id="password" type="password"
-                                            class="form-control @error('password') is-invalid @enderror"
-                                            name="password" required autocomplete="new-password">
-
-                                        @error('password')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-										<div class="field-placeholder">Kata Kunci</div>
-									</div>
-									<div class="field-wrapper mb-3">
-										<input type="password" name="password_confirmation" placeholder="Konfirmasi kata kunci">
-										<div class="field-placeholder">Konfirmasi Kata Kunci</div>
+										<input type="email" placeholder="Masukan email anda" autofocus>
+										<div class="field-placeholder">Email</div>
 									</div>
 									<div class="actions">
-										<a href="{{('reset_password')}}">Lupa Kata Kunci?</a>
-										<button type="submit" class="btn btn-primary">Daftar</button>
+										<button type="submit" class="btn btn-primary">Kirim</button>
 									</div>
 								</div>
 								<div class="login-footer">
-									<span class="additional-link">Tidak punya akun? <a href="{{("register")}}" class="btn btn-light">Daftar</a></span>
+									<span><a href="{{url('login')}}" class="additional-link" >Kembali Ke Halaman Login</a></span>
 								</div>
 							</div>
 						</form>
