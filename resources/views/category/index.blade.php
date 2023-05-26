@@ -14,160 +14,65 @@
     <link rel="shortcut icon" href="img/fav.png">
 
     <!-- Title -->
-    <title>Unknown | Transaksi</title>
+    <title>Uni Pro Admin Template - Admin Dashboard</title>
 
 
     <!-- *************
-			************ Common Css Files *************
-		************ -->
+   ************ Common Css Files *************
+  ************ -->
     <!-- Bootstrap css -->
-    <link rel="stylesheet" href="{{ asset ("Gmbslagi/css/bootstrap.min.css")}}">
+    <link rel="stylesheet" href="{{ asset('Gmbslagi/css/bootstrap.min.css') }}">
 
     <!-- Icomoon Font Icons css -->
-    <link rel="stylesheet" href="{{ asset ("Gmbslagi/fonts/style.css")}}">
+    <link rel="stylesheet" href="{{ asset('Gmbslagi/fonts/style.css') }}">
 
     <!-- Main css -->
-    <link rel="stylesheet" href="{{ asset ("Gmbslagi/css/main.css")}}">
+    <link rel="stylesheet" href="{{ asset('Gmbslagi/css/main.css') }}">
 
 
     <!-- *************
-			************ Vendor Css Files *************
-		************ -->
+   ************ Vendor Css Files *************
+  ************ -->
 
     <!-- Mega Menu -->
-    <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/megamenu/css/megamenu.css")}}">
+    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/megamenu/css/megamenu.css') }}">
 
     <!-- Search Filter JS -->
-    <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/search-filter/search-filter.css")}}">
-    <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/search-filter/custom-search-filter.css")}}">
+    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/search-filter.css') }}">
+    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.css') }}">
 
     <!-- Data Tables -->
-    <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4.css")}}" />
-    <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4-custom.css")}}" />
-    <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
+    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/dataTables.bs4.css') }}" />
+    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/dataTables.bs4-custom.css') }}" />
+    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/buttons.bs.css') }}" />
     <style>
-        .lingkaran-warna1 {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: red;
-            
-        }
-        
-        .lingkaran-warna2 {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: blue;
-            
-        }
-
-        .lingkaran-warna3 {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: green;
-            
-        }
-
-        .lingkaran-warna4 {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: purple;
-            
-        }
-
-        .lingkaran-warna5 {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: pink;
-            
-        }
-
-        .icon-no {
-            padding-top: 90px;
-            font-size: 3rem;
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: space-between;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        #dropdown-menu {
-            display: none;
+        .dropdown {
             position: relative;
-        }
-
-        .dropdown-toggle {
-            padding: 5px;
-            font-size: 20px;
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
+            display: inline-block;
         }
 
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #f9f9f9;
-            min-width: 120px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            min-width: 160px;
             z-index: 1;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 4px;
+            right: 0;
+            /* Mengarahkan dropdown ke arah kiri */
         }
 
-        .dropdown-content button {
-            display: block;
-            width: 100%;
-            text-align: left;
-            padding: 8px 16px;
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-        }
-
-        /* Tampilkan dropdown saat tombol titik tiga diklik */
-        #dropdown-menu.show .dropdown-content {
+        .dropdown:hover .dropdown-content {
             display: block;
         }
 
-        /* Atur tampilan tombol untuk ukuran layar yang lebih kecil */
-        @media screen and (max-width: 1024px) {
-            .button-container {
-                justify-content: flex-end;
-            }
-
-            #dropdown-menu {
-                display: block;
-            }
-
-            .dropdown-toggle {
-                display: block;
-            }
-
-            .dropdown-content {
-                position: static;
-                min-width: unset;
-                box-shadow: none;
-            }
-
-            .dropdown-content button {
-                display: none;
-            }
-
-            /* Tampilkan tombol dropdown saat layar kecil */
-            #dropdown-menu.show .dropdown-content button {
-                display: block;
-            }
-
-            .button-container {
-                /* justify-content: flex-end; */
-                display: none;
-            }
+        .dropdown-content a {
+            display: block;
+            padding: 5px 0;
+            text-decoration: none;
+            color: #333;
         }
 
         .searchcontainer {
@@ -218,8 +123,8 @@
         <!-- Sidebar wrapper end -->
 
         <!-- *************
-				************ Main container start *************
-			************* -->
+    ************ Main container start *************
+   ************* -->
         <div class="main-container">
 
             <!-- Page header starts -->
@@ -240,7 +145,8 @@
 
                             <!-- Mega Menu Start -->
                             <div class="cd-dropdown-wrapper">
-                                <a class="cd-dropdown-trigger" href="#0"><i class="icon-menu menu-icon"></i><span class="menu-text">Megamenu</span></a>
+                                <a class="cd-dropdown-trigger" href="#0"><i class="icon-menu menu-icon"></i><span
+                                        class="menu-text">Megamenu</span></a>
                                 <nav class="cd-dropdown">
 
                                     <ul class="cd-dropdown-content">
@@ -390,7 +296,8 @@
                                                             <a href="forms-input-groups.html">Input Groups</a>
                                                         </li>
                                                         <li>
-                                                            <a href="forms-checkbox-radio.html">Checkbox &amp; Radios</a>
+                                                            <a href="forms-checkbox-radio.html">Checkbox &amp;
+                                                                Radios</a>
                                                         </li>
                                                         <li>
                                                             <a href="forms-validation.html">Form Validation</a>
@@ -616,7 +523,8 @@
                                             <li class="activity-list danger">
                                                 <div class="detail-info">
                                                     <p class="date">Today</p>
-                                                    <p class="info">Send email notifications of subscriptions and deletions to list owner</p>
+                                                    <p class="info">Send email notifications of subscriptions and
+                                                        deletions to list owner</p>
                                                 </div>
                                             </li>
                                             <li class="activity-list success">
@@ -634,7 +542,8 @@
                                             <li class="activity-list">
                                                 <div class="detail-info">
                                                     <p class="date">2 days ago</p>
-                                                    <p class="info">Send email notifications of subscriptions and deletions to list owner</p>
+                                                    <p class="info">Send email notifications of subscriptions and
+                                                        deletions to list owner</p>
                                                 </div>
                                             </li>
                                             <li class="activity-list danger">
@@ -676,7 +585,8 @@
                                                     </div>
                                                     <div class="details">
                                                         <div class="user-title">Larkyn</div>
-                                                        <div class="noti-details">Check out every table in detail.</div>
+                                                        <div class="noti-details">Check out every table in detail.
+                                                        </div>
                                                         <div class="noti-date">April 25, 04:00 pm</div>
                                                     </div>
                                                 </a>
@@ -734,9 +644,10 @@
                                 </div>
                             </li>
                             <li class="dropdown">
-                                <a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
+                                <a href="#" id="userSettings" class="user-settings" data-toggle="dropdown"
+                                    aria-haspopup="true">
                                     <span class="avatar">
-                                        <img src="{{ asset ("Gmbslagi/img/user.svg")}}" alt="User Avatar">
+                                        <img src="{{ asset('Gmbslagi/img/user.svg') }}" alt="User Avatar">
                                         <span class="status busy"></span>
                                     </span>
                                 </a>
@@ -765,357 +676,265 @@
                 <div class="content-wrapper">
 
                     <!-- Row start -->
-                    <div class="card-body">
-                        <div class="row gutters">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="row gutters">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
-                                <!-- Card start -->
-
-                                <!-- <div class="card-header"> -->
-                                <div class="d-flex">
-                                    <div class=" col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12 d-flex">
-
-                                        <h1 class="card-title" style="font-size: 20px;">Transaksi</h1>
-                                        <i class="icon-star2" style="padding-left: 10px; font-size: 19px;"></i>
+                            <!-- Card start -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        <h3>Kategori<button type="button"
+                                                style="border: none; background:none;">☆</button></h3>
                                     </div>
-
-                                    <!-- <div class="text-end">
-											<a href="create-invoice.html" class="btn btn-primary">Create Invoice</a>
-										</div> -->
-                                    <div class="col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12 ms-auto button-container">
-                                        <a href="{{url('add_pendapatan')}}"> <button type="button" class="btn btn-secondary">Tambah Pendapatan</button></a>
-
-                                        <button href="" type="button" class="btn btn-secondary">Tambah Pengeluaran</button>
-
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
-                                            <button type="button" class="btn btn-outline-primary">Ekspor</button>
-                                        </div>
-
+                                    <div class="graph-day-selection" role="group" style="margin-left: 60%">
+                                        <a href="{{ url('add-category') }}">
+                                            <button type="button" class="btn active">Tambah Kategori</button>
+                                        </a>
                                     </div>
-                                </div>
-                                <div id="dropdown-menu">
-                                    <button class="dropdown-toggle">&#8942;</button>
-                                    <div class="dropdown-content">
-                                        <a href="{{url('add_pendapatan')}}">Pendapatan</a>
-                                        <button>Pengeluaran</button>
-                                        <button>Ekspor</button>
-                                    </div>
-                                </div>
-
-                                <!-- <div class="button-container">
-                                        <button id="income-button">Pendapatan</button>
-                                        <button id="expense-button">Pengeluaran</button>
-                                        <button id="export-button">Ekspor</button>
-                                        <div id="dropdown-menu">
-                                            <button class="dropdown-toggle">&#8942;</button>
-                                            <div class="dropdown-content">
-                                                <button id="income-button-mobile">Pendapatan</button>
-                                                <button id="expense-button-mobile">Pengeluaran</button>
-                                                <button id="export-button-mobile">Ekspor</button>
-                                            </div>
-                                        </div>
-                                    </div> -->
-
-                                <!-- </div> -->
-
-
-
-
-
-
-                                <!-- </div> -->
-
-                                <!-- Row start -->
-                                <div class="row gutters" style="margin-left: 5%; margin-bottom: -5%; margin-top: 3%;">
-                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
-                                        <div class="stats-tile">
-                                            <div class="sale-icon">
-                                                <p><b><i>Rp</i></b></p>
-                                            </div>
-                                            <div class="sale-details">
-                                                <h2>25.5M</h2>
-                                                <p>Pendapatan</p>
-                                            </div>
-                                            <div class="sale-graph">
-                                                <div id="sparklineLine1"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-6 col-12" style="margin-top: 2%;">
-
-                                        <i class="icon-minus1 icon-no"></i>
-
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
-                                        <div class="stats-tile">
-                                            <div class="sale-icon">
-                                                <p><b><i>Rp</i></b></p>
-                                            </div>
-                                            <div class="sale-details">
-                                                <h2>32.3M</h2>
-                                                <p>Pengeluaran</p>
-                                            </div>
-                                            <div class="sale-graph">
-                                                <div id="sparklineLine2"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-6 col-12" style="margin-top: 2%;">
-
-                                        <i class="icon-minus1 icon-no"></i>
-
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                                        <div class="stats-tile">
-                                            <div class="sale-icon">
-                                                <p><b><i>Rp</i></b></p>
-                                            </div>
-                                            <div class="sale-details">
-                                                <h2>19,9M</h2>
-                                                <p>Keuntungan</p>
-                                            </div>
-                                            <div class="sale-graph">
-                                                <div id="sparklineLine3"></div>
-                                            </div>
+                                    <div class="dropdown icon-dots-three-vertical">
+                                        <span></span>
+                                        <div class="dropdown-content">
+                                            <a href="#" class="icon-download"> Impor</a>
+                                            <a href="#" class="icon-folder"> Ekspor</a>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Row end -->
-                                <div class="d-flex">
-                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-1 col-12" style="margin-top: 8%;">
-                                        <div class="trans-menu active" aria-selected="true">
-                                            <a href="">
-                                                <h6>&emsp;&emsp;&emsp;Transaksi</h6>
-                                            </a>
-                                            <hr>
-                                        </div>
+                                <div class="card-body">
+                                    <!-- Row start -->
 
-                                    </div>
-                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-1 col-12" style="margin-top: 8%;">
-                                        <div aria-selected="false">
-                                            <a href="">
-                                                <h6>&emsp;&emsp;Transaksi Rutin</h6>
-                                            </a>
-                                            <hr>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <div class="searchcontainer">
-                                        <i class="icon-search"></i><input class="search " type="text" placeholder="Cari Disini..." style="
+                                    <!-- Row end -->
+                                    <div class="content">
+                                        <div class="searchcontainer">
+                                            <i class="icon-search"></i><input class="search " type="text"
+                                                placeholder="Cari Disini..."
+                                                style="
                                               margin-bottom: 2%; font-size:10pt " />
-                                    </div>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col"> <input type="checkbox" id="select-all" onchange="toggleCheckbox()"></th>
-                                                <th scope="col">Tanggal</th>
-                                                <th scope="col">Nomor</th>
-                                                <th scope="col">Jenis</th>
-                                                <th scope="col">Kategori</th>
-                                                <th></th>
-                                                <th scope="col">Akun</th>
-                                                <th scope="col">Jumlah</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td name="item" id="checkbox1"><input type="checkbox"></td>
-                                                <td>16 Mei 2023</th>
-                                                <td>TRA-00038</td>
-                                                <td>Pengeluaran</td>
-                                                <td>
-                                                    <div class="lingkaran-warna1">
-                                                    &emsp;&emsp;Biaya Lain-Lain
-                                                    </div>
-                                                </td>
-                                                <td></td>
-                                                <td>Naura Dewi</td>
-                                                <td>Rp900.000.000</td>
-                                            </tr>
-                                            <tr>
-                                                <td name="item" id="checkbox2"><input type="checkbox"></td>
-                                                <td>13 Mei 2023</th>
-                                                <td>TRA-00037</td>
-                                                <td>Pendapatan</td>
-                                                <td>
-                                                    <div class="lingkaran-warna2">
-                                                    &emsp;&emsp;Penjualan Website
-                                                    </div>
-                                                </td>
-                                                <td></td>
-                                                <td>Bpk Yanto</td>
-                                                <td>Rp700.000.000</td>
-                                            </tr>
-                                            <tr>
-                                                <td name="item" id="checkbox3"><input type="checkbox"></td>
-                                                <td>23 Mei 2023</th>
-                                                <td>TRA-00039</td>
-                                                <td>Pendapatan</td>
-                                                <td>
-                                                    <div class="lingkaran-warna3">
-                                                    &emsp;&emsp;Penjualan
-                                                    </div>
-                                                </td>
-                                                <td></td>
-                                                <td>Ugud Budiman</td>
-                                                <td>Rp200.000.000</td>
-                                            </tr>
-                                            <tr>
-                                                <td name="item" id="checkbox4"><input type="checkbox"></td>
-                                                <td>34 Mei 2023</th>
-                                                <td>TRA-00040</td>
-                                                <td>Pendapatan</td>
-                                                <td>
-                                                    <div class="lingkaran-warna4">
-                                                    &emsp;&emsp;Penjualan Website
-                                                    </div>
-                                                </td>
-                                                <td></td>
-                                                <td>Louis Gunawan</td>
-                                                <td>Rp1.000.000.000</td>
-                                            </tr>
-                                            <tr>
-                                                <td name="item" id="checkbox5"><input type="checkbox"></td>
-                                                <td>34 Mei 2023</th>
-                                                <td>TRA-00041</td>
-                                                <td>Pengeluaran</td>
-                                                <td>
-                                                    <div class="lingkaran-warna5">
-                                                    &emsp;&emsp;Biaya Listik
-                                                    </div>
-                                                </td>
-                                                <td></td>
-                                                <td>Melati Handoko</td>
-                                                <td>Rp1.000.000.000</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <!-- Card start -->
-                                    <div class="card">
-                                        <div class="card-body" style="margin-left: -2.1%">
-
-                                            <nav aria-label="Page navigation example">
-                                                <ul class="pagination">
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">&laquo;</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">&raquo;</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </nav>
-
                                         </div>
                                     </div>
-                                    <!-- Card end -->
+                                    <div class="table-responsive">
+                                        <table class="table table-hover caption-top">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"> <input type="checkbox"
+                                                            id="select-all-checkbox"> </th>
+                                                    <th scope="col">Nama</th>
+                                                    <th scope="col">Jenis</th>
+                                                    <th scope="col">Warna</th>
+                                                    <th scope="col">Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Data 1 -->
+                                                <tr class="table-row">
+                                                    <td><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>Deposit</td>
+                                                    <td>Pendapatan</td>
+                                                    <td>
+                                                        <div class="circle"
+                                                            style="
+                                                                width: 40px;
+                                                                height: 40px;
+                                                                border-radius: 50%;
+                                                                background-color: #000;">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="menu-icons" style="font-size: 15px;">
+                                                            <a href="{{ url('edit_pemasok') }}"
+                                                                class="menu-icon edit-icon"><i
+                                                                    class="icon-edit"></i></a>
+                                                            <a href="#" class="menu-icon delete-icon"><i
+                                                                    class="icon-trash"></i></a>
+                                                            <a href="#" class="menu-icon view-icon"><i
+                                                                    class="icon-eye"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <!-- Data 2 -->
+                                                <tr class="table-row">
+                                                    <td><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>Penjualan</td>
+                                                    <td>Pendapatan</td>
+                                                    <td> <div class="circle"
+                                                        style="
+                                                            width: 40px;
+                                                            height: 40px;
+                                                            border-radius: 50%;
+                                                            background-color: #2d0bf0;">
+                                                    </div></td>
+                                                    <td>
+                                                        <div class="menu-icons" style="font-size: 15px;">
+                                                            <a href="{{ url('edit_pemasok') }}"
+                                                                class="menu-icon edit-icon"><i
+                                                                    class="icon-edit"></i></a>
+                                                            <a href="#" class="menu-icon delete-icon"><i
+                                                                    class="icon-trash"></i></a>
+                                                            <a href="#" class="menu-icon view-icon"><i
+                                                                    class="icon-eye"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+
+                                                <!-- Data 3 -->
+                                                <tr class="table-row">
+                                                    <td><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>Umum</td>
+                                                    <td>Item</td>
+                                                    <td> <div class="circle"
+                                                        style="
+                                                            width: 40px;
+                                                            height: 40px;
+                                                            border-radius: 50%;
+                                                            background-color: #ff0000;">
+                                                    </div></td>
+                                                    <td>
+                                                        <div class="menu-icons" style="font-size: 15px;">
+                                                            <a href="{{ url('edit_pemasok') }}"
+                                                                class="menu-icon edit-icon"><i
+                                                                    class="icon-edit"></i></a>
+                                                            <a href="#" class="menu-icon delete-icon"><i
+                                                                    class="icon-trash"></i></a>
+                                                            <a href="#" class="menu-icon view-icon"><i
+                                                                    class="icon-eye"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- Card start -->
+                                        <div class="card">
+                                            <div class="card-body" style="margin-left: -2.1%">
+
+                                                <nav aria-label="Page navigation example">
+                                                    <ul class="pagination">
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#"
+                                                                aria-label="Previous">
+                                                                <span aria-hidden="true">&laquo;</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link"
+                                                                href="#">1</a></li>
+                                                        <li class="page-item"><a class="page-link"
+                                                                href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link"
+                                                                href="#">3</a></li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#" aria-label="Next">
+                                                                <span aria-hidden="true">&raquo;</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+
+                                            </div>
+                                        </div>
+                                        <!-- Card end -->
+                                    </div>
                                 </div>
                             </div>
-
                             <!-- Card end -->
 
-
                         </div>
-                        <!-- Row end -->
-
                     </div>
-                    <!-- Content wrapper end -->
-
-                    <!-- App Footer start -->
-                    <div class="app-footer">© Uni Pro Admin 2021</div>
-                    <!-- App footer end -->
+                    <!-- Row end -->
 
                 </div>
-                <!-- Content wrapper scroll end -->
+                <!-- Content wrapper end -->
+
+                <!-- App Footer start -->
+                <div class="app-footer">© Uni Pro Admin 2021</div>
+                <!-- App footer end -->
 
             </div>
-            <!-- *************
-				************ Main container end *************
-			************* -->
+            <!-- Content wrapper scroll end -->
 
-            </divkolaja>
-            <!-- Page wrapper end -->
+        </div>
+        <!-- *************
+    ************ Main container end *************
+   ************* -->
 
-            <!-- *************
-			************ Required JavaScript Files *************
-		************* -->
-            <!-- Required jQuery first, then Bootstrap Bundle JS -->
-            <script src="{{ asset ("Gmbslagi/js/jquery.min.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/js/bootstrap.bundle.min.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/js/modernizr.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/js/moment.js")}}"></script>
-            <script src="Gmbslagi/js/dropdown.js"></script>
+        </divkolaja>
+        <!-- Page wrapper end -->
 
-            <!-- *************
-			************ Vendor Js Files *************
-		************* -->
+        <!-- *************
+   ************ Required JavaScript Files *************
+  ************* -->
+        <!-- Required jQuery first, then Bootstrap Bundle JS -->
+        <script src="{{ asset('Gmbslagi/js/jquery.min.js') }}"></script>
+        <script src="{{ asset('Gmbslagi/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('Gmbslagi/js/modernizr.js') }}"></script>
+        <script src="{{ asset('Gmbslagi/js/moment.js') }}"></script>
 
-            <!-- Megamenu JS -->
-            <script src="{{ asset ("Gmbslagi/vendor/megamenu/js/megamenu.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/megamenu/js/custom.js")}}"></script>
+        <!-- *************
+   ************ Vendor Js Files *************
+  ************* -->
 
-            <!-- Slimscroll JS -->
-            <script src="{{ asset ("Gmbslagi/vendor/slimscroll/slimscroll.min.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/slimscroll/custom-scrollbar.js")}}"></script>
+        <!-- Megamenu JS -->
+        <script src="{{ asset('Gmbslagi/vendor/megamenu/js/megamenu.js') }}"></script>
+        <script src="{{ asset('Gmbslagi/vendor/megamenu/js/custom.js') }}"></script>
 
-            <!-- Search Filter JS -->
-            <script src="{{ asset ("Gmbslagi/vendor/search-filter/search-filter.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/search-filter/custom-search-filter.js")}}"></script>
+        <!-- Slimscroll JS -->
+        <script src="{{ asset('Gmbslagi/vendor/slimscroll/slimscroll.min.js') }}"></script>
+        <script src="{{ asset('Gmbslagi/vendor/slimscroll/custom-scrollbar.js') }}"></script>
 
-            <!-- Data Tables -->
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/dataTables.min.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bootstrap.min.js")}}"></script>
+        <!-- Search Filter JS -->
+        <script src="{{ asset('Gmbslagi/vendor/search-filter/search-filter.js') }}"></script>
+        <script src="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.js') }}"></script>
 
-            <!-- Custom Data tables -->
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/custom/custom-datatables.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/custom/fixedHeader.js")}}"></script>
+        <!-- Data Tables -->
+        <script src="{{ asset('Gmbslagi/vendor/datatables/dataTables.min.js') }}"></script>
+        <script src="{{ asset('Gmbslagi/vendor/datatables/dataTables.bootstrap.min.js') }}"></script>
 
-            <!-- Download / CSV / Copy / Print -->
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/buttons.min.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/jszip.min.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/pdfmake.min.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/vfs_fonts.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/html5.min.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/buttons.print.min.js")}}"></script>
+        <!-- Custom Data tables -->
+        <script src="{{ asset('Gmbslagi/vendor/datatables/custom/custom-datatables.js') }}"></script>
+        <script src="{{ asset('Gmbslagi/vendor/datatables/custom/fixedHeader.js') }}"></script>
 
-            <!-- Main Js Required -->
-            <script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
-            <script>
-                // Tambahkan event listener untuk menampilkan/menyembunyikan dropdown saat tombol titik tiga diklik
-                document.querySelector('.dropdown-toggle').addEventListener('click', function() {
-                    document.getElementById('dropdown-menu').classList.toggle('show');
-                });
+        <!-- Download / CSV / Copy / Print -->
+        <script src="{{ asset('Gmbslagi/vendor/datatables/buttons.min.js') }}"></script>
+        <script src="{{ asset('Gmbslagi/vendor/datatables/jszip.min.js') }}"></script>
+        <script src="{{ asset('Gmbslagi/vendor/datatables/pdfmake.min.js') }}"></script>
+        <script src="{{ asset('Gmbslagi/vendor/datatables/vfs_fonts.js') }}"></script>
+        <script src="{{ asset('Gmbslagi/vendor/datatables/html5.min.js') }}"></script>
+        <script src="{{ asset('Gmbslagi/vendor/datatables/buttons.print.min.js') }}"></script>
 
-                // Tambahkan event listener untuk menyembunyikan dropdown saat pengguna mengklik di luar dropdown
-                document.addEventListener('click', function(event) {
-                    var dropdown = document.getElementById('dropdown-menu');
-                    if (!event.target.matches('.dropdown-toggle') && !event.target.matches('.dropdown-content button')) {
-                        if (dropdown.classList.contains('show')) {
-                            dropdown.classList.remove('show');
+        <!-- Main Js Required -->
+        <script src="{{ asset('Gmbslagi/js/main.js') }}"></script>
+        <script>
+            // Ambil elemen-elemen yang diperlukan
+            var selectAllCheckbox = document.getElementById('select-all-checkbox');
+            var otherCheckboxes = document.getElementsByClassName('other-checkbox');
+
+            // Tambahkan event listener pada checkbox "Select All"
+            selectAllCheckbox.addEventListener('change', function() {
+                // Periksa apakah checkbox "Select All" dicentang atau tidak
+                var isChecked = selectAllCheckbox.checked;
+
+                // Ubah status checked pada checkbox lainnya sesuai dengan checkbox "Select All"
+                for (var i = 0; i < otherCheckboxes.length; i++) {
+                    otherCheckboxes[i].checked = isChecked;
+                }
+            });
+
+            // Tambahkan event listener pada checkbox lainnya
+            for (var i = 0; i < otherCheckboxes.length; i++) {
+                otherCheckboxes[i].addEventListener('change', function() {
+                    // Periksa apakah semua checkbox lainnya telah dicentang
+                    var allChecked = true;
+                    for (var j = 0; j < otherCheckboxes.length; j++) {
+                        if (!otherCheckboxes[j].checked) {
+                            allChecked = false;
+                            break;
                         }
                     }
+
+                    // Perbarui status checked pada checkbox "Select All" sesuai dengan kondisi di atas
+                    selectAllCheckbox.checked = allChecked;
                 });
-            </script>
-            <script>
-                function toggleCheckbox() {
-                    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-                    var selectAllCheckbox = document.getElementById('select-all');
-
-                    for (var i = 0; i < checkboxes.length; i++) {
-                        checkboxes[i].checked = selectAllCheckbox.checked;
-                    }
-                }
-            </script>
-
+            }
+        </script>
 
 </body>
 

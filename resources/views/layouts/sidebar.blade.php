@@ -8,7 +8,8 @@
 			<a id="profile-tab" data-bs-toggle="tab" href="#tab-profile" role="tab" aria-controls="tab-profile" aria-selected="false" class="logo">
 				<img src="{{ asset('Gmbslagi/img/unknown.jpg') }}" width="50" height="50" style="border-radius: 50%;" class="mb-3">
 			</a>
-			<a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#tab-home" role="tab" aria-controls="tab-home" aria-selected="true">
+
+			<a class="current-page nav-link " id="home-tab" data-bs-toggle="tab" href="#tab-home" role="tab" aria-controls="tab-home" aria-selected="true">
 				<i class="icon-grid"></i>
 				<span class="nav-link-text">Dashboards</span>
 			</a>
@@ -48,49 +49,55 @@
 
 				<!-- Sidebar menu starts -->
 				<div class="sidebarMenuScroll mt-2">
-					<div class="sidebar-menu">
+					<div class="sidebar-menu active">
 						<ul>
 							<li>
-								<a href="{{ url ('/')}}" class="sidebar-menu active" aria-selected="true"><i class="icon-home2" style=" font-size: 19px;"></i><span>&emsp;Dashboard</span></a>
+								<a href="{{ url('dashboard')}}" class="sidebar-menu {{ request()->routeIs('dashboard') ? 'current-page' : '' }}" aria-selected="false">
+									<i class="icon-home2" style="font-size: 19px;"></i><span>&emsp;Dashboard</span>
+								</a>
 							</li>
-							<li class="{{ Request::is('item-index') ? 'active' : '' }}">
-								<a href="/itemindex">
+
+
+							<!-- <li class="{{ Request::is('item-index') ? 'active' : '' }}">
+								<a href="{{ route('item-index') }}">
 								  <i class="icon-download1" style="font-size: 19px;"></i><span>&emsp;Barang</span>
 								</a>
-							  </li>
-
-
-							  <li class="mt-3">
-								<a href="saas.html" aria-selected="false"><i class="icon-download1" style=" font-size: 19px;"></i><span>&emsp;Barang</span></a>
+							  </li> -->
+							<li class="mt-3">
+								<a href="{{url('pembelian_pemasok')}}" class="{{ request()->routeIs('pembelian_pemasok') ? 'current-page' : '' }}" aria-selected="false">
+									<i class="icon-download1" style="font-size: 19px;"></i>
+									<span>&emsp;Barang</span>
+								</a>
 							</li>
 							<li class="mt-3 ">
-							<a href="#" class="dropdown-btn" ><i class="icon-tag1" style=" font-size: 19px;"></i><span>&emsp;Penjualan</span><i class="icon-chevron-down1 droprow " ></i></a>
+								<a href="#" class="dropdown-btn {{ request()->routeIs('') ? 'current-page' : '' }}"><i class="icon-tag1" style=" font-size: 19px;"></i><span>&emsp;Penjualan</span><i class="icon-chevron-down1 droprow "></i></a>
 								<ul class="dropdown-container">
-									<li class="mt-2"><a href="" ><span style="margin-left: 20px;">&emsp;Faktur</span></a></li>
-									<li class="mt-2"><a href="" ><span style="margin-left: 20px;">&emsp;Pelanggan</span></a></li>
+									<li class="mt-2"><a href=""><span style="margin-left: 20px;">&emsp;Faktur</span></a></li>
+									<li class="mt-2"><a href=""><span style="margin-left: 20px;">&emsp;Pelanggan</span></a></li>
 								</ul>
 							</li>
 							<li class="mt-3 ">
-							<a href="#" class="dropdown-btn" ><i class="icon-shopping-cart1" style=" font-size: 19px;"></i><span>&emsp;Pembelian</span><i class="icon-chevron-down1 droprow" ></i></a>
+								<a href="#" class="dropdown-btn"><i class="icon-shopping-cart1" style=" font-size: 19px;"></i><span>&emsp;Pembelian</span><i class="icon-chevron-down1 droprow"></i></a>
 								<ul class="dropdown-container">
-									<li class="mt-2"><a href="" ><span style="margin-left: 20px;">&emsp;Tagihan</span></a></li>
+									<li class="mt-2"><a href=""><span style="margin-left: 20px;">&emsp;Tagihan</span></a></li>
 									<li class="mt-2"><a href="{{url('pembelian_pemasok')}}"><span style="margin-left: 20px;">&emsp;Pemasok</span></a></li>
 								</ul>
 							</li>
-							<li class="mt-3 ">
-							<a href="#" class="dropdown-btn" ><i class="icon-attach_money" style=" font-size: 19px;"></i><span>&emsp;Perbankan</span><i class="icon-chevron-down1 droprow" ></i></a>
+							<li class="mt-3">
+								<a href="#" class="dropdown-btn {{ request()->routeIs('transactions') || request()->routeIs('transfer') || request()->routeIs('account') ? 'current-page' : '' }}"><i class="icon-attach_money" style="font-size: 19px;"></i><span>&emsp;Perbankan</span><i class="icon-chevron-down1 droprow"></i></a>
 								<ul class="dropdown-container">
-									<li class="mt-2"><a href="" ><span style="margin-left: 20px;">&emsp;Akun</span></a></li>
-									<li class="mt-2"><a href="{{url('transaksi')}}" ><span style="margin-left: 20px;">&emsp;Transaksi</span></a></li>
-									<li class="mt-2"><a href="{{url('transfer')}}"><span style="margin-left: 20px;">&emsp;Transfer</span></a></li>
+									<li class="mt-2"><a href="" class="{{ request()->routeIs('account') ? 'apexcharts-legend-marker' : '' }}"><span style="margin-left: 20px;">&emsp;Akun</span></a></li>
+									<li class="mt-2"><a href="{{url('transactions')}}" class="{{ request()->routeIs('transactions') ? 'apexcharts-legend-marker' : '' }}"><span style="margin-left: 20px;">&emsp;Transaksi</span></a></li>
+									<li class="mt-2"><a href="{{url('transfer')}}" class="{{ request()->routeIs('transfer') ? 'apexcharts-legend-marker' : '' }}"><span style="margin-left: 20px;">&emsp;Transfer</span></a></li>
 								</ul>
 							</li>
 
+
 							<li class="mt-3">
-								<a href="{{ url('report') }}" aria-selected="false"><i class="icon-file-text" style=" font-size: 19px;"></i><span>&emsp;Laporan</span></a>
+								<a href="saas.html" aria-selected="false"><i class="icon-file-text" style=" font-size: 19px;"></i><span>&emsp;Laporan</span></a>
 							</li>
 							<li class="mt-3">
-								<a href="{{url('calendar')}}" aria-selected="false"><i class="icon-calendar1" style=" font-size: 19px;"></i><span>&emsp;Kalender</span></a>
+								<a href="saas.html" aria-selected="false"><i class="icon-calendar1" style=" font-size: 19px;"></i><span>&emsp;Kalender</span></a>
 							</li>
 						</ul>
 
@@ -114,19 +121,21 @@
 
 				<!-- Sidebar menu starts -->
 				<div class="sidebarMenuScroll mt-2">
-					<div class="sidebar-menu">
-						<ul>
-							<li>
-								<a href="index.html" class="current-page"><i class="icon-briefcase" style=" font-size: 19px;"></i><span>&emsp;Perusahaan</span></a>
+					<div class="sidebar-menu active">
+						<ul class="active">
+							<!-- @section('active') -->
+							<li class="active">
+								<a href="{{ url ('/')}}" class="current-page"><i class="icon-briefcase" style=" font-size: 19px;"></i><span>&emsp;Perusahaan</span></a>
 							</li>
-							<li class="mt-3">
-								<a href="analytics.html"><i class="icon-file" style=" font-size: 19px;"></i><span>&emsp;Faktur</span></a>
+							<!-- @endsection -->
+							<li class="mt-3 active">
+								<a href="{{ url ('/')}}"><i class="icon-file " style=" font-size: 19px;"></i><span>&emsp;Faktur</span></a>
 							</li>
-							<li class="mt-3">
-								<a href="sales.html"><i class="icon-mail" style=" font-size: 19px;"></i><span>&emsp;Surel</span></a>
+							<li class="mt-3 active">
+								<a href="{{ url ('/')}}"><i class="icon-mail " style=" font-size: 19px;"></i><span>&emsp;Surel</span></a>
 							</li>
-							<li class="mt-3">
-								<a href="sales.html"><i class="icon-server" style=" font-size: 19px;"></i><span>&emsp;Kategori</span></a>
+							<li class="mt-3" active>
+								<a href="{{ url ('/')}}"><i class="icon-server " style=" font-size: 19px;"></i><span>&emsp;Kategori</span></a>
 							</li>
 							<!-- <li class="dropdown">
 								<a href="#" class="pem-btn"> Pembelian <span class="fas fa-caret-down first"></span></a>
@@ -179,6 +188,9 @@
 							<li class="mt-3">
 								<a href="analytics.html"><i class="icon-pocket" style=" font-size: 19px;"></i><span>&emsp;Peran</span></a>
 							</li>
+							<li class="mt-3">
+								<a href="analytics.html"><i class="icon-power_settings_new" style=" font-size: 19px;"></i><span>&emsp;Logout</span></a>
+							</li>
 						</ul>
 
 					</div>
@@ -224,7 +236,7 @@
 								</div>
 							</li>
 							<li class="mt-3">
-								<a href="{{url('icons')}}">Icons</a>
+								<a href="{{url('icons')}}" class="{{ request()->routeIs('icons') ? 'current-page' : '' }}">Icons</a>
 							</li>
 						</ul>
 					</div>
@@ -626,6 +638,6 @@
 		<!-- Tabs content end -->
 
 	</div>
-	<!-- Sidebar content end -->
+	<!-- Sidebar content end -->
 
 </nav>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	
-<!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:00:09 GMT -->
+<!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/forms-layout-one.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:31 GMT -->
 <head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -13,42 +13,41 @@
 		<link rel="shortcut icon" href="img/fav.png">
 
 		<!-- Title -->
-		<title>Unknown | Beranda</title>
+		<title>Uni Pro Admin Template - Admin Dashboard</title>
 
+		
 
 		<!-- *************
 			************ Common Css Files *************
 		************ -->
 		<!-- Bootstrap css -->
-	<link rel="stylesheet" href="{{ asset("Gmbslagi/css/bootstrap.min.css") }}">
+		<link rel="stylesheet" href="{{ asset ("Gmbslagi/css/bootstrap.min.css")}}">
 		
 		<!-- Icomoon Font Icons css -->
-		<link rel="stylesheet" href="{{ asset("Gmbslagi/fonts/style.css") }}">
+		<link rel="stylesheet" href="{{ asset ("Gmbslagi/fonts/style.css")}}">
 
 		<!-- Main css -->
-		<link rel="stylesheet" href="{{ asset("Gmbslagi/css/main.css") }}">
+		<link rel="stylesheet" href="{{ asset ("Gmbslagi/css/main.css")}}">
 
 
 		<!-- *************
 			************ Vendor Css Files *************
 		************ -->
-
+		<style>
+			.dropzone-wrapper {
+				width: 100%;
+				height: 300px;
+			}
+		</style>
 		<!-- Mega Menu -->
-		<link rel="stylesheet" href="{{ asset("Gmbslagi/vendor/megamenu/css/megamenu.css") }}">
+		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/megamenu/css/megamenu.css")}}">
 
 		<!-- Search Filter JS -->
-		<link rel="stylesheet" href="{{ asset("Gmbslagi/vendor/search-filter/search-filter.css") }}">
-		<link rel="stylesheet" href="{{ asset("Gmbslagi/vendor/search-filter/custom-search-filter.css") }}">
-		
+		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/search-filter/search-filter.css")}}">
+		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/search-filter/custom-search-filter.css")}}">
+		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.css") }}" />
 	</head>
 	<body>
-
-		<!-- Loading wrapper start -->
-		<div id="loading-wrapper">
-			<div class="spinner-border"></div>
-			Loading...
-		</div>
-		<!-- Loading wrapper end -->
 
 		<!-- Page wrapper start -->
 		<div class="page-wrapper">
@@ -105,7 +104,7 @@
 															</li>
 															<li>
 																<a href="analytics.html">Analytics</a>
-															</li>															
+															</li>
 															<li>
 																<a href="crm.html">CRM</a>
 															</li>
@@ -136,7 +135,7 @@
 																<a href="layout-scroll-cards.html">Scroll Cards</a>
 															</li>
 														</ul>
-													</li>												
+													</li>
 												</ul>
 											</li>
 
@@ -164,7 +163,7 @@
 															</li>
 															<li>
 																<a href="products-reviews.html">Reviews</a>
-															</li>														
+															</li>
 														</ul>
 													</li>
 
@@ -185,9 +184,9 @@
 															</li>
 															<li>
 																<a href="calendar-selectable.html">Selectable</a>
-															</li>													
+															</li>
 														</ul>
-													</li>												
+													</li>
 												</ul>
 											</li>
 
@@ -216,7 +215,7 @@
 															</li>
 															<li>
 																<a href="forms-layout-six.html">Layout Six with Tabs</a>
-															</li>													
+															</li>
 														</ul>
 													</li>
 
@@ -252,9 +251,9 @@
 															</li>
 															<li>
 																<a href="forms-editor.html">WYSIWYG Editor</a>
-															</li>													
+															</li>
 														</ul>
-													</li>												
+													</li>
 												</ul>
 											</li>
 
@@ -361,9 +360,9 @@
 															</li>
 															<li>
 																<a href="tooltips.html">Tooltips</a>
-															</li>												
+															</li>
 														</ul>
-													</li>												
+													</li>
 												</ul>
 											</li>
 
@@ -383,7 +382,7 @@
 															</li>
 															<li>
 																<a href="vector-maps.html">Vector Maps</a>
-															</li>													
+															</li>
 														</ul>
 													</li>
 
@@ -398,9 +397,9 @@
 															</li>
 															<li>
 																<a href="data-tables.html">Data Tables</a>
-															</li>												
+															</li>
 														</ul>
-													</li>												
+													</li>
 												</ul>
 											</li>
 											
@@ -576,7 +575,7 @@
 								<li class="dropdown">
 									<a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
 										<span class="avatar">
-											<img src="img/user.svg" alt="User Avatar">
+											<img src="{{ asset ("Gmbslagi/img/user.svg")}}" alt="User Avatar">
 											<span class="status busy"></span>
 										</span>
 									</a>
@@ -606,342 +605,169 @@
 
 						<!-- Row start -->
 						<div class="row gutters">
-							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-								<div class="stats-tile">
-									<div class="sale-icon">
-										<i class="icon-shopping-bag1"></i>
-									</div>
-									<div class="sale-details">
-										<h2>25</h2>
-										<p>Products</p>
-									</div>
-									<div class="sale-graph">
-										<div id="sparklineLine1"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-								<div class="stats-tile">
-									<div class="sale-icon">
-										<i class="icon-shopping-bag1"></i>
-									</div>
-									<div class="sale-details">
-										<h2>32</h2>
-										<p>Orders</p>
-									</div>
-									<div class="sale-graph">
-										<div id="sparklineLine2"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-								<div class="stats-tile">
-									<div class="sale-icon">
-										<i class="icon-check-circle"></i>
-									</div>
-									<div class="sale-details">
-										<h2>19</h2>
-										<p>Customers</p>
-									</div>
-									<div class="sale-graph">
-										<div id="sparklineLine3"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Row end -->
+							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 cool-12">
-
-								<div class="card">
+								<!-- Card start -->
+								<div class="card" style="overflow: hidden">
+									<div class="card-header">
+										<div class="card-title"><h3>Perusahaan<button type="button" style="border: none; background:none;">☆</button></h3></div>
+									</div>
 									<div class="card-body">
+										
 										<!-- Row start -->
-										<div class="row gutters">											
-											<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-12">
-												<div class="reports-summary">
-													<div class="reports-summary-block">
-														<h5>Great Sales</h5>
-														<h6>Overall sales of the month</h6>
+										<div class="row gutters">
+
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
+												
+												<div style="border-bottom: solid grey 1px;margin-bottom:1%">
+													<h6>Umum</h6>
+													<p>Informasi ini terlihat dalam rekaman yang Anda buat.</p>
+												</div>
+
+											</div>
+										
+											<div class="d-flex row ">
+											<div class="col-10" >
+											<div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<input class="form-control" type="text" placeholder="Masukan Nama">
+													<div class="field-placeholder">Nama <span class="text-danger">*</span></div>
+													<div class="form-text">
+														Silakan masukkan nama lengkap Anda.
 													</div>
-													<div class="reports-summary-block">
-														<h5>35 Millions</h5>
-														<h6>Overall earnings</h6>
+												</div>
+												<!-- Field wrapper end -->
+											</div>
+												
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<input class="form-control" type="email" placeholder="Masukan Email">
+													<div class="field-placeholder">Email <span class="text-danger">*</span></div>
+													<div class="form-text">
+														Kami tidak akan pernah membagikan email Anda kepada siapa pun.
 													</div>
-													<div class="reports-summary-block">
-														<h5>27 Millions</h5>
-														<h6>Overall revenue</h6>
+													<div class="field-wrapper">
+														<input class="form-control" type="text" placeholder="Masukan Nomor Telepon">
+														<div class="field-placeholder">Telepon</div>
 													</div>
-													<div class="reports-summary-block">
-														<h5>67k</h5>
-														<h6>New customers</h6>
-													</div>
-													<button class="btn btn-secondary stripes-btn">Generate Report</button>
+												<!-- Field wrapper end -->
+												<div class="field-wrapper">
+													<input class="form-control" type="number" placeholder="Masukan Nomor NPWP">
+													<div class="field-placeholder">NPWP</div>
 												</div>
 											</div>
-											<div class="col-xl-9 col-lg-9 col-md-8 col-sm-8 col-12">
-												<div class="row gutters">
-													<div class="col-12">
-														<div class="graph-day-selection mt-2" role="group">
-															<button type="button" class="btn active">Today</button>
-															<button type="button" class="btn">Yesterday</button>
-															<button type="button" class="btn">7 days</button>
-															<button type="button" class="btn">15 days</button>
-															<button type="button" class="btn">30 days</button>
+											</div>
+											<div class="col-2">
+												
+												<!-- Field wrapper start -->
+												<p style="">Logo</p>
+												<div id="dropzone" class="dropzone-wrapper">
+													<form action="#" class="dropzone needsclick dz-clickable" id="demo-upload">
+														<div class="dz-message needsclick">
+															<button type="button" class="dz-button">Drop files here or click to upload.</button><br>
+															
 														</div>
-													</div>
-													<div class="col-12">
-														<div id="salesGraph" class="chart-height-xl"></div>
+													</form>
+													<div id="uploaded-file-name"></div>
+												</div>
+
+
+											</div>
+										</div>
+												<!-- Field wrapper end -->
+										
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												
+												<!-- Field wrapper start -->
+												
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												
+												<!-- Field wrapper start -->
+												
+												<!-- Field wrapper end -->
+
+											</div>
+											
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
+												
+												<div style="border-bottom: solid grey 1px;margin-bottom:1%">
+													<h6>Alamat</h6>
+													<p>Alamat tersebut akan digunakan dalam faktur, tagihan, dan catatan lain yang Anda keluarkan.</p>
+												</div>
+
+											</div>
+											
+
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<textarea class="form-control" rows="2" placeholder="Masukan Alamat"></textarea>
+													<div class="field-placeholder">Alamat <span class="text-danger">*</span></div>
+													<div class="form-text">
+														Silakan masukkan Alamat lengkap Anda.
 													</div>
 												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<input class="form-control" type="text" placeholder="Masukan Kota">
+													<div class="field-placeholder">Kota</div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<input class="form-control" type="number" placeholder="Masukan Kode Pos">
+													<div class="field-placeholder">Kode Pos</div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<input class="form-control" type="text" placeholder="Masukan Provinsi">
+													<div class="field-placeholder">Provinsi</div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												
+												<!-- Field wrapper start -->
+												<div class="field-wrapper">
+													<input class="form-control" type="text" placeholder="Masukan Negara">
+													<div class="field-placeholder">Negara</div>
+												</div>
+												<!-- Field wrapper end -->
+
+											</div>
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-left: 81%">
+												<a href="#" style="margin-right: 4%">Batal</a>
+												<button class="btn btn-primary" style="border-radius: 20px">Simpan</button>
 											</div>
 										</div>
 										<!-- Row end -->
+
 									</div>
 								</div>
+								<!-- Card end -->
 
-							</div>
-						</div>
-						<!-- Row end -->
-
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-
-								<div class="card">
-									<div class="card-header">
-										<div class="card-title">Visitors</div>
-										<div class="graph-day-selection" role="group">
-											<button type="button" class="btn active">Export</button>
-										</div>
-									</div>
-									<div class="card-body">
-										<div id="visitorsGraph" class="chart-height-md"></div>
-
-										<ul class="stats-list-container">
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-calendar1"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">Week 1</h6>
-													<p class="stats-amount">25</p>
-												</div>
-											</li>
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-calendar1"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">Week 2</h6>
-													<p class="stats-amount">32</p>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-
-								<div class="card">
-									<div class="card-header">
-										<div class="card-title">Orders</div>
-										<div class="graph-day-selection" role="group">
-											<button type="button" class="btn active">View All</button>
-										</div>
-									</div>
-									<div class="card-body">
-										<div id="ordersGraph" class="chart-height-md"></div>
-
-										<ul class="stats-list-container">
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-archive1"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">New</h6>
-													<p class="stats-amount">15</p>
-												</div>
-											</li>
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-truck"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">Delivered</h6>
-													<p class="stats-amount">10</p>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-
-								<div class="card">
-									<div class="card-header">
-										<div class="card-title">Earnings</div>
-										<div class="graph-day-selection" role="group">
-											<button type="button" class="btn active">Download</button>
-										</div>
-									</div>
-									<div class="card-body">
-										<div id="earningsGraph" class="chart-height-md"></div>
-
-										<ul class="stats-list-container">
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-briefcase"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">Today</h6>
-													<p class="stats-amount">$25</p>
-												</div>
-											</li>
-											<li class="stats-list-item primary">
-												<div class="stats-icon">
-													<i class="icon-briefcase"></i>
-												</div>
-												<div class="stats-info">
-													<h6 class="stats-title">Yesterday</h6>
-													<p class="stats-amount">$18</p>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						<!-- Row end -->
-
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-								<div class="card">
-									<div class="card-header">
-										<div class="card-title">Recent Orders</div>
-										<div class="graph-day-selection" role="group">
-											<button type="button" class="btn active">Export to Excel</button>
-										</div>
-									</div>
-									<div class="card-body">
-										<div class="table-responsive">
-											<table class="table products-table">
-												<thead>
-													<tr>
-														<th>Order No.</th>
-														<th>Ordered Date</th>
-														<th>Product</th>
-														<th>Delivery Status</th>												
-														<th>Amount</th>
-														<th>Discount</th>
-														<th>Location</th>
-														<th>Est Delivery Date</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>#55589</td>
-														<td>20/11/2020</td>
-														<td>
-															<img class="user" src="img/products/bag.jpg" alt="Product Image">
-														</td>
-														<td>
-															<span class="badge">Moving</span>
-														</td>
-														<td>$385.00</td>
-														<td>30%</td>
-														<td>Los Angeles, California</td>
-														<td>22/11/2020</td>
-													</tr>
-													<tr>
-														<td>#23198</td>
-														<td>23/11/2020</td>												
-														<td>
-															<img class="user" src="img/products/toy.jpg" alt="Product Image">
-														</td>
-														<td>
-															<span class="badge">Shipped</span>
-														</td>
-														<td>$539.00</td>
-														<td>25%</td>
-														<td>Arverne, New York</td>
-														<td>27/11/2020</td>
-													</tr>
-													<tr>
-														<td>#87324</td>
-														<td>26/11/2020</td>												
-														<td>
-															<img class="user" src="img/products/pencils.jpg" alt="Product Image">
-														</td>
-														<td>
-															<span class="badge">Pending</span>
-														</td>
-														<td>$671.00</td>
-														<td>35%</td>
-														<td>Mesquite, Texas</td>
-														<td>29/11/2020</td>
-													</tr>
-													<tr>
-														<td>#65673</td>
-														<td>25/11/2020</td>
-														<td>
-															<img class="user" src="img/products/camera.jpg" alt="Product Image">
-														</td>
-														<td>
-															<span class="badge">Cancelled</span>
-														</td>
-														<td>$490.00</td>
-														<td>21%</td>
-														<td>Hallandale, Florida</td>
-														<td>26/11/2020</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Row end -->
-
-						<!-- Row start -->
-						<div class="row gutters">
-							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-								<div class="goal-container">
-									<div class="goal-info">
-										<h5>Today's Goal</h5>
-										<h6>70/100</h6>
-									</div>
-									<div class="goal-graph">
-										<div id="todaysTarget"></div>
-										<div class="circle-one"></div>
-										<div class="circle-two"></div>
-									</div>
-								</div>
-							</div>							
-							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-								<div class="graph-card">
-									<h6>New Customers</h6>
-									<h4>2500</h4>
-									<div class="graph-placeholder">
-										<div id="customersGraph"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-								<div class="payments-card">
-									<h6>Balance</h6>
-									<h4>$5699.89</h4>
-									<div class="custom-btn-group mt-2">
-										<button class="btn btn-outline-primary"><i class="icon-credit-card"></i>Deposit</button>
-										<button class="btn btn-secondary"><i class="icon-credit-card"></i>Withdraw</button>
-									</div>
-								</div>
 							</div>
 						</div>
 						<!-- Row end -->
@@ -949,7 +775,7 @@
 					</div>
 					<!-- Content wrapper end -->
 
-					<!-- App footer start -->
+					<!-- App Footer start -->
 					<div class="app-footer">© Uni Pro Admin 2021</div>
 					<!-- App footer end -->
 
@@ -968,47 +794,47 @@
 			************ Required JavaScript Files *************
 		************* -->
 		<!-- Required jQuery first, then Bootstrap Bundle JS -->
-		<script src="Gmbslagi/js/jquery.min.js"></script>
-		<script src="Gmbslagi/js/bootstrap.bundle.min.js"></script>
-		<script src="Gmbslagi/js/modernizr.js"></script>
-		<script src="Gmbslagi/js/moment.js"></script>
-		<script src="{{ asset ("Gmbslagi/js/dropdown.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/js/jquery.min.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/js/bootstrap.bundle.min.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/js/modernizr.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/js/moment.js")}}"></script>
 
 		<!-- *************
 			************ Vendor Js Files *************
 		************* -->
-		
-		<!-- Megamenu JS -->
-		<script src="Gmbslagi/vendor/megamenu/js/megamenu.js"></script>
-		<script src="Gmbslagi/vendor/megamenu/js/custom.js"></script>
 
+		<!-- Megamenu JS -->
+		<script src="{{ asset ("Gmbslagi/vendor/megamenu/js/megamenu.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/vendor/megamenu/js/custom.js")}}"></script>
+				
 		<!-- Slimscroll JS -->
-		<script src="Gmbslagi/endor/slimscroll/slimscroll.min.js"></script>
-		<script src="Gmbslagi/vendor/slimscroll/custom-scrollbar.js"></script>
+		<script src="{{ asset ("Gmbslagi/vendor/slimscroll/slimscroll.min.js")}}"></script>
+		<script src="{{ asset ("vvendor/slimscroll/custom-scrollbar.js")}}"></script>
 
 		<!-- Search Filter JS -->
-		<script src="Gmbslagi/vendor/search-filter/search-filter.js"></script>
-		<script src="vendor/search-filter/custom-search-filter.js"></script>
-
-		<!-- Apex Charts -->
-		<script src="Gmbslagi/vendor/apex/apexcharts.min.js"></script>
-		<script src="Gmbslagi/vendor/apex/custom/home/salesGraph.js"></script>
-		<script src="Gmbslagi/vendor/apex/custom/home/ordersGraph.js"></script>
-		<script src="Gmbslagi/vendor/apex/custom/home/earningsGraph.js"></script>
-		<script src="Gmbslagi/vendor/apex/custom/home/visitorsGraph.js"></script>
-		<script src="Gmbslagi/vendor/apex/custom/home/customersGraph.js"></script>
-		<script src="Gmbslagi/vendor/apex/custom/home/sparkline.js"></script>
-
-		<!-- Circleful Charts -->
-		<script src="Gmbslagi/vendor/circliful/circliful.min.js"></script>
-		<script src="vendor/circliful/circliful.custom.js"></script>
+		<script src="{{ asset ("Gmbslagi/vendor/search-filter/search-filter.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/vendor/search-filter/custom-search-filter.js")}}"></script>
 
 		<!-- Main Js Required -->
-		<script src="Gmbslagi/js/main.js"></script>
-
-		
+		<script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
+        <script src="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.js") }}"></script>
+		<script>
+			// Inisialisasi Dropzone
+			Dropzone.autoDiscover = false;
+			var myDropzone = new Dropzone("#demo-upload", {
+				maxFiles: 1, // Hanya boleh mengupload satu file
+				init: function() {
+					this.on("addedfile", function(file) {
+						// Menghapus file sebelumnya saat ada file baru yang diupload
+						if (this.files.length > 1) {
+							this.removeFile(this.files[0]);
+						}
+					});
+				}
+			});
+		</script>
 
 	</body>
 
-<!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:01:19 GMT -->
+<!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/forms-layout-one.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:31 GMT -->
 </html>
