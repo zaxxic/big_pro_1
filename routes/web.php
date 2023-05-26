@@ -11,6 +11,7 @@ use App\Http\Controllers\TransferController;
 use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\CalendarController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\ReportController;
@@ -92,7 +93,8 @@ Route::get('add_invoice', [InvoiceController::class, 'add_invoice'])->name('add_
 //transaksi
 Route::get('/transaksi', [TransaksiController::class, 'transaksi'])->name('transaksi');
 
-
+//company
+Route::get('/company',[CompanyController::class,'company'])->name('company');
 //transfer
 Route::get('/transfer', [TransferController::class, 'transfer'])->name('transfer');
 
