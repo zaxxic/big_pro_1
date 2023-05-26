@@ -117,7 +117,7 @@
 					<div class="sidebar-menu">
 						<ul>
 							<li>
-								<a href="index.html" class="current-page"><i class="icon-briefcase" style=" font-size: 19px;"></i><span>&emsp;Perusahaan</span></a>
+								<a href="{{ url('/company') }}" class="current-page"><i class="icon-briefcase" style=" font-size: 19px;"></i><span>&emsp;Perusahaan</span></a>
 							</li>
 							<li class="mt-3">
 								<a href="analytics.html"><i class="icon-file" style=" font-size: 19px;"></i><span>&emsp;Faktur</span></a>
@@ -126,7 +126,7 @@
 								<a href="sales.html"><i class="icon-mail" style=" font-size: 19px;"></i><span>&emsp;Surel</span></a>
 							</li>
 							<li class="mt-3">
-								<a href="sales.html"><i class="icon-server" style=" font-size: 19px;"></i><span>&emsp;Kategori</span></a>
+								<a href="{{ url('/category') }}"><i class="icon-server" style=" font-size: 19px;"></i><span>&emsp;Kategori</span></a>
 							</li>
 							<!-- <li class="dropdown">
 								<a href="#" class="pem-btn"> Pembelian <span class="fas fa-caret-down first"></span></a>

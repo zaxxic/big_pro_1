@@ -10,6 +10,7 @@ use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\TransferController;
 
 use App\Http\Controllers\CalendarController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ReportController;
 use Illuminate\Support\Facades\Route;
 
@@ -56,7 +57,9 @@ Route::get('edit_pemasok', function () {
 Route::get('icons', function () {
     return view('icons');
 });
-
+//category
+Route::get('/category',[CategoryController::class,'category_index'])->name('index-category');
+Route::get('/add-category',[CategoryController::class,'category_add'])->name('add-category');
 //transaksi
 Route::get('/transaksi', [TransaksiController::class, 'transaksi'])->name('transaksi');
 
