@@ -494,13 +494,53 @@
                                           <div class="accordion-item" style="margin-top: 1%">
                                             <h2 class="accordion-header" id="headingTwo">
                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    2. I want to sell my items - what are the steps?
+                                                  <div class="accordion-heading">
+                                                    <h6 class="accordion-title">Opsi Lanjutan</h6>
+                                                    <p class="accordion-description">Pilih kategori, tambahkan, atau edit footer, dan tambahkan lampiran ke invoice-recurring.</p>
+                                                  </div>
                                                 </button>
                                             </h2>
                                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                                                <div class="accordion-body">
-                                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                              <div class="accordion-body">
+                                                <div class="d-flex row">
+                                                  <div class="col-4">
+                                                    <div class="flex-grow-0 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-8">
+                                                      <div id="dropzone" style="width: 300px; height:300px">
+                                                        <label for="subjudul" class="field-label">Lampiran<span class="text-danger">*</span></label>
+                                                        <form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload" style="margin-right: 10%">
+                                                          <div class="dz-message needsclick">
+                                                            <button type="button" class="dz-button">Pilih berkas di sini untuk mengunggah.</button><br>
+                                                          </div>
+                                                        </form>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-8">
+                                                    <div class="d-flex align-items-center">
+                                                      <div class="flex-grow-1 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-8" style="margin-bottom: 15%">
+                                                        <select id="dropdown2" class="demo-code-language" placeholder="Select a language..." autocomplete="off">
+                                                          <option value="txt">Text</option>
+                                                          <option value="md">Markdown</option>
+                                                          <option value="html">HTML</option>
+                                                          <option value="php">PHP</option>
+                                                          <option value="python">Python</option>
+                                                          <option value="java">Java</option>
+                                                          <option value="js" selected>JavaScript</option>
+                                                          <option value="c#">Ruby</option>
+                                                          <option value="c#">VHDL</option>
+                                                          <option value="c#">Verilog</option>
+                                                          <option value="c#">C#</option>
+                                                          <option value="c++">C/C++</option>
+                                                        </select>
+                                                        <div class="field-wrapper">
+                                                          <label for="judul" class="field-label">Footer <span class="text-danger">*</span></label>
+                                                          <textarea class="form-control" placeholder="Masukan Catatan" rows="2"></textarea>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
                                                 </div>
+                                              </div>
                                             </div>
                                         </div>
 
@@ -651,6 +691,17 @@
         $('#drop-amount').remove()
         $('#drop-delete').remove()
       })
+    </script>
+    <script>
+      new TomSelect('#dropdown2',{
+      sortField: 'text',
+      hideSelected: false,
+      plugins: {
+        'dropdown_header': {
+          title: 'Language'
+        }
+      }
+    });
     </script>
 
 	</body>
