@@ -102,7 +102,6 @@ Route::get('/add_transfer', [TransferController::class, 'add_transfer'])->name('
 Route::get('/edit_transfer', [TransferController::class, 'edit_transfer'])->name('edit_transfer');
 Route::get('/show_transfer', [TransferController::class, 'show_transfer'])->name('show_transfer');
 
-    return view('pembelian.pembelian_edit_pemasok');
 
 Route::get('/laporan',[LaporanController::class, 'laporan'])->name('laporan');
 //category
