@@ -100,7 +100,8 @@
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 					<div class="login-wrapper">
-						<form action="https://www.kodingwife.com/demos/unipro/v1-x/05-design-violet/crm.html">
+						<form action="{{ route('register_store') }}" method="POST">
+							@csrf
 							<div class="login-screen">
 								<div class="login-body">
 									<a href="crm.html" class="login-logo">
@@ -108,19 +109,44 @@
 									</a>
 									<h6>Selamat Datang,<br>Login dan mulai manajemen keuangan anda</h6>
 									<div class="field-wrapper">
-										<input type="text" placeholder="Masukan nama anda" autofocus>
+										<input id="name" type="text"
+                                            class="form-control @error('name') is-invalid @enderror" name="name"
+                                            value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Masukan Nama">
+
+                                        @error('name')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+
 										<div class="field-placeholder">Nama</div>
 									</div>
 									<div class="field-wrapper">
-										<input type="email" placeholder="Masukan email anda" autofocus>
-										<div class="field-placeholder">Email</div>
+
+                                        <input id="email" placeholder="Masukan Email" type="email"
+                                            class="form-control @error('email') is-invalid @enderror" name="email"
+                                            value="{{ old('email') }}" required autocomplete="email">
+
+                                        @error('email')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror										<div class="field-placeholder">Email</div>
 									</div>
 									<div class="field-wrapper">
-										<input type="password" placeholder="Masukan kata kunci" autofocus>
+										 <input placeholder="Masukan Katasandi" id="password" type="password"
+                                            class="form-control @error('password') is-invalid @enderror"
+                                            name="password" required autocomplete="new-password">
+
+                                        @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
 										<div class="field-placeholder">Kata Kunci</div>
 									</div>
 									<div class="field-wrapper mb-3">
-										<input type="password" placeholder="Konfirmasi kata kunci">
+										<input type="password" name="password_confirmation" placeholder="Konfirmasi kata kunci">
 										<div class="field-placeholder">Konfirmasi Kata Kunci</div>
 									</div>
 									<div class="actions">

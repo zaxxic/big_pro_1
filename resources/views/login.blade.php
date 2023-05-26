@@ -45,7 +45,7 @@
 		************* -->
 		<div class="login-container">
 
-			<div class="container-fluid h-100"  style="overflow: hidden">
+			<div class="container-fluid h-100 row"  style="overflow: hidden">
 			
 			<!-- Row start -->
 			<div class="row g-0 h-100">

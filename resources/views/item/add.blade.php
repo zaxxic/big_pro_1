@@ -77,7 +77,7 @@ label{
 
         .label {
             margin-right: 20px;
-        }
+            }
 
         .toggle-checkbox {
   display: none;

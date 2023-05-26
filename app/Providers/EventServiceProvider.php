@@ -26,6 +26,9 @@ class EventServiceProvider extends ServiceProvider
     public function boot(): void
     {
         //
+        Event::listen(Registered::class, function ($event) {
+            $event->user->sendEmailVerificationNotification();
+        });
     }
 
     /**

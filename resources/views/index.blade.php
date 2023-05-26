@@ -140,6 +140,7 @@
     <script src="{{ asset("Gmbslagi/js/moment.js") }}"></script>
     <script src="{{ asset("Gmbslagi/js/dropdown.js") }}"></script>
 
+
     <!-- *************
 			************ Vendor Js Files *************
 		************* -->
@@ -176,6 +177,9 @@
     <script src="{{ asset("Gmbslagi/js/main.js") }}"></script>
 
 </body>
+
+
+	</body>
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:01:19 GMT -->
 
