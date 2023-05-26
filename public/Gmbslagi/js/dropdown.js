@@ -12,46 +12,46 @@
 // 			console.log(selectedOption)
 // 		})
 // 	})
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var droprow = document.getElementsByClassName("droprow");
-var click = document.getElementsByClassName(dropdown, droprow);
-var i;
+// var dropdown = document.getElementsByClassName("dropdown-btn");
+// var droprow = document.getElementsByClassName("droprow");
+// var click = document.getElementsByClassName(dropdown, droprow);
+// var i;
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+// for (i = 0; i < dropdown.length; i++) {
+//   dropdown[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
     
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
+//     var dropdownContent = this.nextElementSibling;
+//     if (dropdownContent.style.display === "block") {
+//       dropdownContent.style.display = "none";
+//     } else {
+//       dropdownContent.style.display = "block";
+//     }
    
-  });
+//   });
 
-  droprow[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    this.classList.toggle("rotate");
-  });
+//   droprow[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     this.classList.toggle("rotate");
+//   });
 
-  function switchPage() {
-    var dropdown = document.getElementById("myDropdown");
-    var selectedValue = dropdown.value;
+//   function switchPage() {
+//     var dropdown = document.getElementById("myDropdown");
+//     var selectedValue = dropdown.value;
     
-    if (selectedValue !== "") {
-      window.location.href = selectedValue;
-    }
-  }
+//     if (selectedValue !== "") {
+//       window.location.href = selectedValue;
+//     }
+//   }
   
-  function openModal(modalText) {
-    document.getElementById("modalText").innerText = modalText;
-    document.getElementById("myModal").style.display = "block";
-  }
+//   function openModal(modalText) {
+//     document.getElementById("modalText").innerText = modalText;
+//     document.getElementById("myModal").style.display = "block";
+//   }
 
-  function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-  }
+//   function closeModal() {
+//     document.getElementById("myModal").style.display = "none";
+//   }
 
 
 }

@@ -1,17 +1,14 @@
 <?php
 
-use App\Http\Controllers\CompanyController;
-
-
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ItemController;
 use Faker\Guesser\Name;
 
 use App\Http\Controllers\TransaksiController;
+use App\Http\Controllers\TransactionsController;
 use App\Http\Controllers\TransferController;
 
-use App\Http\Controllers\CalendarController;
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\ReportController;
+use App\Http\Controllers\LaporanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,9 +21,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
 
-Route::get('/', function () {
-    return view('index');
+
+Route::get('kalender', function () {
+    return view('kalender');
 });
 Route::get('login', function () {
     return view('login');
@@ -37,13 +36,8 @@ Route::get('register', function () {
 Route::get('reset_password', function () {
     return view('reset_password');
 });
-//Item
 Route::get('/itemindex',[ItemController::class,'itemindex'])->Name('item-index');
-Route::get('/add-item',[ItemController::class,'additem'])->Name('item-add');
-
-//perusahaan
-Route::get('/company',[CompanyController::class,'company'])->Name('company-index');
-
+Route::get('/tambah-item',[ItemController::class,'tambahitem'])->Name('item-tambah  ');
 Route::get('pembelian_pemasok', function () {
     return view('pembelian.pembelian_pemasok');
 });
@@ -57,25 +51,36 @@ Route::get('edit_pemasok', function () {
 Route::get('icons', function () {
     return view('icons');
 });
-//category
-Route::get('/category',[CategoryController::class,'category_index'])->name('index-category');
-Route::get('/add-category',[CategoryController::class,'category_add'])->name('add-category');
-//transaksi
-Route::get('/transaksi', [TransaksiController::class, 'transaksi'])->name('transaksi');
 
-Route::get('/add_pendapatan', [TransaksiController::class, 'add_pendapatan'])->name('add_pendapatan');
-//transaksi berulang
-Route::get('/transaksi_berulang', [TransaksiController::class, 'transaksi_berulang'])->name('transaksi_berulang');
+//transactions
+Route::get('/transactions', [TransactionsController::class, 'transactions'])->name('transactions');
+
+Route::get('/add_income', [TransactionsController::class, 'add_income'])->name('add_income');
+Route::get('/edit_income', [TransactionsController::class, 'edit_income'])->name('edit_income');
+Route::get('/show_income', [TransactionsController::class, 'show_income'])->name('show_income');
+
+Route::get('/add_expenditure', [TransactionsController::class, 'add_expenditure'])->name('add_expenditure');
+Route::get('/edit_expenditure', [TransactionsController::class, 'edit_expenditure'])->name('edit_expenditure');
+Route::get('/show_expenditure', [TransactionsController::class, 'show_expenditure'])->name('show_expenditure');
+//recurring transactions 
+Route::get('/recurring_transactions', [TransactionsController::class, 'recurring_transactions'])->name('recurring_transactions');
+
+Route::get('/add_recurring_income', [TransactionsController::class, 'add_recurring_income'])->name('add_recurring_income');
+Route::get('/edit_recurring_income', [TransactionsController::class, 'edit_recurring_income'])->name('edit_recurring_income');
+Route::get('/show_recurring_income', [TransactionsController::class, 'show_recurring_income'])->name('show_recurring_income');
+
+Route::get('/add_recurring_expenditure', [TransactionsController::class, 'add_recurring_expenditure'])->name('add_recurring_expenditure');
+Route::get('/edit_recurring_expenditure', [TransactionsController::class, 'edit_recurring_expenditure'])->name('edit_recurring_expenditure');
+Route::get('/show_recurring_expenditure', [TransactionsController::class, 'show_recurring_expenditure'])->name('show_recurring_expenditure');
+
 
 //transfer
 Route::get('/transfer', [TransferController::class, 'transfer'])->name('transfer');
 
+Route::get('/add_transfer', [TransferController::class, 'add_transfer'])->name('add_transfer');
+Route::get('/edit_transfer', [TransferController::class, 'edit_transfer'])->name('edit_transfer');
+Route::get('/show_transfer', [TransferController::class, 'show_transfer'])->name('show_transfer');
+
     return view('pembelian.pembelian_edit_pemasok');
 
-
-
-//laporan
-Route::get('/report',[ReportController::class, 'report'])->name('report');
-
-//calendar
-Route::get('/calendar',[CalendarController::class, 'calendar'])->name('calendar');
+Route::get('/laporan',[LaporanController::class, 'laporan'])->name('laporan');

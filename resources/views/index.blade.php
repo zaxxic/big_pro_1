@@ -972,7 +972,7 @@
 		<script src="Gmbslagi/js/bootstrap.bundle.min.js"></script>
 		<script src="Gmbslagi/js/modernizr.js"></script>
 		<script src="Gmbslagi/js/moment.js"></script>
-		<script src="Gmbslagi/js/dropdown.js"></script>
+		<script src="{{ asset ("Gmbslagi/js/dropdown.js")}}"></script>
 
 		<!-- *************
 			************ Vendor Js Files *************
@@ -1005,6 +1005,8 @@
 
 		<!-- Main Js Required -->
 		<script src="Gmbslagi/js/main.js"></script>
+
+		
 
 	</body>
 
