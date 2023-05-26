@@ -9207,6 +9207,9 @@ label {
 }
 
 
+/* .modal-backdrop.show {
+    opacity: .7;
+} */
 
 .btn-close {
     color: #ffffff;

@@ -11,8 +11,10 @@ use App\Http\Controllers\TransferController;
 use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\CalendarController;
 use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\ReportController;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\ReportController;
+use App\Http\Controllers\SupplierController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -51,6 +53,12 @@ Route::get('tambah_pemasok', function () {
 Route::get('edit_pemasok', function () {
     return view('pembelian_edit_pemasok');
 });
+Route::get('/add-item',[ItemController::class,'additem'])->Name('item-add');
+
+//perusahaan
+Route::get('supplier', [SupplierController::class, 'supplier'])->name('supplier');
+Route::get('add_supplier', [SupplierController::class, 'add'])->name('add_supplier');
+Route::get('edit_supplier', [SupplierController::class, 'edit'])->name('edit_supplier');
 
 Route::get('icons', function () {
     return view('icons');
@@ -76,6 +84,13 @@ Route::get('/show_recurring_income', [TransactionsController::class, 'show_recur
 Route::get('/add_recurring_expenditure', [TransactionsController::class, 'add_recurring_expenditure'])->name('add_recurring_expenditure');
 Route::get('/edit_recurring_expenditure', [TransactionsController::class, 'edit_recurring_expenditure'])->name('edit_recurring_expenditure');
 Route::get('/show_recurring_expenditure', [TransactionsController::class, 'show_recurring_expenditure'])->name('show_recurring_expenditure');
+//invoice
+Route::get('invoice', [InvoiceController::class, 'invoice'])->name('invoice');
+Route::get('recurring_invoice', [InvoiceController::class, 'recurring_invoice'])->name('recurring_invoice');
+Route::get('add_invoice', [InvoiceController::class, 'add_invoice'])->name('add_invoice');
+
+//transaksi
+Route::get('/transaksi', [TransaksiController::class, 'transaksi'])->name('transaksi');
 
 
 //transfer
@@ -92,6 +107,7 @@ Route::get('/laporan',[LaporanController::class, 'laporan'])->name('laporan');
 Route::get('/category',[CategoryController::class,'category_index'])->name('index-category');
 Route::get('/add-category',[CategoryController::class,'category_add'])->name('add-category');
 
+
 //laporan
 Route::get('/report',[ReportController::class, 'report'])->name('report');
 
@@ -107,3 +123,4 @@ Route::get('transaksi', function () {
 //Users
 Route::get('/user',[UsersController::class,'usersindex'])->name('users-index');
 Route::get('/user-add',[UsersController::class,'usersadd'])->name('users-add');
+// Route::get('invoice', )

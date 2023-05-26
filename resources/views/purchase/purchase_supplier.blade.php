@@ -173,19 +173,23 @@
                                 <!-- Card start -->
                                 <div class="card">
                                     <div class="card-header">
-                                        <div class="card-title"><h3>Pemasok<button type="button" style="border: none; background:none;">☆</button></h3></div>
+                                        <div class="card-title"><h3>Pemasok<button type="button" style="border: none; background:transparent;">☆</button></h3></div>
                                         <div class="graph-day-selection" role="group" style="margin-left: 65%">
-											<a href="{{url('tambah_pemasok')}}">
-											<button type="button" class="btn active">Tambah Pemasok</button>
+											<a href="{{url('add_supplier')}}">
+											<button type="button" class="btn active" style="background: transparent">Tambah Pemasok</button>
 											</a>
 										</div>
 										<div class="dropdown icon-dots-three-vertical">
 											<span></span>
 											<div class="dropdown-content">
-												<button type="button" style="border: none; background-color: white; color:#333" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
+												<a href="#">
+												<button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
 													Impor
 												</button>
-												<a href="#" class="icon-folder" style="color: #333"> Ekspor</a>
+												</a>
+												<a href="#" class="icon-folder" style="color: #333">
+												<button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
+												</a>
 											</div>
 										</div>     
                                     </div>
@@ -264,7 +268,7 @@
                                                     <td>N/A</td>
 													<td>
 														<div class="menu-icons" style="font-size: 15px;">
-															<a href="{{url('edit_pemasok')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
+															<a href="{{url('edit_supplier')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
 															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 															<a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
 														  </div>
@@ -280,7 +284,7 @@
                                                     <td>N/A</td>
 													<td>
 														<div class="menu-icons" style="font-size: 15px;">
-															<a href="{{url('edit_pemasok')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
+															<a href="{{url('edit_supplier')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
 															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 															<a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
 														  </div>
@@ -297,7 +301,7 @@
                                                     <td>N/A</td>
 													<td>
 														<div class="menu-icons" style="font-size: 15px;">
-															<a href="{{url('edit_pemasok')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
+															<a href="{{url('edit_supplier')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
 															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 															<a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
 														  </div>
@@ -312,7 +316,7 @@
                                                     <td>N/A</td>
 													<td>
 														<div class="menu-icons" style="font-size: 15px;">
-															<a href="{{url('edit_pemasok')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
+															<a href="{{url('edit_supplier')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
 															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 															<a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
 														  </div>
@@ -327,7 +331,7 @@
                                                     <td>N/A</td>
 													<td>
 														<div class="menu-icons" style="font-size: 15px;">
-															<a href="{{url('edit_pemasok')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
+															<a href="{{url('edit_supplier')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
 															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 															<a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
 														  </div>
@@ -361,34 +365,34 @@
                                                 </div>
                                             </div>
 								<!-- Card end -->
-                                        </div>
-												<!-- Modal start -->
-												<div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
-													<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-														<div class="modal-content">
-															<div class="modal-header">
-																<h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Impor Pemasok</h5>
-																<button type="button" class="btn-close" onclick="window.location.reload()" data-bs-dismiss="modal" aria-label="Close"></button>
-															</div>
-															<div class="modal-body">
-																<div id="dropzone">
-																	<form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
-				
-																		<div class="dz-message needsclick">
-																			<button type="button" class="dz-button" style="border:none; margin-right:20%; margin-left:20%; margin-top: 12%">Pilih berkas di sini untuk mengunggah.</button><br>
-																		</div>
-				
-																	</form>
+									</div>
+										<!-- Modal start -->
+										<div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Impor Pemasok</h5>
+														<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+													</div>
+													<div class="modal-body">
+														<div id="dropzone">
+															<form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
+
+																<div class="dz-message needsclick">
+																	<button type="button" class="dz-button" style="border:none; margin-right:20%; margin-left:20%; margin-top: 12%">Pilih berkas di sini untuk mengunggah.</button><br>
 																</div>
-															</div>
-															<div class="modal-footer" style="margin-top:2%">
-																<a href="" onclick="window.location.reload()" style="margin-right: 2%" data-bs-dismiss="modal">Batal</a>
-																<button type="button" class="btn btn-primary" style="border-radius: 20px">Upload</button>
-															</div>
+
+															</form>
 														</div>
 													</div>
+													<div class="modal-footer" style="margin-top:2%">
+														<a href="" onclick="window.location.reload()" style="margin-right: 2%" data-bs-dismiss="modal">Batal</a>
+														<button type="button" class="btn btn-primary" style="border-radius: 20px">Upload</button>
+													</div>
 												</div>
-												<!-- Modal end -->
+											</div>
+										</div>
+										<!-- Modal end -->
                                     </div>
                                 </div>
                                 <!-- Card end -->
@@ -412,7 +416,7 @@
 				************ Main container end *************
 			************* -->
 
-		</divkolaja>
+		</div>
 		<!-- Page wrapper end -->
 
 		<!-- *************
@@ -493,6 +497,21 @@
 		}
 
 		</script>
+		<script>
+            // Inisialisasi Dropzone
+            Dropzone.autoDiscover = false;
+            var myDropzone = new Dropzone("#demo-upload", {
+                maxFiles: 1, // Hanya boleh mengupload satu file
+                init: function() {
+                    this.on("addedfile", function(file) {
+                        // Menghapus file sebelumnya saat ada file baru yang diupload
+                        if (this.files.length > 1) {
+                            this.removeFile(this.files[0]);
+                        }
+                    });
+                }
+            });
+        </script>
 
 	</body>
 
