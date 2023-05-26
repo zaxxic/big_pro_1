@@ -723,7 +723,7 @@
                                     <div class="card-header">
                                         <div class="card-title"><h3>Item<button type="button" style="border: none; background:none;">☆</button></h3></div>
                                         <div class="graph-day-selection" role="group" style="margin-left: 60%">
-											<a href="{{Route('item-tambah')}}">
+											<a href="{{url('/add-item')}}">
 											<button type="button" class="btn active">Tambah item</button>
 											</a>
 										</div>

@@ -12,6 +12,6 @@ class ItemController extends Controller
     }
     public function additem()
     {
-      return view('item.addd');
+      return view('item.add');
     }
 }
