@@ -18,4 +18,14 @@ class InvoiceController extends Controller
     {
         return view('invoice.sale_add_invoice');
     }
+    
+    public function costumers()
+    {
+        return view('invoice.costumers');
+    }
+
+    public function add_cos()
+    {
+        return view('invoice.add_costumers');
+    }
 }
