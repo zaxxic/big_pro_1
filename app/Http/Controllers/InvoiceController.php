@@ -21,11 +21,11 @@ class InvoiceController extends Controller
     
     public function costumers()
     {
-        return view('invoice.costumers');
+        return view('sale.costumers');
     }
 
     public function add_cos()
     {
-        return view('invoice.add_costumers');
+        return view('sale.add_costumers');
     }
 }

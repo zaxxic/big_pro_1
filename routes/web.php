@@ -90,7 +90,7 @@ Route::get('/show_recurring_expenditure', [TransactionsController::class, 'show_
 Route::get('invoice', [InvoiceController::class, 'invoice'])->name('invoice');
 Route::get('recurring_invoice', [InvoiceController::class, 'recurring_invoice'])->name('recurring_invoice');
 Route::get('add_invoice', [InvoiceController::class, 'add_invoice'])->name('add_invoice');
-Route::get('costumers', [InvoiceController::class, 'costumers'])->name('costumers');
+Route::get('costumer', [InvoiceController::class, 'costumers'])->name('costumers');
 Route::get('add_costumers', [InvoiceController::class, 'add_cos'])->name('add_costumers');
 
 
