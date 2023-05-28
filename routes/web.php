@@ -10,8 +10,8 @@ use App\Http\Controllers\TransferController;
 
 use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\CalendarController;
-use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\ReportController;
@@ -37,10 +37,9 @@ Route::get('kalender', function () {
 Route::get('login', function () {
     return view('login');
 });
-
-Route::get('/register',[RegisterController::class,'index'])->Name('register-index');
-Route::post('/register',[RegisterController::class,'store'])->Name('register_store');
-
+Route::get('register', function () {
+    return view('register');
+});
 Route::get('reset_password', function () {
     return view('reset_password');
 });
@@ -98,7 +97,8 @@ Route::get('add_costumers', [InvoiceController::class, 'add_cos'])->name('add_co
 //transaksi
 Route::get('/transaksi', [TransaksiController::class, 'transaksi'])->name('transaksi');
 
-
+//company
+Route::get('/company',[CompanyController::class,'company'])->name('company');
 //transfer
 Route::get('/transfer', [TransferController::class, 'transfer'])->name('transfer');
 
@@ -106,6 +106,7 @@ Route::get('/add_transfer', [TransferController::class, 'add_transfer'])->name('
 Route::get('/edit_transfer', [TransferController::class, 'edit_transfer'])->name('edit_transfer');
 Route::get('/show_transfer', [TransferController::class, 'show_transfer'])->name('show_transfer');
 
+ 
 
 Route::get('/laporan',[LaporanController::class, 'laporan'])->name('laporan');
 //category

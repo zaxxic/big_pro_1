@@ -165,7 +165,6 @@
                                     <!-- Field wrapper start -->
                                     <div class="field-wrapper">
 										<div class="field-placeholder">Induk Kategori <span class="text-danger">*</span></div>
-
                                         <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?">
 											<option>Deposit</option>
 											<option>penjualan</option>
@@ -176,10 +175,13 @@
 
                                 </div>
 
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-left: 81%">
-                                    <a href="#" style="margin-right: 4%">Batal</a>
-                                    <button class="btn btn-primary" type="submit" style="border-radius: 20px">Simpan</button>
-                                </div>
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+									<div class="d-flex justify-content-end mt-4">
+										<a href="#" class="mt-3" style="margin-right: 1%">Batal</a>
+										<button class="btn btn-primary" type="submit" style="border-radius: 20px">Simpan</button>
+									</div>
+								</div>
+								
                             </div>
                             <!-- Row end -->
 						</form>
