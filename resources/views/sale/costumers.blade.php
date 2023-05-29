@@ -271,9 +271,9 @@
                                                     <td>N/A</td>
 													<td>
 														<div class="menu-icons" style="font-size: 15px;">
-															<a href="{{url('edit_supplier')}}" class="menu-icon edit-icon"><i class="icon-edit"></i></a>
-															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-															<a href="#" class="menu-icon view-icon"><i class="icon-eye"></i></a>
+															<a href="{{url('edit_supplier')}}" class="menu-icon edit-icon"><i class="icon-edit" style="color: rgb(229, 134, 0)"></i></a>
+															<a href="#" class="menu-icon delete-icon"><i class="icon-trash" style="color: rgb(255, 0, 0)"></i></a>
+															<a href="#" class="menu-icon view-icon"><i class="icon-eye" style="color: rgb(77, 77, 247)"></i></a>
 														  </div>
 													</td>	
                                                     </a>

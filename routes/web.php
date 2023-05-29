@@ -7,6 +7,7 @@ use Faker\Guesser\Name;
 use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\TransactionsController;
 use App\Http\Controllers\TransferController;
+use App\Http\Controllers\CostumersController;
 
 use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\CalendarController;
@@ -90,8 +91,10 @@ Route::get('/show_recurring_expenditure', [TransactionsController::class, 'show_
 Route::get('invoice', [InvoiceController::class, 'invoice'])->name('invoice');
 Route::get('recurring_invoice', [InvoiceController::class, 'recurring_invoice'])->name('recurring_invoice');
 Route::get('add_invoice', [InvoiceController::class, 'add_invoice'])->name('add_invoice');
-Route::get('costumer', [InvoiceController::class, 'costumers'])->name('costumers');
-Route::get('add_costumers', [InvoiceController::class, 'add_cos'])->name('add_costumers');
+//costumers
+Route::get('costumer', [CostumersController::class, 'costumers'])->name('costumers');
+Route::get('add_costumers', [CostumersController::class, 'add_cos'])->name('add_costumers');
+Route::get('show_cos', [CostumersController::class, 'show_cos'])->name('show_costumers');
 
 
 //transaksi
