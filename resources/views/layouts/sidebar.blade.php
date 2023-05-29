@@ -145,10 +145,10 @@
 								</ul>
 							</li>	 -->
 							<li class="mt-3">
-								<a href="reports.html"><i class="icon-local_atm" style=" font-size: 19px;"></i><span>&emsp;Mata Uang</span></a>
+								<a href="{{ route('currency') }}"><i class="icon-local_atm" style=" font-size: 19px;"></i><span>&emsp;Mata Uang</span></a>
 							</li>
 							<li class="mt-3">
-								<a href="saas.html"><i class="icon-line-graph" style=" font-size: 19px;"></i><span>&emsp;Pajak</span></a>
+								<a href="{{ route('tax') }}"><i class="icon-line-graph" style=" font-size: 19px;"></i><span>&emsp;Pajak</span></a>
 							</li>
 							<li class="mt-3">
 								<a href="saas.html"><i class="icon-wifi" style=" font-size: 19px;"></i><span>&emsp;IP Wifi</span></a>

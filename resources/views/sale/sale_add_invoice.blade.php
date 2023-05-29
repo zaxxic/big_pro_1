@@ -154,7 +154,7 @@
 					
 					<!-- Row start -->
 					<div class="row gutters">
-						
+						@include('layouts.header')
 
 					</div>
 					<!-- Row end -->					
