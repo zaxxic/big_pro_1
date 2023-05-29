@@ -683,6 +683,12 @@ p {
   background: rgba(255, 255, 255, 0.5);
 }
 
+.sidebar-menu ul li a.drop-icon{
+    /* background-size: auto; */
+    background-color: #ffffff;
+    color: #5957b1;
+}
+
 .sidebar-menu ul li a.current-page {
     color: #5957b1;
     background: #ffffff;

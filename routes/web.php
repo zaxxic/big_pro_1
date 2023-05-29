@@ -7,6 +7,7 @@ use Faker\Guesser\Name;
 use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\TransactionsController;
 use App\Http\Controllers\TransferController;
+use App\Http\Controllers\AccountController;
 
 use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\CalendarController;
@@ -15,9 +16,11 @@ use App\Http\Controllers\EditEmailController;
 use App\Http\Controllers\Show_reportController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\ReportController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SupplierController;
 use Illuminate\Support\Facades\Route;
 
@@ -40,18 +43,18 @@ Route::get('kalender', function () {
 Route::get('login', function () {
     return view('login');
 });
-
-Route::get('/register',[RegisterController::class,'index'])->Name('register-index');
-Route::post('/register',[RegisterController::class,'store'])->Name('register_store');
-
+Route::get('register', function () {
+    return view('register');
+});
+Route::get('register', function () {
+    return view('register');
+});
 Route::get('reset_password', function () {
     return view('reset_password');
 });
 Route::get('/itemindex',[ItemController::class,'itemindex'])->Name('item-index');
-Route::get('/tambah-item',[ItemController::class,'tambahitem'])->Name('item-tambah  ');
-Route::get('pembelian_pemasok', function () {
-    return view('pembelian.pembelian_pemasok');
-});
+Route::get('/tambah-item',[ItemController::class,'tambahitem'])->Name('item-tambah');
+
 Route::get('tambah_pemasok', function () {
     return view('pembelian.pembelian_tambah_pemasok');
 });
@@ -89,15 +92,28 @@ Route::get('/show_recurring_income', [TransactionsController::class, 'show_recur
 Route::get('/add_recurring_expenditure', [TransactionsController::class, 'add_recurring_expenditure'])->name('add_recurring_expenditure');
 Route::get('/edit_recurring_expenditure', [TransactionsController::class, 'edit_recurring_expenditure'])->name('edit_recurring_expenditure');
 Route::get('/show_recurring_expenditure', [TransactionsController::class, 'show_recurring_expenditure'])->name('show_recurring_expenditure');
-//invoice
+
+//selling
 Route::get('invoice', [InvoiceController::class, 'invoice'])->name('invoice');
 Route::get('recurring_invoice', [InvoiceController::class, 'recurring_invoice'])->name('recurring_invoice');
 Route::get('add_invoice', [InvoiceController::class, 'add_invoice'])->name('add_invoice');
+Route::get('costumer', [InvoiceController::class, 'costumers'])->name('costumers');
+Route::get('add_costumers', [InvoiceController::class, 'add_cos'])->name('add_costumers');
+
+Route::get('costumer', [InvoiceController::class, 'costumers'])->name('costumers');
+Route::get('add_costumers', [InvoiceController::class, 'add_cos'])->name('add_costumers');
+
+//role
+Route::get('/role', [RoleController::class, 'index'])->name('role');
+
+Route::get('/add_role', [RoleController::class, 'add_role'])->name('add_role');
+Route::get('/edit_role', [RoleController::class, 'edit_role'])->name('edit_role');
 
 //transaksi
 Route::get('/transaksi', [TransaksiController::class, 'transaksi'])->name('transaksi');
 
-
+//company
+Route::get('/company',[CompanyController::class,'company'])->name('company');
 //transfer
 Route::get('/transfer', [TransferController::class, 'transfer'])->name('transfer');
 
@@ -106,6 +122,17 @@ Route::get('/add_transfer', [TransferController::class, 'add_transfer'])->name('
 Route::get('/edit_transfer', [TransferController::class, 'edit_transfer'])->name('edit_transfer');
 Route::get('/show_transfer', [TransferController::class, 'show_transfer'])->name('show_transfer');
 
+//account
+Route::get('/account', [AccountController::class, 'index'])->name('account');
+
+Route::get('/add_account', [AccountController::class, 'add_account'])->name('add_account');
+Route::get('/edit_account', [AccountController::class, 'edit_account'])->name('edit_account');
+Route::get('/show_account1', [AccountController::class, 'show_account1'])->name('show_account1');
+Route::get('/show_account2', [AccountController::class, 'show_account2'])->name('show_account2');
+
+    // return view('pembelian.pembelian_edit_pemasok');
+
+ 
 
 Route::get('/laporan',[LaporanController::class, 'laporan'])->name('laporan');
 //category
@@ -131,6 +158,6 @@ Route::get('transaksi', function () {
     return view('transaksi');
 });
 //Users
-Route::get('/user',[UsersController::class,'usersindex'])->name('users-index');
+Route::get('/users',[UsersController::class,'usersindex'])->name('users-index');
 Route::get('/user-add',[UsersController::class,'usersadd'])->name('users-add');
 // Route::get('invoice', )

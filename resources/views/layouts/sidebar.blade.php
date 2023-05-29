@@ -84,11 +84,11 @@
 								</ul>
 							</li>
 							<li class="mt-3">
-								<a href="#" class="dropdown-btn {{ request()->routeIs('transactions') || request()->routeIs('transfer') || request()->routeIs('account') ? 'current-page' : '' }}"><i class="icon-attach_money" style="font-size: 19px;"></i><span>&emsp;Perbankan</span><i class="icon-chevron-down1 droprow"></i></a>
+								<a href="#" class="dropdown-btn {{ request()->routeIs('transactions') || request()->routeIs('transfer') || request()->routeIs('add_account') || request()->routeIs('account') ? 'current-page' : '' }}"><i class="icon-attach_money" style="font-size: 19px;"></i><span>&emsp;Perbankan</span><i class="icon-chevron-down1 droprow"></i></a>
 								<ul class="dropdown-container">
-									<li class="mt-2"><a href="" class="{{ request()->routeIs('account') ? 'apexcharts-legend-marker' : '' }}"><span style="margin-left: 20px;">&emsp;Akun</span></a></li>
-									<li class="mt-2"><a href="{{url('transactions')}}" class="{{ request()->routeIs('transactions') ? 'apexcharts-legend-marker' : '' }}"><span style="margin-left: 20px;">&emsp;Transaksi</span></a></li>
-									<li class="mt-2"><a href="{{url('transfer')}}" class="{{ request()->routeIs('transfer') ? 'apexcharts-legend-marker' : '' }}"><span style="margin-left: 20px;">&emsp;Transfer</span></a></li>
+									<li class="mt-2"><a href="{{url('account')}}" class="{{ request()->routeIs('account') ? 'drop-icon' : '' }}"><span style="margin-left: 20px;"><i class="icon-stop"></i>&emsp;Akun</span></a></li>
+									<li class="mt-2"><a href="{{url('transactions')}}" class="{{ request()->routeIs('transactions') ? 'drop-icon' : '' }}"><span style="margin-left: 20px;"><i class="icon-stop"></i>&emsp;Transaksi</a></li>
+									<li class="mt-2"><a href="{{url('transfer')}}" class="{{ request()->routeIs('transfer') ? 'drop-icon' : '' }}"><span style="margin-left: 20px;"><i class="icon-stop"></i>&emsp;Transfer</span></a></li>
 								</ul>
 							</li>
 
@@ -186,7 +186,7 @@
 								<a href="analytics.html"><i class="icon-users" style=" font-size: 19px;"></i><span>&emsp;Pengguna</span></a>
 							</li>
 							<li class="mt-3">
-								<a href="analytics.html"><i class="icon-pocket" style=" font-size: 19px;"></i><span>&emsp;Peran</span></a>
+								<a href="{{url('role')}}"><i class="icon-pocket" style=" font-size: 19px;"></i><span>&emsp;Peran</span></a>
 							</li>
 							<li class="mt-3">
 								<a href="analytics.html"><i class="icon-power_settings_new" style=" font-size: 19px;"></i><span>&emsp;Logout</span></a>

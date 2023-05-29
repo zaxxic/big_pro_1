@@ -46,6 +46,13 @@
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/dataTables.bs4-custom.css') }}" />
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/buttons.bs.css') }}" />
     <style>
+        .kotak{
+            background-color: #00D1FF;
+            color:#fff;
+            display:inline-block;
+            border-radius:20px;
+            padding:3%
+        }
         .dropdown {
             position: relative;
             display: inline-block;
@@ -192,9 +199,9 @@
                                                 <tr>
                                                     <th scope="col"> <input type="checkbox"
                                                             id="select-all-checkbox"> </th>
-                                                    <th scope="col">Nama</th>
-                                                    <th scope="col">Jenis</th>
-                                                    <th scope="col">Warna</th>
+                                                    <th scope="col"> Nama</th>
+                                                    <th scope="col">Email</th>
+                                                    <th scope="col">Jabatan</th>
                                                     <th scope="col">Aksi</th>
                                                 </tr>
                                             </thead>
@@ -202,16 +209,14 @@
                                                 <!-- Data 1 -->
                                                 <tr class="table-row">
                                                     <td><input type="checkbox" class="other-checkbox"></td>
-                                                    <td>Deposit</td>
-                                                    <td>Pendapatan</td>
                                                     <td>
-                                                        <div class="circle"
-                                                            style="
-                                                                width: 40px;
-                                                                height: 40px;
-                                                                border-radius: 50%;
-                                                                background-color: #000;">
+                                                         <div class="d-flex">
+                                                            <i class="icon-account_circle" style="font-size: 24px;transform: scale(1.5); "></i> <p style="margin-left: 2%">Adii Suharja</p>
                                                         </div>
+                                                    </td>
+                                                    <td>aby.prass1@gmail.com</td>
+                                                    <td>
+                                                        <p class="">Manager</p>
                                                     </td>
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
@@ -229,15 +234,15 @@
                                                 <!-- Data 2 -->
                                                 <tr class="table-row">
                                                     <td><input type="checkbox" class="other-checkbox"></td>
-                                                    <td>Penjualan</td>
-                                                    <td>Pendapatan</td>
-                                                    <td> <div class="circle"
-                                                        style="
-                                                            width: 40px;
-                                                            height: 40px;
-                                                            border-radius: 50%;
-                                                            background-color: #2d0bf0;">
-                                                    </div></td>
+                                                    <td>
+                                                         <div class="d-flex">
+                                                            <i class="icon-account_circle" style="font-size: 24px;transform: scale(1.5); "></i> <p style="margin-left: 2%">Adii Suharja</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>aby.prass1@gmail.com</td>
+                                                    <td>
+                                                        <p class="">Manager</p>
+                                                    </td>
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_pemasok') }}"
@@ -251,19 +256,18 @@
                                                     </td>
                                                 </tr>
 
-
                                                 <!-- Data 3 -->
                                                 <tr class="table-row">
                                                     <td><input type="checkbox" class="other-checkbox"></td>
-                                                    <td>Umum</td>
-                                                    <td>Item</td>
-                                                    <td> <div class="circle"
-                                                        style="
-                                                            width: 40px;
-                                                            height: 40px;
-                                                            border-radius: 50%;
-                                                            background-color: #ff0000;">
-                                                    </div></td>
+                                                    <td>
+                                                         <div class="d-flex">
+                                                            <i class="icon-account_circle" style="font-size: 24px;transform: scale(1.5); "></i> <p style="margin-left: 2%">Adii Suharja</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>aby.prass1@gmail.com</td>
+                                                    <td>
+                                                        <p class="">Manager</p>
+                                                    </td>
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_pemasok') }}"

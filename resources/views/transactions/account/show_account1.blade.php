@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="img/fav.png">
 
     <!-- Title -->
-    <title>Unknown | Transaksi</title>
+    <title>Unknown | Show Akun</title>
 
 
     <!-- *************
@@ -46,15 +46,97 @@
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4-custom.css")}}" />
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
     <style>
-        .sidebar-menu ul li a.current-dropdown {
-            color: #5957b1;
-            background: #ffffff;
-            
-        }
-
         .text {
             text-align: center;
             color: #5e6973;
+        }
+        .dropdown-item {
+            display: block;
+            width: 100%;
+            padding: .9rem 1rem;
+            clear: both;
+            font-weight: 400;
+            color: #212529;
+            text-align: inherit;
+            text-decoration: none;
+            white-space: nowrap;
+            background-color: #f9f9f9;
+            border: 0;
+            /* border-radius: 5px; */
+            right: 0;
+        }
+        .dropdown-item-bt {
+            display: block;
+            width: 100%;
+            padding: .9rem 1rem;
+            clear: both;
+            font-weight: 400;
+            color: #212529;
+            text-align: inherit;
+            text-decoration: none;
+            white-space: nowrap;
+            background-color: #f9f9f9;
+            border: 0;
+            border-bottom: 1px solid grey;
+            /* border-radius: 5px; */
+            right: 0;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            
+            background-color: #DFDFDF;
+            border-radius: 5px;
+        }
+
+        .dropdown-content {
+            display: none;
+        
+            position: absolute;
+            min-width: 160px;
+            z-index: 1;
+            background-color: #DFDFDF;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 4px;
+            right: 0;
+            /* Mengarahkan dropdown ke arah kiri */
+        }
+
+
+
+        .dropdown-content a {
+            display: block;
+            padding: 5px 0;
+            text-decoration: none;
+            color: #333;
+            z-index: 1000;
+        }
+
+        .btn-ekspor-primary {
+            padding: 10px 9px;
+            color: #000000;
+            background-color: #E8E8E8;
+            border-color: #E8E8E8;
+            border-radius: 5px;
+        }
+
+        .btn-ekspor-primary:hover {
+            color: #ffffff;
+            background-color: #5957b1;
+            border-color: #5957b1;
+            border-radius: 5px;
+        }
+
+        .btn-check:focus+.btn-ekspor-primary,
+        .btn-ekspor-primary:focus {
+            color: #ffffff;
+            background-color: #5957b1;
+            border-color: #5957b1;
+            outline: 0;
+            -webkit-box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
+            box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
         }
 
         .empty-box {
@@ -74,131 +156,6 @@
             height: 25px;
             border: 0px;
             border-bottom: 2px solid #f26861;
-        }
-
-        .lingkaran-warna1 {
-
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background-color: red;
-
-        }
-
-        .lingkaran-warna2 {
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background-color: blue;
-
-        }
-
-        .lingkaran-warna3 {
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background-color: green;
-
-        }
-
-        .lingkaran-warna4 {
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background-color: purple;
-
-        }
-
-        .lingkaran-warna5 {
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background-color: pink;
-
-        }
-
-        .icon-no {
-            padding-top: 90px;
-            font-size: 3rem;
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: space-between;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        #dropdown-menu {
-            display: none;
-            position: relative;
-        }
-
-        .dropdown-toggle {
-            padding: 5px;
-            font-size: 20px;
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 120px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content button {
-            display: block;
-            width: 100%;
-            text-align: left;
-            padding: 8px 16px;
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-        }
-
-        /* Tampilkan dropdown saat tombol titik tiga diklik */
-        #dropdown-menu.show .dropdown-content {
-            display: block;
-        }
-
-        /* Atur tampilan tombol untuk ukuran layar yang lebih kecil */
-        @media screen and (max-width: 1024px) {
-            .button-container {
-                justify-content: flex-end;
-            }
-
-            #dropdown-menu {
-                display: block;
-            }
-
-            .dropdown-toggle {
-                display: block;
-            }
-
-            .dropdown-content {
-                position: static;
-                min-width: unset;
-                box-shadow: none;
-            }
-
-            .dropdown-content button {
-                display: none;
-            }
-
-            /* Tampilkan tombol dropdown saat layar kecil */
-            #dropdown-menu.show .dropdown-content button {
-                display: block;
-            }
-
-            .button-container {
-                /* justify-content: flex-end; */
-                display: none;
-            }
         }
 
         .searchcontainer {
@@ -262,69 +219,47 @@
                 <div class="content-wrapper">
 
                     <!-- Row start -->
-                    <div class="card-body">
-                        <div class="row gutters">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="row gutters">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
-                                <!-- Card start -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        <h3>Hada<button type="button" style="border: none; background:none;">☆</button></h3>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 
-                                <!-- <div class="card-header"> -->
-                                <div class="d-flex">
-                                    <div class=" col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12 d-flex">
+                                        </a>
 
-                                        <h1 class="card-title" style="font-size: 20px;">Transaksi<button type="button" style="border: none; background:none;">☆</button></h1>
+                                        <ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
+                                            <li><a class="dropdown-item" style="margin-top: 4%;" href="{{url('add_income')}}">Tambah Pendapatan</a></li>
+                                            <li><a class="dropdown-item" href="{{url('add_income')}}">Tambah Pengeluaran</a></li>
+                                            <li><a class="dropdown-item-bt" href="{{url('add_income')}}">Tambah Transfer</a></li>
+                                            <li><a class="dropdown-item" href="{{url('add_income')}}">Sunting</a></li>
+                                            <li><a class="dropdown-item-bt" href="{{url('ad_income')}}">Hapus</a></li>
+                                            <li><a class="dropdown-item" href="#">Cetak</a></li>
+                                            <li><a class="dropdown-item" href="#">Unduh PDF</a></li>
 
+                                        </ul>
                                     </div>
 
-                                    <!-- <div class="text-end">
-											<a href="create-invoice.html" class="btn btn-primary">Create Invoice</a>
-										</div> -->
-                                    <div class="col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12 button-container" style="margin-left: 17%;">
-                                        <a href="{{url('add_income')}}"> <button type="button" class="btn btn-secondary">Tambah Pendapatan</button></a>
-                                        <a href="{{url('add_expenditure')}}"> <button type="button" class="btn btn-secondary">Tambah Pengeluaran</button></a>
+                                    <!-- <button >
+                                        <span></span>
+                                        <div class="dropdown-content">
+                                            <a href="#" style="margin-top: 1%;"><span> Tambah </span></a>
+                                            <a href="#" style="margin-top: 2%;"><span>Sunting</span></a>
+                                            <a href="#" style="margin-top: 2%;"><span>Hapus</span></a>
+                                            <a href="#" style="margin-top: 2%;"><span>Cetak</span></a>
+                                            <a href="#" style="margin-top: 2%;"><span>Unduh PDF</span></a>
 
-
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
-                                            <a href="path_ke_file.pdf" download><button type="button" class="btn btn-outline-primary">Ekspor</button></a>
                                         </div>
-
-                                    </div>
+                                    </button> -->
                                 </div>
-                                <div id="dropdown-menu">
-                                    <button class="dropdown-toggle">&#8942;</button>
-                                    <div class="dropdown-content">
-                                        <a href="{{url('add_income')}}">Pendapatan</a>
-                                        <a href="{{url('add_expenditure')}}">Pengeluaran</a>
-                                        <a href="path/to/excel/file.xlsx" download>Ekspor</a>
-                                    </div>
-                                </div>
-
-                                <!-- <div class="button-container">
-                                        <button id="income-button">Pendapatan</button>
-                                        <button id="expense-button">Pengeluaran</button>
-                                        <button id="export-button">Ekspor</button>
-                                        <div id="dropdown-menu">
-                                            <button class="dropdown-toggle">&#8942;</button>
-                                            <div class="dropdown-content">
-                                                <button id="income-button-mobile">Pendapatan</button>
-                                                <button id="expense-button-mobile">Pengeluaran</button>
-                                                <button id="export-button-mobile">Ekspor</button>
-                                            </div>
-                                        </div>
-                                    </div> -->
-
-                                <!-- </div> -->
-
-
-
-
-
-
-                                <!-- </div> -->
-
-                                <!-- Row start -->
-                                <div class="row gutters" style="margin-left: 5%; margin-bottom: -5%; margin-top: 3%;">
-                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+                            </div>
+                        </div>
+                        <!-- <div class="row gutters" style="margin-left: 5%; margin-bottom: -5%; margin-top: 3%;"> -->
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                                         <div class="stats-tile">
                                             <div class="sale-icon">
                                                 <p><b><i>Rp</i></b></p>
@@ -338,12 +273,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-6 col-12" style="margin-top: 2%;">
-
-                                    <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 5px;" height="43" viewBox="0 -960 960 960" width="40"><path d="M200-450v-60h560v60H200Z"/></svg>
-
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+                                  
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                                         <div class="stats-tile">
                                             <div class="sale-icon">
                                                 <p><b><i>Rp</i></b></p>
@@ -357,32 +288,67 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-6 col-12" style="margin-top: 2%;">
-
-                                    <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 10px;" height="30" viewBox="0 -960 960 960" width="48"><path d="M160-290v-100h640v100H160Zm0-280v-100h640v100H160Z"/></svg>
-                                    
-
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                                   
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                         <div class="stats-tile">
                                             <div class="sale-icon">
                                                 <p><b><i>Rp</i></b></p>
                                             </div>
                                             <div class="sale-details">
                                                 <h2>19,9M</h2>
-                                                <p>Keuntungan</p>
+                                                <p>Saldo Saat Ini</p>
                                             </div>
                                             <div class="sale-graph">
                                                 <div id="sparklineLine3"></div>
                                             </div>
                                         </div>
                                     </div>
+                                <!-- </div> -->
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+
+                            <!-- Card start -->
+                            <div class="card">
+
+                                <div class="card-body">
+                                <div style="margin-top: 10%;"><h6>Nomor Rekening</h6></div>
+                                    <span>0998958</span>
+                                    <div style="margin-top: 10%;"><h6>Mata Uang</h6></div>
+                                    <span>Rupiah</span>
+                                    <div style="margin-top: 10%;"><h6>Saldo Awal</h6></div>
+                                    <span>Rp700.000.000</span>
+                                    <div style="margin-top: 10%;"><h6>Telepon Bank</h6></div>
+                                    <span>085607338154</span>
+                                    <div style="margin-top: 10%;"><h6>Alamat Bank</h6></div>
+                                    <span>Jl. Kutilang</span>
+
+                                    <!-- Row start -->
+
+                                    <!-- Row end -->
+
                                 </div>
-                                <!-- Row end -->
-                                <div class="d-flex">
+                            </div>
+                            <!-- Card end -->
+
+                        </div>
+                        
+                        <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12"> -->
+
+                        <!-- Card start -->
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+                            <div class="card-body" style="border-left: 1px solid #9a9c9e;">
+
+
+                                <!-- Card start -->
+                                <div class="card">
+
+
+                                    <div class="card-body" style="float: right">
+
+                                        <!-- Row start -->
+                                        <div class="d-flex">
                                     <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6" style="margin-top: 8%;">
                                         <div class="hr-switch">
-                                            <a href="{{url('transactions')}}">
+                                            <a href="{{url('show_account1')}}">
                                                 <div class="empty-box active">
                                                     <h6 class="text">Transaksi</h6>
 
@@ -395,9 +361,9 @@
                                     </div>
                                     <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6" style="margin-top: 8%;">
                                         <div class="hr-switch">
-                                            <a href="{{url('recurring_transactions')}}">
+                                            <a href="{{url('show_account2')}}">
                                                 <div class="empty-box">
-                                                    <h6 class="text">Transaksi Rutin</h6>
+                                                    <h6 class="text">Transfer</h6>
 
                                                 </div>
                                             </a>
@@ -407,13 +373,7 @@
 
                                     </div>
                                 </div>
-                                <div class="content">
-                                    <div class="searchcontainer">
-                                        <i class="icon-search"></i><input class="search " type="text" placeholder="Cari Disini..." style="
-                                              margin-bottom: 2%; font-size:10pt " />
-                                    </div>
-                                </div>
-                                <div class="table-responsive">
+                                        <div class="table-responsive">
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
@@ -540,147 +500,113 @@
 
                                     <!-- Card end -->
                                 </div>
-                            </div>
-                            <!-- Card start -->
-                            <div class="card">
-                                <div class="card-body" style="margin-left: -2.1%">
-
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination" style="justify-content: flex-end;">
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Previous">
-                                                    <span aria-hidden="true">&laquo;</span>
-                                                </a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Next">
-                                                    <span aria-hidden="true">&raquo;</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
+                                        
+                                    </div>
+                                    <!-- Row end -->
 
                                 </div>
                             </div>
                             <!-- Card end -->
 
-
                         </div>
-                        <!-- Row end -->
 
+                        <!-- Card end -->
+
+                        <!-- </div> -->
                     </div>
-                    <!-- Content wrapper end -->
-                    <!-- Modal start -->
-                    <div class="modal fade" id="deleteincome" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteincome" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content" style="padding: 0px">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="staticBackdropLabel">Hapus Transaksi</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Anda Yakin Ingin Menghapus Transaksi Ini?</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Hapus</button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal end -->
-
-                    <!-- App Footer start -->
-                    <div class="app-footer">© Uni Pro Admin 2021</div>
-                    <!-- App footer end -->
+                    <!-- Row end -->
 
                 </div>
-                <!-- Content wrapper scroll end -->
+                <!-- Row end -->
 
             </div>
-            <!-- *************
+            <!-- Content wrapper end -->
+
+            <!-- App Footer start -->
+            <div class="app-footer">© Uni Pro Admin 2021</div>
+            <!-- App footer end -->
+
+        </div>
+        <!-- Content wrapper scroll end -->
+
+    </div>
+    <!-- *************
 				************ Main container end *************
 			************* -->
 
-            </divkolaja>
-            <!-- Page wrapper end -->
+    </divkolaja>
+    <!-- Page wrapper end -->
 
-            <!-- *************
+    <!-- *************
 			************ Required JavaScript Files *************
 		************* -->
-            <!-- Required jQuery first, then Bootstrap Bundle JS -->
-            <script src="{{ asset ("Gmbslagi/js/jquery.min.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/js/bootstrap.bundle.min.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/js/modernizr.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/js/moment.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
-            <script src="Gmbslagi/js/dropdown.js"></script>
+    <!-- Required jQuery first, then Bootstrap Bundle JS -->
+    <script src="{{ asset ("Gmbslagi/js/jquery.min.js")}}"></script>
+    <script src="{{ asset ("Gmbslagi/js/bootstrap.bundle.min.js")}}"></script>
+    <script src="{{ asset ("Gmbslagi/js/modernizr.js")}}"></script>
+    <script src="{{ asset ("Gmbslagi/js/moment.js")}}"></script>
+    <script src="{{ asset ("Gmbslagi/js/dropdown.js")}}"></script>
 
-            <!-- *************
+    <!-- *************
 			************ Vendor Js Files *************
 		************* -->
 
-            <!-- Megamenu JS -->
-            <script src="{{ asset ("Gmbslagi/vendor/megamenu/js/megamenu.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/megamenu/js/custom.js")}}"></script>
+    <!-- Megamenu JS -->
+    <script src="{{ asset ("Gmbslagi/vendor/megamenu/js/megamenu.js")}}"></script>
+    <script src="{{ asset ("Gmbslagi/vendor/megamenu/js/custom.js")}}"></script>
 
-            <!-- Slimscroll JS -->
-            <script src="{{ asset ("Gmbslagi/vendor/slimscroll/slimscroll.min.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/slimscroll/custom-scrollbar.js")}}"></script>
+    <!-- Slimscroll JS -->
+    <script src="{{ asset ("Gmbslagi/vendor/slimscroll/slimscroll.min.js")}}"></script>
+    <script src="{{ asset ("Gmbslagi/vendor/slimscroll/custom-scrollbar.js")}}"></script>
 
-            <!-- Search Filter JS -->
-            <script src="{{ asset ("Gmbslagi/vendor/search-filter/search-filter.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/search-filter/custom-search-filter.js")}}"></script>
+    <!-- Search Filter JS -->
+    <script src="{{ asset ("Gmbslagi/vendor/search-filter/search-filter.js")}}"></script>
+    <script src="{{ asset ("Gmbslagi/vendor/search-filter/custom-search-filter.js")}}"></script>
 
-            <!-- Data Tables -->
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/dataTables.min.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bootstrap.min.js")}}"></script>
+    <!-- Data Tables -->
+    <script src="{{ asset ("Gmbslagi/vendor/datatables/dataTables.min.js")}}"></script>
+    <script src="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bootstrap.min.js")}}"></script>
 
-            <script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
+    <!-- Custom Data tables -->
+    <script src="{{ asset ("Gmbslagi/vendor/datatables/custom/custom-datatables.js")}}"></script>
+    <script src="{{ asset ("Gmbslagi/vendor/datatables/custom/fixedHeader.js")}}"></script>
 
-            <!-- Custom Data tables -->
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/custom/custom-datatables.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/custom/fixedHeader.js")}}"></script>
+    <!-- Download / CSV / Copy / Print -->
+    <script src="{{ asset ("Gmbslagi/vendor/datatables/buttons.min.js")}}"></script>
+    <script src="{{ asset ("Gmbslagi/vendor/datatables/jszip.min.js")}}"></script>
+    <script src="{{ asset ("Gmbslagi/vendor/datatables/pdfmake.min.js")}}"></script>
+    <script src="{{ asset ("Gmbslagi/vendor/datatables/vfs_fonts.js")}}"></script>
+    <script src="{{ asset ("Gmbslagi/vendor/datatables/html5.min.js")}}"></script>
+    <script src="{{ asset ("Gmbslagi/vendor/datatables/buttons.print.min.js")}}"></script>
 
-            <!-- Download / CSV / Copy / Print -->
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/buttons.min.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/jszip.min.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/pdfmake.min.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/vfs_fonts.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/html5.min.js")}}"></script>
-            <script src="{{ asset ("Gmbslagi/vendor/datatables/buttons.print.min.js")}}"></script>
+    <!-- Main Js Required -->
+    <script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
+    <script>
+        // Tambahkan event listener untuk menampilkan/menyembunyikan dropdown saat tombol titik tiga diklik
+        document.querySelector('.dropdown-toggle').addEventListener('click', function() {
+            document.getElementById('dropdown-menu').classList.toggle('show');
+        });
 
-            <!-- Main Js Required -->
-            <script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
-            <script>
-                // Tambahkan event listener untuk menampilkan/menyembunyikan dropdown saat tombol titik tiga diklik
-                document.querySelector('.dropdown-toggle').addEventListener('click', function() {
-                    document.getElementById('dropdown-menu').classList.toggle('show');
-                });
-
-                // Tambahkan event listener untuk menyembunyikan dropdown saat pengguna mengklik di luar dropdown
-                document.addEventListener('click', function(event) {
-                    var dropdown = document.getElementById('dropdown-menu');
-                    if (!event.target.matches('.dropdown-toggle') && !event.target.matches('.dropdown-content button')) {
-                        if (dropdown.classList.contains('show')) {
-                            dropdown.classList.remove('show');
-                        }
-                    }
-                });
-            </script>
-            <script>
-                function toggleCheckbox() {
-                    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-                    var selectAllCheckbox = document.getElementById('select-all');
-
-                    for (var i = 0; i < checkboxes.length; i++) {
-                        checkboxes[i].checked = selectAllCheckbox.checked;
-                    }
+        // Tambahkan event listener untuk menyembunyikan dropdown saat pengguna mengklik di luar dropdown
+        document.addEventListener('click', function(event) {
+            var dropdown = document.getElementById('dropdown-menu');
+            if (!event.target.matches('.dropdown-toggle') && !event.target.matches('.dropdown-content button')) {
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
                 }
-            </script>
+            }
+        });
+    </script>
+    <script>
+        function toggleCheckbox() {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var selectAllCheckbox = document.getElementById('select-all');
+
+            for (var i = 0; i < checkboxes.length; i++) {
+                checkboxes[i].checked = selectAllCheckbox.checked;
+            }
+        }
+    </script>
 
 
 </body>
