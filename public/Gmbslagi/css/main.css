@@ -173,12 +173,12 @@ body.full-view .sidebar-wrapper {
 }
 
 body.full-view .sidebar-wrapper .sidebar-tabs {
-    height: calc(100vh);
+    /* height: calc(100vh); */
 }
 
 body.full-view .sidebar-wrapper .sidebar-tabs .nav {
     border-radius: 0;
-    height: calc(100vh);
+    /* height: calc(100vh); */
 }
 
 body.full-view .main-container {
@@ -1138,7 +1138,7 @@ p {
     position: relative;
     display: inline-block;
   }
-  
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -1147,23 +1147,23 @@ p {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  
+
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
+
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
-  
+
   .dropdown-content a:hover {
     background-color: #f1f1f1;
   }
-  
-  
+
+
   /* Gaya tambahan untuk modal */
   .modal {
     display: none;
@@ -2024,7 +2024,7 @@ ul.activity li.activity-list.warning:before {
 
 .content-wrapper {
     padding: 0 1.5rem 0 1.5rem;
-    height: calc(100vh - 150px);
+    /* height: calc(100vh - 150px); */
     overflow: auto;
 }
 
@@ -8269,7 +8269,7 @@ fieldset:disabled .btn-outline-dark {
 }
 
 .btn-primary {
-    color: #ffffff; 
+    color: #ffffff;
     background-color: #5957b1;
     border-color: #5957b1;
 }
@@ -9317,6 +9317,7 @@ label {
 .custom-tabs-container .nav-tabs {
     margin: 0 -20px;
     border-bottom: 1px solid #e1e8f3;
+    float: right;
 }
 
 .custom-tabs-container .nav-tabs .nav-link {

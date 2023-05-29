@@ -51,7 +51,7 @@
     <!-- Loading wrapper start -->
     <div id="loading-wrapper">
         <div class="spinner-border"></div>
-        Loading...
+        Sabar Ngentodd...
     </div>
     <!-- Loading wrapper end -->
 
@@ -85,9 +85,9 @@
                             <div class="">
                                 <div class="card-title">
                                 <div class="d-flex flex-wrap">
-                                        <h1 class="card-title" style="font-size: 20px;">Transaksi  <i class="icon-star2 " style="padding-left: 10px; font-size: 19px;"></i>     </h1>
+                                        <h1 class="card-title col-xl-11 col-lg-11 col-md-10 col-sm-8 col-8" style="font-size: 20px;">Transaksi  <i class="icon-star2 " style="padding-left: 10px; font-size: 19px;"></i>     </h1>
 
-                                        <button type="button" class="btn btn-secondary">Tambah Pendapatan</button>
+                                        <button type="button" class="btn btn-secondary col-xl-1 col-lg-1 col-md-2 col-sm-4 col-4">Tambah</button>
                                     </div>
                             </div>
 
@@ -96,61 +96,47 @@
                             <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
 								<div class="sematkan">
 									<div class="sematkan-icon">
-										<i class="icon-pin"></i>
+                                        <i class="icon-pin"></i>
 									</div>
-									<div class="sale-details">
-										<p>Sematkan laporan anda</p>
-									</div>
+									<p>Sematkan laporan anda</p>
 								</div>
 							</div>
-                            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
+							<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
 								<div class="sematkan">
 									<div class="sematkan-icon">
-										<i class="icon-pin"></i>
+                                        <i class="icon-pin"></i>
 									</div>
-									<div class="sale-details">
-										<p>Sematkan laporan anda</p>
+									<p>Sematkan laporan anda</p>
+								</div>
+							</div><div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
+								<div class="sematkan">
+									<div class="sematkan-icon">
+                                        <i class="icon-pin"></i>
 									</div>
+									<p>Sematkan laporan anda</p>
 								</div>
 							</div>
-                            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
+							<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
 								<div class="sematkan">
 									<div class="sematkan-icon">
-										<i class="icon-pin"></i>
+                                        <i class="icon-pin"></i>
 									</div>
-									<div class="sale-details">
-										<p>Sematkan laporan anda</p>
+									<p>Sematkan laporan anda</p>
+								</div>
+							</div><div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
+								<div class="sematkan">
+									<div class="sematkan-icon">
+                                        <i class="icon-pin"></i>
 									</div>
+									<p>Sematkan laporan anda</p>
 								</div>
 							</div>
-                            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
+							<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
 								<div class="sematkan">
 									<div class="sematkan-icon">
-										<i class="icon-pin"></i>
+                                        <i class="icon-pin"></i>
 									</div>
-									<div class="sale-details">
-										<p>Sematkan laporan anda</p>
-									</div>
-								</div>
-							</div>
-                            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
-								<div class="sematkan">
-									<div class="sematkan-icon">
-										<i class="icon-pin"></i>
-									</div>
-									<div class="sale-details">
-										<p>Sematkan laporan anda</p>
-									</div>
-								</div>
-							</div>
-                            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
-								<div class="sematkan">
-									<div class="sematkan-icon">
-										<i class="icon-pin"></i>
-									</div>
-									<div class="sale-details">
-										<p>Sematkan laporan anda</p>
-									</div>
+									<p>Sematkan laporan anda</p>
 								</div>
 							</div>
                             </div>
@@ -160,119 +146,93 @@
                                     <hr class="col-12">
                                     <div class="row">
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                            <div class="ringkasan">
-                                                <div class="ringkasan-icon">
+                                            <div class="ringkasan d-flex">
+                                                <div class="d-flex">
+                                                    <div class="ringkasan-icon">
                                                     <i class="icon-shopping-cart1"></i>
+                                                    </div>
+                                                    <div class="sale-details">
+                                                        <h5>Ringkasan Pengeluaran</h5>
+                                                        <p>Ringkasan pengeluaran bulanan</p>
+                                                    </div>
                                                 </div>
-                                                <div class="sale-details">
-                                                    <h5>Ringkasan Pengeluaran</h5>
-                                                    <p>Ringkasan pengeluaran bulanan</p>
-                                                </div>
+                                                <a href="/calendar" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical" ></a></a>
                                             </div>
                                         </div>
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                            <div class="ringkasan">
-                                                <div class="ringkasan-icon">
+                                            <div class="ringkasan d-flex">
+                                                <div class="d-flex">
+                                                    <div class="ringkasan-icon">
                                                     <i class="icon-shopping-cart1"></i>
+                                                    </div>
+                                                    <div class="sale-details">
+                                                        <h5>Ringkasan Pengeluaran</h5>
+                                                        <p>Ringkasan pengeluaran bulanan</p>
+                                                    </div>
                                                 </div>
-                                                <div class="sale-details">
-                                                    <h5>Ringkasan Pengeluaran</h5>
-                                                    <p>Ringkasan pengeluaran bulanan</p>
-                                                </div>
+                                                <a href="/calendar" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical" ></a></a>
                                             </div>
                                         </div>
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                            <div class="ringkasan">
-                                                <div class="ringkasan-icon">
+                                            <div class="ringkasan d-flex">
+                                                <div class="d-flex">
+                                                    <div class="ringkasan-icon">
                                                     <i class="icon-shopping-cart1"></i>
+                                                    </div>
+                                                    <div class="sale-details">
+                                                        <h5>Ringkasan Pengeluaran</h5>
+                                                        <p>Ringkasan pengeluaran bulanan</p>
+                                                    </div>
                                                 </div>
-                                                <div class="sale-details">
-                                                    <h5>Ringkasan Pengeluaran</h5>
-                                                    <p>Ringkasan pengeluaran bulanan</p>
-                                                </div>
+                                                <a href="/calendar" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical" ></a></a>
                                             </div>
                                         </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                            <div class="ringkasan">
-                                                <div class="ringkasan-icon">
-                                                    <i class="icon-shopping-cart1"></i>
-                                                </div>
-                                                <div class="sale-details">
-                                                    <h5>Ringkasan Pengeluaran</h5>
-                                                    <p>Ringkasan pengeluaran bulanan</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                            <div class="ringkasan">
-                                                <div class="ringkasan-icon">
-                                                    <i class="icon-shopping-cart1"></i>
-                                                </div>
-                                                <div class="sale-details">
-                                                    <h5>Ringkasan Pengeluaran</h5>
-                                                    <p>Ringkasan pengeluaran bulanan</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <h5 class="mt-3">Akuntansi </h5>
                                     <hr class="col-12">
                                     <div class="row">
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                            <div class="ringkasan">
-                                                <div class="ringkasan-icon">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <div class="ringkasan d-flex">
+                                                <div class="d-flex">
+                                                    <div class="ringkasan-icon">
                                                     <i class="icon-shopping-cart1"></i>
+                                                    </div>
+                                                    <div class="sale-details">
+                                                        <h5>Ringkasan Pengeluaran</h5>
+                                                        <p>Ringkasan pengeluaran bulanan</p>
+                                                    </div>
                                                 </div>
-                                                <div class="sale-details">
-                                                    <h5>Ringkasan Pengeluaran</h5>
-                                                    <p>Ringkasan pengeluaran bulanan</p>
-                                                </div>
+                                                <a href="/calendar" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical" ></a></a>
                                             </div>
                                         </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                            <div class="ringkasan">
-                                                <div class="ringkasan-icon">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <div class="ringkasan d-flex">
+                                                <div class="d-flex">
+                                                    <div class="ringkasan-icon">
                                                     <i class="icon-shopping-cart1"></i>
+                                                    </div>
+                                                    <div class="sale-details">
+                                                        <h5>Ringkasan Pengeluaran</h5>
+                                                        <p>Ringkasan pengeluaran bulanan</p>
+                                                    </div>
                                                 </div>
-                                                <div class="sale-details">
-                                                    <h5>Ringkasan Pengeluaran</h5>
-                                                    <p>Ringkasan pengeluaran bulanan</p>
-                                                </div>
+                                                <a href="/calendar" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical" ></a></a>
                                             </div>
                                         </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                            <div class="ringkasan">
-                                                <div class="ringkasan-icon">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <div class="ringkasan d-flex">
+                                                <div class="d-flex">
+                                                    <div class="ringkasan-icon">
                                                     <i class="icon-shopping-cart1"></i>
+                                                    </div>
+                                                    <div class="sale-details">
+                                                        <h5>Ringkasan Pengeluaran</h5>
+                                                        <p>Ringkasan pengeluaran bulanan</p>
+                                                    </div>
                                                 </div>
-                                                <div class="sale-details">
-                                                    <h5>Ringkasan Pengeluaran</h5>
-                                                    <p>Ringkasan pengeluaran bulanan</p>
-                                                </div>
+                                                <a href="/calendar" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical" ></a></a>
                                             </div>
                                         </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                            <div class="ringkasan">
-                                                <div class="ringkasan-icon">
-                                                    <i class="icon-shopping-cart1"></i>
-                                                </div>
-                                                <div class="sale-details">
-                                                    <h5>Ringkasan Pengeluaran</h5>
-                                                    <p>Ringkasan pengeluaran bulanan</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                            <div class="ringkasan">
-                                                <div class="ringkasan-icon">
-                                                    <i class="icon-shopping-cart1"></i>
-                                                </div>
-                                                <div class="sale-details">
-                                                    <h5>Ringkasan Pengeluaran</h5>
-                                                    <p>Ringkasan pengeluaran bulanan</p>
-                                                </div>
-                                            </div>
-                                        </div>
+
                                     </div>
 
                                         </div>

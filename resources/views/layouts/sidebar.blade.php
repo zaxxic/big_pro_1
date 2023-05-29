@@ -123,11 +123,11 @@
 				<div class="sidebarMenuScroll mt-2">
 					<div class="sidebar-menu active">
 						<ul class="active">
-							<!-- @section('active') -->
+							
 							<li class="active">
 								<a href="{{ url ('/')}}" class="current-page"><i class="icon-briefcase" style=" font-size: 19px;"></i><span>&emsp;Perusahaan</span></a>
 							</li>
-							<!-- @endsection -->
+							
 							<li class="mt-3 active">
 								<a href="{{ url ('/')}}"><i class="icon-file " style=" font-size: 19px;"></i><span>&emsp;Faktur</span></a>
 							</li>

@@ -49,7 +49,7 @@
         .sidebar-menu ul li a.current-dropdown {
             color: #5957b1;
             background: #ffffff;
-            
+
         }
 
         .text {
@@ -247,12 +247,18 @@
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
         <!-- Sidebar wrapper end -->
+        
+         <!-- Toggle sidebar start -->
+         <div class="toggle-sidebar" id="toggle-sidebar">
+                <i class="icon-menu"></i>
+            </div>
+            <!-- Toggle sidebar end -->
 
         <!-- *************
 				************ Main container start *************
 			************* -->
         <div class="main-container">
-
+           
 
 
             <!-- Content wrapper scroll start -->
@@ -340,7 +346,9 @@
                                     </div>
                                     <div class="col-xl-1 col-lg-1 col-md-1 col-sm-6 col-12" style="margin-top: 2%;">
 
-                                    <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 5px;" height="43" viewBox="0 -960 960 960" width="40"><path d="M200-450v-60h560v60H200Z"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 5px;" height="43" viewBox="0 -960 960 960" width="40">
+                                            <path d="M200-450v-60h560v60H200Z" />
+                                        </svg>
 
                                     </div>
                                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
@@ -359,8 +367,10 @@
                                     </div>
                                     <div class="col-xl-1 col-lg-1 col-md-1 col-sm-6 col-12" style="margin-top: 2%;">
 
-                                    <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 10px;" height="30" viewBox="0 -960 960 960" width="48"><path d="M160-290v-100h640v100H160Zm0-280v-100h640v100H160Z"/></svg>
-                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 10px;" height="30" viewBox="0 -960 960 960" width="48">
+                                            <path d="M160-290v-100h640v100H160Zm0-280v-100h640v100H160Z" />
+                                        </svg>
+
 
                                     </div>
                                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
