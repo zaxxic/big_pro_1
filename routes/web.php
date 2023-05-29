@@ -124,7 +124,6 @@ Route::get('/calendar',[CalendarController::class, 'calendar'])->name('calendar'
 Route::get('/editemail',[EditEmailController::class, 'editemail'])->name('editemail');
 
 //cobaaaaaa
-Route::get('/dashboard', [ChartController::class, 'showChart'])->name('dashboard');
 Route::get('impor_pembelian', function () {
     return view('pembelian.pembelian_impor_pemasok');
 });

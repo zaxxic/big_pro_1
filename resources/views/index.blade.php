@@ -42,9 +42,7 @@
     <link rel="stylesheet" href="{{ asset("Gmbslagi/vendor/search-filter/search-filter.css") }}">
     <link rel="stylesheet" href="{{ asset("Gmbslagi/vendor/search-filter/custom-search-filter.css") }}">
 
-		<!-- Date Range CSS -->
-		<link rel="stylesheet" href="{{ asset("vendor/daterange/daterange.css") }}">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -88,24 +86,37 @@
                                     </h1>
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 
-												<!-- Field wrapper start -->
-												<div class="field-wrapper">
-													<div class="input-group">
-														<input type="text" class="form-control datepicker-range-auto-apply">
-														<span class="input-group-text">
-															<i class="icon-calendar1"></i>
-														</span>
-													</div>
-													<div class="field-placeholder">Date Range Auto Apply</div>
-												</div>
-												<!-- Field wrapper end -->
+                                        <!-- Field wrapper start -->
+                                        <div class="field-wrapper">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control datepicker-range-auto-apply">
+                                                <span class="input-group-text">
+                                                    <i class="icon-calendar1"></i>
+                                                </span>
+                                            </div>
+                                            <div class="field-placeholder">Date Range Auto Apply</div>
+                                        </div>
+                                        <!-- Field wrapper end -->
 
-											</div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <div class="chart-container">
+        <div id="chart"></div>
+        <br>
+        <br>
+        <div class="d-flex row">
+            <div class=" col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                <div id="chart2"></div>
+            </div>
+            <div class="ms-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div id="chart3"></div>
+            </div>
+        </div>
+    </div>
                     <!-- Row end -->
 
                     <!-- Row start -->
@@ -140,7 +151,6 @@
     <script src="{{ asset("Gmbslagi/js/moment.js") }}"></script>
     <script src="{{ asset("Gmbslagi/js/dropdown.js") }}"></script>
 
-
     <!-- *************
 			************ Vendor Js Files *************
 		************* -->
@@ -172,14 +182,14 @@
 
     <!-- Date Range JS -->
     <script src="{{ asset("Gmbslagi/vendor/daterange/daterange.js") }}"></script>
-    <script src="{{ asset("Gmbslagi/vendor/daterange/custom-daterange.js") }}"></script>
     <!-- Main Js Required -->
     <script src="{{ asset("Gmbslagi/js/main.js") }}"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ asset("Gmbslagi/js/show_laporan_bar.js") }}"></script>
+    <script src="{{ asset("Gmbslagi/js/show_laporan_pie.js") }}"></script>
+    <script src="{{ asset("Gmbslagi/js/chart_index.js") }}"></script>
 </body>
-
-
-	</body>
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:01:19 GMT -->
 

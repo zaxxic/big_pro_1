@@ -23,7 +23,7 @@
   var barChart = new Chart(ctxBar, {
       type: 'bar',
       data: {
-          labels: ['A', 'B', 'C', 'D', 'E'],
+          labels: ['A', 'B', 'C', 'D', 'E','F','G','H','I','J'],
           datasets: [{
               label: '# of Votes',
               data: [50000000000000, 40000000000000, 3000000000000, 2000000000000, 10],
