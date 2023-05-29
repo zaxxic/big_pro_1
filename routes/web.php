@@ -50,9 +50,7 @@ Route::get('reset_password', function () {
 });
 Route::get('/itemindex',[ItemController::class,'itemindex'])->Name('item-index');
 Route::get('/tambah-item',[ItemController::class,'tambahitem'])->Name('item-tambah');
-Route::get('pembelian_pemasok', function () {
-    return view('pembelian.pembelian_pemasok');
-});
+
 Route::get('tambah_pemasok', function () {
     return view('pembelian.pembelian_tambah_pemasok');
 });
