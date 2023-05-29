@@ -7,6 +7,7 @@ use Faker\Guesser\Name;
 use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\TransactionsController;
 use App\Http\Controllers\TransferController;
+use App\Http\Controllers\AccountController;
 
 use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\CalendarController;
@@ -15,6 +16,7 @@ use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\ReportController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SupplierController;
 use Illuminate\Support\Facades\Route;
 
@@ -36,6 +38,9 @@ Route::get('kalender', function () {
 });
 Route::get('login', function () {
     return view('login');
+});
+Route::get('register', function () {
+    return view('register');
 });
 Route::get('register', function () {
     return view('register');
@@ -93,6 +98,14 @@ Route::get('add_invoice', [InvoiceController::class, 'add_invoice'])->name('add_
 Route::get('costumer', [InvoiceController::class, 'costumers'])->name('costumers');
 Route::get('add_costumers', [InvoiceController::class, 'add_cos'])->name('add_costumers');
 
+Route::get('costumer', [InvoiceController::class, 'costumers'])->name('costumers');
+Route::get('add_costumers', [InvoiceController::class, 'add_cos'])->name('add_costumers');
+
+//role
+Route::get('/role', [RoleController::class, 'index'])->name('role');
+
+Route::get('/add_role', [RoleController::class, 'add_role'])->name('add_role');
+Route::get('/edit_role', [RoleController::class, 'edit_role'])->name('edit_role');
 
 //transaksi
 Route::get('/transaksi', [TransaksiController::class, 'transaksi'])->name('transaksi');
@@ -105,6 +118,16 @@ Route::get('/transfer', [TransferController::class, 'transfer'])->name('transfer
 Route::get('/add_transfer', [TransferController::class, 'add_transfer'])->name('add_transfer');
 Route::get('/edit_transfer', [TransferController::class, 'edit_transfer'])->name('edit_transfer');
 Route::get('/show_transfer', [TransferController::class, 'show_transfer'])->name('show_transfer');
+
+//account
+Route::get('/account', [AccountController::class, 'index'])->name('account');
+
+Route::get('/add_account', [AccountController::class, 'add_account'])->name('add_account');
+Route::get('/edit_account', [AccountController::class, 'edit_account'])->name('edit_account');
+Route::get('/show_account1', [AccountController::class, 'show_account1'])->name('show_account1');
+Route::get('/show_account2', [AccountController::class, 'show_account2'])->name('show_account2');
+
+    // return view('pembelian.pembelian_edit_pemasok');
 
  
 

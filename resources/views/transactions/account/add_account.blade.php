@@ -49,33 +49,26 @@
     <link href="path/to/select2.css" rel="stylesheet" /> -->
     <style>
         .text-radio {
-            font-size: .75rem;
-            font-weight: 600;
-            margin-left: 15%;
-            margin-bottom: 18%;
+            margin-left: 2%;
+            margin-bottom: 1%;
             color: #5957b1;
         }
-
         .card {
             overflow: hidden;
         }
-
-        .half-width-container {
+         .half-width-container {
             display: flex;
-            width: 80%;
+            width: 50%;
             /* justify-content: space-between; */
         }
-
         input[type="radio"] {
             display: none;
         }
-
-        label {
-            margin-bottom: 2%;
-        }
-
+        label{
+    margin-bottom: 2%;
+}
         .label {
-            width: 100px;
+            width: 35%;
             text-align: center;
             padding: 10px;
             border: 1px solid #D9D9D9;
@@ -94,7 +87,12 @@
 
         .label {
             margin-right: 20px;
- }
+            }
+
+        .toggle-checkbox {
+  display: none;
+}
+
 
         .modal {
             text-align: center;
@@ -152,13 +150,14 @@
                     <!-- Row start -->
                     <div class="row gutters">
                         <form action="">
+                        
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                             <!-- Card start -->
                             <div class="card" style="overflow: hidden">
                                 <div class="card-header">
                                     <div class="card-title">
-                                        <h3>Tambah Transfer<button type="button" style="border: none; background:none;">☆</button></h3>
+                                        <h3>Tambah Akun<button type="button" style="border: none; background:none;">☆</button></h3>
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -175,80 +174,42 @@
 
                                         </div>
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div class="field-wrapper">
+                                        <div class="text-radio">Jenis<span class="text-danger">*</span></div>
+                                            <div class="half-width-container">
+                                            
+                                                <input type="radio" name="option" id="option1"
+                                                    value="Option 1" checked>
+                                                <label class="label" for="option1">Bank</label>
+
+                                                <input type="radio" name="option" id="option2"
+                                                    value="Option 2">
+                                                <label class="label" for="option2">Kartu Kredit</label>
+                                            </div>
+    </div>
 
                                             <!-- Field wrapper start -->
 
                                             <!-- Field wrapper end -->
 
                                         </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                                             <!-- Field wrapper start -->
-                                            <div class="field-wrapper-group">
-                                                <div class="field-wrapper">
-                                                    <select class="select-multiple js-states" title="Select Product Category" style="font-size: 5px;">
-                                                        <option>Hada</option>
-                                                        <option>Hodo</option>
 
-                                                    </select>
-                                                    <div class="field-placeholder">Dari Akun<span class="text-danger">*</span></div>
-                                                </div>
-
-                                            </div>
                                             <!-- Field wrapper end -->
 
                                         </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-
-                                            <div class="field-wrapper-group">
-                                                <div class="field-wrapper">
-                                                    <select class="select-multiple js-states" title="Select Product Category" style="font-size: 5px;">
-                                                        <option>Hada</option>
-                                                        <option>Hodo</option>
-
-                                                    </select>
-                                                    <div class="field-placeholder">Ke Akun<span class="text-danger">*</span></div>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-
-                                            <div class="field-wrapper">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control datepicker">
-                                                    <span class="input-group-text">
-                                                        <i class="icon-calendar1"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="field-placeholder">Tanggal<span class="text-danger">*</span></div>
-                                            </div>
-
-                                        </div>
-                                       
-                                        
-                                        
-                                        
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
-
-                                            <div style="border-bottom: solid grey 1px;margin-bottom:1%">
-                                                <h6>Lainnya</h6>
-                                                <p>Masukkan Lampiran Pendukung untuk menyimpan transaksi yang ditautkan ke catatan Anda.</p>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
-                                                <input class="form-control" type="text" placeholder="TRA-0076">
-                                                <div class="field-placeholder">Nomor<span class="text-danger">*</span></div>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Masukkan Nama">
+                                                    
+                                                </div>
+                                                <div class="field-placeholder">Nama<span class="text-danger">*</span></div>
                                             </div>
                                             <!-- Field wrapper end -->
 
@@ -257,10 +218,88 @@
 
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
-                                                <textarea class="form-control1" rows="2" placeholder="Lampiran Tidak Wajib Diisi"></textarea>
-                                                <div class="field-placeholder">Lampiran Pendukung<span class="text-danger">*</span></div>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Masukan Nomor Rekening">
+                                                    
+                                                </div>
+                                                <div class="field-placeholder">Nomor Rekening<span class="text-danger">*</span></div>
+                                            </div>
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                    
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                            <!-- Field wrapper start -->
+
+                                            <div class="field-wrapper-group">
+                                                <div class="field-wrapper">
+                                                    <select class="select-multiple js-states" title="Select Product Category">
+                                                        <option>Rupiah</option>
+                                                        <option>Dollar</option>
+                                                        <option>Ringgit</option>
+                                                        <option>Yen</option>
+
+                                                    </select>
+                                                    <div class="field-placeholder">Mata Uang<span class="text-danger">*</span></div>
+                                                </div>
+                                                <button type="button" class="input-icon-block btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalmoney">
+                                                    <i class="icon-plus1"></i>
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                                <input class="form-control" type="number" placeholder="Rp0,00">
+                                                <div class="field-placeholder">Saldo Saat Ini<span class="text-danger">*</span></div>
+                                            </div>
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                        
+                                        
+                                        
+                                        
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
+
+                                            <div style="border-bottom: solid grey 1px;margin-bottom:1%">
+                                                <h6>Bank</h6>
+                                                <p>Anda mungkin memiliki beberapa rekening bank di lebih dari satu bank. Mencatat informasi tentang bank Anda akan memudahkan untuk mencocokkan transaksi dalam bank Anda.</p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                                <input class="form-control" type="text" placeholder="Masukkan Nama Bank">
+                                                <div class="field-placeholder">Nama Bank<span class="text-danger">*</span></div>
+                                            </div>
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                                <input class="form-control" type="text" placeholder="Masukkan Telepon Bank">
+                                                <div class="field-placeholder">Telepon Bank<span class="text-danger">*</span></div>
+                                            </div>
+                                            <!-- Field wrapper end -->
+
+                                            </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                                <textarea class="form-control1" rows="2" placeholder="Masukkan Alamat Bank"></textarea>
+                                                <div class="field-placeholder">Alamat Bank<span class="text-danger">*</span></div>
                                                 <div class="form-text">
-                                                    Silakan masukkan Lampiran Pendukung Anda.
+                                                    Silakan masukkan Alamat Bank.
                                                 </div>
                                             </div>
                                             <!-- Field wrapper end -->
@@ -270,7 +309,7 @@
                                        <div class="d-flex">
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
                                         <div  style=" float: right">
-                                            <a href="{{url('transfer')}}"><button type="button" class="btn btn-outline-primary">Batal</button></a>
+                                            <a href="{{url('transactions')}}"><button type="button" class="btn btn-outline-primary">Batal</button></a>
                                         
                                         <a href="{{url('add_income')}}" style="margin-left: 10px;" > <button type="button" class="btn btn-secondary">Simpan</button></a>
                                         </div>
@@ -294,27 +333,6 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                    <div class="field-wrapper">
-                                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
-                                                        <div class="text-radio">Jenis<span class="text-danger">*</span></div>
-                                                    </div>
-                                                        <div class="half-width-container">
-
-                                                            <input type="radio" name="option" id="option1" value="Option 1" checked>
-                                                            <label class="label" for="option1">Bank</label>
-
-                                                            <input type="radio" name="option" id="option2" value="Option 2">
-                                                            <label class="label" for="option2">Kartu Kredit</label>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Field wrapper start -->
-
-                                                    <!-- Field wrapper end -->
-
-                                                    </div>
-
                                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                                                         <!-- Field wrapper start -->
