@@ -48,6 +48,54 @@
     <link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
     <link href="path/to/select2.css" rel="stylesheet" /> -->
     <style>
+        .text-radio {
+            font-size: .75rem;
+            font-weight: 600;
+            margin-left: 15%;
+            margin-bottom: 18%;
+            color: #5957b1;
+        }
+
+        .card {
+            overflow: hidden;
+        }
+
+        .half-width-container {
+            display: flex;
+            width: 80%;
+            /* justify-content: space-between; */
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        label {
+            margin-bottom: 2%;
+        }
+
+        .label {
+            width: 100px;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #D9D9D9;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="radio"]:checked+.label {
+            background-color: #5957b1;
+            color: #fff;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .label {
+            margin-right: 20px;
+        }
+
         .modal {
             text-align: center;
         }
@@ -103,6 +151,7 @@
 
                     <!-- Row start -->
                     <div class="row gutters">
+                        <form action="">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                             <!-- Card start -->
@@ -380,6 +429,7 @@
 
 
                                 <!-- Modal account start -->
+                                <form action="">
                                 <div class="modal fade" id="modalaccount" tabindex="-1" aria-labelledby="modalaccount" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                         <div class="modal-content" style="padding: 0px">
@@ -388,10 +438,32 @@
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="field-wrapper">
+                                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
+                                                        <div class="text-radio">Jenis<span class="text-danger">*</span></div>
+                                                    </div>
+                                                        <div class="half-width-container">
+
+                                                            <input type="radio" name="option" id="option1" value="Option 1" checked>
+                                                            <label class="label" for="option1">Bank</label>
+
+                                                            <input type="radio" name="option" id="option2" value="Option 2">
+                                                            <label class="label" for="option2">Kartu Kredit</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Field wrapper start -->
+
+                                                    <!-- Field wrapper end -->
+
+                                                    </div>
+
                                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                                                     <!-- Field wrapper start -->
                                                     <div class="field-wrapper">
+                                                        
                                                         <input class="form-control" type="text" placeholder="Masukkan Nama Akun">
                                                         <div class="field-placeholder">Nama<span class="text-danger">*</span></div>
                                                     </div>
@@ -437,9 +509,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                </form>
                                 <!-- Modal account end -->
 
                                 <!-- Modal category start -->
+                                <form action="">
                                 <div class="modal fade" id="modalcategory" tabindex="-1" aria-labelledby="modalcategory" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                         <div class="modal-content" style="padding: 0px">
@@ -485,9 +559,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                </form>
                                 <!-- Modal category end -->
 
                                 <!-- Modal customer start -->
+                                <form action="">
                                 <div class="modal fade" id="modalcustomer" tabindex="-1" aria-labelledby="modalcustomer" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                         <div class="modal-content" style="padding: 0px">
@@ -576,6 +652,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                </form>
                                 <!-- Modal customer end -->
 
 
@@ -586,6 +663,7 @@
                         <!-- Card end -->
 
                     </div>
+                    </form>
                 </div>
                 <!-- Row end -->
 

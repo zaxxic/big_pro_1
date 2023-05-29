@@ -158,7 +158,7 @@
                             <div class="card" style="overflow: hidden">
                                 <div class="card-header">
                                     <div class="card-title">
-                                        <h3>Tambah Transfer<button type="button" style="border: none; background:none;">☆</button></h3>
+                                        <h3>Sunting Role<button type="button" style="border: none; background:none;">☆</button></h3>
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -170,7 +170,7 @@
 
                                             <div style="border-bottom: solid grey 1px;margin-bottom:1%">
                                                 <h6>Umum</h6>
-                                                <p>Informasi kontak penyedia Anda akan muncul di tagihan dan profil mereka. Anda dapat menambahkan informasi kontak dan logo mereka untuk digunakan dalam tagihan.</p>
+                                                <p>Deskrpsi Untuk Peran</p>
                                             </div>
 
                                         </div>
@@ -181,86 +181,26 @@
                                             <!-- Field wrapper end -->
 
                                         </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper-group">
-                                                <div class="field-wrapper">
-                                                    <select class="select-multiple js-states" title="Select Product Category" style="font-size: 5px;">
-                                                        <option>Hada</option>
-                                                        <option>Hodo</option>
-
-                                                    </select>
-                                                    <div class="field-placeholder">Dari Akun<span class="text-danger">*</span></div>
-                                                </div>
-
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-
-                                            <div class="field-wrapper-group">
-                                                <div class="field-wrapper">
-                                                    <select class="select-multiple js-states" title="Select Product Category" style="font-size: 5px;">
-                                                        <option>Hada</option>
-                                                        <option>Hodo</option>
-
-                                                    </select>
-                                                    <div class="field-placeholder">Ke Akun<span class="text-danger">*</span></div>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-
-                                            <div class="field-wrapper">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control datepicker">
-                                                    <span class="input-group-text">
-                                                        <i class="icon-calendar1"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="field-placeholder">Tanggal<span class="text-danger">*</span></div>
-                                            </div>
-
-                                        </div>
-                                       
-                                        
-                                        
-                                        
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
-
-                                            <div style="border-bottom: solid grey 1px;margin-bottom:1%">
-                                                <h6>Lainnya</h6>
-                                                <p>Masukkan Lampiran Pendukung untuk menyimpan transaksi yang ditautkan ke catatan Anda.</p>
-                                            </div>
-
-                                        </div>
-
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
                                                 <input class="form-control" type="text" placeholder="TRA-0076">
-                                                <div class="field-placeholder">Nomor<span class="text-danger">*</span></div>
+                                                <div class="field-placeholder">Nama<span class="text-danger">*</span></div>
                                             </div>
                                             <!-- Field wrapper end -->
 
                                         </div>
+                                       
+                                        
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
-                                                <textarea class="form-control1" rows="2" placeholder="Lampiran Tidak Wajib Diisi"></textarea>
-                                                <div class="field-placeholder">Lampiran Pendukung<span class="text-danger">*</span></div>
+                                                <textarea class="form-control1" rows="2" placeholder="Masukkan Deskripsi Peran"></textarea>
+                                                <div class="field-placeholder">Deskripsi<span class="text-danger">*</span></div>
                                                 <div class="form-text">
-                                                    Silakan masukkan Lampiran Pendukung Anda.
+                                                    Silakan masukkan Deskripsi Role yang Dibutuhkan.
                                                 </div>
                                             </div>
                                             <!-- Field wrapper end -->
@@ -270,9 +210,9 @@
                                        <div class="d-flex">
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
                                         <div  style=" float: right">
-                                            <a href="{{url('transfer')}}"><button type="button" class="btn btn-outline-primary">Batal</button></a>
+                                            <a href="{{url('role')}}"><button type="button" class="btn btn-outline-primary">Batal</button></a>
                                         
-                                        <a href="{{url('add_income')}}" style="margin-left: 10px;" > <button type="button" class="btn btn-secondary">Simpan</button></a>
+                                        <a href="{{url('role')}}" style="margin-left: 10px;" > <button type="button" class="btn btn-secondary">Simpan</button></a>
                                         </div>
                                         </div>
                                     </div>

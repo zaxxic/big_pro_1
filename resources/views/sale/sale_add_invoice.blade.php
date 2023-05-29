@@ -125,7 +125,7 @@
         padding: 3px;
         margin-left: 10px;
         
-        >button {
+        button {
           padding: 5px;
           line-height: 26px;
           box-shadow: none;
@@ -274,7 +274,7 @@
                                             <div class="row gutters">
                                               <div class="col-12">
                                                 <div class="table-responsive">
-                                                  <table class="table table-bordered">
+                                                  <table class="table table-borderless">
                                                     <thead>
                                                       <tr>
                                                         <th>Item</th>
@@ -282,113 +282,136 @@
                                                         <th>Kuantitas</th>
                                                         <th>Harga</th>
                                                         <th>Jumlah</th>
+                                                        <th>Pajak</th>
                                                         <th>Actions</th>
                                                       </tr>
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody id="table-body">
                                                       <tr>
                                                         <td>
-                                                            <!-- Field wrapper start -->
-                                                            <div id="drop-items" class="field-wrapper m-0">
-                                                              <input type="text" class="form-control">
-                                                            </div>
-                                                            <!-- Field wrapper end -->
-                                                        </td>
-                                                        <td>
-                                                          <!-- Field wrapper start -->
-                                                          <div id="drop-description" class="field-wrapper m-0">
-                                                            <input type="text" class="form-control">
-                                                          </div>
-                                                          <!-- Field wrapper end -->
-                                                        </td>
-                                                        <td>
-                                                          <!-- Field wrapper start -->
-                                                          <div  id="drop-quantity">
-                                                          <div class="field-wrapper m-0">
-                                                            <input type="number" class="form-control">
-                                                          </div>
-                                                          <div class="row">
-                                                            <div class="wrapper">
-                                                              <div class="row">
-                                                                <div class="col s12">
-                                                                  <button class="btn add-cat" style="color:grey">Tambahkan Pajak</button>
-                                                                </div>
+                                                              <div class="field-wrapper m-0">
+                                                                <select name="item[]" style="border-radius:10px" class="form-control">
+                                                                  <option value="txt">Text</option>
+                                                                  <option value="md">Markdown</option>
+                                                                  <option value="html">HTML</option>
+                                                                  <option value="php">PHP</option>
+                                                                  <option value="python">Python</option>
+                                                                  <option value="java">Java</option>
+                                                                  <option value="js" selected>JavaScript</option>
+                                                                  <option value="ruby">Ruby</option>
+                                                                  <option value="vhdl">VHDL</option>
+                                                                  <option value="verilog">Verilog</option>
+                                                                  <option value="csharp">C#</option>
+                                                                </select>
                                                               </div>
-                                                            </div>
-                                                          
+                                                            </td>
+                                                        <td>
+                                                          <div class="field-wrapper m-0">
+                                                            <input type="text" style="border-radius:10px" name="deskripsi[]" class="form-control">
                                                           </div>
-                                                        </div>
-                                                          <!-- Field wrapper end -->
                                                         </td>
                                                         <td>
-                                                           <!-- Field wrapper start -->
-                                                           <div id="drop-price" class="field-wrapper m-0">
-                                                            <input type="number" class="form-control">
+                                                          <div class="field-wrapper m-0">
+                                                            <input type="number" style="border-radius:10px" name="kuantitas[]" class="form-control">
                                                           </div>
-                                                          <!-- Field wrapper end -->
                                                         </td>
                                                         <td>
-                                                            <!-- Field wrapper start -->
-                                                            <div id="drop-amount" class="field-wrapper m-0">
-                                                              <input type="number" class="form-control">
+                                                          <div class="field-wrapper m-0">
+                                                            <input type="number" style="border-radius:10px" name="harga[]" class="form-control">
+                                                          </div>
+                                                        </td>
+                                                        <td>
+                                                          <div class="field-wrapper m-0">
+                                                            <input type="number" style="border-radius:10px" name="jumlah[]" class="form-control">
+                                                          </div>
+                                                        </td>
+                                                        <td>
+                                                          <div id="pajak-wrapper">
+                                                            <div class="field-wrapper m-0 pajak-input-wrapper">
+                                                              <input type="number" style="border-radius:10px" name="pajak[]" class="form-control pajak-input">
                                                             </div>
-                                                            <!-- Field wrapper end -->
+                                                            <div class="add-pajak-wrapper">
+                                                              <button class="btn btn-light add-pajak">
+                                                                <i class="icon-plus"></i> Tambah Pajak
+                                                              </button>
+                                                            </div>
+                                                          </div>
                                                         </td>
                                                         <td>
-                                                          <div id="drop-delete" class="table-actions">
-                                                            <button class="btn btn-light" id="drop" style="background-color: white">
+                                                          <div class="table-actions">
+                                                            <button class="btn btn-light delete-row">
                                                               <i class="icon-trash-2"></i>
                                                             </button>
                                                           </div>
                                                         </td>
                                                       </tr>
+                                                    </tbody>
+                                                    <tfoot>
                                                       <tr>
-                                                        <td colspan="3">
-                                                          
-                                                          <select id="select-code-language" class="demo-code-language" placeholder="Select a language..." autocomplete="off">
-                                                            <option value="txt">Text</option>
-                                                            <option value="md">Markdown</option>
-                                                            <option value="html">HTML</option>
-                                                            <option value="php">PHP</option>
-                                                            <option value="python">Python</option>
-                                                            <option value="java">Java</option>
-                                                            <option value="js" selected>JavaScript</option>
-                                                            <option value="c#">Ruby</option>
-                                                            <option value="c#">VHDL</option>
-                                                            <option value="c#">Verilog</option>
-                                                            <option value="c#">C#</option>
-                                                            <option value="c++">C/C++</option>
-                                                          </select>
-                                                    
-                                                        </td>
-                                                        <div>
-                                                        <td colspan="3">
-                                                          <div class="row gutters" style="align-items:center">
-                                                            <div class="col-auto">
-                                                              <label class="col-form-label">Tambahkan diskon</label>
-                                                            </div>
-                                                            <div class="col-auto">
-                                                              <input type="text" class="form-control" placeholder="0%">
-                                                            </div>
-                                                          </div>
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td colspan="3">&nbsp;</td>
-                                                        <td colspan="2">
+                                                        <td colspan="5"></td>
+                                                        <td>
                                                           <p class="m-0">Subtotal</p>
                                                           <p class="m-0">Diskon</p>
+                                                          <p class="m-0">Total Pajak</p>
                                                           <h5 class="mt-2">Total</h5>
                                                         </td>
                                                         <td>
-                                                          <p class="m-0">Rp.0.00</p>
-                                                          <p class="m-0">Rp.0.00</p>
-                                                          <h5 class="mt-2">Rp.0.00</h5>
+                                                          <p id="subtotal" class="m-0">Rp.0.00</p>
+                                                          <p id="diskon" class="m-0">   <div class="field-wrapper m-0">
+                                                            <input type="text"  style="border-radius:10px" name="deskripsi[]" class="form-control">
+                                                          </div> </p>
+                                                          <p id="total-pajak" class="m-0">Rp.0.00</p>
+                                                          <h5 id="total" class="mt-2">Rp.0.00</h5>
                                                         </td>
                                                       </tr>
-                                                    </tbody>
+                                                    </tfoot>
                                                   </table>
-                                                </div>
+                                                  
+                                                  <button class="btn btn-primary" id="add-row">Tambah Baris</button>                                                  
+                                                 	<!-- Button trigger modal -->
+										<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+											Launch Demo Modal
+										</button>
+
+										<!-- Modal start -->
+										<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content" style="
+                        margin-top: -20%;
+                    ">
+											<div class="modal-header">
+													<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<form>
+                            <div class="field-wrapper m-0">
+                                <label for="nama">Nama</label>
+                              <input type="text" name="nama" style="border-radius:10px" placeholder="Masukan nama item" id="nama"class="form-control">
+                            </div>
+                            <div class="field-wrapper m-0">
+                                <label for="nama">Harga Jual</label>
+                              <input type="text" name="Harga"  style="border-radius:10px" placeholder="Masukan harga item" id="nama"class="form-control">
+                            </div>
+                            <div class="field-wrapper m-0">
+                                <label for="nama">kategori</label>
+                              <input type="text" name="kategori" style="border-radius:10px" placeholder="Masukan nama item" id="nama"class="form-control">
+                            </div>
+                            <div class="field-wrapper m-0">
+                                <label for="nama">Pajak</label>
+                              <input type="text" name="Pajak" style="border-radius:10px" placeholder="Masukan nama item" id="nama"class="form-control">
+                            </div>
+                          </form>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+												</div>
+												</div>
+											</div>
+										</div>
+										<!-- Modal end -->
+
+                                                                              </div>
 
                                               </div>
                                             </div>
@@ -531,6 +554,7 @@
                                                           <option value="c#">Verilog</option>
                                                           <option value="c#">C#</option>
                                                           <option value="c++">C/C++</option>
+                                                          <option value="c++">C/C++</option>
                                                         </select>
                                                         <div class="field-wrapper">
                                                           <label for="judul" class="field-label">Footer <span class="text-danger">*</span></label>
@@ -600,6 +624,8 @@
 
 		<!-- Main Js Required -->
 		<script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dynamicrows/dist/dynamicrows.min.js"></script>
 
     <script src="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.js")}}"></script>
     <script>
@@ -677,7 +703,7 @@
       hideSelected: false,
       plugins: {
         'dropdown_header': {
-          title: '<button style="border:none; background: transparent"><i class="icon-add"> Tambah Item</i></button>'
+          title: '<button id="btn-add-row" style="border:none; background: transparent"><i class="icon-add"></i> Tambah Item</button>'
         }
       }
     });
@@ -704,6 +730,119 @@
     });
     </script>
 
+
+<script>
+  document.getElementById('add-row').addEventListener('click', function() {
+    var tableBody = document.getElementById('table-body');
+    var newRow = document.createElement('tr');
+    newRow.innerHTML = `
+    <td>
+        <div class="field-wrapper m-0">
+          <select name="item[]" style="border-radius:10px" class="form-control">
+            <option value="txt">Text</option>
+            <option value="md">Markdown</option>
+            <option value="html">HTML</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="js" selected>JavaScript</option>
+            <option value="ruby">Ruby</option>
+            <option value="vhdl">VHDL</option>
+            <option value="verilog">Verilog</option>
+            <option value="csharp">C#</option>
+          </select>
+        </div>
+      </td>
+      <td>
+        <div class="field-wrapper m-0">
+          <input type="text" name="deskripsi[]" style="border-radius:10px" class="form-control">
+        </div>
+      </td>
+      <td>
+        <div class="field-wrapper m-0">
+          <input type="number" name="kuantitas[]" style="border-radius:10px" class="form-control">
+        </div>
+      </td>
+      <td>
+        <div class="field-wrapper m-0">
+          <input type="number" name="harga[]" style="border-radius:10px" class="form-control">
+        </div>
+      </td>
+      <td>
+        <div class="field-wrapper m-0">
+          <input type="number" name="jumlah[]" style="border-radius:10px" class="form-control">
+        </div>
+      </td>
+      <td>
+        <div id="pajak-wrapper">
+          <div class="field-wrapper m-0 pajak-input-wrapper">
+            <input type="number" name="pajak[]" style="border-radius:10px" class="form-control pajak-input">
+          </div>
+          <div class="add-pajak-wrapper">
+            <button class="btn btn-light add-pajak">
+              <i class="icon-plus"></i> Tambah Pajak
+            </button>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="table-actions">
+          <button class="btn btn-light delete-row">
+            <i class="icon-trash-2"></i>
+          </button>
+        </div>
+      </td>
+    `;
+    tableBody.appendChild(newRow);
+  });
+
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('delete-row')) {
+      var row = e.target.closest('tr');
+      row.parentNode.removeChild(row);
+    }
+
+    if (e.target.classList.contains('add-pajak')) {
+      var pajakWrapper = e.target.closest('#pajak-wrapper');
+      var pajakInputWrapper = pajakWrapper.querySelector('.pajak-input-wrapper');
+      var newPajakInputWrapper = pajakInputWrapper.cloneNode(true);
+      newPajakInputWrapper.querySelector('.pajak-input').value = '';
+
+      var addPajakWrapper = pajakWrapper.querySelector('.add-pajak-wrapper');
+      addPajakWrapper.parentNode.insertBefore(newPajakInputWrapper, addPajakWrapper);
+    }
+  });
+
+  function calculateTotal() {
+    var jumlahInputs = document.querySelectorAll('input[name="jumlah[]"]');
+    var subtotal = 0;
+
+    jumlahInputs.forEach(function(input) {
+      subtotal += parseFloat(input.value) || 0;
+    });
+
+    var diskonInput = document.getElementById('diskon-input');
+    var diskon = parseFloat(diskonInput.value) || 0;
+    var totalPajakInputs = document.querySelectorAll('input[name="pajak[]"]');
+    var totalPajak = 0;
+
+    totalPajakInputs.forEach(function(input) {
+      totalPajak += parseFloat(input.value) || 0;
+    });
+
+    var total = subtotal + totalPajak - diskon;
+
+    document.getElementById('subtotal').textContent = 'Rp.' + subtotal.toFixed(2);
+    document.getElementById('diskon').textContent = 'Rp.' + diskon.toFixed(2);
+    document.getElementById('total-pajak').textContent = 'Rp.' + totalPajak.toFixed(2);
+    document.getElementById('total').textContent = 'Rp.' + total.toFixed(2);
+  }
+
+  var inputs = document.querySelectorAll('input[name="jumlah[]"], input[name="pajak[]"], #diskon-input');
+  inputs.forEach(function(input) {
+    input.addEventListener('input', calculateTotal);
+  });
+</script>
 	</body>
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/accordions.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:35 GMT -->

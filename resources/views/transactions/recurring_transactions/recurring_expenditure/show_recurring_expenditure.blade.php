@@ -65,7 +65,7 @@
         .dropdown-item {
             display: block;
             width: 100%;
-            padding: .25rem 1rem;
+            padding: .9rem 1rem;
             clear: both;
             font-weight: 400;
             color: #212529;

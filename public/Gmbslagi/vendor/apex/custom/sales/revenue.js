@@ -19,34 +19,30 @@ var options = {
 		data: [100, 320, 270, 200, 400, 280, 320, 270, 600, 220, 160, 60]
 	}],
 	stroke: {
-		width: [0, 5],
+		width: [-1],
 		curve: "smooth"
 	},
 	plotOptions: {
 		bar: {
-			horizontal: !1, 
+			horizontal: !1,
 			columnWidth: "35%"
 		}
 	},
 	grid: {
-    borderColor: '#e0e6ed',
-    strokeDashArray: 5,
+    borderColor: '#000000',
+    strokeDashArray: -1,
     xaxis: {
       lines: {
         show: true
       }
-    },   
-    yaxis: {
-      lines: {
-        show: false,
-      } 
     },
+
     padding: {
       top: 0,
       right: 0,
       bottom: 10,
       left: 10
-    }, 
+    },
   },
   yaxis: {
     show: false,
@@ -54,6 +50,9 @@ var options = {
 	labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
   xaxis: {
     type: 'month'
+  },
+  yaxis:{
+type:'data'
   },
 	tooltip: {
     y: {

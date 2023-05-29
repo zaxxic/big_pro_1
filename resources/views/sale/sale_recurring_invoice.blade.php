@@ -197,8 +197,8 @@
                                     <div class="card-header">
                                         <div class="card-title"><h3>Faktur Berulang<button type="button" style="border: none; background:transparent;">☆</button></h3></div>
                                         <div class="graph-day-selection" role="group" style="margin-left: 50%">
-											<a href="{{url('add_invoice')}}">
-											<button type="button" class="btn active" style="background: transparent">Tambah Faktur Berulang</button>
+											<a href="{{route('add_invoice')}}">
+											<button type="submit" class="btn active" style="background: transparent">Tambah Faktur Berulang</button>
 											</a>
 										</div>
 										<div class="dropdown icon-dots-three-vertical">
