@@ -351,7 +351,7 @@
                                     <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6" >
                                         <div class="hr-switch">
                                             <a href="{{url('show_account1')}}">
-                                                <div class="empty-box">
+                                                <div class="empty-box" id="pills-profile-tab">
                                                     <h6 class="text">Transaksi</h6>
 
                                                 </div>
@@ -364,7 +364,7 @@
                                     <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6" >
                                         <div class="hr-switch">
                                             <a href="{{url('show_account2')}}">
-                                                <div class="empty-box active">
+                                                <div class="empty-box active" id="pills-profile-tab">
                                                     <h6 class="text">Transfer</h6>
 
                                                 </div>

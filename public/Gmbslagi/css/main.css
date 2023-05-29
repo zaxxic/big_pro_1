@@ -173,12 +173,12 @@ body.full-view .sidebar-wrapper {
 }
 
 body.full-view .sidebar-wrapper .sidebar-tabs {
-    height: calc(100vh);
+    /* height: calc(100vh); */
 }
 
 body.full-view .sidebar-wrapper .sidebar-tabs .nav {
     border-radius: 0;
-    height: calc(100vh);
+    /* height: calc(100vh); */
 }
 
 body.full-view .main-container {
@@ -2024,7 +2024,7 @@ ul.activity li.activity-list.warning:before {
 
 .content-wrapper {
     padding: 0 1.5rem 0 1.5rem;
-    height: calc(100vh - 150px);
+    /* height: calc(100vh - 150px); */
     overflow: auto;
 }
 
