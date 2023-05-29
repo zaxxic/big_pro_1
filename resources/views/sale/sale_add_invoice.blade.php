@@ -327,10 +327,10 @@
                                                         </td>
                                                         <td>
                                                           <div id="pajak-wrapper">
-                                                            <div class="field-wrapper m-0 pajak-input-wrapper">
+                                                            <div class="field-wrapper mb-1 pajak-input-wrapper">
                                                               <input type="number" style="border-radius:10px" name="pajak[]" class="form-control pajak-input">
                                                             </div>
-                                                            <div class="add-pajak-wrapper">
+                                                            <div class="add-pajak-wrapper mb-2">
                                                               <button class="btn btn-light add-pajak">
                                                                 <i class="icon-plus"></i> Tambah Pajak
                                                               </button>
@@ -369,8 +369,8 @@
                                                   
                                                   <button class="btn btn-primary" id="add-row">Tambah Baris</button>                                                  
                                                  	<!-- Button trigger modal -->
-										<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-											Launch Demo Modal
+										<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+											Tambah Item
 										</button>
 
 										<!-- Modal start -->
@@ -397,7 +397,7 @@
                                 <label for="nama">kategori</label>
                               <input type="text" name="kategori" style="border-radius:10px" placeholder="Masukan nama item" id="nama"class="form-control">
                             </div>
-                            <div class="field-wrapper m-0">
+                            <div class="field-wrapper ">
                                 <label for="nama">Pajak</label>
                               <input type="text" name="Pajak" style="border-radius:10px" placeholder="Masukan nama item" id="nama"class="form-control">
                             </div>
@@ -775,10 +775,10 @@
       </td>
       <td>
         <div id="pajak-wrapper">
-          <div class="field-wrapper m-0 pajak-input-wrapper">
+          <div class="field-wrapper mb-1 pajak-input-wrapper">
             <input type="number" name="pajak[]" style="border-radius:10px" class="form-control pajak-input">
           </div>
-          <div class="add-pajak-wrapper">
+          <div class="add-pajak-wrapper mb-1">
             <button class="btn btn-light add-pajak">
               <i class="icon-plus"></i> Tambah Pajak
             </button>
