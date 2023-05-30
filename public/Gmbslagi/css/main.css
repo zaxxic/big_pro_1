@@ -9599,3 +9599,12 @@ label {
 .table.dataTable {
     background: white;
 }
+.icon-edit{
+    color: rgb(229, 134, 0)
+}
+.icon-trash{
+    color: rgb(255, 0, 0)
+}
+.icon-eye{
+    color: rgb(77, 77, 247)
+}
