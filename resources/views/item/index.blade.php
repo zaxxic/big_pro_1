@@ -178,20 +178,20 @@
 											<a href="{{url('add_supplier')}}">
 											<button type="button" class="btn active" style="background: transparent">Tambah Item</button>
 											</a>
+											
 										</div>
-										<div class="dropdown icon-dots-three-vertical">
-											<span></span>
-											<div class="dropdown-content">
-												<a href="#">
-												<button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
-													Impor
-												</button>
-												</a>
-												<a href="#" class="icon-folder" style="color: #333">
-												<button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
-												</a>
-											</div>
-										</div>     
+									<div class="dropdown icon-dots-three-vertical">
+												<div class="dropdown-content">
+													<a href="#">
+													<button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
+														Impor
+													</button>
+													</a>
+													<a href="#" class="icon-folder" style="color: #333">
+													<button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
+													</a>
+												</div>
+											</div>     
                                     </div>
                                     <div class="card-body">
                                                     <!-- Row start -->
