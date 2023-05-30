@@ -24,5 +24,17 @@ class InvoiceController extends Controller
         return view('sale.rcrDetailInv');
     }
     
-    
+    public function costumers()
+    {
+        return view('sale.costumers');
+    }
+
+    public function add_cos()
+    {
+        return view('sale.add_costumers');
+    }
+    public function details()
+    {
+        return view('sale.sale_details_invoice');
+    }
 }

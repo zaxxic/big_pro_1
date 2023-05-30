@@ -9005,12 +9005,12 @@ fieldset:disabled .btn-outline-success {
 }
 
 .form-control:focus {
-    border-color: #3887FE;
+    border-color: #5957b1;
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 2px;
     outline: auto !important;
-    outline-color: #3887FE !important;
+    outline-color: #5957b1 !important;
 }
 
 .form1 {
@@ -9598,4 +9598,13 @@ label {
 }
 .table.dataTable {
     background: white;
+}
+.icon-edit-2{
+    color: rgb(229, 134, 0)
+}
+.icon-trash{
+    color: rgb(255, 0, 0)
+}
+.icon-eye1{
+    color: rgb(77, 77, 247)
 }

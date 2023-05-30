@@ -18,11 +18,13 @@ use App\Http\Controllers\Show_reportController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\CurrencyController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SupplierController;
+use App\Http\Controllers\TaxController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -104,6 +106,11 @@ Route::get('add_costumers', [CostumersController::class, 'add_cos'])->name('add_
 Route::get('costumer', [CostumersController::class, 'costumers'])->name('costumers');
 Route::get('show_cos', [CostumersController::class, 'show_cos'])->name('show_cos');
 Route::get('edit_cos', [CostumersController::class, 'edit_cos'])->name('edit_cos');
+Route::get('costumer', [InvoiceController::class, 'costumers'])->name('costumers');
+Route::get('add_costumers', [InvoiceController::class, 'add_cos'])->name('add_costumers');
+Route::get('details', [InvoiceController::class, 'details'])->name('details');
+Route::get('costumer', [InvoiceController::class, 'costumers'])->name('costumers');
+Route::get('add_costumers', [InvoiceController::class, 'add_cos'])->name('add_costumers');
 
 //role
 Route::get('/role', [RoleController::class, 'index'])->name('role');
@@ -161,5 +168,11 @@ Route::get('transaksi', function () {
 });
 //Users
 Route::get('/users',[UsersController::class,'usersindex'])->name('users-index');
-Route::get('/user-add',[UsersController::class,'usersadd'])->name('users-add');
+Route::get('/add_users',[UsersController::class,'add_users'])->name('add_users');
 // Route::get('invoice', )
+//Tax
+Route::get('/tax',[TaxController::class,'tax_index'])->name('tax');
+Route::get('/add-tax',[TaxController::class,'tax_add'])->name('tax-add');
+//currency
+Route::get('/currency',[CurrencyController::class,'currency_index'])->name('currency');
+Route::get('/add-currency',[CurrencyController::class,'currency_add'])->name('currency-add');
