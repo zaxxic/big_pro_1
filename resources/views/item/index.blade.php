@@ -175,7 +175,7 @@
                                     <div class="card-header">
                                         <div class="card-title"><h3>Item<button type="button" style="border: none; background:transparent;">☆</button></h3></div>
                                         <div class="graph-day-selection" role="group" style="margin-left: 65%">
-											<a href="{{url('add_supplier')}}">
+											<a href="{{route('item-add')}}">
 											<button type="button" class="btn active" style="background: transparent">Tambah Item</button>
 											</a>
 											
