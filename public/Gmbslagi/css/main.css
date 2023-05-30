@@ -482,7 +482,7 @@ p {
     background: #5957b1;
     height: 100vh;
 
-   
+
 }
 
 .sidebar-wrapper .sidebar-tabs .nav a.logo {
@@ -4951,7 +4951,6 @@ ul.recent-orders li .order-details span.order-date {
     -ms-flex-pack: center;
     justify-content: center;
     position: relative;
-    background: white;
 }
 
 @media screen and (max-width:992px) {
@@ -4967,8 +4966,8 @@ ul.recent-orders li .order-details span.order-date {
     border-radius: 20px;
     -webkit-box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
     box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
-    min-width: 520px;
-    max-width: 520px;
+    min-width: 320px;
+    max-width: 320px;
 }
 
 .login-screen .login-logo {

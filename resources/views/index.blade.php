@@ -50,7 +50,7 @@
     <!-- Loading wrapper start -->
     <div id="loading-wrapper" role="status">
         <div class="spinner-border"></div>
-        Sabar Ngentod...
+        Loading...
     </div>
     <!-- Loading wrapper end -->
 
@@ -224,8 +224,6 @@
         <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
         <script src="https://unpkg.com/tippy.js@6.3.1/dist/tippy-bundle.umd.js"></script>
 
-        <script src="{{ asset("Gmbslagi/js/show_laporan_bar.js") }}"></script>
-        <script src="{{ asset("Gmbslagi/js/show_laporan_pie.js") }}"></script>
         <script src="{{ asset("Gmbslagi/js/chart_index.js") }}"></script>
 </body>
 
