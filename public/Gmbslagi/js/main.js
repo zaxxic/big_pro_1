@@ -1,158 +1,143 @@
 // Loading
-$(function() {
-	$("#loading-wrapper").fadeOut(1000);
+$(function () {
+    $("#loading-wrapper").fadeOut(1000);
 });
-
 
 // Toggle sidebar
-$("#toggle-sidebar").on('click', function () {
-	$(".page-wrapper").toggleClass("toggled");
+$("#toggle-sidebar").on("click", function () {
+    $(".page-wrapper").toggleClass("toggled");
 });
 
-
 // Toggle graph day selection
-$(function() {
-	$(".graph-day-selection .btn").on('click', function () {
-		$(".graph-day-selection .btn").removeClass("active");
-		$(this).addClass("active");   
-	});
+$(function () {
+    $(".graph-day-selection .btn").on("click", function () {
+        $(".graph-day-selection .btn").removeClass("active");
+        $(this).addClass("active");
+    });
 });
 
 // Todays Date
-$(function() {
-	var interval = setInterval(function() {
-		var momentNow = moment();
-		$('#todays-date').html(momentNow.format('DD MMMM YYYY'));
-	}, 100);
+$(function () {
+    var interval = setInterval(function () {
+        var momentNow = moment();
+        $("#todays-date").html(momentNow.format("DD MMMM YYYY"));
+    }, 100);
 });
 
-
 // Todo list
-$('.todo-body').on('click', 'li.todo-list', function() {
-	$(this).toggleClass('done');
+$(".todo-body").on("click", "li.todo-list", function () {
+    $(this).toggleClass("done");
 });
 
 // Chat App
-$(".users-container .users-list li").on('click', function () {
-	$(".empty-chat-screen").addClass("d-none");
-	$(".chat-content-wrapper").removeClass("d-none");
-	$(".users-container .users-list li").removeClass("active-chat");
-	$(this).addClass("active-chat");
+$(".users-container .users-list li").on("click", function () {
+    $(".empty-chat-screen").addClass("d-none");
+    $(".chat-content-wrapper").removeClass("d-none");
+    $(".users-container .users-list li").removeClass("active-chat");
+    $(this).addClass("active-chat");
 });
 
 // Task App
-(function($) {
-	var checkList = $('.task-checkbox'),
-	toDoCheck = checkList.children('input[type="checkbox"]');
-	toDoCheck.each(function(index, element) {
-		var $this = $(element),
-		taskItem = $this.closest('.task-block');
-		$this.on('click', function(e) {
-			taskItem.toggleClass('task-checked');
-		});
-	});
+(function ($) {
+    var checkList = $(".task-checkbox"),
+        toDoCheck = checkList.children('input[type="checkbox"]');
+    toDoCheck.each(function (index, element) {
+        var $this = $(element),
+            taskItem = $this.closest(".task-block");
+        $this.on("click", function (e) {
+            taskItem.toggleClass("task-checked");
+        });
+    });
 })(jQuery);
 
-
-
 // Task App
-$(function() {
-	$(".task-actions a.important").on('click', function () {
-		$(this).toggleClass("active");
-	});
+$(function () {
+    $(".task-actions a.important").on("click", function () {
+        $(this).toggleClass("active");
+    });
 });
-$(function() {
-	$(".task-actions a.star").on('click', function () {
-		$(this).toggleClass("active");
-	});
+$(function () {
+    $(".task-actions a.star").on("click", function () {
+        $(this).toggleClass("active");
+    });
 });
-$(function() {
-	$(".task-action-items a.mark-done-item").on('click', function () {
-		$( event.target ).closest( ".task-block" ).toggleClass( "task-checked" );
-	});
+$(function () {
+    $(".task-action-items a.mark-done-item").on("click", function () {
+        $(event.target).closest(".task-block").toggleClass("task-checked");
+    });
 });
-$(function() {
-	$(".task-action-items a.delete-task-item").on('click', function () {
-		$( event.target ).closest( ".task-block" ).remove();
-	});
-});
-
-
-$('.pem-btn').click(function() {
-	$('pem-menu').toggleClass("show");
+$(function () {
+    $(".task-action-items a.delete-task-item").on("click", function () {
+        $(event.target).closest(".task-block").remove();
+    });
 });
 
+$(".pem-btn").click(function () {
+    $("pem-menu").toggleClass("show");
+});
 
 // Custom Default/Compact/Pinned Sidebars JS
 jQuery(function ($) {
+    // Default Compact menu
+    $(".default-sidebar-dropdown > a").on("click", function () {
+        $(".default-sidebar-submenu").slideUp(200);
+        if ($(this).parent().hasClass("active")) {
+            $(".default-sidebar-dropdown").removeClass("active");
+            $(this).parent().removeClass("active");
+        } else {
+            $(".default-sidebar-dropdown").removeClass("active");
+            $(this).next(".default-sidebar-submenu").slideDown(200);
+            $(this).parent().addClass("active");
+        }
+    });
 
-	// Default Compact menu
-	$(".default-sidebar-dropdown > a").on('click', function () {
-		$(".default-sidebar-submenu").slideUp(200);
-		if ($(this).parent().hasClass("active")) {
-			$(".default-sidebar-dropdown").removeClass("active");
-			$(this).parent().removeClass("active");
-		} else {
-			$(".default-sidebar-dropdown").removeClass("active");
-			$(this).next(".default-sidebar-submenu").slideDown(200);
-			$(this).parent().addClass("active");
-		}
-	});
+    // Compact menu
+    $(".compact-sidebar-dropdown > a").on("click", function () {
+        $(".compact-sidebar-submenu").slideUp(200);
+        if ($(this).parent().hasClass("active")) {
+            $(".compact-sidebar-dropdown").removeClass("active");
+            $(this).parent().removeClass("active");
+        } else {
+            $(".compact-sidebar-dropdown").removeClass("active");
+            $(this).next(".compact-sidebar-submenu").slideDown(200);
+            $(this).parent().addClass("active");
+        }
+    });
 
+    // Pinned sidebar
+    $(function () {
+        $(".slim-sidebar");
+        $(".default-sidebar-wrapper").on(
+            "hover",
+            function () {
+                console.log("mouseenter");
+                $(".slim-sidebar").addClass("sidebar-hovered");
+            },
+            function () {
+                console.log("mouseout");
+                $(".slim-sidebar").removeClass("sidebar-hovered");
+            }
+        );
+    });
 
-	// Compact menu
-	$(".compact-sidebar-dropdown > a").on('click', function () {
-		$(".compact-sidebar-submenu").slideUp(200);
-		if ($(this).parent().hasClass("active")) {
-			$(".compact-sidebar-dropdown").removeClass("active");
-			$(this).parent().removeClass("active");
-		} else {
-			$(".compact-sidebar-dropdown").removeClass("active");
-			$(this).next(".compact-sidebar-submenu").slideDown(200);
-			$(this).parent().addClass("active");
-		}
-	});
-
-
-	// Pinned sidebar
-	$(function() {
-		$(".slim-sidebar");
-		$(".default-sidebar-wrapper").on('hover', function () {
-				console.log("mouseenter");
-				$(".slim-sidebar").addClass("sidebar-hovered");
-			},
-			function () {
-				console.log("mouseout");
-				$(".slim-sidebar").removeClass("sidebar-hovered");
-			}
-		)
-	});
-
-
-	// Added by Srinu 
-	$(function(){
-		// When the window is resized, 
-		$(window).resize(function(){
-			// When the width and height meet your specific requirements or lower
-			if ($(window).width() <= 768){
-				$(".page-wrapper").removeClass("pinned");
-			}
-		});
-		// When the window is resized, 
-		$(window).resize(function(){
-			// When the width and height meet your specific requirements or lower
-			if ($(window).width() >= 768){
-				$(".page-wrapper").removeClass("toggled");
-			}
-		});
-	});
-
-
+    // Added by Srinu
+    $(function () {
+        // When the window is resized,
+        $(window).resize(function () {
+            // When the width and height meet your specific requirements or lower
+            if ($(window).width() <= 768) {
+                $(".page-wrapper").removeClass("pinned");
+            }
+        });
+        // When the window is resized,
+        $(window).resize(function () {
+            // When the width and height meet your specific requirements or lower
+            if ($(window).width() >= 768) {
+                $(".page-wrapper").removeClass("toggled");
+            }
+        });
+    });
 });
-
-
-
-
 
 /***********
 ***********
@@ -163,24 +148,28 @@ jQuery(function ($) {
 ***********/
 
 // Tooltip
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-	return new bootstrap.Tooltip(tooltipTriggerEl)
-})
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+});
 
 // Popover
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="popover"]')
+);
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-	return new bootstrap.Popover(popoverTriggerEl)
-})
+    return new bootstrap.Popover(popoverTriggerEl);
+});
 
 // const optionMenu = document.querySelector(".select-menu"),
 // 		  selectBtn = optionMenu.querySelector(".select-btn"),
 // 		  options = optionMenu.querySelectorAll(".option"),
 // 		  sBtn_text = optionMenu.queySelector(".sBtn-text");
-	
+
 // 	selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
-	
+
 // 	options.forEach(option =>{
 // 		option.addEventListener("click", ()=>{
 // 			let selectedOption = option.querySelector(".option-text").innerText;
@@ -188,7 +177,6 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 // 			console.log(selectedOption)
 // 		})
 // 	})
-
 
 // var dropdown = document.getElementsByClassName("dropdown-btn");
 // var droprow = document.getElementsByClassName("droprow");
@@ -198,15 +186,14 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 // for (i = 0; i < dropdown.length; i++) {
 //   dropdown[i].addEventListener("click", function() {
 //     this.classList.toggle("active");
-	
-    
+
 //     var dropdownContent = this.nextElementSibling;
 //     if (dropdownContent.style.display === "block") {
 //       dropdownContent.style.display = "none";
 //     } else {
 //       dropdownContent.style.display = "block";
 //     }
-   
+
 //   });
 
 //   droprow[i].addEventListener("click", function() {
@@ -217,12 +204,12 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 //   function switchPage() {
 //     var dropdown = document.getElementById("myDropdown");
 //     var selectedValue = dropdown.value;
-    
+
 //     if (selectedValue !== "") {
 //       window.location.href = selectedValue;
 //     }
 //   }
-  
+
 //   function openModal(modalText) {
 //     document.getElementById("modalText").innerText = modalText;
 //     document.getElementById("myModal").style.display = "block";
@@ -236,33 +223,66 @@ var dropdowns = document.getElementsByClassName("dropdown-btn");
 var droprows = document.getElementsByClassName("droprow");
 
 for (var i = 0; i < dropdowns.length; i++) {
-  dropdowns[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-	
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
+    dropdowns[i].addEventListener("click", function () {
+        this.classList.toggle("active");
 
-  droprows[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    this.classList.toggle("rotate");
-  });
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+    });
+
+    droprows[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        this.classList.toggle("rotate");
+    });
 }
 
 // Menambahkan kode berikut
 var currentDropdown = document.querySelector(".dropdown-btn.current-page");
 if (currentDropdown) {
-  currentDropdown.classList.add("active");
-  var dropdownContent = currentDropdown.nextElementSibling;
-  if (dropdownContent) {
-    dropdownContent.style.display = "block";
-  }
+    currentDropdown.classList.add("active");
+    var dropdownContent = currentDropdown.nextElementSibling;
+    if (dropdownContent) {
+        dropdownContent.style.display = "block";
+    }
 }
 
+// document.addEventListener("DOMContentLoaded", function () {
+//     Ambil semua tautan navigasi dashboard
+//     var dashboardLinks = document.querySelectorAll(".nav-link");
+
+//     Hapus kelas "active" dari semua tautan navigasi dashboard
+//     dashboardLinks.forEach(function (link) {
+//         link.classList.remove("active");
+//     });
+
+//     Tambahkan kelas "active" pada tautan navigasi dashboard yang aktif
+//     var currentDashboardLink = document.querySelector(".current-page");
+//     currentDashboardLink.classList.add("active");
+// });
+
+// Mendapatkan ID tab yang aktif saat ini
+const activeTabId = localStorage.getItem("activeTabId");
+
+// Jika ada ID tab yang aktif, tambahkan class 'active' ke tab tersebut
+if (activeTabId) {
+    const activeTab = document.querySelector(`#${activeTabId}`);
+    activeTab.classList.add("active");
+}
+
+// Menangkap event saat tab diklik
+document.addEventListener("click", function (event) {
+    const clickedTab = event.target.closest(".nav-link");
+
+    // Jika tab yang diklik ada dan bukan tab aktif saat ini, simpan ID tab tersebut ke localStorage
+    if (clickedTab && !clickedTab.classList.contains("active")) {
+        const tabId = clickedTab.getAttribute("id");
+        localStorage.setItem("activeTabId", tabId);
+    }
+});
 
 
 
