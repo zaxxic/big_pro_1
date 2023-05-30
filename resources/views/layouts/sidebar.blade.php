@@ -70,10 +70,8 @@
 								</a>
 							</li> --}}
 							<li class="mt-3 ">
-								<a href="#" class="dropdown-btn {{ request()->routeIs('') ? 'current-page' : '' }}"><i class="icon-tag1" style=" font-size: 19px;"></i><span>&emsp;Penjualan</span><i class="icon-chevron-down1 droprow "></i></a>
+								<a href="#" class="dropdown-btn {{ request()->routeIs('invoice') || request()->routeIs('recurring_invoice') || request()->routeIs('add_invoice') || request()->routeIs('detail_rcr') || request()->routeIs('add_costumers') || request()->routeIs('costumers')|| request()->routeIs('show_cos')|| request()->routeIs('edit_cos') ? 'current-page' : '' }} "><i class="icon-tag1" style=" font-size: 19px;"></i><span>&emsp;Penjualan</span><i class="icon-chevron-down1 droprow "></i></a>
 								<ul class="dropdown-container">
-									<li class="mt-2"><a href=""><span style="margin-left: 20px;">&emsp;Faktur</span></a></li>
-									<li class="mt-2"><a href="/costumer"><span style="margin-left: 20px;">&emsp;Pelanggan</span></a></li>
 									<li class="mt-2"><a href="{{ route('invoice') }}"><span style="margin-left: 20px;">&emsp;Faktur</span></a></li>
 									<li class="mt-2"><a href="{{ route('costumers') }}"><span style="margin-left: 20px;">&emsp;Pelanggan</span></a></li>
 								</ul>
