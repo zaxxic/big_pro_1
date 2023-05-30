@@ -46,16 +46,16 @@
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4-custom.css")}}" />
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
     <style>
-        .ellipsis {
-            white-space: nowrap;
+        /* .ellipsis { */
+            /* white-space: nowrap; */
             /* agar teks tidak melompat ke baris baru */
-            overflow: hidden;
+            /* overflow: hidden; */
             /* menghilangkan teks yang melampaui batas */
-            text-overflow: ellipsis;
+            /* text-overflow: ellipsis; */
             /* menampilkan elipsis (...) pada teks yang terpotong */
-            width: 50%;
+            /* width: 50%; */
             /* lebar kontainer teks, sesuaikan dengan kebutuhan */
-        }
+        /* } */
         
 
         .float-right {
@@ -342,7 +342,7 @@
                                                 <td name="item" id="checkbox1"><input type="checkbox"></td>
                                                 <td>Manager</th>
                                                 <td>
-                                                    <div class="ellipsis">Mereka bisa mengakses halaman perbankan, dashboard, pembelian, penjualan, barang, kalender, laporan, profil</div>
+                                                    <div class="ellipsis" style="max-width: 500px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Mereka bisa mengakses halaman perbankan, dashboard, pembelian, penjualan, barang, kalender, laporan, profil</div>
                                                 </td>
                                                 <th>
                                                     <div class="menu-icons" style="font-size: 15px;">
@@ -355,7 +355,7 @@
                                                 <td name="item" id="checkbox1"><input type="checkbox"></td>
                                                 <td>Accountant</th>
                                                 <td>
-                                                    <div class="ellipsis">
+                                                    <div class="ellipsis" style="max-width: 500px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                                         Mereka bisa mengakses halaman perbankan, dashboard, pembelian, penjualan, barang, kalender, laporan, profil, notifikasi, perusahaan, faktur, tagihan
                                                     </div>
                                                 </td>
@@ -370,7 +370,7 @@
                                                 <td name="item" id="checkbox1"><input type="checkbox"></td>
                                                 <td>Customer</th>
                                                 <td>
-                                                    <div class="ellipsis">
+                                                    <div class="ellipsis" style="max-width: 500px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                                         Mereka bisa mengakses halaman perbankan, dashboard, pembelian, penjualan, barang, kalender, laporan, profil
                                                     </div>
                                                 </td>
@@ -420,11 +420,11 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content" style="padding: 0px">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="staticBackdropLabel">Hapus Role</h5>
+                                            <h5 class="modal-title" id="staticBackdropLabel">Hapus Peran</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <p>Anda Yakin Ingin Menghapus Role Ini?</p>
+                                            <p>Anda Yakin Ingin Menghapus Peran Ini?</p>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Hapus</button>

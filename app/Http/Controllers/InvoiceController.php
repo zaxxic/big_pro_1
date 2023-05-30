@@ -18,6 +18,11 @@ class InvoiceController extends Controller
     {
         return view('sale.sale_add_invoice');
     }
+
+    public function detail_recurring()
+    {
+        return view('sale.rcrDetailInv');
+    }
     
     public function costumers()
     {
@@ -27,5 +32,9 @@ class InvoiceController extends Controller
     public function add_cos()
     {
         return view('sale.add_costumers');
+    }
+    public function details()
+    {
+        return view('sale.sale_details_invoice');
     }
 }

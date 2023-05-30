@@ -165,12 +165,11 @@
                             <div class="card">
                                 <div class="card-header">
                                     <div class="card-title">
-                                        <h3>Kategori<button type="button"
-                                                style="border: none; background:none;">☆</button></h3>
+                                        <h3>Pengguna<button type="button"style="border: none; background:none;">☆</button></h3>
                                     </div>
                                     <div class="graph-day-selection" role="group" style="margin-left: 60%">
-                                        <a href="{{ url('add-category') }}">
-                                            <button type="button" style="background: trasparent" class="btn active">Tambah Kategori</button>
+                                        <a href="{{ url('add_users') }}">
+                                            <button type="button" style="background: trasparent" class="btn active">Undang Pengguna</button>
                                         </a>
                                     </div>
                                     <div class="dropdown icon-dots-three-vertical">
@@ -221,12 +220,10 @@
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_pemasok') }}"
-                                                                class="menu-icon edit-icon"><i
+                                                                class="menu-icon icon-edit-2"><i
                                                                     class="icon-edit"></i></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i
-                                                                    class="icon-trash"></i></a>
-                                                            <a href="#" class="menu-icon view-icon"><i
-                                                                    class="icon-eye"></i></a>
+                                                            <a href="#" class="menu-icon delete-icon"></a>
+                                                            <a href="#" class="menu-icon icon-eye1"></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -246,12 +243,9 @@
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_pemasok') }}"
-                                                                class="menu-icon edit-icon"><i
-                                                                    class="icon-edit"></i></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i
-                                                                    class="icon-trash"></i></a>
-                                                            <a href="#" class="menu-icon view-icon"><i
-                                                                    class="icon-eye"></i></a>
+                                                                class="menu-icon icon-edit-2"></a>
+                                                            <a href="#" class="menu-icon delete-icon"></a>
+                                                            <a href="#" class="menu-icon icon-eye1"></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -271,12 +265,10 @@
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_pemasok') }}"
-                                                                class="menu-icon edit-icon"><i
+                                                                class="menu-icon icon-edit-2"><i
                                                                     class="icon-edit"></i></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i
-                                                                    class="icon-trash"></i></a>
-                                                            <a href="#" class="menu-icon view-icon"><i
-                                                                    class="icon-eye"></i></a>
+                                                            <a href="#" class="menu-icon delete-icon"></a>
+                                                            <a href="#" class="menu-icon icon-eye1"></a>
                                                         </div>
                                                     </td>
                                                 </tr>

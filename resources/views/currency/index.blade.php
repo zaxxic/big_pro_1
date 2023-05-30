@@ -150,29 +150,7 @@
 					<div class="row gutters">
 						<div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-9">
 
-							<!-- Search container start -->
-							<div class="search-container">
-
-								<!-- Toggle sidebar start -->
-								<div class="toggle-sidebar" id="toggle-sidebar">
-									<i class="icon-menu"></i>
-								</div>
-								<!-- Toggle sidebar end -->
-
-								<!-- Mega Menu Start -->
-								<div class="cd-dropdown-wrapper">
-									
-
-								
-								</div>
-								<!-- Mega Menu End -->
-
-								<!-- Search input group start -->
-								
-								<!-- Search input group end -->
-
-							</div>
-							<!-- Search container end -->
+						
 
 						</div>
 						
@@ -195,10 +173,10 @@
                                 <!-- Card start -->
                                 <div class="card">
                                     <div class="card-header">
-                                        <div class="card-title"><h3>Faktur Berulang<button type="button" style="border: none; background:transparent;">☆</button></h3></div>
-                                        <div class="graph-day-selection" role="group" style="margin-left: 50%">
-											<a href="{{route('add_invoice')}}">
-											<button type="submit" class="btn active" style="background: transparent">Tambah Faktur Berulang</button>
+                                        <div class="card-title"><h3>Mata Uang<button type="button" style="border: none; background:transparent;">☆</button></h3></div>
+                                        <div class="graph-day-selection" role="group" style="margin-left: 68%">
+											<a href="{{url('add-currency')}}">
+											<button type="button" class="btn active" style="background: transparent">Tambah Mata Uang</button>
 											</a>
 										</div>
 										<div class="dropdown icon-dots-three-vertical">
@@ -216,18 +194,12 @@
 										</div>     
                                     </div>
                                     <div class="card-body">
-                                   
+                                                    <!-- Row start -->
+
                                     <!-- Row end -->
-                                    <nav class="d-flex" style="margin-top:-4%">
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6" style="margin-top: 8%;">
-                                        {{-- <ul class="d-flex" style="font-size: 13pt; margin-top: 5%"> --}}
-                                        <h6 class="empty-box text" style="margin-right: 20%"><a href="{{ url ('invoice')}}" >Faktur</a></h6>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6" style="margin-top: 8%;">
-                                        <h6 class="empty-box text active" style="margin-left:-20%; margin-right:40%" ><a href="{{ url ('recurring_invoice')}}">Faktur Berulang</a></h6>
-                                        </div>
-                                        {{-- </ul> --}}
-                                    </nav>
+									
+										
+									  </nav>
                                         <div class="content">
                                             <div class="searchcontainer">
                                               <i class="icon-search"></i><input class="search " type="text" placeholder="Cari atau seleksi hasil.." style="
@@ -235,111 +207,52 @@
                                             </div>
                                         </div>
                                         <div class="table-responsive">
-                                            <table class="table table-hover caption-top">
-                                                <thead>
-                                                <tr>
-                                                    <th scope="col"> <input type="checkbox" id="select-all-checkbox"> </th>
-                                                    <th scope="col">Tanggal Mulai</th>
-                                                    <th scope="col">Pelanggan</th>
-                                                    <th scope="col">Status</th>
-                                                    <th scope="col">Frekuensi</th>
-                                                    <th scope="col">Durasi</th>
-                                                    <th scope="col">Jumlah</th>
-                                                    <th scope="col">Aksi</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <!-- Data 1 -->
-                                                <tr class="table-row">
-                                                    <td><input type="checkbox" class="other-checkbox"></td>
-                                                    <td>12 mei 2023</td>
-                                                    <td>koirul</td>
-                                                    <td>konsep</td>
-                                                    <td>Bulanan</td>
-                                                    <td>24 mei 2023</td>
-                                                    <td>91.000.000,00</td>
-                                                    <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="#" class="menu-icon icon-eye1"></a>
-                                                        </div>
-                                                    </td>	
-                                                </tr>
-                                            
-                                                <!-- Data 2 -->
-                                                <tr class="table-row">
-                                                    <td><input type="checkbox" class="other-checkbox"></td>
-                                                    <td>12 mei 2024</td>
-                                                    <td>choirul</td>
-                                                    <td>konsep</td>
-                                                    <td>Bulanan</td>
-                                                    <td>25 mei 2023</td>
-                                                    <td>80.000.000,00</td>
-                                                    <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="#" class="menu-icon icon-eye1"></a>
-                                                        </div>
-                                                    </td>	
-                                                </tr>
-                                                
-                                            
-                                                <!-- Data 3 -->
-                                                <tr class="table-row">
-                                                    <td><input type="checkbox" class="other-checkbox"></td>
-                                                    <td>14 mei 2023</td>
-                                                    <td>rudi</td>
-                                                    <td>konsep</td>
-                                                    <td>Bulanan</td>
-                                                    <td>26 mei 2023</td>
-                                                    <td>100.000.000,00</td>
-                                                    <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="#" class="menu-icon icon-eye1"></a>
-                                                        </div>
-                                                    </td>	
-                                                </tr>
-                                                
-                                                <tr class="table-row">
-                                                    <td><input type="checkbox" class="other-checkbox"></td>
-                                                    <td>15 mei 2023</td>
-                                                    <td>slemet</td>
-                                                    <td>sebagian</td>
-                                                    <td>Bulanan</td>
-                                                    <td>24 mei 2023</td>
-                                                    <td>20.000.000,00</td>
-                                                    <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="#" class="menu-icon icon-eye1"></a>
-                                                        </div>
-                                                    </td>	
-                                                </tr>
-                                                
-                                                <tr class="table-row">
-                                                    <td><input type="checkbox" class="other-checkbox"></td>
-                                                    <td>25 mei 2023</td>
-                                                    <td>wahyu</td>
-                                                    <td>dibayar</td>
-                                                    <td>Bulanan</td>
-                                                    <td>28 mei 2023</td>
-                                                    <td>45.000.000,00</td>
-                                                    <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="#" class="menu-icon icon-eye1"></a>
-                                                        </div>
-                                                    </td>	
-                                                </tr>
-                                                
-                                                </tbody>
-                                            </table>
+											<table class="table table-hover caption-top">
+												<thead>
+												  <tr>
+													<th scope="col"> <input type="checkbox" id="select-all-checkbox"> </th>
+                                                    <th scope="col">Nama</th>
+                                                    <th scope="col">Kode</th>
+                                                    <th scope="col">Simbol</th>
+                                                    <th scope="col">Kurs</th>
+													<th scope="col">Aksi</th>
+												  </tr>
+												</thead>
+												<tbody>
+												  <!-- Data 1 -->
+												  <tr class="table-row">
+													<td><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>Rupiah</td>
+                                                    <td>USD</td>
+                                                    <td>$</td>
+                                                    <td>1</td>  
+													<td>
+														<div class="menu-icons" style="font-size: 15px;">
+															<a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
+															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+															<a href="#" class="menu-icon icon-eye1"></a>
+														  </div>
+													</td>	
+												  </tr>
+											  
+												  <!-- Data 2 -->
+												  <tr class="table-row">
+													<td><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>Rupiah</td>
+                                                    <td>IDR</td>
+                                                    <td>Rp</td>
+                                                    <td>10</td>
+													<td>
+														<div class="menu-icons" style="font-size: 15px;">
+															<a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
+															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+															<a href="#" class="menu-icon icon-eye1"></a>
+														  </div>
+													</td>	
+												  </tr>
+												 
+												</tbody>
+											  </table>
                                                         <!-- Card start -->
                                             <div class="card">
                                                 <div class="card-body" style="margin-left: -2.1%">
@@ -364,35 +277,10 @@
 
                                                 </div>
                                             </div>
-                                <!-- Card end -->
-                                    </div>
-
+								<!-- Card end -->
+									</div>
 										<!-- Modal start -->
-										<div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
-											<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-												<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Impor Faktur</h5>
-														<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-													</div>
-													<div class="modal-body">
-														<div id="dropzone">
-															<form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
-
-																<div class="dz-message needsclick">
-																	<button type="button" class="dz-button" style="border:none; margin-right:20%; margin-left:20%; margin-top: 12%">Pilih berkas di sini untuk mengunggah.</button><br>
-																</div>
-
-															</form>
-														</div>
-													</div>
-													<div class="modal-footer" style="margin-top:2%">
-														<a href="" onclick="window.location.reload()" style="margin-right: 2%" data-bs-dismiss="modal">Batal</a>
-														<button type="button" class="btn btn-primary" style="border-radius: 20px">Upload</button>
-													</div>
-												</div>
-											</div>
-										</div>
+									
 										<!-- Modal end -->
                                     </div>
                                 </div>

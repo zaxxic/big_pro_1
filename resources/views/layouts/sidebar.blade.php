@@ -58,22 +58,24 @@
 							</li>
 
 
-							<!-- <li class="{{ Request::is('item-index') ? 'active' : '' }}">
+							<li class="{{ Request::is('item-index') ? 'active' : '' }}">
 								<a href="{{ route('item-index') }}">
-								  <i class="icon-download1" style="font-size: 19px;"></i><span>&emsp;Barang</span>
+								  <i class="icon-download1" style="font-size: 19px;"></i><span>&emsp;Item</span>
 								</a>
-							  </li> -->
-							<li class="mt-3">
+							  </li>
+							{{-- <li class="mt-3">
 								<a href="{{url('pembelian_pemasok')}}" class="{{ request()->routeIs('pembelian_pemasok') ? 'current-page' : '' }}" aria-selected="false">
 									<i class="icon-download1" style="font-size: 19px;"></i>
 									<span>&emsp;Barang</span>
 								</a>
-							</li>
+							</li> --}}
 							<li class="mt-3 ">
 								<a href="#" class="dropdown-btn {{ request()->routeIs('') ? 'current-page' : '' }}"><i class="icon-tag1" style=" font-size: 19px;"></i><span>&emsp;Penjualan</span><i class="icon-chevron-down1 droprow "></i></a>
 								<ul class="dropdown-container">
 									<li class="mt-2"><a href=""><span style="margin-left: 20px;">&emsp;Faktur</span></a></li>
-									<li class="mt-2"><a href=""><span style="margin-left: 20px;">&emsp;Pelanggan</span></a></li>
+									<li class="mt-2"><a href="/costumer"><span style="margin-left: 20px;">&emsp;Pelanggan</span></a></li>
+									<li class="mt-2"><a href="{{ route('invoice') }}"><span style="margin-left: 20px;">&emsp;Faktur</span></a></li>
+									<li class="mt-2"><a href="{{ route('costumers') }}"><span style="margin-left: 20px;">&emsp;Pelanggan</span></a></li>
 								</ul>
 							</li>
 							<li class="mt-3 ">
@@ -94,10 +96,10 @@
 
 
 							<li class="mt-3">
-								<a href="{{ url('report') }}" aria-selected="false"><i class="icon-file-text" style=" font-size: 19px;"></i><span>&emsp;Laporan</span></a>
+								<a href="{{ route('report') }}" aria-selected="false"><i class="icon-file-text" style=" font-size: 19px;"></i><span>&emsp;Laporan</span></a>
 							</li>
 							<li class="mt-3">
-								<a href="{{ url('calendar') }}" aria-selected="false"><i class="icon-calendar1" style=" font-size: 19px;"></i><span>&emsp;Kalender</span></a>
+								<a href="{{ route('calendar') }}" aria-selected="false"><i class="icon-calendar1" style=" font-size: 19px;"></i><span>&emsp;Kalender</span></a>
 							</li>
 						</ul>
 
@@ -123,11 +125,11 @@
 				<div class="sidebarMenuScroll mt-2">
 					<div class="sidebar-menu active">
 						<ul class="active">
-							<!-- @section('active') -->
+
 							<li class="active">
 								<a href="{{ url ('/')}}" class="current-page"><i class="icon-briefcase" style=" font-size: 19px;"></i><span>&emsp;Perusahaan</span></a>
 							</li>
-							<!-- @endsection -->
+
 							<li class="mt-3 active">
 								<a href="{{ url ('/')}}"><i class="icon-file " style=" font-size: 19px;"></i><span>&emsp;Faktur</span></a>
 							</li>
@@ -145,10 +147,10 @@
 								</ul>
 							</li>	 -->
 							<li class="mt-3">
-								<a href="reports.html"><i class="icon-local_atm" style=" font-size: 19px;"></i><span>&emsp;Mata Uang</span></a>
+								<a href="{{ route('currency') }}"><i class="icon-local_atm" style=" font-size: 19px;"></i><span>&emsp;Mata Uang</span></a>
 							</li>
 							<li class="mt-3">
-								<a href="saas.html"><i class="icon-line-graph" style=" font-size: 19px;"></i><span>&emsp;Pajak</span></a>
+								<a href="{{ route('tax') }}"><i class="icon-line-graph" style=" font-size: 19px;"></i><span>&emsp;Pajak</span></a>
 							</li>
 							<li class="mt-3">
 								<a href="saas.html"><i class="icon-wifi" style=" font-size: 19px;"></i><span>&emsp;IP Wifi</span></a>
