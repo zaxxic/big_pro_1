@@ -247,18 +247,15 @@
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
         <!-- Sidebar wrapper end -->
+        @include('layouts.header')
         
-         <!-- Toggle sidebar start -->
-         <div class="toggle-sidebar" id="toggle-sidebar">
-                <i class="icon-menu"></i>
-            </div>
-            <!-- Toggle sidebar end -->
+           
 
         <!-- *************
 				************ Main container start *************
 			************* -->
         <div class="main-container">
-           
+             
 
 
             <!-- Content wrapper scroll start -->
@@ -270,6 +267,7 @@
                     <!-- Row start -->
                     <div class="card-body">
                         <div class="row gutters">
+                          
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                                 <!-- Card start -->
