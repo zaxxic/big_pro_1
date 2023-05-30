@@ -175,104 +175,64 @@
                                 <!-- Card start -->
 								<div class="card">
                                     <div class="card-header">
-										<div class="card-title"><h3>Tambah Faktur<button type="button" style="border: none; background:none;">☆</button></h3></div>
-									</div>
+                                      <div class="card-title">
+                                        <h3>Tambah Tagihan Rutin<button type="button" style="border: none; background:none;">☆</button></h3>
+                                      </div>
+                                    </div>
                                     <div class="card-body">
-                                        
-                                        <!-- Faq start -->
-                                        <div class="accordion" id="faqAccordion">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="headingOne">
-                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                        <div class="accordion-heading">
-                                                          <h6 class="accordion-title">Perusahaan</h6>
-                                                          <p class="accordion-description">Ubah alamat, logo, dan informasi lain perusahaanmu.</p>
-                                                        </div>
-                                                      </button>
-                                                </h2>
-                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                                                    <div class="accordion-body">
-                                                        <div class="d-flex row">
-                                                            <div class="col-8">
-                                                        <div class="d-flex align-items-center">
-                                                          <div class="flex-grow-1 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-8" style="margin-bottom: 15%">
-                                                            <div class="field-wrapper">
-                                                              <label for="judul" class="field-label">Judul <span class="text-danger">*</span></label>
-                                                              <input class="form-control" type="text" id="judul" placeholder="Masukkan Judul" style="border-radius: 10px; margin-bottom: 10px;">
-                                                            </div>
-                                                            <div class="field-wrapper">
-                                                              <label for="subjudul" class="field-label">Subjudul <span class="text-danger">*</span></label>
-                                                              <input class="form-control" type="text" id="subjudul" placeholder="Masukkan Subjudul" style="border-radius: 10px; margin-bottom: 10px;">
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                            </div>
-                                                        <div class="col-4">
-                                                          <div class="flex-grow-0 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-8">
-                                                              <div id="dropzone" style="width: 300px; height:300px">
-                                                                <label for="subjudul" class="field-label">Logo<span class="text-danger">*</span></label>
-                                                                <form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload" style="margin-right: 10%">
-                                                                <div class="dz-message needsclick">
-                                                                  <button type="button" class="dz-button">Pilih berkas di sini untuk mengunggah.</button><br>
-                                                                </div>
-                                                              </form>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                        </div>
-                                                    </div>
-                                                      </div>                                                                                                                                                                                                                       
-                                                </div>
-                                            </div>
-                                            <div class="" style="margin-top: 2%;">
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
-												
-                                            <div style="border-bottom: solid grey 1px;">
-                                              <h6>Tagihan</h6>
-                                              <p>Detail penagihan muncul di faktur Anda. Tanggal Faktur digunakan di dasbor dan laporan. Pilih tanggal yang Anda harapkan untuk dibayar sebagai Tanggal Jatuh Tempo.</p>
-                                            </div>
-
+                                      <div class="row">
+                                        <div class="col-md-4">
+                                          <div class="field-wrapper mb-3">
+                                            <label for="pemasok" class="field-label">Pemasok <span class="text-danger">*</span></label>
+                                            <select id="pemasok" class="form-control" autocomplete="off">
+                                              <option>Rudi</option>
+                                              <option selected>Ruli</option>
+                                              <option>Adi</option>
+                                              <option>Daffa</option>
+                                              <option>Gembes</option>
+                                              <option>Reno</option>
+                                              <option>Triski</option>
+                                            </select>
                                           </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                          <div class="row" style="margin-top: -3%">
+                                            <div class="col-md-6">
+                                              <div class="field-wrapper mb-3">
+                                                <label for="tanggal-tagihan" class="field-label">Tanggal Tagihan</label>
+                                                <input id="tanggal-tagihan" class="form-control" type="text" placeholder="Masukkan Tanggal Tagihan">
+                                              </div>
                                             </div>
-                                            <div class="d-flex">
-                                              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" style="margin-right: 5%">
-                                                <div class="field-wrapper mb-3">
-                                                  <label for="judul" class="field-label">Pelanggan <span class="text-danger">*</span></label>
-                                                  <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?" style="height: 118px">
-                                                    <option>Rudi</option>
-                                                    <option selected>Ruli</option>
-                                                    <option>Adi</option>
-                                                    <option>Daffa</option>
-                                                    <option>Gembes</option>
-                                                    <option>Reno</option>
-                                                    <option>Triski</option>
-                                                  </select>                                                  
-                                                </div>
-                                                  <div class="field-wrapper mb-3">
-                                                    <label for="judul" class="field-label">Tanggal Faktur</label>
-                                                    <input class="form-control" type="text" placeholder="Masukkan Nama">
-                                                  </div>
-                                                    <div class="field-wrapper mb-3">
-                                                    <label for="judul" class="field-label">Tanggal Pembayaran<span class="text-danger">*</span></label>
-                                                    <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?">
-                                                      <option selected>Jatuh tempo dalam 15 hari</option>
-                                                      <option>Jatuh tempo dalam 30 hari</option>
-                                                      <option>Jatuh tempo dalam 45 hari</option>
-                                                      <option>Jatuh tempo dalam 60 hari</option>
-                                                      <option>Jatuh tempo dalam 90 hari</option>
-                                                      <option>Jatuh tempo saat diterima</option>
-                                                    </select>                                                  
-                                                  </div>
-                                                  <div class="field-wrapper mb-3">
-                                                    <label for="judul" class="field-label">Nomor Faktur </label>
-                                                    <input class="form-control" type="text" placeholder="Masukkan Nama">
-                                                  </div>
-                                                  <div class="field-wrapper mb-3">
-                                                    <label for="judul" class="field-label">Jumlah Pesanan </label>
-                                                    <input class="form-control" type="text" placeholder="Masukkan Jumlah Pesanan">
-                                                  </div>
+                                            <div class="col-md-6">
+                                              <div class="field-wrapper mb-3">
+                                                <label for="tanggal-pembayaran" class="field-label">Tanggal Pembayaran <span class="text-danger">*</span></label>
+                                                <select id="tanggal-pembayaran" class="form-control" autocomplete="off">
+                                                  <option selected>Jatuh tempo dalam 15 hari</option>
+                                                  <option>Jatuh tempo dalam 30 hari</option>
+                                                  <option>Jatuh tempo dalam 45 hari</option>
+                                                  <option>Jatuh tempo dalam 60 hari</option>
+                                                  <option>Jatuh tempo dalam 90 hari</option>
+                                                  <option>Jatuh tempo saat diterima</option>
+                                                </select>
                                               </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <div class="field-wrapper mb-3">
+                                                <label for="nomor-faktur" class="field-label">Nomor Faktur</label>
+                                                <input id="nomor-faktur" class="form-control" type="text" placeholder="Masukkan Nomor Faktur">
                                               </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <div class="field-wrapper mb-3">
+                                                <label for="nomor-pesanan" class="field-label">Nomor Pesanan</label>
+                                                <input id="nomor-pesanan" class="form-control" type="text" placeholder="Masukkan Nomor Pesanan">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  
+                                  
                                               <!-- Row start -->
                                             <div class="row gutters">
                                               <div class="col-12">
@@ -417,7 +377,7 @@
                                               </div>
                                             </div>
                                             <!-- Row end -->
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 2%">
 												
                                               <!-- Field wrapper start -->
                                               <div class="field-wrapper">
@@ -426,148 +386,50 @@
                                               </div>
                                               <!-- Field wrapper end -->                     
                                             </div>
-                                            <div class="" style="margin-top: 2%;">
-                                              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
-                          
-                                              <div style="border-bottom: solid grey 1px;">
-                                                <h6>Jadwal</h6>
-                                                <p>Pilih persyaratan dan waktu mulai/berakhir untuk memastikan bahwa pelanggan menerima faktur Anda pada hari yang tepat.</p>
-                                              </div>
-  
-                                            </div>
-                                              </div>
-                                            <!-- Row start -->
-                                          <div class="row gutters">
-                                            <div class="row">
-                                              <div class="col-6">
-                                                <div class="d-flex align-items-center">
-                                              <p class="col-5">Ulangi invoice ini</p>
-                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                                              <div class="field-wrapper">
-                                                <select class="select-single js-states" title="Select Product Category" data-live-search="true">
-                                                  <option>Harian</option>
-                                                  <option>Mingguan</option>
-                                                  <option>Bulanan</option>
-                                                  <option>Tahunan</option>
-                                                  <option>Sesuikan</option>
-                                                </select>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          </div>
-                                          </div>
-                                          <div class="col-10">
-                                            <div class="d-flex align-items-center">
-                                          <p class="col-3">Buat invoice pertama aktif</p>
-                                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-left: -1%">
-
-                                              <!-- Field wrapper start -->
-                                              <div class="field-wrapper">
-                                                <div class="input-group">
-                                                  <input type="text" class="form-control datepicker">
-                                                  <span class="input-group-text">
-                                                    <i class="icon-calendar1"></i>
-                                                  </span>
-                                                </div>
-                                              </div>
-                                              <!-- Field wrapper end -->
-                      
-                                            </div>                                        
-                                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12" style="margin-left: 1%">
-                                              <div class="field-wrapper">
-                                                <select class="select-single js-states" title="Select Product Category" data-live-search="true">
-                                                  <option>Setelah</option>
-                                                  <option>Pada</option>
-                                                  <option>Tidak Pernah</option>
-                                                </select>
-                                              </div>
-                                            </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-left: 1%">
-
-                                              <!-- Field wrapper start -->
-                                              <div class="field-wrapper">
-                                                <div class="input-group">
-                                                  <input type="text" class="form-control datepicker">
-                                                  <span class="input-group-text">
-                                                    <i class="icon-calendar1"></i>
-                                                  </span>
-                                                </div>
-                                              </div>
-                                              <!-- Field wrapper end -->
-                      
-                                            </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-10">
-                                            <div class="d-flex align-items-center">
-                                              <p class="col-3">Kirim email secara otomatis</p>
-                                              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                                                <!-- Field wrapper start -->
-                                                <div class="toggle-container">
-                                                  <span class="toggle-text toggle-text-yes" style="margin-left: -3%">Ya</span>
-                                                  <span class="toggle-text toggle-text-no" style="margin-left: 2%">Tidak</span>
-                                                  <div class="toggle-switch" style="margin-left: 3%"></div>
-                                                </div>
-                                                <!-- Field wrapper end -->
-                                              </div>
-                                            </div>
-                                          </div>
-                                          
-                                          </div>
-                                          <!-- Row end -->
-                                          <div class="accordion-item" style="margin-top: 1%">
-                                            <h2 class="accordion-header" id="headingTwo">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                  <div class="accordion-heading">
-                                                    <h6 class="accordion-title">Opsi Lanjutan</h6>
-                                                    <p class="accordion-description">Pilih kategori, tambahkan, atau edit footer, dan tambahkan lampiran ke invoice-recurring.</p>
-                                                  </div>
-                                                </button>
-                                            </h2>
-                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                                              <div class="accordion-body">
-                                                <div class="d-flex row">
-                                                  <div class="col-4">
-                                                    <div class="flex-grow-0 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-8">
-                                                      <div id="dropzone" style="width: 300px; height:300px">
-                                                        <label for="subjudul" class="field-label">Lampiran<span class="text-danger">*</span></label>
-                                                        <form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload" style="margin-right: 10%">
-                                                          <div class="dz-message needsclick">
-                                                            <button type="button" class="dz-button">Pilih berkas di sini untuk mengunggah.</button><br>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <div class="accordion-heading">
+                                                            <h6 class="accordion-title">Opsi Lanjutan</h6>
+                                                            <p class="accordion-description">Pilih kategori, tambahkan, atau edit footer, dan tambahkan lampiran ke invoice-recurring.</p>
                                                           </div>
-                                                        </form>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="col-8">
-                                                    <div class="d-flex align-items-center">
-                                                      <div class="flex-grow-1 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-8" style="margin-bottom: 15%">
-                                                        <select id="dropdown2" class="demo-code-language" placeholder="Select a language..." autocomplete="off">
-                                                          <option value="txt">Text</option>
-                                                          <option value="md">Markdown</option>
-                                                          <option value="html">HTML</option>
-                                                          <option value="php">PHP</option>
-                                                          <option value="python">Python</option>
-                                                          <option value="java">Java</option>
-                                                          <option value="js" selected>JavaScript</option>
-                                                          <option value="c#">Ruby</option>
-                                                          <option value="c#">VHDL</option>
-                                                          <option value="c#">Verilog</option>
-                                                          <option value="c#">C#</option>
-                                                          <option value="c++">C/C++</option>
-                                                          <option value="c++">C/C++</option>
-                                                        </select>
-                                                        <div class="field-wrapper">
-                                                          <label for="judul" class="field-label">Footer <span class="text-danger">*</span></label>
-                                                          <textarea class="form-control" placeholder="Masukan Catatan" rows="2"></textarea>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        <div class="d-flex row">
+                                                          <div class="col-4">
+                                                            <div class="flex-grow-0 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-8">
+                                                              <div id="dropzone" style="width: 300px; height:300px; margin-top: 1%">
+                                                                <label for="subjudul" class="field-label">Lampiran</label>
+                                                                <form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload" style="margin-right: 10%">
+                                                                  <div class="dz-message needsclick">
+                                                                    <button type="button" class="dz-button">Pilih berkas di sini untuk mengunggah.</button><br>
+                                                                  </div>
+                                                                </form>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                          <div class="col-8">
+                                                            <div class="d-flex align-items-center">
+                                                              <div class="flex-grow-1 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-8" style="margin-bottom: 15%">
+                                                                <label for="subjudul" class="field-label">Kategori<span class="text-danger">*</span></label>
+                                                                <select id="dropdown2" class="demo-code-language" placeholder="Kategori baru" autocomplete="off">
+                                                                  <option value="Lainya" selected>Lainya</option>
+                                                                  <option value="Beli Web">Beli Web</option>
+                                                                  <option value="Bulanan
+                                                                  
+                                                                  
+                                                                  
+                                                                  ">Bulanan</option>
+                                                                </select>
+                                                              </div>
+                                                            </div>
+                                                          </div>
                                                         </div>
                                                       </div>
-                                                    </div>
-                                                  </div>
                                                 </div>
-                                              </div>
                                             </div>
-                                        </div>
 
                                         </div>
                                         <!-- Faq end -->

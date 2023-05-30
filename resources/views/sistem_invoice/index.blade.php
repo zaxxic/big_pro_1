@@ -440,7 +440,7 @@ label{
                                             </div>
                                             <!-- Field wrapper end -->
                                            
-											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 												
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
@@ -450,7 +450,7 @@ label{
 												<!-- Field wrapper end -->
 
 											</div>
-											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 												
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
@@ -460,7 +460,7 @@ label{
 												<!-- Field wrapper end -->
 
 											</div>
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 												
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
@@ -470,7 +470,7 @@ label{
 												</div>
 												<!-- Field wrapper end -->
 
-											</div> <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+											</div> <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 												
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">

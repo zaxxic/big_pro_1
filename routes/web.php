@@ -9,7 +9,7 @@ use App\Http\Controllers\TransactionsController;
 use App\Http\Controllers\TransferController;
 use App\Http\Controllers\CostumersController;
 use App\Http\Controllers\AccountController;
-
+use App\Http\Controllers\BillController;
 use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\CalendarController;
 use App\Http\Controllers\ChartController;
@@ -26,6 +26,7 @@ use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\TaxController;
 use Illuminate\Support\Facades\Route;
+use PhpParser\Node\Stmt\Return_;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +38,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
+Route::get('/',[DashboardController::class,'index'])->name('dashboard');
 
 
 Route::get('kalender', function () {
@@ -149,6 +150,11 @@ Route::get('/laporan',[LaporanController::class, 'laporan'])->name('laporan');
 Route::get('/category',[CategoryController::class,'category_index'])->name('index-category');
 Route::get('/add-category',[CategoryController::class,'category_add'])->name('add-category');
 
+//bill
+Route::get('bill', [BillController::class, 'bill'])->name('bill');
+Route::get('recurring_bill', [BillController::class, 'recurring_bill'])->name('recurring_bill');
+Route::get('add_recurring_bill', [BillController::class, 'add_recurring_bill' ])->name('add_recurring_bill');
+Route::get('add_bill', [BillController::class, 'add_bill'])->name('add_bill');
 
 //laporan
 Route::get('/report',[ReportController::class, 'report'])->name('report');
