@@ -123,11 +123,11 @@
 				<div class="sidebarMenuScroll mt-2">
 					<div class="sidebar-menu active">
 						<ul class="active">
-							
+
 							<li class="active">
 								<a href="{{ route('company')}}" class="current-page"><i class="icon-briefcase" style=" font-size: 19px;"></i><span>&emsp;Perusahaan</span></a>
 							</li>
-							
+
 							<li class="mt-3 active">
 								<a href="{{ route('setting-invoice')}}"><i class="icon-file " style=" font-size: 19px;"></i><span>&emsp;Faktur</span></a>
 							</li>

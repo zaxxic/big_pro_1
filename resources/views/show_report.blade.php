@@ -108,11 +108,14 @@
                                     <div class="d-flex">
                                         <div class="col-12">
                                             <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
-                                                <h6 class="col-8" style="display: flex; align-items: center;">linimasa</h6>
-                                                <li class="nav-item" role="presentation">
+                                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                                <h6 style="display: flex; align-items: center;">linimasa</h6>
+                                                </div>
+                                                
+                                                <li class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12 nav-item" role="presentation">
                                                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
                                                 </li>
-                                                <li class="nav-item" role="presentation">
+                                                <li class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12nav-item" role="presentation">
                                                     <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
                                                 </li>
                                             </ul>

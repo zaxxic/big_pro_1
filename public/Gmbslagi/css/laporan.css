@@ -8,44 +8,54 @@
    background-color: #FFFFFF;
 }
 
+.ringkasan {
+    position: relative;
+    overflow: hidden;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+}
 .ringkasan .ringkasan-icon {
     height: 60px;
     width: 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     margin-right: 37px;
     text-align: center;
     border-radius: 50px;
     background-color: #FFFFFF;
 }
-.ringkasan {
-    padding: 1rem;
-    margin: 0 0 0 0;
-    border-radius: 4px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    position: relative;
+
+.ringkasan .ringkasan-icon i {
+    font-size: 2rem;
+    margin-right: 37px;
     background-color: #FFFFFF;
 }
-.ringkasan .ringkasan-icon i{
-    font-size: 2rem;
-    margin-right: 37;
-    background-color: #FFFFFF;
+.ringkasan h5 {
+    position: relative;
+    display: inline-block;
+}
+
+.ringkasan h5::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.ringkasan h5:hover::after {
+    transform: scaleX(1);
 }
 .sematkan {
     padding: 1rem;
