@@ -57,23 +57,72 @@
             color: #5e6973;
         }
 
-        .empty-box {
-            /* text-align: ; */
-            height: 25px;
-            border: 0px;
-            border-bottom: 2px solid grey;
+        @media (min-width: 576px) {
+            .box1 {
+                margin-left: 32%;
+            }
         }
 
-        .empty-box.active {
-            height: 25px;
-            border: 0px;
-            border-bottom: 2px solid #f26861;
+        .empty-box2 {
+            color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
         }
 
-        .empty-box:hover {
-            height: 25px;
-            border: 0px;
-            border-bottom: 2px solid #f26861;
+        .empty-box2.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box2:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box1 {
+            color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 5px 0px 0px 5px;
+        }
+
+        .empty-box1.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box1:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
         }
 
         .lingkaran-warna1 {
@@ -247,18 +296,15 @@
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
         <!-- Sidebar wrapper end -->
-        
-         <!-- Toggle sidebar start -->
-         <div class="toggle-sidebar" id="toggle-sidebar">
-                <i class="icon-menu"></i>
-            </div>
-            <!-- Toggle sidebar end -->
+        @include('layouts.header')
+
+
 
         <!-- *************
 				************ Main container start *************
 			************* -->
         <div class="main-container">
-           
+
 
 
             <!-- Content wrapper scroll start -->
@@ -270,6 +316,7 @@
                     <!-- Row start -->
                     <div class="card-body">
                         <div class="row gutters">
+
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                                 <!-- Card start -->
@@ -389,12 +436,13 @@
                                     </div>
                                 </div>
                                 <!-- Row end -->
+
                                 <div class="d-flex">
-                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6" style="margin-top: 8%;">
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1"  style="margin-top: 8%;">
                                         <div class="hr-switch">
                                             <a href="{{url('transactions')}}">
-                                                <div class="empty-box active">
-                                                    <h6 class="text">Transaksi</h6>
+                                                <div class="empty-box1 active">
+                                                    <h6 class="">Normal</h6>
 
                                                 </div>
                                             </a>
@@ -403,11 +451,11 @@
                                         </div>
 
                                     </div>
-                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6" style="margin-top: 8%;">
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2"  style="margin-top: 8%;">
                                         <div class="hr-switch">
                                             <a href="{{url('recurring_transactions')}}">
-                                                <div class="empty-box">
-                                                    <h6 class="text">Transaksi Rutin</h6>
+                                                <div class="empty-box2">
+                                                    <h6 class="">Rutin</h6>
 
                                                 </div>
                                             </a>
@@ -417,6 +465,7 @@
 
                                     </div>
                                 </div>
+
                                 <div class="content">
                                     <div class="searchcontainer">
                                         <i class="icon-search"></i><input class="search " type="text" placeholder="Cari Disini..." style="

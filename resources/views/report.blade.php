@@ -92,7 +92,7 @@
                             </div>
 
                             </div>
-                            <div class="row">
+                        <div class="row">
                             <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
 								<div class="sematkan">
 									<div class="sematkan-icon">
@@ -139,7 +139,7 @@
 									<p>Sematkan laporan anda</p>
 								</div>
 							</div>
-                            </div>
+                        </div>
 
                                 <div class="bg">
                                     <h5 class="mt-3">Pendapatan dan Pengeluaran</h5>
@@ -148,11 +148,25 @@
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                             <div class="ringkasan d-flex">
                                                 <div class="d-flex">
-                                                    <div class="ringkasan-icon">
+                                                    <a href="show_report"> <div class="ringkasan-icon">
                                                     <i class="icon-shopping-cart1"></i>
                                                     </div>
                                                     <div class="sale-details">
-                                                        <h5>Ringkasan Pengeluaran</h5>
+                                                        <h5>Ringkasan Pengeluaran</h5></a>
+                                                        <p>Ringkasan pengeluaran bulanan</p>
+                                                    </div>
+                                                </div>
+                                                <a href="" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical" ></a></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <div class="ringkasan d-flex">
+                                                <div class="d-flex">
+                                                    <a href="show_report"> <div class="ringkasan-icon">
+                                                    <i class="icon-shopping-cart1"></i>
+                                                    </div>
+                                                    <div class="sale-details">
+                                                        <h5>Ringkasan Pengeluaran</h5></a>
                                                         <p>Ringkasan pengeluaran bulanan</p>
                                                     </div>
                                                 </div>
@@ -162,25 +176,11 @@
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                             <div class="ringkasan d-flex">
                                                 <div class="d-flex">
-                                                    <div class="ringkasan-icon">
+                                                    <a href="show_report"> <div class="ringkasan-icon">
                                                     <i class="icon-shopping-cart1"></i>
                                                     </div>
                                                     <div class="sale-details">
-                                                        <h5>Ringkasan Pengeluaran</h5>
-                                                        <p>Ringkasan pengeluaran bulanan</p>
-                                                    </div>
-                                                </div>
-                                                <a href="/calendar" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical" ></a></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                            <div class="ringkasan d-flex">
-                                                <div class="d-flex">
-                                                    <div class="ringkasan-icon">
-                                                    <i class="icon-shopping-cart1"></i>
-                                                    </div>
-                                                    <div class="sale-details">
-                                                        <h5>Ringkasan Pengeluaran</h5>
+                                                        <h5>Ringkasan Pengeluaran</h5></a>
                                                         <p>Ringkasan pengeluaran bulanan</p>
                                                     </div>
                                                 </div>
@@ -193,11 +193,11 @@
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                             <div class="ringkasan d-flex">
                                                 <div class="d-flex">
-                                                    <div class="ringkasan-icon">
+                                                    <a href="show_report"> <div class="ringkasan-icon">
                                                     <i class="icon-shopping-cart1"></i>
                                                     </div>
                                                     <div class="sale-details">
-                                                        <h5>Ringkasan Pengeluaran</h5>
+                                                        <h5>Ringkasan Pengeluaran</h5></a>
                                                         <p>Ringkasan pengeluaran bulanan</p>
                                                     </div>
                                                 </div>
@@ -207,11 +207,11 @@
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                             <div class="ringkasan d-flex">
                                                 <div class="d-flex">
-                                                    <div class="ringkasan-icon">
+                                                    <a href="show_report"> <div class="ringkasan-icon">
                                                     <i class="icon-shopping-cart1"></i>
                                                     </div>
                                                     <div class="sale-details">
-                                                        <h5>Ringkasan Pengeluaran</h5>
+                                                        <h5>Ringkasan Pengeluaran</h5></a>
                                                         <p>Ringkasan pengeluaran bulanan</p>
                                                     </div>
                                                 </div>
@@ -221,11 +221,11 @@
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                             <div class="ringkasan d-flex">
                                                 <div class="d-flex">
-                                                    <div class="ringkasan-icon">
+                                                    <a href="show_report"> <div class="ringkasan-icon">
                                                     <i class="icon-shopping-cart1"></i>
                                                     </div>
                                                     <div class="sale-details">
-                                                        <h5>Ringkasan Pengeluaran</h5>
+                                                        <h5>Ringkasan Pengeluaran</h5></a>
                                                         <p>Ringkasan pengeluaran bulanan</p>
                                                     </div>
                                                 </div>
@@ -289,7 +289,7 @@
 
         <!-- Main Js Required -->
         <script src="{{ asset("Gmbslagi/js/main.js") }}"></script>
-
+        <script src="{{ asset("Gmbslagi/js/report.js") }}"></script>
 </body>
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/layout-tabs-tooltip.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:01:56 GMT -->

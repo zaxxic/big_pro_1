@@ -46,6 +46,28 @@
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.css")}}" />
         <style>
+			.text {
+            text-align: center;
+            color: #5e6973;
+        }
+			.empty-box {
+            /* text-align: ; */
+            height: 25px;
+            border: 0px;
+            border-bottom: 2px solid grey;
+        }
+
+        .empty-box.active {
+            height: 25px;
+            border: 0px;
+            border-bottom: 2px solid #333;
+        }
+
+        .empty-box:hover {
+            height: 25px;
+            border: 0px;
+            border-bottom: 2px solid #333;
+  		}
 		 .dropdown {
             position: relative;
             display: inline-block;
@@ -128,29 +150,7 @@
 					<div class="row gutters">
 						<div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-9">
 
-							<!-- Search container start -->
-							<div class="search-container">
-
-								<!-- Toggle sidebar start -->
-								<div class="toggle-sidebar" id="toggle-sidebar">
-									<i class="icon-menu"></i>
-								</div>
-								<!-- Toggle sidebar end -->
-
-								<!-- Mega Menu Start -->
-								<div class="cd-dropdown-wrapper">
-									
-
-								
-								</div>
-								<!-- Mega Menu End -->
-
-								<!-- Search input group start -->
-								
-								<!-- Search input group end -->
-
-							</div>
-							<!-- Search container end -->
+						
 
 						</div>
 						
@@ -173,33 +173,89 @@
                                 <!-- Card start -->
                                 <div class="card">
                                     <div class="card-header">
-                                        <div class="card-title"><h3>Item<button type="button" style="border: none; background:transparent;">☆</button></h3></div>
-                                        <div class="graph-day-selection" role="group" style="margin-left: 65%">
-											<a href="{{route('item-add')}}">
-											<button type="button" class="btn active" style="background: transparent">Tambah Item</button>
+                                        <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
+                                        <div class="card-title"><h3>Tagihan<button type="button" style="border: none; background:transparent;">☆</button></h3></div></div>
+                                        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
+                                        <div class="graph-day-selection" role="group" style="margin-left: 68%">
+											<a href="{{url('add_bill')}}">
+											<button type="button" class="btn active" style="background: transparent">Tambah Tagihan</button>
 											</a>
-											
 										</div>
-									<div class="dropdown icon-dots-three-vertical">
-												<div class="dropdown-content">
-													<a href="#">
-													<button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
-														Impor
-													</button>
-													</a>
-													<a href="#" class="icon-folder" style="color: #333">
-													<button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
-													</a>
-												</div>
-											</div>     
+										</div>
+										<div class="dropdown icon-dots-three-vertical">
+											<span></span>
+											<div class="dropdown-content">
+												<a href="#">
+												<button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
+													Impor
+												</button>
+												</a>
+												<a href="#" class="icon-folder" style="color: #333">
+												<button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
+												</a>
+											</div>
+										</div>     
                                     </div>
                                     <div class="card-body">
                                                     <!-- Row start -->
-                                 
+                                    <div class="row gutters" style="margin-left: 10%; margin-bottom: -5%">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                            <div class="stats-tile">
+                                                <div class="sale-icon">
+                                                    <p><b><i>Rp</i></b></p>
+                                                </div>
+                                                <div class="sale-details">
+                                                    <h2>25</h2>
+                                                    <p>Jatuh Tempo</p>
+                                                </div>
+                                                <div class="sale-graph">
+                                                    <div id="sparklineLine1"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                            <div class="stats-tile">
+                                                <div class="sale-icon">
+                                                    <p><b><i>Rp</i></b></p>
+                                                </div>
+                                                <div class="sale-details">
+                                                    <h2>32</h2>
+                                                    <p>Terbuka</p>
+                                                </div>
+                                                <div class="sale-graph">
+                                                    <div id="sparklineLine2"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                            <div class="stats-tile">
+                                                <div class="sale-icon">
+                                                    <p><b><i>Rp</i></b></p>
+                                                </div>
+                                                <div class="sale-details">
+                                                    <h2>19</h2>
+                                                    <p>Konsep</p>
+                                                </div>
+                                                <div class="sale-graph">
+                                                    <div id="sparklineLine3"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <!-- Row end -->
+									<nav class="d-flex">
+										<div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6" style="margin-top: 8%;">
+										{{-- <ul class="d-flex" style="font-size: 13pt; margin-top: 5%"> --}}
+										  <h6 class="empty-box text active" style="margin-right: 20%"><a href="{{ url ('bill')}}" >Tagihan</a></h6>
+										</div>
+										<div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6" style="margin-top: 8%;">
+										  <h6 class="empty-box text" style="margin-left:-20%; margin-right:40%" ><a href="{{ url ('recurring_bill')}}">Tagihan Berulang</a></h6>
+										</div>
+										{{-- </ul> --}}
+									  </nav>
                                         <div class="content">
                                             <div class="searchcontainer">
-                                              <i class="icon-search"></i><input class="search " type="text" placeholder="Cari Disini..." style="
+                                              <i class="icon-search"></i><input class="search " type="text" placeholder="Cari atau seleksi hasil.." style="
                                               margin-bottom: 2%; font-size:10pt "/>
                                             </div>
                                         </div>
@@ -208,12 +264,10 @@
 												<thead>
 												  <tr>
 													<th scope="col"> <input type="checkbox" id="select-all-checkbox"> </th>
-                                                    <th scope="col">Nama</th>
-                                                    <th scope="col">Deskripsi</th>
-                                                    <th scope="col">kategori</th>
-                                                    <th scope="col">Pajak</th>
-													<th scope="col">Harga Beli</th>
-													<th scope="col">Harga Jual</th>
+                                                    <th scope="col">Tanggal Jatuh Tempo</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Pemasok</th>
+                                                    <th scope="col">Jumlah</th>
 													<th scope="col">Aksi</th>
 												  </tr>
 												</thead>
@@ -221,12 +275,10 @@
 												  <!-- Data 1 -->
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
-                                                    <td>Anjso</td>
-                                                    <td>Makanan sehat dan bergizi</td>
-                                                    <td>Makanan</td>
-                                                    <td>N/A</td>
-                                                    <td>Rp. 20000</td>
-                                                    <td>Rp. 21000</td>
+                                                    <td>12 mei 2023</td>
+                                                    <td>konsep</td>
+                                                    <td>koirul</td>
+                                                    <td>91.000.000,00</td>
 													<td>
 														<div class="menu-icons" style="font-size: 15px;">
 															<a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
@@ -236,14 +288,60 @@
 													</td>	
 												  </tr>
 											  
+												  <!-- Data 2 -->
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
-                                                    <td>Anjso</td>
-                                                    <td>Makanan sehat dan bergizi</td>
-                                                    <td>Makanan</td>
-                                                    <td>N/A</td>
-                                                    <td>Rp. 20000</td>
-                                                    <td>Rp. 21000</td>
+                                                    <td>12 mei 2024</td>
+                                                    <td>konsep</td>
+                                                    <td>choirul</td>
+                                                    <td>80.000.000,00</td>
+													<td>
+														<div class="menu-icons" style="font-size: 15px;">
+															<a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
+															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+															<a href="#" class="menu-icon icon-eye1"></a>
+														  </div>
+													</td>	
+												  </tr>
+												
+											  
+												  <!-- Data 3 -->
+												  <tr class="table-row">
+													<td><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>14 mei 2023</td>
+                                                    <td>konsep</td>
+                                                    <td>rudi</td>
+                                                    <td>100.000.000,00</td>
+													<td>
+														<div class="menu-icons" style="font-size: 15px;">
+															<a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
+															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+															<a href="#" class="menu-icon icon-eye1"></a>
+														  </div>
+													</td>	
+												  </tr>
+												 
+												  <tr class="table-row">
+													<td><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>15 mei 2023</td>
+                                                    <td>sebagian</td>
+                                                    <td>slemet</td>
+                                                    <td>20.000.000,00</td>
+													<td>
+														<div class="menu-icons" style="font-size: 15px;">
+															<a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
+															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+															<a href="#" class="menu-icon icon-eye1"></a>
+														  </div>
+													</td>	
+												  </tr>
+												  
+												  <tr class="table-row">
+													<td><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>25 mei 2023</td>
+                                                    <td>dibayar</td>
+                                                    <td>wahyu</td>
+                                                    <td>45.000.000,00</td>
 													<td>
 														<div class="menu-icons" style="font-size: 15px;">
 															<a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
@@ -284,9 +382,9 @@
 										<!-- Modal start -->
 										<div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
 											<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-												<div class="modal-content">
+												<div class="modal-content" style="margin-top: -10%">
 													<div class="modal-header">
-														<h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Impor Pemasok</h5>
+														<h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Impor Tagihan</h5>
 														<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 													</div>
 													<div class="modal-body">
@@ -412,21 +510,6 @@
 		}
 
 		</script>
-		<script>
-            // Inisialisasi Dropzone
-            Dropzone.autoDiscover = false;
-            var myDropzone = new Dropzone("#demo-upload", {
-                maxFiles: 1, // Hanya boleh mengupload satu file
-                init: function() {
-                    this.on("addedfile", function(file) {
-                        // Menghapus file sebelumnya saat ada file baru yang diupload
-                        if (this.files.length > 1) {
-                            this.removeFile(this.files[0]);
-                        }
-                    });
-                }
-            });
-        </script>
 
 	</body>
 

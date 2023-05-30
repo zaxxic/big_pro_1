@@ -37,4 +37,8 @@ class InvoiceController extends Controller
     {
         return view('sale.sale_details_invoice');
     }
+    public function setting_invoice()
+    {
+        return view('sistem_invoice.index');
+    }
 }

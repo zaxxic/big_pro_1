@@ -50,7 +50,7 @@
     <!-- Loading wrapper start -->
     <div id="loading-wrapper" role="status">
         <div class="spinner-border"></div>
-        Sabar Ngentod...
+        Loading...
     </div>
     <!-- Loading wrapper end -->
 
@@ -105,90 +105,126 @@
                         </div>
                     </div>
                     <div class="chart-container">
-        <div id="chart"></div>
-        <br>
-        <br>
-        <div class="d-flex row">
-            <div class=" col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
-                <div id="chart2"></div>
-            </div>
-            <div class="ms-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                <div id="chart3"></div>
-            </div>
-        </div>
-    </div>
-                    <!-- Row end -->
+                        <h6>Arus kas</h6>
+                        <p>Uang masuk dan keluar dari bisnis Anda</p>
+                        <hr>
+                        <div id="chart"></div>
+                        <br>
+                        <br>
+                        <div class="d-flex flex-column flex-sm-row">
+                            <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mb-3">
+                                <h6>Arus kas</h6>
+                                <p>Uang masuk dan keluar dari bisnis Anda</p>
+                                <hr>
+                                <div id="chart2"></div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mb-3">
+                                <h6>Arus kas</h6>
+                                <p>Uang masuk dan keluar dari bisnis Anda</p>
+                                <hr>
+                                <div id="chart3"></div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row">
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                                <h6>Hutang</h6>
+                                <p>Uang masuk dan keluar dari bisnis Anda</p>
+                                <hr>
+                                <p id="debtAmount">Total Hutang: $0</p>
+                                <p id="remainingDebtAmount">Sisa Hutang: $0</p>
+                                <p id="paidDebtAmount">Telah Dibayar: $0</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" id="debtProgressBar"></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
 
-                    <!-- Row start -->
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                                <h6>utang</h6>
+                                <p>Uang masuk dan keluar dari bisnis Anda</p>
+                                <hr>
+                                <p id="receivableAmount">Total Piutang: $1000</p>
+                                <p id="remainingReceivableAmount">Sisa Piutang: $500</p>
+                                <p id="paidReceivableAmount">Telah Diterima: $0</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" id="receivableProgressBar"></div>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- Row end -->
+                        <!-- Row end -->
+
+                        <!-- Row start -->
+
+                        <!-- Row end -->
+
+                    </div>
+                    <!-- Content wrapper end -->
+
+                    <!-- App footer start -->
+                    <div class="app-footer">© Uni Pro Admin 2021</div>
+                    <!-- App footer end -->
 
                 </div>
-                <!-- Content wrapper end -->
-
-                <!-- App footer start -->
-                <div class="app-footer">© Uni Pro Admin 2021</div>
-                <!-- App footer end -->
+                <!-- Content wrapper scroll end -->
 
             </div>
-            <!-- Content wrapper scroll end -->
-
-        </div>
-        <!-- *************
+            <!-- *************
 				************ Main container end *************
 			************* -->
 
-    </div>
-    <!-- Page wrapper end -->
+        </div>
+        <!-- Page wrapper end -->
 
-    <!-- *************
+        <!-- *************
 			************ Required JavaScript Files *************
 		************* -->
-    <!-- Required jQuery first, then Bootstrap Bundle JS -->
-    <script src="{{ asset("Gmbslagi/js/jquery.min.js") }}"></script>
-    <script src="{{ asset("Gmbslagi/js/bootstrap.bundle.min.js") }}"></script>
-    <script src="{{ asset("Gmbslagi/js/modernizr.js") }}"></script>
-    <script src="{{ asset("Gmbslagi/js/moment.js") }}"></script>
-    <script src="{{ asset("Gmbslagi/js/dropdown.js") }}"></script>
+        <!-- Required jQuery first, then Bootstrap Bundle JS -->
+        <script src="{{ asset("Gmbslagi/js/jquery.min.js") }}"></script>
+        <script src="{{ asset("Gmbslagi/js/bootstrap.bundle.min.js") }}"></script>
+        <script src="{{ asset("Gmbslagi/js/modernizr.js") }}"></script>
+        <script src="{{ asset("Gmbslagi/js/moment.js") }}"></script>
+        <script src="{{ asset("Gmbslagi/js/dropdown.js") }}"></script>
 
-    <!-- *************
+        <!-- *************
 			************ Vendor Js Files *************
 		************* -->
 
-    <!-- Megamenu JS -->
-    <script src="{{ asset("Gmbslagi/vendor/megamenu/js/megamenu.js") }}"></script>
-    <script src="{{ asset("Gmbslagi/vendor/megamenu/js/custom.js") }}"></script>
+        <!-- Megamenu JS -->
+        <script src="{{ asset("Gmbslagi/vendor/megamenu/js/megamenu.js") }}"></script>
+        <script src="{{ asset("Gmbslagi/vendor/megamenu/js/custom.js") }}"></script>
 
-    <!-- Slimscroll JS -->
-    <script src="{{ asset("Gmbslagi/vendor/slimscroll/slimscroll.min.js") }}"></script>
-    <script src="{{ asset("Gmbslagi/vendor/slimscroll/custom-scrollbar.js") }}"></script>
+        <!-- Slimscroll JS -->
+        <script src="{{ asset("Gmbslagi/vendor/slimscroll/slimscroll.min.js") }}"></script>
+        <script src="{{ asset("Gmbslagi/vendor/slimscroll/custom-scrollbar.js") }}"></script>
 
-    <!-- Search Filter JS -->
-    <script src="{{ asset("Gmbslagi/vendor/search-filter/search-filter.js") }}"></script>
-    <script src="{{ asset("Gmbslagi/vendor/search-filter/custom-search-filter.js") }}"></script>
+        <!-- Search Filter JS -->
+        <script src="{{ asset("Gmbslagi/vendor/search-filter/search-filter.js") }}"></script>
+        <script src="{{ asset("Gmbslagi/vendor/search-filter/custom-search-filter.js") }}"></script>
 
-    <!-- Apex Charts -->
-    <script src="{{ asset("Gmbslagi/vendor/apex/apexcharts.min.js") }}"></script>
-    <script src="{{ asset("Gmbslagi/vendor/apex/custom/home/salesGraph.js") }}"></script>
-    <script src="{{ asset("Gmbslagi/vendor/apex/custom/home/ordersGraph.js") }}"></script>
-    <script src="{{ asset("Gmbslagi/vendor/apex/custom/home/earningsGraph.js") }}"></script>
-    <script src="{{ asset("Gmbslagi/vendor/apex/custom/home/visitorsGraph.js") }}"></script>
-    <script src="{{ asset("Gmbslagi/vendor/apex/custom/home/customersGraph.js") }}"></script>
-    <script src="{{ asset("Gmbslagi/vendor/apex/custom/home/sparkline.js") }}"></script>
+        <!-- Apex Charts -->
+        <script src="{{ asset("Gmbslagi/vendor/apex/apexcharts.min.js") }}"></script>
+        <script src="{{ asset("Gmbslagi/vendor/apex/custom/home/salesGraph.js") }}"></script>
+        <script src="{{ asset("Gmbslagi/vendor/apex/custom/home/ordersGraph.js") }}"></script>
+        <script src="{{ asset("Gmbslagi/vendor/apex/custom/home/earningsGraph.js") }}"></script>
+        <script src="{{ asset("Gmbslagi/vendor/apex/custom/home/visitorsGraph.js") }}"></script>
+        <script src="{{ asset("Gmbslagi/vendor/apex/custom/home/customersGraph.js") }}"></script>
+        <script src="{{ asset("Gmbslagi/vendor/apex/custom/home/sparkline.js") }}"></script>
 
-    <!-- Circleful Charts -->
-    <script src="{{ asset("Gmbslagi/vendor/circliful/circliful.min.js") }}"></script>
-    <script src="{{ asset("Gmbslagi/vendor/circliful/circliful.custom.js") }}"></script>
+        <!-- Circleful Charts -->
+        <script src="{{ asset("Gmbslagi/vendor/circliful/circliful.min.js") }}"></script>
+        <script src="{{ asset("Gmbslagi/vendor/circliful/circliful.custom.js") }}"></script>
 
-    <!-- Date Range JS -->
-    <script src="{{ asset("Gmbslagi/vendor/daterange/daterange.js") }}"></script>
-    <!-- Main Js Required -->
-    <script src="{{ asset("Gmbslagi/js/main.js") }}"></script>
+        <!-- Date Range JS -->
+        <!-- Main Js Required -->
+        <script src="{{ asset("Gmbslagi/js/main.js") }}"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="{{ asset("Gmbslagi/js/show_laporan_bar.js") }}"></script>
-    <script src="{{ asset("Gmbslagi/js/show_laporan_pie.js") }}"></script>
-    <script src="{{ asset("Gmbslagi/js/chart_index.js") }}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/tippy.js@6.3.1/dist/tippy-bundle.umd.js"></script>
+
+        <script src="{{ asset("Gmbslagi/js/chart_index.js") }}"></script>
 </body>
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:01:19 GMT -->

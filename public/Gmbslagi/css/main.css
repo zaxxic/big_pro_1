@@ -173,12 +173,12 @@ body.full-view .sidebar-wrapper {
 }
 
 body.full-view .sidebar-wrapper .sidebar-tabs {
-    /* height: calc(100vh); */
+    height: calc(100vh);
 }
 
 body.full-view .sidebar-wrapper .sidebar-tabs .nav {
     border-radius: 0;
-    /* height: calc(100vh); */
+    height: calc(100vh);
 }
 
 body.full-view .main-container {
@@ -200,7 +200,7 @@ body.full-view .sidebar-actions {
     }
 
     body.full-view .page-wrapper.toggled .sidebar-wrapper {
-        left: 0
+        left: 0;
     }
 }
 
@@ -447,7 +447,7 @@ p {
 } */
 
 .page-wrapper {
-
+    margin: 0;
 }
 
 .sidebar-wrapper {
@@ -477,12 +477,14 @@ p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    justify-content: left;
+    /* margin-right: -70px; */
     width: 70px;
     padding: 1rem .5rem 1rem .5rem;
     background: #5957b1;
     height: 100vh;
 
-   
+
 }
 
 .sidebar-wrapper .sidebar-tabs .nav a.logo {
@@ -684,7 +686,7 @@ p {
 }
 
 .sidebar-menu ul li a.drop-icon{
-    /* background-size: auto; */
+    background-size: auto;
     background-color: #ffffff;
     color: #5957b1;
 }
@@ -1462,7 +1464,7 @@ p {
     }
 
     .page-wrapper.toggled .sidebar-wrapper {
-        left: 10px
+        left: 0px
     }
 
     .page-wrapper .sidebar-wrapper .sidebar-tabs .nav a.logo {
@@ -1595,7 +1597,8 @@ p {
 
 
 .search-container {
-    margin: 13px 0 13px 0;
+    margin: 12px 10px -20px 9px;
+    /* margin: 13px 0 13px 0; */
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2030,7 +2033,7 @@ ul.activity li.activity-list.warning:before {
 
 @media (max-width:576px) {
     .content-wrapper {
-        padding: 0 1rem 0 1rem
+        padding: 0 0rem 0 0rem
     }
 }
 
@@ -4951,7 +4954,6 @@ ul.recent-orders li .order-details span.order-date {
     -ms-flex-pack: center;
     justify-content: center;
     position: relative;
-    background: white;
 }
 
 @media screen and (max-width:992px) {
@@ -4967,8 +4969,8 @@ ul.recent-orders li .order-details span.order-date {
     border-radius: 20px;
     -webkit-box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
     box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
-    min-width: 520px;
-    max-width: 520px;
+    min-width: 320px;
+    max-width: 320px;
 }
 
 .login-screen .login-logo {
@@ -9607,4 +9609,10 @@ label {
 }
 .icon-eye1{
     color: rgb(77, 77, 247)
+}
+.form-control{
+    border-radius: 10px !important;
+}
+.field-placeholder{
+    z-index: auto !important;
 }

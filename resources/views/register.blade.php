@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-	
+
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:54 GMT -->
 <head>
 		<!-- Required meta tags -->
@@ -21,7 +21,7 @@
 		************ -->
 		<!-- Bootstrap css -->
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/css/bootstrap.min.css")}}">
-		
+
 		<!-- Main css -->
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/css/main.css")}}">
 
@@ -46,7 +46,7 @@
 		<div class="login-container">
 
 			<div class="container-fluid h-100"  style="overflow: hidden">
-			
+
 			<!-- Row start -->
 			<div class="row g-0 h-100">
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
@@ -94,15 +94,15 @@
                                 </div>
                             </div>
                         </div>
-						
+
 
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 					<div class="login-wrapper">
-						<form action="{{ route('register_store') }}" method="POST">
+						<form action="" method="POST">
 							@csrf
-							<div class="login-screen">
+							<div class="login-screen" style="margin-bottom: 80px;">
 								<div class="login-body">
 									<a href="crm.html" class="login-logo">
 										<img src="{{ asset ("gmbslagi/img/logo.svg")}}" alt="iChat">
@@ -164,7 +164,7 @@
 			</div>
 			<!-- Row end -->
 
-		
+
 			</div>
 		</div>
 		<!-- *************
@@ -179,7 +179,7 @@
 		<script src="{{ asset ("Gmbslagi/js/bootstrap.bundle.min.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/js/modernizr.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/js/moment.js")}}"></script>
-		
+
 		<!-- *************
 			************ Vendor Js Files *************
 		************* -->
