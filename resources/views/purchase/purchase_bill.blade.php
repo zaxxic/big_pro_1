@@ -173,11 +173,14 @@
                                 <!-- Card start -->
                                 <div class="card">
                                     <div class="card-header">
-                                        <div class="card-title"><h3>Tagihan<button type="button" style="border: none; background:transparent;">☆</button></h3></div>
+                                        <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
+                                        <div class="card-title"><h3>Tagihan<button type="button" style="border: none; background:transparent;">☆</button></h3></div></div>
+                                        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
                                         <div class="graph-day-selection" role="group" style="margin-left: 68%">
 											<a href="{{url('add_bill')}}">
 											<button type="button" class="btn active" style="background: transparent">Tambah Tagihan</button>
 											</a>
+										</div>
 										</div>
 										<div class="dropdown icon-dots-three-vertical">
 											<span></span>

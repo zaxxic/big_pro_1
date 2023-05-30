@@ -175,62 +175,64 @@
                                 <!-- Card start -->
 								<div class="card">
                                     <div class="card-header">
-										<div class="card-title"><h3>Tambah Tagihan Rutin<button type="button" style="border: none; background:none;">☆</button></h3></div>
-									</div>
+                                      <div class="card-title">
+                                        <h3>Tambah Tagihan Rutin<button type="button" style="border: none; background:none;">☆</button></h3>
+                                      </div>
+                                    </div>
                                     <div class="card-body">
-                                            <div class="" style="margin-top: 2%;">
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
-												
-                                            <div style="border-bottom: solid grey 1px;">
-                                              <h6>Tagihan</h6>
-                                              <p>Detail penagihan muncul di faktur Anda. Tanggal Faktur digunakan di dasbor dan laporan. Pilih tanggal yang Anda harapkan untuk dibayar sebagai Tanggal Jatuh Tempo.</p>
-                                            </div>
-
+                                      <div class="row">
+                                        <div class="col-md-4">
+                                          <div class="field-wrapper mb-3">
+                                            <label for="pemasok" class="field-label">Pemasok <span class="text-danger">*</span></label>
+                                            <select id="pemasok" class="form-control" autocomplete="off">
+                                              <option>Rudi</option>
+                                              <option selected>Ruli</option>
+                                              <option>Adi</option>
+                                              <option>Daffa</option>
+                                              <option>Gembes</option>
+                                              <option>Reno</option>
+                                              <option>Triski</option>
+                                            </select>
                                           </div>
-                                            </div>
-                                            <div class="d-flex">
-                                              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-right: 5%">
-                                                <div class="field-wrapper mb-3">
-                                                  <label for="judul" class="field-label">Pemasok <span class="text-danger">*</span></label>
-                                                  <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?" style="height: 118px">
-                                                    <option>Rudi</option>
-                                                    <option selected>Ruli</option>
-                                                    <option>Adi</option>
-                                                    <option>Daffa</option>
-                                                    <option>Gembes</option>
-                                                    <option>Reno</option>
-                                                    <option>Triski</option>
-                                                  </select>                                                  
-                                                </div>
-                                              </div>                                              
-                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12" style="margin-right:3%">
-                                                  <div class="field-wrapper mb-3">
-                                                    <label for="judul" class="field-label">Tanggal Tagihan</label>
-                                                    <input class="form-control" type="text" placeholder="Masukkan Nama">
-                                                  </div>
-                                                  <div class="field-wrapper mb-3">
-                                                    <label for="judul" class="field-label">Tanggal Pembayaran<span class="text-danger">*</span></label>
-                                                    <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?">
-                                                      <option selected>Jatuh tempo dalam 15 hari</option>
-                                                      <option>Jatuh tempo dalam 30 hari</option>
-                                                      <option>Jatuh tempo dalam 45 hari</option>
-                                                      <option>Jatuh tempo dalam 60 hari</option>
-                                                      <option>Jatuh tempo dalam 90 hari</option>
-                                                      <option>Jatuh tempo saat diterima</option>
-                                                    </select>                                                  
-                                                  </div>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                                                  <div class="field-wrapper mb-3">
-                                                    <label for="judul" class="field-label">Nomor Faktur </label>
-                                                    <input class="form-control" type="text" placeholder="Masukkan Nama">
-                                                  </div>
-                                                  <div class="field-wrapper mb-3">
-                                                    <label for="judul" class="field-label">Nomor Pesanan </label>
-                                                    <input class="form-control" type="text" placeholder="Masukkan Jumlah Pesanan">
-                                                  </div>
-                                                </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                          <div class="row" style="margin-top: -3%">
+                                            <div class="col-md-6">
+                                              <div class="field-wrapper mb-3">
+                                                <label for="tanggal-tagihan" class="field-label">Tanggal Tagihan</label>
+                                                <input id="tanggal-tagihan" class="form-control" type="text" placeholder="Masukkan Tanggal Tagihan">
                                               </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <div class="field-wrapper mb-3">
+                                                <label for="tanggal-pembayaran" class="field-label">Tanggal Pembayaran <span class="text-danger">*</span></label>
+                                                <select id="tanggal-pembayaran" class="form-control" autocomplete="off">
+                                                  <option selected>Jatuh tempo dalam 15 hari</option>
+                                                  <option>Jatuh tempo dalam 30 hari</option>
+                                                  <option>Jatuh tempo dalam 45 hari</option>
+                                                  <option>Jatuh tempo dalam 60 hari</option>
+                                                  <option>Jatuh tempo dalam 90 hari</option>
+                                                  <option>Jatuh tempo saat diterima</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <div class="field-wrapper mb-3">
+                                                <label for="nomor-faktur" class="field-label">Nomor Faktur</label>
+                                                <input id="nomor-faktur" class="form-control" type="text" placeholder="Masukkan Nomor Faktur">
+                                              </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <div class="field-wrapper mb-3">
+                                                <label for="nomor-pesanan" class="field-label">Nomor Pesanan</label>
+                                                <input id="nomor-pesanan" class="form-control" type="text" placeholder="Masukkan Nomor Pesanan">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  
+                                  
                                               <!-- Row start -->
                                             <div class="row gutters">
                                               <div class="col-12">

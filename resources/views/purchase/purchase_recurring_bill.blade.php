@@ -195,11 +195,14 @@
                                 <!-- Card start -->
                                 <div class="card">
                                     <div class="card-header">
-                                        <div class="card-title"><h3>Tagihan Berulang<button type="button" style="border: none; background:transparent;">☆</button></h3></div>
+                                        <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
+                                        <div class="card-title"><h3>Tagihan Berulang<button type="button" style="border: none; background:transparent;">☆</button></h3></div></div>
+                                        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
                                         <div class="graph-day-selection" role="group" style="margin-left: 50%">
 											<a href="{{route('add_recurring_bill')}}">
 											<button type="submit" class="btn active" style="background: transparent">Tambah Tagihan Berulang</button>
 											</a>
+										</div>
 										</div>
 										<div class="dropdown icon-dots-three-vertical">
 											<span></span>

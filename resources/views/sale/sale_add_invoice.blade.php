@@ -235,7 +235,7 @@
                                           </div>
                                             </div>
                                             <div class="d-flex">
-                                              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-right: 5%">
+                                              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" style="margin-right: 5%">
                                                 <div class="field-wrapper mb-3">
                                                   <label for="judul" class="field-label">Pelanggan <span class="text-danger">*</span></label>
                                                   <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?" style="height: 118px">
@@ -248,8 +248,6 @@
                                                     <option>Triski</option>
                                                   </select>                                                  
                                                 </div>
-                                              </div>                                              
-                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12" style="margin-right:3%">
                                                   <div class="field-wrapper mb-3">
                                                     <label for="judul" class="field-label">Tanggal Faktur</label>
                                                     <input class="form-control" type="text" placeholder="Masukkan Nama">
@@ -265,8 +263,6 @@
                                                       <option>Jatuh tempo saat diterima</option>
                                                     </select>                                                  
                                                   </div>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                                                   <div class="field-wrapper mb-3">
                                                     <label for="judul" class="field-label">Nomor Faktur </label>
                                                     <input class="form-control" type="text" placeholder="Masukkan Nama">
@@ -275,7 +271,7 @@
                                                     <label for="judul" class="field-label">Jumlah Pesanan </label>
                                                     <input class="form-control" type="text" placeholder="Masukkan Jumlah Pesanan">
                                                   </div>
-                                                </div>
+                                              </div>
                                               </div>
                                               <!-- Row start -->
                                             <div class="row gutters">
