@@ -146,6 +146,7 @@
         .empty-box {
             /* text-align: ; */
             height: 25px;
+            width: 110px;
             border: 0px;
             border-bottom: 2px solid grey;
         }
@@ -315,7 +316,7 @@
                                         </a>
                                         <ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
                                             <li><a class="dropdown-item" style="margin-top: 4%;"
-                                                    href="{{ url('add_income') }}">Tambah Faktur</a></li>
+                                                    href="{{ url('add_costumers') }}">Tambah Faktur</a></li>
                                             <li><a class="dropdown-item-bt" href="{{ url('add_income') }}">Tambah
                                                     Transfer</a></li>
                                             <li><a class="dropdown-item" href="{{ url('add_income') }}">Sunting</a>
@@ -438,81 +439,141 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-8 col-12">
                             <div class="card-body" style="border-left: 1px solid #9a9c9e;">
+
+
                                 <!-- Card start -->
                                 <div class="card">
+
                                     <div class="card-body" style="float: right">
-                                        <!-- Row start -->
-                                        <div class="d-flex">
-                                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6"
-                                                style="margin-top: 8%;">
-                                                <div class="hr-switch">
-                                                    <a href="{{ url('show_account1') }}">
-                                                        <div class="empty-box active">
-                                                            <h6 class="text">Transaksi</h6>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6"
-                                                style="margin-top: 8%;">
-                                                <div class="hr-switch">
-                                                    <a href="{{ url('show_account2') }}">
-                                                        <div class="empty-box">
-                                                            <h6 class="text">Transfer</h6>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="table-responsive">
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        
-                                                        <th scope="col">Tanggal Jatuh Tempo</th>
-                                                        <th scope="col">Tanggal Faktur</th>
-                                                        <th scope="col">status</th>
-                                                        <th scope="col">Pelanggan</th>
-                                                        <th></th>
-        
-                                                        <th scope="col">Nomoer</th>
-                                                        <th scope="col">jumlah</th>
-                                                        <th scope="col">Aksi</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                       
-                                                        <td>5 hari yang lalu</th>
-                                                        <td>24 mei 2024</td>
-                                                        <td>Terkirim</td>
-                                                        <td>
-                                                           Koirul
-                                                        </td>
-                                                        <td></td>
-                                                        <td>INV-09</td>
-                                                        <td>Rp900.000.000</td>
-                                                        <th>
-                                                            <div class="menu-icons" style="font-size: 15px;">
-                                                                <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
-                                                                <a href="{{url('delete_income')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleteincome"></a>
-                                                                <a href="{{url('show_income')}}" class="menu-icon icon-eye1"></a>
+                                        <!-- <div class="d-flex"> -->
+                                        <div class="col-12">
+                                            
+                                                <!-- <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6"> -->
+                                                
+                                                    <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+                                                        <li class="empty-box active" role="presentation">
+                                                            <div class="empty-box active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-transactions" type="button" role="tab" aria-controls="pills-transactions" aria-selected="true">
+                                                                <h6 class="text">Transactions</h6>
                                                             </div>
-                                                        </th>
-                                                    </tr>
-                                                   
-                                                </tbody>
-                                            </table>
-        
-                                            <!-- Card end -->
+                                                        </li>
+                                                        <li class="empty-box" role="presentation">
+                                                            <div class="empty-box" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-transfer" type="button" role="tab" aria-controls="pills-transfer" aria-selected="false">
+                                                                <h6 class="text">Transfer</h6>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                
+                                            <!-- </div> -->
+
+
+                                            <div class="tab-content" id="pills-tabContent">
+                                                <div class="tab-pane fade show active" id="pills-transactions" role="tabpanel" aria-labelledby="pills-transactions-tab" tabindex="0">
+                                                    <div>
+                                                        <div class="table-responsive">
+                                                            <table class="table table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        
+                                                                        <th scope="col">Tanggal Jatuh Tempo</th>
+                                                                        <th scope="col">Tanggal Faktur</th>
+                                                                        <th scope="col">status</th>
+                                                                        <th scope="col">Pelanggan</th>
+                                                                        <th></th>
+                        
+                                                                        <th scope="col">Nomoer</th>
+                                                                        <th scope="col">jumlah</th>
+                                                                        <th scope="col">Aksi</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                       
+                                                                        <td>5 hari yang lalu</th>
+                                                                        <td>24 mei 2024</td>
+                                                                        <td>Terkirim</td>
+                                                                        <td>
+                                                                           Koirul
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td>INV-09</td>
+                                                                        <td>Rp900.000.000</td>
+                                                                        <th>
+                                                                            <div class="menu-icons" style="font-size: 15px;">
+                                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2" style="color: rgb(229, 134, 0)" ></a>
+                                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer" style="color: rgb(255, 0, 0)" ></a>
+                                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1" style="color: rgb(77, 77, 247)" ></a>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+                                                            <!-- Card end -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-transfer" role="tabpanel" aria-labelledby="pills-transfer-tab" tabindex="0">
+                                                    <div>
+                                                        <div class="table-responsive">
+                                                            <table class="table table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        
+                                                                        <th scope="col">Tanggal Jatuh Tempo</th>
+                                                                        <th scope="col">Tanggal Faktur</th>
+                                                                        <th scope="col">status</th>
+                                                                        <th scope="col">Pelanggan</th>
+                                                                        <th></th>
+                        
+                                                                        <th scope="col">Nomoer</th>
+                                                                        <th scope="col">jumlah</th>
+                                                                        <th scope="col">Aksi</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                       
+                                                                        <td>5 hari yang lalu</th>
+                                                                        <td>24 mei 2024</td>
+                                                                        <td>Konsep</td>
+                                                                        <td>
+                                                                           Sugra
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td>INV-09</td>
+                                                                        <td>Rp900.000.000</td>
+                                                                        <th>
+                                                                            <div class="menu-icons" style="font-size: 15px;">
+                                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2" style="color: rgb(229, 134, 0)" ></a>
+                                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer" style="color: rgb(255, 0, 0)" ></a>
+                                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1" style="color: rgb(77, 77, 247)" ></a>
+                                                                            
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <!-- Card end -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
+                                        <!-- </div> -->
+
+                                        <!-- Row start -->
+
+
+
                                     </div>
                                     <!-- Row end -->
+
                                 </div>
                             </div>
                             <!-- Card end -->
+
                         </div>
                         <!-- Card end -->
                         <!-- </div> -->

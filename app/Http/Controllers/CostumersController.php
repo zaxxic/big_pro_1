@@ -16,6 +16,11 @@ class CostumersController extends Controller
         return view('sale.add_costumers');
     }
 
+    public function edit_cos()
+    {
+        return view('sale.edit_costumers');
+    }
+
     public function show_cos()
     {
         return view('sale.showcostumers');

@@ -98,11 +98,12 @@ Route::get('/show_recurring_expenditure', [TransactionsController::class, 'show_
 Route::get('invoice', [InvoiceController::class, 'invoice'])->name('invoice');
 Route::get('recurring_invoice', [InvoiceController::class, 'recurring_invoice'])->name('recurring_invoice');
 Route::get('add_invoice', [InvoiceController::class, 'add_invoice'])->name('add_invoice');
-Route::get('costumer', [InvoiceController::class, 'costumers'])->name('costumers');
-Route::get('add_costumers', [InvoiceController::class, 'add_cos'])->name('add_costumers');
-
-Route::get('costumer', [InvoiceController::class, 'costumers'])->name('costumers');
-Route::get('add_costumers', [InvoiceController::class, 'add_cos'])->name('add_costumers');
+Route::get('detail_rcr', [InvoiceController::class, 'detail_recurring'])->name('detail_rcr');
+//cos
+Route::get('add_costumers', [CostumersController::class, 'add_cos'])->name('add_costumers');
+Route::get('costumer', [CostumersController::class, 'costumers'])->name('costumers');
+Route::get('show_cos', [CostumersController::class, 'show_cos'])->name('show_cos');
+Route::get('edit_cos', [CostumersController::class, 'edit_cos'])->name('edit_cos');
 
 //role
 Route::get('/role', [RoleController::class, 'index'])->name('role');
