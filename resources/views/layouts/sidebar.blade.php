@@ -72,8 +72,6 @@
 							<li class="mt-3 ">
 								<a href="#" class="dropdown-btn {{ request()->routeIs('') ? 'current-page' : '' }}"><i class="icon-tag1" style=" font-size: 19px;"></i><span>&emsp;Penjualan</span><i class="icon-chevron-down1 droprow "></i></a>
 								<ul class="dropdown-container">
-									<li class="mt-2"><a href=""><span style="margin-left: 20px;">&emsp;Faktur</span></a></li>
-									<li class="mt-2"><a href="/costumer"><span style="margin-left: 20px;">&emsp;Pelanggan</span></a></li>
 									<li class="mt-2"><a href="{{ route('invoice') }}"><span style="margin-left: 20px;">&emsp;Faktur</span></a></li>
 									<li class="mt-2"><a href="{{ route('costumers') }}"><span style="margin-left: 20px;">&emsp;Pelanggan</span></a></li>
 								</ul>
@@ -127,17 +125,17 @@
 						<ul class="active">
 							
 							<li class="active">
-								<a href="{{ url ('/')}}" class="current-page"><i class="icon-briefcase" style=" font-size: 19px;"></i><span>&emsp;Perusahaan</span></a>
+								<a href="{{ route('company')}}" class="current-page"><i class="icon-briefcase" style=" font-size: 19px;"></i><span>&emsp;Perusahaan</span></a>
 							</li>
 							
 							<li class="mt-3 active">
-								<a href="{{ url ('/')}}"><i class="icon-file " style=" font-size: 19px;"></i><span>&emsp;Faktur</span></a>
+								<a href="{{ route('setting-invoice')}}"><i class="icon-file " style=" font-size: 19px;"></i><span>&emsp;Faktur</span></a>
 							</li>
 							<li class="mt-3 active">
-								<a href="{{ url ('/')}}"><i class="icon-mail " style=" font-size: 19px;"></i><span>&emsp;Surel</span></a>
+								<a href="{{ route('editemail')}}"><i class="icon-mail " style=" font-size: 19px;"></i><span>&emsp;Surel</span></a>
 							</li>
 							<li class="mt-3" active>
-								<a href="{{ url ('/')}}"><i class="icon-server " style=" font-size: 19px;"></i><span>&emsp;Kategori</span></a>
+								<a href="{{ route('index-category')}}"><i class="icon-server " style=" font-size: 19px;"></i><span>&emsp;Kategori</span></a>
 							</li>
 							<!-- <li class="dropdown">
 								<a href="#" class="pem-btn"> Pembelian <span class="fas fa-caret-down first"></span></a>
@@ -152,9 +150,7 @@
 							<li class="mt-3">
 								<a href="{{ route('tax') }}"><i class="icon-line-graph" style=" font-size: 19px;"></i><span>&emsp;Pajak</span></a>
 							</li>
-							<li class="mt-3">
-								<a href="saas.html"><i class="icon-wifi" style=" font-size: 19px;"></i><span>&emsp;IP Wifi</span></a>
-							</li>
+							
 						</ul>
 
 					</div>
