@@ -60,7 +60,7 @@
 
 							<li class="{{ Request::is('item-index') ? 'active' : '' }}">
 								<a href="{{ route('item-index') }}">
-								  <i class="icon-download1" style="font-size: 19px;"></i><span>&emsp;Barang</span>
+								  <i class="icon-download1" style="font-size: 19px;"></i><span>&emsp;Item</span>
 								</a>
 							  </li>
 							{{-- <li class="mt-3">
