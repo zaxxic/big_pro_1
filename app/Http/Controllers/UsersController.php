@@ -10,4 +10,8 @@ class UsersController extends Controller
     {
         return view('user.index');
     }
+    public function add_users()
+    {
+        return view('user.add');
+    }
 }

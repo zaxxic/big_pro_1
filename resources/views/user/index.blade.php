@@ -165,12 +165,11 @@
                             <div class="card">
                                 <div class="card-header">
                                     <div class="card-title">
-                                        <h3>Kategori<button type="button"
-                                                style="border: none; background:none;">☆</button></h3>
+                                        <h3>Pengguna<button type="button"style="border: none; background:none;">☆</button></h3>
                                     </div>
                                     <div class="graph-day-selection" role="group" style="margin-left: 60%">
-                                        <a href="{{ url('add-category') }}">
-                                            <button type="button" style="background: trasparent" class="btn active">Tambah Kategori</button>
+                                        <a href="{{ url('add_users') }}">
+                                            <button type="button" style="background: trasparent" class="btn active">Undang Pengguna</button>
                                         </a>
                                     </div>
                                     <div class="dropdown icon-dots-three-vertical">

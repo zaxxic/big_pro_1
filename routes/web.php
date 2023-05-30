@@ -102,7 +102,7 @@ Route::get('recurring_invoice', [InvoiceController::class, 'recurring_invoice'])
 Route::get('add_invoice', [InvoiceController::class, 'add_invoice'])->name('add_invoice');
 Route::get('costumer', [InvoiceController::class, 'costumers'])->name('costumers');
 Route::get('add_costumers', [InvoiceController::class, 'add_cos'])->name('add_costumers');
-
+Route::get('details', [InvoiceController::class, 'details'])->name('details');
 Route::get('costumer', [InvoiceController::class, 'costumers'])->name('costumers');
 Route::get('add_costumers', [InvoiceController::class, 'add_cos'])->name('add_costumers');
 
@@ -162,7 +162,7 @@ Route::get('transaksi', function () {
 });
 //Users
 Route::get('/users',[UsersController::class,'usersindex'])->name('users-index');
-Route::get('/user-add',[UsersController::class,'usersadd'])->name('users-add');
+Route::get('/add_users',[UsersController::class,'add_users'])->name('add_users');
 // Route::get('invoice', )
 //Tax
 Route::get('/tax',[TaxController::class,'tax_index'])->name('tax');
