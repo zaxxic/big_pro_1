@@ -9608,3 +9608,9 @@ label {
 .icon-eye1{
     color: rgb(77, 77, 247)
 }
+.form-control{
+    border-radius: 10px !important;
+}
+.field-placeholder{
+    z-index: auto !important;
+}

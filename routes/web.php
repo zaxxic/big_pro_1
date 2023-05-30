@@ -111,6 +111,7 @@ Route::get('add_costumers', [InvoiceController::class, 'add_cos'])->name('add_co
 Route::get('details', [InvoiceController::class, 'details'])->name('details');
 Route::get('costumer', [InvoiceController::class, 'costumers'])->name('costumers');
 Route::get('add_costumers', [InvoiceController::class, 'add_cos'])->name('add_costumers');
+Route::get('/setting-invoice',[InvoiceController::class,'setting_invoice'])->name('setting-invoice');
 
 //role
 Route::get('/role', [RoleController::class, 'index'])->name('role');
