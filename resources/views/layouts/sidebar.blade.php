@@ -9,11 +9,11 @@
 				<img src="{{ asset('Gmbslagi/img/unknown.jpg') }}" width="50" height="50" style="border-radius: 50%;" class="mb-3">
 			</a>
 
-			<a class="current-page nav-link {{ request()->routeIs('account') ? 'active' : '' }}" id="home-tab" data-bs-toggle="tab" href="#tab-home" role="tab" aria-controls="tab-home" aria-selected="true">
+			<a class="current-page nav-link {{ request()->routeIs('account') ? 'active' : '' }} || {{ request()->routeIs('account') ? 'tab-home' : '' }}" id="home-tab" data-bs-toggle="tab" href="#tab-home" role="tab" aria-controls="tab-home" aria-selected="true">
 				<i class="icon-grid"></i>
 				<span class="nav-link-text">Dashboards</span>
 			</a>
-			<a class="nav-link {{ request()->routeIs('tax') ? 'active' : '' }}" id="product-tab" data-bs-toggle="tab" href="#tab-product" role="tab" aria-controls="tab-product" aria-selected="false">
+			<a class="nav-link {{ request()->routeIs('tax') ? 'active' : '' }} || {{ request()->routeIs('tax') ? 'tab-product' : '' }}" id="product-tab" data-bs-toggle="tab" href="#tab-product" role="tab" aria-controls="tab-product" aria-selected="false">
 				<i class="icon-settings1"></i>
 				<span class="nav-link-text">Sistem</span>
 			</a>
@@ -34,7 +34,7 @@
 
 		<!-- Tabs content start -->
 		<div class="tab-content">
-
+		
 			<!-- Chat tab -->
 			<div class="tab-pane fade show active" id="tab-home" role="tabpanel" aria-labelledby="home-tab">
 
@@ -52,7 +52,7 @@
 					<div class="sidebar-menu active">
 						<ul>
 							<li>
-								<a href="{{ url('dashboard')}}" class="sidebar-menu {{ request()->routeIs('dashboard') ? 'current-page' : '' }}" aria-selected="false">
+								<a href="{{ url('/')}}" class="sidebar-menu {{ request()->routeIs('dashboard') ? 'current-page' : '' }}" aria-selected="false">
 									<i class="icon-home2" style="font-size: 19px;"></i><span>&emsp;Dashboard</span>
 								</a>
 							</li>
