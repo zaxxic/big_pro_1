@@ -144,9 +144,42 @@
 														<h5 class="modal-judul" id="exampleModalCenterTitle">Modal title</h5>
 														<button type="button" class="btn-tutup" data-bs-dismiss="modal" aria-label="Close"></button>
 													</div>
-													<div class="modal-badan">
-                                                        <p>apakah anda mau menghapus</p>
-													</div>
+													<div class="d-flex">
+                                                    <a href="/laporan" class="modal-badan">
+                                                        <div class="tambah-icon ">
+                                                        <div class="d-flex">
+                                                        <i class="icon-file-text"></i>
+                                                        <h6 class="nama-icon">Faktur</h6>
+                                                        </div>
+                                                        </div>
+                                                    </a>
+													<a href="/laporan" class="modal-badan" style="margin-left: 67px;">
+                                                        <div class="tambah-icon">
+                                                        <div class="d-flex">
+                                                        <i class="icon-file-text"></i>
+                                                        <h6 class="nama-icon">Pendapatan</h6>
+                                                        </div>
+                                                        </div>
+                                                    </a>
+                                                    </div>
+													<div class="d-flex">
+                                                    <a href="/laporan" class="modal-badan">
+                                                        <div class="tambah-icon">
+                                                        <div class="d-flex">
+                                                        <i class="icon-file-text"></i>
+                                                        <h6 class="nama-icon">Tagihan</h6>
+                                                        </div>
+                                                        </div>
+                                                    </a>
+													<a href="/laporan" class="modal-badan">
+                                                        <div class="tambah-icon">
+                                                        <div class="d-flex">
+                                                        <i class="icon-file-text"></i>
+                                                        <h6 class="nama-icon">Biaya</h6>
+                                                        </div>
+                                                        </div>
+                                                    </a>
+                                                    </div>
 											  	</div>
 											</div>
 										</div>

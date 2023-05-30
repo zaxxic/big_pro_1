@@ -30,7 +30,7 @@
               backgroundColor: ['red', 'blue', 'yellow', 'green', 'orange'],
               borderColor: ['red', 'blue', 'yellow', 'green', 'orange'],
               borderWidth: 1
-          }]
+          }]    
       },
       options: {
           responsive: true,
