@@ -180,7 +180,7 @@
                             <div class="login-wrapper">
                                 <form
                                     action="https://www.kodingwife.com/demos/unipro/v1-x/05-desig4-violet/reports.html">
-                                    <div class="login-screen">
+                                    <div class="">
                                         <div class="login-body pb-4">
                                             <p>Biaya nikah</p>
                                             <div class="d-flex row">

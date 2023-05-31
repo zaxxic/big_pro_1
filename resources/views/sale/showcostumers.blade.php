@@ -453,14 +453,14 @@
                                                 <!-- <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6"> -->
                                                 
                                                     <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
-                                                        <li class="empty-box active" role="presentation">
-                                                            <div class="empty-box active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-transactions" type="button" role="tab" aria-controls="pills-transactions" aria-selected="true">
-                                                                <h6 class="text">Transactions</h6>
+                                                        <li class="" role="presentation">
+                                                            <div class="empty-box1 active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-transactions" type="button" role="tab" aria-controls="pills-transactions" aria-selected="true">
+                                                                <h6 class="">Transaksi</h6>
                                                             </div>
                                                         </li>
-                                                        <li class="empty-box" role="presentation">
-                                                            <div class="empty-box" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-transfer" type="button" role="tab" aria-controls="pills-transfer" aria-selected="false">
-                                                                <h6 class="text">Transfer</h6>
+                                                        <li class="" role="presentation">
+                                                            <div class="empty-box2" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-transfer" type="button" role="tab" aria-controls="pills-transfer" aria-selected="false">
+                                                                <h6 class="">Transfer</h6>
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -475,35 +475,121 @@
                                                             <table class="table table-hover">
                                                                 <thead>
                                                                     <tr>
-                                                                        
-                                                                        <th scope="col">Tanggal Jatuh Tempo</th>
-                                                                        <th scope="col">Tanggal Faktur</th>
-                                                                        <th scope="col">status</th>
-                                                                        <th scope="col">Pelanggan</th>
+                                                                        <th scope="col"> <input type="checkbox" id="select-all" onchange="toggleCheckbox()"></th>
+                                                                        <th scope="col">Tanggal</th>
+                                                                        <th scope="col">Nomor</th>
+                                                                        <th scope="col">Jenis</th>
+                                                                        <th scope="col">Kategori</th>
                                                                         <th></th>
-                        
-                                                                        <th scope="col">Nomoer</th>
-                                                                        <th scope="col">jumlah</th>
+
+                                                                        <th scope="col">Akun</th>
+                                                                        <th scope="col">Jumlah</th>
                                                                         <th scope="col">Aksi</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
-                                                                       
-                                                                        <td>5 hari yang lalu</th>
-                                                                        <td>24 mei 2024</td>
-                                                                        <td>Terkirim</td>
+                                                                        <td name="item" id="checkbox1"><input type="checkbox"></td>
+                                                                        <td>16 Mei 2023</th>
+                                                                        <td>TRA-00038</td>
+                                                                        <td>Pengeluaran</td>
                                                                         <td>
-                                                                           Koirul
+                                                                            <div class="lingkaran-warna1">
+                                                                                &emsp;&emsp;Biaya Lain-Lain
+                                                                            </div>
                                                                         </td>
                                                                         <td></td>
-                                                                        <td>INV-09</td>
+                                                                        <td>Naura Dewi</td>
                                                                         <td>Rp900.000.000</td>
                                                                         <th>
                                                                             <div class="menu-icons" style="font-size: 15px;">
-                                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2" style="color: rgb(229, 134, 0)" ></a>
-                                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer" style="color: rgb(255, 0, 0)" ></a>
-                                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1" style="color: rgb(77, 77, 247)" ></a>
+                                                                                <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
+                                                                                <a href="{{url('delete_income')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleteincome"></a>
+                                                                                <a href="{{url('show_income')}}" class="menu-icon icon-eye1"></a>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td name="item" id="checkbox2"><input type="checkbox"></td>
+                                                                        <td>13 Mei 2023</th>
+                                                                        <td>TRA-00037</td>
+                                                                        <td>Pendapatan</td>
+                                                                        <td>
+                                                                            <div class="lingkaran-warna2">
+                                                                                &emsp;&emsp;Penjualan Website
+                                                                            </div>
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td>Bpk Yanto</td>
+                                                                        <td>Rp700.000.000</td>
+                                                                        <th>
+                                                                            <div class="menu-icons" style="font-size: 15px;">
+                                                                                <a href="{{url('edit_expenditure')}}" class="menu-icon icon-edit-2"></a>
+                                                                                <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
+                                                                                <a href="{{url('show_expenditure')}}" class="menu-icon icon-eye1"></a>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td name="item" id="checkbox3"><input type="checkbox"></td>
+                                                                        <td>23 Mei 2023</th>
+                                                                        <td>TRA-00039</td>
+                                                                        <td>Pendapatan</td>
+                                                                        <td>
+                                                                            <div class="lingkaran-warna3">
+                                                                                &emsp;&emsp;Penjualan
+                                                                            </div>
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td>Ugud Budiman</td>
+                                                                        <td>Rp200.000.000</td>
+                                                                        <th>
+                                                                            <div class="menu-icons" style="font-size: 15px;">
+                                                                                <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
+                                                                                <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
+                                                                                <a href="{{url('show_income')}}" class="menu-icon icon-eye1"></a>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td name="item" id="checkbox4"><input type="checkbox"></td>
+                                                                        <td>34 Mei 2023</th>
+                                                                        <td>TRA-00040</td>
+                                                                        <td>Pendapatan</td>
+                                                                        <td>
+                                                                            <div class="lingkaran-warna4">
+                                                                                &emsp;&emsp;Penjualan Website
+                                                                            </div>
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td>Louis Gunawan</td>
+                                                                        <td>Rp1.000.000.000</td>
+                                                                        <th>
+                                                                            <div class="menu-icons" style="font-size: 15px;">
+                                                                                <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
+                                                                                <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
+                                                                                <a href="{{url('show_income')}}" class="menu-icon icon-eye1"></a>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td name="item" id="checkbox5"><input type="checkbox"></td>
+                                                                        <td>34 Mei 2023</th>
+                                                                        <td>TRA-00041</td>
+                                                                        <td>Pengeluaran</td>
+                                                                        <td>
+                                                                            <div class="lingkaran-warna5">
+                                                                                &emsp;&emsp;Biaya Listik
+                                                                            </div>
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td>Melati Handoko</td>
+                                                                        <td>Rp1.000.000.000</td>
+                                                                        <th>
+                                                                            <div class="menu-icons" style="font-size: 15px;">
+                                                                                <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
+                                                                                <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
+                                                                                <a href="{{url('show_income')}}" class="menu-icon icon-eye1"></a>
                                                                             </div>
                                                                         </th>
                                                                     </tr>
@@ -520,36 +606,94 @@
                                                             <table class="table table-hover">
                                                                 <thead>
                                                                     <tr>
-                                                                        
-                                                                        <th scope="col">Tanggal Jatuh Tempo</th>
-                                                                        <th scope="col">Tanggal Faktur</th>
-                                                                        <th scope="col">status</th>
-                                                                        <th scope="col">Pelanggan</th>
-                                                                        <th></th>
-                        
-                                                                        <th scope="col">Nomoer</th>
-                                                                        <th scope="col">jumlah</th>
+                                                                        <th scope="col"> <input type="checkbox" id="select-all" onchange="toggleCheckbox()"></th>
+                                                                        <th scope="col">Tanggal Dibuat</th>
+                                                                        <th scope="col">Dari Akun</th>
+                                                                        <th scope="col">Ke Akun</th>
+                                                                        <th scope="col">Jumlah Asal</th>
+                                                                        <th scope="col">Jumlah Tujuan</th>
                                                                         <th scope="col">Aksi</th>
+
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
-                                                                       
-                                                                        <td>5 hari yang lalu</th>
-                                                                        <td>24 mei 2024</td>
-                                                                        <td>Konsep</td>
-                                                                        <td>
-                                                                           Sugra
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td>INV-09</td>
+                                                                        <td name="item" id="checkbox1"><input type="checkbox"></td>
+                                                                        <td>16 Mei 2023</th>
+                                                                        <td>Hadi</td>
+                                                                        <td>Huda</td>
+                                                                        <td>Rp900.000.000</td>
                                                                         <td>Rp900.000.000</td>
                                                                         <th>
                                                                             <div class="menu-icons" style="font-size: 15px;">
-                                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2" style="color: rgb(229, 134, 0)" ></a>
-                                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer" style="color: rgb(255, 0, 0)" ></a>
-                                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1" style="color: rgb(77, 77, 247)" ></a>
-                                                                            
+                                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2"></a>
+                                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer"></a>
+                                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1"></a>
+                                                                                <a href="" class="menu-icon icon-block"></a>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td name="item" id="checkbox1"><input type="checkbox"></td>
+                                                                        <td>23 Agustus 2023</th>
+                                                                        <td>Lana</td>
+                                                                        <td>Lani</td>
+                                                                        <td>Rp100.000.000</td>
+                                                                        <td>Rp100.000.000</td>
+                                                                        <th>
+                                                                            <div class="menu-icons" style="font-size: 15px;">
+                                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2"></a>
+                                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer"></a>
+                                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1"></a>
+                                                                                <a href="" class="menu-icon icon-block"></a>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td name="item" id="checkbox1"><input type="checkbox"></td>
+                                                                        <td>12 Januari 2023</th>
+                                                                        <td>Rara</td>
+                                                                        <td>Roro</td>
+                                                                        <td>Rp200.000.000</td>
+                                                                        <td>Rp200.000.000</td>
+                                                                        <th>
+                                                                            <div class="menu-icons" style="font-size: 15px;">
+                                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2"></a>
+                                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer"></a>
+                                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1"></a>
+                                                                                <a href="" class="menu-icon icon-block"></a>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td name="item" id="checkbox1"><input type="checkbox"></td>
+                                                                        <td>2 Juli 2023</th>
+                                                                        <td>Lala</td>
+                                                                        <td>Lili</td>
+                                                                        <td>Rp900.000.000</td>
+                                                                        <td>Rp900.000.000</td>
+                                                                        <th>
+                                                                            <div class="menu-icons" style="font-size: 15px;">
+                                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2"></a>
+                                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer"></a>
+                                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1"></a>
+                                                                                <a href="" class="menu-icon icon-block"></a>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td name="item" id="checkbox1"><input type="checkbox"></td>
+                                                                        <td>7 Februari 2023</th>
+                                                                        <td>Luka</td>
+                                                                        <td>Laka</td>
+                                                                        <td>Rp900.000.000</td>
+                                                                        <td>Rp900.000.000</td>
+                                                                        <th>
+                                                                            <div class="menu-icons" style="font-size: 15px;">
+                                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2"></a>
+                                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer"></a>
+                                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1"></a>
+                                                                                <a href="" class="menu-icon icon-block"></a>
                                                                             </div>
                                                                         </th>
                                                                     </tr>
