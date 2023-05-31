@@ -45,6 +45,7 @@ Route::get('/',[DashboardController::class,'index'])->name('dashboard');
 Route::get('kalender', function () {
     return view('kalender');
 });
+
 Route::get('login', function () {
     return view('login');
 });
