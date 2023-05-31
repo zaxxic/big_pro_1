@@ -59,7 +59,7 @@ Route::get('reset_password', function () {
     return view('reset_password');
 });
 Route::get('/itemindex',[ItemController::class,'itemindex'])->Name('item-index');
-Route::get('/tambah-item',[ItemController::class,'tambahitem'])->Name('item-tambah');
+Route::get('/tambah-item',[ItemController::class,'additem'])->Name('item-tambah');
 
 Route::get('tambah_pemasok', function () {
     return view('pembelian.pembelian_tambah_pemasok');
@@ -147,7 +147,7 @@ Route::get('/show_account2', [AccountController::class, 'show_account2'])->name(
 
     // return view('pembelian.pembelian_edit_pemasok');
 
- 
+
 
 Route::get('/laporan',[LaporanController::class, 'laporan'])->name('laporan');
 //category
