@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.css') }}">
 <style>
 
+
 .rcr-screen {
     position: relative;
     background: #ffffff;
@@ -62,6 +63,8 @@
         }
 </style>
 </head>
+
+
 
 <body>
 
