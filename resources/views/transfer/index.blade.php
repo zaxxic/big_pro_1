@@ -281,8 +281,8 @@
                                 <!-- Card start -->
 
                                 <!-- <div class="card-header"> -->
-                                <div class="d-flex">
-                                    <div class=" col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12 d-flex">
+                                <div class="row">
+                                    <div class=" col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
 
                                         <h1 class="card-title" style="font-size: 20px;">Transfer<button type="button" style="border: none; background:none;">☆</button></h1>
                                         
@@ -291,7 +291,7 @@
                                     <!-- <div class="text-end">
 											<a href="create-invoice.html" class="btn btn-primary">Create Invoice</a>
 										</div> -->
-                                    <div class="col-xl-7 col-lg-7 col-md-2 col-sm-2 col-12 ">
+                                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7 ">
                                         <a href="{{url('add_transfer')}}" class="float-right"> <button type="button" class="btn btn-secondary float-right">Tambah</button></a>
                                        
                                       

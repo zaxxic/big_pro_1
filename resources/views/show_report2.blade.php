@@ -101,6 +101,7 @@
                                 </div>
 
                             </div>
+                            <div class=" col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <select class="mt-5 mb-3" id="ex-caret-position" multiple autocomplete="off" placeholder="How cool is this?">
                                 <option selected>amazing</option>
                                 <option selected>awesome</option>
@@ -111,64 +112,63 @@
                                 <option>superb</option>
                                 <option>wonderful</option>
                             </select>
+                            </div>
                             <div class="d-flex flex-column flex-sm-row">
-                                <div class=" col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
-                                    <div class="d-flex">
-                                        <div class="col-8 ">
+                                <div class=" col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                  <div class="row">
+                                  <div class="d-flex">
+                                        <div class="col-2 ">
+                                            <h5 class="mt-5">Pendapatan</h5>
+                                        </div>
+                                    </div>
+                                    <hr class="col-12">
+                                   <div class="">
+                                   <div class="d-flex ">
+                                        <div class="col-2 ">
                                             <h5 class="mt-5">Biaya</h5>
                                         </div>
-                                        <div class="col-4 " >
-                                            <h5 class="mt-5">Rp.2.000.000</h5>
+                                        <div class="col-2 ">
+                                            <h5 class="mt-5">Biaya</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5 class="mt-5">Biaya</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5 class="mt-5">Biaya</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5 class="mt-5">Biaya</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5 class="mt-5">Rp.0.0</h5>
                                         </div>
                                     </div>
-                                    <hr class=" col-11">
+                                    <hr class=" col-12">
                                     <div class="d-flex">
-                                     <div class="col-8">
-                                        <H5 class="">lainnya</H5>
-                                    </div>
-                                    <div class="col-4 ">
-                                        <h5 class="">Rp.2.000.000</h5>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
-                                    <div class="d-flex">
-                                        <div class="col-12">
-                                            <ul class="nav nav-pills mt-5 mb-2" id="pills-tab" role="tablist">
-                                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 ">
-                                                    <h6 style="display: flex; align-items: center;">linimasa</h6>
-                                                </div>
-
-                                                <li class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12 nav-item" role="presentation">
-                                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-                                                        <i class="fas fa-signal"></i>
-                                                    </button>
-                                                </li>
-
-                                                <li class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12  nav-item" role="presentation">
-                                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                                                        <i class="fas fa-chart-pie"></i>
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                            <hr class="mb-5">
-                                            <div class="tab-content" id="pills-tabContent">
-                                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                                                    <div>
-                                                        <div id="chart1""></div>
-                                                    </div>
-                                                </div>
-                                                <div class=" tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                                                            <div>
-                                                                <div id="chart3"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="col-2 ">
+                                            <h5 class="">Biaya</h5>
                                         </div>
+                                        <div class="col-2 ">
+                                            <h5 class="">Biaya</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5 class="">Biaya</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5 class="">Biaya</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5 class="">Biaya</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5 class="">Rp.0.0</h5>
+                                        </div>
+                                   </div>
+                                  </div>
                                     </div>
                                 </div>
+                                </div>
+                               
                             </div>
 
 

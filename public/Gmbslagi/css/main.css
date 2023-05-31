@@ -9616,3 +9616,70 @@ label {
 .field-placeholder{
     z-index: auto !important;
 }
+        @media (min-width: 576px) {
+            .box1 {
+                margin-left: 32%;
+            }
+        }
+
+        .empty-box2 {
+            color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box2.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box2:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box1 {
+            color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 5px 0px 0px 5px;
+        }
+
+        .empty-box1.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box1:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+        }

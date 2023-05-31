@@ -15,6 +15,7 @@ use App\Http\Controllers\CalendarController;
 use App\Http\Controllers\ChartController;
 use App\Http\Controllers\EditEmailController;
 use App\Http\Controllers\Show_reportController;
+use App\Http\Controllers\Show_report2Controller;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CompanyController;
@@ -44,6 +45,7 @@ Route::get('/',[DashboardController::class,'index'])->name('dashboard');
 Route::get('kalender', function () {
     return view('kalender');
 });
+
 Route::get('login', function () {
     return view('login');
 });
@@ -161,6 +163,7 @@ Route::get('add_bill', [BillController::class, 'add_bill'])->name('add_bill');
 //laporan
 Route::get('/report',[ReportController::class, 'report'])->name('report');
 Route::get('/show_report',[Show_reportController::class, 'show_report'])->name('show_report');
+Route::get('/show_report2',[Show_report2Controller::class, 'show_report2'])->name('show_report2');
 
 //calendar
 Route::get('/calendar',[CalendarController::class, 'calendar'])->name('calendar');

@@ -63,6 +63,550 @@
             }
         }
 
+        .empty-box19 {
+            color: #1FBAC0;
+            border-color: #1FBAC0;
+            outline: 1px solid #1FBAC0;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box19.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #1FBAC0;
+            border-color: #1FBAC0;
+            outline: 1px solid #1FBAC0;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box19:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #1FBAC0;
+            border-color: #1FBAC0;
+            outline: 1px solid #1FBAC0;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box18 {
+            color: #1FBAC0;
+            border-color: #1FBAC0;
+            outline: 1px solid #1FBAC0;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box18.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #1FBAC0;
+            border-color: #1FBAC0;
+            outline: 1px solid #1FBAC0;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box18:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #1FBAC0;
+            border-color: #1FBAC0;
+            outline: 1px solid #1FBAC0;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box17 {
+            color: #02457A;
+            border-color: #02457A;
+            outline: 1px solid #02457A;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box17.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #02457A;
+            border-color: #02457A;
+            outline: 1px solid #02457A;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box17:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #02457A;
+            border-color: #02457A;
+            outline: 1px solid #02457A;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box16 {
+            color: #02457A;
+            border-color: #02457A;
+            outline: 1px solid #02457A;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box16.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #02457A;
+            border-color: #02457A;
+            outline: 1px solid #02457A;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box16:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #02457A;
+            border-color: #02457A;
+            outline: 1px solid #02457A;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box15 {
+            color: #001B48;
+            border-color: #001B48;
+            outline: 1px solid #001B48;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box15.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #001B48;
+            border-color: #001B48;
+            outline: 1px solid #001B48;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box15:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #001B48;
+            border-color: #001B48;
+            outline: 1px solid #001B48;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box14 {
+            color: #001B48;
+            border-color: #001B48;
+            outline: 1px solid #001B48;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box14.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #001B48;
+            border-color: #001B48;
+            outline: 1px solid #001B48;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box14:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #001B48;
+            border-color: #001B48;
+            outline: 1px solid #001B48;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box13 {
+            color: #595D2B;
+            border-color: #595D2B;
+            outline: 1px solid #595D2B;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box13.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #595D2B;
+            border-color: #595D2B;
+            outline: 1px solid #595D2B;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box13:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #595D2B;
+            border-color: #595D2B;
+            outline: 1px solid #595D2B;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box12 {
+            color: #A24502;
+            border-color: #A24502;
+            outline: 1px solid #A24502;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box12.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #A24502;
+            border-color: #A24502;
+            outline: 1px solid #A24502;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box12:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #A24502;
+            border-color: #A24502;
+            outline: 1px solid #A24502;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box11 {
+            color: #A24502;
+            border-color: #A24502;
+            outline: 1px solid #A24502;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box11.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #A24502;
+            border-color: #A24502;
+            outline: 1px solid #A24502;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box11:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #A24502;
+            border-color: #A24502;
+            outline: 1px solid #A24502;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box10 {
+            color: #D59D80;
+            border-color: #D59D80;
+            outline: 1px solid #D59D80;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box10.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #D59D80;
+            border-color: #D59D80;
+            outline: 1px solid #D59D80;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box10:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #D59D80;
+            border-color: #D59D80;
+            outline: 1px solid #D59D80;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box9 {
+            color: #D59D80;
+            border-color: #D59D80;
+            outline: 1px solid #D59D80;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box9.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #D59D80;
+            border-color: #D59D80;
+            outline: 1px solid #D59D80;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box9:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #D59D80;
+            border-color: #D59D80;
+            outline: 1px solid #D59D80;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box8 {
+            color: #9DB5B2;
+            border-color: #9DB5B2;
+            outline: 1px solid #9DB5B2;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box8.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #9DB5B2;
+            border-color: #9DB5B2;
+            outline: 1px solid #9DB5B2;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box8:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #9DB5B2;
+            border-color: #9DB5B2;
+            outline: 1px solid #9DB5B2;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box7 {
+            color: #9DB5B2;
+            border-color: #9DB5B2;
+            outline: 1px solid #9DB5B2;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box7.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #9DB5B2;
+            border-color: #9DB5B2;
+            outline: 1px solid #9DB5B2;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box7:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #9DB5B2;
+            border-color: #9DB5B2;
+            outline: 1px solid #9DB5B2;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box6 {
+            color: #57737A;
+            border-color: #57737A;
+            outline: 1px solid #57737A;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box6.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #57737A;
+            border-color: #57737A;
+            outline: 1px solid #57737A;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box6:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #57737A;
+            border-color: #57737A;
+            outline: 1px solid #57737A;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box5 {
+            color: #57737A;
+            border-color: #57737A;
+            outline: 1px solid #57737A;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box5.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #57737A;
+            border-color: #57737A;
+            outline: 1px solid #57737A;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box5:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #57737A;
+            border-color: #57737A;
+            outline: 1px solid #57737A;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box4 {
+            color: #314641;
+            border-color: #314641;
+            outline: 1px solid #314641;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box4.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #314641;
+            border-color: #314641;
+            outline: 1px solid #314641;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box4:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #314641;
+            border-color: #314641;
+            outline: 1px solid #314641;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box3 {
+            color: #314641;
+            border-color: #314641;
+            outline: 1px solid #314641;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box3.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #314641;
+            border-color: #314641;
+            outline: 1px solid #314641;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box3:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #314641;
+            border-color: #314641;
+            outline: 1px solid #314641;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
         .empty-box2 {
             color: #f26861;
             border-color: #f26861;
@@ -455,6 +999,258 @@
                                         <div class="hr-switch">
                                             <a href="{{url('recurring_transactions')}}">
                                                 <div class="empty-box2">
+                                                    <h6 class="">Rutin</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('transactions')}}">
+                                                <div class="empty-box3 active">
+                                                    <h6 class="">Normal</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('recurring_transactions')}}">
+                                                <div class="empty-box4">
+                                                    <h6 class="">Rutin</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('transactions')}}">
+                                                <div class="empty-box5 active">
+                                                    <h6 class="">Normal</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('recurring_transactions')}}">
+                                                <div class="empty-box6">
+                                                    <h6 class="">Rutin</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('transactions')}}">
+                                                <div class="empty-box7 active">
+                                                    <h6 class="">Normal</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('recurring_transactions')}}">
+                                                <div class="empty-box8">
+                                                    <h6 class="">Rutin</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('transactions')}}">
+                                                <div class="empty-box9 active">
+                                                    <h6 class="">Normal</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('recurring_transactions')}}">
+                                                <div class="empty-box10">
+                                                    <h6 class="">Rutin</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('transactions')}}">
+                                                <div class="empty-box11 active">
+                                                    <h6 class="">Normal</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('recurring_transactions')}}">
+                                                <div class="empty-box12">
+                                                    <h6 class="">Rutin</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('transactions')}}">
+                                                <div class="empty-box13 active">
+                                                    <h6 class="">Normal</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('recurring_transactions')}}">
+                                                <div class="empty-box13">
+                                                    <h6 class="">Rutin</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('transactions')}}">
+                                                <div class="empty-box14 active">
+                                                    <h6 class="">Normal</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('recurring_transactions')}}">
+                                                <div class="empty-box15">
+                                                    <h6 class="">Rutin</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('transactions')}}">
+                                                <div class="empty-box16 active">
+                                                    <h6 class="">Normal</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('recurring_transactions')}}">
+                                                <div class="empty-box17">
+                                                    <h6 class="">Rutin</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('transactions')}}">
+                                                <div class="empty-box18 active">
+                                                    <h6 class="">Normal</h6>
+
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2"  style="margin-top: 8%;">
+                                        <div class="hr-switch">
+                                            <a href="{{url('recurring_transactions')}}">
+                                                <div class="empty-box19">
                                                     <h6 class="">Rutin</h6>
 
                                                 </div>
