@@ -5,19 +5,19 @@
 
 		<!-- Tabs nav start -->
 		<div class="nav" role="tablist" aria-orientation="vertical">
-			<a id="profile-tab" data-bs-toggle="tab" href="#tab-profile" role="tab" aria-controls="tab-profile" aria-selected="false" class="logo">
+			<a class="nav-link-pro " data-tab="tab1" class="logo">
 				<img src="{{ asset('Gmbslagi/img/unknown.jpg') }}" width="50" height="50" style="border-radius: 50%;" class="mb-3">
 			</a>
 
-			<a class="current-page nav-link {{ request()->routeIs('account') ? 'active' : '' }} || {{ request()->routeIs('account') ? 'tab-home' : '' }}" id="home-tab" data-bs-toggle="tab" href="#tab-home" role="tab" aria-controls="tab-home" aria-selected="true">
+			<a class="current-page nav-link active"  data-tab="tab2">
 				<i class="icon-grid"></i>
 				<span class="nav-link-text">Dashboards</span>
 			</a>
-			<a class="nav-link {{ request()->routeIs('tax') ? 'active' : '' }} || {{ request()->routeIs('tax') ? 'tab-product' : '' }}" id="product-tab" data-bs-toggle="tab" href="#tab-product" role="tab" aria-controls="tab-product" aria-selected="false">
+			<a class="nav-link " data-tab="tab3">
 				<i class="icon-settings1"></i>
 				<span class="nav-link-text">Sistem</span>
 			</a>
-			<a class="nav-link" id="pages-tab" data-bs-toggle="tab" href="#tab-pages" role="tab" aria-controls="tab-pages" aria-selected="false">
+			<a class="nav-link" data-tab="tab4">
 				<i class="icon-notifications_none"></i>
 				<span class="nav-link-text">Notifikasi</span>
 			</a>
@@ -33,10 +33,10 @@
 		<!-- Tabs nav end -->
 
 		<!-- Tabs content start -->
-		<div class="tab-content">
+		<div class="tab-content" >
 		
 			<!-- Chat tab -->
-			<div class="tab-pane fade show active" id="tab-home" role="tabpanel" aria-labelledby="home-tab">
+			<div class="tab-pane fade show active" data-tab-content="tab2">
 
 				<!-- Tab content header start -->
 				<div class="tab-pane-header">
@@ -108,7 +108,7 @@
 			</div>
 
 			<!-- Pages tab -->
-			<div class="tab-pane fade" id="tab-product" role="tabpanel" aria-labelledby="product-tab">
+			<div class="tab-pane fade show" data-tab-content="tab3">
 
 				<!-- Tab content header start -->
 				<div class="tab-pane-header">
@@ -162,7 +162,7 @@
 			</div>
 
 			<!-- Pages tab -->
-			<div class="tab-pane fade" id="tab-profile" role="tabpanel" aria-labelledby="profile-tab">
+			<div class="tab-pane fade show" data-tab-content="tab1">
 
 				<!-- Tab content header start -->
 				<div class="tab-pane-header">
@@ -201,7 +201,7 @@
 
 
 			<!-- Pages tab -->
-			<div class="tab-pane fade" id="tab-pages" role="tabpanel" aria-labelledby="pages-tab">
+			<div class="tab-pane fade show" data-tab-content="tab4">
 
 				<!-- Tab content header start -->
 				<div class="tab-pane-header mt-2 ">

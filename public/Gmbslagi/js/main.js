@@ -264,27 +264,67 @@ if (currentDropdown) {
 //     currentDashboardLink.classList.add("active");
 // });
 
-// Mendapatkan ID tab yang aktif saat ini
-const activeTabId = localStorage.getItem("activeTabId");
+// Ambil semua elemen tab dan konten tab
+// Ambil semua elemen tab dengan kelas .nav-link
+const tabsNavLink = document.querySelectorAll(".nav-link");
 
-// Jika ada ID tab yang aktif, tambahkan class 'active' ke tab tersebut
-if (activeTabId) {
-    const activeTab = document.querySelector(`#${activeTabId}`);
-    activeTab.classList.add("active");
+// Ambil semua elemen tab dengan kelas .nav-link-pro
+const tabsNavLinkPro = document.querySelectorAll(".nav-link-pro");
+
+// Gabungkan kedua array elemen tab menjadi satu array
+const tabs = Array.from(tabsNavLink).concat(Array.from(tabsNavLinkPro));
+const tabContents = document.querySelectorAll(".tab-pane");
+
+// Fungsi untuk menampilkan tab yang aktif berdasarkan data-tab yang disimpan
+function showActiveTab() {
+    // Dapatkan data-tab yang disimpan dalam penyimpanan lokal
+    const activeTab = localStorage.getItem("activeTab");
+
+    // Jika ada data-tab yang tersimpan
+    if (activeTab) {
+        // Hilangkan kelas "active" dari semua tab dan konten tab
+        tabs.forEach((tab) => tab.classList.remove("active"));
+        tabContents.forEach((content) => content.classList.remove("active"));
+
+        // Tambahkan kelas "active" pada tab yang sesuai dengan data-tab yang disimpan
+        const selectedTab = document.querySelector(`[data-tab="${activeTab}"]`);
+        const selectedContent = document.querySelector(
+            `[data-tab-content="${activeTab}"]`
+        );
+
+        if (selectedTab && selectedContent) {
+            selectedTab.classList.add("active");
+            selectedContent.classList.add("active");
+        }
+    }
 }
 
-// Menangkap event saat tab diklik
-document.addEventListener("click", function (event) {
-    const clickedTab = event.target.closest(".nav-link");
+// Tambahkan event listener untuk setiap tab
+tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+        // Hapus kelas "active" dari semua tab dan konten tab
+        tabs.forEach((tab) => tab.classList.remove("active"));
+        tabContents.forEach((content) => content.classList.remove("active"));
 
-    // Jika tab yang diklik ada dan bukan tab aktif saat ini, simpan ID tab tersebut ke localStorage
-    if (clickedTab && !clickedTab.classList.contains("active")) {
-        const tabId = clickedTab.getAttribute("id");
-        localStorage.setItem("activeTabId", tabId);
-    }
+        // Tambahkan kelas "active" pada tab yang diklik
+        tab.classList.add("active");
+
+        // Ambil data-tab dari tab yang diklik
+        const selectedTab = tab.getAttribute("data-tab");
+
+        // Tambahkan kelas "active" pada konten tab yang sesuai dengan data-tab
+        const selectedContent = document.querySelector(
+            `[data-tab-content="${selectedTab}"]`
+        );
+        selectedContent.classList.add("active");
+
+        // Simpan data-tab yang aktif dalam penyimpanan lokal
+        localStorage.setItem("activeTab", selectedTab);
+    });
 });
 
-
+// Panggil fungsi untuk menampilkan tab yang aktif saat halaman dimuat
+showActiveTab();
 
 // }
 
