@@ -123,7 +123,7 @@
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                     <div class="card-body">
                                         <div class="alert alert-primary" style="border-radius: 10px; background-color:#9a99e2" role="alert">
-                                            Faktur ini dihasilkan otomatis dari BRLJ-00001
+                                            Faktur ini dihasilkan otomatis dari BRLB-00001
                                         </div>
                                         <!-- Faq start -->
                                         <div class="accordion" id="faqAccordion">
