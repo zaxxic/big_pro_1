@@ -46,6 +46,69 @@
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4-custom.css")}}" />
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
     <style>
+        .empty-box2 {
+            color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box2.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box2:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box1 {
+            color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 5px 0px 0px 5px;
+        }
+
+        .empty-box1.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box1:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
         .text {
             text-align: center;
             color: #5e6973;
@@ -361,14 +424,14 @@
                                                 <!-- <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6"> -->
                                                 
                                                     <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
-                                                        <li class="empty-box active" role="presentation">
-                                                            <div class="empty-box active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-transactions" type="button" role="tab" aria-controls="pills-transactions" aria-selected="true">
-                                                                <h6 class="text">Transaksi</h6>
+                                                        <li class="" role="presentation">
+                                                            <div class="empty-box1 active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-transactions" type="button" role="tab" aria-controls="pills-transactions" aria-selected="true">
+                                                                <h6 class="">Transaksi</h6>
                                                             </div>
                                                         </li>
-                                                        <li class="empty-box" role="presentation">
-                                                            <div class="empty-box" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-transfer" type="button" role="tab" aria-controls="pills-transfer" aria-selected="false">
-                                                                <h6 class="text">Transfer</h6>
+                                                        <li class="" role="presentation">
+                                                            <div class="empty-box2" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-transfer" type="button" role="tab" aria-controls="pills-transfer" aria-selected="false">
+                                                                <h6 class="">Transfer</h6>
                                                             </div>
                                                         </li>
                                                     </ul>
