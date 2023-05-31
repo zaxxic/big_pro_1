@@ -79,7 +79,7 @@
 							<li class="mt-3 ">
 								<a href="#" class="dropdown-btn"><i class="icon-shopping-cart1" style=" font-size: 19px;"></i><span>&emsp;Pembelian</span><i class="icon-chevron-down1 droprow"></i></a>
 								<ul class="dropdown-container">
-									<li class="mt-2"><a href=""><span style="margin-left: 20px;">&emsp;Tagihan</span></a></li>
+									<li class="mt-2"><a href="{{ route('bill') }}"><span style="margin-left: 20px;">&emsp;Tagihan</span></a></li>
 									<li class="mt-2"><a href="{{url('supplier')}}"><span style="margin-left: 20px;">&emsp;Pemasok</span></a></li>
 								</ul>
 							</li>

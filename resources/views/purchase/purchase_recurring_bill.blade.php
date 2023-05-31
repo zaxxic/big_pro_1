@@ -221,16 +221,28 @@
                                     <div class="card-body">
                                    
                                     <!-- Row end -->
-                                    <nav class="d-flex" style="margin-top:-4%">
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6" style="margin-top: 8%;">
-                                        {{-- <ul class="d-flex" style="font-size: 13pt; margin-top: 5%"> --}}
-                                        <h6 class="empty-box text" style="margin-right: 20%"><a href="{{ url ('bill')}}" >Tagihan</a></h6>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6" style="margin-top: 8%;">
-                                        <h6 class="empty-box text active" style="margin-left:-20%; margin-right:40%" ><a href="{{ url ('recurring_bill')}}">Tagihan Berulang</a></h6>
-                                        </div>
-                                        {{-- </ul> --}}
-                                    </nav>
+                                    <div class="d-flex">
+										<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1"
+										style="margin-top: 8%;">
+										<div class="hr-switch">
+											<a href="{{ route('bill') }}">
+												<div class="empty-box1 ">
+													<h6 class="">tagihan</h6>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2"
+										style="margin-top: 8%;">
+										<div class="hr-switch">
+											<a href="{{ route('recurring_bill') }}">
+												<div class="empty-box2 active">
+													<h6 class="">Rutin</h6>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
                                         <div class="content">
                                             <div class="searchcontainer">
                                               <i class="icon-search"></i><input class="search " type="text" placeholder="Cari atau seleksi hasil.." style="
