@@ -160,72 +160,8 @@ label{
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-3">
 
                         <!-- Header actions start -->
-                        <ul class="header-actions">
-                            <li class="dropdown">
-                                <a href="#" id="taskss" data-toggle="dropdown" aria-haspopup="true">
-                                    <i class="icon-check-square"></i>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-end lrg" aria-labelledby="taskss">
-                                    <div class="dropdown-menu-header">
-                                        Tasks (7/10)
-                                    </div>
-                                    <div class="customScroll">
-                                        <ul class="activity">
-                                            <li class="activity-list">
-                                                <div class="detail-info">
-                                                    <p class="date">Today</p>
-                                                    <p class="info">Messages accepted with attachments</p>
-                                                </div>
-                                            </li>
-                                            <li class="activity-list danger">
-                                                <div class="detail-info">
-                                                    <p class="date">Today</p>
-                                                    <p class="info">Send email notifications of subscriptions and
-                                                        deletions to list owner</p>
-                                                </div>
-                                            </li>
-                                            <li class="activity-list success">
-                                                <div class="detail-info">
-                                                    <p class="date">Yesterday</p>
-                                                    <p class="info">Required change logs activity reports</p>
-                                                </div>
-                                            </li>
-                                            <li class="activity-list warning">
-                                                <div class="detail-info">
-                                                    <p class="date">2 Days Ago</p>
-                                                    <p class="info">Strategic partnership plan</p>
-                                                </div>
-                                            </li>
-                                            <li class="activity-list">
-                                                <div class="detail-info">
-                                                    <p class="date">2 days ago</p>
-                                                    <p class="info">Send email notifications of subscriptions and
-                                                        deletions to list owner</p>
-                                                </div>
-                                            </li>
-                                            <li class="activity-list danger">
-                                                <div class="detail-info">
-                                                    <p class="date">3 days ago</p>
-                                                    <p class="info">Required change logs activity reports</p>
-                                                </div>
-                                            </li>
-                                            <li class="activity-list success">
-                                                <div class="detail-info">
-                                                    <p class="date">7 days ago</p>
-                                                    <p class="info">Strategic partnership plan</p>
-                                                </div>
-                                            </li>
-                                            <li class="activity-list">
-                                                <div class="detail-info">
-                                                    <p class="date">2 weeks ago</p>
-                                                    <p class="info">Required change logs activity reports</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                           z
+   
+                           
                 <!-- Row end -->
 
             </div>
