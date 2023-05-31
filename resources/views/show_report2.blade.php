@@ -96,7 +96,9 @@
                             <div class="">
                                 <div class="card-title">
                                     <div class="d-flex flex-wrap">
-                                        <h1 class="card-title col-xl-11 col-lg-11 col-md-10 col-sm-8 col-8" style="font-size: 20px;">Ringkasan Pengeluaran <i class="icon-star2 " style="padding-left: 10px; font-size: 19px;"></i> </h1>
+                                        <h1 class="card-title col-xl-10 col-lg-10 col-md-8 col-sm-8 col-8" style="font-size: 20px;">Ringkasan Pengeluaran <i class="icon-star2 " style="padding-left: 10px; font-size: 19px;"></i> </h1>
+                                        <button type="button" class="btn btn-secondary col-xl-1 col-lg-1 col-md-2 col-sm-2 col-2 ">cetak</button>
+                                        <button type="button" class="btn btn-secondary col-xl-1 col-lg-1 col-md-2 col-sm-2  col-2  ">Expor</button>
                                     </div>
                                 </div>
 
@@ -118,47 +120,47 @@
                                   <div class="row">
                                   <div class="d-flex">
                                         <div class="col-2 ">
-                                            <h5 class="mt-5">Pendapatan</h5>
+                                            <h5 class="mt-3">Pendapatan</h5>
                                         </div>
                                     </div>
-                                    <hr class="col-12">
-                                   <div class="">
-                                   <div class="d-flex ">
+                                    <div class="row">
+                                        <hr class="udin" style="height: 3px; background-color: #000000;">
+                                        <div class="d-flex ">
                                         <div class="col-2 ">
-                                            <h5 class="mt-5">Biaya</h5>
+                                            <h5>Deposit</h5>
                                         </div>
                                         <div class="col-2 ">
-                                            <h5 class="mt-5">Biaya</h5>
+                                            <h5>Rp.0.0</h5>
                                         </div>
                                         <div class="col-2 ">
-                                            <h5 class="mt-5">Biaya</h5>
+                                            <h5>Rp.0.0</h5>
                                         </div>
                                         <div class="col-2 ">
-                                            <h5 class="mt-5">Biaya</h5>
+                                            <h5>Rp.0.0</h5>
                                         </div>
                                         <div class="col-2 ">
-                                            <h5 class="mt-5">Biaya</h5>
+                                            <h5>Rp.0.0</h5>
                                         </div>
                                         <div class="col-2 ">
-                                            <h5 class="mt-5">Rp.0.0</h5>
+                                            <h5>Rp.0.0</h5>
                                         </div>
                                     </div>
-                                    <hr class=" col-12">
+                                    <hr class=" col-12"style="background-color: #A9A9A9;">
                                     <div class="d-flex">
                                         <div class="col-2 ">
-                                            <h5 class="">Biaya</h5>
+                                            <h5 class="">Total</h5>
                                         </div>
                                         <div class="col-2 ">
-                                            <h5 class="">Biaya</h5>
+                                            <h5 class="">Rp.0.0</h5>
                                         </div>
                                         <div class="col-2 ">
-                                            <h5 class="">Biaya</h5>
+                                            <h5 class="">Rp.0.0</h5>
                                         </div>
                                         <div class="col-2 ">
-                                            <h5 class="">Biaya</h5>
+                                            <h5 class="">Rp.0.0</h5>
                                         </div>
                                         <div class="col-2 ">
-                                            <h5 class="">Biaya</h5>
+                                            <h5 class="">Rp.0.0</h5>
                                         </div>
                                         <div class="col-2 ">
                                             <h5 class="">Rp.0.0</h5>
@@ -168,7 +170,62 @@
                                     </div>
                                 </div>
                                 </div>
-                               
+                            <div class="d-flex flex-column flex-sm-row">
+                                <div class=" col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                  <div class="row">
+                                  <div class="d-flex">
+                                        <div class="col-2 ">
+                                            <h5 class="mt-5">Biaya</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <hr class="" style="height: 3px; background-color: #000000;">
+                                        <div class="d-flex ">
+                                        <div class="col-2 ">
+                                            <h5>Lainnya</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5>Rp.0.0</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5>Rp.0.0</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5>Rp.0.0</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5>Rp.0.0</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5>Rp.0.0</h5>
+                                        </div>
+                                    </div>
+                                    <hr class=" col-12" style="background-color: #A9A9A9;">
+                                    <div class="d-flex">
+                                        <div class="col-2 ">
+                                            <h5 class="">Total</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5 class="">Rp.0.0</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5 class="">Rp.0.0</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5 class="">Rp.0.0</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5 class="">Rp.0.0</h5>
+                                        </div>
+                                        <div class="col-2 ">
+                                            <h5 class="">Rp.0.0</h5>
+                                        </div>
+                                   </div>
+                                  </div>
+                                    </div>
+                                </div>
+                                </div>
+
                             </div>
 
 

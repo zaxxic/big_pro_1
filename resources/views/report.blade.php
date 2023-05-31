@@ -82,17 +82,22 @@
                     <div class="row gutters">
                         <div class="col-xl-12">
                             <!-- Card start -->
-                            <div class="">
-                                <div class="card-title">
-                                <div class="d-flex flex-wrap ">
-                                        <h1 class="card-title col-xl-11 col-lg-11 col-md-10 col-sm-8 col-8 mb-4" style="font-size: 20px;">Transaksi  <i class="icon-star2 " style="padding-left: 10px; font-size: 19px;"></i>     </h1>
-
-                                        <button type="button" class="btn btn-secondary col-xl-1 col-lg-1 col-md-2 col-sm-4 col-4 mb-4">Tambah</button>
+                            <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
+                                        <div class="card-title">
+                                            <h3>Laporan<button type="button" style="border: none; background:transparent;">☆</button></h3>
+                                        </div>
                                     </div>
-                            </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
+                                        <div class="graph-day-selection" role="group" style="margin-left: 68%">
+                                            <a href="{{url('add_transfer')}}">
+                                                <button type="button" class="btn active" style="background: transparent">Tambah Laporan</button>
+                                            </a>
+                                        </div>
+                                    </div>
 
                             </div>
-                        <div class="row">
+                        <div class="row mt-5">
                             <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
 								<div class="sematkan">
 									<div class="sematkan-icon">
@@ -193,7 +198,7 @@
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                             <div class="ringkasan d-flex">
                                                 <div class="d-flex">
-                                                    <a href="show_report"> <div class="ringkasan-icon">
+                                                    <a href="show_report2"> <div class="ringkasan-icon">
                                                     <i class="icon-shopping-cart1"></i>
                                                     </div>
                                                     <div class="sale-details">
@@ -207,7 +212,7 @@
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                             <div class="ringkasan d-flex">
                                                 <div class="d-flex">
-                                                    <a href="show_report"> <div class="ringkasan-icon">
+                                                    <a href="show_report2"> <div class="ringkasan-icon">
                                                     <i class="icon-shopping-cart1"></i>
                                                     </div>
                                                     <div class="sale-details">
@@ -221,7 +226,7 @@
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                             <div class="ringkasan d-flex">
                                                 <div class="d-flex">
-                                                    <a href="show_report"> <div class="ringkasan-icon">
+                                                    <a href="show_report2"> <div class="ringkasan-icon">
                                                     <i class="icon-shopping-cart1"></i>
                                                     </div>
                                                     <div class="sale-details">

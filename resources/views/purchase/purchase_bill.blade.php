@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-    
+
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:53 GMT -->
 <head>
 		<!-- Required meta tags -->
@@ -21,7 +21,7 @@
 		************ -->
 		<!-- Bootstrap css -->
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/css/bootstrap.min.css")}}">
-		
+
 		<!-- Icomoon Font Icons css -->
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/fonts/style.css")}}">
 
@@ -39,7 +39,7 @@
 		<!-- Search Filter JS -->
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/search-filter/search-filter.css")}}">
         <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/search-filter/custom-search-filter.css")}}">
-        
+
         <!-- Data Tables -->
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4.css")}}" />
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4-custom.css")}}" />
@@ -133,7 +133,7 @@
 
 		<!-- Page wrapper start -->
 		<div class="page-wrapper">
-			
+
 			<!-- Sidebar wrapper start -->
 			@include('layouts.sidebar')
 			<!-- Sidebar wrapper end -->
@@ -145,17 +145,17 @@
 
 				<!-- Page header starts -->
 				<div class="page-header">
-					
+
 					<!-- Row start -->
 					<div class="row gutters">
 						<div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-9">
 
-						
+
 
 						</div>
-						
+
 					</div>
-					<!-- Row end -->					
+					<!-- Row end -->
 
 				</div>
 				<!-- Page header ends -->
@@ -169,12 +169,13 @@
 						<!-- Row start -->
 					    <div class="row gutters">
 						    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                            
+
                                 <!-- Card start -->
                                 <div class="card">
                                     <div class="card-header">
                                         <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
-                                        <div class="card-title"><h3>Tagihan<button type="button" style="border: none; background:transparent;">☆</button></h3></div></div>
+                                        <div class="card-title"><h3>Tagihan<button type="button" style="border: none; background:transparent;">☆</button></h3></div>
+                                        </div>
                                         <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
                                         <div class="graph-day-selection" role="group" style="margin-left: 68%">
 											<a href="{{url('add_bill')}}">
@@ -194,7 +195,7 @@
 												<button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
 												</a>
 											</div>
-										</div>     
+										</div>
                                     </div>
                                     <div class="card-body">
                                                     <!-- Row start -->
@@ -298,9 +299,9 @@
 															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 															<a href="#" class="menu-icon icon-eye1"></a>
 														  </div>
-													</td>	
+													</td>
 												  </tr>
-											  
+
 												  <!-- Data 2 -->
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
@@ -314,10 +315,10 @@
 															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 															<a href="#" class="menu-icon icon-eye1"></a>
 														  </div>
-													</td>	
+													</td>
 												  </tr>
-												
-											  
+
+
 												  <!-- Data 3 -->
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
@@ -331,9 +332,9 @@
 															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 															<a href="#" class="menu-icon icon-eye1"></a>
 														  </div>
-													</td>	
+													</td>
 												  </tr>
-												 
+
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>15 mei 2023</td>
@@ -346,9 +347,9 @@
 															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 															<a href="#" class="menu-icon icon-eye1"></a>
 														  </div>
-													</td>	
+													</td>
 												  </tr>
-												  
+
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>25 mei 2023</td>
@@ -361,17 +362,17 @@
 															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 															<a href="#" class="menu-icon icon-eye1"></a>
 														  </div>
-													</td>	
+													</td>
 												  </tr>
-												 
+
 												</tbody>
 											  </table>
                                                         <!-- Card start -->
                                             <div class="card">
-                                                <div class="card-body" style="margin-left: -2.1%">
+                                                <div class="card-body col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
 
                                                     <nav aria-label="Page navigation example">
-                                                        <ul class="pagination">
+                                                        <ul class="pagination" style="float: right;">
                                                         <li class="page-item">
                                                             <a class="page-link" href="#" aria-label="Previous">
                                                             <span aria-hidden="true">&laquo;</span>
@@ -461,7 +462,7 @@
 		<!-- Megamenu JS -->
 		<script src="{{ asset ("Gmbslagi/vendor/megamenu/js/megamenu.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/megamenu/js/custom.js")}}"></script>
-				
+
 		<!-- Slimscroll JS -->
 		<script src="{{ asset ("Gmbslagi/vendor/slimscroll/slimscroll.min.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/slimscroll/custom-scrollbar.js")}}"></script>
@@ -473,7 +474,7 @@
         <!-- Data Tables -->
 		<script src="{{ asset ("Gmbslagi/vendor/datatables/dataTables.min.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bootstrap.min.js")}}"></script>
-		
+
 		<!-- Custom Data tables -->
 		<script src="{{ asset ("Gmbslagi/vendor/datatables/custom/custom-datatables.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/datatables/custom/fixedHeader.js")}}"></script>
@@ -486,7 +487,7 @@
 		<script src="{{ asset ("Gmbslagi/vendor/datatables/html5.min.js")}}"></script>
         <script src="{{ asset ("Gmbslagi/vendor/datatables/buttons.print.min.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.js")}}"></script>
-        
+
 		<!-- Main Js Required -->
 		<script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
 		<script>
@@ -498,7 +499,7 @@
 		selectAllCheckbox.addEventListener('change', function() {
 		// Periksa apakah checkbox "Select All" dicentang atau tidak
 		var isChecked = selectAllCheckbox.checked;
-		
+
 		// Ubah status checked pada checkbox lainnya sesuai dengan checkbox "Select All"
 		for (var i = 0; i < otherCheckboxes.length; i++) {
 			otherCheckboxes[i].checked = isChecked;
@@ -516,7 +517,7 @@
 				break;
 			}
 			}
-			
+
 			// Perbarui status checked pada checkbox "Select All" sesuai dengan kondisi di atas
 			selectAllCheckbox.checked = allChecked;
 		});

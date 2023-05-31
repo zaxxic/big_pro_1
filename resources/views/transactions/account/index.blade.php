@@ -46,17 +46,19 @@
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4-custom.css")}}" />
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
     <style>
-        .float-right{
+        .float-right {
             float: right;
         }
-         .badge-start {
+
+        .badge-start {
             border-radius: 30px;
             padding: .35rem .5rem;
             min-width: 60px;
             background: #D8D7FF;
             color: #030179;
         }
-         .badge-finish {
+
+        .badge-finish {
             border-radius: 30px;
             padding: .35rem .5rem;
             min-width: 60px;
@@ -282,25 +284,20 @@
 
                                 <!-- <div class="card-header"> -->
                                 <div class="row">
-                                    <div class=" col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
-
-                                        <h1 class="card-title" style="font-size: 20px;">Akun<button type="button" style="border: none; background:none;">☆</button></h1>
-                                        
+                                    <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
+                                        <div class="card-title">
+                                            <h3>Akun<button type="button" style="border: none; background:transparent;">☆</button></h3>
+                                        </div>
                                     </div>
-
-                                    <!-- <div class="text-end">
-											<a href="create-invoice.html" class="btn btn-primary">Create Invoice</a>
-										</div> -->
-                                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7 ">
-                                        <a href="{{url('add_account')}}" class="float-right"> <button type="button" class="btn btn-secondary float-right">Tambah</button></a>
-                                       
-                                      
-
-
-
+                                    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
+                                        <div class="graph-day-selection" role="group" style="margin-left: 68%">
+                                            <a href="{{url('add_account')}}">
+                                                <button type="button" class="btn active" style="background: transparent">Tambah Akun</button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            
+
 
                                 <div class="content">
                                     <div class="searchcontainer">
@@ -319,7 +316,7 @@
                                                 <th scope="col">Telepon</th>
                                                 <th scope="col">Saldo Saat Ini</th>
                                                 <th scope="col">Aksi</th>
-                                                
+
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -400,53 +397,53 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                   
+
                                 </div>
                             </div>
-                             <!-- Card start -->
-                             <div class="card">
-                                        <div class="card-body" style="margin-left: -2.1%">
+                            <!-- Card start -->
+                            <div class="card">
+                                <div class="card-body col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
-                                            <nav aria-label="Page navigation example" >
-                                                <ul class="pagination" style="justify-content: flex-end;">
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">&laquo;</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">&raquo;</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </nav>
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination" style="float: right;">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
+                            </div>
+                            <!-- Card end -->
+                            <!-- Modal start -->
+                            <div class="modal fade" id="deleteaccount" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteaccount" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content" style="padding: 0px">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Hapus Akun</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Anda Yakin Ingin Menghapus Akun Ini?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Hapus</button>
 
                                         </div>
                                     </div>
-                                    <!-- Card end -->
-                                    <!-- Modal start -->
-										<div class="modal fade" id="deleteaccount" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteaccount" aria-hidden="true">
-											<div class="modal-dialog">
-												<div class="modal-content" style="padding: 0px">
-												<div class="modal-header">
-													<h5 class="modal-title" id="staticBackdropLabel">Hapus Akun</h5>
-													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-												</div>
-												<div class="modal-body">
-													<p>Anda Yakin Ingin Menghapus Akun Ini?</p>
-												</div>
-												<div class="modal-footer">
-													<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Hapus</button>
-													
-												</div>
-												</div>
-											</div>
-										</div>
-										<!-- Modal end -->
+                                </div>
+                            </div>
+                            <!-- Modal end -->
 
                             <!-- Card end -->
 

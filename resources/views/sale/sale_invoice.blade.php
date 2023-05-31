@@ -231,30 +231,28 @@
                             <!-- Card start -->
                             <div class="card">
                                 <div class="card-header">
-                                    <div class="card-title">
-                                        <h3>Faktur<button type="button"
-                                                style="border: none; background:transparent;">☆</button></h3>
+                                    <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
+                                        <div class="card-title">
+                                            <h3>Faktur<button type="button" style="border: none; background:transparent;">☆</button></h3>
+                                        </div>
                                     </div>
-                                    <div class="graph-day-selection" role="group" style="margin-left: 68%">
-                                        <a href="{{ url('add_supplier') }}">
-                                            <button type="button" class="btn active"
-                                                style="background: transparent">Tambah Faktur</button>
-                                        </a>
+                                    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
+                                        <div class="graph-day-selection" role="group" style="margin-left: 68%">
+                                            <a href="{{url('add_invoice')}}">
+                                                <button type="button" class="btn active" style="background: transparent">Tambah Faktur</button>
+                                            </a>
+                                        </div>
                                     </div>
                                     <div class="dropdown icon-dots-three-vertical">
                                         <span></span>
                                         <div class="dropdown-content">
                                             <a href="#">
-                                                <button type="button"
-                                                    style="border: none; background-color: white; color:#333; background:transparent"
-                                                    class="icon-download" data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModalCenteredScrollable">
+                                                <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
                                                     Impor
                                                 </button>
                                             </a>
                                             <a href="#" class="icon-folder" style="color: #333">
-                                                <button type="button"
-                                                    style="border: none; background-color: white; color:#333; background:transparent">
+                                                <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
                                                     Ekspor</button>
                                             </a>
                                         </div>
@@ -308,8 +306,7 @@
                                     </div>
                                     <!-- Row end -->
                                     <div class="d-flex">
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1"
-                                            style="margin-top: 8%;">
+                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1" style="margin-top: 8%;">
                                             <div class="hr-switch">
                                                 <a href="{{ route('invoice') }}">
                                                     <div class="empty-box1 active">
@@ -318,8 +315,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2"
-                                            style="margin-top: 8%;">
+                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2" style="margin-top: 8%;">
                                             <div class="hr-switch">
                                                 <a href="{{ route('recurring_invoice') }}">
                                                     <div class="empty-box2">
@@ -331,9 +327,7 @@
                                     </div>
                                     <div class="content">
                                         <div class="searchcontainer">
-                                            <i class="icon-search"></i><input class="search " type="text"
-                                                placeholder="Cari atau seleksi hasil.."
-                                                style="
+                                            <i class="icon-search"></i><input class="search " type="text" placeholder="Cari atau seleksi hasil.." style="
                                               margin-bottom: 2%; font-size:10pt " />
                                         </div>
                                     </div>
@@ -341,8 +335,7 @@
                                         <table class="table table-hover caption-top">
                                             <thead>
                                                 <tr>
-                                                    <th scope="col"> <input type="checkbox"
-                                                            id="select-all-checkbox"> </th>
+                                                    <th scope="col"> <input type="checkbox" id="select-all-checkbox"> </th>
                                                     <th scope="col">Tanggal Jatuh Tempo</th>
                                                     <th scope="col">Status</th>
                                                     <th scope="col">Pelanggan</th>
@@ -360,10 +353,8 @@
                                                     <td>91.000.000,00</td>
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{ url('edit_supplier') }}"
-                                                                class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i
-                                                                    class="icon-trash"></i></a>
+                                                            <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
+                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                         </div>
                                                     </td>
@@ -378,10 +369,8 @@
                                                     <td>80.000.000,00</td>
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{ url('edit_supplier') }}"
-                                                                class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i
-                                                                    class="icon-trash"></i></a>
+                                                            <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
+                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                         </div>
                                                     </td>
@@ -397,10 +386,8 @@
                                                     <td>100.000.000,00</td>
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{ url('edit_supplier') }}"
-                                                                class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i
-                                                                    class="icon-trash"></i></a>
+                                                            <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
+                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                         </div>
                                                     </td>
@@ -414,10 +401,8 @@
                                                     <td>20.000.000,00</td>
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{ url('edit_supplier') }}"
-                                                                class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i
-                                                                    class="icon-trash"></i></a>
+                                                            <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
+                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                         </div>
                                                     </td>
@@ -431,10 +416,8 @@
                                                     <td>45.000.000,00</td>
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{ url('edit_supplier') }}"
-                                                                class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i
-                                                                    class="icon-trash"></i></a>
+                                                            <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
+                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                         </div>
                                                     </td>
@@ -444,22 +427,18 @@
                                         </table>
                                         <!-- Card start -->
                                         <div class="card">
-                                            <div class="card-body" style="margin-left: -2.1%">
+                                            <div class="card-body col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                                                 <nav aria-label="Page navigation example">
-                                                    <ul class="pagination">
+                                                    <ul class="pagination" style="float: right;">
                                                         <li class="page-item">
-                                                            <a class="page-link" href="#"
-                                                                aria-label="Previous">
+                                                            <a class="page-link" href="#" aria-label="Previous">
                                                                 <span aria-hidden="true">&laquo;</span>
                                                             </a>
                                                         </li>
-                                                        <li class="page-item"><a class="page-link"
-                                                                href="#">1</a></li>
-                                                        <li class="page-item"><a class="page-link"
-                                                                href="#">2</a></li>
-                                                        <li class="page-item"><a class="page-link"
-                                                                href="#">3</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
                                                         <li class="page-item">
                                                             <a class="page-link" href="#" aria-label="Next">
                                                                 <span aria-hidden="true">&raquo;</span>
@@ -473,24 +452,20 @@
                                         <!-- Card end -->
                                     </div>
                                     <!-- Modal start -->
-                                    <div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1"
-                                        aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
+                                    <div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">
                                                         Impor Faktur</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
                                                     <div id="dropzone">
-                                                        <form action="https://www.kodingwife.com/upload"
-                                                            class="dropzone needsclick dz-clickable" id="demo-upload">
+                                                        <form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
 
                                                             <div class="dz-message needsclick">
-                                                                <button type="button" class="dz-button"
-                                                                    style="border:none; margin-right:20%; margin-left:20%; margin-top: 12%">Pilih
+                                                                <button type="button" class="dz-button" style="border:none; margin-right:20%; margin-left:20%; margin-top: 12%">Pilih
                                                                     berkas di sini untuk mengunggah.</button><br>
                                                             </div>
 
@@ -498,10 +473,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer" style="margin-top:2%">
-                                                    <a href="" onclick="window.location.reload()"
-                                                        style="margin-right: 2%" data-bs-dismiss="modal">Batal</a>
-                                                    <button type="button" class="btn btn-primary"
-                                                        style="border-radius: 20px">Upload</button>
+                                                    <a href="" onclick="window.location.reload()" style="margin-right: 2%" data-bs-dismiss="modal">Batal</a>
+                                                    <button type="button" class="btn btn-primary" style="border-radius: 20px">Upload</button>
                                                 </div>
                                             </div>
                                         </div>
