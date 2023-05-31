@@ -97,6 +97,61 @@
             }
         }
         }
+
+		.hover-trigge1r {
+            cursor: pointer;
+            position: relative;
+        }
+
+        .hover-trigge1r:hover::before {
+            content: attr(data-tooltip_dpt);
+            position: absolute;
+            top: -42px;
+            left: 0;
+
+            font-size: 12px;
+            background-color: #5957b1;
+            color: #fff;
+            padding: 3px;
+            border-radius: 5px;
+        }
+
+        .hover-trigge2r {
+            cursor: pointer;
+            position: relative;
+        }
+
+        .hover-trigge2r:hover::before {
+            content: attr(data-tooltip_buka);
+            position: absolute;
+            top: -42px;
+            left: 0;
+            font-size: 12px;
+            background-color: #5957b1;
+            color: #fff;
+            padding: 3px;
+            border-radius: 5px;
+        }
+
+ 
+
+        .hover-trigge3r:hover::before {
+            content: attr(data-tooltip_byr);
+            position: absolute;
+            top: -42px;
+            left: 0;
+            font-size: 12px;
+            background-color: #5957b1;
+            color: #fff;
+            padding: 3px;
+            border-radius: 5px;
+        }
+
+        .hover-trigge3r {
+            cursor: pointer;
+            position: relative;
+        }
+
         </style>
 
 	</head>
@@ -197,48 +252,61 @@
                                                     <!-- Row start -->
                                     <div class="row gutters" style="margin-left: 10%; margin-bottom: -5%">
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                            <div class="stats-tile">
-                                                <div class="sale-icon">
-                                                    <p><b><i>Rp</i></b></p>
-                                                </div>
-                                                <div class="sale-details">
-                                                    <h2>25</h2>
-                                                    <p>Pendapatan</p>
-                                                </div>
-                                                <div class="sale-graph">
-                                                    <div id="sparklineLine1"></div>
-                                                </div>
-                                            </div>
+											<div class="stats-tile">
+												<div class="sale-icon">
+													<p><b><i>Rp</i></b></p>
+												</div>
+												<div class="sale-details">
+													<h2 class="hover-trigge1r">25.5M</h2>
+													<p>Jatuh Tempo</p>
+												</div>
+												<div class="sale-graph">
+													<div id="sparklineLine1"></div>
+												</div>
+											</div>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                            <div class="stats-tile">
-                                                <div class="sale-icon">
-                                                    <p><b><i>Rp</i></b></p>
-                                                </div>
-                                                <div class="sale-details">
-                                                    <h2>32</h2>
-                                                    <p>Biaya</p>
-                                                </div>
-                                                <div class="sale-graph">
-                                                    <div id="sparklineLine2"></div>
-                                                </div>
-                                            </div>
+											<div class="stats-tile">
+												<div class="sale-icon">
+													<p><b><i>Rp</i></b></p>
+												</div>
+												<div class="sale-details">
+													<h2 class="hover-trigge2r">90.5M</h2>
+													<p>Buka</p>
+												</div>
+												<div class="sale-graph">
+													<div id="sparklineLine2"></div>
+												</div>
+											</div>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                                            <div class="stats-tile">
-                                                <div class="sale-icon">
-                                                    <p><b><i>Rp</i></b></p>
-                                                </div>
-                                                <div class="sale-details">
-                                                    <h2>19</h2>
-                                                    <p>Keuntungan</p>
-                                                </div>
-                                                <div class="sale-graph">
-                                                    <div id="sparklineLine3"></div>
-                                                </div>
-                                            </div>
+											<div class="stats-tile">
+												<div class="sale-icon">
+													<p><b><i>Rp</i></b></p>
+												</div>
+												<div class="sale-details">
+													<h2 class="hover-trigge3r">90.5M</h2>
+													<p>Dibayar</p>
+												</div>
+												<div class="sale-graph">
+													<div id="sparklineLine3"></div>
+												</div>
+											</div>
                                         </div>
                                     </div>
+									<script>
+										 const hoverTrigger = document.querySelector('.hover-trigge1r');
+                            const tooltipContent1 = '25.500.000.000.000';
+                            hoverTrigger.setAttribute('data-tooltip_dpt', tooltipContent1);
+
+                            const hoverTrigger2 = document.querySelector('.hover-trigge2r');
+                            const tooltipContent2 = '25.500';
+                            hoverTrigger2.setAttribute('data-tooltip_buka', tooltipContent2);
+
+                            const hoverTrigger3 = document.querySelector('.hover-trigge3r');
+                            const tooltipContent3 = '25.500.000';
+                            hoverTrigger3.setAttribute('data-tooltip_byr', tooltipContent3);
+									</script>
                                     <!-- Row end -->
                                         <div class="content">
                                             <div class="searchcontainer">
