@@ -84,10 +84,10 @@
                             <!-- Card start -->
                             <div class="">
                                 <div class="card-title">
-                                <div class="d-flex flex-wrap">
-                                        <h1 class="card-title col-xl-11 col-lg-11 col-md-10 col-sm-8 col-8" style="font-size: 20px;">Transaksi  <i class="icon-star2 " style="padding-left: 10px; font-size: 19px;"></i>     </h1>
+                                <div class="d-flex flex-wrap ">
+                                        <h1 class="card-title col-xl-11 col-lg-11 col-md-10 col-sm-8 col-8 mb-4" style="font-size: 20px;">Transaksi  <i class="icon-star2 " style="padding-left: 10px; font-size: 19px;"></i>     </h1>
 
-                                        <button type="button" class="btn btn-secondary col-xl-1 col-lg-1 col-md-2 col-sm-4 col-4">Tambah</button>
+                                        <button type="button" class="btn btn-secondary col-xl-1 col-lg-1 col-md-2 col-sm-4 col-4 mb-4">Tambah</button>
                                     </div>
                             </div>
 

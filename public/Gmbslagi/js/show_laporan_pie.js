@@ -133,3 +133,8 @@ chart3.render();
   var chart = new ApexCharts(document.querySelector("#chart1"), options);
 
   chart.render();
+
+
+  new TomSelect('#ex-caret-position',{
+	plugins: ['caret_position','input_autogrow'],
+});
