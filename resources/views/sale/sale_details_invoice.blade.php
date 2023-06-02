@@ -41,6 +41,43 @@
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/search-filter.css') }}">
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.css') }}">
     <link rel="stylesheet" href="{{ asset("Gmbslagi/vendor/summernote/summernote-bs4.css")}}" />
+    <script>.tooltip {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 140px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -75px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+      
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }</script>
 
 </head>
 
@@ -150,9 +187,34 @@
                                                     <button type="button"
                                                         style="border-radius:10px; width:30%; height:30px; border:none">Tandai
                                                         Dikirim</button>
-                                                    <button type="button"
-                                                        style="border-radius:10px; width:36%; height:30px; border:none; margin-top:1%">Bagikan
-                                                        Tautan</button>
+                                                        <button type="button" style="border-radius:10px; width:36%; height:30px; border:none; margin-top:1%" data-bs-toggle="modal" data-bs-target="#exampleModalLarge">
+                                                            Bagikan Tautan
+                                                        </button>
+                                                        <!-- Modal start -->
+                                                        <div class="modal fade" id="exampleModalLarge" tabindex="-1" aria-labelledby="exampleModalLargeTitle" aria-hidden="true">
+                                                            <div class="modal-dialog modal-lg">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLargeTitle">Membagikan Tautan</h5>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <p class="text-center">Pelanggan Anda dapat melihat faktur di tautan ini :</p>
+                                                                        <p align="center">
+                                                                        <input type="text" value="https://app.akaunting.com/251226/signed/invoices/2690652?signature=994924046d84d0dc857d9fda311fd6c28e2579f9e56dc8d307781d15fb42f0c8" id="myInput" size="43">
+                                                                        </p>
+                                                                        <p class="text-center">Salin tautan dan bagikan dengan pelanggan Anda.</p>
+                                                                        <p class="text-center">Pratinjau di jendela baru</p>
+
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <div type="button" class="btn btn-danger" style="background-color:rgb(255, 0, 0); border:none; border-radius:10px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</div>
+                                                                    <button type="button" onclick="myFunction()" style="background-color: #55be0e; border:none; border-radius:10px; width:30%; height:25px; color:white">Salin</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Modal end -->
                                                 </div>
                                                   <!-- Modal start -->
                                             <div class="modal fade" id="modals" tabindex="-1" aria-labelledby="modalsTitle" aria-hidden="true">
@@ -403,6 +465,20 @@
         });
 
     </script>
+    <script>function myFunction() {
+        // Get the text field
+        var copyText = document.getElementById("myInput");
+      
+        // Select the text field
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+      
+         // Copy the text inside the text field
+        navigator.clipboard.writeText(copyText.value);
+      
+        // Alert the copied text
+        alert("Copied the text: " + copyText.value);
+      }</script>
 </body>
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/accordions.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:35 GMT -->

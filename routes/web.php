@@ -19,6 +19,7 @@ use App\Http\Controllers\Show_report2Controller;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\CopyTextController;
 use App\Http\Controllers\CurrencyController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\InvoiceController;
@@ -69,10 +70,11 @@ Route::get('edit_pemasok', function () {
 });
 Route::get('/add-item',[ItemController::class,'additem'])->Name('item-add');
 
-//perusahaan
+//supplier
 Route::get('supplier', [SupplierController::class, 'supplier'])->name('supplier');
 Route::get('add_supplier', [SupplierController::class, 'add'])->name('add_supplier');
 Route::get('edit_supplier', [SupplierController::class, 'edit'])->name('edit_supplier');
+Route::get('details_supplier', [SupplierController::class, 'details'])->name('details_supplier');
 
 Route::get('icons', function () {
     return view('icons');
@@ -188,3 +190,6 @@ Route::get('/add-tax',[TaxController::class,'tax_add'])->name('tax-add');
 //currency
 Route::get('/currency',[CurrencyController::class,'currency_index'])->name('currency');
 Route::get('/add-currency',[CurrencyController::class,'currency_add'])->name('currency-add');
+
+//Copy Text
+Route::get('copytext', [CopyTextController::class, 'CopyText'])->name('copytext');

@@ -791,7 +791,6 @@
 											</div>
 										</div>
 										<!-- Row end -->
-
 									</div>
 								</div>
 								<!-- Card end -->

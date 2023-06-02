@@ -355,7 +355,7 @@
                                                             <input type="text" name="Harga"  style="border-radius:10px" placeholder="Masukan harga item" id="nama"class="form-control">
                                                           </div>
                                                           <div class="field-wrapper m-0">
-                                                              <label for="nama">kategori</label>
+                                                            <label for="nama">Kategori</label>
                                                             <input type="text" name="kategori" style="border-radius:10px" placeholder="Masukan nama item" id="nama"class="form-control">
                                                           </div>
                                                           <div class="field-wrapper ">

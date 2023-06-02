@@ -50,8 +50,8 @@
     border-radius: 20px;
     -webkit-box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
     box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
-    min-width: 620px;
-    max-width: 620px;
+    min-width: 100%;
+    max-width: 100%;
 }
   /* Tambahkan gaya CSS yang diperlukan di sini */
         /* ... */

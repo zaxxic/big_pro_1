@@ -46,8 +46,9 @@
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/dataTables.bs4-custom.css') }}" />
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/buttons.bs.css') }}" />
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/dropzone/dropzone.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/daterange/daterange.css')}}">
     <style>
-        				 .hidden-menu {
+    .hidden-menu {
     display: none;
     background-color: #f2f2f2;
     font-size: 20px;
@@ -377,6 +378,9 @@
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
+                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
+                                                                <i class="icon-attach_money"></i>
+                                                            </button>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                         </div>
@@ -393,6 +397,9 @@
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
+                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
+                                                                <i class="icon-attach_money"></i>
+                                                            </button>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                         </div>
@@ -410,6 +417,9 @@
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
+                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
+                                                                <i class="icon-attach_money"></i>
+                                                            </button>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                         </div>
@@ -425,6 +435,9 @@
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
+                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
+                                                                <i class="icon-attach_money"></i>
+                                                            </button>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                         </div>
@@ -440,6 +453,9 @@
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
+                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
+                                                                <i class="icon-attach_money"></i>
+                                                            </button>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                         </div>
@@ -473,6 +489,44 @@
                                             </div>
                                         </div>
                                         <!-- Card end -->
+                                    </div>
+                                    <div class="modal fade" id="payment" tabindex="-1" aria-labelledby="paymentTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content" style="margin-top: -10%">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="paymentTitle">Pembayaran</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                        <div class="field-wrapper">
+                                                            <label for="subjudul" class="field-label">Kategori<span class="text-danger">*</span></label>
+                                                            <input type="text" class="form-control datepicker" style="border-radius: 10px">
+                                                        </div>
+                                                        <div class="field-wrapper">
+                                                            <label for="subjudul" class="field-label">Jumlah<span class="text-danger">*</span></label>
+                                                            <input type="number" class="form-control datepicker" style="border-radius: 10px">
+                                                        </div>
+                                                        <div class="field-wrapper">
+                                                            <label for="subjudul" class="field-label">Metode Pembayaran<span class="text-danger">*</span></label>
+                                                            <select class="select-single js-states" title="Select Product Category" data-live-search="true" style="border-radius: 10px">
+                                                                <option>Cash</option>
+                                                                <option>Transfer</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="field-wrapper">
+                                                            <label for="subjudul" class="field-label">Akun<span class="text-danger">*</span></label>
+                                                            <select class="select-single js-states" title="Select Product Category" data-live-search="true" style="border-radius: 10px">
+                                                                <option>Adi</option>
+                                                                <option>Rudi</option>
+                                                            </select>
+                                                        </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="text-white" style="background-color:rgb(255, 0, 0); border:none; border-radius:10px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</button>
+                                                    <button type="button" class="text-white" style="background-color: #55be0e; border:none; border-radius:10px; width:30%; height:25px; color:white">Simpan</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <!-- Modal start -->
                                     <div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
@@ -622,6 +676,7 @@
 		updateCountDisplay(); // Update the count display
 		});
     </script>
+    <script src="{{ asset('Gmbslagi/vendor/daterange/custom-daterange.js')}}"></script>
 
 </body>
 

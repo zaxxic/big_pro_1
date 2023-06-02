@@ -1449,6 +1449,15 @@ p {
     }
 }
 
+.main-container1 {
+    background: #ffffff;
+    border-radius: 10px;
+    -webkit-transition: padding-left .3s ease;
+    transition: padding-left .3s ease;
+    padding: 0 0 0 0px;
+    height: 100vh;
+}
+
 .main-container {
     background: #ffffff;
     border-radius: 10px;
