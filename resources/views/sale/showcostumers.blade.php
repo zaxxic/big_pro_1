@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/dataTables.bs4-custom.css') }}" />
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/buttons.bs.css') }}" />
     <style>
+        
         .text {
             text-align: center;
             color: #5e6973;

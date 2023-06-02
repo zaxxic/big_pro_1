@@ -119,6 +119,24 @@
             }
         }
         }
+		.hidden-menu {
+    display: none;
+    background-color: #f2f2f2;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .hidden-menu a {
+    display: inline-block;
+    padding: 6px;
+    transition: transform 0.3s;
+    position: relative;
+  }
+
+  .hidden-menu a:hover {
+    transform: scale(1.2);
+  }
+
         </style>
 
 	</head>
@@ -250,6 +268,12 @@
                                             </div>
                                         </div>
                                         <div class="table-responsive">
+											<div class="hidden-menu" style="display: none; background-color: #f2f2f2; font-size: 12pt; padding: 10px;">
+												<p style="display: inline" id="count-display">&emsp;</p>
+												&emsp;<a  href="#" title="Aktifkan"> <i class="icon-check-circle" style="color:#424242 "></i> </a>
+												&emsp;<a  href="#" title="Nonaktifkan"> <i class="icon-do_not_disturb_alt"></i> </a>
+												&emsp;<a  href="#" title="Hapus"> <i class="icon-trash-2"></i> </a>
+											</div>
                                             <table class="table table-hover caption-top">
                                                 <thead>
                                                 <tr>
@@ -474,38 +498,53 @@
 		<!-- Main Js Required -->
 		<script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
 		<script>
-			// Ambil elemen-elemen yang diperlukan
-		var selectAllCheckbox = document.getElementById('select-all-checkbox');
-		var otherCheckboxes = document.getElementsByClassName('other-checkbox');
+	const checkboxes = document.querySelectorAll('.other-checkbox');
+		const selectAllCheckbox = document.querySelector('#select-all-checkbox');
+		const hiddenMenu = document.querySelector('.hidden-menu');
+		const countDisplay = document.querySelector('#count-display');
 
-		// Tambahkan event listener pada checkbox "Select All"
-		selectAllCheckbox.addEventListener('change', function() {
-		// Periksa apakah checkbox "Select All" dicentang atau tidak
-		var isChecked = selectAllCheckbox.checked;
-		
-		// Ubah status checked pada checkbox lainnya sesuai dengan checkbox "Select All"
-		for (var i = 0; i < otherCheckboxes.length; i++) {
-			otherCheckboxes[i].checked = isChecked;
+		// Function to count the number of checked checkboxes
+		function countCheckedCheckboxes() {
+		const checkedCheckboxes = document.querySelectorAll('.other-checkbox:checked');
+		return checkedCheckboxes.length;
 		}
-		});
 
-		// Tambahkan event listener pada checkbox lainnya
-		for (var i = 0; i < otherCheckboxes.length; i++) {
-		otherCheckboxes[i].addEventListener('change', function() {
-			// Periksa apakah semua checkbox lainnya telah dicentang
-			var allChecked = true;
-			for (var j = 0; j < otherCheckboxes.length; j++) {
-			if (!otherCheckboxes[j].checked) {
-				allChecked = false;
-				break;
+		// Function to update the count display
+		function updateCountDisplay() {
+		const totalCount = countCheckedCheckboxes();
+		countDisplay.textContent =  totalCount + ' Item Yang dipilih : ' ;
+		}
+
+		// Add event listener to each checkbox
+		checkboxes.forEach(function(checkbox) {
+		checkbox.addEventListener('change', function() {
+			if (this.checked) {
+			hiddenMenu.style.display = 'block'; // Show the hidden menu
+			} else {
+			const checkedCount = countCheckedCheckboxes();
+			if (checkedCount === 0) {
+				hiddenMenu.style.display = 'none'; // Hide the hidden menu if no checkboxes are checked
 			}
 			}
 			
-			// Perbarui status checked pada checkbox "Select All" sesuai dengan kondisi di atas
-			selectAllCheckbox.checked = allChecked;
+			updateCountDisplay(); // Update the count display
 		});
-		}
+		});
 
+		// Add event listener to the "Select All" checkbox
+		selectAllCheckbox.addEventListener('change', function() {
+		checkboxes.forEach(function(checkbox) {
+			checkbox.checked = selectAllCheckbox.checked; // Set the state of each checkbox based on the "Select All" checkbox
+		});
+		
+		if (this.checked) {
+			hiddenMenu.style.display = 'block'; // Show the hidden menu
+		} else {
+			hiddenMenu.style.display = 'none'; // Hide the hidden menu
+		}
+		
+		updateCountDisplay(); // Update the count display
+		});
 		</script>
 
 	</body>
