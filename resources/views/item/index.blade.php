@@ -260,10 +260,10 @@
 													<td>
 													  <div class="menu-icons" style="font-size: 15px;">
 														<a href="{{url('tambah-item')}}" class="menu-icon icon-edit-2"></a>
-														<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+														
 														
 														<a href="{{route('item-edit')}}" class="menu-icon icon-edit-2"></a>
-														<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+														
 													  </div>
 													</td>	
 												  </tr>
@@ -279,10 +279,10 @@
 													<td>
 													  <div class="menu-icons" style="font-size: 15px;">
 														<a href="{{url('tambah-item')}}" class="menu-icon icon-edit-2"></a>
-														<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+														
 														
 														<a href="{{ route('item-edit') }}" class="menu-icon icon-edit-2"></a>
-														<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+														
 													  </div>
 													</td>
 												  </tr>

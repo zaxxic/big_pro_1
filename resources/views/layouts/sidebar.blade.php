@@ -70,10 +70,6 @@
 
 							<li class=" mt-3">
 								<a href="{{ route('item-index') }}" class="sidebar-menu {{ request()->routeIs('item-index') ||request()->routeIs('item-tambah')? 'current-page' : '' }}" aria-selected="false">
-								<a href="{{ route('item-index') }}" class="sidebar-menu {{ request()->routeIs('item-index') ||
-																						   request()->routeIs('item-edit') ||
-																							request()->routeIs('item-add') 
-																							 ? 'current-page' : '' }}" aria-selected="false">
 									<i class="icon-download1" style="font-size: 19px;"></i><span>&emsp;Item</span>
 								</a>
 							</li>
@@ -233,8 +229,7 @@
 							</li>
 							<li class="mt-3" active>
 								<a href="{{ route('index-category')}}" class="sidebar-menu {{ request()->routeIs('index-category') ||
-																							request()->routeIs('add-category') ||
-																							request()->routeIs('edit-category')
+																							request()->routeIs('add-category')
 																							? 'current-page' : '' }}"><i class="icon-server " style=" font-size: 19px;"></i><span>&emsp;Kategori</span></a>
 							</li>
 							<!-- <li class="dropdown">
@@ -246,14 +241,12 @@
 							</li>	 -->
 							<li class="mt-3">
 								<a href="{{ route('currency') }}" class="sidebar-menu {{ request()->routeIs('currency') ||
-																							request()->routeIs('currency-add') ||
-																							request()->routeIs('currency-edit') 
+																							request()->routeIs('currency-add')
 																							? 'current-page' : '' }}"><i class="icon-local_atm" style=" font-size: 19px;"></i><span>&emsp;Mata Uang</span></a>
 							</li>
 							<li class="mt-3">
 								<a href="{{ route('tax') }}" class="{{ request()->routeIs('tax') ||
-																	request()->routeIs('tax-add') ||
-																	request()->routeIs('tax-edit')
+																	request()->routeIs('tax-add')
 																	? 'current-page' : '' }}"><i class="icon-line-graph" style=" font-size: 19px;"></i><span>&emsp;Pajak</span></a>
 							</li>
 
