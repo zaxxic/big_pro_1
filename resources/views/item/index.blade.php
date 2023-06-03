@@ -262,6 +262,8 @@
 														<a href="{{url('tambah-item')}}" class="menu-icon icon-edit-2"></a>
 														<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 														
+														<a href="{{route('item-edit')}}" class="menu-icon icon-edit-2"></a>
+														<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 													  </div>
 													</td>	
 												  </tr>
@@ -279,6 +281,8 @@
 														<a href="{{url('tambah-item')}}" class="menu-icon icon-edit-2"></a>
 														<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 														
+														<a href="{{ route('item-edit') }}" class="menu-icon icon-edit-2"></a>
+														<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
 													  </div>
 													</td>
 												  </tr>

@@ -14,4 +14,8 @@ class CurrencyController extends Controller
     {
         return view('currency.add');
     }
+    public function currency_edit()
+    {
+        return view('currency.edit');
+    }
 }
