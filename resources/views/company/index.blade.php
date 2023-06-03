@@ -101,7 +101,7 @@
 											</div>
 										
 											<div class="d-flex row ">
-											<div class="col-xl-10 col-lg-12 col-md-12 col-sm-12" >
+											<div class="col-xl-9 col-lg-12 col-md-12 col-sm-12" >
 											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 												
 												<!-- Field wrapper start -->
@@ -134,7 +134,7 @@
 												</div>
 											</div>
 											</div>
-											<div class="col-xl-2 col-lg-12 col-md-12 col-sm-12">
+											<div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
 												<!-- Field wrapper start -->
 												<p style="">Logo</p>
 												<!-- Example of a form that Dropzone can take over -->
@@ -266,7 +266,7 @@
 				
 		<!-- Slimscroll JS -->
 		<script src="{{ asset ("Gmbslagi/vendor/slimscroll/slimscroll.min.js")}}"></script>
-		<script src="{{ asset ("vvendor/slimscroll/custom-scrollbar.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/vendor/slimscroll/custom-scrollbar.js")}}"></script>
 
 		<!-- Search Filter JS -->
 		<script src="{{ asset ("Gmbslagi/vendor/search-filter/search-filter.js")}}"></script>
