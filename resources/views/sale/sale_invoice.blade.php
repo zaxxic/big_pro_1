@@ -327,7 +327,7 @@
                                     <div class="d-flex">
                                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1" style="margin-top: 8%;">
                                             <div class="hr-switch">
-                                                <a href="">
+                                                <a href="{{ url('invoice') }}">
                                                     <div class="empty-box1 active">
                                                         <h6 class="">Faktur</h6>
                                                     </div	>
@@ -336,7 +336,7 @@
                                         </div>
                                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2" style="margin-top: 8%;">
                                             <div class="hr-switch">
-                                                <a href="http://127.0.0.1:8000/recurring_transactions">
+                                                <a href="{{ url('recurring_invoice') }}">
                                                     <div class="empty-box2">
                                                         <h6 class="">Rutin</h6>
                                                     </div>

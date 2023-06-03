@@ -69,9 +69,7 @@
 
 
 							<li class=" mt-3">
-								<a href="{{ route('item-index') }}" class="sidebar-menu {{ request()->routeIs('item-index') ||
-																							request()->routeIs('add-item')
-																							 ? 'current-page' : '' }}" aria-selected="false">
+								<a href="{{ route('item-index') }}" class="sidebar-menu {{ request()->routeIs('item-index') ||request()->routeIs('item-tambah')? 'current-page' : '' }}" aria-selected="false">
 									<i class="icon-download1" style="font-size: 19px;"></i><span>&emsp;Item</span>
 								</a>
 							</li>
