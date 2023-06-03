@@ -181,7 +181,7 @@ label{
                             <div class="card">
                                 <div class="card-header">
                                   
-                                    <div class="card-title"><h3>Tambah Item<button type="button" style="border: none; background:none;">☆</button></h3></div>
+                                    <div class="card-title"><h3>Edit Item<button type="button" style="border: none; background:none;">☆</button></h3></div>
                                         <div class="graph-day-selection" role="group" style="margin-left: 60%">
 											
 										</div>
