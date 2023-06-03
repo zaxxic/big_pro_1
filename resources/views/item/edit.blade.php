@@ -186,7 +186,7 @@ label{
 											
 										</div>
                                       
-                                <input type="checkbox" id="toggle" class="toggle-checkbox ">
+                                <input type="checkbox" id="toggle" class="toggle-checkbox " ch>
                                 <label for="toggle" class="toggle-label custom-bg "></label>
                             </div>
 
@@ -201,7 +201,7 @@ label{
                                             <div class="half-width-container">
                                                 <input type="radio" name="option" id="option1"
                                                     value="Option 1" checked>
-                                                <label class="label" for="option1">produk</label>
+                                                <label class="label" for="option1"> produk </label>
 
                                                 <input type="radio" name="option" id="option2"
                                                     value="Option 2">
@@ -236,7 +236,7 @@ label{
                                                         class="text-danger">*</span></div>
                                                     <select class="form-control" id="dropdownSelect">
                                                       <option disabled selected>Pilih salah satu</option>
-                                                      <option>Makanan</option>
+                                                      <option selected>Makanan</option>
                                                       <option>Umum</option>
                                                     </select>
                                                   </div>
@@ -253,7 +253,7 @@ label{
 
                                                 <!-- Field wrapper start -->
                                                 <div class="field-wrapper">
-                                                    <textarea class="form-control" rows="2"></textarea>
+                                                    <textarea class="form-control" rows="2" value="Makanan Sehat"></textarea>
                                                     <div class="field-placeholder">Deskripsi <span
                                                             class="text-danger">*</span></div>
                                                     <div class="form-text">
@@ -376,7 +376,7 @@ label{
 
     <!-- Slimscroll JS -->
     <script src="{{ asset('Gmbslagi/vendor/slimscroll/slimscroll.min.js') }}"></script>
-    <script src="{{ asset('vvendor/slimscroll/custom-scrollbar.js') }}"></script>
+    <script src="{{ asset('Gmbslagi/vendor/slimscroll/custom-scrollbar.js') }}"></script>
 
     <!-- Search Filter JS -->
     <script src="{{ asset('Gmbslagi/vendor/search-filter/search-filter.js') }}"></script>

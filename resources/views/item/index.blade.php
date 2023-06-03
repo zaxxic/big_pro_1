@@ -259,9 +259,8 @@
 													<td>Rp. 21000</td>
 													<td>
 													  <div class="menu-icons" style="font-size: 15px;">
-														<a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
+														<a href="{{route('item-edit')}}" class="menu-icon icon-edit-2"></a>
 														<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-														<a href="#" class="menu-icon icon-eye1"></a>
 													  </div>
 													</td>	
 												  </tr>
@@ -276,9 +275,8 @@
 													<td>Rp. 21000</td>
 													<td>
 													  <div class="menu-icons" style="font-size: 15px;">
-														<a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
+														<a href="{{ route('item-edit') }}" class="menu-icon icon-edit-2"></a>
 														<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-														<a href="#" class="menu-icon icon-eye1"></a>
 													  </div>
 													</td>
 												  </tr>

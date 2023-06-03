@@ -60,7 +60,8 @@ Route::get('reset_password', function () {
     return view('reset_password');
 });
 Route::get('/itemindex',[ItemController::class,'itemindex'])->Name('item-index');
-Route::get('/tambah-item',[ItemController::class,'additem'])->Name('item-tambah');
+Route::get('/add-item',[ItemController::class,'additem'])->Name('item-add');
+Route::get('/edit-item',[ItemController::class,'edititem'])->Name('item-edit');
 
 Route::get('tambah_pemasok', function () {
     return view('pembelian.pembelian_tambah_pemasok');
@@ -68,7 +69,6 @@ Route::get('tambah_pemasok', function () {
 Route::get('edit_pemasok', function () {
     return view('pembelian_edit_pemasok');
 });
-Route::get('/add-item',[ItemController::class,'additem'])->Name('item-add');
 
 //supplier
 Route::get('supplier', [SupplierController::class, 'supplier'])->name('supplier');
