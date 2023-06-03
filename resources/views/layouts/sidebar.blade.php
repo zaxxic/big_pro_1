@@ -232,7 +232,8 @@
 							</li>
 							<li class="mt-3" active>
 								<a href="{{ route('index-category')}}" class="sidebar-menu {{ request()->routeIs('index-category') ||
-																							request()->routeIs('add-category')
+																							request()->routeIs('add-category') ||
+																							request()->routeIs('edit-category')
 																							? 'current-page' : '' }}"><i class="icon-server " style=" font-size: 19px;"></i><span>&emsp;Kategori</span></a>
 							</li>
 							<!-- <li class="dropdown">
@@ -244,12 +245,14 @@
 							</li>	 -->
 							<li class="mt-3">
 								<a href="{{ route('currency') }}" class="sidebar-menu {{ request()->routeIs('currency') ||
-																							request()->routeIs('currency-add')
+																							request()->routeIs('currency-add') ||
+																							request()->routeIs('currency-edit') 
 																							? 'current-page' : '' }}"><i class="icon-local_atm" style=" font-size: 19px;"></i><span>&emsp;Mata Uang</span></a>
 							</li>
 							<li class="mt-3">
 								<a href="{{ route('tax') }}" class="{{ request()->routeIs('tax') ||
-																	request()->routeIs('tax-add')
+																	request()->routeIs('tax-add') ||
+																	request()->routeIs('tax-edit')
 																	? 'current-page' : '' }}"><i class="icon-line-graph" style=" font-size: 19px;"></i><span>&emsp;Pajak</span></a>
 							</li>
 

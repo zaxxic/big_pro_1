@@ -114,17 +114,9 @@ label{
   right: calc(100% - 25px);
 }
 
-        .color-input-container {
-            display: flex;
-            align-items: center;
-        }
 
-        .color-input-container input[type="color"] {
-            margin-right: 10px;
-        }
+
     </style>
-
-
 
 </head>
 
@@ -347,7 +339,7 @@ label{
                             <div class="card">
                                 <div class="card-header">
                                   
-                                    <div class="card-title"><h3>Tambah Kategori<button type="button" style="border: none; background:none;">☆</button></h3></div>
+                                    <div class="card-title"><h3>edit Pajak<button type="button" style="border: none; background:none;">☆</button></h3></div>
                                         <div class="graph-day-selection" role="group" style="margin-left: 60%">
 											
 										</div>
@@ -381,12 +373,16 @@ label{
 
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
-                                                <div class="color-input-container">
-                                                    <input type="color" style="width: 10%;background:transparent"
-                                                        id="color-picker">
-                                                        <div class="field-placeholder">Warna <span class="text-danger">*</span></div>
-                                                    <input type="text" id="hex-input" readonly>
-                                                </div>
+                                                <div class="form-group">
+                                                    <div class="field-placeholder" >Kategori <span
+                                                        class="text-danger">*</span></div>
+                                                    <select class="form-control" id="dropdownSelect">
+                                                      <option disabled selected>Pilih salah satu</option>
+                                                      <option>Pemotongan</option>
+                                                      <option>Umum</option>
+                                                    </select>
+                                                  </div>
+                                                  
                                             </div>
                                             <!-- Field wrapper end -->
 
@@ -395,17 +391,12 @@ label{
 
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
-                                                <div class="form-group">
-                                                    <div class="field-placeholder" >Kategori <span
+                                                <input class="form-control" type="email" placeholder=" Masukan email anda">
+                                                <div class="field-placeholder" >Tarif (%) <span
                                                         class="text-danger">*</span></div>
-                                                    <select class="form-control" id="dropdownSelect">
-                                                      <option disabled selected>Pilih salah satu</option>
-                                                      <option>Pilihan 1</option>
-                                                      <option>Pilihan 2</option>
-                                                      <option>Pilihan 3</option>
-                                                    </select>
-                                                  </div>
-                                                  
+                                                <div class="form-text">
+                                                   
+                                                </div>
                                             </div>
                                             <!-- Field wrapper end -->
 
@@ -472,14 +463,17 @@ label{
 
     <!-- Main Js Required -->
     <script src="{{ asset('Gmbslagi/js/main.js') }}"></script>
-
-       <script>
-        const colorPicker = document.getElementById('color-picker');
-        const hexInput = document.getElementById('hex-input');
-
-        colorPicker.addEventListener('input', (event) => {
-            const color = event.target.value;
-            hexInput.value = color;
-        });
-    </script>
+    <script>
+        function toggleInputsDisable(checkboxNumber) {
+          var inputField1 = document.getElementById("inputField1");
+          var inputField2 = document.getElementById("inputField2");
+      
+          if (checkboxNumber === 1) {
+            inputField1.disabled = !inputField1.disabled;
+          } else if (checkboxNumber === 2) {
+            inputField2.disabled = !inputField2.disabled;
+          }
+        }
+      </script>
+      
 </body>

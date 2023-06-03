@@ -14,4 +14,8 @@ class CategoryController extends Controller
     {
         return view('category.add');
     }
+    public function category_edit()
+    {
+        return view('category.edit');
+    }
 }

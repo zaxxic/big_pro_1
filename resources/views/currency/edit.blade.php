@@ -114,17 +114,9 @@ label{
   right: calc(100% - 25px);
 }
 
-        .color-input-container {
-            display: flex;
-            align-items: center;
-        }
 
-        .color-input-container input[type="color"] {
-            margin-right: 10px;
-        }
+
     </style>
-
-
 
 </head>
 
@@ -347,7 +339,7 @@ label{
                             <div class="card">
                                 <div class="card-header">
                                   
-                                    <div class="card-title"><h3>Tambah Kategori<button type="button" style="border: none; background:none;">☆</button></h3></div>
+                                    <div class="card-title"><h3>Tambah Pajak<button type="button" style="border: none; background:none;">☆</button></h3></div>
                                         <div class="graph-day-selection" role="group" style="margin-left: 60%">
 											
 										</div>
@@ -358,7 +350,7 @@ label{
                                 <div class="card-body">
                                     <div style="border-bottom: solid black 1px;margin-bottom:1%">
                                         <b>Umum</b>
-                                        <p>Inklusi pajak dihitung ke dalam harga barang. Pajak majemuk dihitung di atas pajak lainnya. Pajak tetap diterapkan sebagai jumlah, bukan persentase.</p>
+                                        <p>Mata uang bawaan saat ini digunakan pada Dasbor dan Laporan. Bagi mata uang yang lain, nilai tukar harus lebih rendah dari 1 untuk mata uang yang lebih lemah dan lebih dari 1 untuk mata uang yang lebih kuat.</p>
                                     </div>
                                     <!-- Row start -->
                                     <div class="row gutters">
@@ -381,22 +373,8 @@ label{
 
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
-                                                <div class="color-input-container">
-                                                    <input type="color" style="width: 10%;background:transparent"
-                                                        id="color-picker">
-                                                        <div class="field-placeholder">Warna <span class="text-danger">*</span></div>
-                                                    <input type="text" id="hex-input" readonly>
-                                                </div>
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
                                                 <div class="form-group">
-                                                    <div class="field-placeholder" >Kategori <span
+                                                    <div class="field-placeholder" >Kode <span
                                                         class="text-danger">*</span></div>
                                                     <select class="form-control" id="dropdownSelect">
                                                       <option disabled selected>Pilih salah satu</option>
@@ -410,15 +388,116 @@ label{
                                             <!-- Field wrapper end -->
 
                                         </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                                <input class="form-control" type="email" placeholder=" Masukan email anda">
+                                                <div class="field-placeholder" >Kurs <span
+                                                        class="text-danger">*</span></div>
+                                                <div class="form-text">
+                                                   
+                                                </div>
+                                            </div>
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                                <div class="form-group">
+                                                    <div class="field-placeholder" >Presisi <span
+                                                        class="text-danger">*</span></div>
+                                                    <select class="form-control" id="dropdownSelect">
+                                                      <option disabled selected>Pilih salah satu</option>
+                                                      <option>Pilihan 1</option>
+                                                      <option>Pilihan 2</option>
+                                                      <option>Pilihan 3</option>
+                                                    </select>
+                                                  </div>
+                                                  
+                                            </div>
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                                <input class="form-control" type="email" placeholder=" Masukan email anda">
+                                                <div class="field-placeholder" >Simbol <span
+                                                        class="text-danger">*</span></div>
+                                                <div class="form-text">
+                                                   
+                                                </div>
+                                            </div>
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                                <div class="form-group">
+                                                    <div class="field-placeholder" >Posisi Simbol <span
+                                                        class="text-danger">*</span></div>
+                                                    <select class="form-control" id="dropdownSelect">
+                                                      <option disabled selected>Pilih salah satu</option>
+                                                      <option>Pilihan 1</option>
+                                                      <option>Pilihan 2</option>
+                                                      <option>Pilihan 3</option>
+                                                    </select>
+                                                  </div>
+                                                  
+                                            </div>
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                                <input class="form-control" type="email" placeholder=" Masukan email anda">
+                                                <div class="field-placeholder" >Pemisah Desimal <span
+                                                        class="text-danger">*</span></div>
+                                                <div class="form-text">
+                                                   
+                                                </div>
+                                            </div>
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                            <!-- Field wrapper start -->
+                                            <div class="field-wrapper">
+                                                <input class="form-control" type="email" placeholder=" Masukan email anda">
+                                                <div class="field-placeholder" >Pemisah Ribuan <span
+                                                        class="text-danger">*</span></div>
+                                                <div class="form-text">
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                            <!-- Field wrapper end -->
+                                          
+                                           
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <div class="d-flex justify-content-end mt-4">
+                                                    <a href="#" class="mt-3" style="margin-right: 1%">Batal</a>
+                                                    <button class="btn btn-primary" type="submit" style="border-radius: 20px">Simpan</button>
+                                                </div>
+                                            </div>                                    
+                                        </div>
+                                       
+                                            <!-- Field wrapper end -->
+
+                                        </div>
+                                        
                                     </div>
                                     <!-- Row end -->
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <div class="d-flex justify-content-end mt-4">
-                                            <a href="#" class="mt-3" style="margin-right: 1%">Batal</a>
-                                            <button class="btn btn-primary" type="submit" style="border-radius: 20px">Simpan</button>
-                                        </div>
-                                    </div>
-                                    
+
                                 </div>
                             </div>
                             <!-- Card end -->
@@ -472,14 +551,17 @@ label{
 
     <!-- Main Js Required -->
     <script src="{{ asset('Gmbslagi/js/main.js') }}"></script>
-
-       <script>
-        const colorPicker = document.getElementById('color-picker');
-        const hexInput = document.getElementById('hex-input');
-
-        colorPicker.addEventListener('input', (event) => {
-            const color = event.target.value;
-            hexInput.value = color;
-        });
-    </script>
+    <script>
+        function toggleInputsDisable(checkboxNumber) {
+          var inputField1 = document.getElementById("inputField1");
+          var inputField2 = document.getElementById("inputField2");
+      
+          if (checkboxNumber === 1) {
+            inputField1.disabled = !inputField1.disabled;
+          } else if (checkboxNumber === 2) {
+            inputField2.disabled = !inputField2.disabled;
+          }
+        }
+      </script>
+      
 </body>

@@ -155,6 +155,7 @@ Route::get('/laporan',[LaporanController::class, 'laporan'])->name('laporan');
 //category
 Route::get('/category',[CategoryController::class,'category_index'])->name('index-category');
 Route::get('/add-category',[CategoryController::class,'category_add'])->name('add-category');
+Route::get('/add-edit',[CategoryController::class,'category_edit'])->name('edit-category');
 
 //bill
 Route::get('bill', [BillController::class, 'bill'])->name('bill');
@@ -187,9 +188,11 @@ Route::get('/add_users',[UsersController::class,'add_users'])->name('add_users')
 //Tax
 Route::get('/tax',[TaxController::class,'tax_index'])->name('tax');
 Route::get('/add-tax',[TaxController::class,'tax_add'])->name('tax-add');
+Route::get('/edit-tax',[TaxController::class,'tax_edit'])->name('tax-edit');
 //currency
 Route::get('/currency',[CurrencyController::class,'currency_index'])->name('currency');
 Route::get('/add-currency',[CurrencyController::class,'currency_add'])->name('currency-add');
+Route::get('/edit-currency',[CurrencyController::class,'currency_edit'])->name('currency-edit');
 
 //Copy Text
 Route::get('copytext', [CopyTextController::class, 'CopyText'])->name('copytext');
