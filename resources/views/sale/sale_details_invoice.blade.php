@@ -41,43 +41,8 @@
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/search-filter.css') }}">
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.css') }}">
     <link rel="stylesheet" href="{{ asset("Gmbslagi/vendor/summernote/summernote-bs4.css")}}" />
-    <script>.tooltip {
-        position: relative;
-        display: inline-block;
+   
       }
-      
-      .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 140px;
-        background-color: #555;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px;
-        position: absolute;
-        z-index: 1;
-        bottom: 150%;
-        left: 50%;
-        margin-left: -75px;
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
-      
-      .tooltip .tooltiptext::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: #555 transparent transparent transparent;
-      }
-      
-      .tooltip:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
-      }</script>
 
 </head>
 
@@ -138,7 +103,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="alert alert-primary" style="border-radius: 10px; color:#4e58eb; background-color:#c5d2fc" role="alert">
-                                        Faktur ini dihasilkan otomatis dari RCI-00001
+                                        Faktur ini dihasilkan otomatis dari a RCI-00001
                                     </div>
                                     <!-- Faq start -->
                                     <div class="accordion" id="faqAccordion">

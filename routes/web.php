@@ -162,6 +162,8 @@ Route::get('bill', [BillController::class, 'bill'])->name('bill');
 Route::get('recurring_bill', [BillController::class, 'recurring_bill'])->name('recurring_bill');
 Route::get('add_recurring_bill', [BillController::class, 'add_recurring_bill' ])->name('add_recurring_bill');
 Route::get('add_bill', [BillController::class, 'add_bill'])->name('add_bill');
+Route::get('detail_rcr_bill', [BillController::class, 'detail_rcr_bill'])->name('detail_rcr_bill');
+
 
 //laporan
 Route::get('/report',[ReportController::class, 'report'])->name('report');

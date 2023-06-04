@@ -111,11 +111,10 @@
                     <div class="card">
                                 <div class="card-header col-6">
                                     <div class="card-title">
-                                        <h3>Details<button type="button"
-                                                style="border: none; background:none;">☆</button></h3>
+                                        <h3>Faktur Berulang: JBRL-00002</h3>
                                     </div>
-                                    <div class="alert alert-secondary" style="border-radius: 10px; background-color:#f36a6a" role="alert">
-										Terkirim
+                                    <div class="alert alert-secondary" style="border-radius: 10px; background-color:#f36a6a;width:90px;text-align:center;" role="alert">
+										Aktif
 										</div>
                                 </div>
                                 <div class="d-flex row">
@@ -123,7 +122,9 @@
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                     <div class="card-body">
                                         <div class="alert alert-primary" style="border-radius: 10px; background-color:#9a99e2" role="alert">
-                                            Faktur ini dihasilkan otomatis dari BRLJ-00001
+                                            Ini adalah faktur berulang dan faktur selanjutnya akan dibuat otomatis pada tanggal 03 Jun 2023
+
+
                                         </div>
                                         <!-- Faq start -->
                                         <div class="accordion" id="faqAccordion">
@@ -179,14 +180,16 @@
                                                         <div class="d-flex row">
                                                             <p style="font-size:14pt">Faktur</p>
                                                             <br>
-                                                            <p style="font-size:10pt">1 Faktur telah berhasil di bayar  </p>
+                                                            <p style="font-size:10pt">3 Faktur telah berhasil di bayar  </p>
                                                         </div>
                                                     </button>
                                                 </h2>
                                                 <div id="collapseThree" class="accordion-collapse collapse"
                                                     aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                                                     <div class="accordion-body">
-                                                        INV-11 secara otomatis dibuat pada 29 Mei 2023
+                                                        INV-11 secara otomatis dibuat pada 29 Mei 2023 <br>
+                                                        INV-12 secara otomatis dibuat pada 30 Mei 2023  <br>
+                                                        INV-13 secara otomatis dibuat pada 31 Mei 2023  <br>
                                                     </div>
                                                 </div>
                                             </div>
@@ -222,7 +225,7 @@
                                                 <div class="col-6 ms-3">
                                                     <p>Tagihan Kepada</p>
                                                     <p>Koirul</p>
-                                                    <p>1672671</p>
+                                                    <p>089812371829</p>
                                                     <p>cireng@gmail.com</p>
                                                 </div>
                                                 <div class="col-6">

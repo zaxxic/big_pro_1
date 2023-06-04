@@ -382,7 +382,7 @@
                                                                 <i class="icon-attach_money"></i>
                                                             </button>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="#" class="menu-icon icon-eye1"></a>
+                                                            <a href="{{ url('details') }}" class="menu-icon icon-eye1"></a>
                                                         </div>
                                                     </td>
                                                 </tr>
