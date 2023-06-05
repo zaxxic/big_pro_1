@@ -887,7 +887,7 @@
                                 <div class="d-flex">
                                     <div class=" col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12 d-flex">
 
-                                        <h1 class="card-title" style="font-size: 20px;">Transaksi<button type="button" style="border: none; background:none;">☆</button></h1>
+                                        <h3 class="card-title">Transaksi<button type="button" style="border: none; background:none;">☆</button></h3>
 
                                     </div>
 

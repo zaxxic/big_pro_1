@@ -279,6 +279,7 @@
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
         <!-- Sidebar wrapper end -->
+        @include('layouts.header')
 
         <!-- *************
 				************ Main container start *************
@@ -301,16 +302,16 @@
                                 <!-- Card start -->
 
                                 <!-- <div class="card-header"> -->
-                                <div class="row">
+                                <div class="d-flex">
                                     <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
                                         <div class="card-title">
-                                            <h3>Akun<button type="button" style="border: none; background:transparent;">☆</button></h3>
+                                            <h3 class="card-tittle">Akun<button type="button" style="border: none; background:transparent;">☆</button></h3>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
                                         <div class="graph-day-selection" role="group" style="margin-left: 68%">
                                             <a href="{{url('add_account')}}">
-                                                <button type="button" class="btn active" style="background: transparent">Tambah Akun</button>
+                                                <button type="button" class="btn active" style="background: transparent">Tambah</button>
                                             </a>
                                         </div>
                                     </div>

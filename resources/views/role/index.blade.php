@@ -47,16 +47,16 @@
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
     <style>
         /* .ellipsis { */
-            /* white-space: nowrap; */
-            /* agar teks tidak melompat ke baris baru */
-            /* overflow: hidden; */
-            /* menghilangkan teks yang melampaui batas */
-            /* text-overflow: ellipsis; */
-            /* menampilkan elipsis (...) pada teks yang terpotong */
-            /* width: 50%; */
-            /* lebar kontainer teks, sesuaikan dengan kebutuhan */
+        /* white-space: nowrap; */
+        /* agar teks tidak melompat ke baris baru */
+        /* overflow: hidden; */
+        /* menghilangkan teks yang melampaui batas */
+        /* text-overflow: ellipsis; */
+        /* menampilkan elipsis (...) pada teks yang terpotong */
+        /* width: 50%; */
+        /* lebar kontainer teks, sesuaikan dengan kebutuhan */
         /* } */
-        
+
 
         .float-right {
             float: right;
@@ -273,6 +273,7 @@
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
         <!-- Sidebar wrapper end -->
+        @include('layouts.header')
 
         <!-- *************
 				************ Main container start *************
@@ -290,154 +291,151 @@
                     <!-- Row start -->
                     <div class="card-body">
                         <div class="row gutters">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-12">
 
                                 <!-- Card start -->
 
                                 <!-- <div class="card-header"> -->
                                 <div class="d-flex">
-                                    <div class=" col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12 d-flex">
-
-                                        <h1 class="card-title" style="font-size: 20px;">Peran<button type="button" style="border: none; background:none;">☆</button></h1>
-
+                                    <div class="col-xl-6 col-lg-6 col-md-2 col-sm-2 col-12">
+                                        <div class="card-title">
+                                            <h3>Peran<button type="button" style="border: none; background:transparent;">☆</button></h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-2 col-sm-2 col-12">
+                                        <div class="graph-day-selection" role="group" style="margin-left: 68%">
+                                            <a href="{{url('add_role')}}">
+                                                <button type="button" class="btn active" style="background: transparent; margin-top: 2px; margin-bottom: 2px;">Tambah</button>
+                                            </a>
+                                        </div>
                                     </div>
 
-                                    <!-- <div class="text-end">
-											<a href="create-invoice.html" class="btn btn-primary">Create Invoice</a>
-										</div> -->
-                                    <div class="col-xl-7 col-lg-7 col-md-2 col-sm-2 col-12 ">
-                                        <a href="{{url('add_role')}}" class="float-right"> <button type="button" class="btn btn-secondary float-right">Tambah</button></a>
-
-
-
-
-
-                                    </div>
                                 </div>
+                                
 
-
-                                <div class="content">
-                                    <div class="searchcontainer">
-                                        <i class="icon-search"></i><input class="search " type="text" placeholder="Cari Disini..." style="
+                                <div class="">
+                                    <div class="content">
+                                        <div class="searchcontainer">
+                                            <i class="icon-search"></i><input class="search " type="text" placeholder="Cari Disini..." style="
                                               margin-bottom: 2%; font-size:10pt " />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col"> <input type="checkbox" id="select-all" onchange="toggleCheckbox()"></th>
-                                                <th scope="col">Nama</th>
-                                                <th scope="col">
-                                                    <div class="ellipsis1">
-                                                        Deskripsi
-                                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"> <input type="checkbox" id="select-all" onchange="toggleCheckbox()"></th>
+                                                    <th scope="col">Nama</th>
+                                                    <th scope="col">
+                                                        <div class="ellipsis1">
+                                                            Deskripsi
+                                                        </div>
                                                     </th>
-                                                <th scope="col">Aksi</th>
+                                                    <th scope="col">Aksi</th>
 
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td name="item" id="checkbox1"><input type="checkbox"></td>
-                                                <td>Manager</th>
-                                                <td>
-                                                    <div class="ellipsis" style="max-width: 500px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Mereka bisa mengakses halaman perbankan, dashboard, pembelian, penjualan, barang, kalender, laporan, profil</div>
-                                                </td>
-                                                <th>
-                                                    <div class="menu-icons" style="font-size: 15px;">
-                                                        <a href="{{url('edit_role')}}" class="menu-icon icon-edit-2"></a>
-                                                        <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
-                                                    </div>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <td name="item" id="checkbox1"><input type="checkbox"></td>
-                                                <td>Accountant</th>
-                                                <td>
-                                                    <div class="ellipsis" style="max-width: 500px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                                                        Mereka bisa mengakses halaman perbankan, dashboard, pembelian, penjualan, barang, kalender, laporan, profil, notifikasi, perusahaan, faktur, tagihan
-                                                    </div>
-                                                </td>
-                                                <th>
-                                                    <div class="menu-icons" style="font-size: 15px;">
-                                                        <a href="{{url('edit_role')}}" class="menu-icon icon-edit-2"></a>
-                                                        <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
-                                                    </div>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <td name="item" id="checkbox1"><input type="checkbox"></td>
-                                                <td>Customer</th>
-                                                <td>
-                                                    <div class="ellipsis" style="max-width: 500px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                                                        Mereka bisa mengakses halaman perbankan, dashboard, pembelian, penjualan, barang, kalender, laporan, profil
-                                                    </div>
-                                                </td>
-                                                <th>
-                                                    <div class="menu-icons" style="font-size: 15px;">
-                                                        <a href="{{url('edit_role')}}" class="menu-icon icon-edit-2"></a>
-                                                        <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
-                                                    </div>
-                                                </th>
-                                            </tr>
-
-
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td name="item" id="checkbox1"><input type="checkbox"></td>
+                                                    <td>Manager</th>
+                                                    <td>
+                                                        <div class="ellipsis" style="max-width: 500px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Mereka bisa mengakses halaman perbankan, dashboard, pembelian, penjualan, barang, kalender, laporan, profil</div>
+                                                    </td>
+                                                    <th>
+                                                        <div class="menu-icons" style="font-size: 15px;">
+                                                            <a href="{{url('edit_role')}}" class="menu-icon icon-edit-2"></a>
+                                                            <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td name="item" id="checkbox1"><input type="checkbox"></td>
+                                                    <td>Accountant</th>
+                                                    <td>
+                                                        <div class="ellipsis" style="max-width: 500px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                            Mereka bisa mengakses halaman perbankan, dashboard, pembelian, penjualan, barang, kalender, laporan, profil, notifikasi, perusahaan, faktur, tagihan
+                                                        </div>
+                                                    </td>
+                                                    <th>
+                                                        <div class="menu-icons" style="font-size: 15px;">
+                                                            <a href="{{url('edit_role')}}" class="menu-icon icon-edit-2"></a>
+                                                            <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td name="item" id="checkbox1"><input type="checkbox"></td>
+                                                    <td>Customer</th>
+                                                    <td>
+                                                        <div class="ellipsis" style="max-width: 500px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                            Mereka bisa mengakses halaman perbankan, dashboard, pembelian, penjualan, barang, kalender, laporan, profil
+                                                        </div>
+                                                    </td>
+                                                    <th>
+                                                        <div class="menu-icons" style="font-size: 15px;">
+                                                            <a href="{{url('edit_role')}}" class="menu-icon icon-edit-2"></a>
+                                                            <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
+                                                        </div>
+                                                    </th>
+                                                </tr>
 
 
-                                        </tbody>
-                                    </table>
 
-                                </div>
-                            </div>
-                            <!-- Card start -->
-                            <div class="card">
-                                <div class="card-body" style="margin-left: -2.1%">
 
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination" style="justify-content: flex-end;">
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Previous">
-                                                    <span aria-hidden="true">&laquo;</span>
-                                                </a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Next">
-                                                    <span aria-hidden="true">&raquo;</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
+                                            </tbody>
+                                        </table>
+                                        <!-- Card start -->
+                                        <div class="card">
+                                            <div class="card-body" style="margin-left: -2.1%">
 
-                                </div>
-                            </div>
-                            <!-- Card end -->
-                            <!-- Modal start -->
-                            <div class="modal fade" id="deleterole" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleterole" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content" style="padding: 0px">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="staticBackdropLabel">Hapus Peran</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                <nav aria-label="Page navigation example">
+                                                    <ul class="pagination" style="justify-content: flex-end;">
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#" aria-label="Previous">
+                                                                <span aria-hidden="true">&laquo;</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#" aria-label="Next">
+                                                                <span aria-hidden="true">&raquo;</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+
+                                            </div>
                                         </div>
-                                        <div class="modal-body">
-                                            <p>Anda Yakin Ingin Menghapus Peran Ini?</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Hapus</button>
+                                        <!-- Card end -->
+                                    </div>
+                                </div>
 
+                                <!-- Modal start -->
+                                <div class="modal fade" id="deleterole" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleterole" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content" style="padding: 0px">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Hapus Peran</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Anda Yakin Ingin Menghapus Peran Ini?</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Hapus</button>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Modal end -->
+
+                                <!-- Card end -->
+
                             </div>
-                            <!-- Modal end -->
-
-                            <!-- Card end -->
-
-
                         </div>
                         <!-- Row end -->
 

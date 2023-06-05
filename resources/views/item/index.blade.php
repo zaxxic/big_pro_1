@@ -262,7 +262,7 @@
 														<a href="{{url('tambah-item')}}" class="menu-icon icon-edit-2"></a>
 														
 														
-														<a href="{{route('item-edit')}}" class="menu-icon icon-edit-2"></a>
+														<a href="#" class="menu-icon icon-trash"></a>
 														
 													  </div>
 													</td>	
@@ -281,8 +281,7 @@
 														<a href="{{url('tambah-item')}}" class="menu-icon icon-edit-2"></a>
 														
 														
-														<a href="{{ route('item-edit') }}" class="menu-icon icon-edit-2"></a>
-														
+														<a href="#" class="menu-icon icon-trash"></a>														
 													  </div>
 													</td>
 												  </tr>
@@ -479,72 +478,7 @@
                 }
             });
         </script>
-<script>
-	// Dapatkan elemen checkbox dan menu-icons
-const selectAllCheckbox = document.getElementById('select-all-checkbox');
-const otherCheckboxes = document.querySelectorAll('.other-checkbox');
-const menuIcons = document.querySelectorAll('.menu-icon');
 
-// Tambahkan event listener ke select-all-checkbox
-selectAllCheckbox.addEventListener('change', function() {
-  if (this.checked) {
-    // Jika select-all-checkbox di-check, periksa semua other-checkbox dan aktifkan menu-icons
-    otherCheckboxes.forEach(function(checkbox) {
-      checkbox.checked = true;
-      enableMenuIcons();
-    });
-  } else {
-    // Jika select-all-checkbox tidak di-check, hilangkan cek pada semua other-checkbox dan nonaktifkan menu-icons
-    otherCheckboxes.forEach(function(checkbox) {
-      checkbox.checked = false;
-      disableMenuIcons();
-    });
-  }
-});
-
-// Tambahkan event listener ke setiap other-checkbox
-otherCheckboxes.forEach(function(checkbox) {
-  checkbox.addEventListener('change', function() {
-    if (this.checked) {
-      // Jika other-checkbox di-check, periksa apakah semua other-checkbox sudah di-check atau tidak
-      if (allOtherCheckboxesChecked()) {
-        selectAllCheckbox.checked = true;
-      }
-      enableMenuIcons();
-    } else {
-      // Jika other-checkbox tidak di-check, nonaktifkan menu-icons
-      selectAllCheckbox.checked = false;
-      disableMenuIcons();
-    }
-  });
-});
-
-// Fungsi untuk memeriksa apakah semua other-checkbox sudah di-check atau tidak
-function allOtherCheckboxesChecked() {
-  let allChecked = true;
-  otherCheckboxes.forEach(function(checkbox) {
-    if (!checkbox.checked) {
-      allChecked = false;
-    }
-  });
-  return allChecked;
-}
-
-// Fungsi untuk mengaktifkan menu-icons
-function enableMenuIcons() {
-  menuIcons.forEach(function(icon) {
-    icon.classList.add('active');
-  });
-}
-
-// Fungsi untuk menonaktifkan menu-icons
-function disableMenuIcons() {
-  menuIcons.forEach(function(icon) {
-    icon.classList.remove('active');
-  });
-}
-
-</script>
 
 	</body>
 

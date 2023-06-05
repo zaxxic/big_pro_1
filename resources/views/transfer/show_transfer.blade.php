@@ -180,6 +180,7 @@
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
         <!-- Sidebar wrapper end -->
+        @include('layouts.header')
 
         <!-- *************
 				************ Main container start *************
@@ -195,14 +196,18 @@
                 <div class="content-wrapper">
 
                     <!-- Row start -->
+                    <div class="card-body">
                     <div class="row gutters">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 2%;">
 
-                            <div class="card">
-                                <div class="card-header">
+                            <div class="">
+                                <div class="row">
+                                <div class="col-xl-11 col-lg-11 col-md-11 col-sm-2 col-12">
                                     <div class="card-title">
                                         <h3>Transfer<button type="button" style="border: none; background:none;">☆</button></h3>
                                     </div>
+                                </div>
+                                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-12">
                                     <div class="dropdown">
                                         <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 
@@ -216,6 +221,7 @@
 
                                         </ul>
                                     </div>
+                                </div>
 
                                     <!-- <button >
                                         <span></span>
@@ -236,7 +242,7 @@
                             <!-- Card start -->
                             <div class="card">
 
-                                <div class="card-body">
+                                <div class="">
                                     <div class="card-title">Dibuat</div>
                                     <span>Jayaabadi memebuat transaksi pada 13 Mei 2023</span>
                                     <hr>
@@ -434,6 +440,7 @@
                         <!-- Card end -->
 
                         <!-- </div> -->
+                    </div>
                     </div>
                     <!-- Row end -->
 
