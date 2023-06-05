@@ -400,6 +400,7 @@
 
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
+        
         <!-- Sidebar wrapper end -->
 
         <!-- *************

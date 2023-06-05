@@ -150,16 +150,12 @@
 			<div class="main-container">
 
 				<!-- Page header starts -->
-				<div class="page-header">
 					
-					<!-- Row start -->
-					<div class="row gutters">
-						@include('layouts.header')
+							@include('layouts.header')
 
-					</div>
-					<!-- Row end -->					
+				
 
-				</div>
+			
 				<!-- Page header ends -->
 
 				<!-- Content wrapper scroll start -->
@@ -193,25 +189,24 @@
                                                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                                                     <div class="accordion-body">
                                                         <div class="d-flex row">
-                                                            <div class="col-8">
+                                                            <div  class="col-xl-9 col-lg-12 col-md-12 col-sm-12">
                                                         <div class="d-flex align-items-center">
                                                           <div class="flex-grow-1 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-8" style="margin-bottom: 15%">
                                                             <div class="field-wrapper">
                                                               <label for="judul" class="field-label">Judul <span class="text-danger">*</span></label>
-                                                              <input class="form-control" type="text" id="judul" placeholder="Masukkan Judul" style="border-radius: 10px; margin-bottom: 10px;">
+                                                              <input class="form-control" type="text" id="judul" placeholder="Masukkan Judul" style="border-radius: 2px; margin-bottom: 10px;">
                                                             </div>
                                                             <div class="field-wrapper">
                                                               <label for="subjudul" class="field-label">Subjudul <span class="text-danger">*</span></label>
-                                                              <input class="form-control" type="text" id="subjudul" placeholder="Masukkan Subjudul" style="border-radius: 10px; margin-bottom: 10px;">
+                                                              <input class="form-control" type="text" id="subjudul" placeholder="Masukkan Subjudul" style="border-radius: 2px; margin-bottom: 10px;">
                                                             </div>
                                                           </div>
                                                         </div>
                                                             </div>
-                                                        <div class="col-4">
-                                                          <div class="flex-grow-0 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-8">
-                                                              <div id="dropzone" style="width: 300px; height:300px">
+                                                            <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
+                                                              <div id="dropzone" style="height:300px">
                                                                 <label for="subjudul" class="field-label">Logo<span class="text-danger">*</span></label>
-                                                                <form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload" style="margin-right: 10%">
+                                                                <form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
                                                                 <div class="dz-message needsclick">
                                                                   <button type="button" class="dz-button">Pilih berkas di sini untuk mengunggah.</button><br>
                                                                 </div>
@@ -234,9 +229,8 @@
 
                                           </div>
                                             </div>
-                                            <div class="d-flex">
-                                              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" style="margin-right: 5%">
-                                                <div class="field-wrapper mb-3">
+                                            <div class="row">
+                                                <div class="field-wrapper mb-3 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12" style="margin-left: initial;height: 76px;margin-right: -1%;">
                                                   <label for="judul" class="field-label">Pelanggan <span class="text-danger">*</span></label>
                                                   <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?" style="height: 118px">
                                                     <option>Rudi</option>
@@ -248,6 +242,8 @@
                                                     <option>Triski</option>
                                                   </select>                                                  
                                                 </div>
+                                                <div  class=" col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 d-flex">
+                                                  <div class="col-6 ml-5 mr-5" style="margin-right:1%">
                                                   <div class="field-wrapper mb-3">
                                                     <label for="judul" class="field-label">Tanggal Faktur</label>
                                                     <input class="form-control" type="text" placeholder="Masukkan Nama">
@@ -263,6 +259,8 @@
                                                       <option>Jatuh tempo saat diterima</option>
                                                     </select>                                                  
                                                   </div>
+                                                  </div>
+                                                  <div class="col-6">
                                                   <div class="field-wrapper mb-3">
                                                     <label for="judul" class="field-label">Nomor Faktur </label>
                                                     <input class="form-control" type="text" placeholder="Masukkan Nama">
@@ -271,8 +269,10 @@
                                                     <label for="judul" class="field-label">Jumlah Pesanan </label>
                                                     <input class="form-control" type="text" placeholder="Masukkan Jumlah Pesanan">
                                                   </div>
+                                                  </div> 
+                                                </div>
                                               </div>
-                                              </div>
+                                            </div>
                                               <!-- Row start -->
                                             <div class="row gutters">
                                               <div class="col-12">
@@ -293,7 +293,7 @@
                                                       <tr>
                                                         <td>
                                                               <div class="field-wrapper m-0">
-                                                                <select name="item[]" style="border-radius:10px" class="form-control">
+                                                                <select name="item[]" style="border-radius:2px" class="form-control">
                                                                   <option value="txt">Text</option>
                                                                   <option value="md">Markdown</option>
                                                                   <option value="html">HTML</option>
@@ -310,28 +310,28 @@
                                                             </td>
                                                         <td>
                                                           <div class="field-wrapper m-0">
-                                                            <input type="text" style="border-radius:10px" name="deskripsi[]" class="form-control">
+                                                            <input type="text" style="border-radius:2px" name="deskripsi[]" class="form-control">
                                                           </div>
                                                         </td>
                                                         <td>
                                                           <div class="field-wrapper m-0">
-                                                            <input type="number" style="border-radius:10px" name="kuantitas[]" class="form-control">
+                                                            <input type="number" style="border-radius:2px" name="kuantitas[]" class="form-control">
                                                           </div>
                                                         </td>
                                                         <td>
                                                           <div class="field-wrapper m-0">
-                                                            <input type="number" style="border-radius:10px" name="harga[]" class="form-control">
+                                                            <input type="number" style="border-radius:2px" name="harga[]" class="form-control">
                                                           </div>
                                                         </td>
                                                         <td>
                                                           <div class="field-wrapper m-0">
-                                                            <input type="number" style="border-radius:10px" name="jumlah[]" class="form-control">
+                                                            <input type="number" style="border-radius:2px" name="jumlah[]" class="form-control">
                                                           </div>
                                                         </td>
                                                         <td>
                                                           <div id="pajak-wrapper">
                                                             <div class="field-wrapper mb-1 pajak-input-wrapper">
-                                                              <input type="number" style="border-radius:10px" name="pajak[]" class="form-control pajak-input">
+                                                              <input type="number" style="border-radius:2px" name="pajak[]" class="form-control pajak-input">
                                                             </div>
                                                             <div class="add-pajak-wrapper mb-2">
                                                               <button class="btn btn-light add-pajak">
@@ -361,7 +361,7 @@
                                                         <td>
                                                           <p id="subtotal" class="m-0">Rp.0.00</p>
                                                           <p id="diskon" class="m-0">   <div class="field-wrapper m-0">
-                                                            <input type="text"  style="border-radius:10px" name="deskripsi[]" class="form-control">
+                                                            <input type="text"  style="border-radius:2px" name="deskripsi[]" class="form-control">
                                                           </div> </p>
                                                           <p id="total-pajak" class="m-0">Rp.0.00</p>
                                                           <h5 id="total" class="mt-2">Rp.0.00</h5>
@@ -388,19 +388,19 @@
                                                         <form>
                                                           <div class="field-wrapper m-0">
                                                               <label for="nama">Nama</label>
-                                                            <input type="text" name="nama" style="border-radius:10px" placeholder="Masukan nama item" id="nama"class="form-control">
+                                                            <input type="text" name="nama" style="border-radius:2px" placeholder="Masukan nama item" id="nama"class="form-control">
                                                           </div>
                                                           <div class="field-wrapper m-0">
                                                               <label for="nama">Harga Jual</label>
-                                                            <input type="text" name="Harga"  style="border-radius:10px" placeholder="Masukan harga item" id="nama"class="form-control">
+                                                            <input type="text" name="Harga"  style="border-radius:2px" placeholder="Masukan harga item" id="nama"class="form-control">
                                                           </div>
                                                           <div class="field-wrapper m-0">
                                                               <label for="nama">kategori</label>
-                                                            <input type="text" name="kategori" style="border-radius:10px" placeholder="Masukan nama item" id="nama"class="form-control">
+                                                            <input type="text" name="kategori" style="border-radius:2px" placeholder="Masukan nama item" id="nama"class="form-control">
                                                           </div>
                                                           <div class="field-wrapper ">
                                                               <label for="nama">Pajak</label>
-                                                            <input type="text" name="Pajak" style="border-radius:10px" placeholder="Masukan nama item" id="nama"class="form-control">
+                                                            <input type="text" name="Pajak" style="border-radius:2px" placeholder="Masukan nama item" id="nama"class="form-control">
                                                           </div>
                                                         </form>
                                                       </div>
@@ -527,9 +527,9 @@
                                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                                               <div class="accordion-body">
                                                 <div class="d-flex row">
-                                                  <div class="col-4">
-                                                    <div class="flex-grow-0 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-8">
-                                                      <div id="dropzone" style="width: 300px; height:300px">
+                                                  <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                    <div class="">
+                                                      <div id="dropzone" style="height:300px">
                                                         <label for="subjudul" class="field-label">Lampiran<span class="text-danger">*</span></label>
                                                         <form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload" style="margin-right: 10%">
                                                           <div class="dz-message needsclick">
@@ -539,9 +539,7 @@
                                                       </div>
                                                     </div>
                                                   </div>
-                                                  <div class="col-8">
-                                                    <div class="d-flex align-items-center">
-                                                      <div class="flex-grow-1 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-8" style="margin-bottom: 15%">
+                                                  <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 mt-5">
                                                         <select id="dropdown2" class="demo-code-language" placeholder="Select a language..." autocomplete="off">
                                                           <option value="txt">Text</option>
                                                           <option value="md">Markdown</option>
@@ -563,9 +561,8 @@
                                                         </div>
                                                       </div>
                                                     </div>
-                                                  </div>
                                                 </div>
-                                              </div>
+                                              
                                             </div>
                                         </div>
 
@@ -739,7 +736,7 @@
     newRow.innerHTML = `
     <td>
         <div class="field-wrapper m-0">
-          <select name="item[]" style="border-radius:10px" class="form-control">
+          <select name="item[]" style="border-radius:2px" class="form-control">
             <option value="txt">Text</option>
             <option value="md">Markdown</option>
             <option value="html">HTML</option>
@@ -756,28 +753,28 @@
       </td>
       <td>
         <div class="field-wrapper m-0">
-          <input type="text" name="deskripsi[]" style="border-radius:10px" class="form-control">
+          <input type="text" name="deskripsi[]" style="border-radius:2px" class="form-control">
         </div>
       </td>
       <td>
         <div class="field-wrapper m-0">
-          <input type="number" name="kuantitas[]" style="border-radius:10px" class="form-control">
+          <input type="number" name="kuantitas[]" style="border-radius:2px" class="form-control">
         </div>
       </td>
       <td>
         <div class="field-wrapper m-0">
-          <input type="number" name="harga[]" style="border-radius:10px" class="form-control">
+          <input type="number" name="harga[]" style="border-radius:2px" class="form-control">
         </div>
       </td>
       <td>
         <div class="field-wrapper m-0">
-          <input type="number" name="jumlah[]" style="border-radius:10px" class="form-control">
+          <input type="number" name="jumlah[]" style="border-radius:2px" class="form-control">
         </div>
       </td>
       <td>
         <div id="pajak-wrapper">
           <div class="field-wrapper mb-1 pajak-input-wrapper">
-            <input type="number" name="pajak[]" style="border-radius:10px" class="form-control pajak-input">
+            <input type="number" name="pajak[]" style="border-radius:2px" class="form-control pajak-input">
           </div>
           <div class="add-pajak-wrapper mb-1">
             <button class="btn btn-light add-pajak">

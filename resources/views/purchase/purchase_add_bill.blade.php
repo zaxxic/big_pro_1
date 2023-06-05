@@ -253,7 +253,7 @@
                                                       <tr>
                                                         <td>
                                                               <div class="field-wrapper m-0">
-                                                                <select name="item[]" style="border-radius:10px" class="form-control">
+                                                                <select name="item[]" style="border-radius:2px" class="form-control">
                                                                   <option value="txt">Text</option>
                                                                   <option value="md">Markdown</option>
                                                                   <option value="html">HTML</option>
@@ -270,28 +270,28 @@
                                                             </td>
                                                         <td>
                                                           <div class="field-wrapper m-0">
-                                                            <input type="text" style="border-radius:10px" name="deskripsi[]" class="form-control">
+                                                            <input type="text" style="border-radius:2px" name="deskripsi[]" class="form-control">
                                                           </div>
                                                         </td>
                                                         <td>
                                                           <div class="field-wrapper m-0">
-                                                            <input type="number" style="border-radius:10px" name="kuantitas[]" class="form-control">
+                                                            <input type="number" style="border-radius:2px" name="kuantitas[]" class="form-control">
                                                           </div>
                                                         </td>
                                                         <td>
                                                           <div class="field-wrapper m-0">
-                                                            <input type="number" style="border-radius:10px" name="harga[]" class="form-control">
+                                                            <input type="number" style="border-radius:2px" name="harga[]" class="form-control">
                                                           </div>
                                                         </td>
                                                         <td>
                                                           <div class="field-wrapper m-0">
-                                                            <input type="number" style="border-radius:10px" name="jumlah[]" class="form-control">
+                                                            <input type="number" style="border-radius:2px" name="jumlah[]" class="form-control">
                                                           </div>
                                                         </td>
                                                         <td>
                                                           <div id="pajak-wrapper">
                                                             <div class="field-wrapper mb-1 pajak-input-wrapper">
-                                                              <input type="number" style="border-radius:10px" name="pajak[]" class="form-control pajak-input">
+                                                              <input type="number" style="border-radius:2px" name="pajak[]" class="form-control pajak-input">
                                                             </div>
                                                             <div class="add-pajak-wrapper mb-2">
                                                               <button class="btn btn-light add-pajak">
@@ -321,7 +321,7 @@
                                                         <td>
                                                           <p id="subtotal" class="m-0">Rp.0.00</p>
                                                           <p id="diskon" class="m-0">   <div class="field-wrapper m-0">
-                                                            <input type="text"  style="border-radius:10px" name="deskripsi[]" class="form-control">
+                                                            <input type="text"  style="border-radius:2px" name="deskripsi[]" class="form-control">
                                                           </div> </p>
                                                           <p id="total-pajak" class="m-0">Rp.0.00</p>
                                                           <h5 id="total" class="mt-2">Rp.0.00</h5>
@@ -348,24 +348,24 @@
                                                         <form>
                                                           <div class="field-wrapper m-0">
                                                               <label for="nama">Nama</label>
-                                                            <input type="text" name="nama" style="border-radius:10px" placeholder="Masukan nama item" id="nama"class="form-control">
+                                                            <input type="text" name="nama" style="border-radius:2px" placeholder="Masukan nama item" id="nama"class="form-control">
                                                           </div>
                                                           <div class="field-wrapper m-0">
                                                               <label for="nama">Harga Jual</label>
-                                                            <input type="text" name="Harga"  style="border-radius:10px" placeholder="Masukan harga item" id="nama"class="form-control">
+                                                            <input type="text" name="Harga"  style="border-radius:2px" placeholder="Masukan harga item" id="nama"class="form-control">
                                                           </div>
                                                           <div class="field-wrapper m-0">
                                                             <label for="nama">Kategori</label>
-                                                            <input type="text" name="kategori" style="border-radius:10px" placeholder="Masukan nama item" id="nama"class="form-control">
+                                                            <input type="text" name="kategori" style="border-radius:2px" placeholder="Masukan nama item" id="nama"class="form-control">
                                                           </div>
                                                           <div class="field-wrapper ">
                                                               <label for="nama">Pajak</label>
-                                                            <input type="text" name="Pajak" style="border-radius:10px" placeholder="Masukan nama item" id="nama"class="form-control">
+                                                            <input type="text" name="Pajak" style="border-radius:2px" placeholder="Masukan nama item" id="nama"class="form-control">
                                                           </div>
                                                         </form>
                                                       </div>
                                                       <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" style="border-radius: 2px" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                                       </div>
                                                       </div>
                                                     </div>
@@ -601,7 +601,7 @@
     newRow.innerHTML = `
     <td>
         <div class="field-wrapper m-0">
-          <select name="item[]" style="border-radius:10px" class="form-control">
+          <select name="item[]" style="border-radius:2px" class="form-control">
             <option value="txt">Text</option>
             <option value="md">Markdown</option>
             <option value="html">HTML</option>
@@ -618,28 +618,28 @@
       </td>
       <td>
         <div class="field-wrapper m-0">
-          <input type="text" name="deskripsi[]" style="border-radius:10px" class="form-control">
+          <input type="text" name="deskripsi[]" style="border-radius:2px" class="form-control">
         </div>
       </td>
       <td>
         <div class="field-wrapper m-0">
-          <input type="number" name="kuantitas[]" style="border-radius:10px" class="form-control">
+          <input type="number" name="kuantitas[]" style="border-radius:2px" class="form-control">
         </div>
       </td>
       <td>
         <div class="field-wrapper m-0">
-          <input type="number" name="harga[]" style="border-radius:10px" class="form-control">
+          <input type="number" name="harga[]" style="border-radius:2px" class="form-control">
         </div>
       </td>
       <td>
         <div class="field-wrapper m-0">
-          <input type="number" name="jumlah[]" style="border-radius:10px" class="form-control">
+          <input type="number" name="jumlah[]" style="border-radius:2px" class="form-control">
         </div>
       </td>
       <td>
         <div id="pajak-wrapper">
           <div class="field-wrapper mb-1 pajak-input-wrapper">
-            <input type="number" name="pajak[]" style="border-radius:10px" class="form-control pajak-input">
+            <input type="number" name="pajak[]" style="border-radius:2px" class="form-control pajak-input">
           </div>
           <div class="add-pajak-wrapper mb-1">
             <button class="btn btn-light add-pajak">

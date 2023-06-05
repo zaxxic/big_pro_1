@@ -78,11 +78,12 @@
 					<div class="content-wrapper">
 
 						<!-- Row start -->
+						<div class="card-body">
                         <div class="row gutters">
 							<div class="col-xl-12">
 								<!-- Card start -->
-								<div class="card">
-									<div class="card-body">
+								<div class="">
+									<div class="">
 
 										<div id="selectableCalendar"></div>
 
@@ -185,6 +186,7 @@
 										</div>
 
                             </div>
+						</div>
 						</div>
 						<!-- Row end -->
 

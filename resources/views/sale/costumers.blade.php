@@ -341,7 +341,7 @@
                                     <div class="content">
                                         <div class="searchcontainer">
                                             <i class="icon-search"></i><input class="search " type="text" placeholder="Cari Disini..." style="
-                                              margin-bottom: 2%; font-size:10pt " />
+                                              margin-bottom: 2%; font-size:10pt;margin-top:5% " />
                                         </div>
                                     </div>
                                     <div class="table-responsive">
@@ -453,32 +453,32 @@
 
                                             </tbody>
                                         </table>
-                                        <!-- Card start -->
-                                        <div class="card">
-                                            <div class="card-body col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-
-                                                <nav aria-label="Page navigation example">
-                                                    <ul class="pagination" style="float: right;">
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#" aria-label="Previous">
-                                                                <span aria-hidden="true">&laquo;</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#" aria-label="Next">
-                                                                <span aria-hidden="true">&raquo;</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </nav>
-
-                                            </div>
-                                        </div>
-                                        <!-- Card end -->
                                     </div>
+                                    <!-- Card start -->
+                                    <div class="card">
+                                        <div class="card-body col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination" style="float: right;">
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#" aria-label="Next">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+
+                                        </div>
+                                    </div>
+                                    <!-- Card end -->
                                     <!-- Modal start -->
                                     <div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">

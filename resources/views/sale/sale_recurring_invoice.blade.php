@@ -137,6 +137,7 @@
 			<!-- Sidebar wrapper start -->
 			@include('layouts.sidebar')
 			<!-- Sidebar wrapper end -->
+            
 
 			<!-- *************
 				************ Main container start *************
@@ -269,7 +270,7 @@
                                                     <td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2023</td>
                                                     <td>koirul</td>
-                                                    <td>konsep</td>
+                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #d9dbfc; color:#1900ff; height: 30px; border:none">Aktif</button></td>
                                                     <td>Bulanan</td>
                                                     <td>24 mei 2023</td>
                                                     <td>91.000.000,00</td>
@@ -277,7 +278,7 @@
                                                        <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="#" class="menu-icon icon-eye1"></a>
+                                                            <a href="{{ url ('details_recurring')}}" class="menu-icon icon-eye1"></a>
                                                             <div class="dropdown icon-dots-two-vertical">
                                                                 <span>
                                                                 <div class="dropdown-content">
@@ -307,7 +308,7 @@
                                                     <td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2024</td>
                                                     <td>choirul</td>
-                                                    <td>konsep</td>
+                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #c4ffcc; color:#00be00; height: 30px; border:none">Selesai</button></td>
                                                     <td>Bulanan</td>
                                                     <td>25 mei 2023</td>
                                                     <td>80.000.000,00</td>
@@ -340,145 +341,35 @@
                                                     </td>	
                                                 </tr>
                                                 
-                                            
-                                                <!-- Data 3 -->
-                                                <tr class="table-row">
-                                                    <td><input type="checkbox" class="other-checkbox"></td>
-                                                    <td>14 mei 2023</td>
-                                                    <td>rudi</td>
-                                                    <td>konsep</td>
-                                                    <td>Bulanan</td>
-                                                    <td>26 mei 2023</td>
-                                                    <td>100.000.000,00</td>
-                                                    <td>
-                                                       <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="#" class="menu-icon icon-eye1"></a>
-                                                            <div class="dropdown icon-dots-two-vertical">
-                                                                <span>
-                                                                <div class="dropdown-content">
-                                                                    <a href="#">
-                                                                    <button type="button" style="border: none; background:none; color:#333; background:transparent" data-bs-toggle="modal" data-bs-target="#payment" class="icon-attach_money">
-                                                                            Bayar
-                                                                    </button>
-                                                                    </a>
-                                                                    <a href="#">
-                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-printer">
-                                                                            Cetak
-                                                                        </button>
-                                                                    </a>
-                                                                    <a href="#" class="icon-x-circle" style="color: #333">
-                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
-                                                                            Batal</button>
-                                                                    </a>
-                                                                </div>
-                                                            </span>
-                                                            </div>
-                                                        </div>
-                                                    </td>	
-                                                </tr>
-                                                
-                                                <tr class="table-row">
-                                                    <td><input type="checkbox" class="other-checkbox"></td>
-                                                    <td>15 mei 2023</td>
-                                                    <td>slemet</td>
-                                                    <td>sebagian</td>
-                                                    <td>Bulanan</td>
-                                                    <td>24 mei 2023</td>
-                                                    <td>20.000.000,00</td>
-                                                    <td>
-                                                       <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="#" class="menu-icon icon-eye1"></a>
-                                                            <div class="dropdown icon-dots-two-vertical">
-                                                                <span>
-                                                                <div class="dropdown-content">
-                                                                    <a href="#">
-                                                                    <button type="button" style="border: none; background:none; color:#333; background:transparent" data-bs-toggle="modal" data-bs-target="#payment" class="icon-attach_money">
-                                                                            Bayar
-                                                                    </button>
-                                                                    </a>
-                                                                    <a href="#">
-                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-printer">
-                                                                            Cetak
-                                                                        </button>
-                                                                    </a>
-                                                                    <a href="#" class="icon-x-circle" style="color: #333">
-                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
-                                                                            Batal</button>
-                                                                    </a>
-                                                                </div>
-                                                            </span>
-                                                            </div>
-                                                        </div>
-                                                    </td>	
-                                                </tr>
-                                                
-                                                <tr class="table-row">
-                                                    <td><input type="checkbox" class="other-checkbox"></td>
-                                                    <td>25 mei 2023</td>
-                                                    <td>wahyu</td>
-                                                    <td>dibayar</td>
-                                                    <td>Bulanan</td>
-                                                    <td>28 mei 2023</td>
-                                                    <td>45.000.000,00</td>
-                                                    <td>
-                                                       <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="#" class="menu-icon icon-eye1"></a>
-                                                            <div class="dropdown icon-dots-two-vertical">
-                                                                <span>
-                                                                <div class="dropdown-content">
-                                                                    <a href="#">
-                                                                    <button type="button" style="border: none; background:none; color:#333; background:transparent" data-bs-toggle="modal" data-bs-target="#payment" class="icon-attach_money">
-                                                                            Bayar
-                                                                    </button>
-                                                                    </a>
-                                                                    <a href="#">
-                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-printer">
-                                                                            Cetak
-                                                                        </button>
-                                                                    </a>
-                                                                    <a href="#" class="icon-x-circle" style="color: #333">
-                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
-                                                                            Batal</button>
-                                                                    </a>
-                                                                </div>
-                                                            </span>
-                                                            </div>
-                                                        </div>
-                                                    </td>	
-                                                </tr>
-                                                
                                                 </tbody>
                                             </table>
                                                         <!-- Card start -->
-                                            <div class="card">
-                                                <div class="card-body" style="margin-left: -2.1%">
+                                                    </div>
+                                                  <!-- Card start -->
+                                <div class="card">
+                                    <div class="card-body col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
 
-                                                    <nav aria-label="Page navigation example">
-                                                        <ul class="pagination">
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">&laquo;</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">&raquo;</span>
-                                                            </a>
-                                                        </li>
-                                                        </ul>
-                                                    </nav>
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination" style="float: right;">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                            </ul>
+                                        </nav>
 
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+                    <!-- Card end -->
                                 <!-- Card end -->
                                 <div class="modal fade" id="payment" tabindex="-1" aria-labelledby="paymentTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">

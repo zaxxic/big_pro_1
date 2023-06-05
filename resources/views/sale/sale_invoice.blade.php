@@ -295,6 +295,7 @@
 											<div class="hidden-menu" style="display: none; background-color: #f2f2f2; font-size: 12pt; padding: 10px;">
 												<p style="display: inline" id="count-display">&emsp;</p>
 												&emsp;<a  href="#" title="Batal"> <i class="icon-x-circle" style="color:#424242 "></i> </a>
+												&emsp;<a  href="#" title="Tandai Telah dikirim"> <i class="icon-send1" style="color:#424242 "></i> </a>
 												&emsp;<a  href="#" title="Hapus"> <i class="icon-trash-2"></i> </a>
 											</div>
 											<table class="table table-hover caption-top">
@@ -313,7 +314,7 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2023</td>
-                                                    <td>konsep</td>
+                                                    <td><button  class="btn btn-danger" style="border-radius: 10px; background-color: #ffd2d2; color:#D21312; height: 30px; border:none">Terkirim</button></td>
                                                     <td>koirul</td>
                                                     <td>91.000.000,00</td>
 													<td>
@@ -349,7 +350,7 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2024</td>
-                                                    <td>konsep</td>
+                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #d3d3d3; color:#0a0a0a; height: 30px; border:none">Konsep</button></td>
                                                     <td>choirul</td>
                                                     <td>80.000.000,00</td>
 													<td>
@@ -386,7 +387,7 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>14 mei 2023</td>
-                                                    <td>konsep</td>
+                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #d3d3d3; color:#0a0a0a; height: 30px; border:none">Konsep</button></td>
                                                     <td>rudi</td>
                                                     <td>100.000.000,00</td>
 													<td>
@@ -421,7 +422,7 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>15 mei 2023</td>
-                                                    <td>sebagian</td>
+                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #d9dbfc; color:#1900ff; height: 30px; border:none">Sebagian</button></td>
                                                     <td>slemet</td>
                                                     <td>20.000.000,00</td>
 													<td>
@@ -443,7 +444,7 @@
                                                                         </button>
                                                                     </a>
                                                                     <a href="#" class="icon-x-circle" style="color: #333">
-                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
+                                                                        <button type="button" style="border: none; background-color: rgb(255, 255, 255); color:#333; background:transparent">
                                                                             Batal</button>
                                                                     </a>
                                                                 </div>
@@ -456,7 +457,7 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>25 mei 2023</td>
-                                                    <td>dibayar</td>
+                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #c4ffcc; color:#00be00; height: 30px; border:none">Dibayar</button></td>
                                                     <td>wahyu</td>
                                                     <td>45.000.000,00</td>
 													<td>
@@ -490,32 +491,32 @@
 
 												</tbody>
 											  </table>
-                                                        <!-- Card start -->
-                                            <div class="card">
-                                                <div class="card-body col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
-
-                                                    <nav aria-label="Page navigation example">
-                                                        <ul class="pagination" style="float: right;">
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">&laquo;</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">&raquo;</span>
-                                                            </a>
-                                                        </li>
-                                                        </ul>
-                                                    </nav>
-
-                                                </div>
                                             </div>
-								<!-- Card end -->
-									</div>
+                                            <!-- Card start -->
+                                <div class="card">
+                                    <div class="card-body col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
+
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination" style="float: right;">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                            </ul>
+                                        </nav>
+
+                                    </div>
+                                </div>
+                    <!-- Card end -->
 									<div class="modal fade" id="payment" tabindex="-1" aria-labelledby="paymentTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                             <div class="modal-content" style="margin-top: -10%">
@@ -548,8 +549,8 @@
                                                         </div>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="text-white" style="background-color:rgb(255, 0, 0); border:none; border-radius:10px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</button>
-                                                    <button type="button" class="text-white" style="background-color: #55be0e; border:none; border-radius:10px; width:30%; height:25px; color:white">Simpan</button>
+                                                    <button type="button" class="text-white" style="background-color:rgb(255, 0, 0); border:none; border-radius:2px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</button>
+                                                    <button type="button" class="text-white" style="background-color: #55be0e; border:none; border-radius:2px; width:30%; height:25px; color:white">Simpan</button>
                                                 </div>
                                             </div>
                                         </div>

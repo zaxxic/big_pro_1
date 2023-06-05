@@ -299,7 +299,7 @@
                                                        <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="#" class="menu-icon icon-eye1"></a>
+                                                            <a href="{{ url('recurring_bill') }}" class="menu-icon icon-eye1"></a>
                                                             <div class="dropdown icon-dots-two-vertical">
                                                                 <span>
                                                                 <div class="dropdown-content">
@@ -473,35 +473,36 @@
                                                 
                                                 </tbody>
                                             </table>
-                                                        <!-- Card start -->
-                                            <div class="card">
-                                                <div class="card-body" style="margin-left: -2.1%">
-
-                                                    <nav aria-label="Page navigation example">
-                                                        <ul class="pagination">
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">&laquo;</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">&raquo;</span>
-                                                            </a>
-                                                        </li>
-                                                        </ul>
-                                                    </nav>
-
+                                            <!-- Card end -->
+                                        </div>
+                                    </div>
+                                    <!-- Card start -->
+                                                <div class="card">
+                                                    <div class="card-body" style="margin-left: -2.1%">
+            
+                                                        <nav aria-label="Page navigation example">
+                                                            <ul class="pagination" style="justify-content: flex-end;">
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                                        <span aria-hidden="true">«</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#" aria-label="Next">
+                                                                        <span aria-hidden="true">»</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+            
+                                                    </div>
                                                 </div>
-                                            </div>
-                                <!-- Card end -->
-                                    </div>
-									
-				
-                                    </div>
+                        <!-- Card end -->
+                                
+            
                                 </div>
                                 <div class="modal fade" id="payment" tabindex="-1" aria-labelledby="paymentTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">

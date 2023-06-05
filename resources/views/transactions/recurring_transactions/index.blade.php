@@ -306,6 +306,7 @@
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
         <!-- Sidebar wrapper end -->
+        @include('layouts.header')
 
         <!-- *************
 				************ Main container start *************
@@ -554,6 +555,7 @@
                                    
                                 </div>
                             </div>
+                        </div>
                              <!-- Card start -->
                              <div class="card">
                                         <div class="card-body" style="margin-left: -2.1%">
