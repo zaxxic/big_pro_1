@@ -313,7 +313,7 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2023</td>
-                                                    <td>konsep</td>
+                                                    <td><button  class="btn btn-danger" style="border-radius: 10px; background-color: #ffd2d2; color:#D21312; height: 30px; border:none">Terkirim</button></td>
                                                     <td>koirul</td>
                                                     <td>91.000.000,00</td>
 													<td>
@@ -349,7 +349,7 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2024</td>
-                                                    <td>konsep</td>
+                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #d3d3d3; color:#0a0a0a; height: 30px; border:none">Konsep</button></td>
                                                     <td>choirul</td>
                                                     <td>80.000.000,00</td>
 													<td>
@@ -386,7 +386,7 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>14 mei 2023</td>
-                                                    <td>konsep</td>
+                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #d3d3d3; color:#0a0a0a; height: 30px; border:none">Konsep</button></td>
                                                     <td>rudi</td>
                                                     <td>100.000.000,00</td>
 													<td>
@@ -421,7 +421,7 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>15 mei 2023</td>
-                                                    <td>sebagian</td>
+                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #d9dbfc; color:#1900ff; height: 30px; border:none">Sebagian</button></td>
                                                     <td>slemet</td>
                                                     <td>20.000.000,00</td>
 													<td>
@@ -443,7 +443,7 @@
                                                                         </button>
                                                                     </a>
                                                                     <a href="#" class="icon-x-circle" style="color: #333">
-                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
+                                                                        <button type="button" style="border: none; background-color: rgb(255, 255, 255); color:#333; background:transparent">
                                                                             Batal</button>
                                                                     </a>
                                                                 </div>
@@ -456,7 +456,7 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>25 mei 2023</td>
-                                                    <td>dibayar</td>
+                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #c4ffcc; color:#00be00; height: 30px; border:none">Dibayar</button></td>
                                                     <td>wahyu</td>
                                                     <td>45.000.000,00</td>
 													<td>
