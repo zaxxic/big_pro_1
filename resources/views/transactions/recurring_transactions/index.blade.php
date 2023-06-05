@@ -306,6 +306,7 @@
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
         <!-- Sidebar wrapper end -->
+        @include('layouts.header')
 
         <!-- *************
 				************ Main container start *************

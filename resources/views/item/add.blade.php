@@ -40,6 +40,10 @@
     <!-- Search Filter JS -->
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/search-filter.css') }}">
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.css') }}">
+
+    <!-- Dropdown Search -->
+    <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/bs-select/bs-select.css")}}">
+    <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/daterange/daterange.css")}}">
     <style>
         .card {
             overflow: hidden;
@@ -48,17 +52,19 @@
         .half-width-container {
             display: flex;
             width: 50%;
-            justify-content: space-between;
+            /* justify-content: space-between; */
         }
 
         input[type="radio"] {
             display: none;
         }
-label{
-    margin-bottom: 2%;
-}
+
+        label {
+            margin-bottom: 2%;
+        }
+
         .label {
-            width: 50%;
+            width: 35%;
             text-align: center;
             padding: 10px;
             border: 1px solid #D9D9D9;
@@ -67,7 +73,7 @@ label{
         }
 
         input[type="radio"]:checked+.label {
-            background-color: #038BBD;
+            background-color: #5957b1;
             color: #fff;
         }
 
@@ -77,45 +83,45 @@ label{
 
         .label {
             margin-right: 20px;
-            }
+        }
 
         .toggle-checkbox {
-  display: none;
-}
+            display: none;
+        }
 
-.toggle-label {
-  display: inline-block;
-  width: 50px;
-  height: 30px;
-  background-color: #CCCCCC; /* Warna abu-abu saat indikator tidak aktif */
-  border-radius: 15px;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-}
+        .toggle-label {
+            display: inline-block;
+            width: 50px;
+            height: 30px;
+            background-color: #CCCCCC;
+            /* Warna abu-abu saat indikator tidak aktif */
+            border-radius: 15px;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+        }
 
-.toggle-label:before {
-  content: "";
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  bottom: 1px;
-  width: 24px;
-  background-color: #FFFFFF; /* Warna biru saat indikator aktif */
-  border-radius: 50%;
-  transition: right 0.3s ease;
-}
+        .toggle-label:before {
+            content: "";
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            bottom: 1px;
+            width: 24px;
+            background-color: #FFFFFF;
+            /* Warna biru saat indikator aktif */
+            border-radius: 50%;
+            transition: right 0.3s ease;
+        }
 
-.toggle-checkbox:checked + .toggle-label {
-  background-color: #336699; /* Warna biru saat toggle button aktif */
-}
+        .toggle-checkbox:checked+.toggle-label {
+            background-color: #5957b1;
+            /* Warna biru saat toggle button aktif */
+        }
 
-.toggle-checkbox:checked + .toggle-label:before {
-  right: calc(100% - 25px);
-}
-
-
-
+        .toggle-checkbox:checked+.toggle-label:before {
+            right: calc(100% - 25px);
+        }
     </style>
 
 </head>
@@ -128,44 +134,14 @@ label{
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
         <!-- Sidebar wrapper end -->
+        @include('layouts.header')
 
         <!-- *************
     ************ Main container start *************
    ************* -->
         <div class="main-container">
 
-            <!-- Page header starts -->
-            <div class="page-header">
 
-                <!-- Row start -->
-                <div class="row gutters">
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-9">
-
-                        <!-- Search container start -->
-                        <div class="search-container">
-
-                            <!-- Toggle sidebar start -->
-                            <div class="toggle-sidebar" id="toggle-sidebar">
-                                <i class="icon-menu"></i>
-                            </div>
-                            <!-- Toggle sidebar end -->
-
-                            <!-- Mega Menu Start -->
-
-
-                        </div>
-                        <!-- Search container end -->
-
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-3">
-
-                        <!-- Header actions start -->
-   
-                           
-                <!-- Row end -->
-
-            </div>
-            <!-- Page header ends -->
 
             <!-- Content wrapper scroll start -->
             <div class="content-wrapper-scroll">
@@ -174,167 +150,167 @@ label{
                 <div class="content-wrapper">
 
                     <!-- Row start -->
-                    <div class="row gutters">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card-body">
+                        <div class="row gutters">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
-                            <!-- Card start -->
-                            <div class="card">
-                                <div class="card-header">
-                                  
-                                    <div class="card-title"><h3>Tambah Item<button type="button" style="border: none; background:none;">☆</button></h3></div>
-                                        <div class="graph-day-selection" role="group" style="margin-left: 60%">
-											
-										</div>
-                                      
-                                <input type="checkbox" id="toggle" class="toggle-checkbox ">
-                                <label for="toggle" class="toggle-label custom-bg "></label>
-                            </div>
+                                <!-- Card start -->
+                                <div class="">
+                                    <div class="d-flex">
+                                        <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
+                                            <div class="card-title">
+                                                <h3>Tambah Item<button type="button" style="border: none; background:none;">☆</button></h3>
+                                            </div>
+                                            <div class="graph-day-selection" role="group" style="margin-left: 60%">
 
-                                <div class="card-body">
-                                    <div style="border-bottom: solid black 1px;margin-bottom:1%">
-                                        <b>Umum</b>
-                                        <p>Pilih kategori untuk membuat laporan Anda lebih detail. Deskripsi akan diisi saat item dipilih dalam faktur atau tagihan.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
+                                            <input type="checkbox" id="toggle" class="toggle-checkbox " style="float: right;">
+                                            <label for="toggle" class="toggle-label custom-bg " style="float: right;"></label>
+                                        </div>
                                     </div>
-                                    <!-- Row start -->
-                                    <div class="row gutters">
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                            <div class="half-width-container">
-                                                <input type="radio" name="option" id="option1"
-                                                    value="Option 1" checked>
-                                                <label class="label" for="option1">produk</label>
 
-                                                <input type="radio" name="option" id="option2"
-                                                    value="Option 2">
-                                                <label class="label" for="option2">Layanan</label>
-                                            </div>
-
-                                            <!-- Field wrapper start -->
-
-                                            <!-- Field wrapper end -->
-
+                                    <div class="">
+                                        <div style="border-bottom: solid black 1px; margin-bottom: 2%; margin-top: 2%;">
+                                            <h6>Umum</h6>
+                                            <p>Pilih kategori untuk membuat laporan Anda lebih detail. Deskripsi akan diisi saat item dipilih dalam faktur atau tagihan.</p>
                                         </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <!-- Row start -->
+                                        <div class="row gutters">
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <input class="form-control" type="text" placeholder=" Masukan nama">
-                                                <div class="field-placeholder" >Nama <span
-                                                        class="text-danger">*</span></div>
-                                                <div class="form-text">
-                                                   
+                                                <div class="half-width-container">
+
+                                                    <input type="radio" name="option" id="option1" value="Option 1" checked>
+                                                    <label class="label" for="option1">Produk</label>
+
+                                                    <input type="radio" name="option" id="option2" value="Option 2">
+                                                    <label class="label" for="option2">Layanan</label>
                                                 </div>
+
+                                                <!-- Field wrapper start -->
+
+                                                <!-- Field wrapper end -->
+
                                             </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <div class="form-group">
-                                                    <div class="field-placeholder" >Kategori <span
-                                                        class="text-danger">*</span></div>
-                                                    <select class="form-control" id="dropdownSelect">
-                                                      <option disabled selected>Pilih salah satu</option>
-                                                      <option>Makanan</option>
-                                                      <option>Umum</option>
-                                                    </select>
-                                                  </div>
-                                                  
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 5%">
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 
                                                 <!-- Field wrapper start -->
                                                 <div class="field-wrapper">
-                                                    <textarea class="form-control" rows="2"></textarea>
-                                                    <div class="field-placeholder">Deskripsi <span
-                                                            class="text-danger">*</span></div>
+                                                    <input class="form-control" type="text" placeholder=" Masukan nama">
+                                                    <div class="field-placeholder">Nama <span class="text-danger">*</span></div>
                                                     <div class="form-text">
-                                                        Silakan masukkan Deskripsi.
+
                                                     </div>
                                                 </div>
                                                 <!-- Field wrapper end -->
-    
-                                            </div>
-                                            <!-- Field wrapper end -->
 
-                                        </div>
-                                        <div style="border-bottom: solid black 1px;margin-bottom:1%">
-                                            <b>Penagihan</b>
-                                            <p>Informasi Penjualan digunakan dalam faktur, dan Informasi Pembelian digunakan dalam tagihan. Pajak akan diterapkan pada faktur dan tagihan.</p>
-                                        </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                            <!-- Field wrapper start -->
-                                            
-                                              <div class="row">
-                                                <div class="col-md-6">
-                                                    <input type="checkbox" id="checkbox1" name="checkbox1" onchange="toggleInputsDisable(1)">
-                                                  <label for="checkbox1"> Informasi Penjualan</label>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <input type="checkbox" id="checkbox2" name="checkbox2" onchange="toggleInputsDisable(2)">
-                                                  <label for="checkbox2"> Informasi Pembelian</label>
-                                                </div>
-                                              </div>
-                                         
-                                            <!-- Field wrapper end -->
-                                          </div>
-                                          
-                                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                              <input class="form-control" type="number" id="inputField1" name="inputField1" disabled>
-                                              <div class="field-placeholder">Harga Jual</div>
                                             </div>
-                                            <!-- Field wrapper end -->
-                                          </div>
-                                          
-                                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                              <input class="form-control" type="text" id="inputField2" name="inputField2" disabled>
-                                              <div class="field-placeholder">Harga Beli</div>
-                                            </div>
-                                            <!-- Field wrapper end -->
-                                          </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <div class="form-group">
-                                                    <div class="field-placeholder" >Pajak <span
-                                                        class="text-danger">*</span></div>
-                                                    <select class="form-control" id="dropdownSelect">
-                                                      <option disabled selected>Pilih salah satu</option>
-                                                      <option>PPn</option>
-                                                      <option>PPh</option>
+                                                <!-- Field wrapper start -->
+                                                <div class="field-wrapper">
+                                                    <select class="select-multiple js-states" title="Select Product Category">
+                                                        <option disabled selected>Pilih Salah Satu</option>
+                                                        <option>Makanan</option>
+                                                        <option>Minuman</option>
                                                     </select>
-                                                  </div>
-                                                  
+                                                    <div class="field-placeholder">Digit Nomor<span class="text-danger">*</span></div>
+                                                </div>
+
                                             </div>
-                                            <!-- Field wrapper end -->
+                                                <!-- Field wrapper end -->
 
+                                            
+
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                                                <!-- Field wrapper start -->
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                                                    <!-- Field wrapper start -->
+                                                    <div class="field-wrapper">
+                                                        <textarea class="form-control" rows="2"></textarea>
+                                                        <div class="field-placeholder">Deskripsi <span class="text-danger">*</span></div>
+                                                        <div class="form-text">
+                                                            Silakan masukkan Deskripsi.
+                                                        </div>
+                                                    </div>
+                                                    <!-- Field wrapper end -->
+
+                                                </div>
+                                                <!-- Field wrapper end -->
+
+                                            </div>
+                                            <div style="border-bottom: solid black 1px; margin-bottom: 2%; margin-top: 2%;">
+                                                <h6>Penagihan</h6>
+                                                <p>Informasi Penjualan digunakan dalam faktur, dan Informasi Pembelian digunakan dalam tagihan. Pajak akan diterapkan pada faktur dan tagihan.</p>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <!-- Field wrapper start -->
+
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <input type="checkbox" id="checkbox1" name="checkbox1" onchange="toggleInputsDisable(1)">
+                                                        <label for="checkbox1"> Informasi Penjualan</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input type="checkbox" id="checkbox2" name="checkbox2" onchange="toggleInputsDisable(2)">
+                                                        <label for="checkbox2"> Informasi Pembelian</label>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Field wrapper end -->
+                                            </div>
+
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                <!-- Field wrapper start -->
+                                                <div class="field-wrapper">
+                                                    <input class="form-control" type="number" id="inputField1" name="inputField1" disabled>
+                                                    <div class="field-placeholder">Harga Jual</div>
+                                                </div>
+                                                <!-- Field wrapper end -->
+                                            </div>
+
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                <!-- Field wrapper start -->
+                                                <div class="field-wrapper">
+                                                    <input class="form-control" type="text" id="inputField2" name="inputField2" disabled>
+                                                    <div class="field-placeholder">Harga Beli</div>
+                                                </div>
+                                                <!-- Field wrapper end -->
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                                <!-- Field wrapper start -->
+                                                <div class="field-wrapper">
+                                                    <select class="select-multiple js-states" title="Select Product Category">
+                                                        <option disabled selected>Pilih Salah Satu</option>
+                                                        <option>PPn</option>
+                                                        <option>PPh</option>
+                                                    </select>
+                                                    <div class="field-placeholder">Pajak<span class="text-danger">*</span></div>
+                                                </div>
+
+                                            </div>
+                                                <!-- Field wrapper end -->
+
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <div class="d-flex justify-content-end mt-4">
+                                                    <button class="btn btn-outline-primary1" type="submit" style="border-radius: 20px; margin-right: 1%" href="#">Batal</button>
+                                                    <button class="btn btn-primary" type="submit" style="border-radius: 20px">Simpan</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"
-                                            style="margin-left: 81%">
-                                            <a href="#" style="margin-right: 4%">Batal</a>
-                                            <button class="btn btn-primary"
-                                                style="border-radius: 20px">Simpan</button>
-                                        </div>
+                                        <!-- Row end -->
+
                                     </div>
-                                    <!-- Row end -->
-
                                 </div>
-                            </div>
-                            <!-- Card end -->
+                                <!-- Card end -->
 
+                            </div>
                         </div>
                     </div>
                     <!-- Row end -->
@@ -378,6 +354,10 @@ label{
     <script src="{{ asset('Gmbslagi/vendor/slimscroll/slimscroll.min.js') }}"></script>
     <script src="{{ asset('Gmbslagi/vendor/slimscroll/custom-scrollbar.js') }}"></script>
 
+    <!-- Dropdown Search -->
+    <script src="{{ asset ("Gmbslagi/vendor/bs-select/bs-select.min.js")}}"></script>
+    <script src="{{ asset ("Gmbslagi/vendor/bs-select/bs-select-custom.js")}}"></script>
+
     <!-- Search Filter JS -->
     <script src="{{ asset('Gmbslagi/vendor/search-filter/search-filter.js') }}"></script>
     <script src="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.js') }}"></script>
@@ -386,15 +366,15 @@ label{
     <script src="{{ asset('Gmbslagi/js/main.js') }}"></script>
     <script>
         function toggleInputsDisable(checkboxNumber) {
-          var inputField1 = document.getElementById("inputField1");
-          var inputField2 = document.getElementById("inputField2");
-      
-          if (checkboxNumber === 1) {
-            inputField1.disabled = !inputField1.disabled;
-          } else if (checkboxNumber === 2) {
-            inputField2.disabled = !inputField2.disabled;
-          }
+            var inputField1 = document.getElementById("inputField1");
+            var inputField2 = document.getElementById("inputField2");
+
+            if (checkboxNumber === 1) {
+                inputField1.disabled = !inputField1.disabled;
+            } else if (checkboxNumber === 2) {
+                inputField2.disabled = !inputField2.disabled;
+            }
         }
-      </script>
-      
+    </script>
+
 </body>
