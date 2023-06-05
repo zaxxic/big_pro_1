@@ -400,7 +400,8 @@
 
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
-        
+        @include('layouts.header')
+
         <!-- Sidebar wrapper end -->
 
         <!-- *************
@@ -412,15 +413,23 @@
                 <!-- Content wrapper start -->
                 <div class="content-wrapper">
                     <!-- Row start -->
+                    <div class="card-body">
                     <div class="row gutters">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                            <div class="card">
-                                <div class="card-header">
+                            <div class="">
+                                <div class="d-flex">
+                                <div class="col-xl-11 col-lg-11 col-md-2 col-sm-2 col-12">
                                     <div class="card-title">
                                         <h3>Hada<button type="button" style="border: none; background:none;">☆</button>
                                         </h3>
                                     </div>
+
                                     <div class="dropdown" style="border-radius:2px">
+
+                                </div>
+                                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-2 col-12">
+                                    <div class="dropdown">
+
                                         <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical"
                                             href="#" role="button" data-bs-toggle="dropdown"
                                             aria-expanded="false">
@@ -433,6 +442,7 @@
                                             
                                         </ul>
                                     </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -513,7 +523,7 @@
                             <!-- Card start -->
                             <div class="card">
 
-                                <div class="card-body">
+                                <div class="">
 
                                     <div style="margin-top: 10%;">
                                         <h6>Mata Uang</h6>
@@ -776,6 +786,7 @@
                         <!-- Card end -->
                         <!-- </div> -->
                     </div>
+    </div>
                     <!-- Row end -->
                 </div>
                 <!-- Row end -->
@@ -837,6 +848,8 @@
     <!-- Main Js Required -->
     <script src="{{ asset('Gmbslagi/js/main.js') }}"></script>
     <script>
+         $('#pills-profile-tab').click()
+            $('#pills-home-tab').click()
         // Tambahkan event listener untuk menampilkan/menyembunyikan dropdown saat tombol titik tiga diklik
         document.querySelector('.dropdown-toggle').addEventListener('click', function() {
             document.getElementById('dropdown-menu').classList.toggle('show');

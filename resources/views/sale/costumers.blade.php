@@ -193,6 +193,7 @@
 
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
+        @include('layouts.header')
         <!-- Sidebar wrapper end -->
 
         <!-- *************
@@ -200,44 +201,7 @@
 			************* -->
         <div class="main-container">
 
-            <!-- Page header starts -->
-            <div class="page-header">
-
-                <!-- Row start -->
-                <div class="row gutters">
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-9">
-
-                        <!-- Search container start -->
-                        <div class="search-container">
-
-                            <!-- Toggle sidebar start -->
-                            <div class="toggle-sidebar" id="toggle-sidebar">
-                                <i class="icon-menu"></i>
-                            </div>
-                            <!-- Toggle sidebar end -->
-
-                            <!-- Mega Menu Start -->
-                            <div class="cd-dropdown-wrapper">
-
-
-
-                            </div>
-                            <!-- Mega Menu End -->
-
-                            <!-- Search input group start -->
-
-                            <!-- Search input group end -->
-
-                        </div>
-                        <!-- Search container end -->
-
-                    </div>
-
-                </div>
-                <!-- Row end -->
-
-            </div>
-            <!-- Page header ends -->
+           
 
             <!-- Content wrapper scroll start -->
             <div class="content-wrapper-scroll">
@@ -246,12 +210,13 @@
                 <div class="content-wrapper">
 
                     <!-- Row start -->
+                    <div class="card-body">
                     <div class="row gutters">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                             <!-- Card start -->
-                            <div class="card">
-                                <div class="card-header">
+                            <div class="">
+                                <div class="d-flex">
                                     <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
                                         <div class="card-title">
                                             <h3>Pelanggan<button type="button" style="border: none; background:transparent;">☆</button></h3>
@@ -278,7 +243,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-body">
+                                <div class="">
                                     <!-- Row start -->
                                     <div class="row gutters" style="margin-left: 10%; margin-bottom: -5%">
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
@@ -511,6 +476,7 @@
                             <!-- Card end -->
 
                         </div>
+                    </div>
                     </div>
                     <!-- Row end -->
 

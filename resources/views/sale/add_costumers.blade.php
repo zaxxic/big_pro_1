@@ -50,6 +50,7 @@
 
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
+        @include('layouts.header')
         <!-- Sidebar wrapper end -->
 
         <!-- *************
@@ -66,12 +67,13 @@
                 <div class="content-wrapper">
 
                     <!-- Row start -->
+                    <div class="card-body">
                     <div class="row gutters">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                             <!-- Card start -->
-                            <div class="card" style="overflow: hidden">
-                                <div class="card-header">
+                            <div class="" style="">
+                                <div class="row">
                                     <div class="card-title">
                                         <h3>Tambah Pelanggan<button type="button"
                                                 style="border: none; background:none;">☆</button></h3>
@@ -85,7 +87,7 @@
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"
                                             style="margin-bottom: 1%;">
 
-                                            <div style="border-bottom: solid grey 1px;margin-bottom:1%">
+                                            <div style="border-bottom: solid grey 1px; margin-bottom: 2%; margin-top: 2%;">
                                                 <h6>Umum</h6>
                                                 <p>Informasi kontak klien Anda akan muncul di faktur dan profil mereka.
                                                     Anda juga dapat mengizinkan klien Anda untuk masuk untuk melacak
@@ -165,7 +167,7 @@
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"
                                             style="margin-bottom: 1%;">
 
-                                            <div style="border-bottom: solid grey 1px;margin-bottom:1%">
+                                            <div style="border-bottom: solid grey 1px; margin-bottom: 2%; margin-top: 1%;">
                                                 <h6>Penagihan</h6>
                                                 <p>Nomor pajak muncul di setiap tagihan yang diterbitkan untuk Anda.
                                                     Mata uang yang dipilih menjadi mata uang bawaan untuk penyedia ini.
@@ -284,6 +286,7 @@
                             <!-- Card end -->
 
                         </div>
+                    </div>
                     </div>
                     <!-- Row end -->
 
