@@ -136,6 +136,7 @@
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
         <!-- Sidebar wrapper end -->
+        @include('layouts.header')
 
         <!-- *************
 				************ Main container start *************
@@ -150,18 +151,19 @@
                 <div class="content-wrapper">
 
                     <!-- Row start -->
+                    <div class="card-body">
                     <div class="row gutters">
                         <form action="">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                             <!-- Card start -->
-                            <div class="card" style="overflow: hidden">
-                                <div class="card-header">
+                            <div class="" style="">
+                                <div class="row">
                                     <div class="card-title">
                                         <h3>Sunting Pengeluaran<button type="button" style="border: none; background:none;">☆</button></h3>
                                     </div>
                                 </div>
-                                <div class="card-body">
+                                <div class="">
 
                                     <!-- Row start -->
                                     <div class="row gutters">
@@ -387,7 +389,6 @@
                                                     <!-- Field wrapper end -->
 
                                                 </div>
-
                                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                                                         <!-- Field wrapper start -->
@@ -500,6 +501,10 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="field-wrapper">
+                                                   
+
                                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                                                         <!-- Field wrapper start -->
@@ -592,6 +597,7 @@
 
                         </div>
                         </form>
+                    </div>
                     </div>
                     <!-- Row end -->
 
