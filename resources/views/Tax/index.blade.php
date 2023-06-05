@@ -59,7 +59,7 @@
 			white-space: nowrap;
 			background-color: #f9f9f9;
 			border: 0;
-			/* border-radius: 5px; */
+			/* border-radius: 5px3 */
 			right: 0;
 		}
 
@@ -68,7 +68,7 @@
 			display: inline-block;
 
 			background-color: #DFDFDF;
-			border-radius: 5px;
+			border-radius: 3px;
 		}
 
 		.dropdown-content {
@@ -99,14 +99,14 @@
 			color: #000000;
 			background-color: #E8E8E8;
 			border-color: #E8E8E8;
-			border-radius: 5px;
+			border-radius: 3px;
 		}
 
 		.btn-ekspor-primary:hover {
 			color: #ffffff;
 			background-color: #5957b1;
 			border-color: #5957b1;
-			border-radius: 5px;
+			border-radius: 3px;
 		}
 
 		.btn-check:focus+.btn-ekspor-primary,

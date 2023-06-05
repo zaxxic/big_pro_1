@@ -234,8 +234,8 @@
                                     <!-- Row end -->
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                     <div class="d-flex justify-content-end mt-4">
-                                        <button class="btn btn-outline-primary1" type="submit" style="border-radius: 20px; margin-right: 1%" href="#">Batal</button>
-                                        <button class="btn btn-primary" type="submit" style="border-radius: 20px">Simpan</button>
+                                        <button class="btn btn-outline-primary1"  style="border-radius: 3px; margin-right: 1%" ><a href="{{url('category')}}"> Batal</a></button>
+                                        <button class="btn btn-primary" type="submit" style="border-radius: 3px">Simpan</button>
                                     </div>
                                 </div>
 
