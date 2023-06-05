@@ -324,7 +324,7 @@
 
     <!-- Slimscroll JS -->
     <script src="{{ asset('Gmbslagi/vendor/slimscroll/slimscroll.min.js') }}"></script>
-    <script src="{{ asset('vvendor/slimscroll/custom-scrollbar.js') }}"></script>
+    <script src="{{ asset('Gmbslagi/vendor/slimscroll/custom-scrollbar.js') }}"></script>
 
     <!-- Search Filter JS -->
     <script src="{{ asset('Gmbslagi/vendor/search-filter/search-filter.js') }}"></script>
