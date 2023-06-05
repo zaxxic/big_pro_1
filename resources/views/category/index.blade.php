@@ -233,31 +233,30 @@
                             <div class="">
                             <div class="">
                                 <div class="d-flex">
-								<div class="col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12">
-									<div class="card-title">
-										<h3 style="margin-bottom: 0rem;">Kategori<button type="button" style="border: none; background:transparent;">☆</button></h3>
-									</div>
-								</div>
-								<div class="col-xl-6 col-lg-6 col-md-2 col-sm-2 col-12">
-									<div class="graph-day-selection" role="group" style="margin-left: 68%">
-										<a href="{{url('add-category')}}">
-											<button type="button" class="btn active" style="background: transparent; margin-top: 2px; margin-bottom: 2px;">Tambah</button>
-										</a>
-									</div>
-								</div>
-								<div class="col-xl-1 col-lg-1 col-md-2 col-sm-2 col-12" >
-									<div class="dropdown" style="float: right;">
-										<a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
+                                        <div class="card-title"><h3>Kategori<button type="button" style="border: none; background:transparent;">☆</button></h3></div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
+                                        <div class="graph-day-selection" role="group" style="margin-left: 68%">
+											<a href="{{url('add-category')}}">
+											<button type="button" class="btn active" style="background: transparent">Tambah kategori</button>
+											</a>
+										</div>
+										</div>
+										<div class="dropdown icon-dots-three-vertical">
+											<span></span>
+											<div class="dropdown-content">
+												<a href="#">
+												<button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
+													Impor
+												</button>
+												</a>
+												<a href="#" class="icon-folder" style="color: #333">
+												<button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
+												</a>
+											</div>
+										</div>
 
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
-											<li><a class="dropdown-item" style="margin-top: 4%;" href="">Espor</a></li>
-											<li><a class="dropdown-item" href="">Impor</a></li>
-										</ul>
-									</div>
-								</div>
-								
 								</div>
                             <!-- </div> -->
                                 <div class="">
