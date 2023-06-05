@@ -274,7 +274,7 @@
                                             style="margin-left: 81%">
                                             <a href="#" style="margin-right: 4%">Batal</a>
                                             <button class="btn btn-primary"
-                                                style="border-radius: 20px">Simpan</button>
+                                                style="border-radius: 2px">Simpan</button>
                                         </div>
                                     </div>
                                     <!-- Row end -->

@@ -113,7 +113,7 @@
                                     <div class="card-title">
                                         <h3>Faktur Berulang: FBU-0002</h3>
                                     </div>
-                                    <div class="btn btn-danger" style="border-radius: 10px; background-color: #d9dbfc; color:#1900ff; height: 30px; border:none">
+                                    <div class="btn btn-danger" style="border-radius: 2px; background-color: #d9dbfc; color:#1900ff; height: 30px; border:none">
 										Aktif
 										</div>
                                 </div>
@@ -121,7 +121,7 @@
 
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                     <div class="card-body">
-                                        <div class="alert alert-primary" style="border-radius: 10px; color:#4e58eb; background-color:#c5d2fc" role="alert">
+                                        <div class="alert alert-primary" style="border-radius: 2px; color:#4e58eb; background-color:#c5d2fc" role="alert">
                                             Ini adalah faktur berulang dan faktur selanjutnya akan dibuat otomatis pada tanggal 03 Jun 2023
 
 
@@ -146,7 +146,7 @@
                                                     aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                                                     <div class="accordion-body">
                                                         <button type="button"
-                                                            style="border-radius: 10px; width:18%; height: 30px; border:none;">Sunting</button>
+                                                            style="border-radius: 2px; width:18%; height: 30px; border:none;">Sunting</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -253,7 +253,7 @@
                                                                 <br>
                                                                 <p style="font-size: 8pt; margin-top: -10%">pembelian api untuk map</p>
                                                             </td>
-                                                            <td><span class="badge">1</span></td>
+                                                            <td><span class="badge" style="border-radius:2px">1</span></td>
                                                             <td>385.000,00</td>
                                                             <td>385.000,00</td>
                                                         </tr>

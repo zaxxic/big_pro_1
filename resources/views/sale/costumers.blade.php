@@ -259,8 +259,8 @@
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
                                         <div class="graph-day-selection" role="group" style="margin-left: 68%">
-                                            <a href="{{url('add_supplier')}}">
-                                                <button type="button" class="btn active" style="background: transparent">Tambah pelanggan</button>
+                                            <a href="{{url('add_costumers')}}">
+                                                <button type="button" class="btn active" style="background: transparent">Tambah</button>
                                             </a>
                                         </div>
                                     </div>

@@ -76,8 +76,8 @@
             text-align: center;
             height: 35px;
             padding: 8px;
-            border-radius: 0px 5px 5px 0px;
-        }
+            border-radius: 0px 2px 2px 0px;
+        }       
 
         .empty-box2.active {
             height: 35px;
@@ -108,7 +108,7 @@
             text-align: center;
             height: 35px;
             padding: 8px;
-            border-radius: 5px 0px 0px 5px;
+            border-radius: 2px 0px 0px 2px;
         }
 
         .empty-box1.active {
@@ -420,7 +420,7 @@
                                         <h3>Hada<button type="button" style="border: none; background:none;">☆</button>
                                         </h3>
                                     </div>
-                                    <div class="dropdown">
+                                    <div class="dropdown" style="border-radius:2px">
                                         <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical"
                                             href="#" role="button" data-bs-toggle="dropdown"
                                             aria-expanded="false">
@@ -430,12 +430,7 @@
                                                     href="{{ url('add_costumers') }}">Tambah Faktur</a></li>
                                             <li><a class="dropdown-item-bt" href="{{ url('add_income') }}">Tambah
                                                     Transfer</a></li>
-                                            <li><a class="dropdown-item" href="{{ url('add_income') }}">Sunting</a>
-                                            </li>
-                                            <li><a class="dropdown-item-bt" href="{{ url('ad_income') }}">Hapus</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="#">Cetak</a></li>
-                                            <li><a class="dropdown-item" href="#">Unduh PDF</a></li>
+                                            
                                         </ul>
                                     </div>
                                 </div>
