@@ -79,6 +79,7 @@
                 <div class="content-wrapper">
 
                     <!-- Row start -->
+                    <div class="card-body">
                     <div class="row gutters">
                         <div class="col-xl-12">
                             <!-- Card start -->
@@ -91,7 +92,7 @@
                                     <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
                                         <div class="graph-day-selection" role="group" style="margin-left: 68%">
                                             <a href="{{url('add_transfer')}}">
-                                                <button type="button" class="btn active" style="background: transparent">Tambah Laporan</button>
+                                                <button type="button" class="btn active" style="background: transparent">Tambah</button>
                                             </a>
                                         </div>
                                     </div>
@@ -249,6 +250,7 @@
                         </div>
                         <!-- Row end -->
 
+                    </div>
                     </div>
                     <!-- Content wrapper end -->
 

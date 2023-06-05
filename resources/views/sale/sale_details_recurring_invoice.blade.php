@@ -111,9 +111,9 @@
                     <div class="card">
                                 <div class="card-header col-6">
                                     <div class="card-title">
-                                        <h3>Faktur Berulang: FBRL-00002</h3>
+                                        <h3>Faktur Berulang: FBU-0002</h3>
                                     </div>
-                                    <div class="alert alert-secondary" style="border-radius: 10px; background-color:#f36a6a;width:90px;text-align:center;" role="alert">
+                                    <div class="btn btn-danger" style="border-radius: 10px; background-color: #d9dbfc; color:#1900ff; height: 30px; border:none">
 										Aktif
 										</div>
                                 </div>
@@ -121,7 +121,7 @@
 
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                     <div class="card-body">
-                                        <div class="alert alert-primary" style="border-radius: 10px; background-color:#9a99e2" role="alert">
+                                        <div class="alert alert-primary" style="border-radius: 10px; color:#4e58eb; background-color:#c5d2fc" role="alert">
                                             Ini adalah faktur berulang dan faktur selanjutnya akan dibuat otomatis pada tanggal 03 Jun 2023
 
 
@@ -198,7 +198,8 @@
 
                                     </div>
                                     </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+                                    style="margin-left: -3%; margin-top: 2%">
                                     <form
                                         action="https://www.kodingwife.com/demos/unipro/v1-x/05-desig4-violet/reports.html">
                                         <div class="rcr-screen">
@@ -229,9 +230,10 @@
                                                     <p>cireng@gmail.com</p>
                                                 </div>
                                                 <div class="col-6">
-                                                    <p>Nomor faktur: INV-9</p>
-                                                    <p>Tanggal faktur: 24 mei 2023</p>
-                                                    <p>Tanggal Jatuh Tempo: 24 mei 2023</p>
+                                                    <p>Nomor faktur: FBU-0002</p>
+                                                    <p>Jumlah Pesanan: 1</p>
+                                                    <p>Tanggal faktur: 29 mei 2023</p>
+                                                    <p>Tanggal Jatuh Tempo: 29 mei 2023</p>
                                                 </div>
                                             </div>
                                             <div class="table-responsive">

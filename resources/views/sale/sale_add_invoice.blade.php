@@ -150,16 +150,12 @@
 			<div class="main-container">
 
 				<!-- Page header starts -->
-				<div class="page-header">
 					
-					<!-- Row start -->
-					<div class="row gutters">
-						@include('layouts.header')
+							@include('layouts.header')
 
-					</div>
-					<!-- Row end -->					
+				
 
-				</div>
+			
 				<!-- Page header ends -->
 
 				<!-- Content wrapper scroll start -->
@@ -193,7 +189,7 @@
                                                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                                                     <div class="accordion-body">
                                                         <div class="d-flex row">
-                                                            <div class="col-8">
+                                                            <div  class="col-xl-9 col-lg-12 col-md-12 col-sm-12">
                                                         <div class="d-flex align-items-center">
                                                           <div class="flex-grow-1 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-8" style="margin-bottom: 15%">
                                                             <div class="field-wrapper">
@@ -207,11 +203,10 @@
                                                           </div>
                                                         </div>
                                                             </div>
-                                                        <div class="col-4">
-                                                          <div class="flex-grow-0 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-8">
-                                                              <div id="dropzone" style="width: 300px; height:300px">
+                                                            <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
+                                                              <div id="dropzone" style="height:300px">
                                                                 <label for="subjudul" class="field-label">Logo<span class="text-danger">*</span></label>
-                                                                <form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload" style="margin-right: 10%">
+                                                                <form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
                                                                 <div class="dz-message needsclick">
                                                                   <button type="button" class="dz-button">Pilih berkas di sini untuk mengunggah.</button><br>
                                                                 </div>
@@ -234,9 +229,8 @@
 
                                           </div>
                                             </div>
-                                            <div class="d-flex">
-                                              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" style="margin-right: 5%">
-                                                <div class="field-wrapper mb-3">
+                                            <div class="row">
+                                                <div class="field-wrapper mb-3 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12" style="margin-left: initial;height: 76px;margin-right: -1%;">
                                                   <label for="judul" class="field-label">Pelanggan <span class="text-danger">*</span></label>
                                                   <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?" style="height: 118px">
                                                     <option>Rudi</option>
@@ -248,6 +242,8 @@
                                                     <option>Triski</option>
                                                   </select>                                                  
                                                 </div>
+                                                <div  class=" col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 d-flex">
+                                                  <div class="col-6 ml-5 mr-5" style="margin-right:1%">
                                                   <div class="field-wrapper mb-3">
                                                     <label for="judul" class="field-label">Tanggal Faktur</label>
                                                     <input class="form-control" type="text" placeholder="Masukkan Nama">
@@ -263,6 +259,8 @@
                                                       <option>Jatuh tempo saat diterima</option>
                                                     </select>                                                  
                                                   </div>
+                                                  </div>
+                                                  <div class="col-6">
                                                   <div class="field-wrapper mb-3">
                                                     <label for="judul" class="field-label">Nomor Faktur </label>
                                                     <input class="form-control" type="text" placeholder="Masukkan Nama">
@@ -271,8 +269,10 @@
                                                     <label for="judul" class="field-label">Jumlah Pesanan </label>
                                                     <input class="form-control" type="text" placeholder="Masukkan Jumlah Pesanan">
                                                   </div>
+                                                  </div> 
+                                                </div>
                                               </div>
-                                              </div>
+                                            </div>
                                               <!-- Row start -->
                                             <div class="row gutters">
                                               <div class="col-12">
@@ -527,9 +527,9 @@
                                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                                               <div class="accordion-body">
                                                 <div class="d-flex row">
-                                                  <div class="col-4">
-                                                    <div class="flex-grow-0 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-8">
-                                                      <div id="dropzone" style="width: 300px; height:300px">
+                                                  <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                    <div class="">
+                                                      <div id="dropzone" style="height:300px">
                                                         <label for="subjudul" class="field-label">Lampiran<span class="text-danger">*</span></label>
                                                         <form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload" style="margin-right: 10%">
                                                           <div class="dz-message needsclick">
@@ -539,9 +539,7 @@
                                                       </div>
                                                     </div>
                                                   </div>
-                                                  <div class="col-8">
-                                                    <div class="d-flex align-items-center">
-                                                      <div class="flex-grow-1 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-8" style="margin-bottom: 15%">
+                                                  <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 mt-5">
                                                         <select id="dropdown2" class="demo-code-language" placeholder="Select a language..." autocomplete="off">
                                                           <option value="txt">Text</option>
                                                           <option value="md">Markdown</option>
@@ -563,9 +561,8 @@
                                                         </div>
                                                       </div>
                                                     </div>
-                                                  </div>
                                                 </div>
-                                              </div>
+                                              
                                             </div>
                                         </div>
 

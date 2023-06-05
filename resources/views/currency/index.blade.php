@@ -268,19 +268,7 @@
 											</a>
 										</div>
 										</div>
-										<div class="dropdown icon-dots-three-vertical">
-											<span></span>
-											<div class="dropdown-content">
-												<a href="#">
-												<button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
-													Impor
-												</button>
-												</a>
-												<a href="#" class="icon-folder" style="color: #333">
-												<button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
-												</a>
-											</div>
-										</div>
+										
 
 									</div>
 									<div class="">
@@ -347,32 +335,32 @@
 
 												</tbody>
 											</table>
-											<!-- Card start -->
-											<div class="card">
-												<div class="card-body" style="margin-left: -2.1%">
-
-													<nav aria-label="Page navigation example">
-														<ul class="pagination" style="justify-content: flex-end;">
-															<li class="page-item">
-																<a class="page-link" href="#" aria-label="Previous">
-																	<span aria-hidden="true">&laquo;</span>
-																</a>
-															</li>
-															<li class="page-item"><a class="page-link" href="#">1</a></li>
-															<li class="page-item"><a class="page-link" href="#">2</a></li>
-															<li class="page-item"><a class="page-link" href="#">3</a></li>
-															<li class="page-item">
-																<a class="page-link" href="#" aria-label="Next">
-																	<span aria-hidden="true">&raquo;</span>
-																</a>
-															</li>
-														</ul>
-													</nav>
-
-												</div>
-											</div>
-											<!-- Card end -->
 										</div>
+										<!-- Card start -->
+										<div class="card">
+											<div class="card-body" style="margin-left: -2.1%">
+
+												<nav aria-label="Page navigation example">
+													<ul class="pagination" style="justify-content: flex-end;">
+														<li class="page-item">
+															<a class="page-link" href="#" aria-label="Previous">
+																<span aria-hidden="true">&laquo;</span>
+															</a>
+														</li>
+														<li class="page-item"><a class="page-link" href="#">1</a></li>
+														<li class="page-item"><a class="page-link" href="#">2</a></li>
+														<li class="page-item"><a class="page-link" href="#">3</a></li>
+														<li class="page-item">
+															<a class="page-link" href="#" aria-label="Next">
+																<span aria-hidden="true">&raquo;</span>
+															</a>
+														</li>
+													</ul>
+												</nav>
+
+											</div>
+										</div>
+										<!-- Card end -->
 										<!-- Modal start -->
 
 										<!-- Modal end -->

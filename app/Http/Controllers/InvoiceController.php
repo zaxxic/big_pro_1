@@ -21,7 +21,7 @@ class InvoiceController extends Controller
 
     public function detail_recurring()
     {
-        return view('sale.rcrDetailInv');
+        return view('sale.sale_details_recurring_invoice');
     }
     
     public function costumers()

@@ -412,15 +412,12 @@
 
                                         </div>
 
-                                        <div class="d-flex">
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                <div style=" float: right">
-                                                    <a href="{{url('recurring_transactions')}}"><button type="button" class="btn btn-outline-primary">Batal</button></a>
-
-                                                    <a href="{{url('add_income')}}" style="margin-left: 10px;"> <button type="button" class="btn btn-secondary">Simpan</button></a>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="d-flex justify-content-end mt-4">
+                                                        <button class="btn btn-outline-primary1" type="submit" style="border-radius: 20px; margin-right: 1%" href="{{url('recurring_transactions')}}">Batal</button>
+                                                        <button class="btn btn-primary" type="submit" style="border-radius: 20px">Simpan</button>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
                                     </div>
 
 

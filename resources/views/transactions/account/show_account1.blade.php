@@ -812,6 +812,8 @@
     <!-- Main Js Required -->
     <script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
     <script>
+            $('#pills-profile-tab').click()
+            $('#pills-home-tab').click()
         // Tambahkan event listener untuk menampilkan/menyembunyikan dropdown saat tombol titik tiga diklik
         document.querySelector('.dropdown-toggle').addEventListener('click', function() {
             document.getElementById('dropdown-menu').classList.toggle('show');

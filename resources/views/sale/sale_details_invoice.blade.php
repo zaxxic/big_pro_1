@@ -88,14 +88,13 @@
 
                     <!-- Row start -->
                     <div class="row gutters">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" style="margin-left: -2%">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 
                             <!-- Card start -->
                             <div class="card">
                                 <div class="card-header">
                                     <div class="card-title">
-                                        <h3>Details<button type="button"
-                                                style="border: none; background:none;">☆</button></h3>
+                                        <h3>Biaya nikah: FKR-9</h3>
                                     </div>
                                     <div class="btn btn-danger" style="border-radius: 2px; background-color: #ffd2d2; color:#D21312; height: 30px; width: 20%; border:none">
 										Terkirim
@@ -104,6 +103,8 @@
                                 <div class="card-body">
                                     <div class="alert alert-primary" style="border-radius: 2px; color:#4e58eb; background-color:#c5d2fc" role="alert">
                                         Faktur ini dihasilkan otomatis dari RCI-00001
+                                    <div class="alert alert-primary" style="border-radius: 10px; color:#4e58eb; background-color:#c5d2fc" role="alert">
+                                        Faktur ini dihasilkan otomatis dari a <a href="{{ url ('details_recurring')}}" style="color:#4e58eb;">FBU-00002</a>
                                     </div>
                                     <!-- Faq start -->
                                     <div class="accordion" id="faqAccordion">
@@ -191,8 +192,17 @@
                                                         </div>
                                                         <div class="modal-body">
                                                             <div class="field-wrapper mb-2">
+                                                                <label for="nomor-faktur" class="field-label">Kepada<span class="text-danger">*</span></label>
+                                                                <input id="nomor-faktur" class="form-control" type="text" placeholder="Masukkan Nomor Faktur">
+                                                              </div>
+                                                            <div class="field-wrapper mb-2">
+                                                                <label for="nomor-faktur" class="field-label">Subjek<span class="text-danger">*</span></label>
+                                                                <input id="nomor-faktur" class="form-control" type="text" placeholder="Masukkan Nomor Faktur">
+                                                              </div>
+                                                            <div class="field-wrapper mb-2">
+                                                                <label for="pemasok" class="field-label">Badan<span class="text-danger">*</span></label>
                                                                 <div class="summernote"></div>
-                                                            </div> 
+                                                            </div>
                                                         </div>
                                                         <div class="modal-footer">
                                                             <div type="button" class="btn btn-danger" style="background-color:rgb(255, 0, 0); border:none; border-radius:2px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</div>
@@ -282,27 +292,18 @@
                             <!-- Card end -->
 
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12"
-                            style="margin-left: -3%; margin-top: 8%">
-                            <div class="login-wrapper">
-                                <form
-                                    action="https://www.kodingwife.com/demos/unipro/v1-x/05-desig4-violet/reports.html">
-                                    <div class="login-screen">
-                                        <div class="login-body pb-4">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+                        style="margin-left: -3%; margin-top: 8%">
+                            <form
+                                action="https://www.kodingwife.com/demos/unipro/v1-x/05-desig4-violet/reports.html">
+                                <div class="rcr-screen">
+                                    <div class="login-body pb-4 ">
+                                        <div class="d-flex row col-12 ms-2">
                                             <p>Biaya nikah</p>
-                                            <div class="d-flex row">
-                                                <div class="col-8">
-                                                    <img style="width: 25%"
-                                                        src="{{ asset('Gmbslagi/img/Carausel/person.jpg') }}"
-                                                        alt="Uni Pro Admin">
-                                                </div>
-												<div class="ml-2 col-4">
-                                                <p style="float: right">cina baik hati</p>
-                                                <br>
-                                                <p style="float: right">unknown company</p>
-                                                <br>
-                                                <p style="float: right">cireng@gmail.com</p>
-											</div>
+                                            <div class="col-8">
+                                                <img style="width: 25%"
+                                                    src="{{ asset('Gmbslagi/img/Carausel/person.jpg') }}"
+                                                    alt="Uni Pro Admin">
                                             </div>
                                             <div class="field-wrapper mb-3">
 												<div style="border-bottom: solid grey 1px; margin-top: 4%">
@@ -358,11 +359,71 @@
 											</div>
                                            
 										</div>
+                                            <div class="ml-2 col-4">
+                                            <p style="float: right">cina baik hati</p>
+                                            <br>
+                                            <p style="float: right">unknown company</p>
+                                            <br>
+                                            <p style="float: right">cireng@gmail.com</p>
+                                        </div>
+                                        </div>
+                                        <div class="field-wrapper mb-3">
+                                            <div style="border-bottom: solid grey 1px; margin-top: 4%">
+                                        </div>
+                                        <div class="d-flex" style="margin-top: 2%">
+                                        <div class="col-6 ms-3">
+                                            <p>Tagihan Kepada</p>
+                                            <p>Koirul</p>
+                                            <p>089812371829</p>
+                                            <p>cireng@gmail.com</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p>Nomor faktur: FKR-9</p>
+                                            <p>Tanggal faktur: 24 mei 2023</p>
+                                            <p>Tanggal Jatuh Tempo: 24 mei 2023</p>
                                         </div>
                                     </div>
-                                </form>
+                                    <div class="table-responsive">
+                                        <table class="table products-table col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <thead>
+                                                <tr>
+                                                    <th>Item</th>
+                                                    <th>Kuantitas</th>
+                                                    <th>Harga</th>
+                                                    <th>Jumlah</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>api maps</p>
+                                                        <br>
+                                                        <p style="font-size: 8pt; margin-top: -10%">pembelian api untuk map</p>
+                                                    </td>
+                                                    <td><span class="badge">1</span></td>
+                                                    <td>385.000,00</td>
+                                                    <td>385.000,00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="float: right; margin-bottom: -5%">
+                                            <!-- Card start -->
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <li class="list-group-item">Subtotal: 9000000 </li>
+                                                        <li class="list-group-item">Ppn(20%): 9000000 </li>
+                                                        <li class="list-group-item">PPH(12%): 9000000 </li>
+                                                        <li class="list-group-item">Total: 9000000 </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- Card end -->
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </form>
                             </div>
-                        </div>
                     </div>
                     <!-- Row end -->
 
@@ -444,6 +505,28 @@
         // Alert the copied text
         alert("Copied the text: " + copyText.value);
       }</script>
+      <style>
+
+
+        .rcr-screen {
+            position: relative;
+            background: #ffffff;
+            border: 1px solid #e1e8f3;
+            border-radius: 20px;
+            -webkit-box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
+            box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
+            min-width: 100%;
+            max-width: 100%;
+        }
+          /* Tambahkan gaya CSS yang diperlukan di sini */
+                /* ... */
+        
+                /* Media queries untuk tampilan seluler */
+                @media only screen and (max-width: 600px) {
+                    /* Tambahkan gaya CSS untuk tampilan seluler di sini */
+                    /* ... */
+                }
+        </style>
 </body>
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/accordions.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:35 GMT -->
