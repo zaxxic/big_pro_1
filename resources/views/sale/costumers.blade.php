@@ -341,7 +341,7 @@
                                     <div class="content">
                                         <div class="searchcontainer">
                                             <i class="icon-search"></i><input class="search " type="text" placeholder="Cari Disini..." style="
-                                              margin-bottom: 2%; font-size:10pt " />
+                                              margin-bottom: 2%; font-size:10pt;margin-top:5% " />
                                         </div>
                                     </div>
                                     <div class="table-responsive">
