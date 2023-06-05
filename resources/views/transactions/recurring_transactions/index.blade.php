@@ -554,6 +554,7 @@
                                    
                                 </div>
                             </div>
+                        </div>
                              <!-- Card start -->
                              <div class="card">
                                         <div class="card-body" style="margin-left: -2.1%">
