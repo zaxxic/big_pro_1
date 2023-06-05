@@ -97,12 +97,12 @@
                                         <h3>Details<button type="button"
                                                 style="border: none; background:none;">☆</button></h3>
                                     </div>
-                                    <div class="btn btn-danger" style="border-radius: 10px; background-color: #ffd2d2; color:#D21312; height: 30px; width: 20%; border:none">
+                                    <div class="btn btn-danger" style="border-radius: 2px; background-color: #ffd2d2; color:#D21312; height: 30px; width: 20%; border:none">
 										Terkirim
 										</div>
                                 </div>
                                 <div class="card-body">
-                                    <div class="alert alert-primary" style="border-radius: 10px; color:#4e58eb; background-color:#c5d2fc" role="alert">
+                                    <div class="alert alert-primary" style="border-radius: 2px; color:#4e58eb; background-color:#c5d2fc" role="alert">
                                         Faktur ini dihasilkan otomatis dari RCI-00001
                                     </div>
                                     <!-- Faq start -->
@@ -125,7 +125,7 @@
                                                 aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                                                 <div class="accordion-body">
                                                     <button type="button"
-                                                        style="border-radius: 10px; width:18%; height: 30px; border:none;">Edit</button>
+                                                        style="border-radius: 2px; width:18%; height: 30px; border:none;">Edit</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -146,13 +146,13 @@
                                                 aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                                                 <div class="accordion-body">
                                                   <!-- Button trigger modal -->
-                                                    <button type="button"style="border-radius:10px; width:30%; height: 30px; border:none; background-color:#c5d2fc" data-bs-toggle="modal" data-bs-target="#modals">
+                                                    <button type="button"style="border-radius:2px; width:30%; height: 30px; border:none; background-color:#c5d2fc" data-bs-toggle="modal" data-bs-target="#modals">
                                                         Kirim Email
                                                     </button>
                                                     <button type="button"
-                                                        style="border-radius:10px; width:30%; height:30px; border:none">Tandai
+                                                        style="border-radius:2px; width:30%; height:30px; border:none">Tandai
                                                         Dikirim</button>
-                                                        <button type="button" style="border-radius:10px; width:36%; height:30px; border:none; margin-top:1%" data-bs-toggle="modal" data-bs-target="#exampleModalLarge">
+                                                        <button type="button" style="border-radius:2px; width:36%; height:30px; border:none; margin-top:1%" data-bs-toggle="modal" data-bs-target="#exampleModalLarge">
                                                             Bagikan Tautan
                                                         </button>
                                                         <!-- Modal start -->
@@ -173,8 +173,8 @@
 
                                                                     </div>
                                                                     <div class="modal-footer">
-                                                                        <div type="button" class="btn btn-danger" style="background-color:rgb(255, 0, 0); border:none; border-radius:10px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</div>
-                                                                    <button type="button" onclick="myFunction()" style="background-color: #55be0e; border:none; border-radius:10px; width:30%; height:25px; color:white">Salin</button>
+                                                                        <div type="button" class="btn btn-danger" style="background-color:rgb(255, 0, 0); border:none; border-radius:2px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</div>
+                                                                    <button type="button" onclick="myFunction()" style="background-color: #55be0e; border:none; border-radius:2px; width:30%; height:25px; color:white">Salin</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -195,8 +195,8 @@
                                                             </div> 
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <div type="button" class="btn btn-danger" style="background-color:rgb(255, 0, 0); border:none; border-radius:10px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</div>
-                                                            <button type="button" style="background-color: #55be0e; border:none; border-radius:10px; width:30%; height:25px; color:white">Simpan</button>
+                                                            <div type="button" class="btn btn-danger" style="background-color:rgb(255, 0, 0); border:none; border-radius:2px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</div>
+                                                            <button type="button" style="background-color: #55be0e; border:none; border-radius:2px; width:30%; height:25px; color:white">Simpan</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -220,7 +220,7 @@
                                             <div id="collapseThree" class="accordion-collapse collapse"
                                                 aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                                                 <div class="accordion-body">
-                                                    <button type="button" data-bs-toggle="modal" style="border-radius:10px; width:45%; height:30px; border:none; background-color:#55be0e; color:white" data-bs-target="#exampleModalExtraLarge">
+                                                    <button type="button" data-bs-toggle="modal" style="border-radius:2px; width:45%; height:30px; border:none; background-color:#55be0e; color:white" data-bs-target="#exampleModalExtraLarge">
                                                         Tambahkan Pembayaran
                                                     </button>
                                                     <p style="margin-top: 2%">Menerima Pembayaran Daring</p>
@@ -238,22 +238,22 @@
                                                             <div class="modal-body">
                                                                 <div class="field-wrapper mb-3">
                                                                     <label for="judul" class="field-label">Tanggal</label>
-                                                                    <input class="form-control" type="text" placeholder="Masukkan Tanggal" style="border-radius:10px">
+                                                                    <input class="form-control" type="text" placeholder="Masukkan Tanggal" style="border-radius:2px">
                                                                   </div>
                                                                   <div class="field-wrapper mb-3">
                                                                     <label for="judul" class="field-label">Jumlah</label>
-                                                                    <input class="form-control" type="text" placeholder="Masukkan Jumlah" style="border-radius:10px">
+                                                                    <input class="form-control" type="text" placeholder="Masukkan Jumlah" style="border-radius:2px">
                                                                   </div>
                                                                     <div class="field-wrapper mb-3">
                                                                       <label for="judul" class="field-label">Metode Pembayaran <span class="text-danger">*</span></label>
-                                                                      <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?" style="border-radius:10px">
+                                                                      <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?" style="border-radius:2px">
                                                                         <option selected>Cash</option>
                                                                         <option>Transfer Bank</option>
                                                                       </select>                                                  
                                                                     </div>
                                                                     <div class="field-wrapper mb-3">
                                                                       <label for="judul" class="field-label">Akun <span class="text-danger">*</span></label>
-                                                                      <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?" style="border-radius:10px">
+                                                                      <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?" style="border-radius:2px">
                                                                         <option>Rudi</option>
                                                                         <option selected>Ruli</option>
                                                                         <option>Adi</option>
@@ -265,8 +265,8 @@
                                                                     </div>
                                                             </div>
                                                             <div class="modal-footer">
-                                                                <div type="button" class="btn btn-danger" style="background-color:rgb(255, 0, 0); border:none; border-radius:10px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</div>
-                                                                <button type="button" style="background-color: #55be0e; border:none; border-radius:10px; width:30%; height:25px; color:white">Simpan</button>
+                                                                <div type="button" class="btn btn-danger" style="background-color:rgb(255, 0, 0); border:none; border-radius:2px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</div>
+                                                                <button type="button" style="background-color: #55be0e; border:none; border-radius:2px; width:30%; height:25px; color:white">Simpan</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -337,7 +337,7 @@
 															<br>
 															<p style="font-size: 8pt; margin-top: -10%">pembelian api untuk map</p>
 														</td>
-														<td><span class="badge">1</span></td>
+														<td><span class="badge" style="border-radius: 2px">1</span></td>
 														<td>385.000,00</td>
 														<td>385.000,00</td>
 													</tr>

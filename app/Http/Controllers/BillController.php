@@ -27,4 +27,9 @@ class BillController extends Controller
     {
         return view('purchase.rcr_detail_bill');
     }
+
+    public function detail_bill()
+    {
+        return view('purchase.detail_bill');
+    }
 }

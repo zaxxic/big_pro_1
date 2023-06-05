@@ -160,6 +160,7 @@ Route::get('/add-edit',[CategoryController::class,'category_edit'])->name('edit-
 
 //bill
 Route::get('bill', [BillController::class, 'bill'])->name('bill');
+Route::get('bill_detail', [BillController::class, 'detail_bill'])->name('detail_bill');
 Route::get('recurring_bill', [BillController::class, 'recurring_bill'])->name('recurring_bill');
 Route::get('add_recurring_bill', [BillController::class, 'add_recurring_bill' ])->name('add_recurring_bill');
 Route::get('add_bill', [BillController::class, 'add_bill'])->name('add_bill');
