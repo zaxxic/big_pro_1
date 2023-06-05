@@ -585,7 +585,7 @@
 
                                                     <!-- Field wrapper start -->
                                                     <div class="field-wrapper">
-                                                        <input class="form-control" type="text" placeholder="Masukkan E-mail Pemasok">
+                                                        <input class="form-control" type="email" placeholder="Masukkan E-mail Pemasok">
                                                         <div class="field-placeholder">Email<span class="text-danger">*</span></div>
                                                     </div>
                                                     <!-- Field wrapper end -->

@@ -188,7 +188,7 @@
 
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
-                                                <input class="form-control" type="email" placeholder=" Masukan Nama">
+                                                <input class="form-control" type="text" placeholder=" Masukan Nama">
                                                 <div class="field-placeholder">Nama <span class="text-danger">*</span></div>
                                                 <div class="form-text">
 

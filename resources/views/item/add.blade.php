@@ -217,7 +217,7 @@ label{
 
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
-                                                <input class="form-control" type="email" placeholder=" Masukan email anda">
+                                                <input class="form-control" type="text" placeholder=" Masukan nama">
                                                 <div class="field-placeholder" >Nama <span
                                                         class="text-danger">*</span></div>
                                                 <div class="form-text">

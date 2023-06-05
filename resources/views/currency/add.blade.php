@@ -176,7 +176,7 @@
 
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
-                                                <input class="form-control" type="email" placeholder=" Masukan Nama ">
+                                                <input class="form-control" type="text" placeholder=" Masukan Nama ">
                                                 <div class="field-placeholder">Nama <span class="text-danger">*</span></div>
                                                 <div class="form-text">
 
@@ -209,7 +209,7 @@
 
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
-                                                <input class="form-control" type="email" placeholder=" Masukan Kurs">
+                                                <input class="form-control" type="text" placeholder=" Masukan Kurs">
                                                 <div class="field-placeholder">Kurs <span class="text-danger">*</span></div>
                                                 <div class="form-text">
 
@@ -242,7 +242,7 @@
 
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
-                                                <input class="form-control" type="email" placeholder=" Masukan Simbol">
+                                                <input class="form-control" type="text" placeholder=" Masukan Simbol">
                                                 <div class="field-placeholder">Simbol <span class="text-danger">*</span></div>
                                                 <div class="form-text">
 
@@ -275,7 +275,7 @@
 
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
-                                                <input class="form-control" type="email" placeholder=" Masukan Pemisahan Desimal">
+                                                <input class="form-control" type="text" placeholder=" Masukan Pemisahan Desimal">
                                                 <div class="field-placeholder">Pemisah Desimal <span class="text-danger">*</span></div>
                                                 <div class="form-text">
 
@@ -288,7 +288,7 @@
 
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
-                                                <input class="form-control" type="email" placeholder=" Masukan Pemisah Ribuan">
+                                                <input class="form-control" type="text" placeholder=" Masukan Pemisah Ribuan">
                                                 <div class="field-placeholder">Pemisah Ribuan <span class="text-danger">*</span></div>
                                                 <div class="form-text">
 

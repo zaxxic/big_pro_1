@@ -185,7 +185,7 @@
 
                                         <!-- Field wrapper start -->
                                         <div class="field-wrapper">
-                                            <input class="form-control" type="email" placeholder=" Masukan Nama Anda">
+                                            <input class="form-control" type="text" placeholder=" Masukan Nama">
                                             <div class="field-placeholder">Nama <span class="text-danger">*</span></div>
                                             <div class="form-text">
 
@@ -217,7 +217,7 @@
 
                                         <!-- Field wrapper start -->
                                         <div class="field-wrapper">
-                                            <input class="form-control" type="email" placeholder=" Masukan Tarif (%)">
+                                            <input class="form-control" type="text" placeholder=" Masukan Tarif (%)">
                                             <div class="field-placeholder">Tarif (%) <span class="text-danger">*</span></div>
                                             <div class="form-text">
 
