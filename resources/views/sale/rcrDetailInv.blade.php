@@ -111,7 +111,7 @@
                     <div class="card">
                                 <div class="card-header col-6">
                                     <div class="card-title">
-                                        <h3>Faktur Berulang: JBRL-00002</h3>
+                                        <h3>Faktur Berulang: FBRL-00002</h3>
                                     </div>
                                     <div class="alert alert-secondary" style="border-radius: 10px; background-color:#f36a6a;width:90px;text-align:center;" role="alert">
 										Aktif

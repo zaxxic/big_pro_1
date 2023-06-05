@@ -457,29 +457,32 @@
                                                 </tbody>
                                             </table>
                                                         <!-- Card start -->
-                                            <div class="card">
-                                                <div class="card-body" style="margin-left: -2.1%">
+                                                    </div>
+                                                  <!-- Card start -->
+                                <div class="card">
+                                    <div class="card-body col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
 
-                                                    <nav aria-label="Page navigation example">
-                                                        <ul class="pagination">
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">&laquo;</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">&raquo;</span>
-                                                            </a>
-                                                        </li>
-                                                        </ul>
-                                                    </nav>
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination" style="float: right;">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                            </ul>
+                                        </nav>
 
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+                    <!-- Card end -->
                                 <!-- Card end -->
                                 <div class="modal fade" id="payment" tabindex="-1" aria-labelledby="paymentTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">

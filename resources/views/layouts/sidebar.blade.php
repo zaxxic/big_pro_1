@@ -282,7 +282,7 @@
 					<div class="sidebar-menu">
 						<ul>
 							<li>
-								<a href="index.html"><i class="icon-user1" style=" font-size: 19px;"></i><span>&emsp;Profil</span></a>
+								<a href="{{ route('profile') }}" class="{{ request()->routeIs('profile')? 'current-page' : '' }}"><i class="icon-user1" style=" font-size: 19px;"></i><span>&emsp;Profil</span></a>
 							</li>
 							<li class="mt-3">
 								<a href="{{url('users')}}" class="{{ request()->routeIs('users-index') ||

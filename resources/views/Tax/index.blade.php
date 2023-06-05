@@ -244,7 +244,7 @@
 		<div class="main-container">
 
 			<!-- Page header starts -->
-			
+
 			<!-- Page header ends -->
 
 			<!-- Content wrapper scroll start -->
@@ -261,30 +261,29 @@
 							<!-- Card start -->
 							<!-- <div class=""> -->
 								<div class="d-flex">
-								<div class="col-xl-6 col-lg-6 col-md-2 col-sm-2 col-12">
-									<div class="card-title">
-										<h3>Pajak<button type="button" style="border: none; background:transparent;">☆</button></h3>
-									</div>
-								</div>
-								<div class="col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12">
-									<div class="graph-day-selection" role="group" style="margin-left: 68%">
-										<a href="{{url('add-tax')}}">
-											<button type="button" class="btn active" style="background: transparent; margin-top: 2px; margin-bottom: 2px;">Tambah</button>
-										</a>
-									</div>
-								</div>
-								<div class="col-xl-1 col-lg-1 col-md-2 col-sm-2 col-12" >
-									<div class="dropdown" style="float: right;">
-										<a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
-											<li><a class="dropdown-item" style="margin-top: 4%;" href="">Espor</a></li>
-											<li><a class="dropdown-item" href="">Impor</a></li>
-										</ul>
-									</div>
-								</div>
+                                <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
+                                        <div class="card-title"><h3>Pajak<button type="button" style="border: none; background:transparent;">☆</button></h3></div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
+                                        <div class="graph-day-selection" role="group" style="margin-left: 68%">
+											<a href="{{url('add-tax')}}">
+											<button type="button" class="btn active" style="background: transparent">Tambah</button>
+											</a>
+										</div>
+										</div>
+										<div class="dropdown icon-dots-three-vertical">
+											<span></span>
+											<div class="dropdown-content">
+												<a href="#">
+												<button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
+													Impor
+												</button>
+												</a>
+												<a href="#" class="icon-folder" style="color: #333">
+												<button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
+												</a>
+											</div>
+										</div>
 								<!-- <div class="dropdown icon-dots-three-vertical">
 											<span></span>
 											<div class="dropdown-content">
@@ -299,7 +298,7 @@
 											</div>
 										</div>      -->
 								</div>
-								
+
 									<!-- Row start -->
 
 									<!-- Row end -->
@@ -376,36 +375,36 @@
 
 											</tbody>
 										</table>
-										<!-- Card start -->
-										<div class="card">
-											<div class="card-body" style="margin-left: -2.1%">
-
-												<nav aria-label="Page navigation example">
-													<ul class="pagination" style="justify-content: flex-end;">
-														<li class="page-item">
-															<a class="page-link" href="#" aria-label="Previous">
-																<span aria-hidden="true">&laquo;</span>
-															</a>
-														</li>
-														<li class="page-item"><a class="page-link" href="#">1</a></li>
-														<li class="page-item"><a class="page-link" href="#">2</a></li>
-														<li class="page-item"><a class="page-link" href="#">3</a></li>
-														<li class="page-item">
-															<a class="page-link" href="#" aria-label="Next">
-																<span aria-hidden="true">&raquo;</span>
-															</a>
-														</li>
-													</ul>
-												</nav>
-
-											</div>
-										</div>
-										<!-- Card end -->
 									</div>
+									<!-- Card start -->
+									<div class="card">
+										<div class="card-body" style="margin-left: -2.1%">
+
+											<nav aria-label="Page navigation example">
+												<ul class="pagination" style="justify-content: flex-end;">
+													<li class="page-item">
+														<a class="page-link" href="#" aria-label="Previous">
+															<span aria-hidden="true">&laquo;</span>
+														</a>
+													</li>
+													<li class="page-item"><a class="page-link" href="#">1</a></li>
+													<li class="page-item"><a class="page-link" href="#">2</a></li>
+													<li class="page-item"><a class="page-link" href="#">3</a></li>
+													<li class="page-item">
+														<a class="page-link" href="#" aria-label="Next">
+															<span aria-hidden="true">&raquo;</span>
+														</a>
+													</li>
+												</ul>
+											</nav>
+
+										</div>
+									</div>
+									<!-- Card end -->
 									<!-- Modal start -->
 
 									<!-- Modal end -->
-								
+
 							<!-- </div> -->
 							<!-- Card end -->
 
