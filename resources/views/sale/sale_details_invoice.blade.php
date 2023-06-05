@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.css') }}">
     <link rel="stylesheet" href="{{ asset("Gmbslagi/vendor/summernote/summernote-bs4.css")}}" />
    
-      }
+      
 
 </head>
 
@@ -103,7 +103,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="alert alert-primary" style="border-radius: 10px; color:#4e58eb; background-color:#c5d2fc" role="alert">
-                                        Faktur ini dihasilkan otomatis dari a RCI-00001
+                                        Faktur ini dihasilkan otomatis dari RCI-00001
                                     </div>
                                     <!-- Faq start -->
                                     <div class="accordion" id="faqAccordion">
