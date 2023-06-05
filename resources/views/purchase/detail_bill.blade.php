@@ -52,7 +52,7 @@
             position: relative;
             background: #ffffff;
             border: 1px solid #e1e8f3;
-            border-radius: 20px;
+            border-radius: 3px;
             -webkit-box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
             box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
             min-width: 100%;
@@ -126,7 +126,7 @@
                         <div class="card">
                             <div class="card-header col-6">
                                 <div class="card-title">
-                                    <h3>Rutin: TGH-00002</h3>
+                                    <h3>Tagihan: TGH-00002</h3>
                                 </div>
                                 <div class="badge-finish" style="text-align: center" >Terima</div>
                             </div>

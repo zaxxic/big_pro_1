@@ -47,11 +47,11 @@
     position: relative;
     background: #ffffff;
     border: 1px solid #e1e8f3;
-    border-radius: 20px;
+    border-radius: 3px;
     -webkit-box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
     box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
-    min-width: 620px;
-    max-width: 620px;
+    min-width: 100%;
+    max-width: 100%;
 }
   /* Tambahkan gaya CSS yang diperlukan di sini */
         /* ... */
@@ -111,10 +111,10 @@
                     <div class="card">
                                 <div class="card-header col-6">
                                     <div class="card-title">
-                                        <h3>Details<button type="button"
-                                                style="border: none; background:none;">☆</button></h3>
+                                        <h3>Details<button type="button" 
+                                                style="border: none; background:none;"><span class="ms-5">☆</span> </button></h3>
                                     </div>
-                                    <div class="alert alert-secondary" style="border-radius: 10px; background-color:#f36a6a" role="alert">
+                                    <div class="alert alert-secondary" style="width:82px;height;border-radius: 2px; background-color:#f36a6a;text-align:center" role="alert">
 										Terkirim
 										</div>
                                 </div>
@@ -122,7 +122,7 @@
 
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                     <div class="card-body">
-                                        <div class="alert alert-primary" style="border-radius: 10px; background-color:#9a99e2" role="alert">
+                                        <div class="alert alert-primary" style="border-radius: 2px; background-color:#9a99e2" role="alert">
                                             Faktur ini dihasilkan otomatis dari BRLB-00001
                                         </div>
                                         <!-- Faq start -->
@@ -145,7 +145,7 @@
                                                     aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                                                     <div class="accordion-body">
                                                         <button type="button"
-                                                            style="border-radius: 10px; width:18%; height: 30px; border:none;">Sunting</button>
+                                                            style="border-radius: 2px; width:18%; height: 30px; border:none;">Sunting</button>
                                                     </div>
                                                 </div>
                                             </div>

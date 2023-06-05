@@ -760,88 +760,56 @@
 
     <!-- Main Js Required -->
     <script src="{{ asset('Gmbslagi/js/main.js') }}"></script>
+    
     <script>
         const checkboxes = document.querySelectorAll('.other-checkbox');
-        const selectAllCheckbox = document.querySelector('#select-all-checkbox');
-        const hiddenMenu = document.querySelector('.hidden-menu');
-        const countDisplay = document.querySelector('#count-display');
-
-        // Function to count the number of checked checkboxes
-        function countCheckedCheckboxes() {
-            const checkedCheckboxes = document.querySelectorAll('.other-checkbox:checked');
-            return checkedCheckboxes.length;
-        }
-
-        // Function to update the count display
-        function updateCountDisplay() {
-            const totalCount = countCheckedCheckboxes();
-            countDisplay.textContent = totalCount + ' Item Yang dipilih : ';
-        }
-
-        // Add event listener to each checkbox
-        checkboxes.forEach(function(checkbox) {
-            checkbox.addEventListener('change', function() {
+                const selectAllCheckbox = document.querySelector('#select-all-checkbox');
+                const hiddenMenu = document.querySelector('.hidden-menu');
+                const countDisplay = document.querySelector('#count-display');
+        
+                // Function to count the number of checked checkboxes
+                function countCheckedCheckboxes() {
+                const checkedCheckboxes = document.querySelectorAll('.other-checkbox:checked');
+                return checkedCheckboxes.length;
+                }
+        
+                // Function to update the count display
+                function updateCountDisplay() {
+                const totalCount = countCheckedCheckboxes();
+                countDisplay.textContent =  totalCount + ' Item Yang dipilih : ' ;
+                }
+        
+                // Add event listener to each checkbox
+                checkboxes.forEach(function(checkbox) {
+                checkbox.addEventListener('change', function() {
+                    if (this.checked) {
+                    hiddenMenu.style.display = 'block'; // Show the hidden menu
+                    } else {
+                    const checkedCount = countCheckedCheckboxes();
+                    if (checkedCount === 0) {
+                        hiddenMenu.style.display = 'none'; // Hide the hidden menu if no checkboxes are checked
+                    }
+                    }
+                    
+                    updateCountDisplay(); // Update the count display
+                });
+                });
+        
+                // Add event listener to the "Select All" checkbox
+                selectAllCheckbox.addEventListener('change', function() {
+                checkboxes.forEach(function(checkbox) {
+                    checkbox.checked = selectAllCheckbox.checked; // Set the state of each checkbox based on the "Select All" checkbox
+                });
+                
                 if (this.checked) {
                     hiddenMenu.style.display = 'block'; // Show the hidden menu
                 } else {
-                    const checkedCount = countCheckedCheckboxes();
-                    if (checkedCount === 0) {
-                        hiddenMenu.style.display =
-                        'none'; // Hide the hidden menu if no checkboxes are checked
-                    }
+                    hiddenMenu.style.display = 'none'; // Hide the hidden menu
                 }
-		// Add event listener to each checkbox
-		checkboxes.forEach(function(checkbox) {
-		checkbox.addEventListener('change', function() {
-			if (this.checked) {
-			hiddenMenu.style.display = 'block'; // Show the hidden menu
-			} else {
-			const checkedCount = countCheckedCheckboxes();
-			if (checkedCount === 0) {
-				hiddenMenu.style.display = 'none'; // Hide the hidden menu if no checkboxes are checked
-			}
-			}
-
-			updateCountDisplay(); // Update the count display
-		});
-		});
-
-		// Add event listener to the "Select All" checkbox
-		selectAllCheckbox.addEventListener('change', function() {
-		checkboxes.forEach(function(checkbox) {
-			checkbox.checked = selectAllCheckbox.checked; // Set the state of each checkbox based on the "Select All" checkbox
-		});
-
-		if (this.checked) {
-			hiddenMenu.style.display = 'block'; // Show the hidden menu
-		} else {
-			hiddenMenu.style.display = 'none'; // Hide the hidden menu
-		}
-
-		updateCountDisplay(); // Update the count display
-		});
-		</script>
-
+                
                 updateCountDisplay(); // Update the count display
-            });
-        });
-
-        // Add event listener to the "Select All" checkbox
-        selectAllCheckbox.addEventListener('change', function() {
-            checkboxes.forEach(function(checkbox) {
-                checkbox.checked = selectAllCheckbox
-                .checked; // Set the state of each checkbox based on the "Select All" checkbox
-            });
-
-            if (this.checked) {
-                hiddenMenu.style.display = 'block'; // Show the hidden menu
-            } else {
-                hiddenMenu.style.display = 'none'; // Hide the hidden menu
-            }
-
-            updateCountDisplay(); // Update the count display
-        });
-    </script>
+                });
+            </script>
 
 </body>
 

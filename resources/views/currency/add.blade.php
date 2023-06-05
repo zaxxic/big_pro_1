@@ -69,7 +69,7 @@
             padding: 10px;
             border: 1px solid #D9D9D9;
             cursor: pointer;
-            border-radius: 10px;
+            border-radius: 3px;
         }
 
         input[type="radio"]:checked+.label {
@@ -95,7 +95,7 @@
             height: 30px;
             background-color: #CCCCCC;
             /* Warna abu-abu saat indikator tidak aktif */
-            border-radius: 15px;
+            border-radius: 3px;
             position: relative;
             cursor: pointer;
             overflow: hidden;
@@ -110,7 +110,7 @@
             width: 24px;
             background-color: #FFFFFF;
             /* Warna biru saat indikator aktif */
-            border-radius: 50%;
+            border-radius: 3%;
             transition: right 0.3s ease;
         }
 
@@ -300,8 +300,8 @@
 
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                             <div class="d-flex justify-content-end mt-4">
-                                                <button class="btn btn-outline-primary1" type="submit" style="border-radius: 20px; margin-right: 1%" href="#">Batal</button>
-                                                <button class="btn btn-primary" type="submit" style="border-radius: 20px">Simpan</button>
+                                                <button class="btn btn-outline-primary1"  style="border-radius: 3px; margin-right: 1%" ><a href="{{route('currency')}}">Batal</a> </button>
+                                                <button class="btn btn-primary" type="submit" style="border-radius: 3px">Simpan</button>
                                             </div>
                                         </div>
                                     </div>
