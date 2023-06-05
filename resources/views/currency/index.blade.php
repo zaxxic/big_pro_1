@@ -268,7 +268,20 @@
 											</a>
 										</div>
 										</div>
-										
+										<div class=" icon-dots-three-vertical">
+											<span></span>
+											<div class="dropdown-content">
+												<a href="#">
+												<button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
+													Impor
+												</button>
+												</a>
+												<a href="#" class="icon-folder" style="color: #333">
+												<button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
+												</a>
+											</div>
+										</div>
+
 
 									</div>
 									<div class="">

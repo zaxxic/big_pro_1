@@ -790,6 +790,37 @@
                         'none'; // Hide the hidden menu if no checkboxes are checked
                     }
                 }
+		// Add event listener to each checkbox
+		checkboxes.forEach(function(checkbox) {
+		checkbox.addEventListener('change', function() {
+			if (this.checked) {
+			hiddenMenu.style.display = 'block'; // Show the hidden menu
+			} else {
+			const checkedCount = countCheckedCheckboxes();
+			if (checkedCount === 0) {
+				hiddenMenu.style.display = 'none'; // Hide the hidden menu if no checkboxes are checked
+			}
+			}
+
+			updateCountDisplay(); // Update the count display
+		});
+		});
+
+		// Add event listener to the "Select All" checkbox
+		selectAllCheckbox.addEventListener('change', function() {
+		checkboxes.forEach(function(checkbox) {
+			checkbox.checked = selectAllCheckbox.checked; // Set the state of each checkbox based on the "Select All" checkbox
+		});
+
+		if (this.checked) {
+			hiddenMenu.style.display = 'block'; // Show the hidden menu
+		} else {
+			hiddenMenu.style.display = 'none'; // Hide the hidden menu
+		}
+
+		updateCountDisplay(); // Update the count display
+		});
+		</script>
 
                 updateCountDisplay(); // Update the count display
             });
