@@ -168,7 +168,7 @@
 
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
 
-                                            <div style="border-bottom: solid grey 1px;margin-bottom:1%">
+                                            <div style="border-bottom: solid grey 1px; margin-bottom:1%">
                                                 <h6>Umum</h6>
                                                 <p>Informasi kontak penyedia Anda akan muncul di tagihan dan profil mereka. Anda dapat menambahkan informasi kontak dan logo mereka untuk digunakan dalam tagihan.</p>
                                             </div>

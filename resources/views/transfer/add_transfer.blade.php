@@ -136,6 +136,7 @@
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
         <!-- Sidebar wrapper end -->
+        @include('layouts.header')
 
         <!-- *************
 				************ Main container start *************
@@ -150,25 +151,26 @@
                 <div class="content-wrapper">
 
                     <!-- Row start -->
+                    <div class="card-body">
                     <div class="row gutters">
                         <form action="">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                             <!-- Card start -->
-                            <div class="card" style="overflow: hidden">
-                                <div class="card-header">
+                            <div class="" style=" ">
+                                <div class="row">
                                     <div class="card-title">
                                         <h3>Tambah Transfer<button type="button" style="border: none; background:none;">☆</button></h3>
                                     </div>
                                 </div>
-                                <div class="card-body">
+                                <div class="">
 
                                     <!-- Row start -->
                                     <div class="row gutters">
 
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
 
-                                            <div style="border-bottom: solid grey 1px;margin-bottom:1%">
+                                            <div style="border-bottom: solid grey 1px;margin-bottom:2%; margin-bottom: 2%; margin-top: 2%;">
                                                 <h6>Umum</h6>
                                                 <p>Informasi kontak penyedia Anda akan muncul di tagihan dan profil mereka. Anda dapat menambahkan informasi kontak dan logo mereka untuk digunakan dalam tagihan.</p>
                                             </div>
@@ -236,7 +238,7 @@
                                         
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
 
-                                            <div style="border-bottom: solid grey 1px;margin-bottom:1%">
+                                            <div style="border-bottom: solid grey 1px;margin-bottom:1%; margin-bottom: 2%; margin-top: 1%;">
                                                 <h6>Lainnya</h6>
                                                 <p>Masukkan Lampiran Pendukung untuk menyimpan transaksi yang ditautkan ke catatan Anda.</p>
                                             </div>
@@ -267,15 +269,12 @@
 
                                         </div >
 
-                                       <div class="d-flex">
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
-                                        <div  style=" float: right">
-                                            <a href="{{url('transfer')}}"><button type="button" class="btn btn-outline-primary">Batal</button></a>
-                                        
-                                        <a href="{{url('add_income')}}" style="margin-left: 10px;" > <button type="button" class="btn btn-secondary">Simpan</button></a>
-                                        </div>
-                                        </div>
-                                    </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="d-flex justify-content-end mt-4">
+                                                        <button class="btn btn-outline-primary1" type="submit" style="border-radius: 20px; margin-right: 1%" href="#">Batal</button>
+                                                        <button class="btn btn-primary" type="submit" style="border-radius: 20px">Simpan</button>
+                                                    </div>
+                                                </div>
                                     </div>
                                         
 
@@ -519,6 +518,7 @@
 
                         </div>
                         </form>
+                    </div>
                     </div>
                     <!-- Row end -->
 
