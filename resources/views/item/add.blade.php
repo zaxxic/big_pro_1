@@ -201,11 +201,11 @@ label{
                                             <div class="half-width-container">
                                                 <input type="radio" name="option" id="option1"
                                                     value="Option 1" checked>
-                                                <label class="label" for="option1">Option 1</label>
+                                                <label class="label" for="option1">produk</label>
 
                                                 <input type="radio" name="option" id="option2"
                                                     value="Option 2">
-                                                <label class="label" for="option2">Option 2</label>
+                                                <label class="label" for="option2">Layanan</label>
                                             </div>
 
                                             <!-- Field wrapper start -->
@@ -236,9 +236,8 @@ label{
                                                         class="text-danger">*</span></div>
                                                     <select class="form-control" id="dropdownSelect">
                                                       <option disabled selected>Pilih salah satu</option>
-                                                      <option>Pilihan 1</option>
-                                                      <option>Pilihan 2</option>
-                                                      <option>Pilihan 3</option>
+                                                      <option>Makanan</option>
+                                                      <option>Umum</option>
                                                     </select>
                                                   </div>
                                                   
@@ -255,10 +254,10 @@ label{
                                                 <!-- Field wrapper start -->
                                                 <div class="field-wrapper">
                                                     <textarea class="form-control" rows="2"></textarea>
-                                                    <div class="field-placeholder">Alamat <span
+                                                    <div class="field-placeholder">Deskripsi <span
                                                             class="text-danger">*</span></div>
                                                     <div class="form-text">
-                                                        Silakan masukkan Alamat lengkap Anda.
+                                                        Silakan masukkan Deskripsi.
                                                     </div>
                                                 </div>
                                                 <!-- Field wrapper end -->
@@ -310,13 +309,12 @@ label{
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
                                                 <div class="form-group">
-                                                    <div class="field-placeholder" >Mata uang <span
+                                                    <div class="field-placeholder" >Pajak <span
                                                         class="text-danger">*</span></div>
                                                     <select class="form-control" id="dropdownSelect">
                                                       <option disabled selected>Pilih salah satu</option>
-                                                      <option>Pilihan 1</option>
-                                                      <option>Pilihan 2</option>
-                                                      <option>Pilihan 3</option>
+                                                      <option>PPn</option>
+                                                      <option>PPh</option>
                                                     </select>
                                                   </div>
                                                   

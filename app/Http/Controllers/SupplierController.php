@@ -18,4 +18,8 @@ class SupplierController extends Controller
     {
         return view('purchase.purchase_edit_supplier');
     }
+    public function details()
+    {
+        return view('purchase.purchase_details_supplier');
+    }
 }

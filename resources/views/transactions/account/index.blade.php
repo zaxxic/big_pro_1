@@ -46,6 +46,24 @@
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4-custom.css")}}" />
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
     <style>
+        				 .hidden-menu {
+    display: none;
+    background-color: #f2f2f2;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .hidden-menu a {
+    display: inline-block;
+    padding: 6px;
+    transition: transform 0.3s;
+    position: relative;
+  }
+
+  .hidden-menu a:hover {
+    transform: scale(1.2);
+  }
+
         .float-right {
             float: right;
         }
@@ -307,9 +325,15 @@
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-hover">
+                                        <div class="hidden-menu" style="display: none; background-color: #f2f2f2; font-size: 12pt; padding: 10px;">
+                                            <p style="display: inline" id="count-display">&emsp;</p>
+                                            &emsp;<a  href="#" title="Aktifkan"> <i class="icon-check-circle" style="color:#424242 "></i> </a>
+                                            &emsp;<a  href="#" title="Nonaktifkan"> <i class="icon-do_not_disturb_alt"></i> </a>
+                                            &emsp;<a  href="#" title="Hapus"> <i class="icon-trash-2"></i> </a>
+                                        </div>
                                         <thead>
                                             <tr>
-                                                <th scope="col"> <input type="checkbox" id="select-all" onchange="toggleCheckbox()"></th>
+                                                <th scope="col"> <input type="checkbox" id="select-all-checkbox" ></th>
                                                 <th scope="col">Nama</th>
                                                 <th scope="col">Nomor Rekening</th>
                                                 <th scope="col">Nama Bank</th>
@@ -321,7 +345,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td name="item" id="checkbox1"><input type="checkbox"></td>
+                                                <td name="item"><input type="checkbox" class="other-checkbox"></td>
                                                 <td>Hada</th>
                                                 <td>0998987</td>
                                                 <td>BNI</td>
@@ -336,7 +360,7 @@
                                                 </th>
                                             </tr>
                                             <tr>
-                                                <td name="item" id="checkbox1"><input type="checkbox"></td>
+                                                <td name="item"><input type="checkbox" class="other-checkbox"></td>
                                                 <td>Hidi</th>
                                                 <td>08875882</td>
                                                 <td>BRI</td>
@@ -351,7 +375,7 @@
                                                 </th>
                                             </tr>
                                             <tr>
-                                                <td name="item" id="checkbox1"><input type="checkbox"></td>
+                                                <td name="item"><input type="checkbox" class="other-checkbox"></td>
                                                 <td>Huda</th>
                                                 <td>067805368</td>
                                                 <td>Mandiri</td>
@@ -366,7 +390,7 @@
                                                 </th>
                                             </tr>
                                             <tr>
-                                                <td name="item" id="checkbox1"><input type="checkbox"></td>
+                                                <td name="item"><input type="checkbox" class="other-checkbox"></td>
                                                 <td>Hudu</th>
                                                 <td>085827292</td>
                                                 <td>BRI</td>
@@ -381,7 +405,7 @@
                                                 </th>
                                             </tr>
                                             <tr>
-                                                <td name="item" id="checkbox1"><input type="checkbox"></td>
+                                                <td name="item" id=""><input type="checkbox" class="other-checkbox"></td>
                                                 <td>Hede</th>
                                                 <td>35927826</td>
                                                 <td>BNI</td>
@@ -514,30 +538,53 @@
             <!-- Main Js Required -->
             <script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
             <script>
-                // Tambahkan event listener untuk menampilkan/menyembunyikan dropdown saat tombol titik tiga diklik
-                document.querySelector('.dropdown-toggle').addEventListener('click', function() {
-                    document.getElementById('dropdown-menu').classList.toggle('show');
-                });
+               const checkboxes = document.querySelectorAll('.other-checkbox');
+		const selectAllCheckbox = document.querySelector('#select-all-checkbox');
+		const hiddenMenu = document.querySelector('.hidden-menu');
+		const countDisplay = document.querySelector('#count-display');
 
-                // Tambahkan event listener untuk menyembunyikan dropdown saat pengguna mengklik di luar dropdown
-                document.addEventListener('click', function(event) {
-                    var dropdown = document.getElementById('dropdown-menu');
-                    if (!event.target.matches('.dropdown-toggle') && !event.target.matches('.dropdown-content button')) {
-                        if (dropdown.classList.contains('show')) {
-                            dropdown.classList.remove('show');
-                        }
-                    }
-                });
-            </script>
-            <script>
-                function toggleCheckbox() {
-                    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-                    var selectAllCheckbox = document.getElementById('select-all');
+		// Function to count the number of checked checkboxes
+		function countCheckedCheckboxes() {
+		const checkedCheckboxes = document.querySelectorAll('.other-checkbox:checked');
+		return checkedCheckboxes.length;
+		}
 
-                    for (var i = 0; i < checkboxes.length; i++) {
-                        checkboxes[i].checked = selectAllCheckbox.checked;
-                    }
-                }
+		// Function to update the count display
+		function updateCountDisplay() {
+		const totalCount = countCheckedCheckboxes();
+		countDisplay.textContent =  totalCount + ' Item Yang dipilih : ' ;
+		}
+
+		// Add event listener to each checkbox
+		checkboxes.forEach(function(checkbox) {
+		checkbox.addEventListener('change', function() {
+			if (this.checked) {
+			hiddenMenu.style.display = 'block'; // Show the hidden menu
+			} else {
+			const checkedCount = countCheckedCheckboxes();
+			if (checkedCount === 0) {
+				hiddenMenu.style.display = 'none'; // Hide the hidden menu if no checkboxes are checked
+			}
+			}
+			
+			updateCountDisplay(); // Update the count display
+		});
+		});
+
+		// Add event listener to the "Select All" checkbox
+		selectAllCheckbox.addEventListener('change', function() {
+		checkboxes.forEach(function(checkbox) {
+			checkbox.checked = selectAllCheckbox.checked; // Set the state of each checkbox based on the "Select All" checkbox
+		});
+		
+		if (this.checked) {
+			hiddenMenu.style.display = 'block'; // Show the hidden menu
+		} else {
+			hiddenMenu.style.display = 'none'; // Hide the hidden menu
+		}
+		
+		updateCountDisplay(); // Update the count display
+		});
             </script>
 
 

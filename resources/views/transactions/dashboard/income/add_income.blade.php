@@ -292,7 +292,7 @@
 
                                             <div class="field-wrapper-group">
                                                 <div class="field-wrapper">
-                                                    <select class="select-multiple js-states" title="Select Product Category">
+                                                    <select class="select-multiple js-states" style="border-radius: 10px ;" title="Select Product Category">
                                                         <option>Pendapatan</option>
                                                         <option>Pengeluaran</option>
                                                         <option>Transfer</option>
@@ -330,7 +330,7 @@
 
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
-                                                <textarea class="form-control1" rows="2" placeholder="Lampiran Tidak Wajib Diisi"></textarea>
+                                                <textarea class="form-control" rows="2" placeholder="Lampiran Tidak Wajib Diisi"></textarea>
                                                 <div class="field-placeholder">Lampiran Pendukung<span class="text-danger">*</span></div>
                                                 <div class="form-text">
                                                     Silakan masukkan Lampiran Pendukung Anda.

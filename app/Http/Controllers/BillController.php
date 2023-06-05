@@ -22,4 +22,9 @@ class BillController extends Controller
     {
         return view('purchase.purchase_add_recurring_bill');
     }
+
+    public function detail_rcr_bill()
+    {
+        return view('purchase.rcr_detail_bill');
+    }
 }

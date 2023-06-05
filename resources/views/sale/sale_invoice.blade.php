@@ -46,7 +46,26 @@
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/dataTables.bs4-custom.css') }}" />
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/buttons.bs.css') }}" />
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/dropzone/dropzone.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/daterange/daterange.css')}}">
     <style>
+    .hidden-menu {
+    display: none;
+    background-color: #f2f2f2;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .hidden-menu a {
+    display: inline-block;
+    padding: 6px;
+    transition: transform 0.3s;
+    position: relative;
+  }
+
+  .hidden-menu a:hover {
+    transform: scale(1.2);
+  }
+
         .text {
             text-align: center;
             color: #5e6973;
@@ -308,7 +327,7 @@
                                     <div class="d-flex">
                                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1" style="margin-top: 8%;">
                                             <div class="hr-switch">
-                                                <a href="">
+                                                <a href="{{ url('invoice') }}">
                                                     <div class="empty-box1 active">
                                                         <h6 class="">Faktur</h6>
                                                     </div	>
@@ -317,7 +336,7 @@
                                         </div>
                                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2" style="margin-top: 8%;">
                                             <div class="hr-switch">
-                                                <a href="http://127.0.0.1:8000/recurring_transactions">
+                                                <a href="{{ url('recurring_invoice') }}">
                                                     <div class="empty-box2">
                                                         <h6 class="">Rutin</h6>
                                                     </div>
@@ -332,6 +351,11 @@
                                         </div>
                                     </div>
                                     <div class="table-responsive">
+                                        <div class="hidden-menu" style="display: none; background-color: #f2f2f2; font-size: 12pt; padding: 10px;">
+                                            <p style="display: inline" id="count-display">&emsp;</p>
+                                            &emsp;<a  href="#" title="Batal"> <i class="icon-x-circle" style="color:#424242 "></i> </a>
+                                            &emsp;<a  href="#" title="Hapus"> <i class="icon-trash-2"></i> </a>
+                                        </div>
                                         <table class="table table-hover caption-top">
                                             <thead>
                                                 <tr>
@@ -354,8 +378,11 @@
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
+                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
+                                                                <i class="icon-attach_money"></i>
+                                                            </button>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="#" class="menu-icon icon-eye1"></a>
+                                                            <a href="{{ url('details') }}" class="menu-icon icon-eye1"></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -370,6 +397,9 @@
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
+                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
+                                                                <i class="icon-attach_money"></i>
+                                                            </button>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                         </div>
@@ -387,6 +417,9 @@
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
+                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
+                                                                <i class="icon-attach_money"></i>
+                                                            </button>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                         </div>
@@ -402,6 +435,9 @@
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
+                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
+                                                                <i class="icon-attach_money"></i>
+                                                            </button>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                         </div>
@@ -417,6 +453,9 @@
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
+                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
+                                                                <i class="icon-attach_money"></i>
+                                                            </button>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                         </div>
@@ -450,6 +489,44 @@
                                             </div>
                                         </div>
                                         <!-- Card end -->
+                                    </div>
+                                    <div class="modal fade" id="payment" tabindex="-1" aria-labelledby="paymentTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content" style="margin-top: -10%">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="paymentTitle">Pembayaran</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                        <div class="field-wrapper">
+                                                            <label for="subjudul" class="field-label">Kategori<span class="text-danger">*</span></label>
+                                                            <input type="text" class="form-control datepicker" style="border-radius: 10px">
+                                                        </div>
+                                                        <div class="field-wrapper">
+                                                            <label for="subjudul" class="field-label">Jumlah<span class="text-danger">*</span></label>
+                                                            <input type="number" class="form-control datepicker" style="border-radius: 10px">
+                                                        </div>
+                                                        <div class="field-wrapper">
+                                                            <label for="subjudul" class="field-label">Metode Pembayaran<span class="text-danger">*</span></label>
+                                                            <select class="select-single js-states" title="Select Product Category" data-live-search="true" style="border-radius: 10px">
+                                                                <option>Cash</option>
+                                                                <option>Transfer</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="field-wrapper">
+                                                            <label for="subjudul" class="field-label">Akun<span class="text-danger">*</span></label>
+                                                            <select class="select-single js-states" title="Select Product Category" data-live-search="true" style="border-radius: 10px">
+                                                                <option>Adi</option>
+                                                                <option>Rudi</option>
+                                                            </select>
+                                                        </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="text-white" style="background-color:rgb(255, 0, 0); border:none; border-radius:10px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</button>
+                                                    <button type="button" class="text-white" style="background-color: #55be0e; border:none; border-radius:10px; width:30%; height:25px; color:white">Simpan</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <!-- Modal start -->
                                     <div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
@@ -551,38 +628,55 @@
     <!-- Main Js Required -->
     <script src="{{ asset('Gmbslagi/js/main.js') }}"></script>
     <script>
-        // Ambil elemen-elemen yang diperlukan
-        var selectAllCheckbox = document.getElementById('select-all-checkbox');
-        var otherCheckboxes = document.getElementsByClassName('other-checkbox');
+     const checkboxes = document.querySelectorAll('.other-checkbox');
+		const selectAllCheckbox = document.querySelector('#select-all-checkbox');
+		const hiddenMenu = document.querySelector('.hidden-menu');
+		const countDisplay = document.querySelector('#count-display');
 
-        // Tambahkan event listener pada checkbox "Select All"
-        selectAllCheckbox.addEventListener('change', function() {
-            // Periksa apakah checkbox "Select All" dicentang atau tidak
-            var isChecked = selectAllCheckbox.checked;
+		// Function to count the number of checked checkboxes
+		function countCheckedCheckboxes() {
+		const checkedCheckboxes = document.querySelectorAll('.other-checkbox:checked');
+		return checkedCheckboxes.length;
+		}
 
-            // Ubah status checked pada checkbox lainnya sesuai dengan checkbox "Select All"
-            for (var i = 0; i < otherCheckboxes.length; i++) {
-                otherCheckboxes[i].checked = isChecked;
-            }
-        });
+		// Function to update the count display
+		function updateCountDisplay() {
+		const totalCount = countCheckedCheckboxes();
+		countDisplay.textContent =  totalCount + ' Item Yang dipilih : ' ;
+		}
 
-        // Tambahkan event listener pada checkbox lainnya
-        for (var i = 0; i < otherCheckboxes.length; i++) {
-            otherCheckboxes[i].addEventListener('change', function() {
-                // Periksa apakah semua checkbox lainnya telah dicentang
-                var allChecked = true;
-                for (var j = 0; j < otherCheckboxes.length; j++) {
-                    if (!otherCheckboxes[j].checked) {
-                        allChecked = false;
-                        break;
-                    }
-                }
+		// Add event listener to each checkbox
+		checkboxes.forEach(function(checkbox) {
+		checkbox.addEventListener('change', function() {
+			if (this.checked) {
+			hiddenMenu.style.display = 'block'; // Show the hidden menu
+			} else {
+			const checkedCount = countCheckedCheckboxes();
+			if (checkedCount === 0) {
+				hiddenMenu.style.display = 'none'; // Hide the hidden menu if no checkboxes are checked
+			}
+			}
+			
+			updateCountDisplay(); // Update the count display
+		});
+		});
 
-                // Perbarui status checked pada checkbox "Select All" sesuai dengan kondisi di atas
-                selectAllCheckbox.checked = allChecked;
-            });
-        }
+		// Add event listener to the "Select All" checkbox
+		selectAllCheckbox.addEventListener('change', function() {
+		checkboxes.forEach(function(checkbox) {
+			checkbox.checked = selectAllCheckbox.checked; // Set the state of each checkbox based on the "Select All" checkbox
+		});
+		
+		if (this.checked) {
+			hiddenMenu.style.display = 'block'; // Show the hidden menu
+		} else {
+			hiddenMenu.style.display = 'none'; // Hide the hidden menu
+		}
+		
+		updateCountDisplay(); // Update the count display
+		});
     </script>
+    <script src="{{ asset('Gmbslagi/vendor/daterange/custom-daterange.js')}}"></script>
 
 </body>
 

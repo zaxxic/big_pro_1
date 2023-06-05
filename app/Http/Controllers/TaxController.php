@@ -14,4 +14,9 @@ class TaxController extends Controller
     {
         return  view('Tax.add');
     }
+
+    public function tax_edit()
+    {
+        return  view('Tax.edit');
+    }
 }

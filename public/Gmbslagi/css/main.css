@@ -687,7 +687,7 @@ p {
 
 .sidebar-menu ul li a.drop-icon{
     background-size: auto;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     color: #5957b1;
 }
 
@@ -1447,6 +1447,15 @@ p {
     .app-footer {
         padding: 1rem 1rem 1rem 1rem
     }
+}
+
+.main-container1 {
+    background: #ffffff;
+    border-radius: 10px;
+    -webkit-transition: padding-left .3s ease;
+    transition: padding-left .3s ease;
+    padding: 0 0 0 0px;
+    height: 100vh;
 }
 
 .main-container {
@@ -2651,12 +2660,14 @@ ul.customer-rating li:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    border-radius: 10px;
 }
 
 .field-wrapper-group .field-wrapper {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    border-radius: 10px;
 }
 
 .field-wrapper-group .input-icon-block {
@@ -8995,7 +9006,7 @@ fieldset:disabled .btn-outline-success {
 
 .form-control {
     border: 1px solid #dbdaea;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #8a96a0;
     font-size: 15px;
     min-height: 50px;
@@ -9611,7 +9622,7 @@ label {
     color: rgb(77, 77, 247)
 }
 .form-control{
-    border-radius: 10px !important;
+    border-radius: 1px ;
 }
 .field-placeholder{
     z-index: auto !important;

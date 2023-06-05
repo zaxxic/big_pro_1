@@ -19,6 +19,7 @@ use App\Http\Controllers\Show_report2Controller;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\CopyTextController;
 use App\Http\Controllers\CurrencyController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\InvoiceController;
@@ -60,7 +61,8 @@ Route::get('reset_password', function () {
     return view('reset_password');
 });
 Route::get('/itemindex',[ItemController::class,'itemindex'])->Name('item-index');
-Route::get('/tambah-item',[ItemController::class,'additem'])->Name('item-tambah');
+Route::get('/add-item',[ItemController::class,'additem'])->Name('item-add');
+Route::get('/edit-item',[ItemController::class,'edititem'])->Name('item-edit');
 
 Route::get('tambah_pemasok', function () {
     return view('pembelian.pembelian_tambah_pemasok');
@@ -68,12 +70,12 @@ Route::get('tambah_pemasok', function () {
 Route::get('edit_pemasok', function () {
     return view('pembelian_edit_pemasok');
 });
-Route::get('/add-item',[ItemController::class,'additem'])->Name('item-add');
 
-//perusahaan
+//supplier
 Route::get('supplier', [SupplierController::class, 'supplier'])->name('supplier');
 Route::get('add_supplier', [SupplierController::class, 'add'])->name('add_supplier');
 Route::get('edit_supplier', [SupplierController::class, 'edit'])->name('edit_supplier');
+Route::get('details_supplier', [SupplierController::class, 'details'])->name('details_supplier');
 
 Route::get('icons', function () {
     return view('icons');
@@ -154,12 +156,15 @@ Route::get('/laporan',[LaporanController::class, 'laporan'])->name('laporan');
 //category
 Route::get('/category',[CategoryController::class,'category_index'])->name('index-category');
 Route::get('/add-category',[CategoryController::class,'category_add'])->name('add-category');
+Route::get('/add-edit',[CategoryController::class,'category_edit'])->name('edit-category');
 
 //bill
 Route::get('bill', [BillController::class, 'bill'])->name('bill');
 Route::get('recurring_bill', [BillController::class, 'recurring_bill'])->name('recurring_bill');
 Route::get('add_recurring_bill', [BillController::class, 'add_recurring_bill' ])->name('add_recurring_bill');
 Route::get('add_bill', [BillController::class, 'add_bill'])->name('add_bill');
+Route::get('detail_rcr_bill', [BillController::class, 'detail_rcr_bill'])->name('detail_rcr_bill');
+
 
 //laporan
 Route::get('/report',[ReportController::class, 'report'])->name('report');
@@ -188,6 +193,11 @@ Route::get('/profile',[ProfileController::class,'profile'])->name('profile');
 //Tax
 Route::get('/tax',[TaxController::class,'tax_index'])->name('tax');
 Route::get('/add-tax',[TaxController::class,'tax_add'])->name('tax-add');
+Route::get('/edit-tax',[TaxController::class,'tax_edit'])->name('tax-edit');
 //currency
 Route::get('/currency',[CurrencyController::class,'currency_index'])->name('currency');
 Route::get('/add-currency',[CurrencyController::class,'currency_add'])->name('currency-add');
+Route::get('/edit-currency',[CurrencyController::class,'currency_edit'])->name('currency-edit');
+
+//Copy Text
+Route::get('copytext', [CopyTextController::class, 'CopyText'])->name('copytext');
