@@ -268,7 +268,7 @@
 											</a>
 										</div>
 										</div>
-										<div class="dropdown icon-dots-three-vertical">
+										<div class=" icon-dots-three-vertical">
 											<span></span>
 											<div class="dropdown-content">
 												<a href="#">

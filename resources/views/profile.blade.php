@@ -101,7 +101,7 @@
 											</div>
 
 											<div class="d-flex row ">
-											<div class="col-xl-10 col-lg-12 col-md-12 col-sm-12" >
+											<div class="col-xl-9 col-lg-12 col-md-12 col-sm-12" >
 											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
 												<!-- Field wrapper start -->
@@ -123,10 +123,9 @@
 													<div class="form-text">
 														Kami tidak akan pernah membagikan email Anda kepada siapa pun.
 													</div>
-
 											</div>
 											</div>
-											<div class="col-xl-2 col-lg-12 col-md-12 col-sm-12">
+											<div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
 												<!-- Field wrapper start -->
 												<p style="">Logo</p>
 												<!-- Example of a form that Dropzone can take over -->
