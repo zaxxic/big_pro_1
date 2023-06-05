@@ -339,7 +339,7 @@
                                                 <td><input type="checkbox" class="other-checkbox"></td>
                                                 <td>12 mei 2023</td>
                                                 <td><button class="btn btn-danger"
-                                                        style="border-radius: 10px; background-color: #ffd2d2; color:#D21312; height: 30px; border:none">Terkirim</button>
+                                                        style="border-radius: 2px; background-color: #ffd2d2; color:#D21312; height: 30px; border:none">Terkirim</button>
                                                 </td>
                                                 <td>koirul</td>
                                                 <td>91.000.000,00</td>
@@ -388,7 +388,7 @@
                                                 <td><input type="checkbox" class="other-checkbox"></td>
                                                 <td>12 mei 2024</td>
                                                 <td><button class="btn btn-danger"
-                                                        style="border-radius: 10px; background-color: #d3d3d3; color:#0a0a0a; height: 30px; border:none">Konsep</button>
+                                                        style="border-radius: 2px; background-color: #d3d3d3; color:#0a0a0a; height: 30px; border:none">Konsep</button>
                                                 </td>
                                                 <td>choirul</td>
                                                 <td>80.000.000,00</td>
@@ -437,7 +437,7 @@
                                                 <td><input type="checkbox" class="other-checkbox"></td>
                                                 <td>14 mei 2023</td>
                                                 <td><button class="btn btn-danger"
-                                                        style="border-radius: 10px; background-color: #d3d3d3; color:#0a0a0a; height: 30px; border:none">Konsep</button>
+                                                        style="border-radius: 2px; background-color: #d3d3d3; color:#0a0a0a; height: 30px; border:none">Konsep</button>
                                                 </td>
                                                 <td>rudi</td>
                                                 <td>100.000.000,00</td>
@@ -484,7 +484,7 @@
                                                 <td><input type="checkbox" class="other-checkbox"></td>
                                                 <td>15 mei 2023</td>
                                                 <td><button class="btn btn-danger"
-                                                        style="border-radius: 10px; background-color: #d9dbfc; color:#1900ff; height: 30px; border:none">Sebagian</button>
+                                                        style="border-radius: 2px; background-color: #d9dbfc; color:#1900ff; height: 30px; border:none">Sebagian</button>
                                                 </td>
                                                 <td>slemet</td>
                                                 <td>20.000.000,00</td>
@@ -531,7 +531,7 @@
                                                 <td><input type="checkbox" class="other-checkbox"></td>
                                                 <td>25 mei 2023</td>
                                                 <td><button class="btn btn-danger"
-                                                        style="border-radius: 10px; background-color: #c4ffcc; color:#00be00; height: 30px; border:none">Dibayar</button>
+                                                        style="border-radius: 2px; background-color: #c4ffcc; color:#00be00; height: 30px; border:none">Dibayar</button>
                                                 </td>
                                                 <td>wahyu</td>
                                                 <td>45.000.000,00</td>
@@ -616,20 +616,20 @@
                                                     <label for="subjudul" class="field-label">Kategori<span
                                                             class="text-danger">*</span></label>
                                                     <input type="text" class="form-control datepicker"
-                                                        style="border-radius: 10px">
+                                                        style="border-radius: 2px">
                                                 </div>
                                                 <div class="field-wrapper">
                                                     <label for="subjudul" class="field-label">Jumlah<span
                                                             class="text-danger">*</span></label>
                                                     <input type="number" class="form-control datepicker"
-                                                        style="border-radius: 10px">
+                                                        style="border-radius: 2px">
                                                 </div>
                                                 <div class="field-wrapper">
                                                     <label for="subjudul" class="field-label">Metode Pembayaran<span
                                                             class="text-danger">*</span></label>
                                                     <select class="select-single js-states"
                                                         title="Select Product Category" data-live-search="true"
-                                                        style="border-radius: 10px">
+                                                        style="border-radius: 2px">
                                                         <option>Cash</option>
                                                         <option>Transfer</option>
                                                     </select>
@@ -639,7 +639,7 @@
                                                             class="text-danger">*</span></label>
                                                     <select class="select-single js-states"
                                                         title="Select Product Category" data-live-search="true"
-                                                        style="border-radius: 10px">
+                                                        style="border-radius: 2px">
                                                         <option>Adi</option>
                                                         <option>Rudi</option>
                                                     </select>
