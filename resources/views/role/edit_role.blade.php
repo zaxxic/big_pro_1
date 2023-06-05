@@ -641,15 +641,12 @@
                                                 </div>
                                             </div>
                                             <!-- Faq end -->
-                                            <div class="d-flex">
-                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 3%;">
-                                                    <div style=" float: right">
-                                                        <a href="{{url('role')}}"><button type="button" class="btn btn-outline-primary">Batal</button></a>
-
-                                                        <a href="{{url('role')}}" style="margin-left: 10px;"> <button type="button" class="btn btn-secondary">Simpan</button></a>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="d-flex justify-content-end mt-4">
+                                                        <button class="btn btn-outline-primary1" type="submit" style="border-radius: 20px; margin-right: 1%" href="{{url('role')}}">Batal</button>
+                                                        <button class="btn btn-primary" type="submit" style="border-radius: 20px">Simpan</button>
                                                     </div>
                                                 </div>
-                                            </div>
 
                                             <!-- </div> -->
                                             <!-- </div> -->
@@ -821,7 +818,7 @@
 
                                                             <!-- Field wrapper start -->
                                                             <div class="field-wrapper">
-                                                                <input class="form-control" type="text" placeholder="Masukkan E-mail Pelanggan">
+                                                                <input class="form-control" type="email" placeholder="Masukkan E-mail Pelanggan">
                                                                 <div class="field-placeholder">Email<span class="text-danger">*</span></div>
                                                             </div>
                                                             <!-- Field wrapper end -->
@@ -939,7 +936,7 @@
 
     <!-- Slimscroll JS -->
     <script src="{{ asset ("Gmbslagi/vendor/slimscroll/slimscroll.min.js")}}"></script>
-    <script src="{{ asset ("vvendor/slimscroll/custom-scrollbar.js")}}"></script>
+    <script src="{{ asset ("Gmbslagi/vendor/slimscroll/custom-scrollbar.js")}}"></script>
 
     <!-- Search Filter JS -->
     <script src="{{ asset ("Gmbslagi/vendor/search-filter/search-filter.js")}}"></script>

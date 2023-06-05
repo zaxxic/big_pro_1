@@ -196,11 +196,11 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
-                                        <div class="card-title"><h3>Faktur <button type="button" style="border: none; background:transparent;">☆</button></h3></div></div>
+                                        <div class="card-title"><h3>Faktur Berulang<button type="button" style="border: none; background:transparent;">☆</button></h3></div></div>
                                         <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
-                                        <div class="graph-day-selection" role="group" style="margin-left: 68%">
+                                        <div class="graph-day-selection" role="group" style="margin-left: 58%">
                                             <a href="{{url('add_invoice')}}">
-                                            <button type="button" class="btn active" style="background: transparent">Tambah Faktur</button>
+                                            <button type="button" class="btn active" style="background: transparent">Tambah Faktur Berulang</button>
                                             </a>
                                         </div>
                                         </div>
@@ -274,13 +274,30 @@
                                                     <td>24 mei 2023</td>
                                                     <td>91.000.000,00</td>
                                                     <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
-                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
-                                                                <i class="icon-attach_money"></i>
-                                                            </button>
+                                                       <div class="menu-icons" style="font-size: 15px;">
+                                                            <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="{{url('detail_rcr')}}" class="menu-icon icon-eye1"></a>
+                                                            <a href="#" class="menu-icon icon-eye1"></a>
+                                                            <div class="dropdown icon-dots-two-vertical">
+                                                                <span>
+                                                                <div class="dropdown-content">
+                                                                    <a href="#">
+                                                                    <button type="button" style="border: none; background:none; color:#333; background:transparent" data-bs-toggle="modal" data-bs-target="#payment" class="icon-attach_money">
+                                                                            Bayar
+                                                                    </button>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-printer">
+                                                                            Cetak
+                                                                        </button>
+                                                                    </a>
+                                                                    <a href="#" class="icon-x-circle" style="color: #333">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
+                                                                            Batal</button>
+                                                                    </a>
+                                                                </div>
+                                                            </span>
+                                                            </div>
                                                         </div>
                                                     </td>	
                                                 </tr>
@@ -295,13 +312,30 @@
                                                     <td>25 mei 2023</td>
                                                     <td>80.000.000,00</td>
                                                     <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
-                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
-                                                                <i class="icon-attach_money"></i>
-                                                            </button>
+                                                       <div class="menu-icons" style="font-size: 15px;">
+                                                            <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="{{url('detail_rcr')}}" class="menu-icon icon-eye1"></a>
+                                                            <a href="#" class="menu-icon icon-eye1"></a>
+                                                            <div class="dropdown icon-dots-two-vertical">
+                                                                <span>
+                                                                <div class="dropdown-content">
+                                                                    <a href="#">
+                                                                    <button type="button" style="border: none; background:none; color:#333; background:transparent" data-bs-toggle="modal" data-bs-target="#payment" class="icon-attach_money">
+                                                                            Bayar
+                                                                    </button>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-printer">
+                                                                            Cetak
+                                                                        </button>
+                                                                    </a>
+                                                                    <a href="#" class="icon-x-circle" style="color: #333">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
+                                                                            Batal</button>
+                                                                    </a>
+                                                                </div>
+                                                            </span>
+                                                            </div>
                                                         </div>
                                                     </td>	
                                                 </tr>
@@ -317,13 +351,30 @@
                                                     <td>26 mei 2023</td>
                                                     <td>100.000.000,00</td>
                                                     <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
-                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
-                                                                <i class="icon-attach_money"></i>
-                                                            </button>
+                                                       <div class="menu-icons" style="font-size: 15px;">
+                                                            <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="{{url('detail_rcr')}}" class="menu-icon icon-eye1"></a>
+                                                            <a href="#" class="menu-icon icon-eye1"></a>
+                                                            <div class="dropdown icon-dots-two-vertical">
+                                                                <span>
+                                                                <div class="dropdown-content">
+                                                                    <a href="#">
+                                                                    <button type="button" style="border: none; background:none; color:#333; background:transparent" data-bs-toggle="modal" data-bs-target="#payment" class="icon-attach_money">
+                                                                            Bayar
+                                                                    </button>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-printer">
+                                                                            Cetak
+                                                                        </button>
+                                                                    </a>
+                                                                    <a href="#" class="icon-x-circle" style="color: #333">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
+                                                                            Batal</button>
+                                                                    </a>
+                                                                </div>
+                                                            </span>
+                                                            </div>
                                                         </div>
                                                     </td>	
                                                 </tr>
@@ -337,13 +388,30 @@
                                                     <td>24 mei 2023</td>
                                                     <td>20.000.000,00</td>
                                                     <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
-                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
-                                                                <i class="icon-attach_money"></i>
-                                                            </button>
+                                                       <div class="menu-icons" style="font-size: 15px;">
+                                                            <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="{{url('detail_rcr')}}" class="menu-icon icon-eye1"></a>
+                                                            <a href="#" class="menu-icon icon-eye1"></a>
+                                                            <div class="dropdown icon-dots-two-vertical">
+                                                                <span>
+                                                                <div class="dropdown-content">
+                                                                    <a href="#">
+                                                                    <button type="button" style="border: none; background:none; color:#333; background:transparent" data-bs-toggle="modal" data-bs-target="#payment" class="icon-attach_money">
+                                                                            Bayar
+                                                                    </button>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-printer">
+                                                                            Cetak
+                                                                        </button>
+                                                                    </a>
+                                                                    <a href="#" class="icon-x-circle" style="color: #333">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
+                                                                            Batal</button>
+                                                                    </a>
+                                                                </div>
+                                                            </span>
+                                                            </div>
                                                         </div>
                                                     </td>	
                                                 </tr>
@@ -357,13 +425,30 @@
                                                     <td>28 mei 2023</td>
                                                     <td>45.000.000,00</td>
                                                     <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{url('edit_supplier')}}" class="menu-icon icon-edit-2"></a>
-                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
-                                                                <i class="icon-attach_money"></i>
-                                                            </button>
+                                                       <div class="menu-icons" style="font-size: 15px;">
+                                                            <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="{{url('detail_rcr')}}" class="menu-icon icon-eye1"></a>
+                                                            <a href="#" class="menu-icon icon-eye1"></a>
+                                                            <div class="dropdown icon-dots-two-vertical">
+                                                                <span>
+                                                                <div class="dropdown-content">
+                                                                    <a href="#">
+                                                                    <button type="button" style="border: none; background:none; color:#333; background:transparent" data-bs-toggle="modal" data-bs-target="#payment" class="icon-attach_money">
+                                                                            Bayar
+                                                                    </button>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-printer">
+                                                                            Cetak
+                                                                        </button>
+                                                                    </a>
+                                                                    <a href="#" class="icon-x-circle" style="color: #333">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
+                                                                            Batal</button>
+                                                                    </a>
+                                                                </div>
+                                                            </span>
+                                                            </div>
                                                         </div>
                                                     </td>	
                                                 </tr>

@@ -1,318 +1,391 @@
 <!doctype html>
 <html lang="en">
-    
+
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:53 GMT -->
+
 <head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- Meta -->
-		<meta name="description" content="Responsive Bootstrap4 Dashboard Template">
-		<meta name="author" content="ParkerThemes">
-		<link rel="shortcut icon" href="img/fav.png">
+	<!-- Meta -->
+	<meta name="description" content="Responsive Bootstrap4 Dashboard Template">
+	<meta name="author" content="ParkerThemes">
+	<link rel="shortcut icon" href="img/fav.png">
 
-		<!-- Title -->
-		<title>Uni Pro Admin Template - Admin Dashboard</title>
+	<!-- Title -->
+	<title>Uni Pro Admin Template - Admin Dashboard</title>
 
 
-		<!-- *************
+	<!-- *************
 			************ Common Css Files *************
 		************ -->
-		<!-- Bootstrap css -->
-		<link rel="stylesheet" href="{{ asset ("Gmbslagi/css/bootstrap.min.css")}}">
-		
-		<!-- Icomoon Font Icons css -->
-		<link rel="stylesheet" href="{{ asset ("Gmbslagi/fonts/style.css")}}">
+	<!-- Bootstrap css -->
+	<link rel="stylesheet" href="{{ asset ("Gmbslagi/css/bootstrap.min.css")}}">
 
-		<!-- Main css -->
-		<link rel="stylesheet" href="{{ asset ("Gmbslagi/css/main.css")}}">
+	<!-- Icomoon Font Icons css -->
+	<link rel="stylesheet" href="{{ asset ("Gmbslagi/fonts/style.css")}}">
+
+	<!-- Main css -->
+	<link rel="stylesheet" href="{{ asset ("Gmbslagi/css/main.css")}}">
 
 
-		<!-- *************
+	<!-- *************
 			************ Vendor Css Files *************
 		************ -->
 
-		<!-- Mega Menu -->
-		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/megamenu/css/megamenu.css")}}">
+	<!-- Mega Menu -->
+	<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/megamenu/css/megamenu.css")}}">
 
-		<!-- Search Filter JS -->
-		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/search-filter/search-filter.css")}}">
-        <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/search-filter/custom-search-filter.css")}}">
-        
-        <!-- Data Tables -->
-		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4.css")}}" />
-		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4-custom.css")}}" />
-		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
-		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.css")}}" />
-        <style>
-			     
-	 .hidden-menu {
-    display: none;
-    background-color: #f2f2f2;
-    font-size: 20px;
-    padding: 20px;
-  }
+	<!-- Search Filter JS -->
+	<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/search-filter/search-filter.css")}}">
+	<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/search-filter/custom-search-filter.css")}}">
 
-  .hidden-menu a {
-    display: inline-block;
-    padding: 6px;
-    transition: transform 0.3s;
-    position: relative;
-  }
+	<!-- Data Tables -->
+	<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4.css")}}" />
+	<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4-custom.css")}}" />
+	<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
+	<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.css")}}" />
+	<style>
+		.dropdown-item {
+			display: block;
+			width: 100%;
+			padding: .9rem 1rem;
+			clear: both;
+			font-weight: 400;
+			color: #212529;
+			text-align: inherit;
+			text-decoration: none;
+			white-space: nowrap;
+			background-color: #f9f9f9;
+			border: 0;
+			/* border-radius: 5px; */
+			right: 0;
+		}
 
-  .hidden-menu a:hover {
-    transform: scale(1.2);
-  }
+		.dropdown {
+			position: relative;
+			display: inline-block;
 
-			.text {
-            text-align: center;
-            color: #5e6973;
-        }
-			.empty-box {
-            /* text-align: ; */
-            height: 25px;
-            border: 0px;
-            border-bottom: 2px solid grey;
-        }
+			background-color: #DFDFDF;
+			border-radius: 5px;
+		}
 
-        .empty-box.active {
-            height: 25px;
-            border: 0px;
-            border-bottom: 2px solid #333;
-        }
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			min-width: 160px;
+			z-index: 1;
+			background-color: #DFDFDF;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			padding: 10px;
+			border-radius: 4px;
+			right: 0;
+			/* Mengarahkan dropdown ke arah kiri */
+		}
 
-        .empty-box:hover {
-            height: 25px;
-            border: 0px;
-            border-bottom: 2px solid #333;
-  		}
-		 .dropdown {
-            position: relative;
-            display: inline-block;
-        }
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            min-width: 160px;
-            z-index: 1;
-            background-color: #f9f9f9;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            padding: 10px;
-            border-radius: 4px;
-            right: 0; /* Mengarahkan dropdown ke arah kiri */
-        }
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+		.dropdown-content a {
+			display: block;
+			padding: 5px 0;
+			text-decoration: none;
+			color: #333;
+			z-index: 1000;
+		}
 
-        .dropdown-content a {
-            display: block;
-            padding: 5px 0;
-            text-decoration: none;
-            color: #333;
-        }
-            .searchcontainer{
-        width:90%;
-        font-size:20px;
-        .icon-search{
-            display:inline-block;
-            margin-right:50px;
-            color: rgba(255, 255, 255, 0.5);
-        }
-        .search{
-            width:111%;
-            display:inline-block;
-            background-color: rgba(255, 255, 255, 0);
-            border:0px;
-            color:grey;
-            font-size:16px;
-            padding:10px 0px;
-            padding-left:25px;
-            border-bottom:1px solid grey;
-            &:focus{
-                outline: 0px;
-                border-bottom:1px solid #ccc;
-            }
-        }
-        }
-        </style>
+		.btn-ekspor-primary {
+			padding: 10px 9px;
+			color: #000000;
+			background-color: #E8E8E8;
+			border-color: #E8E8E8;
+			border-radius: 5px;
+		}
 
-	</head>
-	<body>
+		.btn-ekspor-primary:hover {
+			color: #ffffff;
+			background-color: #5957b1;
+			border-color: #5957b1;
+			border-radius: 5px;
+		}
 
-		<!-- Loading wrapper start -->
-		<div id="loading-wrapper">
-			<div class="spinner-border"></div>
-			Loading...
-		</div>
-		<!-- Loading wrapper end -->
+		.btn-check:focus+.btn-ekspor-primary,
+		.btn-ekspor-primary:focus {
+			color: #ffffff;
+			background-color: #5957b1;
+			border-color: #5957b1;
+			outline: 0;
+			-webkit-box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
+			box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
+		}
 
-		<!-- Page wrapper start -->
-		<div class="page-wrapper">
-			
-			<!-- Sidebar wrapper start -->
-			@include('layouts.sidebar')
-			<!-- Sidebar wrapper end -->
+		.hidden-menu {
+			display: none;
+			background-color: #f2f2f2;
+			font-size: 20px;
+			padding: 20px;
+		}
 
-			<!-- *************
+		.hidden-menu a {
+			display: inline-block;
+			padding: 6px;
+			transition: transform 0.3s;
+			position: relative;
+		}
+
+		.hidden-menu a:hover {
+			transform: scale(1.2);
+		}
+
+		.text {
+			text-align: center;
+			color: #5e6973;
+		}
+
+		.empty-box {
+			/* text-align: ; */
+			height: 25px;
+			border: 0px;
+			border-bottom: 2px solid grey;
+		}
+
+		.empty-box.active {
+			height: 25px;
+			border: 0px;
+			border-bottom: 2px solid #333;
+		}
+
+		.empty-box:hover {
+			height: 25px;
+			border: 0px;
+			border-bottom: 2px solid #333;
+		}
+
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			min-width: 160px;
+			z-index: 1;
+			background-color: #f9f9f9;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			padding: 10px;
+			border-radius: 4px;
+			right: 0;
+			/* Mengarahkan dropdown ke arah kiri */
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		.dropdown-content a {
+			display: block;
+			padding: 5px 0;
+			text-decoration: none;
+			color: #333;
+		}
+
+		.searchcontainer {
+			width: 90%;
+			font-size: 20px;
+
+			.icon-search {
+				display: inline-block;
+				margin-right: 50px;
+				color: rgba(255, 255, 255, 0.5);
+			}
+
+			.search {
+				width: 111%;
+				display: inline-block;
+				background-color: rgba(255, 255, 255, 0);
+				border: 0px;
+				color: grey;
+				font-size: 16px;
+				padding: 10px 0px;
+				padding-left: 25px;
+				border-bottom: 1px solid grey;
+
+				&:focus {
+					outline: 0px;
+					border-bottom: 1px solid #ccc;
+				}
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Loading wrapper start -->
+	<div id="loading-wrapper">
+		<div class="spinner-border"></div>
+		Loading...
+	</div>
+	<!-- Loading wrapper end -->
+
+	<!-- Page wrapper start -->
+	<div class="page-wrapper">
+
+		<!-- Sidebar wrapper start -->
+		@include('layouts.sidebar')
+		<!-- Sidebar wrapper end -->
+		@include('layouts.header')
+
+		<!-- *************
 				************ Main container start *************
 			************* -->
-			<div class="main-container">
+		<div class="main-container">
 
-				<!-- Page header starts -->
-				<div class="page-header">
-					
+			<!-- Content wrapper scroll start -->
+			<div class="content-wrapper-scroll">
+
+				<!-- Content wrapper start -->
+				<div class="content-wrapper">
+
 					<!-- Row start -->
+					<div class="card-body">
 					<div class="row gutters">
-						<div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-9">
+						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
-						
-
-						</div>
-						
-					</div>
-					<!-- Row end -->					
-
-				</div>
-				<!-- Page header ends -->
-
-				<!-- Content wrapper scroll start -->
-				<div class="content-wrapper-scroll">
-
-					<!-- Content wrapper start -->
-					<div class="content-wrapper">
-
-						<!-- Row start -->
-					    <div class="row gutters">
-						    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                            
-                                <!-- Card start -->
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="card-title"><h3>Mata Uang<button type="button" style="border: none; background:transparent;">☆</button></h3></div>
-                                        <div class="graph-day-selection" role="group" style="margin-left: 68%">
-											<a href="{{url('add-currency')}}">
-											<button type="button" class="btn active" style="background: transparent">Tambah Mata Uang</button>
-											</a>
+							<!-- Card start -->
+							
+								<div class="">
+									<div class="d-flex">
+										<div class="col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12">
+											<div class="card-title">
+												<h3>Mata Uang<button type="button" style="border: none; background:transparent;">☆</button></h3>
+											</div>
 										</div>
-										<div class="dropdown icon-dots-three-vertical">
-											<span></span>
-											<div class="dropdown-content">
-												<a href="#">
-												<button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
-													Impor
-												</button>
-												</a>
-												<a href="#" class="icon-folder" style="color: #333">
-												<button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
+										<div class="col-xl-6 col-lg-6 col-md-2 col-sm-2 col-12">
+											<div class="graph-day-selection" role="group" style="margin-left: 68%">
+												<a href="{{url('add-currency')}}">
+													<button type="button" class="btn active" style="background: transparent; margin-top: 2px; margin-bottom: 2px;">Tambah</button>
 												</a>
 											</div>
-										</div>     
-                                    </div>
-                                    <div class="card-body">
-                                                    <!-- Row start -->
+										</div>
+										<div class="col-xl-1 col-lg-1 col-md-2 col-sm-2 col-12">
+											<div class="dropdown" style="float: right;">
+												<a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 
-                                    <!-- Row end -->
-									
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
+													<li><a class="dropdown-item" style="margin-top: 4%;" href="">Espor</a></li>
+													<li><a class="dropdown-item" href="">Impor</a></li>
+												</ul>
+											</div>
+										</div>
 										
-									  </nav>
-                                        <div class="content">
-                                            <div class="searchcontainer">
-                                              <i class="icon-search"></i><input class="search " type="text" placeholder="Cari atau seleksi hasil.." style="
-                                              margin-bottom: 2%; font-size:10pt "/>
-                                            </div>
-                                        </div>
-                                        <div class="table-responsive">
+									</div>
+									<div class="">
+										<!-- Row start -->
+
+										<!-- Row end -->
+
+
+										</nav>
+										<div class="content">
+											<div class="searchcontainer">
+												<i class="icon-search"></i><input class="search " type="text" placeholder="Cari atau seleksi hasil.." style="
+                                              margin-bottom: 2%; font-size:10pt " />
+											</div>
+										</div>
+										<div class="table-responsive">
 											<div class="hidden-menu" style="display: none; background-color: #f2f2f2; font-size: 12pt; padding: 10px;">
 												<p style="display: inline" id="count-display">&emsp;</p>
-												&emsp;<a  href="#" title="Aktifkan"> <i class="icon-check-circle" style="color:#424242 "></i> </a>
-												&emsp;<a  href="#" title="Nonaktifkan"> <i class="icon-do_not_disturb_alt"></i> </a>
-												&emsp;<a  href="#" title="Hapus"> <i class="icon-trash-2"></i> </a>
+												&emsp;<a href="#" title="Aktifkan"> <i class="icon-check-circle" style="color:#424242 "></i> </a>
+												&emsp;<a href="#" title="Nonaktifkan"> <i class="icon-do_not_disturb_alt"></i> </a>
+												&emsp;<a href="#" title="Hapus"> <i class="icon-trash-2"></i> </a>
 											</div>
 											<table class="table table-hover caption-top">
 												<thead>
-												  <tr>
-													<th scope="col"> <input type="checkbox" id="select-all-checkbox"> </th>
-                                                    <th scope="col">Nama</th>
-                                                    <th scope="col">Kode</th>
-                                                    <th scope="col">Simbol</th>
-                                                    <th scope="col">Kurs</th>
-													<th scope="col">Aksi</th>
-												  </tr>
+													<tr>
+														<th scope="col"> <input type="checkbox" id="select-all-checkbox"> </th>
+														<th scope="col">Nama</th>
+														<th scope="col">Kode</th>
+														<th scope="col">Simbol</th>
+														<th scope="col">Kurs</th>
+														<th scope="col">Aksi</th>
+													</tr>
 												</thead>
 												<tbody>
-												  <!-- Data 1 -->
-												  <tr class="table-row">
-													<td><input type="checkbox" class="other-checkbox"></td>
-                                                    <td>Rupiah</td>
-                                                    <td>USD</td>
-                                                    <td>$</td>
-                                                    <td>1</td>  
-													<td>
-														<div class="menu-icons" style="font-size: 15px;">
-															<a href="{{route('currency-edit')}}" class="menu-icon icon-edit-2"></a>
-															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-														  </div>
-													</td>	
-												  </tr>
-											  
-												  <!-- Data 2 -->
-												  <tr class="table-row">
-													<td><input type="checkbox" class="other-checkbox"></td>
-                                                    <td>Rupiah</td>
-                                                    <td>IDR</td>
-                                                    <td>Rp</td>
-                                                    <td>10</td>
-													<td>
-														<div class="menu-icons" style="font-size: 15px;">
-															<a href="{{route('currency-edit')}}" class="menu-icon icon-edit-2"></a>
-															<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-														  </div>
-													</td>	
-												  </tr>
-												 
+													<!-- Data 1 -->
+													<tr class="table-row">
+														<td><input type="checkbox" class="other-checkbox"></td>
+														<td>Rupiah</td>
+														<td>USD</td>
+														<td>$</td>
+														<td>1</td>
+														<td>
+															<div class="menu-icons" style="font-size: 15px;">
+																<a href="{{route('currency-edit')}}" class="menu-icon icon-edit-2"></a>
+																<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+															</div>
+														</td>
+													</tr>
+
+													<!-- Data 2 -->
+													<tr class="table-row">
+														<td><input type="checkbox" class="other-checkbox"></td>
+														<td>Rupiah</td>
+														<td>IDR</td>
+														<td>Rp</td>
+														<td>10</td>
+														<td>
+															<div class="menu-icons" style="font-size: 15px;">
+																<a href="{{route('currency-edit')}}" class="menu-icon icon-edit-2"></a>
+																<a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+															</div>
+														</td>
+													</tr>
+
 												</tbody>
-											  </table>
-                                                        <!-- Card start -->
-                                            <div class="card">
-                                                <div class="card-body" style="margin-left: -2.1%">
+											</table>
+											<!-- Card start -->
+											<div class="card">
+												<div class="card-body" style="margin-left: -2.1%">
 
-                                                    <nav aria-label="Page navigation example">
-                                                        <ul class="pagination">
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">&laquo;</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">&raquo;</span>
-                                                            </a>
-                                                        </li>
-                                                        </ul>
-                                                    </nav>
+													<nav aria-label="Page navigation example">
+														<ul class="pagination" style="justify-content: flex-end;">
+															<li class="page-item">
+																<a class="page-link" href="#" aria-label="Previous">
+																	<span aria-hidden="true">&laquo;</span>
+																</a>
+															</li>
+															<li class="page-item"><a class="page-link" href="#">1</a></li>
+															<li class="page-item"><a class="page-link" href="#">2</a></li>
+															<li class="page-item"><a class="page-link" href="#">3</a></li>
+															<li class="page-item">
+																<a class="page-link" href="#" aria-label="Next">
+																	<span aria-hidden="true">&raquo;</span>
+																</a>
+															</li>
+														</ul>
+													</nav>
 
-                                                </div>
-                                            </div>
-								<!-- Card end -->
-									</div>
+												</div>
+											</div>
+											<!-- Card end -->
+										</div>
 										<!-- Modal start -->
-									
+
 										<!-- Modal end -->
-                                    </div>
-                                </div>
-                                <!-- Card end -->
+									</div>
+								</div>
+								<!-- Card end -->
 
-                            </div>
-                        </div>
-                        <!-- Row end -->
+							
+						</div>
+						<!-- Row end -->
 
+					</div>
 					</div>
 					<!-- Content wrapper end -->
 
@@ -347,7 +420,7 @@
 		<!-- Megamenu JS -->
 		<script src="{{ asset ("Gmbslagi/vendor/megamenu/js/megamenu.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/megamenu/js/custom.js")}}"></script>
-				
+
 		<!-- Slimscroll JS -->
 		<script src="{{ asset ("Gmbslagi/vendor/slimscroll/slimscroll.min.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/slimscroll/custom-scrollbar.js")}}"></script>
@@ -356,10 +429,10 @@
 		<script src="{{ asset ("Gmbslagi/vendor/search-filter/search-filter.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/search-filter/custom-search-filter.js")}}"></script>
 
-        <!-- Data Tables -->
+		<!-- Data Tables -->
 		<script src="{{ asset ("Gmbslagi/vendor/datatables/dataTables.min.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bootstrap.min.js")}}"></script>
-		
+
 		<!-- Custom Data tables -->
 		<script src="{{ asset ("Gmbslagi/vendor/datatables/custom/custom-datatables.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/datatables/custom/fixedHeader.js")}}"></script>
@@ -370,62 +443,63 @@
 		<script src="{{ asset ("Gmbslagi/vendor/datatables/pdfmake.min.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/datatables/vfs_fonts.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/datatables/html5.min.js")}}"></script>
-        <script src="{{ asset ("Gmbslagi/vendor/datatables/buttons.print.min.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/vendor/datatables/buttons.print.min.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.js")}}"></script>
-        
+
 		<!-- Main Js Required -->
 		<script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
 		<script>
-		const checkboxes = document.querySelectorAll('.other-checkbox');
-		const selectAllCheckbox = document.querySelector('#select-all-checkbox');
-		const hiddenMenu = document.querySelector('.hidden-menu');
-		const countDisplay = document.querySelector('#count-display');
+			const checkboxes = document.querySelectorAll('.other-checkbox');
+			const selectAllCheckbox = document.querySelector('#select-all-checkbox');
+			const hiddenMenu = document.querySelector('.hidden-menu');
+			const countDisplay = document.querySelector('#count-display');
 
-		// Function to count the number of checked checkboxes
-		function countCheckedCheckboxes() {
-		const checkedCheckboxes = document.querySelectorAll('.other-checkbox:checked');
-		return checkedCheckboxes.length;
-		}
-
-		// Function to update the count display
-		function updateCountDisplay() {
-		const totalCount = countCheckedCheckboxes();
-		countDisplay.textContent =  totalCount + ' Item Yang dipilih : ' ;
-		}
-
-		// Add event listener to each checkbox
-		checkboxes.forEach(function(checkbox) {
-		checkbox.addEventListener('change', function() {
-			if (this.checked) {
-			hiddenMenu.style.display = 'block'; // Show the hidden menu
-			} else {
-			const checkedCount = countCheckedCheckboxes();
-			if (checkedCount === 0) {
-				hiddenMenu.style.display = 'none'; // Hide the hidden menu if no checkboxes are checked
+			// Function to count the number of checked checkboxes
+			function countCheckedCheckboxes() {
+				const checkedCheckboxes = document.querySelectorAll('.other-checkbox:checked');
+				return checkedCheckboxes.length;
 			}
-			}
-			
-			updateCountDisplay(); // Update the count display
-		});
-		});
 
-		// Add event listener to the "Select All" checkbox
-		selectAllCheckbox.addEventListener('change', function() {
-		checkboxes.forEach(function(checkbox) {
-			checkbox.checked = selectAllCheckbox.checked; // Set the state of each checkbox based on the "Select All" checkbox
-		});
-		
-		if (this.checked) {
-			hiddenMenu.style.display = 'block'; // Show the hidden menu
-		} else {
-			hiddenMenu.style.display = 'none'; // Hide the hidden menu
-		}
-		
-		updateCountDisplay(); // Update the count display
-		});
+			// Function to update the count display
+			function updateCountDisplay() {
+				const totalCount = countCheckedCheckboxes();
+				countDisplay.textContent = totalCount + ' Item Yang dipilih : ';
+			}
+
+			// Add event listener to each checkbox
+			checkboxes.forEach(function(checkbox) {
+				checkbox.addEventListener('change', function() {
+					if (this.checked) {
+						hiddenMenu.style.display = 'block'; // Show the hidden menu
+					} else {
+						const checkedCount = countCheckedCheckboxes();
+						if (checkedCount === 0) {
+							hiddenMenu.style.display = 'none'; // Hide the hidden menu if no checkboxes are checked
+						}
+					}
+
+					updateCountDisplay(); // Update the count display
+				});
+			});
+
+			// Add event listener to the "Select All" checkbox
+			selectAllCheckbox.addEventListener('change', function() {
+				checkboxes.forEach(function(checkbox) {
+					checkbox.checked = selectAllCheckbox.checked; // Set the state of each checkbox based on the "Select All" checkbox
+				});
+
+				if (this.checked) {
+					hiddenMenu.style.display = 'block'; // Show the hidden menu
+				} else {
+					hiddenMenu.style.display = 'none'; // Hide the hidden menu
+				}
+
+				updateCountDisplay(); // Update the count display
+			});
 		</script>
 
-	</body>
+</body>
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:54 GMT -->
+
 </html>

@@ -279,6 +279,7 @@
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
         <!-- Sidebar wrapper end -->
+        @include('layouts.header')
 
         <!-- *************
 				************ Main container start *************
@@ -310,7 +311,7 @@
                                     <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
                                         <div class="graph-day-selection" role="group" style="margin-left: 68%">
                                             <a href="{{url('add_transfer')}}">
-                                                <button type="button" class="btn active" style="background: transparent">Tambah Transfer</button>
+                                                <button type="button" class="btn active" style="background: transparent">Tambah</button>
                                             </a>
                                         </div>
                                     </div>

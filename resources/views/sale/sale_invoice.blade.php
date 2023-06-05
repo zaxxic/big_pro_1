@@ -2,53 +2,51 @@
 <html lang="en">
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:53 GMT -->
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Meta -->
-    <meta name="description" content="Responsive Bootstrap4 Dashboard Template">
-    <meta name="author" content="ParkerThemes">
-    <link rel="shortcut icon" href="img/fav.png">
+		<!-- Meta -->
+		<meta name="description" content="Responsive Bootstrap4 Dashboard Template">
+		<meta name="author" content="ParkerThemes">
+		<link rel="shortcut icon" href="img/fav.png">
 
-    <!-- Title -->
-    <title>Uni Pro Admin Template - Admin Dashboard</title>
-
-
-    <!-- *************
-   ************ Common Css Files *************
-  ************ -->
-    <!-- Bootstrap css -->
-    <link rel="stylesheet" href="{{ asset('Gmbslagi/css/bootstrap.min.css') }}">
-
-    <!-- Icomoon Font Icons css -->
-    <link rel="stylesheet" href="{{ asset('Gmbslagi/fonts/style.css') }}">
-
-    <!-- Main css -->
-    <link rel="stylesheet" href="{{ asset('Gmbslagi/css/main.css') }}">
+		<!-- Title -->
+		<title>Uni Pro Admin Template - Admin Dashboard</title>
 
 
-    <!-- *************
-   ************ Vendor Css Files *************
-  ************ -->
+		<!-- *************
+			************ Common Css Files *************
+		************ -->
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" href="{{ asset ("Gmbslagi/css/bootstrap.min.css")}}">
 
-    <!-- Mega Menu -->
-    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/megamenu/css/megamenu.css') }}">
+		<!-- Icomoon Font Icons css -->
+		<link rel="stylesheet" href="{{ asset ("Gmbslagi/fonts/style.css")}}">
 
-    <!-- Search Filter JS -->
-    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/search-filter.css') }}">
-    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.css') }}">
+		<!-- Main css -->
+		<link rel="stylesheet" href="{{ asset ("Gmbslagi/css/main.css")}}">
 
-    <!-- Data Tables -->
-    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/dataTables.bs4.css') }}" />
-    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/dataTables.bs4-custom.css') }}" />
-    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/buttons.bs.css') }}" />
-    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/dropzone/dropzone.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/daterange/daterange.css')}}">
-    <style>
-    .hidden-menu {
+
+		<!-- *************
+			************ Vendor Css Files *************
+		************ -->
+
+		<!-- Mega Menu -->
+		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/megamenu/css/megamenu.css")}}">
+
+		<!-- Search Filter JS -->
+		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/search-filter/search-filter.css")}}">
+        <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/search-filter/custom-search-filter.css")}}">
+
+        <!-- Data Tables -->
+		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4.css")}}" />
+		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4-custom.css")}}" />
+		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
+		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.css")}}" />
+        <style>
+				 .hidden-menu {
     display: none;
     background-color: #f2f2f2;
     font-size: 20px;
@@ -66,80 +64,29 @@
     transform: scale(1.2);
   }
 
-        .text {
+			.text {
             text-align: center;
             color: #5e6973;
         }
-
-        @media (min-width: 576px) {
-            .box1 {
-                margin-left: 32%;
-            }
+			.empty-box {
+            /* text-align: ; */
+            height: 25px;
+            border: 0px;
+            border-bottom: 2px solid grey;
         }
 
-        .empty-box2 {
-            color: #f26861;
-            border-color: #f26861;
-            outline: 1px solid #f26861;
-            text-align: center;
-            height: 35px;
-            padding: 8px;
-            border-radius: 0px 5px 5px 0px;
+        .empty-box.active {
+            height: 25px;
+            border: 0px;
+            border-bottom: 2px solid #333;
         }
 
-        .empty-box2.active {
-            height: 35px;
-            text-align: center;
-            color: #ffffff;
-            background-color: #f26861;
-            border-color: #f26861;
-            outline: 1px solid #f26861;
-            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
-            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
-        }
-
-        .empty-box2:hover {
-            height: 35px;
-            text-align: center;
-            color: #ffffff;
-            background-color: #f26861;
-            border-color: #f26861;
-            outline: 1px solid #f26861;
-            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
-            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
-        }
-
-        .empty-box1 {
-            color: #f26861;
-            border-color: #f26861;
-            outline: 1px solid #f26861;
-            text-align: center;
-            height: 35px;
-            padding: 8px;
-            border-radius: 5px 0px 0px 5px;
-        }
-
-        .empty-box1.active {
-            height: 35px;
-            text-align: center;
-            color: #ffffff;
-            background-color: #f26861;
-            border-color: #f26861;
-            outline: 1px solid #f26861;
-            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
-            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
-        }
-
-        .empty-box1:hover {
-            height: 35px;
-            text-align: center;
-            color: #ffffff;
-            background-color: #f26861;
-            border-color: #f26861;
-            outline: 1px solid #f26861;
-        }
-
-        .dropdown {
+        .empty-box:hover {
+            height: 25px;
+            border: 0px;
+            border-bottom: 2px solid #333;
+  		}
+		 .dropdown {
             position: relative;
             display: inline-block;
         }
@@ -150,11 +97,10 @@
             min-width: 160px;
             z-index: 1;
             background-color: #f9f9f9;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             padding: 10px;
             border-radius: 4px;
-            right: 0;
-            /* Mengarahkan dropdown ke arah kiri */
+            right: 0; /* Mengarahkan dropdown ke arah kiri */
         }
 
         .dropdown:hover .dropdown-content {
@@ -167,118 +113,110 @@
             text-decoration: none;
             color: #333;
         }
-
-        .searchcontainer {
-            width: 90%;
-            font-size: 20px;
-
-            .icon-search {
-                display: inline-block;
-                margin-right: 50px;
-                color: rgba(255, 255, 255, 0.5);
-            }
-
-            .search {
-                width: 111%;
-                display: inline-block;
-                background-color: rgba(255, 255, 255, 0);
-                border: 0px;
-                color: grey;
-                font-size: 16px;
-                padding: 10px 0px;
-                padding-left: 25px;
-                border-bottom: 1px solid grey;
-
-                &:focus {
-                    outline: 0px;
-                    border-bottom: 1px solid #ccc;
-                }
+            .searchcontainer{
+        width:90%;
+        font-size:20px;
+        .icon-search{
+            display:inline-block;
+            margin-right:50px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .search{
+            width:111%;
+            display:inline-block;
+            background-color: rgba(255, 255, 255, 0);
+            border:0px;
+            color:grey;
+            font-size:16px;
+            padding:10px 0px;
+            padding-left:25px;
+            border-bottom:1px solid grey;
+            &:focus{
+                outline: 0px;
+                border-bottom:1px solid #ccc;
             }
         }
-    </style>
+        }
+        </style>
 
-</head>
+	</head>
+	<body>
 
-<body>
+		<!-- Loading wrapper start -->
+		<div id="loading-wrapper">
+			<div class="spinner-border"></div>
+			Loading...
+		</div>
+		<!-- Loading wrapper end -->
 
-    <!-- Loading wrapper start -->
-    <div id="loading-wrapper">
-        <div class="spinner-border"></div>
-        Loading...
-    </div>
-    <!-- Loading wrapper end -->
+		<!-- Page wrapper start -->
+		<div class="page-wrapper">
 
-    <!-- Page wrapper start -->
-    <div class="page-wrapper">
+			<!-- Sidebar wrapper start -->
+			@include('layouts.sidebar')
+			<!-- Sidebar wrapper end -->
 
-        <!-- Sidebar wrapper start -->
-        @include('layouts.sidebar')
-        <!-- Sidebar wrapper end -->
+			<!-- *************
+				************ Main container start *************
+			************* -->
+			<div class="main-container">
 
-        <!-- *************
-    ************ Main container start *************
-   ************* -->
-        <div class="main-container">
+				<!-- Page header starts -->
+				<div class="page-header">
 
-            <!-- Page header starts -->
-            <div class="page-header">
-
-                <!-- Row start -->
-                <div class="row gutters">
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-9">
-
+					<!-- Row start -->
+					<div class="row gutters">
+						<div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-9">
 
 
-                    </div>
 
-                </div>
-                <!-- Row end -->
+						</div>
 
-            </div>
-            <!-- Page header ends -->
+					</div>
+					<!-- Row end -->
 
-            <!-- Content wrapper scroll start -->
-            <div class="content-wrapper-scroll">
+				</div>
+				<!-- Page header ends -->
 
-                <!-- Content wrapper start -->
-                <div class="content-wrapper">
+				<!-- Content wrapper scroll start -->
+				<div class="content-wrapper-scroll">
 
-                    <!-- Row start -->
-                    <div class="row gutters">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+					<!-- Content wrapper start -->
+					<div class="content-wrapper">
 
-                            <!-- Card start -->
-                            <div class="card">
-                                <div class="card-header">
-                                    <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
-                                        <div class="card-title">
-                                            <h3>Faktur<button type="button" style="border: none; background:transparent;">☆</button></h3>
+						<!-- Row start -->
+					    <div class="row gutters">
+						    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                                <!-- Card start -->
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
+                                        <div class="card-title"><h3>Faktur<button type="button" style="border: none; background:transparent;">☆</button></h3></div>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
+                                        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
                                         <div class="graph-day-selection" role="group" style="margin-left: 68%">
-                                            <a href="{{url('add_invoice')}}">
-                                                <button type="button" class="btn active" style="background: transparent">Tambah Faktur</button>
-                                            </a>
-                                        </div>
+											<a href="{{url('add_invoice')}}">
+											<button type="button" class="btn active" style="background: transparent">Tambah Faktur</button>
+											</a>
+										</div>
+										</div>
+										<div class="dropdown icon-dots-three-vertical">
+											<span></span>
+											<div class="dropdown-content">
+												<a href="#">
+												<button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
+													Impor
+												</button>
+												</a>
+												<a href="#" class="icon-folder" style="color: #333">
+												<button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
+												</a>
+											</div>
+										</div>
                                     </div>
-                                    <div class="dropdown icon-dots-three-vertical">
-                                        <span></span>
-                                        <div class="dropdown-content">
-                                            <a href="#">
-                                                <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
-                                                    Impor
-                                                </button>
-                                            </a>
-                                            <a href="#" class="icon-folder" style="color: #333">
-                                                <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
-                                                    Ekspor</button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <!-- Row start -->
+                                    <div class="card-body">
+                                                    <!-- Row start -->
                                     <div class="row gutters" style="margin-left: 10%; margin-bottom: -5%">
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                                             <div class="stats-tile">
@@ -324,17 +262,19 @@
                                         </div>
                                     </div>
                                     <!-- Row end -->
-                                    <div class="d-flex">
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1" style="margin-top: 8%;">
+									<div class="d-flex">
+                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1"
+                                            style="margin-top: 8%;">
                                             <div class="hr-switch">
                                                 <a href="{{ url('invoice') }}">
                                                     <div class="empty-box1 active">
                                                         <h6 class="">Faktur</h6>
-                                                    </div	>
+                                                    </div>
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2" style="margin-top: 8%;">
+                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2"
+                                            style="margin-top: 8%;">
                                             <div class="hr-switch">
                                                 <a href="{{ url('recurring_invoice') }}">
                                                     <div class="empty-box2">
@@ -344,135 +284,221 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="content">
-                                        <div class="searchcontainer">
-                                            <i class="icon-search"></i><input class="search " type="text" placeholder="Cari atau seleksi hasil.." style="
-                                              margin-bottom: 2%; font-size:10pt " />
+									  </div>
+                                        <div class="content">
+                                            <div class="searchcontainer">
+                                              <i class="icon-search"></i><input class="search " type="text" placeholder="Cari atau seleksi hasil.." style="
+                                              margin-bottom: 2%; font-size:10pt "/>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <div class="hidden-menu" style="display: none; background-color: #f2f2f2; font-size: 12pt; padding: 10px;">
-                                            <p style="display: inline" id="count-display">&emsp;</p>
-                                            &emsp;<a  href="#" title="Batal"> <i class="icon-x-circle" style="color:#424242 "></i> </a>
-                                            &emsp;<a  href="#" title="Hapus"> <i class="icon-trash-2"></i> </a>
-                                        </div>
-                                        <table class="table table-hover caption-top">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col"> <input type="checkbox" id="select-all-checkbox"> </th>
+                                        <div class="table-responsive">
+											<div class="hidden-menu" style="display: none; background-color: #f2f2f2; font-size: 12pt; padding: 10px;">
+												<p style="display: inline" id="count-display">&emsp;</p>
+												&emsp;<a  href="#" title="Batal"> <i class="icon-x-circle" style="color:#424242 "></i> </a>
+												&emsp;<a  href="#" title="Hapus"> <i class="icon-trash-2"></i> </a>
+											</div>
+											<table class="table table-hover caption-top">
+												<thead>
+												  <tr>
+													<th scope="col"> <input type="checkbox" id="select-all-checkbox"> </th>
                                                     <th scope="col">Tanggal Jatuh Tempo</th>
                                                     <th scope="col">Status</th>
                                                     <th scope="col">Pelanggan</th>
                                                     <th scope="col">Jumlah</th>
-                                                    <th scope="col">Aksi</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <!-- Data 1 -->
-                                                <tr class="table-row">
-                                                    <td><input type="checkbox" class="other-checkbox"></td>
+													<th scope="col">Aksi</th>
+												  </tr>
+												</thead>
+												<tbody>
+												  <!-- Data 1 -->
+												  <tr class="table-row">
+													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2023</td>
                                                     <td>konsep</td>
                                                     <td>koirul</td>
                                                     <td>91.000.000,00</td>
-                                                    <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
+													<td>
+                                                       <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
-                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
-                                                                <i class="icon-attach_money"></i>
-                                                            </button>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
-                                                            <a href="{{ url('details') }}" class="menu-icon icon-eye1"></a>
+                                                            <a href="{{ url('details')}}" class="menu-icon icon-eye1"></a>
+                                                            <div class="dropdown icon-dots-two-vertical">
+                                                                <span>
+                                                                <div class="dropdown-content">
+                                                                    <a href="#">
+                                                                    <button type="button" style="border: none; background:none; color:#333; background:transparent" data-bs-toggle="modal" data-bs-target="#payment" class="icon-attach_money">
+                                                                            Bayar
+                                                                    </button>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-printer">
+                                                                            Cetak
+                                                                        </button>
+                                                                    </a>
+                                                                    <a href="#" class="icon-x-circle" style="color: #333">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
+                                                                            Batal</button>
+                                                                    </a>
+                                                                </div>
+                                                            </span>
+                                                            </div>
                                                         </div>
                                                     </td>
-                                                </tr>
+												  </tr>
 
-                                                <!-- Data 2 -->
-                                                <tr class="table-row">
-                                                    <td><input type="checkbox" class="other-checkbox"></td>
+												  <!-- Data 2 -->
+												  <tr class="table-row">
+													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2024</td>
                                                     <td>konsep</td>
                                                     <td>choirul</td>
                                                     <td>80.000.000,00</td>
-                                                    <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
+													<td>
+                                                       <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
-                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
-                                                                <i class="icon-attach_money"></i>
-                                                            </button>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
+                                                            <div class="dropdown icon-dots-two-vertical">
+                                                                <span>
+                                                                <div class="dropdown-content">
+                                                                    <a href="#">
+                                                                    <button type="button" style="border: none; background:none; color:#333; background:transparent" data-bs-toggle="modal" data-bs-target="#payment" class="icon-attach_money">
+                                                                            Bayar
+                                                                    </button>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-printer">
+                                                                            Cetak
+                                                                        </button>
+                                                                    </a>
+                                                                    <a href="#" class="icon-x-circle" style="color: #333">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
+                                                                            Batal</button>
+                                                                    </a>
+                                                                </div>
+                                                            </span>
+                                                            </div>
                                                         </div>
                                                     </td>
-                                                </tr>
+												  </tr>
 
 
-                                                <!-- Data 3 -->
-                                                <tr class="table-row">
-                                                    <td><input type="checkbox" class="other-checkbox"></td>
+												  <!-- Data 3 -->
+												  <tr class="table-row">
+													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>14 mei 2023</td>
                                                     <td>konsep</td>
                                                     <td>rudi</td>
                                                     <td>100.000.000,00</td>
-                                                    <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
+													<td>
+                                                       <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
-                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
-                                                                <i class="icon-attach_money"></i>
-                                                            </button>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
+                                                            <div class="dropdown icon-dots-two-vertical">
+                                                                <span>
+                                                                <div class="dropdown-content">
+                                                                    <a href="#">
+                                                                    <button type="button" style="border: none; background:none; color:#333; background:transparent" data-bs-toggle="modal" data-bs-target="#payment" class="icon-attach_money">
+                                                                            Bayar
+                                                                    </button>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-printer">
+                                                                            Cetak
+                                                                        </button>
+                                                                    </a>
+                                                                    <a href="#" class="icon-x-circle" style="color: #333">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
+                                                                            Batal</button>
+                                                                    </a>
+                                                                </div>
+                                                            </span>
+                                                            </div>
                                                         </div>
                                                     </td>
-                                                </tr>
+												  </tr>
 
-                                                <tr class="table-row">
-                                                    <td><input type="checkbox" class="other-checkbox"></td>
+												  <tr class="table-row">
+													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>15 mei 2023</td>
                                                     <td>sebagian</td>
                                                     <td>slemet</td>
                                                     <td>20.000.000,00</td>
-                                                    <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
+													<td>
+                                                       <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
-                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
-                                                                <i class="icon-attach_money"></i>
-                                                            </button>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
+                                                            <div class="dropdown icon-dots-two-vertical">
+                                                                <span>
+                                                                <div class="dropdown-content">
+                                                                    <a href="#">
+                                                                    <button type="button" style="border: none; background:none; color:#333; background:transparent" data-bs-toggle="modal" data-bs-target="#payment" class="icon-attach_money">
+                                                                            Bayar
+                                                                    </button>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-printer">
+                                                                            Cetak
+                                                                        </button>
+                                                                    </a>
+                                                                    <a href="#" class="icon-x-circle" style="color: #333">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
+                                                                            Batal</button>
+                                                                    </a>
+                                                                </div>
+                                                            </span>
+                                                            </div>
                                                         </div>
                                                     </td>
-                                                </tr>
+												  </tr>
 
-                                                <tr class="table-row">
-                                                    <td><input type="checkbox" class="other-checkbox"></td>
+												  <tr class="table-row">
+													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>25 mei 2023</td>
                                                     <td>dibayar</td>
                                                     <td>wahyu</td>
                                                     <td>45.000.000,00</td>
-                                                    <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
+													<td>
+                                                       <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
-                                                            <button type="button" style="border: none; background:none" data-bs-toggle="modal" data-bs-target="#payment">
-                                                                <i class="icon-attach_money"></i>
-                                                            </button>
                                                             <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
+                                                            <div class="dropdown icon-dots-two-vertical">
+                                                                <span>
+                                                                <div class="dropdown-content">
+                                                                    <a href="#">
+                                                                    <button type="button" style="border: none; background:none; color:#333; background:transparent" data-bs-toggle="modal" data-bs-target="#payment" class="icon-attach_money">
+                                                                            Bayar
+                                                                    </button>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-printer">
+                                                                            Cetak
+                                                                        </button>
+                                                                    </a>
+                                                                    <a href="#" class="icon-x-circle" style="color: #333">
+                                                                        <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
+                                                                            Batal</button>
+                                                                    </a>
+                                                                </div>
+                                                            </span>
+                                                            </div>
                                                         </div>
                                                     </td>
-                                                </tr>
+												  </tr>
 
-                                            </tbody>
-                                        </table>
-                                        <!-- Card start -->
-                                        <div class="card">
-                                            <div class="card-body col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+												</tbody>
+											  </table>
+                                                        <!-- Card start -->
+                                            <div class="card">
+                                                <div class="card-body col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
 
-                                                <nav aria-label="Page navigation example">
-                                                    <ul class="pagination" style="float: right;">
+                                                    <nav aria-label="Page navigation example">
+                                                        <ul class="pagination" style="float: right;">
                                                         <li class="page-item">
                                                             <a class="page-link" href="#" aria-label="Previous">
-                                                                <span aria-hidden="true">&laquo;</span>
+                                                            <span aria-hidden="true">&laquo;</span>
                                                             </a>
                                                         </li>
                                                         <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -480,17 +506,17 @@
                                                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                                                         <li class="page-item">
                                                             <a class="page-link" href="#" aria-label="Next">
-                                                                <span aria-hidden="true">&raquo;</span>
+                                                            <span aria-hidden="true">&raquo;</span>
                                                             </a>
                                                         </li>
-                                                    </ul>
-                                                </nav>
+                                                        </ul>
+                                                    </nav>
 
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!-- Card end -->
-                                    </div>
-                                    <div class="modal fade" id="payment" tabindex="-1" aria-labelledby="paymentTitle" aria-hidden="true">
+								<!-- Card end -->
+									</div>
+									<div class="modal fade" id="payment" tabindex="-1" aria-labelledby="paymentTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                             <div class="modal-content" style="margin-top: -10%">
                                                 <div class="modal-header">
@@ -528,107 +554,105 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Modal start -->
-                                    <div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">
-                                                        Impor Faktur</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div id="dropzone">
-                                                        <form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
+										<!-- Modal start -->
+										<div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+												<div class="modal-content" style="margin-top: -10%">
+													<div class="modal-header">
+														<h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Impor Faktur</h5>
+														<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+													</div>
+													<div class="modal-body">
+														<div id="dropzone">
+															<form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
 
-                                                            <div class="dz-message needsclick">
-                                                                <button type="button" class="dz-button" style="border:none; margin-right:20%; margin-left:20%; margin-top: 12%">Pilih
-                                                                    berkas di sini untuk mengunggah.</button><br>
-                                                            </div>
+																<div class="dz-message needsclick">
+																	<button type="button" class="dz-button" style="border:none; margin-right:20%; margin-left:20%; margin-top: 12%">Pilih berkas di sini untuk mengunggah.</button><br>
+																</div>
 
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-footer" style="margin-top:2%">
-                                                    <a href="" onclick="window.location.reload()" style="margin-right: 2%" data-bs-dismiss="modal">Batal</a>
-                                                    <button type="button" class="btn btn-primary" style="border-radius: 20px">Upload</button>
-                                                </div>
-                                            </div>
-                                        </div>
+															</form>
+														</div>
+													</div>
+													<div class="modal-footer" style="margin-top:2%">
+														<a href="" onclick="window.location.reload()" style="margin-right: 2%" data-bs-dismiss="modal">Batal</a>
+														<button type="button" class="btn btn-primary" style="border-radius: 20px">Upload</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Modal end -->
                                     </div>
-                                    <!-- Modal end -->
                                 </div>
+                                <!-- Card end -->
+
                             </div>
-                            <!-- Card end -->
-
                         </div>
-                    </div>
-                    <!-- Row end -->
+                        <!-- Row end -->
 
-                </div>
-                <!-- Content wrapper end -->
+					</div>
+					<!-- Content wrapper end -->
 
-                <!-- App Footer start -->
-                <div class="app-footer">© Uni Pro Admin 2021</div>
-                <!-- App footer end -->
+					<!-- App Footer start -->
+					<div class="app-footer">© Uni Pro Admin 2021</div>
+					<!-- App footer end -->
 
-            </div>
-            <!-- Content wrapper scroll end -->
+				</div>
+				<!-- Content wrapper scroll end -->
 
-        </div>
-        <!-- *************
-    ************ Main container end *************
-   ************* -->
+			</div>
+			<!-- *************
+				************ Main container end *************
+			************* -->
 
-    </div>
-    <!-- Page wrapper end -->
+		</div>
+		<!-- Page wrapper end -->
 
-    <!-- *************
-   ************ Required JavaScript Files *************
-  ************* -->
-    <!-- Required jQuery first, then Bootstrap Bundle JS -->
-    <script src="{{ asset('Gmbslagi/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('Gmbslagi/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('Gmbslagi/js/modernizr.js') }}"></script>
-    <script src="{{ asset('Gmbslagi/js/moment.js') }}"></script>
+		<!-- *************
+			************ Required JavaScript Files *************
+		************* -->
+		<!-- Required jQuery first, then Bootstrap Bundle JS -->
+		<script src="{{ asset ("Gmbslagi/js/jquery.min.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/js/bootstrap.bundle.min.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/js/modernizr.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/js/moment.js")}}"></script>
 
-    <!-- *************
-   ************ Vendor Js Files *************
-  ************* -->
+		<!-- *************
+			************ Vendor Js Files *************
+		************* -->
 
-    <!-- Megamenu JS -->
-    <script src="{{ asset('Gmbslagi/vendor/megamenu/js/megamenu.js') }}"></script>
-    <script src="{{ asset('Gmbslagi/vendor/megamenu/js/custom.js') }}"></script>
+		<!-- Megamenu JS -->
+		<script src="{{ asset ("Gmbslagi/vendor/megamenu/js/megamenu.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/vendor/megamenu/js/custom.js")}}"></script>
 
-    <!-- Slimscroll JS -->
-    <script src="{{ asset('Gmbslagi/vendor/slimscroll/slimscroll.min.js') }}"></script>
-    <script src="{{ asset('Gmbslagi/vendor/slimscroll/custom-scrollbar.js') }}"></script>
+		<!-- Slimscroll JS -->
+		<script src="{{ asset ("Gmbslagi/vendor/slimscroll/slimscroll.min.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/vendor/slimscroll/custom-scrollbar.js")}}"></script>
 
-    <!-- Search Filter JS -->
-    <script src="{{ asset('Gmbslagi/vendor/search-filter/search-filter.js') }}"></script>
-    <script src="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.js') }}"></script>
+		<!-- Search Filter JS -->
+		<script src="{{ asset ("Gmbslagi/vendor/search-filter/search-filter.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/vendor/search-filter/custom-search-filter.js")}}"></script>
 
-    <!-- Data Tables -->
-    <script src="{{ asset('Gmbslagi/vendor/datatables/dataTables.min.js') }}"></script>
-    <script src="{{ asset('Gmbslagi/vendor/datatables/dataTables.bootstrap.min.js') }}"></script>
+        <!-- Data Tables -->
+		<script src="{{ asset ("Gmbslagi/vendor/datatables/dataTables.min.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bootstrap.min.js")}}"></script>
 
-    <!-- Custom Data tables -->
-    <script src="{{ asset('Gmbslagi/vendor/datatables/custom/custom-datatables.js') }}"></script>
-    <script src="{{ asset('Gmbslagi/vendor/datatables/custom/fixedHeader.js') }}"></script>
+		<!-- Custom Data tables -->
+		<script src="{{ asset ("Gmbslagi/vendor/datatables/custom/custom-datatables.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/vendor/datatables/custom/fixedHeader.js")}}"></script>
 
-    <!-- Download / CSV / Copy / Print -->
-    <script src="{{ asset('Gmbslagi/vendor/datatables/buttons.min.js') }}"></script>
-    <script src="{{ asset('Gmbslagi/vendor/datatables/jszip.min.js') }}"></script>
-    <script src="{{ asset('Gmbslagi/vendor/datatables/pdfmake.min.js') }}"></script>
-    <script src="{{ asset('Gmbslagi/vendor/datatables/vfs_fonts.js') }}"></script>
-    <script src="{{ asset('Gmbslagi/vendor/datatables/html5.min.js') }}"></script>
-    <script src="{{ asset('Gmbslagi/vendor/datatables/buttons.print.min.js') }}"></script>
-    <script src="{{ asset('Gmbslagi/vendor/dropzone/dropzone.min.js') }}"></script>
+		<!-- Download / CSV / Copy / Print -->
+		<script src="{{ asset ("Gmbslagi/vendor/datatables/buttons.min.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/vendor/datatables/jszip.min.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/vendor/datatables/pdfmake.min.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/vendor/datatables/vfs_fonts.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/vendor/datatables/html5.min.js")}}"></script>
+        <script src="{{ asset ("Gmbslagi/vendor/datatables/buttons.print.min.js")}}"></script>
+		<script src="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.js")}}"></script>
 
-    <!-- Main Js Required -->
-    <script src="{{ asset('Gmbslagi/js/main.js') }}"></script>
-    <script>
-     const checkboxes = document.querySelectorAll('.other-checkbox');
+		<!-- Main Js Required -->
+		<script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
+		<script>
+	const checkboxes = document.querySelectorAll('.other-checkbox');
 		const selectAllCheckbox = document.querySelector('#select-all-checkbox');
 		const hiddenMenu = document.querySelector('.hidden-menu');
 		const countDisplay = document.querySelector('#count-display');
@@ -675,11 +699,9 @@
 		
 		updateCountDisplay(); // Update the count display
 		});
-    </script>
-    <script src="{{ asset('Gmbslagi/vendor/daterange/custom-daterange.js')}}"></script>
+		</script>
 
-</body>
+	</body>
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:54 GMT -->
-
 </html>

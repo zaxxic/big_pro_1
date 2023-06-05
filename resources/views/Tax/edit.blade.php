@@ -40,6 +40,10 @@
     <!-- Search Filter JS -->
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/search-filter.css') }}">
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.css') }}">
+
+    <!-- Dropdown Search -->
+    <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/bs-select/bs-select.css")}}">
+    <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/daterange/daterange.css")}}">
     <style>
         .card {
             overflow: hidden;
@@ -54,9 +58,11 @@
         input[type="radio"] {
             display: none;
         }
-label{
-    margin-bottom: 2%;
-}
+
+        label {
+            margin-bottom: 2%;
+        }
+
         .label {
             width: 50%;
             text-align: center;
@@ -77,45 +83,45 @@ label{
 
         .label {
             margin-right: 20px;
-            }
+        }
 
         .toggle-checkbox {
-  display: none;
-}
+            display: none;
+        }
 
-.toggle-label {
-  display: inline-block;
-  width: 50px;
-  height: 30px;
-  background-color: #CCCCCC; /* Warna abu-abu saat indikator tidak aktif */
-  border-radius: 15px;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-}
+        .toggle-label {
+            display: inline-block;
+            width: 50px;
+            height: 30px;
+            background-color: #CCCCCC;
+            /* Warna abu-abu saat indikator tidak aktif */
+            border-radius: 15px;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+        }
 
-.toggle-label:before {
-  content: "";
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  bottom: 1px;
-  width: 24px;
-  background-color: #FFFFFF; /* Warna biru saat indikator aktif */
-  border-radius: 50%;
-  transition: right 0.3s ease;
-}
+        .toggle-label:before {
+            content: "";
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            bottom: 1px;
+            width: 24px;
+            background-color: #FFFFFF;
+            /* Warna biru saat indikator aktif */
+            border-radius: 50%;
+            transition: right 0.3s ease;
+        }
 
-.toggle-checkbox:checked + .toggle-label {
-  background-color: #336699; /* Warna biru saat toggle button aktif */
-}
+        .toggle-checkbox:checked+.toggle-label {
+            background-color: #336699;
+            /* Warna biru saat toggle button aktif */
+        }
 
-.toggle-checkbox:checked + .toggle-label:before {
-  right: calc(100% - 25px);
-}
-
-
-
+        .toggle-checkbox:checked+.toggle-label:before {
+            right: calc(100% - 25px);
+        }
     </style>
 
 </head>
@@ -128,6 +134,7 @@ label{
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
         <!-- Sidebar wrapper end -->
+        @include('layouts.header')
 
         <!-- *************
     ************ Main container start *************
@@ -135,194 +142,7 @@ label{
         <div class="main-container">
 
             <!-- Page header starts -->
-            <div class="page-header">
 
-                <!-- Row start -->
-                <div class="row gutters">
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-9">
-
-                        <!-- Search container start -->
-                        <div class="search-container">
-
-                            <!-- Toggle sidebar start -->
-                            <div class="toggle-sidebar" id="toggle-sidebar">
-                                <i class="icon-menu"></i>
-                            </div>
-                            <!-- Toggle sidebar end -->
-
-                            <!-- Mega Menu Start -->
-
-
-                        </div>
-                        <!-- Search container end -->
-
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-3">
-
-                        <!-- Header actions start -->
-                        <ul class="header-actions">
-                            <li class="dropdown">
-                                <a href="#" id="taskss" data-toggle="dropdown" aria-haspopup="true">
-                                    <i class="icon-check-square"></i>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-end lrg" aria-labelledby="taskss">
-                                    <div class="dropdown-menu-header">
-                                        Tasks (7/10)
-                                    </div>
-                                    <div class="customScroll">
-                                        <ul class="activity">
-                                            <li class="activity-list">
-                                                <div class="detail-info">
-                                                    <p class="date">Today</p>
-                                                    <p class="info">Messages accepted with attachments</p>
-                                                </div>
-                                            </li>
-                                            <li class="activity-list danger">
-                                                <div class="detail-info">
-                                                    <p class="date">Today</p>
-                                                    <p class="info">Send email notifications of subscriptions and
-                                                        deletions to list owner</p>
-                                                </div>
-                                            </li>
-                                            <li class="activity-list success">
-                                                <div class="detail-info">
-                                                    <p class="date">Yesterday</p>
-                                                    <p class="info">Required change logs activity reports</p>
-                                                </div>
-                                            </li>
-                                            <li class="activity-list warning">
-                                                <div class="detail-info">
-                                                    <p class="date">2 Days Ago</p>
-                                                    <p class="info">Strategic partnership plan</p>
-                                                </div>
-                                            </li>
-                                            <li class="activity-list">
-                                                <div class="detail-info">
-                                                    <p class="date">2 days ago</p>
-                                                    <p class="info">Send email notifications of subscriptions and
-                                                        deletions to list owner</p>
-                                                </div>
-                                            </li>
-                                            <li class="activity-list danger">
-                                                <div class="detail-info">
-                                                    <p class="date">3 days ago</p>
-                                                    <p class="info">Required change logs activity reports</p>
-                                                </div>
-                                            </li>
-                                            <li class="activity-list success">
-                                                <div class="detail-info">
-                                                    <p class="date">7 days ago</p>
-                                                    <p class="info">Strategic partnership plan</p>
-                                                </div>
-                                            </li>
-                                            <li class="activity-list">
-                                                <div class="detail-info">
-                                                    <p class="date">2 weeks ago</p>
-                                                    <p class="info">Required change logs activity reports</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" id="notifications" data-toggle="dropdown" aria-haspopup="true">
-                                    <i class="icon-alert-triangle"></i>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-end lrg" aria-labelledby="notifications">
-                                    <div class="dropdown-menu-header">
-                                        Notifications (7)
-                                    </div>
-                                    <div class="customScroll">
-                                        <ul class="header-notifications">
-                                            <li>
-                                                <a href="#">
-                                                    <div class="user-img online">
-                                                        <img src="img/user6.png" alt="User">
-                                                    </div>
-                                                    <div class="details">
-                                                        <div class="user-title">Larkyn</div>
-                                                        <div class="noti-details">Check out every table in detail.</div>
-                                                        <div class="noti-date">April 25, 04:00 pm</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="user-img busy">
-                                                        <img src="img/user10.png" alt="User">
-                                                    </div>
-                                                    <div class="details">
-                                                        <div class="user-title">Braxten</div>
-                                                        <div class="noti-details">Approved new design.</div>
-                                                        <div class="noti-date">April 10, 12:00 am</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="user-img away">
-                                                        <img src="img/user21.png" alt="User">
-                                                    </div>
-                                                    <div class="details">
-                                                        <div class="user-title">Maria</div>
-                                                        <div class="noti-details">Membership has been ended.</div>
-                                                        <div class="noti-date">March 20, 07:30 pm</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="user-img busy">
-                                                        <img src="img/user15.png" alt="User">
-                                                    </div>
-                                                    <div class="details">
-                                                        <div class="user-title">Alex</div>
-                                                        <div class="noti-details">Design Review.</div>
-                                                        <div class="noti-date">April 18, 09:30 am</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="user-img online">
-                                                        <img src="img/user5.png" alt="User">
-                                                    </div>
-                                                    <div class="details">
-                                                        <div class="user-title">Sunny</div>
-                                                        <div class="noti-details">UI Discussion</div>
-                                                        <div class="noti-date">April 21, 05:00 pm</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" id="userSettings" class="user-settings" data-toggle="dropdown"
-                                    aria-haspopup="true">
-                                    <span class="avatar">
-                                        <img src="{{ asset('Gmbslagi/img/user.svg') }}" alt="User Avatar">
-                                        <span class="status busy"></span>
-                                    </span>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-end md" aria-labelledby="userSettings">
-                                    <div class="header-profile-actions">
-                                        <a href="user-profile.html"><i class="icon-user1"></i>Profile</a>
-                                        <a href="account-settings.html"><i class="icon-settings1"></i>Settings</a>
-                                        <a href="forgot-password.html"><i class="icon-log-out1"></i>Logout</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <!-- Header actions end -->
-
-                    </div>
-                </div>
-                <!-- Row end -->
-
-            </div>
             <!-- Page header ends -->
 
             <!-- Content wrapper scroll start -->
@@ -332,89 +152,96 @@ label{
                 <div class="content-wrapper">
 
                     <!-- Row start -->
+                    <div class="card-body">
                     <div class="row gutters">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                             <!-- Card start -->
-                            <div class="card">
-                                <div class="card-header">
-                                  
-                                    <div class="card-title"><h3>edit Pajak<button type="button" style="border: none; background:none;">☆</button></h3></div>
-                                        <div class="graph-day-selection" role="group" style="margin-left: 60%">
-											
-										</div>
-                                      
-                               
-                            </div>
-
-                                <div class="card-body">
-                                    <div style="border-bottom: solid black 1px;margin-bottom:1%">
-                                        <b>Umum</b>
-                                        <p>Inklusi pajak dihitung ke dalam harga barang. Pajak majemuk dihitung di atas pajak lainnya. Pajak tetap diterapkan sebagai jumlah, bukan persentase.</p>
+                            <div class="">
+                                <div class="">
+                                <div class="col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12">
+                                    <div class="card-title">
+                                        <h3>Sunting Pajak<button type="button" style="border: none; background:none;">☆</button></h3>
                                     </div>
-                                    <!-- Row start -->
-                                    <div class="row gutters">
-                                       
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="graph-day-selection" role="group" style="margin-left: 60%">
 
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <input class="form-control" type="email" placeholder=" Masukan email anda">
-                                                <div class="field-placeholder" >Nama <span
-                                                        class="text-danger">*</span></div>
-                                                <div class="form-text">
-                                                   
-                                                </div>
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <div class="form-group">
-                                                    <div class="field-placeholder" >Kategori <span
-                                                        class="text-danger">*</span></div>
-                                                    <select class="form-control" id="dropdownSelect">
-                                                      <option disabled selected>Pilih salah satu</option>
-                                                      <option>Pemotongan</option>
-                                                      <option>Umum</option>
-                                                    </select>
-                                                  </div>
-                                                  
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <input class="form-control" type="email" placeholder=" Masukan email anda">
-                                                <div class="field-placeholder" >Tarif (%) <span
-                                                        class="text-danger">*</span></div>
-                                                <div class="form-text">
-                                                   
-                                                </div>
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
                                     </div>
-                                    <!-- Row end -->
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <div class="d-flex justify-content-end mt-4">
-                                            <a href="#" class="mt-3" style="margin-right: 1%">Batal</a>
-                                            <button class="btn btn-primary" type="submit" style="border-radius: 20px">Simpan</button>
-                                        </div>
-                                    </div>
-                                    
                                 </div>
-                            </div>
-                            <!-- Card end -->
 
+
+                                </div>
+
+                                <div class="">
+
+                                <div style="border-bottom: solid grey 1px; margin-bottom: 2%; margin-top: 2%;">
+                                    <h6>Umum</h6>
+                                    <p>Inklusi pajak dihitung ke dalam harga barang. Pajak majemuk dihitung di atas pajak lainnya. Pajak tetap diterapkan sebagai jumlah, bukan persentase.</p>
+                                </div>
+
+                                <!-- Row start -->
+                                <div class="row gutters">
+
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                        <!-- Field wrapper start -->
+                                        <div class="field-wrapper">
+                                            <input class="form-control" type="text" placeholder=" Masukan Nama Anda">
+                                            <div class="field-placeholder">Nama <span class="text-danger">*</span></div>
+                                            <div class="form-text">
+
+                                            </div>
+                                        </div>
+                                        <!-- Field wrapper end -->
+
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                        <!-- Field wrapper start -->
+                                        <div class="field-wrapper-group">
+                                            <div class="field-wrapper">
+                                                <select class="select-multiple js-states" title="Select Product Category">
+                                                    <option>Pilihan 1</option>
+                                                    <option>Pilihan 2</option>
+                                                    <option>Pilihan 3</option>
+                                                    <option>Pilihan 4</option>
+
+                                                </select>
+                                                <div class="field-placeholder">Kategori<span class="text-danger">*</span></div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Field wrapper end -->
+
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                        <!-- Field wrapper start -->
+                                        <div class="field-wrapper">
+                                            <input class="form-control" type="text" placeholder=" Masukan Tarif (%)">
+                                            <div class="field-placeholder">Tarif (%) <span class="text-danger">*</span></div>
+                                            <div class="form-text">
+
+                                            </div>
+                                        </div>
+                                        <!-- Field wrapper end -->
+
+                                    </div>
+                                </div>
+                                <!-- Row end -->
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="d-flex justify-content-end mt-4">
+                                        <button class="btn btn-outline-primary1" type="submit" style="border-radius: 20px; margin-right: 1%" href="#">Batal</button>
+                                        <button class="btn btn-primary" type="submit" style="border-radius: 20px">Simpan</button>
+                                    </div>
+                                </div>
+
+                                </div>
+                                <!-- </div> -->
+                                <!-- Card end -->
+
+                            </div>
                         </div>
+                    </div>
                     </div>
                     <!-- Row end -->
 
@@ -455,25 +282,30 @@ label{
 
     <!-- Slimscroll JS -->
     <script src="{{ asset('Gmbslagi/vendor/slimscroll/slimscroll.min.js') }}"></script>
-    <script src="{{ asset('vvendor/slimscroll/custom-scrollbar.js') }}"></script>
+    <script src="{{ asset('vvendor/Gmbslagi/vendor/slimscroll/custom-scrollbar.js') }}"></script>
 
     <!-- Search Filter JS -->
     <script src="{{ asset('Gmbslagi/vendor/search-filter/search-filter.js') }}"></script>
     <script src="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.js') }}"></script>
 
+    <!-- Dropdown Search -->
+    <script src="{{ asset ("Gmbslagi/vendor/bs-select/bs-select.min.js")}}"></script>
+    <script src="{{ asset ("Gmbslagi/vendor/bs-select/bs-select-custom.js")}}"></script>
+
     <!-- Main Js Required -->
     <script src="{{ asset('Gmbslagi/js/main.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         function toggleInputsDisable(checkboxNumber) {
-          var inputField1 = document.getElementById("inputField1");
-          var inputField2 = document.getElementById("inputField2");
-      
-          if (checkboxNumber === 1) {
-            inputField1.disabled = !inputField1.disabled;
-          } else if (checkboxNumber === 2) {
-            inputField2.disabled = !inputField2.disabled;
-          }
+            var inputField1 = document.getElementById("inputField1");
+            var inputField2 = document.getElementById("inputField2");
+
+            if (checkboxNumber === 1) {
+                inputField1.disabled = !inputField1.disabled;
+            } else if (checkboxNumber === 2) {
+                inputField2.disabled = !inputField2.disabled;
+            }
         }
-      </script>
-      
+    </script>
+
 </body>

@@ -158,29 +158,39 @@
                 <div class="content-wrapper">
 
                     <!-- Row start -->
+                    <div class="card-body">
                     <div class="row gutters">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                             <!-- Card start -->
-                            <div class="card">
-                                <div class="card-header">
-                                    <div class="card-title">
-                                        <h3>Pengguna<button type="button"style="border: none; background:none;">☆</button></h3>
-                                    </div>
-                                    <div class="graph-day-selection" role="group" style="margin-left: 60%">
-                                        <a href="{{ url('add_users') }}">
-                                            <button type="button" style="background: trasparent" class="btn active">Undang Pengguna</button>
-                                        </a>
-                                    </div>
-                                    <div class="dropdown icon-dots-three-vertical">
-                                        <span></span>
-                                        <div class="dropdown-content">
-                                            <a href="#" class="icon-download"> Impor</a>
-                                            <a href="#" class="icon-folder"> Ekspor</a>
+                            <div class="">
+                                <div class="d-flex">
+                                <div class="col-xl-6 col-lg-6 col-md-2 col-sm-2 col-12">
+                                        <div class="card-title">
+                                            <h3>Pengguna<button type="button" style="border: none; background:transparent;">☆</button></h3>
                                         </div>
                                     </div>
+                                    <div class="col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12">
+                                        <div class="graph-day-selection" role="group" style="margin-left: 68%">
+                                            <a href="{{url('add_users')}}">
+                                                <button type="button" class="btn active" style="background: transparent; margin-top: 2px; margin-bottom: 2px;">Tambah</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-2 col-12" >
+									<div class="dropdown" style="float: right;">
+										<a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+										</a>
+
+										<ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
+											<li><a class="dropdown-item" style="margin-top: 4%;" href="">Espor</a></li>
+											<li><a class="dropdown-item" href="">Impor</a></li>
+										</ul>
+									</div>
+								</div>
                                 </div>
-                                <div class="card-body">
+                                <div class="">
                                     <!-- Row start -->
 
                                     <!-- Row end -->
@@ -210,7 +220,7 @@
                                                     <td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>
                                                          <div class="d-flex">
-                                                            <i class="icon-account_circle" style="font-size: 24px;transform: scale(1.5); "></i> <p style="margin-left: 2%">Adii Suharja</p>
+                                                            <i class="icon-account_circle" style="font-size: 24px;transform: scale(1.5); "></i> <p style="margin-left: 2%">&emsp;Adii Suharja</p>
                                                         </div>
                                                     </td>
                                                     <td>aby.prass1@gmail.com</td>
@@ -218,13 +228,11 @@
                                                         <p class="">Manager</p>
                                                     </td>
                                                     <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{ url('edit_pemasok') }}"
-                                                                class="menu-icon icon-edit-2"><i
-                                                                    class="icon-edit"></i></a>
-                                                            <a href="#" class="menu-icon delete-icon"></a>
-                                                            <a href="#" class="menu-icon icon-eye1"></a>
-                                                        </div>
+                                                    <div class="menu-icons" style="font-size: 15px;">
+                                                        <a href="{{url('edit_pemasok')}}" class="menu-icon icon-edit-2"></a>
+                                                        <a href="{{url('')}}" class="menu-icon icon-trash"></a>
+                                                        <a href="{{url('')}}" class="menu-icon icon-eye1"></a>
+                                                    </div>
                                                     </td>
                                                 </tr>
 
@@ -233,7 +241,7 @@
                                                     <td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>
                                                          <div class="d-flex">
-                                                            <i class="icon-account_circle" style="font-size: 24px;transform: scale(1.5); "></i> <p style="margin-left: 2%">Adii Suharja</p>
+                                                            <i class="icon-account_circle" style="font-size: 24px;transform: scale(1.5); "></i> <p style="margin-left: 2%">&emsp;Adii Suharja</p>
                                                         </div>
                                                     </td>
                                                     <td>aby.prass1@gmail.com</td>
@@ -241,12 +249,11 @@
                                                         <p class="">Manager</p>
                                                     </td>
                                                     <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{ url('edit_pemasok') }}"
-                                                                class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"></a>
-                                                            <a href="#" class="menu-icon icon-eye1"></a>
-                                                        </div>
+                                                    <div class="menu-icons" style="font-size: 15px;">
+                                                        <a href="{{url('edit_pemasok')}}" class="menu-icon icon-edit-2"></a>
+                                                        <a href="{{url('')}}" class="menu-icon icon-trash"></a>
+                                                        <a href="{{url('')}}" class="menu-icon icon-eye1"></a>
+                                                    </div>
                                                     </td>
                                                 </tr>
 
@@ -255,7 +262,7 @@
                                                     <td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>
                                                          <div class="d-flex">
-                                                            <i class="icon-account_circle" style="font-size: 24px;transform: scale(1.5); "></i> <p style="margin-left: 2%">Adii Suharja</p>
+                                                            <i class="icon-account_circle" style="font-size: 24px;transform: scale(1.5); "></i> <p style="margin-left: 2%">&emsp;Adii Suharja</p>
                                                         </div>
                                                     </td>
                                                     <td>aby.prass1@gmail.com</td>
@@ -263,13 +270,11 @@
                                                         <p class="">Manager</p>
                                                     </td>
                                                     <td>
-                                                        <div class="menu-icons" style="font-size: 15px;">
-                                                            <a href="{{ url('edit_pemasok') }}"
-                                                                class="menu-icon icon-edit-2"><i
-                                                                    class="icon-edit"></i></a>
-                                                            <a href="#" class="menu-icon delete-icon"></a>
-                                                            <a href="#" class="menu-icon icon-eye1"></a>
-                                                        </div>
+                                                    <div class="menu-icons" style="font-size: 15px;">
+                                                        <a href="{{url('edit_pemasok')}}" class="menu-icon icon-edit-2"></a>
+                                                        <a href="{{url('')}}" class="menu-icon icon-trash"></a>
+                                                        <a href="{{url('')}}" class="menu-icon icon-eye1"></a>
+                                                    </div>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -279,7 +284,7 @@
                                             <div class="card-body" style="margin-left: -2.1%">
 
                                                 <nav aria-label="Page navigation example">
-                                                    <ul class="pagination">
+                                                    <ul class="pagination" style="justify-content: flex-end;">
                                                         <li class="page-item">
                                                             <a class="page-link" href="#"
                                                                 aria-label="Previous">
@@ -309,6 +314,7 @@
                             <!-- Card end -->
 
                         </div>
+                    </div>
                     </div>
                     <!-- Row end -->
 

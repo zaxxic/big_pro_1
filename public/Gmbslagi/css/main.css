@@ -7832,6 +7832,21 @@ img.hover-tabs-img {
     justify-content: space-between;
 }
 
+.card-header1 {
+    background: transparent;
+    border: 0;
+    padding: 0.5rem 1.25rem 0 1.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
 .card .card-header .card-title {
     margin: 0;
     font-size: .9rem;
@@ -8334,6 +8349,31 @@ fieldset:disabled .btn-primary {
     color: #ffffff;
     background-color: #4e4ca3;
     border-color: #4e4ca3;
+}
+
+.btn-outline-primary1 {
+    padding: 5px 10px;
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 5px;
+}
+
+.btn-outline-primary1:hover {
+    color: #000000;
+    background-color: #DFDFDF;
+    border-color: #DFDFDF;
+    border-radius: 5px;
+}
+
+.btn-check:focus+.btn-outline-primary1,
+.btn-outline-primary1:focus {
+    color: #ffffff;
+    background-color: #4e4ca3;
+    border-color: #4e4ca3;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
+    box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
 }
 
 .btn-outline-primary {
