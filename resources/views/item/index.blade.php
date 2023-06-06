@@ -307,7 +307,7 @@
 														<td>Rp. 21000</td>
 														<td>
 															<div class="menu-icons" style="font-size: 15px;">
-																<a href="{{url('tambah-item')}}" class="menu-icon icon-edit-2"></a>
+																<a href="{{route('item-edit')}}" class="menu-icon icon-edit-2"></a>
 
 
 																<a href="#" class="menu-icon icon-trash"></a>
@@ -326,7 +326,7 @@
 														<td>Rp. 21000</td>
 														<td>
 															<div class="menu-icons" style="font-size: 15px;">
-																<a href="{{url('tambah-item')}}" class="menu-icon icon-edit-2"></a>
+																<a href="{{route('item-edit')}}" class="menu-icon icon-edit-2"></a>
 
 
 																<a href="#" class="menu-icon icon-trash"></a>

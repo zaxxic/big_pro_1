@@ -447,9 +447,11 @@
                                                             </div>
 
                                                         </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Simpan</button>
-                                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
+                                                            <div class="d-flex justify-content-end mt-4">
+                                                                <button class="btn btn-outline-secondary1" type="submit" style="border-radius: 2px; margin-right: 1%" href="#">Batal</button>
+                                                                <button class="btn btn-primary" type="submit" style="border-radius: 2px">Simpan</button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
