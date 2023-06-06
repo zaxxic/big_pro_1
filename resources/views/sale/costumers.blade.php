@@ -78,7 +78,7 @@
             background-color: #f9f9f9;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             padding: 10px;
-            border-radius: 4px;
+            border-radius: 2px;
             right: 0;
             /* Mengarahkan dropdown ke arah kiri */
         }
@@ -137,7 +137,7 @@
             background-color: #5957b1;
             color: #fff;
             padding: 3px;
-            border-radius: 5px;
+            border-radius: 2px;
         }
 
         .hover-trigge2r {
@@ -154,7 +154,7 @@
             background-color: #5957b1;
             color: #fff;
             padding: 3px;
-            border-radius: 5px;
+            border-radius: 2px;
         }
 
 
@@ -168,7 +168,7 @@
             background-color: #5957b1;
             color: #fff;
             padding: 3px;
-            border-radius: 5px;
+            border-radius: 2px;
         }
 
         .hover-trigge3r {
@@ -229,7 +229,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="dropdown icon-dots-three-vertical">
+                                    <div class="dropdown icon-dots-three-vertical mt-2">
                                         <span></span>
                                         <div class="dropdown-content">
                                             <a href="#">

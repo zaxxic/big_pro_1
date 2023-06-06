@@ -400,7 +400,7 @@
 
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
-        @include('layouts.header')
+        
 
         <!-- Sidebar wrapper end -->
 
@@ -416,7 +416,7 @@
                     <div class="card-body">
                     <div class="row gutters">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                            <div class="">
+                      
                                 <div class="d-flex">
                                 <div class="col-xl-11 col-lg-11 col-md-2 col-sm-2 col-12">
                                     <div class="card-title">
@@ -445,7 +445,9 @@
                                 </div>
                                 </div>
                             </div>
-                        </div>
+                  
+
+
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
                             <div style="padding: 1rem 0rem 1rem 0rem">
                                 <div class="lingkaran-container">
