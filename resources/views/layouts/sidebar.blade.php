@@ -96,8 +96,9 @@
 																								request()->routeIs('add_invoice') ||
 																								request()->routeIs('edit_supplier')
 										 														? 'drop-icon' : '' }}"><span style="margin-left: 20px;">&emsp;Faktur</span></a></li>
-									<li class="mt-2"><a href="{{ route('costumers') }}" class="{{ request()->routeIs('customers') ||
-										 														request()->routeIs('customer') ||
+									<li class="mt-2"><a href="{{ route('costumers') }}" class="{{ request()->routeIs('costumers') ||
+										 														request()->routeIs('costumers') ||
+										 														request()->routeIs('add_costumers') ||
 																								request()->routeIs('edit_cos') ||
 																								request()->routeIs('show_cos')
 										 														? 'drop-icon' : '' }}"><span style="margin-left: 20px;">&emsp;Pelanggan</span></a></li>
@@ -168,7 +169,7 @@
 																								request()->routeIs('edit_recurring_income') ||
 																								request()->routeIs('show_recurring_income') ||
 																								request()->routeIs('add_recurring_expenditure') ||
-																								request()->routeIs('edit_recurring_expenditure') ||
+																					 				request()->routeIs('edit_recurring_expenditure') ||
 																								request()->routeIs('show_recurring_expenditure')
 																								 ? 'drop-icon' : '' }}"><span style="margin-left: 20px;">&emsp;Transaksi</a></li>
 									<li class="mt-2"><a href="{{url('transfer')}}" class="{{ request()->routeIs('transfer') ||

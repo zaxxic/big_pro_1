@@ -195,7 +195,7 @@
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
                                             <div class="graph-day-selection" role="group" style="margin-left: -30px;margin-right: 10px;">
-                                                <a href="{{url('add_customers')}}">
+                                                <a href="{{route('add_costumers')}}">
                                                     <button type="button" class="btn active" style="background: transparent">Tambah</button>
                                                 </a>
                                             </div>
@@ -327,9 +327,9 @@
                                                         <td>N/A</td>
                                                         <td>
                                                             <div class="menu-icons" style="font-size: 15px;">
-                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2" ></a>
+                                                                <a href="{{url('edit_cos')}}" class="menu-icon icon-edit-2" ></a>
                                                             <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
-                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1" ></a>
+                                                                <a href="{{url('show_cos')}}" class="menu-icon icon-eye1" ></a>
 
                                                             </div>
                                                         </td>
@@ -361,9 +361,9 @@
                                                         <td>N/A</td>
                                                         <td>
                                                             <div class="menu-icons" style="font-size: 15px;">
-                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2" ></a>
+                                                                <a href="{{url('edit_cos')}}" class="menu-icon icon-edit-2" ></a>
                                                             <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
-                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1" ></a>
+                                                                <a href="{{url('show_cos')}}" class="menu-icon icon-eye1" ></a>
 
                                                             </div>
                                                         </td>
@@ -377,9 +377,9 @@
                                                         <td>N/A</td>
                                                         <td>
                                                             <div class="menu-icons" style="font-size: 15px;">
-                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2" ></a>
+                                                                <a href="{{url('edit_cos')}}" class="menu-icon icon-edit-2" ></a>
                                                             <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
-                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1" ></a>
+                                                                <a href="{{url('show_cos')}}" class="menu-icon icon-eye1" ></a>
 
                                                             </div>
                                                         </td>
