@@ -398,34 +398,30 @@
                                                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                                                     <div class="accordion-body">
                                                         <div class="d-flex row">
-                                                          <div class="col-4">
-                                                            <div class="flex-grow-0 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-8">
-                                                              <div id="dropzone" style="width: 300px; height:300px; margin-top: 1%">
+                                                          <div class="flex-grow-0 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                                            
+                                                              <div id="dropzone" style="width: 100%; height:300px; margin-top: 1%">
                                                                 <label for="subjudul" class="field-label">Lampiran</label>
-                                                                <form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload" style="margin-right: 10%">
+                                                                <form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
                                                                   <div class="dz-message needsclick">
                                                                     <button type="button" class="dz-button">Pilih berkas di sini untuk mengunggah.</button><br>
                                                                   </div>
                                                                 </form>
                                                               </div>
-                                                            </div>
+                                                           
                                                           </div>
-                                                          <div class="col-8">
-                                                            <div class="d-flex align-items-center">
-                                                              <div class="flex-grow-1 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-8" style="margin-bottom: 15%">
+                                                          <div class="flex-grow-0 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                                         
+                                                              <div class="" style="margin-bottom: 15%">
                                                                 <label for="subjudul" class="field-label">Kategori<span class="text-danger">*</span></label>
-                                                                <select id="dropdown2" class="demo-code-language" placeholder="Kategori baru" autocomplete="off">
+                                                                <select id="dropdown2" class="demo-code-language" style="z-index: auto" placeholder="Kategori baru" autocomplete="off">
                                                                   <option value="Lainya" selected>Lainya</option>
                                                                   <option value="Beli Web">Beli Web</option>
-                                                                  <option value="Bulanan
-                                                                  
-                                                                  
-                                                                  
-                                                                  ">Bulanan</option>
+                                                                  <option value="Bulanan">Bulanan</option>
                                                                 </select>
                                                               </div>
                                                             </div>
-                                                          </div>
+                                                        
                                                         </div>
                                                       </div>
                                                 </div>
