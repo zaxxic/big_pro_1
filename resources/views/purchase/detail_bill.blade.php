@@ -53,8 +53,8 @@
             background: #ffffff;
             border: 1px solid #e1e8f3;
             border-radius: 3px;
-            -webkit-box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
-            box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
+            -webkit-box-shadow: 0 30px 15px -20px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 30px 15px -20px rgba(255, 255, 255, 0.2);
             min-width: 100%;
             max-width: 100%;
         }
@@ -67,6 +67,22 @@
             color: #0A6D01;
             font-size: 12px;
         }
+
+        .table1 {
+    color: #6f7479;
+    font-size: .725rem;
+    border-color: #e8edf3;
+}
+
+.table1 th,
+.table1 td {
+    padding: 12px;
+    font-size: 10pt;
+    font-weight: 600;
+    color: #072242;
+    border-bottom: 1px solid #c8d3df !important;
+    white-space: nowrap;
+}
 
         /* Tambahkan gaya CSS yang diperlukan di sini */
         /* ... */
@@ -124,67 +140,41 @@
                     <!-- Row start -->
                     <div class="row">
                         <div class="card">
-                            <div class="card-header col-6">
-                                <div class="card-title">
+                            <div class="card-header col-12">
+                                <div class="card-title ">
                                     <h3>Tagihan: TGH-00002</h3>
+                                    
+
                                 </div>
                                 <div class="badge-finish" style="text-align: center" >Terima</div>
+
                             </div>
                             <div class="d-flex row">
 
                                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                     <div class="card-body">
-                                        <div class="alert alert-primary"
+                                        <div class="alert alert-primary mb-5"
                                             style="border-radius: 2px; background-color:#9a99e2" role="alert">
                                             faktur ini dihasilkan otomatis dari <a href="{{url('detail_rcr_bill')}}">TBU-00002</a> 
                                         </div>
                                         <!-- Faq start -->
                                         <div class="accordion" id="faqAccordion">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="headingOne">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                                        aria-expanded="true" aria-controls="collapseOne">
-                                                        <div class="d-flex row">
-                                                            <p style="font-size:14pt">Membuat</p>
-                                                            <br>
-                                                            <p style="font-size:10pt">Trisqi membuat Tagihan ini pada
-                                                                <b>24
-                                                                    mei 2023</b> </p>
-                                                        </div>
-
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                                    aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                                                    <div class="accordion-body">
-                                                        <button type="button"
-                                                            style="border-radius: 2px; width:18%; height: 30px; border:none;">Sunting</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="headingTwo">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                        aria-expanded="false" aria-controls="collapseTwo">
-                                                        <div class="d-flex row">
-                                                            <p  style="font-size:14pt">Bayar </p>
-                                                            <br>
-                                                            <p style="font-size:10pt">Terakhir dikirm pada <b>28 mei 2023</b>
-                                                            </p>
-                                                        </div>
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                                    aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                                                    <div class="accordion-body">
-                                                        <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#payment"style="border-radius: 3px">bayar</button>
-
-
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <div class="alert alert-primary"
+                                            style="border-radius: 2px; border:1px solid #e3e3e3 ; background-color:#ffffff" role="alert">
+                                            <p style="font-size:14pt;color:black">Membuat</p>
+                                            <br>
+                                            <p style="font-size:10pt;color:black">Trisqi membuat Tagihan ini pada
+                                                <b>24
+                                                    mei 2023</b>   </p>
+                                                    <button style="background-color: #9a99e2;border-radius:2px;width:80px;border:transparent;height:25px;color:#ffffff">Sunting</button>
+                                        </div>
+                                        <div class="alert alert-primary"
+                                            style="border-radius: 2px; border:1px solid #e3e3e3 ; background-color:#ffffff" role="alert">
+                                            <p style="font-size:14pt;color:rgb(0, 0, 0)">Bayar</p>
+                                            <br>
+                                            <p style="font-size:10pt;color:black">Terakhir dikirm pada <b>28 mei 2023</b>  </p>
+                                            <button style="background-color: #9a99e2;border-radius:2px;width:80px;border:transparent;height:25px;color:#ffffff" data-bs-toggle="modal" data-bs-target="#payment">Bayar</button>
+                                        </div>
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="headingThree">
                                                     <button class="accordion-button collapsed" type="button"
@@ -213,11 +203,12 @@
 
                                     </div>
                                 </div>
-                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
                                     <form
                                         action="https://www.kodingwife.com/demos/unipro/v1-x/05-desig4-violet/reports.html">
                                         <div class="rcr-screen">
-                                            <div class="login-body pb-4 " style="border-radius:0px !important">
+                                            <div class="login-body pb-4 ">
                                                 <div class="d-flex row col-12 ms-2">
                                                     <p>Biaya nikah</p>
                                                     <div class="col-8">
@@ -226,11 +217,11 @@
                                                             alt="Uni Pro Admin">
                                                     </div>
                                                     <div class="ml-2 col-4">
-                                                        <p style="float: right">cina baik hati</p>
+                                                        <p style="float: right" class="me-3" >cina baik hati</p>
                                                         <br>
-                                                        <p style="float: right">unknown company</p>
+                                                        <p style="float: right" class="me-3">unknown company</p>
                                                         <br>
-                                                        <p style="float: right">cireng@gmail.com</p>
+                                                        <p style="float: right" class="me-3">cireng@gmail.com</p>
                                                     </div>
                                                 </div>
                                                 <div class="field-wrapper mb-3">
@@ -238,21 +229,21 @@
                                                     </div>
                                                     <div class="d-flex" style="margin-top: 2%">
                                                         <div class="col-6 ms-3">
-                                                            <p>Tagihan Kepada</p>
-                                                            <p>Pt Jawa</p>
-                                                            <p>MPWP: 1672671</p>
-                                                            <p>cireng@gmail.com</p>
+                                                            <p style="margin-top:2%">Tagihan Kepada</p>
+                                                            <p style="margin-top:2%">Pt Jawa</p>
+                                                            <p style="margin-top:2%">MPWP: 1672671</p>
+                                                            <p style="margin-top:2%">cireng@gmail.com</p>
                                                         </div>
                                                         <div class="col-6">
-                                                            <p>Nomor Tagihan:BRLB-00002 </p>
-                                                            <p>Nomer Antrean: 123</p>
-                                                            <p>Tanggal Tagihan: 24 mei 2023</p>
-                                                            <p>Tanggal Jatuh Tempo: 24 mei 2023</p>
+                                                            <p style="margin-top:2%">Nomor Tagihan:BRLB-00002 </p>
+                                                            <p style="margin-top:2%">Nomer Antrean: 123</p>
+                                                            <p style="margin-top:2%">Tanggal Tagihan: 24 mei 2023</p>
+                                                            <p style="margin-top:2%">Tanggal Jatuh Tempo: 24 mei 2023</p>
                                                         </div>
                                                     </div>
-                                                    <div class="table-responsive">
+                                                    <div class="table-responsive mt-3">
                                                         <table
-                                                            class="table products-table col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                                            class="table1 products-table col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                                             <thead>
                                                                 <tr>
                                                                     <th>Item</th>

@@ -40,20 +40,44 @@
     <!-- Search Filter JS -->
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/search-filter.css') }}">
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.css') }}">
-<style>
+    <style>
+        .rcr-screen {
+            position: relative;
+            background: #ffffff;
+            border: 1px solid #e1e8f3;
+            border-radius: 3px;
+            -webkit-box-shadow: 0 30px 15px -20px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 30px 15px -20px rgba(255, 255, 255, 0.2);
+            min-width: 100%;
+            max-width: 100%;
+        }
 
+        .badge-finish {
+            border-radius: 2px;
+            padding: .35rem .5rem;
+            min-width: 60px;
+            background: #D4FFCD;
+            color: #0A6D01;
+            font-size: 12px;
+        }
 
-.rcr-screen {
-    position: relative;
-    background: #ffffff;
-    border: 1px solid #e1e8f3;
-    border-radius: 3px;
-    -webkit-box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
-    box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
-    min-width: 100%;
-    max-width: 100%;
-}
-  /* Tambahkan gaya CSS yang diperlukan di sini */
+        .table1 {
+            color: #6f7479;
+            font-size: .725rem;
+            border-color: #e8edf3;
+        }
+
+        .table1 th,
+        .table1 td {
+            padding: 12px;
+            font-size: 10pt;
+            font-weight: 600;
+            color: #072242;
+            border-bottom: 1px solid #c8d3df !important;
+            white-space: nowrap;
+        }
+
+        /* Tambahkan gaya CSS yang diperlukan di sini */
         /* ... */
 
         /* Media queries untuk tampilan seluler */
@@ -61,7 +85,7 @@
             /* Tambahkan gaya CSS untuk tampilan seluler di sini */
             /* ... */
         }
-</style>
+    </style>
 </head>
 
 
@@ -108,46 +132,34 @@
 
                     <!-- Row start -->
                     <div class="row">
-                    <div class="card">
-                                <div class="card-header col-6">
-                                    <div class="card-title">
-                                        <h3>Details<button type="button" 
-                                                style="border: none; background:none;"><span class="ms-5">☆</span> </button></h3>
-                                    </div>
-                                    <div class="alert alert-secondary" style="width:82px;height;border-radius: 2px; background-color:#f36a6a;text-align:center" role="alert">
-										Terkirim
-										</div>
+                        <div class="card">
+                            <div class="card-header col-12">
+                                <div class="card-title">
+                                    <h3>Tagihan Rutin: TBU-0001</h3>
                                 </div>
-                                <div class="d-flex row">
+                                <div class="badge-finish" style="text-align: center">Terima</div>
+                            </div>
+                            <div class="d-flex row">
 
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                     <div class="card-body">
-                                        <div class="alert alert-primary" style="border-radius: 2px; background-color:#9a99e2" role="alert">
+                                        <div class="alert alert-primary mb-5"
+                                            style="border-radius: 2px; background-color:#9a99e2" role="alert">
                                             Faktur ini dihasilkan otomatis dari BRLB-00001
                                         </div>
                                         <!-- Faq start -->
                                         <div class="accordion" id="faqAccordion">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="headingOne">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                                        aria-expanded="true" aria-controls="collapseOne">
-                                                        <div class="d-flex row">
-                                                            <p style="font-size:14pt">Membuat</p>
-                                                            <br>
-                                                            <p style="font-size:10pt">Trisqi membuat faktur ini pada <b>24
-                                                                    mei 2023</b> </p>
-                                                        </div>
-
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                                    aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                                                    <div class="accordion-body">
-                                                        <button type="button"
-                                                            style="border-radius: 2px; width:18%; height: 30px; border:none;">Sunting</button>
-                                                    </div>
-                                                </div>
+                                            <div class="alert alert-primary"
+                                                style="border-radius: 2px; border:1px solid #e3e3e3 ; background-color:#ffffff"
+                                                role="alert">
+                                                <p style="font-size:14pt;color:black">Membuat</p>
+                                                <br>
+                                                <p style="font-size:10pt;color:black">Trisqi membuat Tagihan ini pada
+                                                    <b>24
+                                                        mei 2023</b>
+                                                </p>
+                                                <button
+                                                    style="background-color: #9a99e2;border-radius:2px;width:80px;border:transparent;height:25px;color:#ffffff">Sunting</button>
                                             </div>
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="headingTwo">
@@ -157,7 +169,8 @@
                                                         <div class="d-flex row">
                                                             <p style="font-size:14pt">Kirim</p>
                                                             <br>
-                                                            <p style="font-size:10pt">Pembyaran berulang muulai dari <b>28 mei 2023</b>
+                                                            <p style="font-size:10pt">Pembyaran berulang muulai dari
+                                                                <b>28 mei 2023</b>
                                                             </p>
                                                         </div>
                                                     </button>
@@ -165,7 +178,8 @@
                                                 <div id="collapseTwo" class="accordion-collapse collapse"
                                                     aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                                                     <div class="accordion-body">
-                                                        <p style="font-size:10pt">Pembayran selanjut nya pada <b>28 mei 2023</b>
+                                                        <p style="font-size:10pt">Pembayran selanjut nya pada <b>28 mei
+                                                                2023</b>
                                                         <p style="font-size:10pt">Berakhir nya pada <b>28 juni 2023</b>
 
                                                     </div>
@@ -179,14 +193,18 @@
                                                         <div class="d-flex row">
                                                             <p style="font-size:14pt">Faktur</p>
                                                             <br>
-                                                            <p style="font-size:10pt">1 Faktur telah berhasil di bayar  </p>
+                                                            <p style="font-size:10pt">1 Faktur telah berhasil di bayar
+                                                            </p>
                                                         </div>
                                                     </button>
                                                 </h2>
                                                 <div id="collapseThree" class="accordion-collapse collapse"
                                                     aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                                                     <div class="accordion-body">
-                                                        INV-11 secara otomatis dibuat pada 29 Mei 2023
+                                                        <p>INV-11 secara otomatis dibuat pada 29 Mei 2023</p> 
+                                                        <p>INV-11 secara otomatis dibuat pada 29 Mei 2023</p> 
+                                                        <p>INV-11 secara otomatis dibuat pada 29 Mei 2023</p> 
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -194,8 +212,8 @@
                                         <!-- Faq end -->
 
                                     </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
                                     <form
                                         action="https://www.kodingwife.com/demos/unipro/v1-x/05-desig4-violet/reports.html">
                                         <div class="rcr-screen">
@@ -208,73 +226,77 @@
                                                             alt="Uni Pro Admin">
                                                     </div>
                                                     <div class="ml-2 col-4">
-                                                    <p style="float: right">cina baik hati</p>
-                                                    <br>
-                                                    <p style="float: right">unknown company</p>
-                                                    <br>
-                                                    <p style="float: right">cireng@gmail.com</p>
-                                                </div>
+                                                        <p style="float: right;" class="me-3">cina baik hati</p>
+                                                        <br>
+                                                        <p style="float: right;" class="me-3">unknown company</p>
+                                                        <br>
+                                                        <p style="float: right;" class="me-3">cireng@gmail.com</p>
+                                                    </div>
                                                 </div>
                                                 <div class="field-wrapper mb-3">
                                                     <div style="border-bottom: solid grey 1px; margin-top: 4%">
-                                                </div>
-                                                <div class="d-flex" style="margin-top: 2%">
-                                                <div class="col-6 ms-3">
-                                                    <p>Tagihan Kepada</p>
-                                                    <p>Koirul</p>
-                                                    <p>1672671</p>
-                                                    <p>cireng@gmail.com</p>
-                                                </div>
-                                                <div class="col-6">
-                                                    <p>Nomor faktur: INV-9</p>
-                                                    <p>Tanggal faktur: 24 mei 2023</p>
-                                                    <p>Tanggal Jatuh Tempo: 24 mei 2023</p>
-                                                </div>
-                                            </div>
-                                            <div class="table-responsive">
-                                                <table class="table products-table col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Item</th>
-                                                            <th>Kuantitas</th>
-                                                            <th>Harga</th>
-                                                            <th>Jumlah</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <p>api maps</p>
-                                                                <br>
-                                                                <p style="font-size: 8pt; margin-top: -10%">pembelian api untuk map</p>
-                                                            </td>
-                                                            <td><span class="badge">1</span></td>
-                                                            <td>385.000,00</td>
-                                                            <td>385.000,00</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="float: right; margin-bottom: -5%">
-                                                    <!-- Card start -->
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <li class="list-group-item">Subtotal: 9000000 </li>
-                                                                <li class="list-group-item">Ppn(20%): 9000000 </li>
-                                                                <li class="list-group-item">PPH(12%): 9000000 </li>
-                                                                <li class="list-group-item">Total: 9000000 </li>
-                                                            </ul>
+                                                    </div>
+                                                    <div class="d-flex col-12" style="margin-top: 2%">
+                                                        <div class="col-6 ms-3">
+                                                            <p style="margin-top:2%">Tagihan Kepada</p>
+                                                            <p style="margin-top:2%">Pt Jawa</p>
+                                                            <p style="margin-top:2%">MPWP: 1672671</p>
+                                                            <p style="margin-top:2%">cireng@gmail.com</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p style="margin-top:2%">Nomor Tagihan:BRLB-00002 </p>
+                                                            <p style="margin-top:2%">Nomer Antrean: 123</p>
+                                                            <p style="margin-top:2%">Tanggal Tagihan: 24 mei 2023</p>
+                                                            <p style="margin-top:2%">Tanggal Jatuh Tempo: 24 mei 2023</p>
                                                         </div>
                                                     </div>
-                                                    <!-- Card end -->
+                                                    <div class="table-responsive mt-3">
+                                                        <table
+                                                            class="table1 products-table col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Item</th>
+                                                                    <th>Kuantitas</th>
+                                                                    <th>Harga</th>
+                                                                    <th>Jumlah</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <p>api maps</p>
+                                                                        <br>
+                                                                        <p style="font-size: 8pt; margin-top: -10%">
+                                                                            pembelian api untuk map</p>
+                                                                    </td>
+                                                                    <td><span class="badge" style="border-radius: 2px">1</span></td>
+                                                                    <td>385.000,00</td>
+                                                                    <td>385.000,00</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"
+                                                            style="float: right; margin-bottom: -5%">
+                                                            <!-- Card start -->
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <li class="list-group-item">Subtotal: 9000000 </li>
+                                                                    <li class="list-group-item">Ppn(20%): 9000000 </li>
+                                                                    <li class="list-group-item">PPH(12%): 9000000 </li>
+                                                                    <li class="list-group-item">Total: 9000000 </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Card end -->
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            </div>
-                                        </div>
                                     </form>
-                                    </div>
                                 </div>
-
                             </div>
+
+                        </div>
                     </div>
 
                     <!-- Row end -->

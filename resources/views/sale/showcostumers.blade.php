@@ -76,8 +76,8 @@
             text-align: center;
             height: 35px;
             padding: 8px;
-            border-radius: 0px 2px 2px 0px;
-        }       
+            border-radius: 0px 5px 5px 0px;
+        }
 
         .empty-box2.active {
             height: 35px;
@@ -108,7 +108,7 @@
             text-align: center;
             height: 35px;
             padding: 8px;
-            border-radius: 2px 0px 0px 2px;
+            border-radius: 5px 0px 0px 5px;
         }
 
         .empty-box1.active {
@@ -401,7 +401,6 @@
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
         
-
         <!-- Sidebar wrapper end -->
 
         <!-- *************
@@ -413,23 +412,15 @@
                 <!-- Content wrapper start -->
                 <div class="content-wrapper">
                     <!-- Row start -->
-                    <div class="card-body">
                     <div class="row gutters">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                      
-                                <div class="d-flex">
-                                <div class="col-xl-11 col-lg-11 col-md-2 col-sm-2 col-12">
+                            <div class="card">
+                                <div class="card-header">
                                     <div class="card-title">
                                         <h3>Hada<button type="button" style="border: none; background:none;">☆</button>
                                         </h3>
                                     </div>
-
-                                    <div class="dropdown" style="border-radius:2px">
-
-                                </div>
-                                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-2 col-12">
                                     <div class="dropdown">
-
                                         <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical"
                                             href="#" role="button" data-bs-toggle="dropdown"
                                             aria-expanded="false">
@@ -439,15 +430,17 @@
                                                     href="{{ url('add_costumers') }}">Tambah Faktur</a></li>
                                             <li><a class="dropdown-item-bt" href="{{ url('add_income') }}">Tambah
                                                     Transfer</a></li>
-                                            
+                                            <li><a class="dropdown-item" href="{{ url('add_income') }}">Sunting</a>
+                                            </li>
+                                            <li><a class="dropdown-item-bt" href="{{ url('ad_income') }}">Hapus</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Cetak</a></li>
+                                            <li><a class="dropdown-item" href="#">Unduh PDF</a></li>
                                         </ul>
                                     </div>
                                 </div>
-                                </div>
                             </div>
-                  
-
-
+                        </div>
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
                             <div style="padding: 1rem 0rem 1rem 0rem">
                                 <div class="lingkaran-container">
@@ -525,7 +518,7 @@
                             <!-- Card start -->
                             <div class="card">
 
-                                <div class="">
+                                <div class="card-body">
 
                                     <div style="margin-top: 10%;">
                                         <h6>Mata Uang</h6>
@@ -788,7 +781,6 @@
                         <!-- Card end -->
                         <!-- </div> -->
                     </div>
-    </div>
                     <!-- Row end -->
                 </div>
                 <!-- Row end -->
@@ -850,8 +842,6 @@
     <!-- Main Js Required -->
     <script src="{{ asset('Gmbslagi/js/main.js') }}"></script>
     <script>
-         $('#pills-profile-tab').click()
-            $('#pills-home-tab').click()
         // Tambahkan event listener untuk menampilkan/menyembunyikan dropdown saat tombol titik tiga diklik
         document.querySelector('.dropdown-toggle').addEventListener('click', function() {
             document.getElementById('dropdown-menu').classList.toggle('show');
