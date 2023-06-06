@@ -46,23 +46,51 @@
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.css")}}" />
         <style>
-				 .hidden-menu {
-    display: none;
-    background-color: #f2f2f2;
-    font-size: 20px;
-    padding: 20px;
-  }
+        .badge-start {
+            border-radius: 30px;
+            padding: .35rem .5rem;
+            min-width: 60px;
+            background: #D8D7FF;
+            color: #030179;
+        }
+         .badge-finish {
+            border-radius: 30px;
+            padding: .35rem .5rem;
+            min-width: 60px;
+            background: #D4FFCD;
+            color: #0A6D01;
+        }
+        .badge-sent{
+            border-radius: 30px;
+            padding: .35rem .5rem;
+            min-width: 60px;
+            background: #ffd7d7;
+            color: #df0000;
+        }
+        .badge-draft{
+            border-radius: 30px;
+            padding: .35rem .5rem;
+            min-width: 60px;
+            background: #d3d3d3;
+            color: #0a0a0a;
+        }
+		.hidden-menu {
+            display: none;
+            background-color: #f2f2f2;
+            font-size: 20px;
+            padding: 20px;
+        }
 
-  .hidden-menu a {
-    display: inline-block;
-    padding: 6px;
-    transition: transform 0.3s;
-    position: relative;
-  }
+        .hidden-menu a {
+            display: inline-block;
+            padding: 6px;
+            transition: transform 0.3s;
+            position: relative;
+        }
 
-  .hidden-menu a:hover {
-    transform: scale(1.2);
-  }
+        .hidden-menu a:hover {
+            transform: scale(1.2);
+        }
 
 			.text {
             text-align: center;
@@ -314,7 +342,7 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2023</td>
-                                                    <td><button  class="btn btn-danger" style="border-radius: 10px; background-color: #ffd2d2; color:#D21312; height: 30px; border:none">Terkirim</button></td>
+                                                    <td><span class="badge-sent">Terkirim</span></td>
                                                     <td>koirul</td>
                                                     <td>91.000.000,00</td>
 													<td>
@@ -350,7 +378,7 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2024</td>
-                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #d3d3d3; color:#0a0a0a; height: 30px; border:none">Konsep</button></td>
+                                                    <td><span class="badge-draft">Konsep</span></td>
                                                     <td>choirul</td>
                                                     <td>80.000.000,00</td>
 													<td>
@@ -387,7 +415,7 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>14 mei 2023</td>
-                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #d3d3d3; color:#0a0a0a; height: 30px; border:none">Konsep</button></td>
+                                                    <td><span class="badge-draft">Konsep</span></td>
                                                     <td>rudi</td>
                                                     <td>100.000.000,00</td>
 													<td>
@@ -422,7 +450,7 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>15 mei 2023</td>
-                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #d9dbfc; color:#1900ff; height: 30px; border:none">Sebagian</button></td>
+                                                    <td><span class="badge-start">Sebagian</span></td>
                                                     <td>slemet</td>
                                                     <td>20.000.000,00</td>
 													<td>
@@ -457,7 +485,7 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>25 mei 2023</td>
-                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #c4ffcc; color:#00be00; height: 30px; border:none">Dibayar</button></td>
+                                                    <td><span class="badge-finish">Dibayar</span></td>
                                                     <td>wahyu</td>
                                                     <td>45.000.000,00</td>
 													<td>

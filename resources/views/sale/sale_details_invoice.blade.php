@@ -41,7 +41,15 @@
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/search-filter.css') }}">
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.css') }}">
     <link rel="stylesheet" href="{{ asset("Gmbslagi/vendor/summernote/summernote-bs4.css")}}" />
-   
+    <style>
+          .badge-sent{
+            border-radius: 2px;
+            padding: .35rem .5rem;
+            min-width: 60px;
+            background: #ffd7d7;
+            color: #df0000;
+        }
+    </style>
       
 
 </head>
@@ -88,7 +96,7 @@
 
                     <!-- Row start -->
                     <div class="row gutters">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 col-12" style="margin-right: -2%">
 
                             <!-- Card start -->
                             <div class="card">
@@ -96,9 +104,7 @@
                                     <div class="card-title">
                                         <h3>Biaya nikah: FKR-9</h3>
                                     </div>
-                                    <div class="btn btn-danger" style="border-radius: 10px; background-color: #ffd2d2; color:#D21312; height: 30px; width: 20%; border:none">
-										Terkirim
-										</div>
+                                    <div class="badge-sent">Terkirim</div>
                                 </div>
                                 <div class="card-body">
                                     <div class="alert alert-primary" style="border-radius: 10px; color:#4e58eb; background-color:#c5d2fc" role="alert">
@@ -290,76 +296,71 @@
                             <!-- Card end -->
 
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
-                        style="margin-left: -3%; margin-top: 8%">
-                            <form
-                                action="https://www.kodingwife.com/demos/unipro/v1-x/05-desig4-violet/reports.html">
-                                <div class="rcr-screen">
-                                    <div class="login-body pb-4 ">
-                                        <div class="d-flex row col-12 ms-2">
-                                            <p>Biaya nikah</p>
-                                            <div class="col-8">
-                                                <img style="width: 25%"
-                                                    src="{{ asset('Gmbslagi/img/Carausel/person.jpg') }}"
-                                                    alt="Uni Pro Admin">
-                                            </div>
-                                            <div class="ml-2 col-4">
-                                            <p style="float: right">cina baik hati</p>
-                                            <br>
-                                            <p style="float: right">unknown company</p>
-                                            <br>
-                                            <p style="float: right">cireng@gmail.com</p>
-                                        </div>
-                                        </div>
-                                        <div class="field-wrapper mb-3">
-                                            <div style="border-bottom: solid grey 1px; margin-top: 4%">
-                                        </div>
-                                        <div class="d-flex" style="margin-top: 2%">
-                                        <div class="col-6 ms-3">
-                                            <p>Tagihan Kepada</p>
-                                            <p>Koirul</p>
-                                            <p>089812371829</p>
-                                            <p>cireng@gmail.com</p>
-                                        </div>
-                                        <div class="col-6">
-                                            <p>Nomor faktur: FKR-9</p>
-                                            <p>Tanggal faktur: 24 mei 2023</p>
-                                            <p>Tanggal Jatuh Tempo: 24 mei 2023</p>
-                                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" style="margin-top: 8%">
+                            <form action="https://www.kodingwife.com/demos/unipro/v1-x/05-desig4-violet/reports.html">
+                              <div class="rcr-screen">
+                                <div class="login-body pb-4">
+                                  <div class="d-flex row col-12 ms-2">
+                                    <p>Biaya nikah</p>
+                                    <div class="col-8">
+                                      <img style="width: 25%" src="{{ asset('Gmbslagi/img/Carausel/person.jpg') }}" alt="Uni Pro Admin">
+                                    </div>
+                                    <div class="ml-2 col-4">
+                                      <p style="float: right">cina baik hati</p>
+                                      <br>
+                                      <p style="float: right">unknown company</p>
+                                      <br>
+                                      <p style="float: right">cireng@gmail.com</p>
+                                    </div>
+                                  </div>
+                                  <div class="field-wrapper mb-3">
+                                    <div style="border-bottom: solid grey 1px; margin-top: 4%"></div>
+                                    <div class="d-flex" style="margin-top: 2%">
+                                      <div class="col-6 ms-3">
+                                        <p>Tagihan Kepada</p>
+                                        <p>Koirul</p>
+                                        <p>089812371829</p>
+                                        <p>cireng@gmail.com</p>
+                                      </div>
+                                      <div class="col-6">
+                                        <p>Nomor faktur: FKR-9</p>
+                                        <p>Tanggal faktur: 24 mei 2023</p>
+                                        <p>Tanggal Jatuh Tempo: 24 mei 2023</p>
+                                      </div>
                                     </div>
                                     <div class="table-responsive">
-                                        <table class="table products-table col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                            <thead>
-                                                <tr>
-                                                    <th>Item</th>
-                                                    <th>Kuantitas</th>
-                                                    <th>Harga</th>
-                                                    <th>Jumlah</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <p>api maps</p>
-                                                        <br>
-                                                        <p style="font-size: 8pt; margin-top: -10%">pembelian api untuk map</p>
-                                                    </td>
-                                                    <td><span class="badge">1</span></td>
-                                                    <td>385.000,00</td>
-                                                    <td>385.000,00</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="float: right; margin-bottom: -5%">
-                                            <!-- Card start -->
-                                                <div class="card">
-                                                    <div class="card-body">
-                                                        <li class="list-group-item">Subtotal: 9000000 </li>
-                                                        <li class="list-group-item">Ppn(20%): 9000000 </li>
-                                                        <li class="list-group-item">PPH(12%): 9000000 </li>
-                                                        <li class="list-group-item">Total: 9000000 </li>
-                                                    </ul>
-                                                </div>
+                                      <table class="table products-table">
+                                        <thead>
+                                          <tr>
+                                            <th>Item</th>
+                                            <th>Kuantitas</th>
+                                            <th>Harga</th>
+                                            <th>Jumlah</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>
+                                              <p>api maps</p>
+                                              <br>
+                                              <p style="font-size: 8pt; margin-top: -10%">pembelian api untuk map</p>
+                                            </td>
+                                            <td><span class="badge" style="border-radius: 2px">1</span></td>
+                                            <td>385.000,00</td>
+                                            <td>385.000,00</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="float: right; margin-bottom: -5%">
+                                        <div class="card">
+                                          <div class="card-body">
+                                            <ul class="list-group">
+                                              <li class="list-group-item">Subtotal: 9000000</li>
+                                              <li class="list-group-item">Ppn(20%): 9000000</li>
+                                              <li class="list-group-item">PPH(12%): 9000000</li>
+                                              <li class="list-group-item">Total: 900000</li>
+                                                </ul>
+                                             </div>
                                             </div>
                                             <!-- Card end -->
                                         </div>

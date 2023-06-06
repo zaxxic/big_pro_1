@@ -46,6 +46,20 @@
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.css")}}" />
         <style>
+        .badge-start {
+            border-radius: 30px;
+            padding: .35rem .5rem;
+            min-width: 60px;
+            background: #D8D7FF;
+            color: #030179;
+        }
+         .badge-finish {
+            border-radius: 30px;
+            padding: .35rem .5rem;
+            min-width: 60px;
+            background: #D4FFCD;
+            color: #0A6D01;
+        }
 			.text {
             text-align: center;
             color: #5e6973;
@@ -270,7 +284,7 @@
                                                     <td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2023</td>
                                                     <td>koirul</td>
-                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #d9dbfc; color:#1900ff; height: 30px; border:none">Aktif</button></td>
+                                                    <td><span class="badge-start">Aktif</span></td>
                                                     <td>Bulanan</td>
                                                     <td>24 mei 2023</td>
                                                     <td>91.000.000,00</td>
@@ -308,7 +322,7 @@
                                                     <td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2024</td>
                                                     <td>choirul</td>
-                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #c4ffcc; color:#00be00; height: 30px; border:none">Selesai</button></td>
+                                                    <td><span class="badge-finish"> Selesai</span></td>
                                                     <td>Bulanan</td>
                                                     <td>25 mei 2023</td>
                                                     <td>80.000.000,00</td>
