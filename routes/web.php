@@ -130,7 +130,7 @@ Route::get('/edit_role', [RoleController::class, 'edit_role'])->name('edit_role'
 //transaksi
 Route::get('/transaksi', [TransaksiController::class, 'transaksi'])->name('transaksi');
 
-//company
+//companyshow_acc
 Route::get('/company',[CompanyController::class,'company'])->name('company');
 //transfer
 Route::get('/transfer', [TransferController::class, 'transfer'])->name('transfer');

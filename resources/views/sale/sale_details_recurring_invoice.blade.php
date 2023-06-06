@@ -41,7 +41,21 @@
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/search-filter.css') }}">
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.css') }}">
 <style>
-
+  .badge-start {
+            text-align: center;
+            border-radius: 2px;
+            padding: .35rem .5rem;
+            min-width: 60px;
+            background: #D8D7FF;
+            color: #030179;
+        }
+         .badge-finish {
+            border-radius: 30px;
+            padding: .35rem .5rem;
+            min-width: 60px;
+            background: #D4FFCD;
+            color: #0A6D01;
+        }
 
 .rcr-screen {
     position: relative;
@@ -60,6 +74,45 @@
         @media only screen and (max-width: 600px) {
             /* Tambahkan gaya CSS untuk tampilan seluler di sini */
             /* ... */
+        }
+    /* Gaya umum */
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Gaya untuk judul faktur */
+        .card-title h3 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Tata letak responsif menggunakan Grid dan Flexbox */
+        .card-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+
+        .card-title {
+            grid-column: 1 / span 2;
+            text-align: center;
+        }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            /* Tata letak kolom tunggal pada perangkat dengan lebar layar kurang dari 600px */
+            .card-header {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto;
+            }
+
+            .card-title {
+                grid-column: 1;
+                text-align: center;
+            }
         }
 </style>
 </head>
@@ -109,19 +162,17 @@
                     <!-- Row start -->
                     <div class="row">
                     <div class="card">
-                                <div class="card-header col-6">
+                                <div class="card-header">
                                     <div class="card-title">
                                         <h3>Faktur Berulang: FBU-0002</h3>
                                     </div>
-                                    <div class="btn btn-danger" style="border-radius: 10px; background-color: #d9dbfc; color:#1900ff; height: 30px; border:none">
-										Aktif
-										</div>
+                                    <div class="badge-start">Aktif</div>
                                 </div>
                                 <div class="d-flex row">
 
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" style="margin-right: -2%">
                                     <div class="card-body">
-                                        <div class="alert alert-primary" style="border-radius: 10px; color:#4e58eb; background-color:#c5d2fc" role="alert">
+                                        <div class="alert alert-primary" style="border-radius: 2px; color:#4e58eb; background-color:#c5d2fc" role="alert">
                                             Ini adalah faktur berulang dan faktur selanjutnya akan dibuat otomatis pada tanggal 03 Jun 2023
 
 
@@ -146,7 +197,7 @@
                                                     aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                                                     <div class="accordion-body">
                                                         <button type="button"
-                                                            style="border-radius: 10px; width:18%; height: 30px; border:none;">Sunting</button>
+                                                            style="border-radius: 2px; width:20%; height: 30px; border:none;">Sunting</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -199,7 +250,7 @@
                                     </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
-                                    style="margin-left: -3%; margin-top: 2%">
+                                    style="margin-top: 2%">
                                     <form
                                         action="https://www.kodingwife.com/demos/unipro/v1-x/05-desig4-violet/reports.html">
                                         <div class="rcr-screen">
@@ -253,7 +304,7 @@
                                                                 <br>
                                                                 <p style="font-size: 8pt; margin-top: -10%">pembelian api untuk map</p>
                                                             </td>
-                                                            <td><span class="badge">1</span></td>
+                                                            <td><span class="badge" style="border-radius: 2px">1</span></td>
                                                             <td>385.000,00</td>
                                                             <td>385.000,00</td>
                                                         </tr>

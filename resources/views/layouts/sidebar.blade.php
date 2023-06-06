@@ -115,6 +115,8 @@
 								<ul class="dropdown-container">
 									<li class="mt-2"><a href="{{ route('bill') }}" class="{{ request()->routeIs('bill') ||
 										 														request()->routeIs('recurring_bill') ||
+																								 request()->routeIs('detail_bill') ||
+																								 request()->routeIs('detail_rcr_bill') ||
 																								request()->routeIs('add_recurring_bill') ||
 																								request()->routeIs('add_bill')
 										 														? 'drop-icon' : '' }}"><span style="margin-left: 20px;">&emsp;Tagihan</span></a></li>

@@ -8380,16 +8380,16 @@ fieldset:disabled .btn-primary {
 .btn-outline-primary {
     padding: 5px 10px;
     color: #000000;
-    background-color: #E8E8E8;
-    border-color: #E8E8E8;
-    border-radius: 5px;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 2px;
 }
 
 .btn-outline-primary:hover {
     color: #000000;
     background-color: #DFDFDF;
     border-color: #DFDFDF;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .btn-check:focus+.btn-outline-primary,
@@ -8440,7 +8440,7 @@ fieldset:disabled .btn-outline-primary {
     color: #ffffff;
     background-color: #5957b1;
     border-color: #5957b1;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .btn-secondary:hover {
