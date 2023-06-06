@@ -882,9 +882,9 @@
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                                 <!-- Card start -->
-
+<div class="card">
                                 <!-- <div class="card-header"> -->
-                                <div class="d-flex">
+                                <div class="card-header">
                                     <div class=" col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12 d-flex">
 
                                         <h3 class="card-title">Transaksi<button type="button" style="border: none; background:none;">☆</button></h3>
@@ -901,14 +901,19 @@
                                             <a href="http://127.0.0.1:8000/add_expenditure">
                                                 <button type="button" class="btn btn-secondary" style="margin-right: 10px;">Tambah Pengeluaran</button>
                                             </a>
-                                        
-                                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
-                                                <a href="path_ke_file.pdf" download="">
-                                                    <button type="button" class="btn btn-outline-primary">Ekspor</button>
-                                                </a>
-                                            </div>
+                                        <div class="dropdown">
+                                            <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                            </a>
+
+                                            <ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
+                                                <li><a class="dropdown-item" href="#">Impor</a></li>
+                                                <li><a class="dropdown-item" href="#">Expor</a></li>
+
+                                            </ul>
                                         </div>
-                                        
+                                        </div>
+
                                 </div>
                                 <div id="dropdown-menu">
                                     <button class="dropdown-toggle">&#8942;</button>
@@ -1425,8 +1430,8 @@
                                 </div>
                             </div>
                             <!-- Card start -->
-                            
-                            
+
+
                         </div>
                         <div class="card">
                             <div class="card-body" style="margin-left: -2.1%">
@@ -1452,6 +1457,7 @@
                             </div>
                         </div>
                         <!-- Card end -->
+                        </div>
                         <!-- Row end -->
 
                     </div>
@@ -1567,7 +1573,7 @@
 				hiddenMenu.style.display = 'none'; // Hide the hidden menu if no checkboxes are checked
 			}
 			}
-			
+
 			updateCountDisplay(); // Update the count display
 		});
 		});
@@ -1577,13 +1583,13 @@
 		checkboxes.forEach(function(checkbox) {
 			checkbox.checked = selectAllCheckbox.checked; // Set the state of each checkbox based on the "Select All" checkbox
 		});
-		
+
 		if (this.checked) {
 			hiddenMenu.style.display = 'block'; // Show the hidden menu
 		} else {
 			hiddenMenu.style.display = 'none'; // Hide the hidden menu
 		}
-		
+
 		updateCountDisplay(); // Update the count display
 		});
             </script>

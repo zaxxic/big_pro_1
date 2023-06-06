@@ -163,31 +163,31 @@
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                             <!-- Card start -->
-                            <div class="">
-                                <div class="d-flex">
-                              <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
-                                        <div class="card-title"><h3>Pengguna<button type="button" style="border: none; background:transparent;">☆</button></h3></div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
+                                        <div class="card-title">
+                                            <h3>Pengguna<button type="button" style="border: none; background:transparent;">☆</button></h3>
                                         </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
-                                        <div class="graph-day-selection" role="group" style="margin-left: 68%">
-											<a href="{{url('add_users')}}">
-											<button type="button" class="btn active" style="background: transparent">Tambah Pengguna</button>
-											</a>
-										</div>
-										</div>
-										<div class="dropdown icon-dots-three-vertical">
-											<span></span>
-											<div class="dropdown-content">
-												<a href="#">
-												<button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
-													Impor
-												</button>
-												</a>
-												<a href="#" class="icon-folder" style="color: #333">
-												<button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
-												</a>
-											</div>
-										</div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
+                                            <div class="graph-day-selection" role="group" style="margin-left: -30px;margin-right: 10px;">
+                                                <a href="{{url('add_users')}}">
+                                                    <button type="button" class="btn active" style="background: transparent">Tambah Pengguna</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                            </a>
+
+                                            <ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
+                                                <li><a class="dropdown-item" href="#">Impor</a></li>
+                                                <li><a class="dropdown-item" href="#">Expor</a></li>
+
+                                            </ul>
+                                        </div>
                                 </div>
                                 <div class="">
                                     <!-- Row start -->
@@ -229,7 +229,7 @@
                                                     <td>
                                                     <div class="menu-icons" style="font-size: 15px;">
                                                         <a href="{{url('edit_pemasok')}}" class="menu-icon icon-edit-2"></a>
-                                                        <a href="{{url('')}}" class="menu-icon icon-trash"></a>
+                                                            <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
                                                         <a href="{{url('')}}" class="menu-icon icon-eye1"></a>
                                                     </div>
                                                     </td>
@@ -250,7 +250,7 @@
                                                     <td>
                                                     <div class="menu-icons" style="font-size: 15px;">
                                                         <a href="{{url('edit_pemasok')}}" class="menu-icon icon-edit-2"></a>
-                                                        <a href="{{url('')}}" class="menu-icon icon-trash"></a>
+                                                            <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
                                                         <a href="{{url('')}}" class="menu-icon icon-eye1"></a>
                                                     </div>
                                                     </td>
@@ -271,7 +271,7 @@
                                                     <td>
                                                     <div class="menu-icons" style="font-size: 15px;">
                                                         <a href="{{url('edit_pemasok')}}" class="menu-icon icon-edit-2"></a>
-                                                        <a href="{{url('')}}" class="menu-icon icon-trash"></a>
+                                                            <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
                                                         <a href="{{url('')}}" class="menu-icon icon-eye1"></a>
                                                     </div>
                                                     </td>
@@ -311,6 +311,26 @@
                                 </div>
                             </div>
                             <!-- Card end -->
+                            
+                              <!-- Modal start -->
+                              <div class="modal fade" id="deleterole" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleterole" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content" style="padding: 0px">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Hapus Pengguna</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Anda Yakin Ingin Menghapus Pengguna Ini?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Hapus</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal end -->
 
                         </div>
                     </div>

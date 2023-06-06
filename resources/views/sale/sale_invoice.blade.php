@@ -222,29 +222,22 @@
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
-                                        <div class="graph-day-selection" role="group" style="margin-left: 68%">
-                                            <a href="{{ url('add_invoice') }}">
-                                                <button type="button" class="btn active"
-                                                    style="background: transparent">Tambah Faktur</button>
-                                            </a>
+                                            <div class="graph-day-selection" role="group" style="margin-left: -30px;margin-right: 10px;">
+                                                <a href="{{url('add_invoice')}}">
+                                                    <button type="button" class="btn active" style="background: transparent">Tambah</button>
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="dropdown icon-dots-three-vertical">
-                                        <span></span>
-                                        <div class="dropdown-content">
-                                            <a href="#">
-                                                <button type="button"
-                                                    style="border: none; background-color: white; color:#333; background:transparent"
-                                                    class="icon-download" data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModalCenteredScrollable">
-                                                    Impor
-                                                </button>
+                                        <div class="dropdown">
+                                            <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
                                             </a>
-                                            <a href="#" class="icon-folder" style="color: #333">
-                                                <button type="button"
-                                                    style="border: none; background-color: white; color:#333; background:transparent">
-                                                    Ekspor</button>
-                                            </a>
+
+                                            <ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
+                                                <li><a class="dropdown-item" href="#">Impor</a></li>
+                                                <li><a class="dropdown-item" href="#">Expor</a></li>
+
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -353,7 +346,7 @@
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+                                                            <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
                                                             <a href="{{ url('details')}}" class="menu-icon icon-eye1"></a>
                                                             <div class="dropdown icon-dots-two-vertical">
                                                                 <span>
@@ -397,7 +390,7 @@
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+                                                            <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                             <div class="dropdown icon-dots-two-vertical">
                                                                 <span>
@@ -442,7 +435,7 @@
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+                                                            <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                             <div class="dropdown icon-dots-two-vertical">
                                                                 <span>
@@ -485,7 +478,7 @@
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+                                                            <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                             <div class="dropdown icon-dots-two-vertical">
                                                                 <span>
@@ -528,7 +521,7 @@
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ url('edit_supplier') }}" class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+                                                            <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
                                                             <a href="#" class="menu-icon icon-eye1"></a>
                                                             <div class="dropdown icon-dots-two-vertical">
                                                                 <span>
@@ -678,6 +671,25 @@
                                     </div>
                                 </div>
                                 <!-- Modal end -->
+                                  <!-- Modal start -->
+                                  <div class="modal fade" id="deleterole" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleterole" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content" style="padding: 0px">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Hapus Faktur</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Anda Yakin Ingin Menghapus Faktur Ini?</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Hapus</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
                             </div>
                         </div>
                         <!-- Card end -->
@@ -748,25 +760,25 @@
 
     <!-- Main Js Required -->
     <script src="{{ asset('Gmbslagi/js/main.js') }}"></script>
-    
+
     <script>
         const checkboxes = document.querySelectorAll('.other-checkbox');
                 const selectAllCheckbox = document.querySelector('#select-all-checkbox');
                 const hiddenMenu = document.querySelector('.hidden-menu');
                 const countDisplay = document.querySelector('#count-display');
-        
+
                 // Function to count the number of checked checkboxes
                 function countCheckedCheckboxes() {
                 const checkedCheckboxes = document.querySelectorAll('.other-checkbox:checked');
                 return checkedCheckboxes.length;
                 }
-        
+
                 // Function to update the count display
                 function updateCountDisplay() {
                 const totalCount = countCheckedCheckboxes();
                 countDisplay.textContent =  totalCount + ' Item Yang dipilih : ' ;
                 }
-        
+
                 // Add event listener to each checkbox
                 checkboxes.forEach(function(checkbox) {
                 checkbox.addEventListener('change', function() {
@@ -778,23 +790,23 @@
                         hiddenMenu.style.display = 'none'; // Hide the hidden menu if no checkboxes are checked
                     }
                     }
-                    
+
                     updateCountDisplay(); // Update the count display
                 });
                 });
-        
+
                 // Add event listener to the "Select All" checkbox
                 selectAllCheckbox.addEventListener('change', function() {
                 checkboxes.forEach(function(checkbox) {
                     checkbox.checked = selectAllCheckbox.checked; // Set the state of each checkbox based on the "Select All" checkbox
                 });
-                
+
                 if (this.checked) {
                     hiddenMenu.style.display = 'block'; // Show the hidden menu
                 } else {
                     hiddenMenu.style.display = 'none'; // Hide the hidden menu
                 }
-                
+
                 updateCountDisplay(); // Update the count display
                 });
             </script>

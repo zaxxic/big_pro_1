@@ -137,7 +137,7 @@
 
 </head>
 
-<body style="overflow: hidden">
+<body >
 
     <!-- Page wrapper start -->
     <div class="page-wrapper">
@@ -204,8 +204,8 @@
                                                 <div class="color-input-container">
                                                     
                                                     <div class="field-placeholder">Warna <span class="text-danger">*</span></div>
-                                                    <input type="text" id="hex-input" readonly>
-                                                    <input type="color" style="width: 10%;background:transparent" id="color-picker">
+                                                    <input type="color" style="width: 14%;background:transparent" id="color-picker">
+                                                    <input type="text" id="hex-input" disabled>
                                                 </div>
                                             </div>
                                             <!-- Field wrapper end -->
@@ -232,13 +232,12 @@
                                         </div>
                                     </div>
                                     <!-- Row end -->
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                    <div class="d-flex justify-content-end mt-4">
-                                        <button class="btn btn-outline-primary1"  style="border-radius: 3px; margin-right: 1%" ><a href="{{url('category')}}"> Batal</a></button>
-                                        <button class="btn btn-primary" type="submit" style="border-radius: 3px">Simpan</button>
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
+                                        <div class="d-flex justify-content-end mt-4">
+                                            <button class="btn btn-outline-secondary1" type="submit" style="border-radius: 2px; margin-right: 1%" href="#">Batal</button>
+                                            <button class="btn btn-primary" type="submit" style="border-radius: 2px">Simpan</button>
+                                        </div>
                                     </div>
-                                </div>
-
                                 </div>
                             </div>
                             <!-- Card end -->

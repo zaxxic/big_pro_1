@@ -46,77 +46,7 @@
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/dataTables.bs4-custom.css') }}" />
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/buttons.bs.css') }}" />
     <style>
-        .dropdown-item {
-			display: block;
-			width: 100%;
-			padding: .9rem 1rem;
-			clear: both;
-			font-weight: 400;
-			color: #212529;
-			text-align: inherit;
-			text-decoration: none;
-			white-space: nowrap;
-			background-color: #f9f9f9;
-			border: 0;
-			/* border-radius: 5px; */
-			right: 0;
-		}
-
-		.dropdown {
-			position: relative;
-			display: inline-block;
-
-			background-color: #DFDFDF;
-			border-radius: 5px;
-		}
-
-		.dropdown-content {
-			display: none;
-			position: absolute;
-			min-width: 160px;
-			z-index: 1;
-			background-color: #DFDFDF;
-			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-			padding: 10px;
-			border-radius: 4px;
-			right: 0;
-			/* Mengarahkan dropdown ke arah kiri */
-		}
-
-
-
-		.dropdown-content a {
-			display: block;
-			padding: 5px 0;
-			text-decoration: none;
-			color: #333;
-			z-index: 1000;
-		}
-
-		.btn-ekspor-primary {
-			padding: 10px 9px;
-			color: #000000;
-			background-color: #E8E8E8;
-			border-color: #E8E8E8;
-			border-radius: 5px;
-		}
-
-		.btn-ekspor-primary:hover {
-			color: #ffffff;
-			background-color: #5957b1;
-			border-color: #5957b1;
-			border-radius: 5px;
-		}
-
-		.btn-check:focus+.btn-ekspor-primary,
-		.btn-ekspor-primary:focus {
-			color: #ffffff;
-			background-color: #5957b1;
-			border-color: #5957b1;
-			outline: 0;
-			-webkit-box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
-			box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
-		}
+       
 
         .hidden-menu {
             display: none;
@@ -136,34 +66,6 @@
             transform: scale(1.2);
         }
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            min-width: 160px;
-            z-index: 1;
-            background-color: #f9f9f9;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            padding: 10px;
-            border-radius: 4px;
-            right: 0;
-            /* Mengarahkan dropdown ke arah kiri */
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-content a {
-            display: block;
-            padding: 5px 0;
-            text-decoration: none;
-            color: #333;
-        }
 
         .searchcontainer {
             width: 90%;
@@ -237,26 +139,23 @@
                                         <div class="card-title"><h3>Kategori<button type="button" style="border: none; background:transparent;">☆</button></h3></div>
                                         </div>
                                         <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
-                                        <div class="graph-day-selection" role="group" style="margin-left: 68%">
-											<a href="{{url('add-category')}}">
-											<button type="button" class="btn active" style="background: transparent">Tambah kategori</button>
-											</a>
-										</div>
-										</div>
-										<div class="dropdown icon-dots-three-vertical" style="background-color: transparent;">
-											<span></span>
-											<div class="dropdown-content">
-												<a href="#">
-												<button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
-													Impor
-												</button>
-												</a>
-												<a href="#" class="icon-folder" style="color: #333">
-												<button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
-												</a>
-											</div>
-										</div>
+                                            <div class="graph-day-selection" role="group" style="margin-left: -30px;margin-right: 10px;">
+                                                <a href="{{url('add-category')}}">
+                                                    <button type="button" class="btn active" style="background: transparent">Tambah Kategori</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 
+                                            </a>
+
+                                            <ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
+                                                <li><a class="dropdown-item" href="#">Impor</a></li>
+                                                <li><a class="dropdown-item" href="#">Expor</a></li>
+
+                                            </ul>
+                                        </div>
 								</div>
                             <!-- </div> -->
                                 <div class="">
@@ -303,7 +202,7 @@
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ route('edit-category') }}" class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+                                                            <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -324,7 +223,7 @@
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ route('edit-category') }}" class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+                                                            <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -346,7 +245,7 @@
                                                     <td>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{ route('edit-category') }}" class="menu-icon icon-edit-2"></a>
-                                                            <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+                                                            <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -377,6 +276,25 @@
                                             </div>
                                         </div>
                                         <!-- Card end -->
+                                          <!-- Modal start -->
+                                <div class="modal fade" id="deleterole" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleterole" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content" style="padding: 0px">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Hapus Kategori</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Anda Yakin Ingin Menghapus Kategori Ini?</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Hapus</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
                                     </div>
                                 </div>
                             </div>

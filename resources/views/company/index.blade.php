@@ -47,7 +47,7 @@
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/search-filter/custom-search-filter.css")}}">
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.css") }}" />
 	</head>
-	<body style="overflow: hidden">
+	<body>
 
 		<!-- Page wrapper start -->
 		<div class="page-wrapper">
@@ -214,12 +214,12 @@
 												<!-- Field wrapper end -->
 
 											</div>
-											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                            <div class="d-flex justify-content-end mt-4">
-                                                <button class="btn btn-outline-primary1" type="submit" style="border-radius: 3px; margin-right: 1%" href="#">Batal</button>
-                                                <button class="btn btn-primary" type="submit" style="border-radius: 3px">Simpan</button>
-                                            </div>
-                                        </div>
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
+												<div class="d-flex justify-content-end mt-4">
+													<button class="btn btn-outline-secondary1" type="submit" style="border-radius: 2px; margin-right: 1%" href="#">Batal</button>
+													<button class="btn btn-primary" type="submit" style="border-radius: 2px">Simpan</button>
+												</div>
+											</div>
 											
 										</div>
 										<!-- Row end -->
