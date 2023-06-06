@@ -48,28 +48,28 @@
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.css")}}" />
         <style>
         .badge-start {
-            border-radius: 2px;
+            border-radius: 30px;
             padding: .35rem .5rem;
             min-width: 60px;
             background: #D8D7FF;
             color: #030179;
         }
          .badge-finish {
-            border-radius: 2px;
+            border-radius: 30px;
             padding: .35rem .5rem;
             min-width: 60px;
             background: #D4FFCD;
             color: #0A6D01;
         }
         .badge-sent{
-            border-radius: 2px;
+            border-radius: 30px;
             padding: .35rem .5rem;
             min-width: 60px;
             background: #ffd7d7;
             color: #df0000;
         }
         .badge-draft{
-            border-radius: 2px;
+            border-radius: 30px;
             padding: .35rem .5rem;
             min-width: 60px;
             background: #d3d3d3;
@@ -199,20 +199,7 @@
         <div class="main-container">
 
             <!-- Page header starts -->
-            <div class="page-header">
-
-                <!-- Row start -->
-                <div class="row gutters">
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-9">
-
-
-
-                    </div>
-
-                </div>
-                <!-- Row end -->
-
-            </div>
+          @include('layouts.header')
             <!-- Page header ends -->
 
             <!-- Content wrapper scroll start -->
@@ -348,11 +335,9 @@
 												<thead>
 												  <tr>
 													<th scope="col"> <input type="checkbox" id="select-all-checkbox"> </th>
-                                                    <th scope="col">Tanggal Faktur</th>
                                                     <th scope="col">Tanggal Jatuh Tempo</th>
                                                     <th scope="col">Status</th>
                                                     <th scope="col">Pelanggan</th>
-                                                    <th scope="col">Nomor</th>
                                                     <th scope="col">Jumlah</th>
 													<th scope="col">Aksi</th>
 												  </tr>
@@ -362,10 +347,8 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2023</td>
-                                                    <td>1 hari yang lalu</td>
-                                                    <td><span class="badge-sent">Terkirim</span></td>
+                                                    <td><button  class="btn btn-danger" style="border-radius: 10px; background-color: #ffd2d2; color:#D21312; height: 30px; border:none">Terkirim</button></td>
                                                     <td>koirul</td>
-                                                    <td>FKR-9</td>
                                                     <td>91.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
@@ -408,10 +391,8 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2024</td>
-                                                    <td>2 hari yang lalu</td>
-                                                    <td><span class="badge-draft">Konsep</span></td>
+                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #d3d3d3; color:#0a0a0a; height: 30px; border:none">Konsep</button></td>
                                                     <td>choirul</td>
-                                                    <td>FKR-8</td>
                                                     <td>80.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
@@ -455,10 +436,8 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>14 mei 2023</td>
-                                                    <td>3 hari yang lalu</td>
-                                                    <td><span class="badge-draft">Konsep</span></td>
+                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #d3d3d3; color:#0a0a0a; height: 30px; border:none">Konsep</button></td>
                                                     <td>rudi</td>
-                                                    <td>FKR-7</td>
                                                     <td>100.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
@@ -500,10 +479,8 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>15 mei 2023</td>
-                                                    <td>4 hari yang lalu</td>
-                                                    <td><span class="badge-start">Sebagian</span></td>
+                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #d9dbfc; color:#1900ff; height: 30px; border:none">Sebagian</button></td>
                                                     <td>slemet</td>
-                                                    <td>FKR-6</td>
                                                     <td>20.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
@@ -545,10 +522,8 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>25 mei 2023</td>
-                                                    <td>5 hari yang lalu</td>
-                                                    <td><span class="badge-finish">Dibayar</span></td>
+                                                    <td><button class="btn btn-danger" style="border-radius: 10px; background-color: #c4ffcc; color:#00be00; height: 30px; border:none">Dibayar</button></td>
                                                     <td>wahyu</td>
-                                                    <td>FKR-5</td>
                                                     <td>45.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
@@ -821,21 +796,6 @@
                 }
                 
                 updateCountDisplay(); // Update the count display
-                });
-            </script>
-            <script>
-                // Inisialisasi Dropzone
-                Dropzone.autoDiscover = false;
-                var myDropzone = new Dropzone("#demo-upload", {
-                    maxFiles: 1, // Hanya boleh mengupload satu file
-                    init: function() {
-                        this.on("addedfile", function(file) {
-                            // Menghapus file sebelumnya saat ada file baru yang diupload
-                            if (this.files.length > 1) {
-                                this.removeFile(this.files[0]);
-                            }
-                        });
-                    }
                 });
             </script>
 

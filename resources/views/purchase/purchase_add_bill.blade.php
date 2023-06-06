@@ -133,6 +133,9 @@
           background-color: transparent;
         }
       }
+      .ts-control{
+        z-index: auto;
+      }
         </style>
 	</head>
 	<body>
@@ -410,11 +413,11 @@
                                                               </div>
                                                            
                                                           </div>
-                                                          <div class="flex-grow-0 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                                          <div class="flex-grow-0 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="z-index:auto" >
                                                          
-                                                              <div class="" style="margin-bottom: 15%">
+                                                              <div class="" style="margin-bottom: 15%;z-index:auto">
                                                                 <label for="subjudul" class="field-label">Kategori<span class="text-danger">*</span></label>
-                                                                <select id="dropdown2" class="demo-code-language" style="z-index: auto" placeholder="Kategori baru" autocomplete="off">
+                                                                <select id="dropdown2" style="z-index:auto" class="demo-code-language" style="z-index: auto" placeholder="Kategori baru" autocomplete="off">
                                                                   <option value="Lainya" selected>Lainya</option>
                                                                   <option value="Beli Web">Beli Web</option>
                                                                   <option value="Bulanan">Bulanan</option>
