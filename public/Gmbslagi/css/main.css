@@ -1188,6 +1188,7 @@ p {
     border: 1px solid #888;
     width: 80%;
     max-width: 400px;
+    margin-top: -12px;
   }
 
 .default-sidebar-wrapper .default-sidebar-menu .default-sidebar-dropdown>a:after {
