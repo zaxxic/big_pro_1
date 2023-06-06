@@ -240,8 +240,7 @@
                                    
                                     <!-- Row end -->
                                     <div class="d-flex">
-										<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1"
-										style="margin-top: 8%;">
+										<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1">
 										<div class="hr-switch">
 											<a href="{{ route('bill') }}">
 												<div class="empty-box1 ">
@@ -250,8 +249,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2"
-										style="margin-top: 8%;">
+									<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box2">
 										<div class="hr-switch">
 											<a href="{{ route('recurring_bill') }}">
 												<div class="empty-box2 active">
