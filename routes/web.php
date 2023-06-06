@@ -169,6 +169,7 @@ Route::get('detail_rcr_bill', [BillController::class, 'detail_rcr_bill'])->name(
 
 //laporan
 Route::get('/report',[ReportController::class, 'report'])->name('report');
+Route::get('/add_report',[ReportController::class, 'add_report'])->name('add_report');
 Route::get('/show_report',[Show_reportController::class, 'show_report'])->name('show_report');
 Route::get('/show_report2',[Show_report2Controller::class, 'show_report2'])->name('show_report2');
 

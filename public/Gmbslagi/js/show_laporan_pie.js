@@ -33,7 +33,7 @@ var options3 = {
      },
    series: [44, 55, 13, 33, 20],
    labels: ["Apple", "Mango", "Orange", "Banana", "Pineapple"],
-   colors: ["#99C2A2", "#C5EDAC", "#66C7F4", "#FEBF63", "#FF7F7F"],
+   colors: ["#5957b1", "#2b86f5", "#63a9ff", "#95c5ff", "#c6e0ff"],
    legend: {
        horizontalAlign: "left",
        offsetX: -5
@@ -79,7 +79,7 @@ chart3.render();
     dataLabels: {
       enabled: false
     },
-    colors: ['#99C2A2', '#C5EDAC'],
+    colors: ['#5957b1', '#2b86f5'],
     series: [
 
       {
