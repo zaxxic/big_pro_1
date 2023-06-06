@@ -65,35 +65,6 @@
     transform: scale(1.2);
   }
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            min-width: 160px;
-            z-index: 1;
-            background-color: #f9f9f9;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            padding: 10px;
-            border-radius: 2px;
-            right: 0;
-            /* Mengarahkan dropdown ke arah kiri */
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-content a {
-            display: block;
-            padding: 5px 0;
-            text-decoration: none;
-            color: #333;
-        }
-
         .searchcontainer {
             width: 90%;
             font-size: 20px;
@@ -201,7 +172,7 @@
 			************* -->
         <div class="main-container">
 
-           
+
 
             <!-- Content wrapper scroll start -->
             <div class="content-wrapper-scroll">
@@ -215,33 +186,31 @@
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                             <!-- Card start -->
-                            <div class="">
-                                <div class="d-flex">
+                            <div class="card">
+                                <div class="card-header">
                                     <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
                                         <div class="card-title">
                                             <h3>Pelanggan<button type="button" style="border: none; background:transparent;">☆</button></h3>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
-                                        <div class="graph-day-selection" role="group" style="margin-left: 68%">
-                                            <a href="{{url('add_costumers')}}">
-                                                <button type="button" class="btn active" style="background: transparent">Tambah</button>
-                                            </a>
+                                            <div class="graph-day-selection" role="group" style="margin-left: -30px;margin-right: 10px;">
+                                                <a href="{{url('add_customers')}}">
+                                                    <button type="button" class="btn active" style="background: transparent">Tambah</button>
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="dropdown icon-dots-three-vertical mt-2">
-                                        <span></span>
-                                        <div class="dropdown-content">
-                                            <a href="#">
-                                                <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
-                                                    Impor
-                                                </button>
+                                        <div class="dropdown">
+                                            <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
                                             </a>
-                                            <a href="#" class="icon-folder" style="color: #333">
-                                                <button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
-                                            </a>
+
+                                            <ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
+                                                <li><a class="dropdown-item" href="#">Impor</a></li>
+                                                <li><a class="dropdown-item" href="#">Expor</a></li>
+
+                                            </ul>
                                         </div>
-                                    </div>
                                 </div>
                                 <div class="">
                                     <!-- Row start -->

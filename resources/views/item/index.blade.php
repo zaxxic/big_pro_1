@@ -47,77 +47,6 @@
 	<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
 	<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.css")}}" />
 	<style>
-		.dropdown-item {
-			display: block;
-			width: 100%;
-			padding: .9rem 1rem;
-			clear: both;
-			font-weight: 400;
-			color: #212529;
-			text-align: inherit;
-			text-decoration: none;
-			white-space: nowrap;
-			background-color: #f9f9f9;
-			border: 0;
-			/* border-radius: 5px; */
-			right: 0;
-		}
-
-		.dropdown {
-			position: relative;
-			display: inline-block;
-
-			background-color: #DFDFDF;
-			border-radius: 5px;
-		}
-
-		.dropdown-content {
-			display: none;
-			position: absolute;
-			min-width: 160px;
-			z-index: 1;
-			background-color: #DFDFDF;
-			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-			padding: 10px;
-			border-radius: 4px;
-			right: 0;
-			/* Mengarahkan dropdown ke arah kiri */
-		}
-
-
-
-		.dropdown-content a {
-			display: block;
-			padding: 5px 0;
-			text-decoration: none;
-			color: #333;
-			z-index: 1000;
-		}
-
-		.btn-ekspor-primary {
-			padding: 10px 9px;
-			color: #000000;
-			background-color: #E8E8E8;
-			border-color: #E8E8E8;
-			border-radius: 5px;
-		}
-
-		.btn-ekspor-primary:hover {
-			color: #ffffff;
-			background-color: #5957b1;
-			border-color: #5957b1;
-			border-radius: 5px;
-		}
-
-		.btn-check:focus+.btn-ekspor-primary,
-		.btn-ekspor-primary:focus {
-			color: #ffffff;
-			background-color: #5957b1;
-			border-color: #5957b1;
-			outline: 0;
-			-webkit-box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
-			box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
-		}
 
 		.hidden-menu {
 			display: none;
@@ -137,45 +66,6 @@
 			transform: scale(1.2);
 		}
 
-
-		.dropdown {
-			position: relative;
-			display: inline-block;
-		}
-
-		.dropdown-content {
-			display: none;
-			position: absolute;
-			min-width: 160px;
-			z-index: 1;
-			background-color: #f9f9f9;
-			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-			padding: 10px;
-			border-radius: 4px;
-			right: 0;
-			/* Mengarahkan dropdown ke arah kiri */
-		}
-
-		.dropdown:hover .dropdown-content {
-			display: block;
-		}
-
-		.dropdown-content a {
-			display: block;
-			padding: 5px 0;
-			text-decoration: none;
-			color: #333;
-		}
-
-		.searchcontainer {
-			width: 90%;
-			font-size: 20px;
-
-			.icon-search {
-				display: inline-block;
-				margin-right: 50px;
-				color: rgba(255, 255, 255, 0.5);
-			}
 
 			.search {
 				width: 111%;
@@ -241,26 +131,24 @@
 												<h3>Item<button type="button" style="border: none; background:transparent;">☆</button></h3>
 											</div>
 										</div>
-										<div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
-											<div class="graph-day-selection" role="group" style="margin-left: 68%">
-												<a href="{{url('add-item')}}">
-													<button type="button" class="btn active" style="background: transparent">Tambah</button>
-												</a>
-											</div>
-										</div>
-										<div class="dropdown icon-dots-three-vertical" style="background-color: transparent;">
-											<span></span>
-											<div class="dropdown-content">
-												<a href="#">
-													<button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
-														Impor
-													</button>
-												</a>
-												<a href="#" class="icon-folder" style="color: #333">
-													<button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
-												</a>
-											</div>
-										</div>
+                                        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
+                                            <div class="graph-day-selection" role="group" style="margin-left: -30px;margin-right: 10px;">
+                                                <a href="{{url('add-item')}}">
+                                                    <button type="button" class="btn active" style="background: transparent">Tambah</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                            </a>
+
+                                            <ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
+                                                <li><a class="dropdown-item" href="#">Impor</a></li>
+                                                <li><a class="dropdown-item" href="#">Expor</a></li>
+
+                                            </ul>
+                                        </div>
 
 									</div>
 									<div class="">

@@ -300,21 +300,32 @@
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                                 <!-- Card start -->
-
+<div class="card">
                                 <!-- <div class="card-header"> -->
-                                <div class="row">
+                                <div class="card-header">
                                     <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
                                         <div class="card-title">
                                             <h3>Transfer<button type="button" style="border: none; background:transparent;">☆</button></h3>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
-                                        <div class="graph-day-selection" role="group" style="margin-left: 68%">
-                                            <a href="{{url('add_transfer')}}">
-                                                <button type="button" class="btn active" style="background: transparent">Tambah</button>
-                                            </a>
+                                            <div class="graph-day-selection" role="group" style="margin-left: -30px;margin-right: 10px;">
+                                                <a href="{{url('add_transfer')}}">
+                                                    <button type="button" class="btn active" style="background: transparent">Tambah</button>
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
+                                        <div class="dropdown">
+                                            <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                            </a>
+
+                                            <ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
+                                                <li><a class="dropdown-item" href="#">Impor</a></li>
+                                                <li><a class="dropdown-item" href="#">Expor</a></li>
+
+                                            </ul>
+                                        </div>
                                 </div>
 
 
@@ -475,8 +486,7 @@
                             <!-- Modal end -->
 
                             <!-- Card end -->
-
-
+                        </div>
                         </div>
                         <!-- Row end -->
 
@@ -571,7 +581,7 @@
 				hiddenMenu.style.display = 'none'; // Hide the hidden menu if no checkboxes are checked
 			}
 			}
-			
+
 			updateCountDisplay(); // Update the count display
 		});
 		});
@@ -581,13 +591,13 @@
 		checkboxes.forEach(function(checkbox) {
 			checkbox.checked = selectAllCheckbox.checked; // Set the state of each checkbox based on the "Select All" checkbox
 		});
-		
+
 		if (this.checked) {
 			hiddenMenu.style.display = 'block'; // Show the hidden menu
 		} else {
 			hiddenMenu.style.display = 'none'; // Hide the hidden menu
 		}
-		
+
 		updateCountDisplay(); // Update the count display
 		});
             </script>

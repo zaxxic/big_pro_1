@@ -195,25 +195,23 @@
                                         <div class="card-title"><h3>Tagihan<button type="button" style="border: none; background:transparent;">☆</button></h3></div>
                                         </div>
                                         <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
-                                        <div class="graph-day-selection" role="group" style="margin-left: 68%">
-											<a href="{{url('add_bill')}}">
-											<button type="button" class="btn active" style="background: transparent;">Tambah Tagihan</button>
-											</a>
-										</div>
-										</div>
-										<div class="dropdown icon-dots-three-vertical">
-											<span></span>
-											<div class="dropdown-content">
-												<a href="#">
-												<button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
-													Impor
-												</button>
-												</a>
-												<a href="#" class="icon-folder" style="color: #333">
-												<button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
-												</a>
-											</div>
-										</div>
+                                            <div class="graph-day-selection" role="group" style="margin-left: -30px;margin-right: 10px;">
+                                                <a href="{{url('add_bill')}}">
+                                                    <button type="button" class="btn active" style="background: transparent">Tambah Tagihan</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                            </a>
+
+                                            <ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
+                                                <li><a class="dropdown-item" href="#">Impor</a></li>
+                                                <li><a class="dropdown-item" href="#">Expor</a></li>
+
+                                            </ul>
+                                        </div>
                                     </div>
                                     <div class="card-body">
                                                     <!-- Row start -->
@@ -681,7 +679,7 @@
 				hiddenMenu.style.display = 'none'; // Hide the hidden menu if no checkboxes are checked
 			}
 			}
-			
+
 			updateCountDisplay(); // Update the count display
 		});
 		});
@@ -691,13 +689,13 @@
 		checkboxes.forEach(function(checkbox) {
 			checkbox.checked = selectAllCheckbox.checked; // Set the state of each checkbox based on the "Select All" checkbox
 		});
-		
+
 		if (this.checked) {
 			hiddenMenu.style.display = 'block'; // Show the hidden menu
 		} else {
 			hiddenMenu.style.display = 'none'; // Hide the hidden menu
 		}
-		
+
 		updateCountDisplay(); // Update the count display
 		});
 		</script>
