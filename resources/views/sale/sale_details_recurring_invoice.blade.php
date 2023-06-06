@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="img/fav.png">
 
     <!-- Title -->
-    <title>Uni Pro Admin Template - Admin Dashboard</title>
+    <title>Unknown | Rincian-Faktur Berulang</title>
 
 
     <!-- *************

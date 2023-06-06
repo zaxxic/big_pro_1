@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="img/fav.png">
 
     <!-- Title -->
-    <title>Uni Pro Admin Template - Admin Dashboard</title>
+    <title>Unknown | Edit-item</title>
 
 
     <!-- *************
@@ -190,7 +190,7 @@ label {
                                     <div class="d-flex">
                                         <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
                                             <div class="card-title">
-                                                <h3>Tambah Item<button type="button" style="border: none; background:none;">☆</button></h3>
+                                                <h3>Edit Item<button type="button" style="border: none; background:none;">☆</button></h3>
                                             </div>
                                             <div class="graph-day-selection" role="group" style="margin-left: 60%">
 
