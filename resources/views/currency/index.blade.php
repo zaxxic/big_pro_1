@@ -226,7 +226,7 @@
                                                         <td>
                                                             <div class="menu-icons" style="font-size: 15px;">
                                                                 <a href="{{route('currency-edit')}}" class="menu-icon icon-edit-2"></a>
-                                                                <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+                                                            <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -241,7 +241,7 @@
                                                         <td>
                                                             <div class="menu-icons" style="font-size: 15px;">
                                                                 <a href="{{route('currency-edit')}}" class="menu-icon icon-edit-2"></a>
-                                                                <a href="#" class="menu-icon delete-icon"><i class="icon-trash"></i></a>
+                                                            <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -275,7 +275,25 @@
                                         </div>
                                         <!-- Card end -->
                                         <!-- Modal start -->
+  <!-- Modal start -->
+  <div class="modal fade" id="deleterole" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleterole" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="padding: 0px">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Hapus Mata Uang</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Anda Yakin Ingin Menghapus Mata Uang Ini?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Hapus</button>
 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal end -->
                                         <!-- Modal end -->
                                     </div>
                                 </div>

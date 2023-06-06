@@ -204,8 +204,8 @@
                                                 <div class="color-input-container">
                                                     
                                                     <div class="field-placeholder">Warna <span class="text-danger">*</span></div>
-                                                    <input type="text" id="hex-input" readonly>
-                                                    <input type="color" style="width: 10%;background:transparent" id="color-picker">
+                                                    <input type="color" style="width: 14%;background:transparent" id="color-picker">
+                                                    <input type="text" id="hex-input" disabled>
                                                 </div>
                                             </div>
                                             <!-- Field wrapper end -->

@@ -51,7 +51,7 @@
 
         .half-width-container {
   display: flex;
-  width: 50%;
+  width: 68%;
 }
 
 input[type="radio"] {
@@ -63,10 +63,33 @@ input[type="radio"] {
 label {
   margin-bottom: 2%;
 }
-
+@media (max-width: 1440px) {
+  .half-width-container {
+    width: 67%;
+    flex-direction: row;
+  }
+}
 @media (max-width: 768px) {
   .half-width-container {
-    width: 100%;
+    width: 139%;
+    flex-direction: row;
+  }
+}
+@media (max-width: 711px) {
+  .half-width-container {
+    width: 138%;
+    flex-direction: row;
+  }
+}
+@media (max-width: 425px) {
+  .half-width-container {
+    width: 135%;
+    flex-direction: row;
+  }
+}
+@media (max-width: 320px) {
+  .half-width-container {
+    width: 133%;
     flex-direction: row;
   }
 }

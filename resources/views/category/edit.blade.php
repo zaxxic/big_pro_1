@@ -137,7 +137,7 @@
 
 </head>
 
-<body style="overflow: hidden">
+<body>
 
     <!-- Page wrapper start -->
     <div class="page-wrapper">
