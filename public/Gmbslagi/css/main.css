@@ -9285,7 +9285,7 @@ label {
 
 
 .dropdown-menu:before {
-    position: absolute;
+    /* position: absolute; */
     top: -9px;
     left: 12px;
     content: '';

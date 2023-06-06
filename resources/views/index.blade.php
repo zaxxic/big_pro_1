@@ -142,7 +142,7 @@
 
                             </div>
                             <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
-                                <h6>utang</h6>
+                                <h6>Piutang</h6>
                                 <p>Uang masuk dan keluar dari bisnis Anda</p>
                                 <hr>
                                 <p id="receivableAmount">Total Piutang: $1000</p>
