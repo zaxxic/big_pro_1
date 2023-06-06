@@ -46,15 +46,21 @@
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.css")}}" />
         <style>
+        .yellow{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #fbff00;
+        }
         .badge-start {
-            border-radius: 30px;
+            border-radius: 2px;
             padding: .35rem .5rem;
             min-width: 60px;
             background: #D8D7FF;
             color: #030179;
         }
          .badge-finish {
-            border-radius: 30px;
+            border-radius: 2px;
             padding: .35rem .5rem;
             min-width: 60px;
             background: #D4FFCD;
@@ -214,7 +220,7 @@
                                         <div class="card-title"><h3>Faktur Berulang<button type="button" style="border: none; background:transparent;">☆</button></h3></div></div>
                                         <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
                                         <div class="graph-day-selection" role="group" style="margin-left: 58%">
-                                            <a href="{{url('add_invoice')}}">
+                                            <a href="{{url('add_recurring_invoice')}}">
                                             <button type="button" class="btn active" style="background: transparent">Tambah Faktur Berulang</button>
                                             </a>
                                         </div>
@@ -270,7 +276,9 @@
                                                 <tr>
                                                     <th scope="col"> <input type="checkbox" id="select-all-checkbox"> </th>
                                                     <th scope="col">Tanggal Mulai</th>
+                                                    <th scope="col">Isu Terakhir</th>
                                                     <th scope="col">Pelanggan</th>
+                                                    <th scope="col">Kategori</th>
                                                     <th scope="col">Status</th>
                                                     <th scope="col">Frekuensi</th>
                                                     <th scope="col">Durasi</th>
@@ -283,7 +291,13 @@
                                                 <tr class="table-row">
                                                     <td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2023</td>
+                                                    <td>14 mei 2023</td>
                                                     <td>koirul</td>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <i class="yellow">&emsp; Deposit</i>
+                                                        </div>
+                                                    </td>
                                                     <td><span class="badge-start">Aktif</span></td>
                                                     <td>Bulanan</td>
                                                     <td>24 mei 2023</td>
@@ -320,8 +334,14 @@
                                                 <!-- Data 2 -->
                                                 <tr class="table-row">
                                                     <td><input type="checkbox" class="other-checkbox"></td>
-                                                    <td>12 mei 2024</td>
+                                                    <td>12 mei 2023</td>
+                                                    <td>12 mei 2023</td>
                                                     <td>choirul</td>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                        <i class="yellow">&emsp; Deposit</i>
+                                                        </div>
+                                                    </td>
                                                     <td><span class="badge-finish"> Selesai</span></td>
                                                     <td>Bulanan</td>
                                                     <td>25 mei 2023</td>
@@ -395,30 +415,30 @@
                                             <div class="modal-body">
                                                     <div class="field-wrapper">
                                                         <label for="subjudul" class="field-label">Kategori<span class="text-danger">*</span></label>
-                                                        <input type="text" class="form-control datepicker" style="border-radius: 10px">
+                                                        <input type="text" class="form-control datepicker" style="border-radius: 2px">
                                                     </div>
                                                     <div class="field-wrapper">
                                                         <label for="subjudul" class="field-label">Jumlah<span class="text-danger">*</span></label>
-                                                        <input type="number" class="form-control datepicker" style="border-radius: 10px">
+                                                        <input type="number" class="form-control datepicker" style="border-radius: 2px">
                                                     </div>
                                                     <div class="field-wrapper">
                                                         <label for="subjudul" class="field-label">Metode Pembayaran<span class="text-danger">*</span></label>
-                                                        <select class="select-single js-states" title="Select Product Category" data-live-search="true" style="border-radius: 10px">
+                                                        <select class="select-single js-states" title="Select Product Category" data-live-search="true" style="border-radius: 2px">
                                                             <option>Cash</option>
                                                             <option>Transfer</option>
                                                         </select>
                                                     </div>
                                                     <div class="field-wrapper">
                                                         <label for="subjudul" class="field-label">Akun<span class="text-danger">*</span></label>
-                                                        <select class="select-single js-states" title="Select Product Category" data-live-search="true" style="border-radius: 10px">
+                                                        <select class="select-single js-states" title="Select Product Category" data-live-search="true" style="border-radius: 2px">
                                                             <option>Adi</option>
                                                             <option>Rudi</option>
                                                         </select>
                                                     </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="text-white" style="background-color:rgb(255, 0, 0); border:none; border-radius:10px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</button>
-                                                <button type="button" class="text-white" style="background-color: #55be0e; border:none; border-radius:10px; width:30%; height:25px; color:white">Simpan</button>
+                                                <button type="button" class="text-white" style="background-color:rgb(255, 0, 0); border:none; border-radius:2px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</button>
+                                                <button type="button" class="text-white" style="background-color: #55be0e; border:none; border-radius:2px; width:30%; height:25px; color:white">Simpan</button>
                                             </div>
                                         </div>
                                     </div>
@@ -446,7 +466,7 @@
 													</div>
 													<div class="modal-footer" style="margin-top:2%">
 														<a href="" onclick="window.location.reload()" style="margin-right: 2%" data-bs-dismiss="modal">Batal</a>
-														<button type="button" class="btn btn-primary" style="border-radius: 20px">Upload</button>
+														<button type="button" class="btn btn-primary" style="border-radius: 2px">Upload</button>
 													</div>
 												</div>
 											</div>

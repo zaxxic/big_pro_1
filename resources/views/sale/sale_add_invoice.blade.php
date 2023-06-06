@@ -246,7 +246,7 @@
                                                   <div class="col-6 ml-5 mr-5" style="margin-right:1%">
                                                   <div class="field-wrapper mb-3">
                                                     <label for="judul" class="field-label">Tanggal Faktur</label>
-                                                    <input class="form-control" type="text" placeholder="Masukkan Nama">
+                                                    <input class="form-control datepicker" type="text">
                                                   </div>
                                                     <div class="field-wrapper mb-3">
                                                     <label for="judul" class="field-label">Tanggal Pembayaran<span class="text-danger">*</span></label>
@@ -263,11 +263,11 @@
                                                   <div class="col-6">
                                                   <div class="field-wrapper mb-3">
                                                     <label for="judul" class="field-label">Nomor Faktur </label>
-                                                    <input class="form-control" type="text" placeholder="Masukkan Nama">
+                                                    <input class="form-control" type="number" placeholder="Masukkan Nomor Faktur">
                                                   </div>
                                                   <div class="field-wrapper mb-3">
                                                     <label for="judul" class="field-label">Jumlah Pesanan </label>
-                                                    <input class="form-control" type="text" placeholder="Masukkan Jumlah Pesanan">
+                                                    <input class="form-control" type="number" placeholder="Masukkan Jumlah Pesanan">
                                                   </div>
                                                   </div> 
                                                 </div>
@@ -330,7 +330,7 @@
                                                         </td>
                                                         <td>
                                                           <div id="pajak-wrapper">
-                                                            <div class="field-wrapper mb-1 pajak-input-wrapper">
+                                                            <div class="field-wrapper m-0 mb-1 pajak-input-wrapper">
                                                               <input type="number" style="border-radius:2px" name="pajak[]" class="form-control pajak-input">
                                                             </div>
                                                             <div class="add-pajak-wrapper mb-2">
@@ -411,13 +411,11 @@
                                                     </div>
                                                   </div>
                                                   <!-- Modal end -->
-
-                                                                              </div>
-
+                                                  </div>
                                               </div>
                                             </div>
                                             <!-- Row end -->
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 1%">
 												
                                               <!-- Field wrapper start -->
                                               <div class="field-wrapper">
@@ -426,93 +424,7 @@
                                               </div>
                                               <!-- Field wrapper end -->                     
                                             </div>
-                                            <div class="" style="margin-top: 2%;">
-                                              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
-                          
-                                              <div style="border-bottom: solid grey 1px;">
-                                                <h6>Jadwal</h6>
-                                                <p>Pilih persyaratan dan waktu mulai/berakhir untuk memastikan bahwa pelanggan menerima faktur Anda pada hari yang tepat.</p>
-                                              </div>
-  
-                                            </div>
-                                              </div>
-                                            <!-- Row start -->
-                                          <div class="row gutters">
-                                            <div class="row">
-                                              <div class="col-6">
-                                                <div class="d-flex align-items-center">
-                                              <p class="col-5">Ulangi invoice ini</p>
-                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                                              <div class="field-wrapper">
-                                                <select class="select-single js-states" title="Select Product Category" data-live-search="true">
-                                                  <option>Harian</option>
-                                                  <option>Mingguan</option>
-                                                  <option>Bulanan</option>
-                                                  <option>Tahunan</option>
-                                                  <option>Sesuikan</option>
-                                                </select>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          </div>
-                                          </div>
-                                          <div class="col-10">
-                                            <div class="d-flex align-items-center">
-                                          <p class="col-3">Buat invoice pertama aktif</p>
-                                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-left: -1%">
-
-                                              <!-- Field wrapper start -->
-                                              <div class="field-wrapper">
-                                                <div class="input-group">
-                                                  <input type="text" class="form-control datepicker">
-                                                  <span class="input-group-text">
-                                                    <i class="icon-calendar1"></i>
-                                                  </span>
-                                                </div>
-                                              </div>
-                                              <!-- Field wrapper end -->
-                      
-                                            </div>                                        
-                                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12" style="margin-left: 1%">
-                                              <div class="field-wrapper">
-                                                <select class="select-single js-states" title="Select Product Category" data-live-search="true">
-                                                  <option>Setelah</option>
-                                                  <option>Pada</option>
-                                                  <option>Tidak Pernah</option>
-                                                </select>
-                                              </div>
-                                            </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-left: 1%">
-
-                                              <!-- Field wrapper start -->
-                                              <div class="field-wrapper">
-                                                <div class="input-group">
-                                                  <input type="text" class="form-control datepicker">
-                                                  <span class="input-group-text">
-                                                    <i class="icon-calendar1"></i>
-                                                  </span>
-                                                </div>
-                                              </div>
-                                              <!-- Field wrapper end -->
-                      
-                                            </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-10">
-                                            <div class="d-flex align-items-center">
-                                              <p class="col-3">Kirim email secara otomatis</p>
-                                              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                                                <!-- Field wrapper start -->
-                                                <div class="toggle-container">
-                                                  <span class="toggle-text toggle-text-yes" style="margin-left: -3%">Ya</span>
-                                                  <span class="toggle-text toggle-text-no" style="margin-left: 2%">Tidak</span>
-                                                  <div class="toggle-switch" style="margin-left: 3%"></div>
-                                                </div>
-                                                <!-- Field wrapper end -->
-                                              </div>
-                                            </div>
-                                          </div>
-                                          
+                                            
                                           </div>
                                           <!-- Row end -->
                                           <div class="accordion-item" style="margin-top: 1%">
