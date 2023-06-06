@@ -685,7 +685,7 @@
                                                 <a href="" onclick="window.location.reload()"
                                                     style="margin-right: 2%" data-bs-dismiss="modal">Batal</a>
                                                 <button type="button" class="btn btn-primary"
-                                                    style="border-radius: 20px">Upload</button>
+                                                    style="border-radius: 2px">Upload</button>
                                             </div>
                                         </div>
                                     </div>

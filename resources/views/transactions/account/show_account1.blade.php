@@ -544,7 +544,7 @@
                                                                             <th>
                                                                                 <div class="menu-icons" style="font-size: 15px;">
                                                                                     <a href="{{url('edit_expenditure')}}" class="menu-icon icon-edit-2"></a>
-                                                                                    <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
+                                                                                      <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
                                                                                     <a href="{{url('show_expenditure')}}" class="menu-icon icon-eye1"></a>
                                                                                 </div>
                                                                             </th>

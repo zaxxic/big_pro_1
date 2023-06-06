@@ -60,6 +60,7 @@ body {
     color: #454f58;
     min-height: 100%;
     position: relative;
+    overflow-x: hidden;
 }
 
 body.authentication {

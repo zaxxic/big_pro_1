@@ -128,7 +128,7 @@
     </style>
 </head>
 
-<body>
+<body style="overflow-x: hidden">
 
     <!-- Page wrapper start -->
     <div class="page-wrapper">
