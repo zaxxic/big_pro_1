@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="img/fav.png">
 
     <!-- Title -->
-    <title>Unknown | Show Akun</title>
+    <title>Unknown | Rincian-Pelanggan</title>
 
 
     <!-- *************
