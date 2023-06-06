@@ -40,34 +40,51 @@
     <!-- Search Filter JS -->
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/search-filter.css') }}">
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.css') }}">
-<style>
-  .badge-start {
-            text-align: center;
-            border-radius: 2px;
-            padding: .35rem .5rem;
-            min-width: 60px;
-            background: #D8D7FF;
-            color: #030179;
+    <style>
+        .tmbl{
+            
+  background: none;
+  border: none;
+  color: black
+
         }
-         .badge-finish {
-            border-radius: 30px;
+        .rcr-screen {
+            position: relative;
+            background: #ffffff;
+            border: 1px solid #e1e8f3;
+            border-radius: 3px;
+            -webkit-box-shadow: 0 30px 15px -20px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 30px 15px -20px rgba(255, 255, 255, 0.2);
+            min-width: 100%;
+            max-width: 100%;
+        }
+
+        .badge-finish {
+            border-radius: 2px;
             padding: .35rem .5rem;
             min-width: 60px;
             background: #D4FFCD;
             color: #0A6D01;
+            font-size: 12px;
         }
 
-.rcr-screen {
-    position: relative;
-    background: #ffffff;
-    border: 1px solid #e1e8f3;
-    border-radius: 20px;
-    -webkit-box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
-    box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
-    min-width: 100%;
-    max-width: 100%;
+        .table1 {
+    color: #6f7479;
+    font-size: .725rem;
+    border-color: #e8edf3;
 }
-  /* Tambahkan gaya CSS yang diperlukan di sini */
+
+.table1 th,
+.table1 td {
+    padding: 12px;
+    font-size: 10pt;
+    font-weight: 600;
+    color: #072242;
+    border-bottom: 1px solid #c8d3df !important;
+    white-space: nowrap;
+}
+
+        /* Tambahkan gaya CSS yang diperlukan di sini */
         /* ... */
 
         /* Media queries untuk tampilan seluler */
@@ -75,46 +92,7 @@
             /* Tambahkan gaya CSS untuk tampilan seluler di sini */
             /* ... */
         }
-    /* Gaya umum */
-    body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Gaya untuk judul faktur */
-        .card-title h3 {
-            margin: 0;
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        /* Tata letak responsif menggunakan Grid dan Flexbox */
-        .card-header {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-        }
-
-        .card-title {
-            grid-column: 1 / span 2;
-            text-align: center;
-        }
-
-        /* Media Queries */
-        @media (max-width: 600px) {
-            /* Tata letak kolom tunggal pada perangkat dengan lebar layar kurang dari 600px */
-            .card-header {
-                grid-template-columns: 1fr;
-                grid-template-rows: auto auto;
-            }
-
-            .card-title {
-                grid-column: 1;
-                text-align: center;
-            }
-        }
-</style>
+    </style>
 </head>
 
 
@@ -161,96 +139,119 @@
 
                     <!-- Row start -->
                     <div class="row">
-                    <div class="card">
-                                <div class="card-header">
-                                    <div class="card-title">
-                                        <h3>Faktur Berulang: FBU-0002</h3>
-                                    </div>
-                                    <div class="badge-start">Aktif</div>
+                        <div class="card">
+                            <div class="card-header col-12">
+                                <div class="card-title ">
+                                    <h3>Faktur Berulang: FBU-0002
+                                    </h3>
+                                    
+
                                 </div>
-                                <div class="d-flex row">
+                                <div class="badge-finish" style="text-align: center" >Terima</div>
 
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" style="margin-right: -2%">
+                            </div>
+                            <div class="d-flex row">
+
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                     <div class="card-body">
-                                        <div class="alert alert-primary" style="border-radius: 2px; color:#4e58eb; background-color:#c5d2fc" role="alert">
-                                            Ini adalah faktur berulang dan faktur selanjutnya akan dibuat otomatis pada tanggal 03 Jun 2023
-
-
+                                        <div class="alert alert-primary mb-5"
+                                            style="border-radius: 2px; background-color:#9a99e2" role="alert">
+                                            Ini adalah faktur berulang dan faktur selanjutnya akan dibuat otomatis pada tanggal 03 Jun 2023 
                                         </div>
-                                        <!-- Faq start -->
-                                        <div class="accordion" id="faqAccordion">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="headingOne">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                                        aria-expanded="true" aria-controls="collapseOne">
-                                                        <div class="d-flex row">
-                                                            <p style="font-size:14pt">Membuat</p>
-                                                            <br>
-                                                            <p style="font-size:10pt">Trisqi membuat faktur ini pada <b>24
-                                                                    mei 2023</b> </p>
-                                                        </div>
-
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                                    aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                                                    <div class="accordion-body">
-                                                        <button type="button"
-                                                            style="border-radius: 2px; width:20%; height: 30px; border:none;">Sunting</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="headingTwo">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                        aria-expanded="false" aria-controls="collapseTwo">
-                                                        <div class="d-flex row">
-                                                            <p style="font-size:14pt">Kirim</p>
-                                                            <br>
-                                                            <p style="font-size:10pt">Pembyaran berulang muulai dari <b>28 mei 2023</b>
-                                                            </p>
-                                                        </div>
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                                    aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                                                    <div class="accordion-body">
-                                                        <p style="font-size:10pt">Pembayran selanjut nya pada <b>28 mei 2023</b>
-                                                        <p style="font-size:10pt">Berakhir nya pada <b>28 juni 2023</b>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="headingThree">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                        aria-expanded="false" aria-controls="collapseThree">
-                                                        <div class="d-flex row">
-                                                            <p style="font-size:14pt">Faktur</p>
-                                                            <br>
-                                                            <p style="font-size:10pt">3 Faktur telah berhasil di bayar  </p>
-                                                        </div>
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseThree" class="accordion-collapse collapse"
-                                                    aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                                                    <div class="accordion-body">
-                                                        INV-11 secara otomatis dibuat pada 29 Mei 2023 <br>
-                                                        INV-12 secara otomatis dibuat pada 30 Mei 2023  <br>
-                                                        INV-13 secara otomatis dibuat pada 31 Mei 2023  <br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Faq end -->
+                                     <!-- Faq start -->
+<div class="accordion" id="faqAccordion">
+    <div class="alert alert-primary"
+    style="border-radius: 2px; border:1px solid #e3e3e3 ; background-color:#ffffff" role="alert">
+    <p style="font-size:14pt;color:black">Membuat</p>
+    <br>
+    <p style="font-size:10pt;color:black">Koirul membuat Faktur ini pada
+        <b>24
+            mei 2023</b>   </p>
+            <button style="background-color: #9a99e2;border-radius:2px;width:80px;border:transparent;height:25px;color:#ffffff">Sunting</button>
+</div>
+<div class="alert alert-primary"
+style="border-radius: 2px; border:1px solid #e3e3e3 ; background-color:#ffffff" role="alert">
+<p style="font-size:14pt;color:black">Jadwal</p>
+<br>
+<p style="font-size:10pt;color:black">Ulangi setiap FBU sejak
+    <b>31
+        mei 2023</b>   </p>
+        <button style="background-color: #9a99e2;border-radius:2px;width:80px;border:transparent;height:25px;color:#ffffff">Selesai</button>
+</div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                <div class="d-flex row">
+                    <p style="font-size:14pt">Faktur</p>
+                    <br>
+                    <p style="font-size:10pt">3 faktur sudah dibayar</p>
+                </div>
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse"
+            aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+           
+                <p>dibayar otomatis dengan Faktur: FKR-00001</p>
+                <p>dibayar otomatis dengan Faktur: FKR-00002</p>
+                <p>dibayar otomatis dengan Faktur: FKR-00003</p>
+            </div>
+             <!-- Modal start -->
+            <div class="modal fade" id="exampleModalExtraLarge" tabindex="-1" aria-labelledby="exampleModalExtraLargeTitle" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content" style="margin-top: -9%">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalExtraLargeTitle">Tambah Pembayaran</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="field-wrapper mb-3">
+                                <label for="judul" class="field-label">Tanggal</label>
+                                <input class="form-control" type="text" placeholder="Masukkan Tanggal" style="border-radius:10px">
+                              </div>
+                              <div class="field-wrapper mb-3">
+                                <label for="judul" class="field-label">Jumlah</label>
+                                <input class="form-control" type="text" placeholder="Masukkan Jumlah" style="border-radius:10px">
+                              </div>
+                                <div class="field-wrapper mb-3">
+                                  <label for="judul" class="field-label">Metode Pembayaran <span class="text-danger">*</span></label>
+                                  <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?" style="border-radius:10px">
+                                    <option selected>Cash</option>
+                                    <option>Transfer Bank</option>
+                                  </select>                                                  
+                                </div>
+                                <div class="field-wrapper mb-3">
+                                  <label for="judul" class="field-label">Akun <span class="text-danger">*</span></label>
+                                  <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?" style="border-radius:10px">
+                                    <option>Rudi</option>
+                                    <option selected>Ruli</option>
+                                    <option>Adi</option>
+                                    <option>Daffa</option>
+                                    <option>Gembes</option>
+                                    <option>Reno</option>
+                                    <option>Triski</option>
+                                  </select>                                                  
+                                </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div type="button" class="btn btn-danger" style="background-color:rgb(255, 0, 0); border:none; border-radius:10px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</div>
+                            <button type="button" style="background-color: #55be0e; border:none; border-radius:10px; width:30%; height:25px; color:white">Simpan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal end -->
+        </div>
+    </div>
+</div>
+<!-- Faq end -->
 
                                     </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
-                                    style="margin-top: 2%">
+                                </div>
+
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
                                     <form
                                         action="https://www.kodingwife.com/demos/unipro/v1-x/05-desig4-violet/reports.html">
                                         <div class="rcr-screen">
@@ -263,74 +264,115 @@
                                                             alt="Uni Pro Admin">
                                                     </div>
                                                     <div class="ml-2 col-4">
-                                                    <p style="float: right">cina baik hati</p>
-                                                    <br>
-                                                    <p style="float: right">unknown company</p>
-                                                    <br>
-                                                    <p style="float: right">cireng@gmail.com</p>
-                                                </div>
+                                                        <p style="float: right" class="me-3" >cina baik hati</p>
+                                                        <br>
+                                                        <p style="float: right" class="me-3">unknown company</p>
+                                                        <br>
+                                                        <p style="float: right" class="me-3">cireng@gmail.com</p>
+                                                    </div>
                                                 </div>
                                                 <div class="field-wrapper mb-3">
                                                     <div style="border-bottom: solid grey 1px; margin-top: 4%">
-                                                </div>
-                                                <div class="d-flex" style="margin-top: 2%">
-                                                <div class="col-6 ms-3">
-                                                    <p>Tagihan Kepada</p>
-                                                    <p>Koirul</p>
-                                                    <p>089812371829</p>
-                                                    <p>cireng@gmail.com</p>
-                                                </div>
-                                                <div class="col-6">
-                                                    <p>Nomor faktur: FBU-0002</p>
-                                                    <p>Jumlah Pesanan: 1</p>
-                                                    <p>Tanggal faktur: 29 mei 2023</p>
-                                                    <p>Tanggal Jatuh Tempo: 29 mei 2023</p>
-                                                </div>
-                                            </div>
-                                            <div class="table-responsive">
-                                                <table class="table products-table col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Item</th>
-                                                            <th>Kuantitas</th>
-                                                            <th>Harga</th>
-                                                            <th>Jumlah</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <p>api maps</p>
-                                                                <br>
-                                                                <p style="font-size: 8pt; margin-top: -10%">pembelian api untuk map</p>
-                                                            </td>
-                                                            <td><span class="badge" style="border-radius: 2px">1</span></td>
-                                                            <td>385.000,00</td>
-                                                            <td>385.000,00</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="float: right; margin-bottom: -5%">
-                                                    <!-- Card start -->
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <li class="list-group-item">Subtotal: 9000000 </li>
-                                                                <li class="list-group-item">Ppn(20%): 9000000 </li>
-                                                                <li class="list-group-item">PPH(12%): 9000000 </li>
-                                                                <li class="list-group-item">Total: 9000000 </li>
-                                                            </ul>
+                                                    </div>
+                                                    <div class="d-flex" style="margin-top: 2%">
+                                                        <div class="col-6 ms-3">
+                                                            <p style="margin-top:2%">Faktur Kepada</p>
+                                                            <p style="margin-top:2%">Pt Jawa</p>
+                                                            <p style="margin-top:2%">MPWP: 1672671</p>
+                                                            <p style="margin-top:2%">cireng@gmail.com</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p style="margin-top:2%">Nomor Faktur:BRLB-00002 </p>
+                                                            <p style="margin-top:2%">Nomer Antrean: 123</p>
+                                                            <p style="margin-top:2%">Tanggal Faktur: 24 mei 2023</p>
+                                                            <p style="margin-top:2%">Tanggal Jatuh Tempo: 24 mei 2023</p>
                                                         </div>
                                                     </div>
-                                                    <!-- Card end -->
+                                                    <div class="table-responsive mt-3">
+                                                        <table
+                                                            class="table1 products-table col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Item</th>
+                                                                    <th>Kuantitas</th>
+                                                                    <th>Harga</th>
+                                                                    <th>Jumlah</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <p>api maps</p>
+                                                                        <br>
+                                                                        <p style="font-size: 8pt; margin-top: -10%">
+                                                                            pembelian api untuk map</p>
+                                                                    </td>
+                                                                    <td><span class="badge" style="border-radius:2px">1</span></td>
+                                                                    <td>385.000,00</td>
+                                                                    <td>385.000,00</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"
+                                                            style="float: right; margin-bottom: -5%">
+                                                            <!-- Card start -->
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <li class="list-group-item">Subtotal: 9000000 </li>
+                                                                    <li class="list-group-item">Ppn(20%): 9000000 </li>
+                                                                    <li class="list-group-item">PPH(12%): 9000000 </li>
+                                                                    <li class="list-group-item">Total: 9000000 </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Card end -->
+                                                            <div class="modal fade" id="payment" tabindex="-1" aria-labelledby="paymentTitle" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                    <div class="modal-content" style="margin-top: -10%">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title" id="paymentTitle">Pembayaran</h5>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                                <div class="field-wrapper">
+                                                                                    <label for="subjudul" class="field-label">Kategori<span class="text-danger">*</span></label>
+                                                                                    <input type="text" class="form-control datepicker" style="border-radius: 10px">
+                                                                                </div>
+                                                                                <div class="field-wrapper">
+                                                                                    <label for="subjudul" class="field-label">Jumlah<span class="text-danger">*</span></label>
+                                                                                    <input type="number" class="form-control datepicker" style="border-radius: 10px">
+                                                                                </div>
+                                                                                <div class="field-wrapper">
+                                                                                    <label for="subjudul" class="field-label">Metode Pembayaran<span class="text-danger">*</span></label>
+                                                                                    <select class="select-single js-states" title="Select Product Category" data-live-search="true" style="border-radius: 10px">
+                                                                                        <option>Cash</option>
+                                                                                        <option>Transfer</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="field-wrapper">
+                                                                                    <label for="subjudul" class="field-label">Akun<span class="text-danger">*</span></label>
+                                                                                    <select class="select-single js-states" title="Select Product Category" data-live-search="true" style="border-radius: 20px">
+                                                                                        <option>Adi</option>
+                                                                                        <option>Rudi</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="text-white" style="background-color:rgb(255, 0, 0); border:none; border-radius:2px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</button>
+                                                                            <button type="button" class="text-white" style="background-color: #55be0e; border:none; border-radius:2px; width:30%; height:25px; color:white">Simpan</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            </div>
-                                        </div>
                                     </form>
-                                    </div>
                                 </div>
-
                             </div>
+
+                        </div>
                     </div>
 
                     <!-- Row end -->

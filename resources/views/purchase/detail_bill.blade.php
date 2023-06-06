@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.css') }}">
     <style>
         .tmbl{
-            
+
   background: none;
   border: none;
   color: black
@@ -105,7 +105,7 @@
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
         <!-- Sidebar wrapper end -->
-
+        @include('layouts.header')
         <!-- *************
     ************ Main container start *************
    ************* -->
@@ -127,6 +127,213 @@
                     </div>
                 </div>
                 <!-- Row end -->
+                <div class="row">
+                    <div class="card">
+                        <div class="card-header ">
+                        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
+                            <div class="card-title">
+                                <h3>Tagihan: TGH-00002</h3>
+
+                            </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
+                                        <div class="graph-day-selection" role="group" style="margin-left: -30px;margin-right: 10px;">
+                                                <div class="badge-finish" style="text-align: center;">Terima</div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                        </a>
+
+                                        <ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
+                                            <li><a class="dropdown-item-bt" href="#">Duplikat</a></li>
+                                            <li><a class="dropdown-item" href="#">Cetak</a></li>
+                                            <li><a class="dropdown-item-bt" href="#">Unduh PDF</a></li>
+                                            <li><a class="dropdown-item" href="#">Hapus</a></li>
+
+                                        </ul>
+                                    </div>
+
+                        </div>
+                        <div class="d-flex row">
+
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="card-body">
+                                    <div class="alert alert-primary mb-5"
+                                        style="border-radius: 2px; background-color:#9a99e2" role="alert">
+                                        faktur ini dihasilkan otomatis dari <a href="{{url('detail_rcr_bill')}}">TBU-00002</a>
+                                    </div>
+                                    <!-- Faq start -->
+                                    <div class="accordion" id="faqAccordion">
+                                        <div class="alert alert-primary"
+                                        style="border-radius: 2px; border:1px solid #e3e3e3 ; background-color:#ffffff" role="alert">
+                                        <p style="font-size:14pt;color:black">Membuat</p>
+                                        <br>
+                                        <p style="font-size:10pt;color:black">Trisqi membuat Tagihan ini pada
+                                            <b>24
+                                                mei 2023</b>   </p>
+                                                <button style="background-color: #9a99e2;border-radius:2px;width:80px;border:transparent;height:25px;color:#ffffff">Sunting</button>
+                                    </div>
+                                    <div class="alert alert-primary"
+                                        style="border-radius: 2px; border:1px solid #e3e3e3 ; background-color:#ffffff" role="alert">
+                                        <p style="font-size:14pt;color:rgb(0, 0, 0)">Bayar</p>
+                                        <br>
+                                        <p style="font-size:10pt;color:black">Terakhir dikirm pada <b>28 mei 2023</b>  </p>
+                                        <button style="background-color: #9a99e2;border-radius:2px;width:80px;border:transparent;height:25px;color:#ffffff" data-bs-toggle="modal" data-bs-target="#payment">Bayar</button>
+                                    </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    <div class="d-flex row">
+                                                        <p style="font-size:14pt">Melakukan pembayaran</p><br>
+                                                        <span>Sisa yang belum di bayar: 400.000,000</span>
+                                                        <br>
+                                                        <p style="font-size:10pt">Pembayaran dibuat: </p>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body">
+                                                    <p>24 Mei 2023 - Pembayaran untuk Rp200.000,00 telah dilakukan menggunakan jayaabadi Kirim Resi- <button class="tmbl" data-bs-toggle="modal" data-bs-target="#payment">Sunting Pembayaran</a></button>   - <a href=""> Hapus Pembayaran</a> </p>
+                                                    <p>25 Mei 2023 - Pembayaran untuk Rp200.000,00 telah dilakukan menggunakan jayaabadi Kirim Resi- <button class="tmbl" data-bs-toggle="modal" data-bs-target="#payment">Sunting Pembayaran</a></button>   - <a href="">Hapus Pembayaran</a></p>
+                                                    <p>26 Mei 2023 - Pembayaran untuk Rp200.000,00 telah dilakukan menggunakan jayaabadi Kirim Resi- <button class="tmbl" data-bs-toggle="modal" data-bs-target="#payment">Sunting Pembayaran</a></button>  - <a href="">Hapus Pembayaran</a></p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Faq end -->
+
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
+                                <form
+                                    action="https://www.kodingwife.com/demos/unipro/v1-x/05-desig4-violet/reports.html">
+                                    <div class="rcr-screen">
+                                        <div class="login-body pb-4 ">
+                                            <div class="d-flex row col-12 ms-2">
+                                                <p>Biaya nikah</p>
+                                                <div class="col-8">
+                                                    <img style="width: 25%"
+                                                        src="{{ asset('Gmbslagi/img/Carausel/person.jpg') }}"
+                                                        alt="Uni Pro Admin">
+                                                </div>
+                                                <div class="ml-2 col-4">
+                                                    <p style="float: right" class="me-3" >cina baik hati</p>
+                                                    <br>
+                                                    <p style="float: right" class="me-3">unknown company</p>
+                                                    <br>
+                                                    <p style="float: right" class="me-3">cireng@gmail.com</p>
+                                                </div>
+                                            </div>
+                                            <div class="field-wrapper mb-3">
+                                                <div style="border-bottom: solid grey 1px; margin-top: 4%">
+                                                </div>
+                                                <div class="d-flex" style="margin-top: 2%">
+                                                    <div class="col-6 ms-3">
+                                                        <p style="margin-top:2%">Tagihan Kepada</p>
+                                                        <p style="margin-top:2%">Pt Jawa</p>
+                                                        <p style="margin-top:2%">MPWP: 1672671</p>
+                                                        <p style="margin-top:2%">cireng@gmail.com</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p style="margin-top:2%">Nomor Tagihan:BRLB-00002 </p>
+                                                        <p style="margin-top:2%">Nomer Antrean: 123</p>
+                                                        <p style="margin-top:2%">Tanggal Tagihan: 24 mei 2023</p>
+                                                        <p style="margin-top:2%">Tanggal Jatuh Tempo: 24 mei 2023</p>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive mt-3">
+                                                    <table
+                                                        class="table1 products-table col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Item</th>
+                                                                <th>Kuantitas</th>
+                                                                <th>Harga</th>
+                                                                <th>Jumlah</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <p>api maps</p>
+                                                                    <br>
+                                                                    <p style="font-size: 8pt; margin-top: -10%">
+                                                                        pembelian api untuk map</p>
+                                                                </td>
+                                                                <td><span class="badge" style="border-radius:2px">1</span></td>
+                                                                <td>385.000,00</td>
+                                                                <td>385.000,00</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"
+                                                        style="float: right; margin-bottom: -5%">
+                                                        <!-- Card start -->
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <li class="list-group-item">Subtotal: 9000000 </li>
+                                                                <li class="list-group-item">Ppn(20%): 9000000 </li>
+                                                                <li class="list-group-item">PPH(12%): 9000000 </li>
+                                                                <li class="list-group-item">Total: 9000000 </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Card end -->
+                                                        <div class="modal fade" id="payment" tabindex="-1" aria-labelledby="paymentTitle" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                <div class="modal-content" style="margin-top: -10%">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="paymentTitle">Pembayaran</h5>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                            <div class="field-wrapper">
+                                                                                <label for="subjudul" class="field-label">Kategori<span class="text-danger">*</span></label>
+                                                                                <input type="text" class="form-control datepicker" style="border-radius: 10px">
+                                                                            </div>
+                                                                            <div class="field-wrapper">
+                                                                                <label for="subjudul" class="field-label">Jumlah<span class="text-danger">*</span></label>
+                                                                                <input type="number" class="form-control datepicker" style="border-radius: 10px">
+                                                                            </div>
+                                                                            <div class="field-wrapper">
+                                                                                <label for="subjudul" class="field-label">Metode Pembayaran<span class="text-danger">*</span></label>
+                                                                                <select class="select-single js-states" title="Select Product Category" data-live-search="true" style="border-radius: 10px">
+                                                                                    <option>Cash</option>
+                                                                                    <option>Transfer</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div class="field-wrapper">
+                                                                                <label for="subjudul" class="field-label">Akun<span class="text-danger">*</span></label>
+                                                                                <select class="select-single js-states" title="Select Product Category" data-live-search="true" style="border-radius: 20px">
+                                                                                    <option>Adi</option>
+                                                                                    <option>Rudi</option>
+                                                                                </select>
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="text-white" style="background-color:rgb(255, 0, 0); border:none; border-radius:2px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</button>
+                                                                        <button type="button" class="text-white" style="background-color: #55be0e; border:none; border-radius:2px; width:30%; height:25px; color:white">Simpan</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
             <!-- Page header ends -->
@@ -138,195 +345,6 @@
                 <div class="content-wrapper">
 
                     <!-- Row start -->
-                    <div class="row">
-                        <div class="card">
-                            <div class="card-header col-12">
-                                <div class="card-title ">
-                                    <h3>Tagihan: TGH-00002</h3>
-                                    
-
-                                </div>
-                                <div class="badge-finish" style="text-align: center" >Terima</div>
-
-                            </div>
-                            <div class="d-flex row">
-
-                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                    <div class="card-body">
-                                        <div class="alert alert-primary mb-5"
-                                            style="border-radius: 2px; background-color:#9a99e2" role="alert">
-                                            faktur ini dihasilkan otomatis dari <a href="{{url('detail_rcr_bill')}}">TBU-00002</a> 
-                                        </div>
-                                        <!-- Faq start -->
-                                        <div class="accordion" id="faqAccordion">
-                                            <div class="alert alert-primary"
-                                            style="border-radius: 2px; border:1px solid #e3e3e3 ; background-color:#ffffff" role="alert">
-                                            <p style="font-size:14pt;color:black">Membuat</p>
-                                            <br>
-                                            <p style="font-size:10pt;color:black">Trisqi membuat Tagihan ini pada
-                                                <b>24
-                                                    mei 2023</b>   </p>
-                                                    <button style="background-color: #9a99e2;border-radius:2px;width:80px;border:transparent;height:25px;color:#ffffff">Sunting</button>
-                                        </div>
-                                        <div class="alert alert-primary"
-                                            style="border-radius: 2px; border:1px solid #e3e3e3 ; background-color:#ffffff" role="alert">
-                                            <p style="font-size:14pt;color:rgb(0, 0, 0)">Bayar</p>
-                                            <br>
-                                            <p style="font-size:10pt;color:black">Terakhir dikirm pada <b>28 mei 2023</b>  </p>
-                                            <button style="background-color: #9a99e2;border-radius:2px;width:80px;border:transparent;height:25px;color:#ffffff" data-bs-toggle="modal" data-bs-target="#payment">Bayar</button>
-                                        </div>
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="headingThree">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                        aria-expanded="false" aria-controls="collapseThree">
-                                                        <div class="d-flex row">
-                                                            <p style="font-size:14pt">Melakukan pembayaran</p><br>
-                                                            <span>Sisa yang belum di bayar: 400.000,000</span>
-                                                            <br>
-                                                            <p style="font-size:10pt">Pembayaran dibuat: </p>
-                                                        </div>
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseThree" class="accordion-collapse collapse"
-                                                    aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                                                    <div class="accordion-body">
-                                                        <p>24 Mei 2023 - Pembayaran untuk Rp200.000,00 telah dilakukan menggunakan jayaabadi Kirim Resi- <button class="tmbl" data-bs-toggle="modal" data-bs-target="#payment">Sunting Pembayaran</a></button>   - <a href=""> Hapus Pembayaran</a> </p>
-                                                        <p>25 Mei 2023 - Pembayaran untuk Rp200.000,00 telah dilakukan menggunakan jayaabadi Kirim Resi- <button class="tmbl" data-bs-toggle="modal" data-bs-target="#payment">Sunting Pembayaran</a></button>   - <a href="">Hapus Pembayaran</a></p>
-                                                        <p>26 Mei 2023 - Pembayaran untuk Rp200.000,00 telah dilakukan menggunakan jayaabadi Kirim Resi- <button class="tmbl" data-bs-toggle="modal" data-bs-target="#payment">Sunting Pembayaran</a></button>  - <a href="">Hapus Pembayaran</a></p>
-                                                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Faq end -->
-
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
-                                    <form
-                                        action="https://www.kodingwife.com/demos/unipro/v1-x/05-desig4-violet/reports.html">
-                                        <div class="rcr-screen">
-                                            <div class="login-body pb-4 ">
-                                                <div class="d-flex row col-12 ms-2">
-                                                    <p>Biaya nikah</p>
-                                                    <div class="col-8">
-                                                        <img style="width: 25%"
-                                                            src="{{ asset('Gmbslagi/img/Carausel/person.jpg') }}"
-                                                            alt="Uni Pro Admin">
-                                                    </div>
-                                                    <div class="ml-2 col-4">
-                                                        <p style="float: right" class="me-3" >cina baik hati</p>
-                                                        <br>
-                                                        <p style="float: right" class="me-3">unknown company</p>
-                                                        <br>
-                                                        <p style="float: right" class="me-3">cireng@gmail.com</p>
-                                                    </div>
-                                                </div>
-                                                <div class="field-wrapper mb-3">
-                                                    <div style="border-bottom: solid grey 1px; margin-top: 4%">
-                                                    </div>
-                                                    <div class="d-flex" style="margin-top: 2%">
-                                                        <div class="col-6 ms-3">
-                                                            <p style="margin-top:2%">Tagihan Kepada</p>
-                                                            <p style="margin-top:2%">Pt Jawa</p>
-                                                            <p style="margin-top:2%">MPWP: 1672671</p>
-                                                            <p style="margin-top:2%">cireng@gmail.com</p>
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <p style="margin-top:2%">Nomor Tagihan:BRLB-00002 </p>
-                                                            <p style="margin-top:2%">Nomer Antrean: 123</p>
-                                                            <p style="margin-top:2%">Tanggal Tagihan: 24 mei 2023</p>
-                                                            <p style="margin-top:2%">Tanggal Jatuh Tempo: 24 mei 2023</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="table-responsive mt-3">
-                                                        <table
-                                                            class="table1 products-table col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Item</th>
-                                                                    <th>Kuantitas</th>
-                                                                    <th>Harga</th>
-                                                                    <th>Jumlah</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <p>api maps</p>
-                                                                        <br>
-                                                                        <p style="font-size: 8pt; margin-top: -10%">
-                                                                            pembelian api untuk map</p>
-                                                                    </td>
-                                                                    <td><span class="badge" style="border-radius:2px">1</span></td>
-                                                                    <td>385.000,00</td>
-                                                                    <td>385.000,00</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"
-                                                            style="float: right; margin-bottom: -5%">
-                                                            <!-- Card start -->
-                                                            <div class="card">
-                                                                <div class="card-body">
-                                                                    <li class="list-group-item">Subtotal: 9000000 </li>
-                                                                    <li class="list-group-item">Ppn(20%): 9000000 </li>
-                                                                    <li class="list-group-item">PPH(12%): 9000000 </li>
-                                                                    <li class="list-group-item">Total: 9000000 </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <!-- Card end -->
-                                                            <div class="modal fade" id="payment" tabindex="-1" aria-labelledby="paymentTitle" aria-hidden="true">
-                                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                                                    <div class="modal-content" style="margin-top: -10%">
-                                                                        <div class="modal-header">
-                                                                            <h5 class="modal-title" id="paymentTitle">Pembayaran</h5>
-                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                        </div>
-                                                                        <div class="modal-body">
-                                                                                <div class="field-wrapper">
-                                                                                    <label for="subjudul" class="field-label">Kategori<span class="text-danger">*</span></label>
-                                                                                    <input type="text" class="form-control datepicker" style="border-radius: 10px">
-                                                                                </div>
-                                                                                <div class="field-wrapper">
-                                                                                    <label for="subjudul" class="field-label">Jumlah<span class="text-danger">*</span></label>
-                                                                                    <input type="number" class="form-control datepicker" style="border-radius: 10px">
-                                                                                </div>
-                                                                                <div class="field-wrapper">
-                                                                                    <label for="subjudul" class="field-label">Metode Pembayaran<span class="text-danger">*</span></label>
-                                                                                    <select class="select-single js-states" title="Select Product Category" data-live-search="true" style="border-radius: 10px">
-                                                                                        <option>Cash</option>
-                                                                                        <option>Transfer</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                                <div class="field-wrapper">
-                                                                                    <label for="subjudul" class="field-label">Akun<span class="text-danger">*</span></label>
-                                                                                    <select class="select-single js-states" title="Select Product Category" data-live-search="true" style="border-radius: 20px">
-                                                                                        <option>Adi</option>
-                                                                                        <option>Rudi</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                        </div>
-                                                                        <div class="modal-footer">
-                                                                            <button type="button" class="text-white" style="background-color:rgb(255, 0, 0); border:none; border-radius:2px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</button>
-                                                                            <button type="button" class="text-white" style="background-color: #55be0e; border:none; border-radius:2px; width:30%; height:25px; color:white">Simpan</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </form>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
 
                     <!-- Row end -->
 

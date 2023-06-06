@@ -130,7 +130,7 @@ chart3.render();
     }
   };
 
-  var chart = new ApexCharts(document.querySelector("#chart1"), options);
+  var chart = new ApexCharts(document.querySelector("#chart2"), options);
 
   chart.render();
 
