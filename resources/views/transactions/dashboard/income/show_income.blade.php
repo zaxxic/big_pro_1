@@ -46,6 +46,14 @@
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4-custom.css")}}" />
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
     <style>
+        .border-income {
+            background: #5957b1;
+        }
+
+        .text {
+            color: #ffffff;
+        }
+
         .dropdown-item {
             display: block;
             width: 100%;
@@ -131,7 +139,7 @@
             width: 100%;
             height: 8px;
             border: 0px;
-            border-top: 2px dashed #9a9c9e;
+            border-top: 1px solid #9a9c9e;
         }
 
         .searchcontainer {
@@ -255,170 +263,158 @@
                                     <div class="card">
 
 
-                                        <div class="card-body" style="float: right">
+
+                                        <div class="" style="float: right">
 
                                             <!-- Row start -->
                                             <div class="row gutters">
-                                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
+                                                <div class="border-income">
+                                                    <div class="d-flex">
+                                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12 d-flex" style="margin-top: 4%;">
 
-                                                    <img src="{{ asset('Gmbslagi/img/unknown.jpg') }}" style="border-radius: 50%;" width="70" height="70">
+                                                            <div style="border-radius: 100%; overflow: hidden; width: 60px; height: 60px;">
 
-                                                </div>
-                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-1 col-12" style="margin-top: 1%;">
+                                                                <img src="{{ asset('Gmbslagi/img/better.jpg') }}" style="width: 60px; height: 60px; margin-bottom: 10%;">
 
-                                                    <h6>Unknown</h6> <br>
-                                                    <h6>Unknoncompany@gmail.com</h6>
+                                                            </div>
+                                                            <!-- <h6 style="margin-top: 24%; margin-left: 10%;">Unknown</h6> -->
 
-
-                                                </div>
-                                                <hr style="margin-top: 2%;">
-
-                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 5%;">
-                                                    <h6>Kuitansi </h6>
-                                                </div>
-
-                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                    <h6>Nomor :</h6>
-                                                </div>
-
-                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+                                                        </div>
+                                                        <!-- <hr style="margin-top: 5%; width: 25%;"> -->
+                                                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-1 col-12" style="margin-top: 6%;">
 
 
-                                                    <span>TRA-0089</span>
-                                                    <div class="empty-box">
+                                                            <h6 class="text">Unknown</h6>
+                                                            <span class="text">Unknowncompany@gmail.com</span>
+
+                                                        </div>
+                                                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-1 col-12" style="margin-top: 1%;">
+
+                                                            <div style="float: right;">
+                                                                <h6 class="text" style="float: right;">Nomor</h6> <br>
+                                                                <span class="text" style="float: right;">TRA-0089</span>
+                                                            </div>
+
+                                                            <div style="float: right; clear: right; margin-top: 10%;">
+                                                                <h6 class="text" style="float: right;">Pembayaran</h6> <br>
+                                                                <span class="text" style="float: right;">Transfer Bank</span>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <hr class="text" style="margin-top: 2%; width: 75%;">
+                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-12 d-flex">
+
+                                                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-1 col-12" style="margin-top: 1%;">
+
+                                                            <h6 class="text">Akun</h6>
+                                                            <span class="text">jayaabadi</span>
+
+                                                        </div>
+                                                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-1 col-12" style="margin-top: 1%;">
+
+                                                            <h6 class="text">Tanggal</h6>
+                                                            <span class="text">13 Mei 2023</span>
+
+                                                        </div>
+                                                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-1 col-12" style="margin-top: 1%;">
+
+                                                            <h6 class="text">Kategori</h6>
+                                                            <span class="text">Pembelian Web</span>
+
+                                                        </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                    <h6>Tanggal :</h6>
+                                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12" style="margin-top: 7%;">
+                                                    <h6>Deskripsi</h6>
                                                 </div>
 
-                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
-
-                                                    <span>19 Mei 2023</span>
-                                                    <div class="empty-box">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                    <h6>Akun :</h6>
-                                                </div>
-
-                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
-
-                                                    <span>Haha</span>
-                                                    <div class="empty-box">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                    <h6>Kategori :</h6>
-                                                </div>
-
-                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
-
-                                                    <span>Penjualan Website</span>
-                                                    <div class="empty-box">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                    <h6>Pembayaran</h6>
-                                                </div>
-
-                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
-
-                                                    <span>Transfer Bank</span>
-                                                    <div class="empty-box">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                    <h6>Keterangan</h6>
-                                                </div>
-
-                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+                                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12" style="margin-top: 7%;">
 
                                                     <span>Penjualan website toko online yang menyediakan semua barang, kirim barang lewat jnt ataupun kantor pos</span>
-                                                    <div class="empty-box">
+                                                    <div class="">
                                                     </div>
                                                 </div>
 
                                                 <hr style="margin-top: 2%;">
 
-                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 1%;">
-                                                    <h6>Dibayar Oleh </h6>
+                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12" style="margin-top: 1%;">
+                                                    <h6>Dibayar Oleh </h6> <br>
+                                                    <span>Tagihan Kepada</span>
                                                 </div>
 
-                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 3%;">
-                                                    <h6>Tagihan Kepada </h6>
+                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12" style="margin-top: 2%;">
+                                                    <button class="btn btn-primary" style="float: right;">Jumlah : &emsp;&emsp;Rp700.000.000</button>
                                                 </div>
 
-                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
+                                                <hr style="margin-top: 2%;">
+
+                                              
+                                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12" style="margin-top: 3%;">
                                                     <h6>Nama</h6>
                                                 </div>
 
-                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+                                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12" style="margin-top: 3%;">
 
                                                     <span>jayaabadi</span>
                                                     <div class="empty-box">
                                                     </div>
                                                 </div>
 
-                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
+                                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12" style="margin-top: 3%;">
                                                     <h6>Alamat</h6>
                                                 </div>
 
-                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+                                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12" style="margin-top: 3%;">
 
                                                     <span>Jl Lesti Utara, Ngaglik, Kota Batu</span>
                                                     <div class="empty-box">
                                                     </div>
                                                 </div>
 
-                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
+                                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12" style="margin-top: 3%;">
                                                     <h6>NPWP</h6>
                                                 </div>
 
-                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+                                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12" style="margin-top: 3%;">
 
                                                     <span>08.178.554.2-123.321</span>
                                                     <div class="empty-box">
                                                     </div>
                                                 </div>
 
-                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
+                                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12" style="margin-top: 3%;">
                                                     <h6>Telepone</h6>
                                                 </div>
 
-                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+                                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12" style="margin-top: 3%;">
 
                                                     <span>085607338154</span>
                                                     <div class="empty-box">
                                                     </div>
                                                 </div>
 
-                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
+                                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12" style="margin-top: 3%;">
                                                     <h6>Email</h6>
                                                 </div>
 
-                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+                                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12" style="margin-top: 3%;">
 
                                                     <span>jayaabadi@gmail.com</span>
                                                     <div class="empty-box">
                                                     </div>
                                                 </div>
 
-                                                <hr style="margin-top: 2%;">
+
 
 
 
                                                 <!-- Field wrapper end -->
 
                                             </div>
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                <button class="btn btn-primary" style="float: right;">Jumlah : &emsp;&emsp;Rp700.000.000</button>
-                                            </div>
+
                                         </div>
                                         <!-- Row end -->
 

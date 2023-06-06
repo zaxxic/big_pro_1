@@ -261,6 +261,11 @@
 
 											</div>
 											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+												<div class="d-flex justify-content-end mt-4">
+													<a href="#" class="mt-3" style="margin-right: 1%">Batal</a>
+													<button class="btn btn-primary" type="submit" style="border-radius: 2px">Simpan</button>
+												</div>
+											</div>
                                                 <div class="d-flex justify-content-end mt-4">
                                                     <button class="btn btn-outline-primary1" type="submit" style="border-radius: 20px; margin-right: 1%" href="#">Batal</button>
                                                     <button class="btn btn-primary" type="submit" style="border-radius: 20px">Simpan</button>

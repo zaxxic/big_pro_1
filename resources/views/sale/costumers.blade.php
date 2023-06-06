@@ -78,7 +78,7 @@
             background-color: #f9f9f9;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             padding: 10px;
-            border-radius: 4px;
+            border-radius: 2px;
             right: 0;
             /* Mengarahkan dropdown ke arah kiri */
         }
@@ -137,7 +137,7 @@
             background-color: #5957b1;
             color: #fff;
             padding: 3px;
-            border-radius: 5px;
+            border-radius: 2px;
         }
 
         .hover-trigge2r {
@@ -154,7 +154,7 @@
             background-color: #5957b1;
             color: #fff;
             padding: 3px;
-            border-radius: 5px;
+            border-radius: 2px;
         }
 
 
@@ -168,7 +168,7 @@
             background-color: #5957b1;
             color: #fff;
             padding: 3px;
-            border-radius: 5px;
+            border-radius: 2px;
         }
 
         .hover-trigge3r {
@@ -193,6 +193,7 @@
 
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
+        @include('layouts.header')
         <!-- Sidebar wrapper end -->
 
         <!-- *************
@@ -200,44 +201,7 @@
 			************* -->
         <div class="main-container">
 
-            <!-- Page header starts -->
-            <div class="page-header">
-
-                <!-- Row start -->
-                <div class="row gutters">
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-9">
-
-                        <!-- Search container start -->
-                        <div class="search-container">
-
-                            <!-- Toggle sidebar start -->
-                            <div class="toggle-sidebar" id="toggle-sidebar">
-                                <i class="icon-menu"></i>
-                            </div>
-                            <!-- Toggle sidebar end -->
-
-                            <!-- Mega Menu Start -->
-                            <div class="cd-dropdown-wrapper">
-
-
-
-                            </div>
-                            <!-- Mega Menu End -->
-
-                            <!-- Search input group start -->
-
-                            <!-- Search input group end -->
-
-                        </div>
-                        <!-- Search container end -->
-
-                    </div>
-
-                </div>
-                <!-- Row end -->
-
-            </div>
-            <!-- Page header ends -->
+           
 
             <!-- Content wrapper scroll start -->
             <div class="content-wrapper-scroll">
@@ -246,12 +210,13 @@
                 <div class="content-wrapper">
 
                     <!-- Row start -->
+                    <div class="card-body">
                     <div class="row gutters">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                             <!-- Card start -->
-                            <div class="card">
-                                <div class="card-header">
+                            <div class="">
+                                <div class="d-flex">
                                     <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
                                         <div class="card-title">
                                             <h3>Pelanggan<button type="button" style="border: none; background:transparent;">☆</button></h3>
@@ -259,12 +224,12 @@
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
                                         <div class="graph-day-selection" role="group" style="margin-left: 68%">
-                                            <a href="{{url('add_supplier')}}">
-                                                <button type="button" class="btn active" style="background: transparent">Tambah pelanggan</button>
+                                            <a href="{{url('add_costumers')}}">
+                                                <button type="button" class="btn active" style="background: transparent">Tambah</button>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="dropdown icon-dots-three-vertical">
+                                    <div class="dropdown icon-dots-three-vertical mt-2">
                                         <span></span>
                                         <div class="dropdown-content">
                                             <a href="#">
@@ -278,7 +243,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-body">
+                                <div class="">
                                     <!-- Row start -->
                                     <div class="row gutters" style="margin-left: 10%; margin-bottom: -5%">
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
@@ -511,6 +476,7 @@
                             <!-- Card end -->
 
                         </div>
+                    </div>
                     </div>
                     <!-- Row end -->
 

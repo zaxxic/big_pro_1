@@ -59,7 +59,7 @@
 			white-space: nowrap;
 			background-color: #f9f9f9;
 			border: 0;
-			/* border-radius: 5px; */
+			/* border-radius: 3px; */
 			right: 0;
 		}
 
@@ -68,7 +68,7 @@
 			display: inline-block;
 
 			background-color: #DFDFDF;
-			border-radius: 5px;
+			border-radius: 3px;
 		}
 
 		.dropdown-content {
@@ -99,14 +99,14 @@
 			color: #000000;
 			background-color: #E8E8E8;
 			border-color: #E8E8E8;
-			border-radius: 5px;
+			border-radius: 3px;
 		}
 
 		.btn-ekspor-primary:hover {
 			color: #ffffff;
 			background-color: #5957b1;
 			border-color: #5957b1;
-			border-radius: 5px;
+			border-radius: 3px;
 		}
 
 		.btn-check:focus+.btn-ekspor-primary,
@@ -268,7 +268,20 @@
 											</a>
 										</div>
 										</div>
-										
+										<div class=" icon-dots-three-vertical">
+											<span></span>
+											<div class="dropdown-content">
+												<a href="#">
+												<button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-download" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
+													Impor
+												</button>
+												</a>
+												<a href="#" class="icon-folder" style="color: #333">
+												<button type="button" style="border: none; background-color: white; color:#333; background:transparent"> Ekspor</button>
+												</a>
+											</div>
+										</div>
+
 
 									</div>
 									<div class="">

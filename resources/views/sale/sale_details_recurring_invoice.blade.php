@@ -172,7 +172,7 @@
 
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" style="margin-right: -2%">
                                     <div class="card-body">
-                                        <div class="alert alert-primary" style="border-radius: 10px; color:#4e58eb; background-color:#c5d2fc" role="alert">
+                                        <div class="alert alert-primary" style="border-radius: 2px; color:#4e58eb; background-color:#c5d2fc" role="alert">
                                             Ini adalah faktur berulang dan faktur selanjutnya akan dibuat otomatis pada tanggal 03 Jun 2023
 
 

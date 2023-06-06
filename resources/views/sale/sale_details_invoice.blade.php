@@ -102,13 +102,14 @@
                             <div class="card">
                                 <div class="card-header">
                                     <div class="card-title">
-                                        <h3>Biaya nikah: FKR-9</h3>
+                                        <h3>Details<button type="button"
+                                                style="border: none; background:none;">☆</button></h3>
                                     </div>
                                     <div class="badge-sent">Terkirim</div>
                                 </div>
                                 <div class="card-body">
                                     <div class="alert alert-primary" style="border-radius: 10px; color:#4e58eb; background-color:#c5d2fc" role="alert">
-                                        Faktur ini dihasilkan otomatis dari a <a href="{{ url ('details_recurring')}}" style="color:#4e58eb;">FBU-00002</a>
+                                        Faktur ini dihasilkan otomatis dari RCI-00001
                                     </div>
                                     <!-- Faq start -->
                                     <div class="accordion" id="faqAccordion">
@@ -196,17 +197,8 @@
                                                         </div>
                                                         <div class="modal-body">
                                                             <div class="field-wrapper mb-2">
-                                                                <label for="nomor-faktur" class="field-label">Kepada<span class="text-danger">*</span></label>
-                                                                <input id="nomor-faktur" class="form-control" type="text" placeholder="Masukkan Nomor Faktur">
-                                                              </div>
-                                                            <div class="field-wrapper mb-2">
-                                                                <label for="nomor-faktur" class="field-label">Subjek<span class="text-danger">*</span></label>
-                                                                <input id="nomor-faktur" class="form-control" type="text" placeholder="Masukkan Nomor Faktur">
-                                                              </div>
-                                                            <div class="field-wrapper mb-2">
-                                                                <label for="pemasok" class="field-label">Badan<span class="text-danger">*</span></label>
                                                                 <div class="summernote"></div>
-                                                            </div>
+                                                            </div> 
                                                         </div>
                                                         <div class="modal-footer">
                                                             <div type="button" class="btn btn-danger" style="background-color:rgb(255, 0, 0); border:none; border-radius:10px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</div>
@@ -366,9 +358,9 @@
                                         </div>
                                     </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
                             </div>
+                        </div>
                     </div>
                     <!-- Row end -->
 
@@ -450,28 +442,6 @@
         // Alert the copied text
         alert("Copied the text: " + copyText.value);
       }</script>
-      <style>
-
-
-        .rcr-screen {
-            position: relative;
-            background: #ffffff;
-            border: 1px solid #e1e8f3;
-            border-radius: 20px;
-            -webkit-box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
-            box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
-            min-width: 100%;
-            max-width: 100%;
-        }
-          /* Tambahkan gaya CSS yang diperlukan di sini */
-                /* ... */
-        
-                /* Media queries untuk tampilan seluler */
-                @media only screen and (max-width: 600px) {
-                    /* Tambahkan gaya CSS untuk tampilan seluler di sini */
-                    /* ... */
-                }
-        </style>
 </body>
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/accordions.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:35 GMT -->
