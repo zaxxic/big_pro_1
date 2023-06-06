@@ -49,7 +49,6 @@
     <link href="path/to/select2.css" rel="stylesheet" /> -->
     <style>
         .text-radio {
-            margin-left: 2%;
             margin-bottom: 1%;
             color: #5957b1;
         }
@@ -131,7 +130,7 @@
     </style>
 </head>
 
-<body>
+<body style="overflow-x: hidden">
 
     <!-- Page wrapper start -->
     <div class="page-wrapper">
@@ -183,7 +182,7 @@
                                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                                     <!-- <div class="field-wrapper"> -->
 
-                                                    <div class="text-radio">Jenis<span class="text-danger">*</span></div>
+                                                    <div class="text-radio" style="">Jenis<span class="text-danger">*</span></div>
                                                     <div class="half-width-container">
 
                                                         <input type="radio" name="option" id="option1" value="Option 1" checked>
@@ -212,7 +211,7 @@
                                                     <!-- Field wrapper start -->
                                                     <div class="field-wrapper">
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control" placeholder="Masukkan Nama">
+                                                            <input type="text" class="form-control" style="z-index: auto" placeholder="Masukan nama">
 
                                                         </div>
                                                         <div class="field-placeholder">Nama<span class="text-danger">*</span></div>
@@ -220,12 +219,13 @@
                                                     <!-- Field wrapper end -->
 
                                                 </div>
+
                                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                                                     <!-- Field wrapper start -->
                                                     <div class="field-wrapper">
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control" placeholder="Masukan Nomor Rekening">
+                                                            <input type="text" class="form-control" style="z-index: auto" placeholder="Masukan Nomor Rekening">
 
                                                         </div>
                                                         <div class="field-placeholder">Nomor Rekening<span class="text-danger">*</span></div>
@@ -315,7 +315,7 @@
                                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                                     <div class="d-flex justify-content-end mt-4">
                                                         <button class="btn btn-outline-primary1" type="submit" style="border-radius: 20px; margin-right: 1%" href="#">Batal</button>
-                                                        <button class="btn btn-primary" type="submit" style="border-radius: 20px">Simpan</button>
+                                                        <button class="btn btn-primary" type="submit" style="border-radius: 2px">Simpan</button>
                                                     </div>
                                                 </div>
                                             </div>

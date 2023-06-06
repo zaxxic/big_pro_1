@@ -894,16 +894,21 @@
                                     <!-- <div class="text-end">
 											<a href="create-invoice.html" class="btn btn-primary">Create Invoice</a>
 										</div> -->
-                                    <div class="col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12 button-container" style="margin-left: 17%;">
-                                        <a href="{{url('add_income')}}"> <button type="button" class="btn btn-secondary">Tambah Pendapatan</button></a>
-                                        <a href="{{url('add_expenditure')}}"> <button type="button" class="btn btn-secondary">Tambah Pengeluaran</button></a>
-
-
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
-                                            <a href="path_ke_file.pdf" download><button type="button" class="btn btn-outline-primary">Ekspor</button></a>
+                                        <div class="col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12 button-container" style="margin-left: 17%; justify-items: center; justify-content: end;">
+                                            <a href="http://127.0.0.1:8000/add_income">
+                                                <button type="button" class="btn btn-secondary" style="margin-right: 10px;">Tambah Pendapatan</button>
+                                            </a>
+                                            <a href="http://127.0.0.1:8000/add_expenditure">
+                                                <button type="button" class="btn btn-secondary" style="margin-right: 10px;">Tambah Pengeluaran</button>
+                                            </a>
+                                        
+                                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
+                                                <a href="path_ke_file.pdf" download="">
+                                                    <button type="button" class="btn btn-outline-primary">Ekspor</button>
+                                                </a>
+                                            </div>
                                         </div>
-
-                                    </div>
+                                        
                                 </div>
                                 <div id="dropdown-menu">
                                     <button class="dropdown-toggle">&#8942;</button>

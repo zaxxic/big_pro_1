@@ -34,6 +34,7 @@
     <!-- *************
 			************ Vendor Css Files *************
 		************ -->
+		<link rel="stylesheet" href="{{ asset("Gmbslagi/vendor/daterange/daterange.css") }}">
 
     <!-- Mega Menu -->
     <link rel="stylesheet" href="{{ asset("Gmbslagi/vendor/megamenu/css/megamenu.css") }}">
@@ -81,15 +82,15 @@
                         <div class="">
                             <div class="card-title">
                                 <div class="d-flex flex-wrap">
-                                    <h1 class="card-title col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" style="font-size: 20px;">Dashboard
+                                    <h1 class="card-title col-xl-8 col-lg-6 col-md-6 col-sm-6 col-12" style="font-size: 20px;">Dashboard
 
                                     </h1>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
 
                                         <!-- Field wrapper start -->
                                         <div class="field-wrapper">
                                             <div class="input-group">
-                                                <input type="text" class="form-control datepicker-range-auto-apply">
+                                                <input type="text" name="datefilter" class="form-control" style="z-index: auto" value="" />
                                                 <span class="input-group-text">
                                                     <i class="icon-calendar1"></i>
                                                 </span>
@@ -212,7 +213,9 @@
         <script src="{{ asset("Gmbslagi/vendor/apex/custom/home/visitorsGraph.js") }}"></script>
         <script src="{{ asset("Gmbslagi/vendor/apex/custom/home/customersGraph.js") }}"></script>
         <script src="{{ asset("Gmbslagi/vendor/apex/custom/home/sparkline.js") }}"></script>
-
+		<!-- Date Range JS -->
+		<script src="{{ asset("Gmbslagi/vendor/daterange/daterange.js") }}"></script>
+		<script src="{{ asset("Gmbslagi/vendor/daterange/custom-daterange.js") }}"></script>
         <!-- Circleful Charts -->
         <script src="{{ asset("Gmbslagi/vendor/circliful/circliful.min.js") }}"></script>
         <script src="{{ asset("Gmbslagi/vendor/circliful/circliful.custom.js") }}"></script>
@@ -226,6 +229,26 @@
         <script src="https://unpkg.com/tippy.js@6.3.1/dist/tippy-bundle.umd.js"></script>
 
         <script src="{{ asset("Gmbslagi/js/chart_index.js") }}"></script>
+        <script type="text/javascript">
+            $(function() {
+            
+              $('input[name="datefilter"]').daterangepicker({
+                  autoUpdateInput: false,
+                  locale: {
+                      cancelLabel: 'Clear'
+                  }
+              });
+            
+              $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+                  $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+              });
+            
+              $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+                  $(this).val('');
+              });
+            
+            });
+            </script>
 </body>
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:01:19 GMT -->
