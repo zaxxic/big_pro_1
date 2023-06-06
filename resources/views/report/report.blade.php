@@ -102,7 +102,7 @@
                             <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
 								<div class="sematkan">
 									<div class="sematkan-icon">
-                                        <i class="icon-pin"></i>
+                                        <i class="icon-pin" style="color: #D9D9D9;"></i>
 									</div>
 									<p>Sematkan laporan anda</p>
 								</div>
@@ -110,7 +110,7 @@
 							<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
 								<div class="sematkan">
 									<div class="sematkan-icon">
-                                        <i class="icon-pin"></i>
+                                        <i class="icon-pin" style="color: red;"></i>
 									</div>
 									<p>Sematkan laporan anda</p>
 								</div>
