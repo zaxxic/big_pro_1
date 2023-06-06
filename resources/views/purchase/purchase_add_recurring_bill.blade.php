@@ -238,176 +238,144 @@
                                     <!-- Row start -->
                                     <div class="row gutters">
                                         <div class="col-12">
-                                            <div class="table-responsive">
-                                                <table class="table table-borderless">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Item</th>
-                                                            <th>Deskripsi</th>
-                                                            <th>Kuantitas</th>
-                                                            <th>Harga</th>
-                                                            <th>Jumlah</th>
-                                                            <th>Pajak</th>
-                                                            <th>Actions</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody id="table-body">
-                                                        <tr>
-                                                            <td>
-                                                                <div class="field-wrapper m-0">
-                                                                    <select name="item[]" style="border-radius:10px"
-                                                                        class="form-control">
-                                                                        <option value="txt">Text</option>
-                                                                        <option value="md">Markdown</option>
-                                                                        <option value="html">HTML</option>
-                                                                        <option value="php">PHP</option>
-                                                                        <option value="python">Python</option>
-                                                                        <option value="java">Java</option>
-                                                                        <option value="js" selected>JavaScript
-                                                                        </option>
-                                                                        <option value="ruby">Ruby</option>
-                                                                        <option value="vhdl">VHDL</option>
-                                                                        <option value="verilog">Verilog</option>
-                                                                        <option value="csharp">C#</option>
-                                                                    </select>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="field-wrapper m-0">
-                                                                    <input type="text" style="border-radius:10px"
-                                                                        name="deskripsi[]" class="form-control">
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="field-wrapper m-0">
-                                                                    <input type="number" style="border-radius:10px"
-                                                                        name="kuantitas[]" class="form-control">
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="field-wrapper m-0">
-                                                                    <input type="number" style="border-radius:10px"
-                                                                        name="harga[]" class="form-control">
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="field-wrapper m-0">
-                                                                    <input type="number" style="border-radius:10px"
-                                                                        name="jumlah[]" class="form-control">
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div id="pajak-wrapper">
-                                                                    <div
-                                                                        class="field-wrapper mb-1 pajak-input-wrapper">
-                                                                        <input type="number"
-                                                                            style="border-radius:10px" name="pajak[]"
-                                                                            class="form-control pajak-input">
-                                                                    </div>
-                                                                    <div class="add-pajak-wrapper mb-2">
-                                                                        <button class="btn btn-light add-pajak">
-                                                                            <i class="icon-plus"></i> Tambah Pajak
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="table-actions">
-                                                                    <button class="btn btn-light delete-row">
-                                                                        <i class="icon-trash-2"></i>
-                                                                    </button>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <tfoot>
-                                                        <tr>
-                                                            <td colspan="5"></td>
-                                                            <td>
-                                                                <p class="m-0">Subtotal</p>
-                                                                <p class="m-0">Diskon</p>
-                                                                <p class="m-0">Total Pajak</p>
-                                                                <h5 class="mt-2">Total</h5>
-                                                            </td>
-                                                            <td>
-                                                                <p id="subtotal" class="m-0">Rp.0.00</p>
-                                                                <p id="diskon" class="m-0">
-                                                                <div class="field-wrapper m-0">
-                                                                    <input type="text" style="border-radius:10px"
-                                                                        name="deskripsi[]" class="form-control">
-                                                                </div>
-                                                                </p>
-                                                                <p id="total-pajak" class="m-0">Rp.0.00</p>
-                                                                <h5 id="total" class="mt-2">Rp.0.00</h5>
-                                                            </td>
-                                                        </tr>
-                                                    </tfoot>
-                                                </table>
-
-                                                <button class="btn btn-primary" id="add-row">Tambah Baris</button>
-                                                <!-- Button trigger modal -->
-                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModal">
-                                                    Tambah Item
-                                                </button>
-
-                                                <!-- Modal start -->
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content" style="margin-top: -20%;">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title" id="exampleModalLabel">Modal
-                                                                    title</h5>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal"
-                                                                    aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <form>
-                                                                    <div class="field-wrapper m-0">
-                                                                        <label for="nama">Nama</label>
-                                                                        <input type="text" name="nama"
-                                                                            style="border-radius:10px"
-                                                                            placeholder="Masukan nama item"
-                                                                            id="nama"class="form-control">
-                                                                    </div>
-                                                                    <div class="field-wrapper m-0">
-                                                                        <label for="nama">Harga Jual</label>
-                                                                        <input type="text" name="Harga"
-                                                                            style="border-radius:10px"
-                                                                            placeholder="Masukan harga item"
-                                                                            id="nama"class="form-control">
-                                                                    </div>
-                                                                    <div class="field-wrapper m-0">
-                                                                        <label for="nama">kategori</label>
-                                                                        <input type="text" name="kategori"
-                                                                            style="border-radius:10px"
-                                                                            placeholder="Masukan nama item"
-                                                                            id="nama"class="form-control">
-                                                                    </div>
-                                                                    <div class="field-wrapper ">
-                                                                        <label for="nama">Pajak</label>
-                                                                        <input type="text" name="Pajak"
-                                                                            style="border-radius:10px"
-                                                                            placeholder="Masukan nama item"
-                                                                            id="nama"class="form-control">
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                            </div>
+                                          <div class="table-responsive">
+                                            <table class="table table-borderless">
+                                              <thead>
+                                                <tr>
+                                                  <th>Item</th>
+                                                  <th>Deskripsi</th>
+                                                  <th>Kuantitas</th>
+                                                  <th>Harga</th>
+                                                  <th>Jumlah</th>
+                                                  <th>Pajak</th>
+                                                  <th>Actions</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody id="table-body">
+                                                <tr>
+                                                  <td>
+                                                        <div class="field-wrapper m-0">
+                                                          <select name="item[]" style="border-radius:2px" class="form-control">
+                                                            <option value="txt">Text</option>
+                                                            <option value="md">Markdown</option>
+                                                            <option value="html">HTML</option>
+                                                            <option value="php">PHP</option>
+                                                            <option value="python">Python</option>
+                                                            <option value="java">Java</option>
+                                                            <option value="js" selected>JavaScript</option>
+                                                            <option value="ruby">Ruby</option>
+                                                            <option value="vhdl">VHDL</option>
+                                                            <option value="verilog">Verilog</option>
+                                                            <option value="csharp">C#</option>
+                                                          </select>
                                                         </div>
+                                                      </td>
+                                                  <td>
+                                                    <div class="field-wrapper m-0">
+                                                      <input type="text" style="border-radius:2px" name="deskripsi[]" class="form-control">
                                                     </div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="field-wrapper m-0">
+                                                      <input type="number" style="border-radius:2px" name="kuantitas[]" class="form-control">
+                                                    </div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="field-wrapper m-0">
+                                                      <input type="number" style="border-radius:2px" name="harga[]" class="form-control">
+                                                    </div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="field-wrapper m-0">
+                                                      <input type="number" style="border-radius:2px" name="jumlah[]" class="form-control">
+                                                    </div>
+                                                  </td>
+                                                  <td>
+                                                    <div id="pajak-wrapper">
+                                                      <div class="field-wrapper m-0 mb-1 pajak-input-wrapper">
+                                                        <input type="number" style="border-radius:2px" name="pajak[]" class="form-control">
+                                                      </div>
+                                                      <div class="add-pajak-wrapper mb-2">
+                                                        <button class="btn btn-light add-pajak" style="margin-top: 1%">
+                                                          <i class="icon-plus"></i> Tambah Pajak
+                                                        </button>
+                                                      </div>
+                                                    </div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-actions">
+                                                      <button class="btn btn-light delete-row">
+                                                        <i class="icon-trash-2"></i>
+                                                      </button>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                              <tfoot>
+                                                <tr>
+                                                  <td colspan="5"></td>
+                                                  <td>
+                                                    <p class="m-0">Subtotal</p>
+                                                    <p class="m-0">Diskon</p>
+                                                    <p class="m-0">Total Pajak</p>
+                                                    <h5 class="mt-2">Total</h5>
+                                                  </td>
+                                                  <td>
+                                                    <p id="subtotal" class="m-0">Rp.0.00</p>
+                                                    <p id="diskon" class="m-0">   <div class="field-wrapper m-0">
+                                                      <input type="text"  style="border-radius:2px" name="deskripsi[]" class="form-control">
+                                                    </div> </p>
+                                                    <p id="total-pajak" class="m-0">Rp.0.00</p>
+                                                    <h5 id="total" class="mt-2">Rp.0.00</h5>
+                                                  </td>
+                                                </tr>
+                                              </tfoot>
+                                            </table>
+                                            
+                                            <button class="btn btn-primary" id="add-row">Tambah Baris</button>                                                  
+                                               <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                              Tambah Item
+                                            </button>
+
+                                            <!-- Modal start -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                              <div class="modal-dialog">
+                                                <div class="modal-content" style="margin-top: -20%;">
+                                              <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
-                                                <!-- Modal end -->
-
+                                                <div class="modal-body">
+                                                  <form>
+                                                    <div class="field-wrapper m-0">
+                                                        <label for="nama">Nama</label>
+                                                      <input type="text" name="nama" style="border-radius:2px" placeholder="Masukan nama item" id="nama"class="form-control">
+                                                    </div>
+                                                    <div class="field-wrapper m-0">
+                                                        <label for="nama">Harga Jual</label>
+                                                      <input type="text" name="Harga"  style="border-radius:2px" placeholder="Masukan harga item" id="nama"class="form-control">
+                                                    </div>
+                                                    <div class="field-wrapper m-0">
+                                                        <label for="nama">kategori</label>
+                                                      <input type="text" name="kategori" style="border-radius:2px" placeholder="Masukan nama item" id="nama"class="form-control">
+                                                    </div>
+                                                    <div class="field-wrapper ">
+                                                        <label for="nama">Pajak</label>
+                                                      <input type="text" name="Pajak" style="border-radius:2px" placeholder="Masukan nama item" id="nama"class="form-control">
+                                                    </div>
+                                                  </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                                </div>
+                                              </div>
                                             </div>
-
+                                            <!-- Modal end -->
+                                            </div>
                                         </div>
-                                    </div>
+                                      </div>
                                     <!-- Row end -->
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
@@ -857,6 +825,38 @@
         var inputs = document.querySelectorAll('input[name="jumlah[]"], input[name="pajak[]"], #diskon-input');
         inputs.forEach(function(input) {
             input.addEventListener('input', calculateTotal);
+        });
+    </script>
+      <script>
+        // Fungsi untuk menghapus pajak yang baru ditambahkan
+        function deletePajak(event) {
+          var pajakInputWrapper = event.target.closest('.pajak-input-wrapper');
+          pajakInputWrapper.remove();
+        }
+  
+        // Event listener untuk tombol hapus pajak
+        document.addEventListener('click', function (event) {
+          if (event.target && event.target.classList.contains('delete-pajak')) {
+            deletePajak(event);
+          }
+        });
+  
+        // Event listener untuk tombol tambah pajak
+        document.addEventListener('click', function (event) {
+        if (event.target && event.target.classList.contains('add-pajak')) {
+            var pajakWrapper = event.target.closest('#pajak-wrapper');
+            var pajakInputWrapper = pajakWrapper.querySelector('.pajak-input-wrapper');
+            
+            var newPajakInputWrapper = pajakInputWrapper.cloneNode(true);
+            var deletePajakButton = document.createElement('button');
+            deletePajakButton.classList.add('btn', 'btn-light', 'delete-pajak');
+            deletePajakButton.innerHTML = '<i class="icon-trash-2"></i> Hapus Pajak';
+            deletePajakButton.style.width = event.target.offsetWidth + 'px'; // Menyesuaikan lebar tombol dengan tombol "Tambah Pajak"
+            deletePajakButton.style.marginTop = '3%'; // Menambahkan margin-top 3%
+            newPajakInputWrapper.appendChild(deletePajakButton);
+            
+            pajakWrapper.appendChild(newPajakInputWrapper);
+        }
         });
     </script>
 </body>

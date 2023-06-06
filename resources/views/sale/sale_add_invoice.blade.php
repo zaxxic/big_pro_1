@@ -333,10 +333,10 @@
                                                         <td>
                                                           <div id="pajak-wrapper">
                                                             <div class="field-wrapper m-0 mb-1 pajak-input-wrapper">
-                                                              <input type="number" style="border-radius:2px" name="pajak[]" class="form-control pajak-input">
+                                                              <input type="number" style="border-radius:2px" name="pajak[]" class="form-control">
                                                             </div>
                                                             <div class="add-pajak-wrapper mb-2">
-                                                              <button class="btn btn-light add-pajak">
+                                                              <button class="btn btn-light add-pajak" style="margin-top: 1%">
                                                                 <i class="icon-plus"></i> Tambah Pajak
                                                               </button>
                                                             </div>
@@ -765,6 +765,37 @@
     input.addEventListener('input', calculateTotal);
   });
 </script>
+  <script>
+      // Fungsi untuk menghapus pajak yang baru ditambahkan
+      function deletePajak(event) {
+        var pajakInputWrapper = event.target.closest('.pajak-input-wrapper');
+        pajakInputWrapper.remove();
+      }
+
+      // Event listener untuk tombol hapus pajak
+      document.addEventListener('click', function (event) {
+        if (event.target && event.target.classList.contains('delete-pajak')) {
+          deletePajak(event);
+        }
+      });
+
+      document.addEventListener('click', function (event) {
+        if (event.target && event.target.classList.contains('add-pajak')) {
+          var pajakWrapper = event.target.closest('#pajak-wrapper');
+          var pajakInputWrapper = pajakWrapper.querySelector('.pajak-input-wrapper');
+          
+          var newPajakInputWrapper = pajakInputWrapper.cloneNode(true);
+          var deletePajakButton = document.createElement('button');
+          deletePajakButton.classList.add('btn', 'btn-light', 'delete-pajak');
+          deletePajakButton.innerHTML = '<i class="icon-trash-2"></i> Hapus Pajak';
+          deletePajakButton.style.width = event.target.offsetWidth + 'px'; // Menyesuaikan lebar tombol dengan tombol "Tambah Pajak"
+          deletePajakButton.style.marginTop = '3%'; // Menambahkan margin-top 3%
+          newPajakInputWrapper.appendChild(deletePajakButton);
+          
+          pajakWrapper.appendChild(newPajakInputWrapper);
+        }
+      });
+  </script>
 	</body>
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/accordions.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:35 GMT -->
