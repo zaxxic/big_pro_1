@@ -46,21 +46,27 @@
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4-custom.css")}}" />
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
     <style>
-        .badge-start {
-            border-radius: 30px;
-            padding: .35rem .5rem;
-            min-width: 60px;
-            background: #D8D7FF;
-            color: #030179;
-            font-size: 12px;
+       .badge-start {
+            margin-top: 2%;
+            height: 30px;
+            width: 100%!important;
+            border-radius: 2px!important;
+            padding: 8px 10px!important;
+            /* min-width: 60px; */
+            background: #D8D7FF!important;
+            color: #030179!important;
+            font-size: 12px!important;
         }
-         .badge-finish {
-            border-radius: 30px;
-            padding: .35rem .5rem;
-            min-width: 60px;
-            background: #D4FFCD;
-            color: #0A6D01;
-            font-size: 12px;
+
+        .badge-finish {
+            height: 30px;
+            width: 100%!important;
+            border-radius: 2px!important;
+            padding: 8px 10px!important;
+            /* min-width: 60px; */
+            background: #D4FFCD!important;
+            color: #0A6D01!important;
+            font-size: 12px!important;
         }
         .dropdown-item {
             display: block;
@@ -83,7 +89,7 @@
             display: inline-block;
             
             background-color: #DFDFDF;
-            border-radius: 5px;
+            border-radius: 2px;
         }
 
         .dropdown-content {
@@ -114,14 +120,14 @@
             color: #000000;
             background-color: #E8E8E8;
             border-color: #E8E8E8;
-            border-radius: 5px;
+            border-radius: 2px;
         }
 
         .btn-ekspor-primary:hover {
             color: #ffffff;
             background-color: #5957b1;
             border-color: #5957b1;
-            border-radius: 5px;
+            border-radius: 2px;
         }
 
         .btn-check:focus+.btn-ekspor-primary,
@@ -147,7 +153,7 @@
             width: 100%;
             height: 8px;
             border: 0px;
-            border-top: 2px dashed #9a9c9e;
+            border-top: 1px solid #e0e0e0;
         }
 
         .searchcontainer {
@@ -218,11 +224,17 @@
 
                             <div class="">
                                 <div class="row">
-                                <div class="col-xl-11 col-lg-11 col-md-11 col-sm-2 col-12" style="margin-bottom: 2%;">
+                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-2 col-12" style="margin-bottom: 2%;">
                                     <div class="card-title">
-                                        <h3>Pengeluaran Rutin&emsp;<span class="badge-finish" >Selesai</span></h3>
+                                        <h3>Pengeluaran Rutin&emsp;</h3>
                                     </div>
                                 </div>
+                                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-12">
+                                            <!-- <span class="badge-start" style="margin-top: 2%;">Aktif</span> -->
+                                            <h4><span class="badge bg-primary badge-finish">Selesai</span></h4>
+                                            <!-- <h4>hgygygy</h4> -->
+
+                                        </div>
                                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-12">
                                     <div class="dropdown">
                                         <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -259,8 +271,8 @@
                             <div class="card">
 
                                 <div class="" style="margin-bottom: 2%;">
-                                    <div class="card-title">Dibuat</div>
-                                    <span>Jayaabadi memebuat transaksi pada 13 Mei 2023</span>
+                                    <div class="card-title" ><p style="font-size: 12pt;">Dibuat</p></div>
+                                    <p style="font-size: 10pt;">Jayaabadi memebuat transaksi pada 13 Mei 2023</p>
                                     <hr>
 
                                     <!-- Row start -->
@@ -269,8 +281,8 @@
 
                                 </div>
                                 <div class="">
-                                    <div class="card-title">Jadwal</div>
-                                    <span>Diulangi setiap 1 bulan sejak 13 Mei 2023</span>
+                                    <div class="card-title"><p style="font-size: 12pt;">Jadwal</p></div>
+                                    <p style="font-size: 10pt;">Diulangi setiap 1 bulan sejak 13 Mei 2023</p>
                                     <hr>
 
                                     <!-- Row start -->
@@ -316,7 +328,7 @@
                                             </div>
 
                                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Nomor :</h6>
+                                                <h6>Nomor </h6>
                                             </div>
 
                                             <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
@@ -328,7 +340,7 @@
                                             </div>
 
                                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Tanggal :</h6>
+                                                <h6>Tanggal </h6>
                                             </div>
 
                                             <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
@@ -339,7 +351,7 @@
                                             </div>
 
                                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Akun :</h6>
+                                                <h6>Akun </h6>
                                             </div>
 
                                             <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
@@ -350,7 +362,7 @@
                                             </div>
 
                                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Kategori :</h6>
+                                                <h6>Kategori </h6>
                                             </div>
 
                                             <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">

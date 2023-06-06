@@ -334,7 +334,7 @@
 
                                 <div class="">
                                     <div class="d-flex">
-                                        <div class="col-xl-11 col-lg-11 col-md-2 col-sm-2 col-12">
+                                        <div class="col-xl-11 col-lg-11 col-md-2 col-sm-2 col-12" >
                                             <div class="card-title">
                                                 <h3>Hada<button type="button" style="border: none; background:none;">☆</button></h3>
                                             </div>

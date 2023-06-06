@@ -1320,7 +1320,7 @@
                                                 <td>Pengeluaran</td>
                                                 <td>
                                                     <div class="lingkaran-warna1">
-                                                        &emsp;&emsp;Biaya Lain-Lain
+                                                        &emsp;&emsp;Biaya Lain-L...
                                                     </div>
                                                 </td>
                                                 <td></td>
@@ -1341,7 +1341,7 @@
                                                 <td>Pendapatan</td>
                                                 <td>
                                                     <div class="lingkaran-warna2">
-                                                        &emsp;&emsp;Penjualan Website
+                                                        &emsp;&emsp;Penjualan W...
                                                     </div>
                                                 </td>
                                                 <td></td>
@@ -1383,7 +1383,7 @@
                                                 <td>Pendapatan</td>
                                                 <td>
                                                     <div class="lingkaran-warna4">
-                                                        &emsp;&emsp;Penjualan Website
+                                                        &emsp;&emsp;Penjualan W...
                                                     </div>
                                                 </td>
                                                 <td></td>
