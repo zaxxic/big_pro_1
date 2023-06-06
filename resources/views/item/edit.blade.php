@@ -50,18 +50,49 @@
         }
 
         .half-width-container {
-            display: flex;
-            width: 50%;
-            /* justify-content: space-between; */
-        }
+  display: flex;
+  width: 68%;
+}
 
-        input[type="radio"] {
-            display: none;
-        }
+input[type="radio"] {
+  display: none;
+    border-radius: 2px;
 
-        label {
-            margin-bottom: 2%;
-        }
+}
+
+label {
+  margin-bottom: 2%;
+}
+@media (max-width: 1440px) {
+  .half-width-container {
+    width: 67%;
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  .half-width-container {
+    width: 139%;
+    flex-direction: row;
+  }
+}
+@media (max-width: 711px) {
+  .half-width-container {
+    width: 138%;
+    flex-direction: row;
+  }
+}
+@media (max-width: 425px) {
+  .half-width-container {
+    width: 135%;
+    flex-direction: row;
+  }
+}
+@media (max-width: 320px) {
+  .half-width-container {
+    width: 133%;
+    flex-direction: row;
+  }
+}
 
         .label {
             width: 35%;
@@ -159,7 +190,7 @@
                                     <div class="d-flex">
                                         <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
                                             <div class="card-title">
-                                                <h3>Sunting Item<button type="button" style="border: none; background:none;">☆</button></h3>
+                                                <h3>Tambah Item<button type="button" style="border: none; background:none;">☆</button></h3>
                                             </div>
                                             <div class="graph-day-selection" role="group" style="margin-left: 60%">
 
@@ -183,10 +214,10 @@
                                                 <div class="half-width-container">
 
                                                     <input type="radio" name="option" id="option1" value="Option 1" checked>
-                                                    <label class="label" for="option1">Produk</label>
+                                                    <label style="border-radius: 2px" class="label" for="option1">Produk</label>
 
                                                     <input type="radio" name="option" id="option2" value="Option 2">
-                                                    <label class="label" for="option2">Layanan</label>
+                                                    <label style="border-radius: 2px" class="label" for="option2">Layanan</label>
                                                 </div>
 
                                                 <!-- Field wrapper start -->
@@ -297,9 +328,9 @@
                                                 <!-- Field wrapper end -->
 
                                             </div>
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
                                                 <div class="d-flex justify-content-end mt-4">
-                                                    <button class="btn btn-outline-primary1" type="submit" style="border-radius: 20px; margin-right: 1%" href="#">Batal</button>
+                                                    <button class="btn btn-outline-secondary1" type="submit" style="border-radius: 2px; margin-right: 1%" href="#">Batal</button>
                                                     <button class="btn btn-primary" type="submit" style="border-radius: 2px">Simpan</button>
                                                 </div>
                                             </div>

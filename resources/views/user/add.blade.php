@@ -119,7 +119,7 @@
 											</div>
 
 										</div>
-										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+										<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
 
 											<!-- Field wrapper start -->
 											<div class="field-wrapper">
@@ -130,9 +130,17 @@
 												</div>
 											</div>
 											<!-- Field wrapper end -->
+											<!-- Field wrapper start -->
+											<div class="field-wrapper">
+												<input class="form-control" type="email" placeholder=" Masukan Email">
+												<div class="field-placeholder">Email <span class="text-danger">*</span></div>
+												<div class="form-text">
 
+												</div>
+											</div>
+											<!-- Field wrapper end -->
 										</div>
-										<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12" style="margin-left: 10%; margin-top:-1%">
+										<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12" style="margin-top:-1%">
 											<!-- Field wrapper start -->
 											<div id="dropzone">
 												<label for="judul" class="field-label">Gambar <span class="text-danger">*</span></label>
@@ -145,15 +153,7 @@
 											<!-- Field wrapper end -->
 										</div>
 										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" style="margin-top: -20%">
-											<!-- Field wrapper start -->
-											<div class="field-wrapper">
-												<input class="form-control" type="email" placeholder=" Masukan Email">
-												<div class="field-placeholder">Email <span class="text-danger">*</span></div>
-												<div class="form-text">
-
-												</div>
-											</div>
-											<!-- Field wrapper end -->
+										
 										</div>
 										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
 
@@ -266,9 +266,11 @@
 
 										</div>
 
-										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-left: 81%">
-											<a href="#" style="margin-right: 4%">Batal</a>
-											<button class="btn btn-primary" style="border-radius: 20px">Simpan</button>
+										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
+											<div class="d-flex justify-content-end mt-4">
+												<button class="btn btn-outline-secondary1" type="submit" style="border-radius: 2px; margin-right: 1%" href="#">Batal</button>
+												<button class="btn btn-primary" type="submit" style="border-radius: 2px">Simpan</button>
+											</div>
 										</div>
 									</div>
 									<!-- Row end -->
