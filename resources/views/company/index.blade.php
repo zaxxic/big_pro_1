@@ -47,7 +47,7 @@
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/search-filter/custom-search-filter.css")}}">
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.css") }}" />
 	</head>
-	<body>
+	<body style="overflow: hidden">
 
 		<!-- Page wrapper start -->
 		<div class="page-wrapper">

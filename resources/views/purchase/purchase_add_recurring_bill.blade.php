@@ -210,7 +210,7 @@
                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12" style="margin-bottom: 1%;">
                                           <div class="field-wrapper mb-3">
                                               <label for="judul" class="field-label">Tanggal Tagihan</label>
-                                              <input class="form-control" type="text" placeholder="Masukkan Nama">
+                                              <input class="form-control datepicker" type="text">
                                           </div>
                                           <div class="field-wrapper mb-3">
                                               <label for="judul" class="field-label">Tanggal Pembayaran<span class="text-danger">*</span></label>
@@ -227,7 +227,7 @@
                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                                           <div class="field-wrapper mb-3">
                                               <label for="judul" class="field-label">Nomor Faktur </label>
-                                              <input class="form-control" type="text" placeholder="Masukkan Nama">
+                                              <input class="form-control" type="text" placeholder="Masukkan Nomor Faktur">
                                           </div>
                                           <div class="field-wrapper mb-3">
                                               <label for="judul" class="field-label">Nomor Pesanan </label>
@@ -463,9 +463,6 @@
                                                     <div class="field-wrapper">
                                                         <div class="input-group">
                                                             <input type="text" class="form-control datepicker">
-                                                            <span class="input-group-text">
-                                                                <i class="icon-calendar1"></i>
-                                                            </span>
                                                         </div>
                                                     </div>
                                                     <!-- Field wrapper end -->
@@ -489,9 +486,6 @@
                                                     <div class="field-wrapper">
                                                         <div class="input-group">
                                                             <input type="text" class="form-control datepicker">
-                                                            <span class="input-group-text">
-                                                                <i class="icon-calendar1"></i>
-                                                            </span>
                                                         </div>
                                                     </div>
                                                     <!-- Field wrapper end -->

@@ -65,9 +65,9 @@
         .dropdown {
             position: relative;
             display: inline-block;
-            
+
             background-color: #DFDFDF;
-            border-radius: 5px;
+            border-radius: 2px;
         }
 
         .dropdown-content {
@@ -98,14 +98,14 @@
             color: #000000;
             background-color: #E8E8E8;
             border-color: #E8E8E8;
-            border-radius: 5px;
+            border-radius: 2px;
         }
 
         .btn-ekspor-primary:hover {
             color: #ffffff;
             background-color: #5957b1;
             border-color: #5957b1;
-            border-radius: 5px;
+            border-radius: 2px;
         }
 
         .btn-check:focus+.btn-ekspor-primary,
@@ -131,7 +131,7 @@
             width: 100%;
             height: 8px;
             border: 0px;
-            border-top: 2px dashed #9a9c9e;
+            border-top: 1px solid #e0e0e0;
         }
 
         .searchcontainer {
@@ -243,9 +243,8 @@
                             <div class="card">
 
                                 <div class="">
-                                    <div class="card-title">Membuat</div>
-                                    <span>Jayaabadi memebuat transaksi pada 13 Mei 2023</span>
-                                    <hr>
+                                <div class="card-title"><p style="font-size: 12pt;">Dibuat</p></div>
+                                        <p style="font-size: 10pt;">Jayaabadi memebuat transaksi pada 13 Mei 2023</p>
 
                                     <!-- Row start -->
 
@@ -290,7 +289,7 @@
                                             </div>
 
                                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Nomor :</h6>
+                                                <h6>Nomor</h6>
                                             </div>
 
                                             <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
@@ -302,7 +301,7 @@
                                             </div>
 
                                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Tanggal :</h6>
+                                                <h6>Tanggal</h6>
                                             </div>
 
                                             <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
@@ -313,7 +312,7 @@
                                             </div>
 
                                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Akun :</h6>
+                                                <h6>Akun</h6>
                                             </div>
 
                                             <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
@@ -324,7 +323,7 @@
                                             </div>
 
                                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Kategori :</h6>
+                                                <h6>Kategori</h6>
                                             </div>
 
                                             <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">

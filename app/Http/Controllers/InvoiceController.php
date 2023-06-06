@@ -18,7 +18,10 @@ class InvoiceController extends Controller
     {
         return view('sale.sale_add_invoice');
     }
-
+    public function add_recurring_invoice()
+    {
+        return view('sale.sale_add_recurring_invoice');
+    }
     public function detail_recurring()
     {
         return view('sale.sale_details_recurring_invoice');
