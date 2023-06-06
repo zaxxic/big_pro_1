@@ -2037,7 +2037,7 @@ ul.activity li.activity-list.warning:before {
 
 .content-wrapper {
     padding: 0 1.5rem 0 1.5rem;
-    /* height: calc(100vh - 150px); */
+    /* height: calc(100vh - 150px);  */
     overflow: auto;
 }
 

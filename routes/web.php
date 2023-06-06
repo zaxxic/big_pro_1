@@ -60,6 +60,9 @@ Route::get('register', function () {
 Route::get('reset_password', function () {
     return view('reset_password');
 });
+Route::get('confirm_password', function () {
+    return view('confirm_password');
+});
 Route::get('/itemindex',[ItemController::class,'itemindex'])->Name('item-index');
 Route::get('/add-item',[ItemController::class,'additem'])->Name('item-add');
 Route::get('/edit-item',[ItemController::class,'edititem'])->Name('item-edit');
