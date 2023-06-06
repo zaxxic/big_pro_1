@@ -340,9 +340,9 @@
                                                             <td>N/A</td>
                                                             <th>
                                                                 <div class="menu-icons" style="font-size: 15px;">
-                                                                    <a href="{{url('edit_cos')}}" class="menu-icon icon-edit-2" style="color: rgb(229, 134, 0)"></a>
-                                                                    <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer" style="color: rgb(255, 0, 0)"></a>
-                                                                    <a href="{{url('show_cos')}}" class="menu-icon icon-eye1" style="color: rgb(77, 77, 247)"></a>
+                                                                    <a href="{{url('edit_cos')}}" class="menu-icon icon-edit-2" ></a>
+                                                                    <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer" ></a>
+                                                                    <a href="{{url('show_cos')}}" class="menu-icon icon-eye1"></a>
 
                                                                 </div>
                                                             </th>
@@ -358,9 +358,9 @@
                                                         <td>N/A</td>
                                                         <td>
                                                             <div class="menu-icons" style="font-size: 15px;">
-                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2" style="color: rgb(229, 134, 0)"></a>
-                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer" style="color: rgb(255, 0, 0)"></a>
-                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1" style="color: rgb(77, 77, 247)"></a>
+                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2" ></a>
+                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer" ></a>
+                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1" ></a>
 
                                                             </div>
                                                         </td>
@@ -376,9 +376,9 @@
                                                         <td>N/A</td>
                                                         <td>
                                                             <div class="menu-icons" style="font-size: 15px;">
-                                                                <a href="{{url('edit_cos')}}" class="menu-icon icon-edit-2" style="color: rgb(229, 134, 0)"></a>
-                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer" style="color: rgb(255, 0, 0)"></a>
-                                                                <a href="{{url('show_cos')}}" class="menu-icon icon-eye1" style="color: rgb(77, 77, 247)"></a>
+                                                                <a href="{{url('edit_cos')}}" class="menu-icon icon-edit-2" ></a>
+                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer" ></a>
+                                                                <a href="{{url('show_cos')}}" class="menu-icon icon-eye1" ></a>
 
                                                             </div>
                                                         </td>
@@ -392,9 +392,9 @@
                                                         <td>N/A</td>
                                                         <td>
                                                             <div class="menu-icons" style="font-size: 15px;">
-                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2" style="color: rgb(229, 134, 0)"></a>
-                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer" style="color: rgb(255, 0, 0)"></a>
-                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1" style="color: rgb(77, 77, 247)"></a>
+                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2" ></a>
+                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer" ></a>
+                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1" ></a>
 
                                                             </div>
                                                         </td>
@@ -408,9 +408,9 @@
                                                         <td>N/A</td>
                                                         <td>
                                                             <div class="menu-icons" style="font-size: 15px;">
-                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2" style="color: rgb(229, 134, 0)"></a>
-                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer" style="color: rgb(255, 0, 0)"></a>
-                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1" style="color: rgb(77, 77, 247)"></a>
+                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2" ></a>
+                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer" ></a>
+                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1" ></a>
 
                                                             </div>
                                                         </td>
@@ -571,7 +571,7 @@ const checkboxes = document.querySelectorAll('.other-checkbox');
 				hiddenMenu.style.display = 'none'; // Hide the hidden menu if no checkboxes are checked
 			}
 			}
-			
+
 			updateCountDisplay(); // Update the count display
 		});
 		});
@@ -581,13 +581,13 @@ const checkboxes = document.querySelectorAll('.other-checkbox');
 		checkboxes.forEach(function(checkbox) {
 			checkbox.checked = selectAllCheckbox.checked; // Set the state of each checkbox based on the "Select All" checkbox
 		});
-		
+
 		if (this.checked) {
 			hiddenMenu.style.display = 'block'; // Show the hidden menu
 		} else {
 			hiddenMenu.style.display = 'none'; // Hide the hidden menu
 		}
-		
+
 		updateCountDisplay(); // Update the count display
 		});
     </script>

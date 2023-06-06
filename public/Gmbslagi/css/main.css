@@ -9286,7 +9286,7 @@ label {
 
 
 .dropdown-menu:before {
-    position: absolute;
+    /* position: absolute; */
     top: -9px;
     left: 12px;
     content: '';
@@ -9655,7 +9655,7 @@ label {
     background: white;
 }
 .icon-edit-2{
-    color: rgb(229, 134, 0)
+    color: rgb(70, 235, 21)
 }
 .icon-trash{
     color: rgb(255, 0, 0)

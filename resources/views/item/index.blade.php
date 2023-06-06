@@ -234,8 +234,8 @@
 							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
 								<!-- Card start -->
-								<div class="">
-									<div class="d-flex">
+								<div class="card">
+									<div class="card-header">
 										<div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
 											<div class="card-title">
 												<h3>Item<button type="button" style="border: none; background:transparent;">☆</button></h3>
@@ -248,7 +248,7 @@
 												</a>
 											</div>
 										</div>
-										<div class="dropdown icon-dots-three-vertical">
+										<div class="dropdown icon-dots-three-vertical" style="background-color: transparent;">
 											<span></span>
 											<div class="dropdown-content">
 												<a href="#">
@@ -261,7 +261,7 @@
 												</a>
 											</div>
 										</div>
-										
+
 									</div>
 									<div class="">
 										<!-- Row start -->
