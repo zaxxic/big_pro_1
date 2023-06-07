@@ -9834,3 +9834,6 @@ label {
             -webkit-box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
             box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
         }
+        .modal-dialog{
+            margin-top: 16% !important;
+        }
