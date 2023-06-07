@@ -148,6 +148,60 @@
             color: #333;
         }
 
+        .hover-trigge1r {
+            cursor: pointer;
+            position: relative;
+        }
+
+        .hover-trigge1r:hover::before {
+            content: attr(data-tooltip_dpt);
+            position: absolute;
+            top: -42px;
+            left: 0;
+
+            font-size: 12px;
+            background-color: #5957b1;
+            color: #fff;
+            padding: 3px;
+            border-radius: 2px;
+        }
+
+        .hover-trigge2r {
+            cursor: pointer;
+            position: relative;
+        }
+
+        .hover-trigge2r:hover::before {
+            content: attr(data-tooltip_buka);
+            position: absolute;
+            top: -42px;
+            left: 0;
+            font-size: 12px;
+            background-color: #5957b1;
+            color: #fff;
+            padding: 3px;
+            border-radius: 2px;
+        }
+
+
+
+        .hover-trigge3r:hover::before {
+            content: attr(data-tooltip_byr);
+            position: absolute;
+            top: -42px;
+            left: 0;
+            font-size: 12px;
+            background-color: #5957b1;
+            color: #fff;
+            padding: 3px;
+            border-radius: 2px;
+        }
+
+        .hover-trigge3r {
+            cursor: pointer;
+            position: relative;
+        }
+
         .searchcontainer {
             width: 90%;
             font-size: 20px;
@@ -252,7 +306,7 @@
                                                     <p><b><i>Rp</i></b></p>
                                                 </div>
                                                 <div class="sale-details">
-                                                    <h2>25</h2>
+                                                    <h2 class="hover-trigge1r">25.5M</h2>
                                                     <p>Jatuh Tempo</p>
                                                 </div>
                                                 <div class="sale-graph">
@@ -266,8 +320,8 @@
                                                     <p><b><i>Rp</i></b></p>
                                                 </div>
                                                 <div class="sale-details">
-                                                    <h2>32</h2>
-                                                    <p>Terbuka</p>
+                                                    <h2 class="hover-trigge2r">90.5M</h2>
+                                                    <p>Buka</p>
                                                 </div>
                                                 <div class="sale-graph">
                                                     <div id="sparklineLine2"></div>
@@ -280,8 +334,8 @@
                                                     <p><b><i>Rp</i></b></p>
                                                 </div>
                                                 <div class="sale-details">
-                                                    <h2>19</h2>
-                                                    <p>Konsep</p>
+                                                    <h2 class="hover-trigge3r">90.5M</h2>
+                                                    <p>Dibayar</p>
                                                 </div>
                                                 <div class="sale-graph">
                                                     <div id="sparklineLine3"></div>
@@ -289,6 +343,20 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <script>
+                                        const hoverTrigger = document.querySelector('.hover-trigge1r');
+                                        const tooltipContent1 = '25.500.000.000';
+                                        hoverTrigger.setAttribute('data-tooltip_dpt', tooltipContent1);
+
+                                        const hoverTrigger2 = document.querySelector('.hover-trigge2r');
+                                        const tooltipContent2 = '25.500';
+                                        hoverTrigger2.setAttribute('data-tooltip_buka', tooltipContent2);
+
+                                        const hoverTrigger3 = document.querySelector('.hover-trigge3r');
+                                        const tooltipContent3 = '25.500.000';
+                                        hoverTrigger3.setAttribute('data-tooltip_byr', tooltipContent3);
+                                    </script>
                                     <!-- Row end -->
                                     <div class="d-flex">
                                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 box1"
@@ -360,6 +428,15 @@
                                                                             data-bs-target="#payment"
                                                                             class="icon-attach_money">
                                                                             Bayar
+                                                                        </button>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <button type="button"
+                                                                            style="border: none; background:none; color:#333; background:transparent"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#payment"
+                                                                            class="icon-attach_money">
+                                                                            Kirim email
                                                                         </button>
                                                                     </a>
                                                                     <a href="#">

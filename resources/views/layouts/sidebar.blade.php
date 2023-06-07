@@ -75,7 +75,7 @@
                                 <a href="{{ route('item-index') }}"
                                     class="sidebar-menu {{ request()->routeIs('item-index') || request()->routeIs('item-tambah') ? 'current-page' : '' }}"
                                     aria-selected="false">
-                                    <i class="icon-download1" style="font-size: 19px;"></i><span>&emsp;Item</span>
+                                    <i class="icon-download1" style="font-size: 19px;"></i><span>&emsp;Barang</span>
                                 </a>
                             </li>
                             <!-- <li class="mt-3">
@@ -179,6 +179,8 @@
                                     request()->routeIs('show_recurring_expenditure') ||
                                     request()->routeIs('add_transfer') ||
                                     request()->routeIs('edit_transfer') ||
+                                    request()->routeIs('receipt_bill_transactions') ||
+                                    request()->routeIs('receipt_transactions') ||
                                     request()->routeIs('show_transfer')
                                         ? 'current-page'
                                         : '' }}"><i
@@ -208,6 +210,8 @@
                                             request()->routeIs('show_recurring_income') ||
                                             request()->routeIs('add_recurring_expenditure') ||
                                             request()->routeIs('edit_recurring_expenditure') ||
+                                            request()->routeIs('receipt_bill_transactions') ||
+                                            request()->routeIs('receipt_transactions') ||
                                             request()->routeIs('show_recurring_expenditure')
                                                 ? 'drop-icon'
                                                 : '' }}"><span

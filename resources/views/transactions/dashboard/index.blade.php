@@ -639,7 +639,7 @@
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
                                                             <a href="{{url('delete_income')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleteincome"></a>
-                                                            <a href="{{url('show_income')}}" class="menu-icon icon-eye1"></a>
+                                                            <a href="{{route('receipt_transactions')}}" class="menu-icon icon-eye1"></a>
                                                         </div>
                                                     </th>
                                                 </tr>
@@ -667,7 +667,7 @@
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{url('edit_expenditure')}}" class="menu-icon icon-edit-2"></a>
                                                             <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
-                                                            <a href="{{url('show_expenditure')}}" class="menu-icon icon-eye1"></a>
+                                                            <a href="{{route('receipt_bill_transactions')}}" class="menu-icon icon-eye1"></a>
                                                         </div>
                                                     </th>
                                                 </tr>

@@ -102,6 +102,8 @@ Route::get('/edit_expenditure', [TransactionsController::class, 'edit_expenditur
 Route::get('/show_expenditure', [TransactionsController::class, 'show_expenditure'])->name('show_expenditure');
 //recurring transactions
 Route::get('/recurring_transactions', [TransactionsController::class, 'recurring_transactions'])->name('recurring_transactions');
+Route::get('/receipt_transactions', [TransactionsController::class, 'receipt_transactions'])->name('receipt_transactions');
+Route::get('/receipt_bill_transactions', [TransactionsController::class, 'receipt_bill_transactions'])->name('receipt_bill_transactions');
 
 Route::get('/add_recurring_income', [TransactionsController::class, 'add_recurring_income'])->name('add_recurring_income');
 Route::get('/edit_recurring_income', [TransactionsController::class, 'edit_recurring_income'])->name('edit_recurring_income');
