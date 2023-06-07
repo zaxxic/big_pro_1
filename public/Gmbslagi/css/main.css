@@ -57,7 +57,7 @@ body {
     margin: 0;
     padding: 0;
     font: 400 .8rem 'Open Sans', sans-serif;
-    color: #454f58;
+    color: #000;
     min-height: 100%;
     position: relative;
     overflow-x: hidden !important;
@@ -1188,6 +1188,7 @@ p {
     border: 1px solid #888;
     width: 80%;
     max-width: 400px;
+    margin-top: -12px;
   }
 
 .default-sidebar-wrapper .default-sidebar-menu .default-sidebar-dropdown>a:after {
@@ -2037,7 +2038,7 @@ ul.activity li.activity-list.warning:before {
 
 .content-wrapper {
     padding: 0 1.5rem 0 1.5rem;
-    /* height: calc(100vh - 150px); */
+    /* height: calc(100vh - 150px);  */
     overflow: auto;
 }
 

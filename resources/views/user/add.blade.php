@@ -153,7 +153,7 @@
 											<!-- Field wrapper end -->
 										</div>
 										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" style="margin-top: -20%">
-										
+
 										</div>
 										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
 
@@ -163,14 +163,14 @@
 											</div>
 
 										</div>
-										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 
 											<!-- Field wrapper start -->
 											<div class="field-wrapper-group">
                                             <div class="field-wrapper">
                                                 <select class="select-multiple js-states" title="Select Product Category">
                                                     <option>Unknown Company</option>
-                                                    
+
 
                                                 </select>
                                                 <div class="field-placeholder">Kategori<span class="text-danger">*</span></div>
@@ -187,14 +187,14 @@
                                             <div class="field-wrapper">
                                                 <select class="select-multiple js-states" title="Select Product Category">
                                                     <option>Accountant</option>
-                                                    
+
 
                                                 </select>
                                                 <div class="field-placeholder">Peran<span class="text-danger">*</span></div>
                                             </div>
 
                                         </div>
-											
+
 											<!-- Field wrapper end -->
 
 										</div>
@@ -206,10 +206,10 @@
 											</div>
 
 										</div>
-										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 
 											<!-- Field wrapper start -->
-											
+
                                             <div class="field-wrapper">
                                                 <select class="select-multiple js-states" title="Select Product Category">
 												<option>Akun</option>
@@ -225,17 +225,17 @@
 													<option>Tagihan</option>
 													<option>Transaksi</option>
 													<option>Transfer</option>
-                                                    
+
 
                                                 </select>
                                                 <div class="field-placeholder">Halaman Muka<span class="text-danger">*</span></div>
                                             </div>
 
                                         </div>
-											
+
 											<!-- Field wrapper end -->
 
-										
+
 										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 
 											<!-- Field wrapper start -->
@@ -261,7 +261,7 @@
                                                 </select>
                                                 <div class="field-placeholder">Halaman Muka<span class="text-danger">*</span></div>
                                             </div>
-											
+
 											<!-- Field wrapper end -->
 
 										</div>
@@ -269,7 +269,7 @@
 										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
 											<div class="d-flex justify-content-end mt-4">
 												<button class="btn btn-outline-secondary1" type="submit" style="border-radius: 2px; margin-right: 1%" href="#">Batal</button>
-												<button class="btn btn-primary" type="submit" style="border-radius: 2px">Simpan</button>
+												<a href="{{ url('confirm_password') }}"><button class="btn btn-primary" type="submit" style="border-radius: 2px" >Simpan</button></a>
 											</div>
 										</div>
 									</div>
