@@ -83,6 +83,14 @@ class TransactionsController extends Controller
     {
         return view('transactions.recurring_transactions..recurring_expenditure.show_recurring_expenditure');
     }
+    public function receipt_transactions()
+    {
+        return view('transactions.dashboard.receipt.receipt');
+    }
+    public function receipt_bill_transactions()
+    {
+        return view('transactions.dashboard.receipt.receipt_bill');
+    }
 
     
 
