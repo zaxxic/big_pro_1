@@ -168,12 +168,12 @@
 											<!-- Field wrapper start -->
 											<div class="field-wrapper-group">
                                             <div class="field-wrapper">
-                                                <select class="select-multiple js-states" title="Select Product Category">
+                                                <select class="select-multiple js-states" multiple title="Select Product Category">
                                                     <option>Unknown Company</option>
 
 
                                                 </select>
-                                                <div class="field-placeholder">Kategori<span class="text-danger">*</span></div>
+                                                <div class="field-placeholder">Perusahaan<span class="text-danger">*</span></div>
                                             </div>
 
                                         </div>
