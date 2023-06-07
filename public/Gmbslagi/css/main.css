@@ -2790,7 +2790,6 @@ ul.customer-rating li:last-child {
     border: 0;
     color: #111111;
     background: transparent;
-    border-radius: 30px;
 }
 
 .graph-day-selection .btn.active {
@@ -9778,7 +9777,6 @@ label {
             background-color: #DFDFDF;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             padding: 10px;
-            border-radius: 4px;
             right: 0;
             /* Mengarahkan dropdown ke arah kiri */
         }
