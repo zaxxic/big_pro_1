@@ -367,8 +367,11 @@
                                                         <div class="modal-body">
                                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                                                 <div class="field-wrapper">
+                                                                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-12">
+                                                                    <label class="mb-2">Jenis</label>
+                                                                </div>
                                                                     <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
-                                                                        <div class="text-radio">Jenis<span class="text-danger">*</span></div>
+                                                                    
                                                                     </div>
                                                                     <div class="half-width-container">
 
@@ -462,7 +465,9 @@
 
                                                                 <!-- Field wrapper start -->
                                                                 <div class="field-wrapper row">
-                                                                    <label style="margin-left: -147px;">Warna</label>
+                                                                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-12">
+                                                                    <label class="mb-2">Warna</label>
+                                                                </div>
                                                                     <div class="d-flex">
                                                                     <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
                                                                         <input class="form-control" type="text" placeholder="Masukkan Warna Kategori">

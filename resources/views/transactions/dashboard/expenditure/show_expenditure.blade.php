@@ -197,33 +197,33 @@
 
                     <!-- Row start -->
                     <div class="card-body">
-                    <div class="row gutters">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="row gutters">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
-                            <div class="">
-                                <div class="row">
-                                <div class="col-xl-11 col-lg-11 col-md-11 col-sm-2 col-12" style="margin-bottom: 2%;">
-                                    <div class="card-title">
-                                        <h3>Pengeluaran<button type="button" style="border: none; background:none;">☆</button></h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-12">
-                                    <div class="dropdown">
-                                        <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="">
+                                    <div class="row">
+                                        <div class="col-xl-11 col-lg-11 col-md-11 col-sm-2 col-12" style="margin-bottom: 2%;">
+                                            <div class="card-title">
+                                                <h3>Pengeluaran<button type="button" style="border: none; background:none;">☆</button></h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-12">
+                                            <div class="dropdown">
+                                                <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 
-                                        </a>
+                                                </a>
 
-                                        <ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
-                                            <li><a class="dropdown-item" style="margin-top: 4%;" href="{{url('add_expenditure')}}">Tambah</a></li>
-                                            <li><a class="dropdown-item" href="{{url('add_expenditure')}}">Sunting</a></li>
-                                            <li><a class="dropdown-item" href="#">Cetak</a></li>
-                                            <li><a class="dropdown-item" href="#">Unduh PDF</a></li>
+                                                <ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
+                                                    <li><a class="dropdown-item" style="margin-top: 4%;" href="{{url('add_expenditure')}}">Tambah</a></li>
+                                                    <li><a class="dropdown-item" href="{{url('add_expenditure')}}">Sunting</a></li>
+                                                    <li><a class="dropdown-item" href="#">Cetak</a></li>
+                                                    <li><a class="dropdown-item" href="#">Unduh PDF</a></li>
 
-                                        </ul>
-                                    </div>
-                                </div>
+                                                </ul>
+                                            </div>
+                                        </div>
 
-                                    <!-- <button >
+                                        <!-- <button >
                                         <span></span>
                                         <div class="dropdown-content">
                                             <a href="#" style="margin-top: 1%;"><span> Tambah </span></a>
@@ -234,215 +234,219 @@
 
                                         </div>
                                     </button> -->
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-
-                            <!-- Card start -->
-                            <div class="card">
-
-                                <div class="">
-                                <div class="card-title"><p style="font-size: 12pt;">Dibuat</p></div>
-                                        <p style="font-size: 10pt;">Jayaabadi memebuat transaksi pada 13 Mei 2023</p>
-
-                                    <!-- Row start -->
-
-                                    <!-- Row end -->
-
-                                </div>
-                            </div>
-                            <!-- Card end -->
-
-                        </div>
-                        <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12"> -->
-
-                        <!-- Card start -->
-                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
-                            <div class="card-body" style="border-left: 1px solid #9a9c9e;">
-
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
 
                                 <!-- Card start -->
                                 <div class="card">
 
-
-                                    <div class="card-body" style="float: right">
-
+                                    <div class="">
+                                        <div class="card-title">
+                                            <p style="font-size: 12pt;">Dibuat</p>
+                                        </div>
+                                        <p style="font-size: 10pt; margin-bottom: 3%;">Jayaabadi memebuat transaksi pada 13 Mei 2023</p>
+                                        <a href="{{ route('edit_expenditure') }}">
+                                            <button style="background-color: #9a99e2;border-radius:2px;width:80px;border:transparent;height:25px;color:#ffffff">Sunting</button></a>
+                                        <hr>
                                         <!-- Row start -->
-                                        <div class="row gutters">
-                                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
 
-                                                <img src="{{ asset('Gmbslagi/img/unknown.jpg') }}" style="border-radius: 50%;" width="70" height="70">
+                                        <!-- Row end -->
 
-                                            </div>
-                                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-1 col-12" style="margin-top: 1%;">
-
-                                                <h6>Unknown</h6> <br>
-                                                <h6>Unknoncompany@gmail.com</h6>
-
-
-                                            </div>
-                                            <hr style="margin-top: 2%;">
-
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 5%;">
-                                                <h6>Pembayaran Dibuat </h6>
-                                            </div>
-
-                                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Nomor</h6>
-                                            </div>
-
-                                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
-
-
-                                                <span>TRA-0089</span>
-                                                <div class="empty-box">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Tanggal</h6>
-                                            </div>
-
-                                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
-
-                                                <span>19 Mei 2023</span>
-                                                <div class="empty-box">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Akun</h6>
-                                            </div>
-
-                                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
-
-                                                <span>Haha</span>
-                                                <div class="empty-box">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Kategori</h6>
-                                            </div>
-
-                                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
-
-                                                <span>Penjualan Website</span>
-                                                <div class="empty-box">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Pembayaran</h6>
-                                            </div>
-
-                                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
-
-                                                <span>Transfer Bank</span>
-                                                <div class="empty-box">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Deskripsi</h6>
-                                            </div>
-
-                                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
-
-                                                <span>Penjualan website toko online yang menyediakan semua barang, kirim barang lewat jnt ataupun kantor pos</span>
-                                                <div class="empty-box">
-                                                </div>
-                                            </div>
-
-                                            <hr style="margin-top: 2%;">
-
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 1%;">
-                                                <h6>Dibayarkan Ke </h6>
-                                            </div>
-
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 3%;">
-                                                <h6>Tagihan Dari </h6>
-                                            </div>
-
-                                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Nama</h6>
-                                            </div>
-
-                                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
-
-                                                <span>jayaabadi</span>
-                                                <div class="empty-box">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Alamat</h6>
-                                            </div>
-
-                                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
-
-                                                <span>Jl Lesti Utara, Ngaglik, Kota Batu</span>
-                                                <div class="empty-box">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>NPWP</h6>
-                                            </div>
-
-                                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
-
-                                                <span>08.178.554.2-123.321</span>
-                                                <div class="empty-box">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Telepone</h6>
-                                            </div>
-
-                                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
-
-                                                <span>085607338154</span>
-                                                <div class="empty-box">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
-                                                <h6>Email</h6>
-                                            </div>
-
-                                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
-
-                                                <span>jayaabadi@gmail.com</span>
-                                                <div class="empty-box">
-                                                </div>
-                                            </div>
-
-                                            <hr style="margin-top: 2%;">
-
-
-
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                            <button class="btn btn-primary" style="float: right;">Jumlah : &emsp;&emsp;Rp700.000.000</button>
-                                        </div>
                                     </div>
-                                    <!-- Row end -->
-
                                 </div>
+                                <!-- Card end -->
+
                             </div>
+                            <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12"> -->
+
+                            <!-- Card start -->
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+                                <div class="card-body" style="border-left: 1px solid #9a9c9e;">
+
+
+                                    <!-- Card start -->
+                                    <div class="card">
+
+
+                                        <div class="card-body" style="float: right">
+
+                                            <!-- Row start -->
+                                            <div class="row gutters">
+                                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
+
+                                                    <img src="{{ asset('Gmbslagi/img/unknown.jpg') }}" style="border-radius: 50%;" width="70" height="70">
+
+                                                </div>
+                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-1 col-12" style="margin-top: 1%;">
+
+                                                    <h6>Unknown</h6> <br>
+                                                    <h6>Unknoncompany@gmail.com</h6>
+
+
+                                                </div>
+                                                <hr style="margin-top: 2%;">
+
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 5%;">
+                                                    <h6>Pembayaran Dibuat </h6>
+                                                </div>
+
+                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
+                                                    <h6>Nomor</h6>
+                                                </div>
+
+                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+
+
+                                                    <span>TRA-0089</span>
+                                                    <div class="empty-box">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
+                                                    <h6>Tanggal</h6>
+                                                </div>
+
+                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+
+                                                    <span>19 Mei 2023</span>
+                                                    <div class="empty-box">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
+                                                    <h6>Akun</h6>
+                                                </div>
+
+                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+
+                                                    <span>Haha</span>
+                                                    <div class="empty-box">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
+                                                    <h6>Kategori</h6>
+                                                </div>
+
+                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+
+                                                    <span>Penjualan Website</span>
+                                                    <div class="empty-box">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
+                                                    <h6>Pembayaran</h6>
+                                                </div>
+
+                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+
+                                                    <span>Transfer Bank</span>
+                                                    <div class="empty-box">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
+                                                    <h6>Deskripsi</h6>
+                                                </div>
+
+                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+
+                                                    <span>Penjualan website toko online yang menyediakan semua barang, kirim barang lewat jnt ataupun kantor pos</span>
+                                                    <div class="empty-box">
+                                                    </div>
+                                                </div>
+
+                                                <hr style="margin-top: 2%;">
+
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 1%;">
+                                                    <h6>Dibayarkan Ke </h6>
+                                                </div>
+
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 3%;">
+                                                    <h6>Tagihan Dari </h6>
+                                                </div>
+
+                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
+                                                    <h6>Nama</h6>
+                                                </div>
+
+                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+
+                                                    <span>jayaabadi</span>
+                                                    <div class="empty-box">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
+                                                    <h6>Alamat</h6>
+                                                </div>
+
+                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+
+                                                    <span>Jl Lesti Utara, Ngaglik, Kota Batu</span>
+                                                    <div class="empty-box">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
+                                                    <h6>NPWP</h6>
+                                                </div>
+
+                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+
+                                                    <span>08.178.554.2-123.321</span>
+                                                    <div class="empty-box">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
+                                                    <h6>Telepone</h6>
+                                                </div>
+
+                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+
+                                                    <span>085607338154</span>
+                                                    <div class="empty-box">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12" style="margin-top: 3%;">
+                                                    <h6>Email</h6>
+                                                </div>
+
+                                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" style="margin-top: 3%;">
+
+                                                    <span>jayaabadi@gmail.com</span>
+                                                    <div class="empty-box">
+                                                    </div>
+                                                </div>
+
+                                                <hr style="margin-top: 2%;">
+
+
+
+                                                <!-- Field wrapper end -->
+
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <button class="btn btn-primary" style="float: right;">Jumlah : &emsp;&emsp;Rp700.000.000</button>
+                                            </div>
+                                        </div>
+                                        <!-- Row end -->
+
+                                    </div>
+                                </div>
+                                <!-- Card end -->
+
+                            </div>
+
                             <!-- Card end -->
 
+                            <!-- </div> -->
                         </div>
-
-                        <!-- Card end -->
-
-                        <!-- </div> -->
-                    </div>
                     </div>
                     <!-- Row end -->
 

@@ -52,6 +52,7 @@
             min-width: 60px;
             background: #D8D7FF;
             color: #030179;
+            
         }
          .badge-finish {
             border-radius: 2px;
@@ -327,14 +328,14 @@
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                                 <!-- Card start -->
-
+                                <div class="card">
                                 <!-- <div class="card-header"> -->
-                                <div class="card-header row"> 
-                                        <div class=" col-xl-4 col-lg-4 col-md-3 col-sm-3 col-12 d-flex">
+                                <div class="card-header">
+                                        <div class=" col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 d-flex">
                                             <div class="card-title">
                                                 <h3>Transaksi Rutin<button type="button" style="border: none; background:transparent;">☆</button></h3>
                                             </div>
-                                        </div>  
+                                        </div>
 
                                         <!-- <div class="text-end">
 											<a href="create-invoice.html" class="btn btn-primary">Create Invoice</a>
@@ -342,12 +343,16 @@
                                         <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-12 button-container" style="margin-left: 17%; justify-items: center; justify-content: end;">
                                             <div class="graph-day-selection" role="group" style="margin-right: 3%;">
                                                 <a href="http://127.0.0.1:8000/add_recurring_income">
-                                                    <button type="button" class="btn active" style="background: transparent; "><div style="color: #5957b1;"> Tambah Pendapatan Rutin</div></button>
+                                                    <button type="button" class="btn active" style="background: transparent; ">
+                                                        <div style="color: #5957b1;"> Tambah Pendapatan Rutin</div>
+                                                    </button>
                                                 </a>
                                             </div>
                                             <div class="graph-day-selection" role="group" style="margin-right: 3%;">
                                                 <a href="http://127.0.0.1:8000/add_recurring_expenditure">
-                                                    <button type="button" class="btn active" style="background: transparent"><div style="color: #5957b1;">Tambah Pengeluaran Rutin</div></button>
+                                                    <button type="button" class="btn active" style="background: transparent">
+                                                        <div style="color: #5957b1;">Tambah Pengeluaran Rutin</div>
+                                                    </button>
                                                 </a>
                                             </div>
                                             <div class="dropdown">
@@ -362,6 +367,7 @@
                                                 </ul>
                                             </div>
                                         </div>
+
                                     </div>
                                     <div id="dropdown-menu">
                                         <button class="dropdown-toggle">&#8942;</button>
@@ -595,6 +601,7 @@
                                         </div>
                                     </div>
                                     <!-- Card end -->
+                        </div>
                                     <!-- Modal start -->
 										<div class="modal fade" id="deleteincome" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteincome" aria-hidden="true">
 											<div class="modal-dialog" style="margin-top: -20px;">
