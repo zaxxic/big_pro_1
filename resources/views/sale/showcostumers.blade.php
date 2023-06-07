@@ -595,11 +595,11 @@
                                                                         
                                                                         <th scope="col">Tanggal Jatuh Tempo</th>
                                                                         <th scope="col">Tanggal Faktur</th>
-                                                                        <th scope="col">status</th>
+                                                                        <th scope="col">Status</th>
                                                                         <th scope="col">Pelanggan</th>
                                                                         <th></th>
                                                         
-                                                                        <th scope="col">Nomoer</th>
+                                                                        <th scope="col">Nomer</th>
                                                                         <th scope="col">jumlah</th>
                                                                         <th scope="col">Aksi</th>
                                                                     </tr>
