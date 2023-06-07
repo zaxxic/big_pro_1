@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-	
+
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/forms-layout-one.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:31 GMT -->
 <head>
 		<!-- Required meta tags -->
@@ -15,14 +15,14 @@
 		<!-- Title -->
 		<title>Unknown | Perusahaan</title>
 
-		
+
 
 		<!-- *************
 			************ Common Css Files *************
 		************ -->
 		<!-- Bootstrap css -->
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/css/bootstrap.min.css")}}">
-		
+
 		<!-- Icomoon Font Icons css -->
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/fonts/style.css")}}">
 
@@ -51,7 +51,7 @@
 
 		<!-- Page wrapper start -->
 		<div class="page-wrapper">
-			
+
 			<!-- Sidebar wrapper start -->
 			@include('layouts.sidebar')
 			<!-- Sidebar wrapper end -->
@@ -65,7 +65,7 @@
 
 				<!-- Page header starts -->
 				<div class="page-header">
-					
+
 					<!-- Row start -->
 					<div class="row gutters">
 						<div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-9">
@@ -90,23 +90,23 @@
 										<div class="card-title"><h3>Perusahaan<button type="button" style="border: none; background:none;">☆</button></h3></div>
 									</div>
 									<div class="">
-										
+
 										<!-- Row start -->
 										<div class="row gutters">
 
 											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
-												
+
 												<div style="border-bottom: solid grey 1px;margin-bottom:1%;  margin-bottom: 2%; margin-top: 2%;"">
 													<h6>Umum</h6>
 													<p>Informasi ini terlihat dalam rekaman yang Anda buat.</p>
 												</div>
 
 											</div>
-										
-											<div class="d-flex row ">
+
+										<div class="d-flex row ">
 											<div class="col-xl-9 col-lg-12 col-md-12 col-sm-12" >
 											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-												
+
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
 													<input class="form-control" type="text" placeholder="Masukan Nama">
@@ -117,8 +117,8 @@
 												</div>
 												<!-- Field wrapper end -->
 											</div>
-												
-												
+
+
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
 													<input class="form-control" type="email" placeholder="Masukan Email">
@@ -144,25 +144,25 @@
 												<form action="/" id="myDropzone" class="dropzone"></form>
 											</div>
 
-											
+
 										</div>
 												<!-- Field wrapper end -->
-										
-										
-											
-											
+
+
+
+
 											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 1%;">
-												
+
 												<div style="border-bottom: solid grey 1px;margin-bottom:1%;  margin-bottom: 2%; margin-top: 1%;">
 													<h6>Alamat</h6>
 													<p>Alamat tersebut akan digunakan dalam faktur, tagihan, dan catatan lain yang Anda keluarkan.</p>
 												</div>
 
 											</div>
-											
+
 
 											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-												
+
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
 													<textarea class="form-control" rows="2" placeholder="Masukan Alamat"></textarea>
@@ -175,7 +175,7 @@
 
 											</div>
 											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-												
+
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
 													<input class="form-control" type="text" placeholder="Masukan Kota">
@@ -185,7 +185,7 @@
 
 											</div>
 											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-												
+
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
 													<input class="form-control" type="number" placeholder="Masukan Kode Pos">
@@ -195,7 +195,7 @@
 
 											</div>
 											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-												
+
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
 													<input class="form-control" type="text" placeholder="Masukan Provinsi">
@@ -205,7 +205,7 @@
 
 											</div>
 											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-												
+
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
 													<input class="form-control" type="text" placeholder="Masukan Negara">
@@ -220,7 +220,7 @@
 													<button class="btn btn-primary" type="submit" style="border-radius: 2px">Simpan</button>
 												</div>
 											</div>
-											
+
 										</div>
 										<!-- Row end -->
 
@@ -267,7 +267,7 @@
 		<!-- Megamenu JS -->
 		<script src="{{ asset ("Gmbslagi/vendor/megamenu/js/megamenu.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/megamenu/js/custom.js")}}"></script>
-				
+
 		<!-- Slimscroll JS -->
 		<script src="{{ asset ("Gmbslagi/vendor/slimscroll/slimscroll.min.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/slimscroll/custom-scrollbar.js")}}"></script>
@@ -281,7 +281,7 @@
         <script src="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.js") }}"></script>
 		<script>
 			 Dropzone.options.myDropzone = {
-				maxFiles: 1, 
+				maxFiles: 1,
 				dictDefaultMessage: "Seret file di sini untuk mengunggah",
 				maxFilesize: 5 * 1024, // 5 MB
 
@@ -292,7 +292,7 @@
 					}
 				});
 				}
-				
+
 			};
 		  </script>
 

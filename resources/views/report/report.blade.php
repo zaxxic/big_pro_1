@@ -59,7 +59,7 @@
     <div class="page-wrapper">
 
         <!-- Sidebar wrapper start -->
-       @include('layouts.sidebar')
+        @include('layouts.sidebar')
 
         <!-- Sidebar wrapper end -->
 
@@ -69,7 +69,7 @@
         <div class="main-container" style="background-color: #FFFFFF;">
 
             <!-- Page header starts -->
-           @include('layouts.header')
+            @include('layouts.header')
             <!-- Page header ends -->
 
             <!-- Content wrapper scroll start -->
@@ -80,11 +80,11 @@
 
                     <!-- Row start -->
                     <div class="card-body">
-                    <div class="row gutters">
-                        <div class="col-xl-12">
-                            <!-- Card start -->
-                            <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
+                        <div class="row gutters">
+                            <div class="col-xl-12">
+                                <!-- Card start -->
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
                                         <div class="card-title">
                                             <h3>Laporan<button type="button" style="border: none; background:transparent;">☆</button></h3>
                                         </div>
@@ -97,55 +97,57 @@
                                         </div>
                                     </div>
 
-                            </div>
-                        <div class="row mt-5">
-                            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
-								<div class="sematkan">
-									<div class="sematkan-icon">
-                                        <i class="icon-pin" style="color: #D9D9D9;"></i>
-									</div>
-									<p>Sematkan laporan anda</p>
-								</div>
-							</div>
-							<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
-								<div class="sematkan">
-									<div class="sematkan-icon">
-                                        <i class="icon-pin" style="color: red;"></i>
-									</div>
-									<p>Sematkan laporan anda</p>
-								</div>
-							</div><div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
-								<div class="sematkan">
-									<div class="sematkan-icon">
-                                        <i class="icon-pin"></i>
-									</div>
-									<p>Sematkan laporan anda</p>
-								</div>
-							</div>
-							<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
-								<div class="sematkan">
-									<div class="sematkan-icon">
-                                        <i class="icon-pin"></i>
-									</div>
-									<p>Sematkan laporan anda</p>
-								</div>
-							</div><div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
-								<div class="sematkan">
-									<div class="sematkan-icon">
-                                        <i class="icon-pin"></i>
-									</div>
-									<p>Sematkan laporan anda</p>
-								</div>
-							</div>
-							<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
-								<div class="sematkan">
-									<div class="sematkan-icon">
-                                        <i class="icon-pin"></i>
-									</div>
-									<p>Sematkan laporan anda</p>
-								</div>
-							</div>
-                        </div>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
+                                        <div class="sematkan">
+                                            <div class="sematkan-icon">
+                                                <i class="icon-pin" style="color: #D9D9D9;"></i>
+                                            </div>
+                                            <p>Sematkan laporan anda</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
+                                        <div class="sematkan">
+                                            <div class="sematkan-icon">
+                                                <i class="icon-pin" style="color: red;"></i>
+                                            </div>
+                                            <p>Sematkan laporan anda</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
+                                        <div class="sematkan">
+                                            <div class="sematkan-icon">
+                                                <i class="icon-pin"></i>
+                                            </div>
+                                            <p>Sematkan laporan anda</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
+                                        <div class="sematkan">
+                                            <div class="sematkan-icon">
+                                                <i class="icon-pin"></i>
+                                            </div>
+                                            <p>Sematkan laporan anda</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
+                                        <div class="sematkan">
+                                            <div class="sematkan-icon">
+                                                <i class="icon-pin"></i>
+                                            </div>
+                                            <p>Sematkan laporan anda</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
+                                        <div class="sematkan">
+                                            <div class="sematkan-icon">
+                                                <i class="icon-pin"></i>
+                                            </div>
+                                            <p>Sematkan laporan anda</p>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="bg">
                                     <h5 class="mt-3">Pendapatan dan Pengeluaran</h5>
@@ -154,149 +156,161 @@
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                             <div class="ringkasan d-flex">
                                                 <div class="d-flex">
-                                                    <a href="show_report"> <div class="ringkasan-icon">
-                                                    <i class="icon-shopping-cart1"></i>
-                                                    </div>
-                                                    <div class="sale-details">
-                                                        <h5>Ringkasan Pengeluaran</h5></a>
-                                                        <p>Ringkasan pengeluaran bulanan</p>
-                                                    </div>
+                                                    <a href="show_report">
+                                                        <div class="ringkasan-icon">
+                                                            <i class="icon-shopping-cart1"></i>
+                                                        </div>
+                                                        <div class="sale-details">
+                                                            <h5>Ringkasan Pengeluaran</h5>
+                                                    </a>
+                                                    <p>Ringkasan pengeluaran bulanan</p>
                                                 </div>
-                                                <a href="" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical" ></a></a>
                                             </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                            <div class="ringkasan d-flex">
-                                                <div class="d-flex">
-                                                    <a href="show_report"> <div class="ringkasan-icon">
-                                                    <i class="icon-shopping-cart1"></i>
-                                                    </div>
-                                                    <div class="sale-details">
-                                                        <h5>Ringkasan Pengeluaran</h5></a>
-                                                        <p>Ringkasan pengeluaran bulanan</p>
-                                                    </div>
-                                                </div>
-                                                <a href="/calendar" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical" ></a></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                            <div class="ringkasan d-flex">
-                                                <div class="d-flex">
-                                                    <a href="show_report"> <div class="ringkasan-icon">
-                                                    <i class="icon-shopping-cart1"></i>
-                                                    </div>
-                                                    <div class="sale-details">
-                                                        <h5>Ringkasan Pengeluaran</h5></a>
-                                                        <p>Ringkasan pengeluaran bulanan</p>
-                                                    </div>
-                                                </div>
-                                                <a href="/calendar" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical" ></a></a>
-                                            </div>
-                                        </div>
-                                    <h5 class="mt-3">Akuntansi </h5>
-                                    <hr class="col-12">
-                                    <div class="row">
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                            <div class="ringkasan d-flex">
-                                                <div class="d-flex">
-                                                    <a href="show_report2"> <div class="ringkasan-icon">
-                                                    <i class="icon-shopping-cart1"></i>
-                                                    </div>
-                                                    <div class="sale-details">
-                                                        <h5>Ringkasan Pengeluaran</h5></a>
-                                                        <p>Ringkasan pengeluaran bulanan</p>
-                                                    </div>
-                                                </div>
-                                                <a href="/calendar" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical" ></a></a>
-                                            </div>
-                                        </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                            <div class="ringkasan d-flex">
-                                                <div class="d-flex">
-                                                    <a href="show_report2"> <div class="ringkasan-icon">
-                                                    <i class="icon-shopping-cart1"></i>
-                                                    </div>
-                                                    <div class="sale-details">
-                                                        <h5>Ringkasan Pengeluaran</h5></a>
-                                                        <p>Ringkasan pengeluaran bulanan</p>
-                                                    </div>
-                                                </div>
-                                                <a href="/calendar" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical" ></a></a>
-                                            </div>
-                                        </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                            <div class="ringkasan d-flex">
-                                                <div class="d-flex">
-                                                    <a href="show_report2"> <div class="ringkasan-icon">
-                                                    <i class="icon-shopping-cart1"></i>
-                                                    </div>
-                                                    <div class="sale-details">
-                                                        <h5>Ringkasan Pengeluaran</h5></a>
-                                                        <p>Ringkasan pengeluaran bulanan</p>
-                                                    </div>
-                                                </div>
-                                                <a href="/calendar" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical" ></a></a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
+                                            <a href="" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical"></a></a>
                                         </div>
                                     </div>
-
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="ringkasan d-flex">
+                                            <div class="d-flex">
+                                                <a href="show_report">
+                                                    <div class="ringkasan-icon">
+                                                        <i class="icon-shopping-cart1"></i>
+                                                    </div>
+                                                    <div class="sale-details">
+                                                        <h5>Ringkasan Pengeluaran</h5>
+                                                </a>
+                                                <p>Ringkasan pengeluaran bulanan</p>
+                                            </div>
+                                        </div>
+                                        <a href="/calendar" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical"></a></a>
+                                    </div>
                                 </div>
-                                <!-- Card end -->
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="ringkasan d-flex">
+                                        <div class="d-flex">
+                                            <a href="show_report">
+                                                <div class="ringkasan-icon">
+                                                    <i class="icon-shopping-cart1"></i>
+                                                </div>
+                                                <div class="sale-details">
+                                                    <h5>Ringkasan Pengeluaran</h5>
+                                            </a>
+                                            <p>Ringkasan pengeluaran bulanan</p>
+                                        </div>
+                                    </div>
+                                    <a href="/calendar" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical"></a></a>
+                                </div>
+                            </div>
+                            <h5 class="mt-3">Akuntansi </h5>
+                            <hr class="col-12">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="ringkasan d-flex">
+                                        <div class="d-flex">
+                                            <a href="show_report2">
+                                                <div class="ringkasan-icon">
+                                                    <i class="icon-shopping-cart1"></i>
+                                                </div>
+                                                <div class="sale-details">
+                                                    <h5>Ringkasan Pengeluaran</h5>
+                                            </a>
+                                            <p>Ringkasan pengeluaran bulanan</p>
+                                        </div>
+                                    </div>
+                                    <a href="/calendar" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical"></a></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="ringkasan d-flex">
+                                    <div class="d-flex">
+                                        <a href="show_report2">
+                                            <div class="ringkasan-icon">
+                                                <i class="icon-shopping-cart1"></i>
+                                            </div>
+                                            <div class="sale-details">
+                                                <h5>Ringkasan Pengeluaran</h5>
+                                        </a>
+                                        <p>Ringkasan pengeluaran bulanan</p>
+                                    </div>
+                                </div>
+                                <a href="/calendar" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical"></a></a>
                             </div>
                         </div>
-                        <!-- Row end -->
-
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="ringkasan d-flex">
+                                <div class="d-flex">
+                                    <a href="show_report2">
+                                        <div class="ringkasan-icon">
+                                            <i class="icon-shopping-cart1"></i>
+                                        </div>
+                                        <div class="sale-details">
+                                            <h5>Ringkasan Pengeluaran</h5>
+                                    </a>
+                                    <p>Ringkasan pengeluaran bulanan</p>
+                                </div>
+                            </div>
+                            <a href="/calendar" class="icon-pin" style="margin-left: auto;"> <a href="/" class="icon-more-vertical"></a></a>
+                        </div>
                     </div>
-                    </div>
-                    <!-- Content wrapper end -->
-
-                    <!-- App Footer start -->
-                    <div class="app-footer">© Uni Pro Admin 2021</div>
-                    <!-- App footer end -->
 
                 </div>
-                <!-- Content wrapper scroll end -->
 
             </div>
-            <!-- *************
+        </div>
+
+    </div>
+    <!-- Card end -->
+    </div>
+    </div>
+    <!-- Row end -->
+
+    </div>
+    </div>
+    <!-- Content wrapper end -->
+
+    <!-- App Footer start -->
+    <div class="app-footer">© Uni Pro Admin 2021</div>
+    <!-- App footer end -->
+
+    </div>
+    <!-- Content wrapper scroll end -->
+
+    </div>
+    <!-- *************
 				************ Main container end *************
 			************* -->
 
-        </div>
-        <!-- Page wrapper end -->
+    </div>
+    <!-- Page wrapper end -->
 
-        <!-- *************
+    <!-- *************
 			************ Required JavaScript Files *************
 		************* -->
-        <!-- Required jQuery first, then Bootstrap Bundle JS -->
-        <script src="{{ asset("Gmbslagi/js/jquery.min.js") }}"></script>
-        <script src="{{ asset("Gmbslagi/js/bootstrap.bundle.min.js") }}"></script>
-        <script src="{{ asset("Gmbslagi/js/modernizr.js") }}"></script>
-        <script src="{{ asset("Gmbslagi/js/moment.js") }}"></script>
+    <!-- Required jQuery first, then Bootstrap Bundle JS -->
+    <script src="{{ asset("Gmbslagi/js/jquery.min.js") }}"></script>
+    <script src="{{ asset("Gmbslagi/js/bootstrap.bundle.min.js") }}"></script>
+    <script src="{{ asset("Gmbslagi/js/modernizr.js") }}"></script>
+    <script src="{{ asset("Gmbslagi/js/moment.js") }}"></script>
 
-        <!-- *************
+    <!-- *************
 			************ Vendor Js Files *************
 		************* -->
 
-        <!-- Megamenu JS -->
-        <script src="{{ asset("Gmbslagi/vendor/megamenu/js/megamenu.js") }}"></script>
-        <script src="{{ asset("Gmbslagi/vendor/megamenu/js/custom.js") }}"></script>
+    <!-- Megamenu JS -->
+    <script src="{{ asset("Gmbslagi/vendor/megamenu/js/megamenu.js") }}"></script>
+    <script src="{{ asset("Gmbslagi/vendor/megamenu/js/custom.js") }}"></script>
 
-        <!-- Slimscroll JS -->
-        <script src="{{ asset("Gmbslagi/vendor/slimscroll/slimscroll.min.js") }}"></script>
-        <script src="{{ asset("Gmbslagi/vendor/slimscroll/custom-scrollbar.js") }}"></script>
+    <!-- Slimscroll JS -->
+    <script src="{{ asset("Gmbslagi/vendor/slimscroll/slimscroll.min.js") }}"></script>
+    <script src="{{ asset("Gmbslagi/vendor/slimscroll/custom-scrollbar.js") }}"></script>
 
-        <!-- Search Filter JS -->
-        <script src="{{ asset("Gmbslagi/vendor/search-filter/search-filter.js") }}"></script>
-        <script src="{{ asset("Gmbslagi/vendor/search-filter/custom-search-filter.js") }}"></script>
+    <!-- Search Filter JS -->
+    <script src="{{ asset("Gmbslagi/vendor/search-filter/search-filter.js") }}"></script>
+    <script src="{{ asset("Gmbslagi/vendor/search-filter/custom-search-filter.js") }}"></script>
 
-        <!-- Main Js Required -->
-        <script src="{{ asset("Gmbslagi/js/main.js") }}"></script>
-        <script src="{{ asset("Gmbslagi/js/report.js") }}"></script>
+    <!-- Main Js Required -->
+    <script src="{{ asset("Gmbslagi/js/main.js") }}"></script>
+    <script src="{{ asset("Gmbslagi/js/report.js") }}"></script>
 </body>
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/layout-tabs-tooltip.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:01:56 GMT -->

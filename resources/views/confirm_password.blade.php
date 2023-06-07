@@ -125,7 +125,7 @@
 										<div class="field-placeholder">Konfirmasi Kata Kunci</div>
 									</div>
 									<div class="actions">
-										<button type="submit" class="btn btn-primary">Daftar</button>
+										<button href="{{url('/')}}" type="submit" class="btn btn-primary">Daftar</button>
 									</div>
 								</div>
 							</div>

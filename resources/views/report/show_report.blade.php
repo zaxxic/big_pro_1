@@ -93,8 +93,8 @@
                     <div class="row gutters">
                         <div class="col-xl-12">
                             <!-- Card start -->
-                            <div class="">
-                                <div class="card-title">
+                            <div class="row">
+                                <div class="card-title mt-4">
                                     <div class="d-flex flex-wrap">
                                         <h1 class="card-title col-xl-11 col-lg-11 col-md-10 col-sm-8 col-8" style="font-size: 20px;">Ringkasan Pengeluaran <i class="icon-star2 " style="padding-left: 10px; font-size: 19px;"></i> </h1>
                                     </div>
