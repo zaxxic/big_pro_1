@@ -196,6 +196,7 @@ Route::get('transaksi', function () {
 //Users
 Route::get('/users',[UsersController::class,'usersindex'])->name('users-index');
 Route::get('/add_users',[UsersController::class,'add_users'])->name('add_users');
+Route::get('/edit_users',[UsersController::class,'edit_users'])->name('edit_users');
 //Users
 Route::get('/profile',[ProfileController::class,'profile'])->name('profile');
 // Route::get('invoice', )
