@@ -133,14 +133,14 @@
                         <div class="card-header col-12">
                             <div class="card-title ">
                                 <h3>Faktur: FKR-00002</h3>
-    
-    
+
+
                             </div>
                             <div class="badge-finish" style="text-align: center">Terima</div>
-    
+
                         </div>
                         <div class="d-flex row">
-    
+
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="card-body">
                                     <div class="alert alert-primary mb-5"
@@ -218,7 +218,7 @@
                                                                         dengan pelanggan Anda.</p>
                                                                     <p class="text-center">Pratinjau di jendela
                                                                         baru</p>
-    
+
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <div type="button" class="btn btn-danger"
@@ -363,10 +363,10 @@
                                         </div>
                                     </div>
                                     <!-- Faq end -->
-    
+
                                 </div>
                             </div>
-    
+
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
                                 <form
                                     action="https://www.kodingwife.com/demos/unipro/v1-x/05-desig4-violet/reports.html">
@@ -517,7 +517,7 @@
                                 </form>
                             </div>
                         </div>
-    
+
                     </div>
                 </div>
 
