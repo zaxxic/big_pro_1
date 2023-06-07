@@ -143,6 +143,35 @@
             outline: 1px solid #f26861;
         }
 
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            z-index: 1;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 4px;
+            right: 0;
+            /* Mengarahkan dropdown ke arah kiri */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 5px 0;
+            text-decoration: none;
+            color: #333;
+        }
+
         .lingkaran-warna1 {
 
             width: 15px;
@@ -184,10 +213,71 @@
 
         }
 
+        #myModal {
+            display: none;
+            /* Modal akan disembunyikan secara default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Warna latar belakang semi-transparan */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
         .icon-no {
             padding-top: 90px;
             font-size: 3rem;
         }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            z-index: 1;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 4px;
+            right: 0;
+            /* Mengarahkan dropdown ke arah kiri */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
 
         .button-container {
             display: flex;
@@ -353,12 +443,16 @@
                                         <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-12 button-container" style="margin-left: 17%; justify-items: center; justify-content: end;">
                                             <div class="graph-day-selection" role="group" style="margin-right: 3%;">
                                                 <a href="http://127.0.0.1:8000/add_income">
-                                                    <button type="button" class="btn active" style="background: transparent; "><div style="color: #5957b1;"> Tambah Pendapatan</div></button>
+                                                    <button type="button" class="btn active" style="background: transparent; ">
+                                                        <div style="color: #5957b1;"> Tambah Pendapatan</div>
+                                                    </button>
                                                 </a>
                                             </div>
                                             <div class="graph-day-selection" role="group" style="margin-right: 3%;">
                                                 <a href="http://127.0.0.1:8000/add_expenditure">
-                                                    <button type="button" class="btn active" style="background: transparent"><div style="color: #5957b1;">Tambah Pengeluaran</div></button>
+                                                    <button type="button" class="btn active" style="background: transparent">
+                                                        <div style="color: #5957b1;">Tambah Pengeluaran</div>
+                                                    </button>
                                                 </a>
                                             </div>
                                             <div class="dropdown">
@@ -512,6 +606,7 @@
 
                                             <thead>
                                                 <tr>
+
                                                     <th scope="col"> <input type="checkbox" id="select-all-checkbox"></th>
                                                     <th scope="col">Tanggal</th>
                                                     <th scope="col">Nomor</th>
@@ -520,6 +615,7 @@
                                                     <th></th>
 
                                                     <th scope="col">Akun</th>
+                                                    <th scope="col">Dokumen</th>
                                                     <th scope="col">Jumlah</th>
                                                     <th scope="col">Aksi</th>
                                                 </tr>
@@ -537,6 +633,7 @@
                                                     </td>
                                                     <td></td>
                                                     <td>Naura Dewi</td>
+                                                    <td>N/A</td>
                                                     <td>Rp900.000.000</td>
                                                     <th>
                                                         <div class="menu-icons" style="font-size: 15px;">
@@ -546,6 +643,12 @@
                                                         </div>
                                                     </th>
                                                 </tr>
+                                                <!-- <div id="myModal">
+                                                    <div class="modal-content">
+                                                        <span class="close">&times;</span>
+                                                        <p>Isi modal di sini...</p>
+                                                    </div>
+                                                </div> -->
                                                 <tr>
                                                     <td name="item" id="checkbox2"><input type="checkbox" class="other-checkbox"></td>
                                                     <td>13 Mei 2023</th>
@@ -558,6 +661,7 @@
                                                     </td>
                                                     <td></td>
                                                     <td>Bpk Yanto</td>
+                                                    <td>N/A</td>
                                                     <td>Rp700.000.000</td>
                                                     <th>
                                                         <div class="menu-icons" style="font-size: 15px;">
@@ -567,7 +671,7 @@
                                                         </div>
                                                     </th>
                                                 </tr>
-                                                <tr>
+                                                <tr id="myButton">
                                                     <td name="item" id="checkbox3"><input type="checkbox" class="other-checkbox"></td>
                                                     <td>23 Mei 2023</th>
                                                     <td>TRA-00039</td>
@@ -579,6 +683,26 @@
                                                     </td>
                                                     <td></td>
                                                     <td>Ugud Budiman</td>
+                                                    <td class="empty-box"><a href="{{url('details')}}">FKR-00002</a>
+                                                        <span>
+                                                            <div class="dropdown-content">
+                                                                <a href="#">
+                                                                    <button type="button" style="border: none; background:none; color:#333; background:transparent" data-bs-toggle="modal" data-bs-target="#payment" class="icon-attach_money">
+                                                                        Bayar
+                                                                    </button>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-printer">
+                                                                        Cetak
+                                                                    </button>
+                                                                </a>
+                                                                <a href="#" class="icon-x-circle" style="color: #333">
+                                                                    <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
+                                                                        Batal</button>
+                                                                </a>
+                                                            </div>
+                                                        </span>
+                                                    </td>
                                                     <td>Rp200.000.000</td>
                                                     <th>
                                                         <div class="menu-icons" style="font-size: 15px;">
@@ -588,6 +712,12 @@
                                                         </div>
                                                     </th>
                                                 </tr>
+                                                <div id="myModal">
+                                                    <div class="modal-content">
+                                                        <span class="close">&times;</span>
+                                                        <p>Isi modal di sini...</p>
+                                                    </div>
+                                                </div>
                                                 <tr>
                                                     <td name="item" id="checkbox4"><input type="checkbox" class="other-checkbox"></td>
                                                     <td>34 Mei 2023</th>
@@ -600,6 +730,26 @@
                                                     </td>
                                                     <td></td>
                                                     <td>Louis Gunawan</td>
+                                                    <td class="empty-box"><a href="{{url('bill_detail')}}">TGH-00002</a>
+                                                        <span>
+                                                            <div class="dropdown-content">
+                                                                <a href="#">
+                                                                    <button type="button" style="border: none; background:none; color:#333; background:transparent" data-bs-toggle="modal" data-bs-target="#payment" class="icon-attach_money">
+                                                                        Bayar
+                                                                    </button>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-printer">
+                                                                        Cetak
+                                                                    </button>
+                                                                </a>
+                                                                <a href="#" class="icon-x-circle" style="color: #333">
+                                                                    <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
+                                                                        Batal</button>
+                                                                </a>
+                                                            </div>
+                                                        </span>
+                                                    </td>
                                                     <td>Rp1.000.000.000</td>
                                                     <th>
                                                         <div class="menu-icons" style="font-size: 15px;">
@@ -621,6 +771,7 @@
                                                     </td>
                                                     <td></td>
                                                     <td>Melati Handoko</td>
+                                                    <td>N/A</td>
                                                     <td>Rp1.000.000.000</td>
                                                     <th>
                                                         <div class="menu-icons" style="font-size: 15px;">
@@ -799,6 +950,24 @@
 
                     updateCountDisplay(); // Update the count display
                 });
+
+                // Ambil elemen-elemen yang diperlukan
+                var modal = document.getElementById("myModal");
+                var button = document.getElementById("myButton");
+                var close = document.getElementsByClassName("close")[0];
+
+                // Tambahkan event listener saat tombol di hover
+                button.addEventListener("mouseover", function() {
+                    modal.style.display = "block"; // Tampilkan modal saat di hover
+                });
+                button.addEventListener("mouseleave", function() {
+                    modal.style.display = "none"; // Tampilkan modal saat di hover
+                });
+
+                // Tambahkan event listener saat tombol ditutup
+                // close.addEventListener("click", function() {
+                //     modal.style.display = "none"; 
+                // });
             </script>
 
 

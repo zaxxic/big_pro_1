@@ -3599,7 +3599,7 @@ ul.statistics li .stat-icon i {
 }
 
 .product-card .product-card-body {
-    padding: 1rem 1rem;
+    padding: -1rem 1rem;
     position: relative;
 }
 
