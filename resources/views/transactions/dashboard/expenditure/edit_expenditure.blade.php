@@ -128,7 +128,7 @@
     </style>
 </head>
 
-<body>
+<body style="overflow-x: hidden">
 
     <!-- Page wrapper start -->
     <div class="page-wrapper">
@@ -348,7 +348,6 @@
                                                 <button class="btn btn-primary" type="submit" style="border-radius: 2px">Simpan</button>
                                             </div>
                                         </div>
-                                    </div>
                                         
 
 
@@ -359,7 +358,7 @@
                                     <!-- Modal account start -->
                                     <form action="">
                                     <div class="modal fade" id="modalaccount" tabindex="-1" aria-labelledby="modalaccount" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable my-auto">
                                             <div class="modal-content" style="padding: 0px">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Tambah Akun</h5>
@@ -441,7 +440,7 @@
                                     <!-- Modal category start -->
                                     <form action="">
                                     <div class="modal fade" id="modalcategory" tabindex="-1" aria-labelledby="modalcategory" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"  style="margin-top: -20px;">
                                             <div class="modal-content" style="padding: 0px">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Tambah Kategori</h5>
@@ -491,7 +490,7 @@
                                     <!-- Modal supplier start -->
                                     <form action="">
                                     <div class="modal fade" id="modalsupplier" tabindex="-1" aria-labelledby="modalsupplier" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="margin-top: -20px;">
                                             <div class="modal-content" style="padding: 0px">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Tambah Pemasok</h5>
