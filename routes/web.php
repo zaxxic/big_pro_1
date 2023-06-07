@@ -66,6 +66,9 @@ Route::get('confirm_password', function () {
 Route::get('add_company', function () {
     return view('add_company');
 });
+Route::get('import', function () {
+    return view('import');
+});
 Route::get('/itemindex',[ItemController::class,'itemindex'])->Name('item-index');
 Route::get('/add-item',[ItemController::class,'additem'])->Name('item-add');
 Route::get('/edit-item',[ItemController::class,'edititem'])->Name('item-edit');

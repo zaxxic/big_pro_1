@@ -9739,7 +9739,7 @@ label {
         .btn-outline-secondary1:hover {
             background-color: #f8f9fa; /* Ubah warna latar belakang saat hover */
             color: #6c757d; /* Ubah warna teks saat hover */
-           
+
           }
           .btn-outline-secondary1:focus {
             outline: none; /* Menghapus outline bawaan pada elemen saat mendapatkan focus */
@@ -9832,4 +9832,3 @@ label {
             -webkit-box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
             box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
         }
-      
