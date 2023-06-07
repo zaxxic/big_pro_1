@@ -143,7 +143,7 @@
 										<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12" style="margin-top:-1%">
 											<!-- Field wrapper start -->
 											<div id="dropzone">
-												<label for="judul" class="field-label">Gambar <span class="text-danger">*</span></label>
+												<label for="judul" class="field-label">Foto<span class="text-danger">*</span></label>
 												<form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
 													<div class="dz-message needsclick">
 														<button type="button" class="dz-button">Seret berkas disini untuk mengunggah</button><br>
@@ -259,7 +259,7 @@
 													<option>Italiano</option>
 
                                                 </select>
-                                                <div class="field-placeholder">Halaman Muka<span class="text-danger">*</span></div>
+                                                <div class="field-placeholder">Bahasa<span class="text-danger">*</span></div>
                                             </div>
 
 											<!-- Field wrapper end -->
