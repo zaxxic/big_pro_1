@@ -233,16 +233,12 @@
                                             </div>
                                             <div class="row">
                                                 <div class="field-wrapper mb-3 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12" style="margin-left: initial;height: 76px;margin-right: -1%;">
-                                                  <label for="judul" class="field-label">Pelanggan <span class="text-danger">*</span></label>
-                                                  <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?" style="height: 118px">
-                                                    <option>Rudi</option>
-                                                    <option selected>Ruli</option>
-                                                    <option>Adi</option>
-                                                    <option>Daffa</option>
-                                                    <option>Gembes</option>
-                                                    <option>Reno</option>
-                                                    <option>Triski</option>
-                                                  </select>                                                  
+                                                  <label for="nama">Nama Item</label>
+                                                  <select class="select-single js-states" title="Select Product Category" data-live-search="true">
+                                                    <option>Item</option>
+                                                    <option>Layanan</option>
+                                                    <option>Produk</option>
+                                                  </select>                                              
                                                 </div>
                                                 <div  class=" col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 d-flex">
                                                   <div class="col-6 ml-5 mr-5" style="margin-right:1%">
