@@ -858,6 +858,8 @@
         });
     </script>
     <script>
+        $('#pills-profile-tab').click()
+            $('#pills-home-tab').click()
         function toggleCheckbox() {
             var checkboxes = document.querySelectorAll('input[type="checkbox"]');
             var selectAllCheckbox = document.getElementById('select-all');
