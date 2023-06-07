@@ -434,8 +434,6 @@
                                             </li>
                                             <li><a class="dropdown-item-bt" href="{{ url('ad_income') }}">Hapus</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Cetak</a></li>
-                                            <li><a class="dropdown-item" href="#">Unduh PDF</a></li>
                                         </ul>
                                     </div>
                                 </div>
