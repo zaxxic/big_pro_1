@@ -188,7 +188,7 @@
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control datepicker">
+                                                    <input type="text" style="z-index:auto" class="form-control datepicker">
                                                     <span class="input-group-text">
                                                         <i class="icon-calendar1"></i>
                                                     </span>

@@ -160,7 +160,7 @@
                             <div class="" style="">
                                 <div class="row">
                                     <div class="card-title">
-                                        <h3>Sunting Pengeluaran<button type="button" style="border: none; background:none;">☆</button></h3>
+                                        <h3>Tambah Pengeluaran<button type="button" style="border: none; background:none;">☆</button></h3>
                                     </div>
                                 </div>
                                 <div class="">
@@ -188,7 +188,7 @@
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control datepicker">
+                                                    <input type="text" style="z-index:auto" class="form-control datepicker">
                                                     <span class="input-group-text">
                                                         <i class="icon-calendar1"></i>
                                                     </span>
@@ -358,7 +358,7 @@
                                     <!-- Modal account start -->
                                     <form action="">
                                     <div class="modal fade" id="modalaccount" tabindex="-1" aria-labelledby="modalaccount" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable my-auto">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="margin-top: -20px;">
                                             <div class="modal-content" style="padding: 0px">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Tambah Akun</h5>
@@ -490,7 +490,7 @@
                                     <!-- Modal supplier start -->
                                     <form action="">
                                     <div class="modal fade" id="modalsupplier" tabindex="-1" aria-labelledby="modalsupplier" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="margin-top: -20px;">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                             <div class="modal-content" style="padding: 0px">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Tambah Pemasok</h5>
