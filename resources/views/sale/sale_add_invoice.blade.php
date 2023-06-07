@@ -206,12 +206,12 @@
                                                         <div class="d-flex align-items-center">
                                                           <div class="flex-grow-1 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-8" style="margin-bottom: 15%">
                                                             <div class="field-wrapper">
-                                                              <label for="judul" class="field-label">Judul <span class="text-danger">*</span></label>
                                                               <input class="form-control" type="text" id="judul" placeholder="Masukkan Judul" style="border-radius: 2px; margin-bottom: 10px;">
+                                                              <div class="field-placeholder">Judul <span class="text-danger">*</span></div>
                                                             </div>
                                                             <div class="field-wrapper">
-                                                              <label for="subjudul" class="field-label">Subjudul <span class="text-danger">*</span></label>
                                                               <input class="form-control" type="text" id="subjudul" placeholder="Masukkan Subjudul" style="border-radius: 2px; margin-bottom: 10px;">
+                                                              <div class="field-placeholder">Subjudul <span class="text-danger">*</span></div>
                                                             </div>
                                                           </div>
                                                         </div>
@@ -243,8 +243,8 @@
                                           </div>
                                             </div>
                                             <div class="row">
+                                              <label for="judul" class="field-label">Pelanggan<span class="text-danger">*</span></label>
                                                 <div class="field-wrapper mb-3 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12" style="margin-left: initial;height: 76px;margin-right: -1%;">
-                                                  <label for="judul" class="field-label">Pelanggan <span class="text-danger">*</span></label>
                                                   <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?" style="height: 118px">
                                                     <option>Rudi</option>
                                                     <option selected>Ruli</option>
@@ -253,16 +253,15 @@
                                                     <option>Gembes</option>
                                                     <option>Reno</option>
                                                     <option>Triski</option>
-                                                  </select>                                                  
+                                                  </select>                                               
                                                 </div>
                                                 <div  class=" col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 d-flex">
                                                   <div class="col-6 ml-5 mr-5" style="margin-right:1%">
                                                   <div class="field-wrapper mb-3">
-                                                    <label for="judul" class="field-label">Tanggal Faktur</label>
                                                     <input class="form-control datepicker" type="text">
+                                                    <div class="field-placeholder">Tanggal Faktur</div>
                                                   </div>
                                                     <div class="field-wrapper mb-3">
-                                                    <label for="judul" class="field-label">Tanggal Pembayaran<span class="text-danger">*</span></label>
                                                     <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?">
                                                       <option selected>Jatuh tempo dalam 15 hari</option>
                                                       <option>Jatuh tempo dalam 30 hari</option>
@@ -270,17 +269,18 @@
                                                       <option>Jatuh tempo dalam 60 hari</option>
                                                       <option>Jatuh tempo dalam 90 hari</option>
                                                       <option>Jatuh tempo saat diterima</option>
-                                                    </select>                                                  
+                                                    </select>         
+                                                    <div class="field-placeholder">Tanggal Pembayaran <span class="text-danger">*</span></div>                                         
                                                   </div>
                                                   </div>
                                                   <div class="col-6">
                                                   <div class="field-wrapper mb-3">
-                                                    <label for="judul" class="field-label">Nomor Faktur </label>
                                                     <input class="form-control" type="number" placeholder="Masukkan Nomor Faktur">
+                                                    <div class="field-placeholder">Nomor Faktur</div>
                                                   </div>
                                                   <div class="field-wrapper mb-3">
-                                                    <label for="judul" class="field-label">Jumlah Pesanan </label>
                                                     <input class="form-control" type="number" placeholder="Masukkan Jumlah Pesanan">
+                                                    <div class="field-placeholder">Jumlah Pesanan</div>
                                                   </div>
                                                   </div> 
                                                 </div>
@@ -522,6 +522,7 @@
                                                     </div>
                                                   </div>
                                                   <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 mt-5">
+                                                    <label for="judul" class="field-label">Kategori <span class="text-danger">*</span></label>
                                                         <select id="dropdown2" class="demo-code-language" placeholder="Select a language..." autocomplete="off">
                                                           <option value="txt">Text</option>
                                                           <option value="md">Markdown</option>

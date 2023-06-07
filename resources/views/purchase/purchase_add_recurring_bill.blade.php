@@ -196,26 +196,32 @@
                                   </div>
                                   <div class="row">
                                       <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12" style="margin-bottom: 1%;">
-                                          <div class="field-wrapper mb-3">
-                                              <label for="judul" class="field-label">Pemasok <span class="text-danger">*</span></label>
-                                              <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?" style="height: 118px">
-                                                  <option>Rudi</option>
-                                                  <option selected>Ruli</option>
-                                                  <option>Adi</option>
-                                                  <option>Daffa</option>
-                                                  <option>Gembes</option>
-                                                  <option>Reno</option>
-                                                  <option>Triski</option>
-                                              </select>
-                                          </div>
+                                        <div class="field-wrapper">
+                                            <select class="select-single js-states" title="Select Product Category" data-live-search="true">
+                                                <option>Mobiles</option>
+                                                <option selected>Books</option>
+                                                <option>Clothing</option>
+                                                <option>Electronics</option>
+                                                <option>Food</option>
+                                                <option>Games</option>
+                                                <option>Gifts</option>
+                                                <option>Laptops</option>
+                                                <option>Mobiles</option>
+                                                <option>Music</option>
+                                                <option>Office</option>
+                                                <option>Pharmacy</option>
+                                                <option>Sports</option>
+                                                <option>Toys</option>
+                                            </select>
+                                            <div class="field-placeholder">Pemasok</div>
+                                        </div>
                                       </div>
                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12" style="margin-bottom: 1%;">
                                           <div class="field-wrapper mb-3">
-                                              <label for="judul" class="field-label">Tanggal Tagihan</label>
                                               <input class="form-control datepicker" type="text">
+                                              <div class="field-placeholder">Tanggal Tagihan</div>
                                           </div>
                                           <div class="field-wrapper mb-3">
-                                              <label for="judul" class="field-label">Tanggal Pembayaran<span class="text-danger">*</span></label>
                                               <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?">
                                                   <option selected>Jatuh tempo dalam 15 hari</option>
                                                   <option>Jatuh tempo dalam 30 hari</option>
@@ -224,16 +230,17 @@
                                                   <option>Jatuh tempo dalam 90 hari</option>
                                                   <option>Jatuh tempo saat diterima</option>
                                               </select>
+                                              <div class="field-placeholder">Tanggal Pembayaran <span class="text-danger">*</span></div>
                                           </div>
                                       </div>
                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                                           <div class="field-wrapper mb-3">
-                                              <label for="judul" class="field-label">Nomor Faktur </label>
                                               <input class="form-control" type="text" placeholder="Masukkan Nomor Faktur">
+                                              <div class="field-placeholder">Nomor Faktur</div>
                                           </div>
                                           <div class="field-wrapper mb-3">
-                                              <label for="judul" class="field-label">Nomor Pesanan </label>
                                               <input class="form-control" type="text" placeholder="Masukkan Jumlah Pesanan">
+                                              <div class="field-placeholder">Nomor Pesanan</div>
                                           </div>
                                       </div>
                               
@@ -583,9 +590,7 @@
                                                                     placeholder="Kategori baru" autocomplete="off">
                                                                     <option value="Lainya" selected>Lainya</option>
                                                                     <option value="Beli Web">Beli Web</option>
-                                                                    <option
-                                                                        value="Bulanan">
-                                                                        Bulanan</option>
+                                                                    <option value="Bulanan">Bulanan</option>
                                                                 </select>
                                                             </div>
                                                         </div>

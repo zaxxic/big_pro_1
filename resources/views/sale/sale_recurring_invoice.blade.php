@@ -102,7 +102,8 @@
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             padding: 10px;
             border-radius: 4px;
-            right: 0; /* Mengarahkan dropdown ke arah kiri */
+            right: 25px;
+            bottom: -25px; /* Mengarahkan dropdown ke arah kiri */
         }
 
         .dropdown:hover .dropdown-content {
