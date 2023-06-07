@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="img/fav.png">
 
     <!-- Title -->
-    <title>Unknown | Transfer</title>
+    <title>Unknown | Resi</title>
 
 
     <!-- *************
@@ -204,7 +204,7 @@
                                     <div class="row">
                                         <div class="col-xl-11 col-lg-11 col-md-11 col-sm-2 col-12" style="margin-bottom: 2%;">
                                             <div class="card-title">
-                                                <h3>Pendapatan<button type="button" style="border: none; background:none;">☆</button></h3>
+                                                <h3>Resi<button type="button" style="border: none; background:none;">☆</button></h3>
                                             </div>
                                         </div>
                                         <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-12">
