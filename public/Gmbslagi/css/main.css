@@ -1184,7 +1184,7 @@ p {
   .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
+    padding: 0px;
     border: 1px solid #888;
     width: 80%;
     max-width: 400px;
@@ -2790,7 +2790,6 @@ ul.customer-rating li:last-child {
     border: 0;
     color: #111111;
     background: transparent;
-    border-radius: 30px;
 }
 
 .graph-day-selection .btn.active {
@@ -9778,7 +9777,6 @@ label {
             background-color: #DFDFDF;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             padding: 10px;
-            border-radius: 4px;
             right: 0;
             /* Mengarahkan dropdown ke arah kiri */
         }
@@ -9833,4 +9831,7 @@ label {
             outline: 0;
             -webkit-box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
             box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
+        }
+        .modal-dialog{
+            margin-top: 16% !important;
         }

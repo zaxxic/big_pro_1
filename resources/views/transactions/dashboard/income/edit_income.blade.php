@@ -128,7 +128,7 @@
     </style>
 </head>
 
-<body>
+<body style="overflow-x: hidden">
 
     <!-- Page wrapper start -->
     <div class="page-wrapper">
@@ -341,7 +341,6 @@
                                             <!-- Field wrapper end -->
 
                                         </div>
-
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
                                             <div class="d-flex justify-content-end mt-4">
                                                 <button class="btn btn-outline-secondary1" type="submit" style="border-radius: 2px; margin-right: 1%" href="#">Batal</button>
@@ -360,7 +359,7 @@
                                 <form action="">
                                 <div class="modal fade" id="modalaccount" tabindex="-1" aria-labelledby="modalaccount" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="margin-top: -20px;">
-                                        <div class="modal-content" style="padding: 0px;">
+                                        <div class="modal-content" style="padding: 0px; ">
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Tambah Akun</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -434,156 +433,6 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    </form>
-                                    <!-- Modal account end -->
-
-                                    <!-- Modal category start -->
-                                    <form action="">
-                                    <div class="modal fade" id="modalcategory" tabindex="-1" aria-labelledby="modalcategory" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="margin-top: -20px;">
-                                            <div class="modal-content" style="padding: 0px;">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Tambah Kategori</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukkan Nama Kategori">
-                                                            <div class="field-placeholder">Nama<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
-
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <div class="d-flex">
-                                                                <input class="form-control" type="text" placeholder="Masukkan Warna">
-                                                                <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
-                                                            </div>
-                                                            <div class="field-placeholder">Warna<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-
-                                                    </div>
-
-
-
-
-
-
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Simpan</button>
-                                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </form>
-                                    <!-- Modal category end -->
-
-                                    <!-- Modal customer start -->
-                                    <form action="">
-                                    <div class="modal fade" id="modalcustomer" tabindex="-1" aria-labelledby="modalcustomer" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="margin-top: -20px;">
-                                            <div class="modal-content" style="padding: 0px;">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Tambah Pelanggan</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukkan Nama Pelanggan">
-                                                            <div class="field-placeholder">Nama<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
-
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="email" placeholder="Masukkan E-mail Pelanggan">
-                                                            <div class="field-placeholder">Email<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
-
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukkan Nomor Telepone Pelanggan">
-                                                            <div class="field-placeholder">Telepone<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
-
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukkan NPWP Pelanggan">
-                                                            <div class="field-placeholder">NPWP<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
-
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukkan Mata Uang Pelanggan">
-                                                            <div class="field-placeholder">Mata Uang<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
-
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukkan Negara Pelanggan">
-                                                            <div class="field-placeholder">Negara<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
-
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <textarea class="form-control1" rows="2" placeholder="Masukkan Alamat Pelanggan"></textarea>
-                                                            <div class="field-placeholder">Alamat<span class="text-danger">*</span></div>
-
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-
-                                                    </div>
-
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Simpan</button>
-                                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </form>
-                                    <!-- Modal customer end -->
-
-
-                                    <!-- Row end -->
-
                                 </div>
                                 </form>
                                 <!-- Modal account end -->
@@ -642,7 +491,7 @@
                                 <form action="">
                                 <div class="modal fade" id="modalcustomer" tabindex="-1" aria-labelledby="modalcustomer" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="margin-top: -20px;">
-                                        <div class="modal-content" style="padding: 0px;">
+                                        <div class="modal-content" style="padding: 0px;" >
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Tambah Pelanggan</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -662,7 +511,7 @@
 
                                                     <!-- Field wrapper start -->
                                                     <div class="field-wrapper">
-                                                        <input class="form-control" type="text" placeholder="Masukkan E-mail Pelanggan">
+                                                        <input class="form-control" type="email" placeholder="Masukkan E-mail Pelanggan">
                                                         <div class="field-placeholder">Email<span class="text-danger">*</span></div>
                                                     </div>
                                                     <!-- Field wrapper end -->

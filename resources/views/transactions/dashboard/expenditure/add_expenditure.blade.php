@@ -490,7 +490,7 @@
                                     <!-- Modal supplier start -->
                                     <form action="">
                                     <div class="modal fade" id="modalsupplier" tabindex="-1" aria-labelledby="modalsupplier" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="margin-top: -20px;">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                             <div class="modal-content" style="padding: 0px">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Tambah Pemasok</h5>

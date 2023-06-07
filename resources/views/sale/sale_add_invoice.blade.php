@@ -37,6 +37,7 @@
 
 		<!-- Mega Menu -->
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/megamenu/css/megamenu.css")}}">
+    <link rel="stylesheet" href="{{ asset("Gmbslagi/vendor/bs-select/bs-select.css") }}" />
 
 		<!-- Search Filter JS -->
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/search-filter/search-filter.css")}}">
@@ -45,6 +46,16 @@
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/daterange/daterange.css")}}">
         <style>
 
+.edit-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.edit-icon svg {
+  height: 20px;
+  width: 20px;
+}
 
         .toggle-container {
       display: flex;
@@ -195,12 +206,12 @@
                                                         <div class="d-flex align-items-center">
                                                           <div class="flex-grow-1 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-8" style="margin-bottom: 15%">
                                                             <div class="field-wrapper">
-                                                              <label for="judul" class="field-label">Judul <span class="text-danger">*</span></label>
                                                               <input class="form-control" type="text" id="judul" placeholder="Masukkan Judul" style="border-radius: 2px; margin-bottom: 10px;">
+                                                              <div class="field-placeholder">Judul <span class="text-danger">*</span></div>
                                                             </div>
                                                             <div class="field-wrapper">
-                                                              <label for="subjudul" class="field-label">Subjudul <span class="text-danger">*</span></label>
                                                               <input class="form-control" type="text" id="subjudul" placeholder="Masukkan Subjudul" style="border-radius: 2px; margin-bottom: 10px;">
+                                                              <div class="field-placeholder">Subjudul <span class="text-danger">*</span></div>
                                                             </div>
                                                           </div>
                                                         </div>
@@ -232,8 +243,8 @@
                                           </div>
                                             </div>
                                             <div class="row">
+                                              <label for="judul" class="field-label">Pelanggan<span class="text-danger">*</span></label>
                                                 <div class="field-wrapper mb-3 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12" style="margin-left: initial;height: 76px;margin-right: -1%;">
-                                                  <label for="judul" class="field-label">Pelanggan <span class="text-danger">*</span></label>
                                                   <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?" style="height: 118px">
                                                     <option>Rudi</option>
                                                     <option selected>Ruli</option>
@@ -242,16 +253,15 @@
                                                     <option>Gembes</option>
                                                     <option>Reno</option>
                                                     <option>Triski</option>
-                                                  </select>                                                  
+                                                  </select>                                               
                                                 </div>
                                                 <div  class=" col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 d-flex">
                                                   <div class="col-6 ml-5 mr-5" style="margin-right:1%">
                                                   <div class="field-wrapper mb-3">
-                                                    <label for="judul" class="field-label">Tanggal Faktur</label>
                                                     <input class="form-control datepicker" type="text">
+                                                    <div class="field-placeholder">Tanggal Faktur</div>
                                                   </div>
                                                     <div class="field-wrapper mb-3">
-                                                    <label for="judul" class="field-label">Tanggal Pembayaran<span class="text-danger">*</span></label>
                                                     <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?">
                                                       <option selected>Jatuh tempo dalam 15 hari</option>
                                                       <option>Jatuh tempo dalam 30 hari</option>
@@ -259,17 +269,18 @@
                                                       <option>Jatuh tempo dalam 60 hari</option>
                                                       <option>Jatuh tempo dalam 90 hari</option>
                                                       <option>Jatuh tempo saat diterima</option>
-                                                    </select>                                                  
+                                                    </select>         
+                                                    <div class="field-placeholder">Tanggal Pembayaran <span class="text-danger">*</span></div>                                         
                                                   </div>
                                                   </div>
                                                   <div class="col-6">
                                                   <div class="field-wrapper mb-3">
-                                                    <label for="judul" class="field-label">Nomor Faktur </label>
                                                     <input class="form-control" type="number" placeholder="Masukkan Nomor Faktur">
+                                                    <div class="field-placeholder">Nomor Faktur</div>
                                                   </div>
                                                   <div class="field-wrapper mb-3">
-                                                    <label for="judul" class="field-label">Jumlah Pesanan </label>
                                                     <input class="form-control" type="number" placeholder="Masukkan Jumlah Pesanan">
+                                                    <div class="field-placeholder">Jumlah Pesanan</div>
                                                   </div>
                                                   </div> 
                                                 </div>
@@ -282,7 +293,14 @@
                                                   <table class="table table-borderless">
                                                     <thead>
                                                       <tr>
-                                                        <th>Item</th>
+                                                        <th>
+                                                          <button class="edit-icon" style="background-color: transparent;border:none" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20">
+                                                              <path d="M180-180h44l443-443-44-44-443 443v44Zm614-486L666-794l42-42q17-17 42-17t42 17l44 44q17 17 17 42t-17 42l-42 42Zm-42 42L248-120H120v-128l504-504 128 128Zm-107-21-22-22 44 44-22-22Z"/>
+                                                            </svg>
+                                                          </button>
+                                                          Item
+                                                        </th>
                                                         <th>Deskripsi</th>
                                                         <th>Kuantitas</th>
                                                         <th>Harga</th>
@@ -290,6 +308,8 @@
                                                         <th>Pajak</th>
                                                         <th>Actions</th>
                                                       </tr>
+                                                      
+                                                      
                                                     </thead>
                                                     <tbody id="table-body">
                                                       <tr>
@@ -413,6 +433,54 @@
                                                     </div>
                                                   </div>
                                                   <!-- Modal end -->
+                                                  <!-- Modal start -->
+                                                  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content" style="margin-top: -20%;">
+                                                    <div class="modal-header" style="margin-bottom: -1%">
+                                                        <h5 class="modal-title" id="exampleModalLabel" >Edit Kolom</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <form>
+                                                         <div class="field-wrapper m-0">
+                                                          <label for="nama">Nama Item</label>
+                                                            <select class="select-single js-states" title="Select Product Category" data-live-search="true">
+                                                              <option>Item</option>
+                                                              <option>Layanan</option>
+                                                              <option>Produk</option>
+                                                            </select>
+                                                          
+                                                         </div>
+<!--  -->                                                  <div class="field-wrapper m-0">
+                                                          <label for="nama">Nama Harga</label>
+                                                          <select class="select-single js-states" title="Select Product Category" data-live-search="true">
+                                                            <option>Harga</option>
+                                                            <option>Tarif</option>
+                                                          </select>
+
+                                                        </div>
+                                                        <label for="nama">Nama Kuantitas</label>
+                                                        <div class="field-wrapper m-0" style="display: flex; flex-direction: row;">
+                                                          <select class="select-single js-states" title="Select Product Category" onchange="showInputField(this)">
+                                                            <option>Kuantitas</option>
+                                                            <option>Khusus</option>
+                                                          </select>
+                                                          <div id="customInput" style="display: none; margin-left: 10px;">
+                                                            <input type="text" class="" placeholder="Masukan">
+                                                          </div>
+                                                        </div>
+                                                        
+                                                          
+                                                        </form>
+                                                      </div>
+                                                      <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                      </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!-- Modal end -->
                                                   </div>
                                               </div>
                                             </div>
@@ -454,6 +522,7 @@
                                                     </div>
                                                   </div>
                                                   <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 mt-5">
+                                                    <label for="judul" class="field-label">Kategori <span class="text-danger">*</span></label>
                                                         <select id="dropdown2" class="demo-code-language" placeholder="Select a language..." autocomplete="off">
                                                           <option value="txt">Text</option>
                                                           <option value="md">Markdown</option>
@@ -546,10 +615,24 @@
 
 		<!-- Main Js Required -->
 		<script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
+    	<!-- Bootstrap Select JS -->
+		<script src="{{ asset("Gmbslagi/vendor/bs-select/bs-select.min.js") }}"></script>
+		<script src="{{ asset("Gmbslagi/vendor/bs-select/bs-select-custom.js") }}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dynamicrows/dist/dynamicrows.min.js"></script>
 
     <script src="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.js")}}"></script>
+    <script>
+      function showInputField(selectElement) {
+        var inputField = document.getElementById("customInput");
+        
+        if (selectElement.value === "Khusus") {
+          inputField.style.display = "block";
+        } else {
+          inputField.style.display = "none";
+        }
+      }
+    </script>
     <script>
             // Inisialisasi Dropzone
             Dropzone.autoDiscover = false;
@@ -796,6 +879,13 @@
         }
       });
   </script>
+  <script>
+    $(document).ready(function() {
+      $('.select-single').select2({
+        minimumResultsForSearch: Infinity
+      });
+    });
+    </script>
 	</body>
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/accordions.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:35 GMT -->

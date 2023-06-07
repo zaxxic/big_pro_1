@@ -671,7 +671,7 @@
                     <!-- Content wrapper end -->
                     <!-- Modal start -->
                     <div class="modal fade" id="deleteincome" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteincome" aria-hidden="true">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog my-auto">
                             <div class="modal-content" style="padding: 0px">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="staticBackdropLabel">Hapus Transaksi</h5>
