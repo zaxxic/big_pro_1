@@ -595,11 +595,11 @@
                                                                         
                                                                         <th scope="col">Tanggal Jatuh Tempo</th>
                                                                         <th scope="col">Tanggal Faktur</th>
-                                                                        <th scope="col">status</th>
+                                                                        <th scope="col">Status</th>
                                                                         <th scope="col">Pelanggan</th>
                                                                         <th></th>
                                                         
-                                                                        <th scope="col">Nomoer</th>
+                                                                        <th scope="col">Nomer</th>
                                                                         <th scope="col">jumlah</th>
                                                                         <th scope="col">Aksi</th>
                                                                     </tr>
@@ -631,6 +631,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                              
                                                 <div class="tab-pane fade" id="pills-transfer" role="tabpanel"
                                                     aria-labelledby="pills-transfer-tab" tabindex="0">
                                                     <div>
@@ -762,6 +763,31 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <!-- Card start -->
+                            <div class="card">
+                                <div class="card-body col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination" style="float: right;">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
+                            </div>
+                            <!-- Card end -->
                                             </div>
                                         </div>
                                         <!-- </div> -->
@@ -858,6 +884,8 @@
         });
     </script>
     <script>
+        $('#pills-profile-tab').click()
+            $('#pills-home-tab').click()
         function toggleCheckbox() {
             var checkboxes = document.querySelectorAll('input[type="checkbox"]');
             var selectAllCheckbox = document.getElementById('select-all');

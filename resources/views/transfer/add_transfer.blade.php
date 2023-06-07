@@ -286,7 +286,7 @@
                                     <!-- Modal account start -->
                                     <form action="">
                                     <div class="modal fade" id="modalaccount" tabindex="-1" aria-labelledby="modalaccount" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"  style="margin-top: -20px;">
                                             <div class="modal-content" style="padding: 0px">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Tambah Akun</h5>
@@ -369,7 +369,7 @@
                                     <!-- Modal category start -->
                                     <form action="">
                                     <div class="modal fade" id="modalcategory" tabindex="-1" aria-labelledby="modalcategory" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"  style="margin-top: -20px;">
                                             <div class="modal-content" style="padding: 0px">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Tambah Kategori</h5>
@@ -419,7 +419,7 @@
                                     <!-- Modal customer start -->
                                     <form action="">
                                     <div class="modal fade" id="modalcustomer" tabindex="-1" aria-labelledby="modalcustomer" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"  style="margin-top: -20px;">
                                             <div class="modal-content" style="padding: 0px">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Tambah Pelanggan</h5>

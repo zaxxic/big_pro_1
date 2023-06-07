@@ -79,7 +79,7 @@
             text-align: center;
             height: 35px;
             padding: 8px;
-            border-radius: 0px 5px 5px 0px;
+            border-radius: 0px 0px 0px 0px;
         }
 
         .empty-box2.active {
@@ -111,7 +111,7 @@
             text-align: center;
             height: 35px;
             padding: 8px;
-            border-radius: 5px 0px 0px 5px;
+            border-radius: 0px 0px 0px 0px;
         }
 
         .empty-box1.active {
@@ -329,34 +329,49 @@
                                 <!-- Card start -->
 
                                 <!-- <div class="card-header"> -->
-                                <div class="d-flex">
-                                    <div class=" col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12 d-flex">
+                                <div class="card-header">
+                                        <div class=" col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 d-flex">
+                                            <div class="card-title">
+                                                <h3>Transaksi Rutin<button type="button" style="border: none; background:transparent;">☆</button></h3>
+                                            </div>
+                                        </div>
 
-                                        <h1 class="card-title" style="font-size: 20px;">Transaksi Rutin<button type="button" style="border: none; background:none;">☆</button></h1>
-                                        
-                                    </div>
-
-                                    <!-- <div class="text-end">
+                                        <!-- <div class="text-end">
 											<a href="create-invoice.html" class="btn btn-primary">Create Invoice</a>
 										</div> -->
-                                    <div class="col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12 button-container" style="margin-left: 17%;">
-                                        <a href="{{url('add_recurring_income')}}"> <button type="button" class="btn btn-secondary">Tambah Pendapatan Rutin</button></a>
-                                        <a href="{{url('add_recurring_expenditure')}}"> <button type="button" class="btn btn-secondary">Tambah Pendapatan Rutin</button></a>
+                                        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-12 button-container" style="margin-left: 17%; justify-items: center; justify-content: end;">
+                                            <div class="graph-day-selection" role="group" style="margin-right: 3%;">
+                                                <a href="http://127.0.0.1:8000/add_recurring_income">
+                                                    <button type="button" class="btn active" style="background: transparent; "><div style="color: #5957b1;"> Tambah Pendapatan Rutin</div></button>
+                                                </a>
+                                            </div>
+                                            <div class="graph-day-selection" role="group" style="margin-right: 3%;">
+                                                <a href="http://127.0.0.1:8000/add_recurring_expenditure">
+                                                    <button type="button" class="btn active" style="background: transparent"><div style="color: #5957b1;">Tambah Pengeluaran Rutin</div></button>
+                                                </a>
+                                            </div>
+                                            <div class="dropdown">
+                                                <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 
-                                      
+                                                </a>
 
+                                                <ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
+                                                    <li><a class="dropdown-item" href="#">Impor</a></li>
+                                                    <li><a class="dropdown-item" href="#">Expor</a></li>
 
+                                                </ul>
+                                            </div>
+                                        </div>
 
                                     </div>
-                                </div>
-                                <div id="dropdown-menu">
-                                    <button class="dropdown-toggle">&#8942;</button>
-                                    <div class="dropdown-content">
-                                        <a href="{{url('add_recurring_income')}}">Pendapatan Rutin</a>
-                                        <a href="{{url('add_recurring_expenditure')}}">Pendapatan Rutin</a>
-
+                                    <div id="dropdown-menu">
+                                        <button class="dropdown-toggle">&#8942;</button>
+                                        <div class="dropdown-content">
+                                            <a href="{{url('add_income')}}">Pendapatan</a>
+                                            <a href="{{url('add_expenditure')}}">Pengeluaran</a>
+                                            <a href="path/to/excel/file.xlsx" download>Ekspor</a>
+                                        </div>
                                     </div>
-                                </div>
 
                                 <!-- <div class="button-container">
                                         <button id="income-button">Pendapatan</button>
@@ -583,7 +598,7 @@
                                     <!-- Card end -->
                                     <!-- Modal start -->
 										<div class="modal fade" id="deleteincome" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteincome" aria-hidden="true">
-											<div class="modal-dialog">
+											<div class="modal-dialog" style="margin-top: -20px;">
 												<div class="modal-content" style="padding: 0px">
 												<div class="modal-header">
 													<h5 class="modal-title" id="staticBackdropLabel">Hapus Transaksi</h5>

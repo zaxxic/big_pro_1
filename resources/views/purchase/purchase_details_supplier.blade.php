@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="img/fav.png">
 
     <!-- Title -->
-    <title>Unknown | Show Akun</title>
+    <title>Unknown | Rincian-Pelanggan</title>
 
 
     <!-- *************
@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/dataTables.bs4-custom.css') }}" />
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/buttons.bs.css') }}" />
     <style>
+        
         .text {
             text-align: center;
             color: #5e6973;
@@ -66,6 +67,72 @@
             /* border-radius: 5px; */
             right: 0;
         }
+
+
+        .empty-box2 {
+            color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .empty-box2.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box2:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box1 {
+            color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            text-align: center;
+            height: 35px;
+            padding: 8px;
+            border-radius: 5px 0px 0px 5px;
+        }
+
+        .empty-box1.active {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        .empty-box1:hover {
+            height: 35px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #f26861;
+            border-color: #f26861;
+            outline: 1px solid #f26861;
+            -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
 
         .dropdown-item-bt {
             display: block;
@@ -256,10 +323,7 @@
             border-radius: 5px;
         }
 
-        .hover-trigge3r {
-            cursor: pointer;
-            position: relative;
-        }
+ 
 
         .hover-trigge3r:hover::before {
             content: attr(data-tooltip_byr);
@@ -271,6 +335,52 @@
             color: #fff;
             padding: 3px;
             border-radius: 5px;
+        }
+
+        .hover-trigge3r {
+            cursor: pointer;
+            position: relative;
+        }
+
+        .lingkaran-warna1 {
+
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: red;
+
+        }
+
+        .lingkaran-warna2 {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: blue;
+
+        }
+
+        .lingkaran-warna3 {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: green;
+
+        }
+
+        .lingkaran-warna4 {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: purple;
+
+        }
+
+        .lingkaran-warna5 {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: pink;
+
         }
     </style>
 
@@ -290,8 +400,8 @@
 
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
-        <!-- Sidebar wrapper end -->
         
+        <!-- Sidebar wrapper end -->
 
         <!-- *************
     ************ Main container start *************
@@ -327,7 +437,7 @@
                                             <li><a class="dropdown-item" href="#">Cetak</a></li>
                                             <li><a class="dropdown-item" href="#">Unduh PDF</a></li>
                                         </ul>
-                                    </div>               
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -390,7 +500,6 @@
                         </div>
 
                         <script>
-
                             const hoverTrigger = document.querySelector('.hover-trigge1r');
                             const tooltipContent1 = '25.500.000.000.000';
                             hoverTrigger.setAttribute('data-tooltip_dpt', tooltipContent1);
@@ -402,7 +511,6 @@
                             const hoverTrigger3 = document.querySelector('.hover-trigge3r');
                             const tooltipContent3 = '25.500.000';
                             hoverTrigger3.setAttribute('data-tooltip_byr', tooltipContent3);
-                           
                         </script>
                         <!-- </div> -->
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
@@ -411,23 +519,32 @@
                             <div class="card">
 
                                 <div class="card-body">
-                                    
+
                                     <div style="margin-top: 10%;">
-                                        <h6>Alamat</h6>
+                                        <h6>Mata Uang</h6>
                                     </div>
-                                    <span>Japan</span>
+                                    <span>Telepon</span>
                                     <div style="margin-top: 10%;">
-                                        <h6>NPWP</h6>
+                                        <h6>0876765567</h6>
                                     </div>
-                                    <span>3238798</span>
-                                    <div style="margin-top: 10%;">
-                                        <h6>Situs web</h6>
-                                    </div>
-                                    <span><a href="http://localhost:8000/show_cos">Web Udin</a> </span>
+                                    <span>Rupiah</span>
                                     <div style="margin-top: 10%;">
                                         <h6>Referensi</h6>
                                     </div>
                                     <span>untuk bla bla bla bla bla abla bla bla bla bla bla bla</span>
+                                    <div style="margin-top: 10%;">
+                                        <h6>Situus web</h6>
+                                    </div>
+                                    <span><a href="http://localhost:8000/show_cos">Web Udin</a> </span>
+                                    <div style="margin-top: 10%;">
+                                        <h6>NPWP</h6>
+                                    </div>
+                                    <span>3238798</span>
+
+                                    <div style="margin-top: 10%;">
+                                        <h6>Kode Pos</h6>
+                                    </div>
+                                    <span>929292</span>
                                 </div>
                             </div>
                         </div>
@@ -441,38 +558,48 @@
                                     <div class="card-body" style="float: right">
                                         <!-- <div class="d-flex"> -->
                                         <div class="col-12">
-                                            
-                                                <!-- <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6"> -->
-                                                
-                                                    <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
-                                                        <li class="empty-box active" role="presentation">
-                                                            <div class="empty-box active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-transactions" type="button" role="tab" aria-controls="pills-transactions" aria-selected="true">
-                                                                <h6 class="text">Tagihan</h6>
-                                                            </div>
-                                                        </li>
-                                                        <li class="empty-box" role="presentation">
-                                                            <div class="empty-box" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-transfer" type="button" role="tab" aria-controls="pills-transfer" aria-selected="false">
-                                                                <h6 class="text">Transaksi</h6>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                
+
+                                            <!-- <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6"> -->
+
+                                            <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+                                                <li class="" role="presentation">
+                                                    <div class="empty-box1 active" id="pills-home-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#pills-transactions"
+                                                        type="button" role="tab"
+                                                        aria-controls="pills-transactions" aria-selected="true">
+                                                        <h6 class="">Faktur</h6>
+                                                    </div>
+                                                </li>
+                                                <li class="" role="presentation">
+                                                    <div class="empty-box2" id="pills-profile-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#pills-transfer"
+                                                        type="button" role="tab" aria-controls="pills-transfer"
+                                                        aria-selected="false">
+                                                        <h6 class="">Transaksi</h6>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
                                             <!-- </div> -->
 
 
                                             <div class="tab-content" id="pills-tabContent">
-                                                <div class="tab-pane fade show active" id="pills-transactions" role="tabpanel" aria-labelledby="pills-transactions-tab" tabindex="0">
+                                                <div class="tab-pane fade show active" id="pills-transactions"
+                                                    role="tabpanel" aria-labelledby="pills-transactions-tab"
+                                                    tabindex="0">
                                                     <div>
                                                         <div class="table-responsive">
                                                             <table class="table table-hover">
                                                                 <thead>
                                                                     <tr>
                                                                         
-                                                                        <th scope="col">Tanggal</th>
-                                                                        <th scope="col">Nomor</th>
-                                                                        <th scope="col">Jenis</th>
-                                                                        <th scope="col">Kategori</th>
-                                                                        <th scope="col">Akun</th>
+                                                                        <th scope="col">Tanggal Jatuh Tempo</th>
+                                                                        <th scope="col">Tanggal Faktur</th>
+                                                                        <th scope="col">status</th>
+                                                                        <th scope="col">Pelanggan</th>
+                                                                        <th></th>
+                                                        
+                                                                        <th scope="col">Nomoer</th>
                                                                         <th scope="col">jumlah</th>
                                                                         <th scope="col">Aksi</th>
                                                                     </tr>
@@ -480,13 +607,14 @@
                                                                 <tbody>
                                                                     <tr>
                                                                        
+                                                                        <td>5 hari yang lalu</th>
                                                                         <td>24 mei 2024</td>
-                                                                        <td>INV-09</td>
-                                                                        <td>Biaya</th>
-                                                                        <td>Lainya</td>
+                                                                        <td>Terkirim</td>
                                                                         <td>
                                                                            Koirul
                                                                         </td>
+                                                                        <td></td>
+                                                                        <td>INV-09</td>
                                                                         <td>Rp900.000.000</td>
                                                                         <th>
                                                                             <div class="menu-icons" style="font-size: 15px;">
@@ -503,37 +631,128 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="tab-pane fade" id="pills-transfer" role="tabpanel" aria-labelledby="pills-transfer-tab" tabindex="0">
+                                                <div class="tab-pane fade" id="pills-transfer" role="tabpanel"
+                                                    aria-labelledby="pills-transfer-tab" tabindex="0">
                                                     <div>
                                                         <div class="table-responsive">
                                                             <table class="table table-hover">
                                                                 <thead>
                                                                     <tr>
+                                                                       
                                                                         <th scope="col">Tanggal</th>
                                                                         <th scope="col">Nomor</th>
                                                                         <th scope="col">Jenis</th>
                                                                         <th scope="col">Kategori</th>
+                                                                        <th></th>
+                        
                                                                         <th scope="col">Akun</th>
-                                                                        <th scope="col">jumlah</th>
+                                                                        <th scope="col">Jumlah</th>
                                                                         <th scope="col">Aksi</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td>24 mei 2024</td>
-                                                                        <td>INV-09</td>
-                                                                        <td>Biaya</th>
-                                                                        <td>Lainya</td>
+                                                                      
+                                                                        <td>16 Mei 2023</th>
+                                                                        <td>TRA-00038</td>
+                                                                        <td>Pengeluaran</td>
                                                                         <td>
-                                                                           Soerhartoer
+                                                                            <div class="lingkaran-warna5">
+                                                                                &emsp;&emsp;Deposit
+                                                                            </div>
                                                                         </td>
+                                                                        <td></td>
+                                                                        <td>Naura Dewi</td>
                                                                         <td>Rp900.000.000</td>
                                                                         <th>
                                                                             <div class="menu-icons" style="font-size: 15px;">
-                                                                                <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2" style="color: rgb(229, 134, 0)" ></a>
-                                                                                <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer" style="color: rgb(255, 0, 0)" ></a>
-                                                                                <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1" style="color: rgb(77, 77, 247)" ></a>
-                                                                            
+                                                                                <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
+                                                                                <a href="{{url('delete_income')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleteincome"></a>
+                                                                                <a href="{{url('show_income')}}" class="menu-icon icon-eye1"></a>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      
+                                                                        <td>13 Mei 2023</th>
+                                                                        <td>TRA-00037</td>
+                                                                        <td>Pendapatan</td>
+                                                                        <td>
+                                                                            <div class="lingkaran-warna3">
+                                                                                &emsp;&emsp;Penjualan
+                                                                            </div>
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td>Bpk Yanto</td>
+                                                                        <td>Rp700.000.000</td>
+                                                                        <th>
+                                                                            <div class="menu-icons" style="font-size: 15px;">
+                                                                                <a href="{{url('edit_expenditure')}}" class="menu-icon icon-edit-2"></a>
+                                                                                <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
+                                                                                <a href="{{url('show_expenditure')}}" class="menu-icon icon-eye1"></a>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      
+                                                                        <td>23 Mei 2023</th>
+                                                                        <td>TRA-00039</td>
+                                                                        <td>Pendapatan</td>
+                                                                        <td>
+                                                                            <div class="lingkaran-warna3">
+                                                                                &emsp;&emsp;Penjualan
+                                                                            </div>
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td>Ugud Budiman</td>
+                                                                        <td>Rp200.000.000</td>
+                                                                        <th>
+                                                                            <div class="menu-icons" style="font-size: 15px;">
+                                                                                <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
+                                                                                <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
+                                                                                <a href="{{url('show_income')}}" class="menu-icon icon-eye1"></a>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      
+                                                                        <td>34 Mei 2023</th>
+                                                                        <td>TRA-00040</td>
+                                                                        <td>Pendapatan</td>
+                                                                        <td>
+                                                                            <div class="lingkaran-warna3">
+                                                                                &emsp;&emsp;Penjualan
+                                                                            </div>
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td>Louis Gunawan</td>
+                                                                        <td>Rp1.000.000.000</td>
+                                                                        <th>
+                                                                            <div class="menu-icons" style="font-size: 15px;">
+                                                                                <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
+                                                                                <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
+                                                                                <a href="{{url('show_income')}}" class="menu-icon icon-eye1"></a>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      
+                                                                        <td>34 Mei 2023</th>
+                                                                        <td>TRA-00041</td>
+                                                                        <td>Pengeluaran</td>
+                                                                        <td>
+                                                                            <div class="lingkaran-warna5">
+                                                                                &emsp;&emsp;Deposit
+                                                                            </div>
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td>Melati Handoko</td>
+                                                                        <td>Rp1.000.000.000</td>
+                                                                        <th>
+                                                                            <div class="menu-icons" style="font-size: 15px;">
+                                                                                <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
+                                                                                <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
+                                                                                <a href="{{url('show_income')}}" class="menu-icon icon-eye1"></a>
                                                                             </div>
                                                                         </th>
                                                                     </tr>
@@ -639,6 +858,8 @@
         });
     </script>
     <script>
+        $('#pills-profile-tab').click()
+            $('#pills-home-tab').click()
         function toggleCheckbox() {
             var checkboxes = document.querySelectorAll('input[type="checkbox"]');
             var selectAllCheckbox = document.getElementById('select-all');

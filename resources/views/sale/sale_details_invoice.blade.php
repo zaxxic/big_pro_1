@@ -104,6 +104,7 @@
 
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
+        @include('layouts.header')
         <!-- Sidebar wrapper end -->
 
         <!-- *************
@@ -127,6 +128,398 @@
                     </div>
                 </div>
                 <!-- Row end -->
+                <div class="row">
+                    <div class="card">
+                        <div class="card-header col-12">
+                            <div class="card-title ">
+                                <h3>Faktur: FKR-00002</h3>
+
+
+                            </div>
+                            <div class="badge-finish" style="text-align: center">Terima</div>
+
+                        </div>
+                        <div class="d-flex row">
+
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="card-body">
+                                    <div class="alert alert-primary mb-5"
+                                        style="border-radius: 2px; background-color:#9a99e2" role="alert">
+                                        faktur ini dihasilkan otomatis dari <a
+                                            href="{{ url('details_recurring') }}">FBU-00002</a>
+                                    </div>
+                                    <!-- Faq start -->
+                                    <div class="accordion" id="faqAccordion">
+                                        <div class="alert alert-primary"
+                                            style="border-radius: 2px; border:1px solid #e3e3e3 ; background-color:#ffffff"
+                                            role="alert">
+                                            <p style="font-size:14pt;color:black">Membuat</p>
+                                            <br>
+                                            <p style="font-size:10pt;color:black">Trisqi membuat Faktur ini pada
+                                                <b>24
+                                                    mei 2023</b>
+                                            </p>
+                                            <button
+                                                style="background-color: #9a99e2;border-radius:2px;width:80px;border:transparent;height:25px;color:#ffffff">Sunting</button>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    <div class="d-flex row">
+                                                        <p style="font-size:14pt">Kirim</p>
+                                                        <br>
+                                                        <p style="font-size:10pt">Terakhir dikirim <b>28 mei
+                                                                2023</b>
+                                                        </p>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body">
+                                                    <!-- Button trigger modal -->
+                                                    <button
+                                                        type="button"style="border-radius:10px; width:30%; height: 30px; border:none; background-color:#c5d2fc"
+                                                        data-bs-toggle="modal" data-bs-target="#modals">
+                                                        Kirim Email
+                                                    </button>
+                                                    <button type="button"
+                                                        style="border-radius:10px; width:30%; height:30px; border:none">Tandai
+                                                        Dikirim</button>
+                                                    <button type="button"
+                                                        style="border-radius:10px; width:36%; height:30px; border:none; margin-top:1%"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModalLarge">
+                                                        Bagikan Tautan
+                                                    </button>
+                                                    <!-- Modal start -->
+                                                    <div class="modal fade" id="exampleModalLarge" tabindex="-1"
+                                                        aria-labelledby="exampleModalLargeTitle" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title"
+                                                                        id="exampleModalLargeTitle">Membagikan
+                                                                        Tautan</h5>
+                                                                    <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="modal"
+                                                                        aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <p class="text-center">Pelanggan Anda dapat
+                                                                        melihat faktur di tautan ini :</p>
+                                                                    <p align="center">
+                                                                        <input type="text"
+                                                                            value="https://app.akaunting.com/251226/signed/invoices/2690652?signature=994924046d84d0dc857d9fda311fd6c28e2579f9e56dc8d307781d15fb42f0c8"
+                                                                            id="myInput" size="43">
+                                                                    </p>
+                                                                    <p class="text-center">Salin tautan dan bagikan
+                                                                        dengan pelanggan Anda.</p>
+                                                                    <p class="text-center">Pratinjau di jendela
+                                                                        baru</p>
+
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <div type="button" class="btn btn-danger"
+                                                                        style="background-color:rgb(255, 0, 0); border:none; border-radius:10px; width:20%; height:25px; color:white"
+                                                                        data-bs-dismiss="modal">Batal</div>
+                                                                    <button type="button" onclick="myFunction()"
+                                                                        style="background-color: #55be0e; border:none; border-radius:10px; width:30%; height:25px; color:white">Salin</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Modal end -->
+                                                </div>
+                                                <!-- Modal start -->
+                                                <div class="modal fade" id="modals" tabindex="-1"
+                                                    aria-labelledby="modalsTitle" aria-hidden="true">
+                                                    <div
+                                                        class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                        <div class="modal-content"
+                                                            style="height:100%; margin-top:-10%">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="modalsTitle">Kirim
+                                                                    Email</h5>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal"
+                                                                    aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="field-wrapper mb-2">
+                                                                    <div class="summernote"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <div type="button" class="btn btn-danger"
+                                                                    style="background-color:rgb(255, 0, 0); border:none; border-radius:10px; width:20%; height:25px; color:white"
+                                                                    data-bs-dismiss="modal">Batal</div>
+                                                                <button type="button"
+                                                                    style="background-color: #55be0e; border:none; border-radius:10px; width:30%; height:25px; color:white">Simpan</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal end -->
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    <div class="d-flex row">
+                                                        <p style="font-size:14pt">Telah dibayar</p>
+                                                        <br>
+                                                        <p style="font-size:10pt">Nilai jatuh tempo:
+                                                            <b>90.000.000,00</b>
+                                                        </p>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body">
+                                                    <button type="button" data-bs-toggle="modal"
+                                                        style="border-radius:10px; width:45%; height:30px; border:none; background-color:#55be0e; color:white"
+                                                        data-bs-target="#exampleModalExtraLarge">
+                                                        Tambahkan Pembayaran
+                                                    </button>
+                                                    <p style="margin-top: 2%">Menerima Pembayaran Daring</p>
+                                                    <p>Pembayaran Diterima:</p>
+                                                    <p>Tidak Ada Catatan</p>
+                                                </div>
+                                                <!-- Modal start -->
+                                                <div class="modal fade" id="exampleModalExtraLarge"
+                                                    tabindex="-1" aria-labelledby="exampleModalExtraLargeTitle"
+                                                    aria-hidden="true">
+                                                    <div class="modal-dialog modal-xl">
+                                                        <div class="modal-content" style="margin-top: -9%">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title"
+                                                                    id="exampleModalExtraLargeTitle">Tambah
+                                                                    Pembayaran</h5>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal"
+                                                                    aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="field-wrapper mb-3">
+                                                                    <label for="judul"
+                                                                        class="field-label">Tanggal</label>
+                                                                    <input class="form-control" type="text"
+                                                                        placeholder="Masukkan Tanggal"
+                                                                        style="border-radius:10px">
+                                                                </div>
+                                                                <div class="field-wrapper mb-3">
+                                                                    <label for="judul"
+                                                                        class="field-label">Jumlah</label>
+                                                                    <input class="form-control" type="text"
+                                                                        placeholder="Masukkan Jumlah"
+                                                                        style="border-radius:10px">
+                                                                </div>
+                                                                <div class="field-wrapper mb-3">
+                                                                    <label for="judul"
+                                                                        class="field-label">Metode Pembayaran <span
+                                                                            class="text-danger">*</span></label>
+                                                                    <select id="ex-dropdown-input"
+                                                                        autocomplete="off"
+                                                                        placeholder="How cool is this?"
+                                                                        style="border-radius:10px">
+                                                                        <option selected>Cash</option>
+                                                                        <option>Transfer Bank</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="field-wrapper mb-3">
+                                                                    <label for="judul" class="field-label">Akun
+                                                                        <span class="text-danger">*</span></label>
+                                                                    <select id="ex-dropdown-input"
+                                                                        autocomplete="off"
+                                                                        placeholder="How cool is this?"
+                                                                        style="border-radius:10px">
+                                                                        <option>Rudi</option>
+                                                                        <option selected>Ruli</option>
+                                                                        <option>Adi</option>
+                                                                        <option>Daffa</option>
+                                                                        <option>Gembes</option>
+                                                                        <option>Reno</option>
+                                                                        <option>Triski</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <div type="button" class="btn btn-danger"
+                                                                    style="background-color:rgb(255, 0, 0); border:none; border-radius:10px; width:20%; height:25px; color:white"
+                                                                    data-bs-dismiss="modal">Batal</div>
+                                                                <button type="button"
+                                                                    style="background-color: #55be0e; border:none; border-radius:10px; width:30%; height:25px; color:white">Simpan</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal end -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Faq end -->
+
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
+                                <form
+                                    action="https://www.kodingwife.com/demos/unipro/v1-x/05-desig4-violet/reports.html">
+                                    <div class="rcr-screen">
+                                        <div class="login-body pb-4 ">
+                                            <div class="d-flex row col-12 ms-2">
+                                                <p>Biaya nikah</p>
+                                                <div class="col-8">
+                                                    <img style="width: 25%"
+                                                        src="{{ asset('Gmbslagi/img/Carausel/person.jpg') }}"
+                                                        alt="Uni Pro Admin">
+                                                </div>
+                                                <div class="ml-2 col-4">
+                                                    <p style="float: right" class="me-3">cina baik hati</p>
+                                                    <br>
+                                                    <p style="float: right" class="me-3">unknown company</p>
+                                                    <br>
+                                                    <p style="float: right" class="me-3">cireng@gmail.com</p>
+                                                </div>
+                                            </div>
+                                            <div class="field-wrapper mb-3">
+                                                <div style="border-bottom: solid grey 1px; margin-top: 4%">
+                                                </div>
+                                                <div class="d-flex" style="margin-top: 2%">
+                                                    <div class="col-6 ms-3">
+                                                        <p style="margin-top:2%">Faktur Kepada</p>
+                                                        <p style="margin-top:2%">Pt Jawa</p>
+                                                        <p style="margin-top:2%">MPWP: 1672671</p>
+                                                        <p style="margin-top:2%">cireng@gmail.com</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p style="margin-top:2%">Nomor Faktur:BRLB-00002 </p>
+                                                        <p style="margin-top:2%">Nomer Antrean: 123</p>
+                                                        <p style="margin-top:2%">Tanggal Faktur: 24 mei 2023</p>
+                                                        <p style="margin-top:2%">Tanggal Jatuh Tempo: 24 mei 2023
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive mt-3">
+                                                    <table
+                                                        class="table1 products-table col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Item</th>
+                                                                <th>Kuantitas</th>
+                                                                <th>Harga</th>
+                                                                <th>Jumlah</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <p>api maps</p>
+                                                                    <br>
+                                                                    <p style="font-size: 8pt; margin-top: -10%">
+                                                                        pembelian api untuk map</p>
+                                                                </td>
+                                                                <td><span class="badge"
+                                                                        style="border-radius:2px">1</span></td>
+                                                                <td>385.000,00</td>
+                                                                <td>385.000,00</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"
+                                                        style="float: right; margin-bottom: -5%">
+                                                        <!-- Card start -->
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <li class="list-group-item">Subtotal: 9000000 </li>
+                                                                <li class="list-group-item">Ppn(20%): 9000000 </li>
+                                                                <li class="list-group-item">PPH(12%): 9000000 </li>
+                                                                <li class="list-group-item">Total: 9000000 </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Card end -->
+                                                        <div class="modal fade" id="payment" tabindex="-1"
+                                                            aria-labelledby="paymentTitle" aria-hidden="true">
+                                                            <div
+                                                                class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                <div class="modal-content"
+                                                                    style="margin-top: -10%">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="paymentTitle">
+                                                                            Pembayaran</h5>
+                                                                        <button type="button" class="btn-close"
+                                                                            data-bs-dismiss="modal"
+                                                                            aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="field-wrapper">
+                                                                            <label for="subjudul"
+                                                                                class="field-label">Kategori<span
+                                                                                    class="text-danger">*</span></label>
+                                                                            <input type="text"
+                                                                                class="form-control datepicker"
+                                                                                style="border-radius: 10px">
+                                                                        </div>
+                                                                        <div class="field-wrapper">
+                                                                            <label for="subjudul"
+                                                                                class="field-label">Jumlah<span
+                                                                                    class="text-danger">*</span></label>
+                                                                            <input type="number"
+                                                                                class="form-control datepicker"
+                                                                                style="border-radius: 10px">
+                                                                        </div>
+                                                                        <div class="field-wrapper">
+                                                                            <label for="subjudul"
+                                                                                class="field-label">Metode
+                                                                                Pembayaran<span
+                                                                                    class="text-danger">*</span></label>
+                                                                            <select class="select-single js-states"
+                                                                                title="Select Product Category"
+                                                                                data-live-search="true"
+                                                                                style="border-radius: 10px">
+                                                                                <option>Cash</option>
+                                                                                <option>Transfer</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="field-wrapper">
+                                                                            <label for="subjudul"
+                                                                                class="field-label">Akun<span
+                                                                                    class="text-danger">*</span></label>
+                                                                            <select class="select-single js-states"
+                                                                                title="Select Product Category"
+                                                                                data-live-search="true"
+                                                                                style="border-radius: 20px">
+                                                                                <option>Adi</option>
+                                                                                <option>Rudi</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="text-white"
+                                                                            style="background-color:rgb(255, 0, 0); border:none; border-radius:2px; width:20%; height:25px; color:white"
+                                                                            data-bs-dismiss="modal">Batal</button>
+                                                                        <button type="button" class="text-white"
+                                                                            style="background-color: #55be0e; border:none; border-radius:2px; width:30%; height:25px; color:white">Simpan</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
             <!-- Page header ends -->
@@ -138,298 +531,6 @@
                 <div class="content-wrapper">
 
                     <!-- Row start -->
-                    <div class="row">
-                        <div class="card">
-                            <div class="card-header col-12">
-                                <div class="card-title ">
-                                    <h3>Faktur: FKR-00002</h3>
-
-
-                                </div>
-                                <div class="badge-finish" style="text-align: center">Terima</div>
-
-                            </div>
-                            <div class="d-flex row">
-
-                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                    <div class="card-body">
-                                        <div class="alert alert-primary mb-5" style="border-radius: 2px; background-color:#9a99e2" role="alert">
-                                            faktur ini dihasilkan otomatis dari <a href="{{url('details_recurring')}}">FBU-00002</a>
-                                        </div>
-                                        <!-- Faq start -->
-                                        <div class="accordion" id="faqAccordion">
-                                            <div class="alert alert-primary" style="border-radius: 2px; border:1px solid #e3e3e3 ; background-color:#ffffff" role="alert">
-                                                <p style="font-size:14pt;color:black">Membuat</p>
-                                                <br>
-                                                <p style="font-size:10pt;color:black">Trisqi membuat Faktur ini pada
-                                                    <b>24
-                                                        mei 2023</b>
-                                                </p>
-                                                <button style="background-color: #9a99e2;border-radius:2px;width:80px;border:transparent;height:25px;color:#ffffff">Sunting</button>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="headingTwo">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                        <div class="d-flex row">
-                                                            <p style="font-size:14pt">Kirim</p>
-                                                            <br>
-                                                            <p style="font-size:10pt">Terakhir dikirim <b>28 mei 2023</b>
-                                                            </p>
-                                                        </div>
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                                                    <div class="accordion-body">
-                                                        <!-- Button trigger modal -->
-                                                        <button type="button" style="border-radius:10px; width:30%; height: 30px; border:none; background-color:#c5d2fc" data-bs-toggle="modal" data-bs-target="#modals">
-                                                            Kirim Email
-                                                        </button>
-                                                        <button type="button" style="border-radius:10px; width:30%; height:30px; border:none">Tandai
-                                                            Dikirim</button>
-                                                        <button type="button" style="border-radius:10px; width:36%; height:30px; border:none; margin-top:1%" data-bs-toggle="modal" data-bs-target="#exampleModalLarge">
-                                                            Bagikan Tautan
-                                                        </button>
-                                                        <!-- Modal start -->
-                                                        <div class="modal fade" id="exampleModalLarge" tabindex="-1" aria-labelledby="exampleModalLargeTitle" aria-hidden="true">
-                                                            <div class="modal-dialog modal-lg">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header">
-                                                                        <h5 class="modal-title" id="exampleModalLargeTitle">Membagikan Tautan</h5>
-                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                        <p class="text-center">Pelanggan Anda dapat melihat faktur di tautan ini :</p>
-                                                                        <p align="center">
-                                                                            <input type="text" value="https://app.akaunting.com/251226/signed/invoices/2690652?signature=994924046d84d0dc857d9fda311fd6c28e2579f9e56dc8d307781d15fb42f0c8" id="myInput" size="43">
-                                                                        </p>
-                                                                        <p class="text-center">Salin tautan dan bagikan dengan pelanggan Anda.</p>
-                                                                        <p class="text-center">Pratinjau di jendela baru</p>
-
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <div type="button" class="btn btn-danger" style="background-color:rgb(255, 0, 0); border:none; border-radius:10px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</div>
-                                                                        <button type="button" onclick="myFunction()" style="background-color: #55be0e; border:none; border-radius:10px; width:30%; height:25px; color:white">Salin</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- Modal end -->
-                                                    </div>
-                                                    <!-- Modal start -->
-                                                    <div class="modal fade" id="modals" tabindex="-1" aria-labelledby="modalsTitle" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                                            <div class="modal-content" style="height:100%; margin-top:-10%">
-                                                                <div class="modal-header">
-                                                                    <h5 class="modal-title" id="modalsTitle">Kirim Email</h5>
-                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    <div class="field-wrapper mb-2">
-                                                                        <div class="summernote"></div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <div type="button" class="btn btn-danger" style="background-color:rgb(255, 0, 0); border:none; border-radius:10px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</div>
-                                                                    <button type="button" style="background-color: #55be0e; border:none; border-radius:10px; width:30%; height:25px; color:white">Simpan</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Modal end -->
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="headingThree">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                        <div class="d-flex row">
-                                                            <p style="font-size:14pt">Telah dibayar</p>
-                                                            <br>
-                                                            <p style="font-size:10pt">Nilai jatuh tempo:
-                                                                <b>90.000.000,00</b>
-                                                            </p>
-                                                        </div>
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                                                    <div class="accordion-body">
-                                                        <button type="button" data-bs-toggle="modal" style="border-radius:10px; width:45%; height:30px; border:none; background-color:#55be0e; color:white" data-bs-target="#exampleModalExtraLarge">
-                                                            Tambahkan Pembayaran
-                                                        </button>
-                                                        <p style="margin-top: 2%">Menerima Pembayaran Daring</p>
-                                                        <p>Pembayaran Diterima:</p>
-                                                        <p>Tidak Ada Catatan</p>
-                                                    </div>
-                                                    <!-- Modal start -->
-                                                    <div class="modal fade" id="exampleModalExtraLarge" tabindex="-1" aria-labelledby="exampleModalExtraLargeTitle" aria-hidden="true">
-                                                        <div class="modal-dialog modal-xl">
-                                                            <div class="modal-content" style="margin-top: -9%">
-                                                                <div class="modal-header">
-                                                                    <h5 class="modal-title" id="exampleModalExtraLargeTitle">Tambah Pembayaran</h5>
-                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    <div class="field-wrapper mb-3">
-                                                                        <label for="judul" class="field-label">Tanggal</label>
-                                                                        <input class="form-control" type="text" placeholder="Masukkan Tanggal" style="border-radius:10px">
-                                                                    </div>
-                                                                    <div class="field-wrapper mb-3">
-                                                                        <label for="judul" class="field-label">Jumlah</label>
-                                                                        <input class="form-control" type="text" placeholder="Masukkan Jumlah" style="border-radius:10px">
-                                                                    </div>
-                                                                    <div class="field-wrapper mb-3">
-                                                                        <label for="judul" class="field-label">Metode Pembayaran <span class="text-danger">*</span></label>
-                                                                        <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?" style="border-radius:10px">
-                                                                            <option selected>Cash</option>
-                                                                            <option>Transfer Bank</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="field-wrapper mb-3">
-                                                                        <label for="judul" class="field-label">Akun <span class="text-danger">*</span></label>
-                                                                        <select id="ex-dropdown-input" autocomplete="off" placeholder="How cool is this?" style="border-radius:10px">
-                                                                            <option>Rudi</option>
-                                                                            <option selected>Ruli</option>
-                                                                            <option>Adi</option>
-                                                                            <option>Daffa</option>
-                                                                            <option>Gembes</option>
-                                                                            <option>Reno</option>
-                                                                            <option>Triski</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <div type="button" class="btn btn-danger" style="background-color:rgb(255, 0, 0); border:none; border-radius:10px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</div>
-                                                                    <button type="button" style="background-color: #55be0e; border:none; border-radius:10px; width:30%; height:25px; color:white">Simpan</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Modal end -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Faq end -->
-
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
-                                    <form action="https://www.kodingwife.com/demos/unipro/v1-x/05-desig4-violet/reports.html">
-                                        <div class="rcr-screen">
-                                            <div class="login-body pb-4 ">
-                                                <div class="d-flex row col-12 ms-2">
-                                                    <p>Biaya nikah</p>
-                                                    <div class="col-8">
-                                                        <img style="width: 25%" src="{{ asset('Gmbslagi/img/Carausel/person.jpg') }}" alt="Uni Pro Admin">
-                                                    </div>
-                                                    <div class="ml-2 col-4">
-                                                        <p style="float: right" class="me-3">cina baik hati</p>
-                                                        <br>
-                                                        <p style="float: right" class="me-3">unknown company</p>
-                                                        <br>
-                                                        <p style="float: right" class="me-3">cireng@gmail.com</p>
-                                                    </div>
-                                                </div>
-                                                <div class="field-wrapper mb-3">
-                                                    <div style="border-bottom: solid grey 1px; margin-top: 4%">
-                                                    </div>
-                                                    <div class="d-flex" style="margin-top: 2%">
-                                                        <div class="col-6 ms-3">
-                                                            <p style="margin-top:2%">Faktur Kepada</p>
-                                                            <p style="margin-top:2%">Pt Jawa</p>
-                                                            <p style="margin-top:2%">MPWP: 1672671</p>
-                                                            <p style="margin-top:2%">cireng@gmail.com</p>
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <p style="margin-top:2%">Nomor Faktur:BRLB-00002 </p>
-                                                            <p style="margin-top:2%">Nomer Antrean: 123</p>
-                                                            <p style="margin-top:2%">Tanggal Faktur: 24 mei 2023</p>
-                                                            <p style="margin-top:2%">Tanggal Jatuh Tempo: 24 mei 2023</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="table-responsive mt-3">
-                                                        <table class="table1 products-table col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Item</th>
-                                                                    <th>Kuantitas</th>
-                                                                    <th>Harga</th>
-                                                                    <th>Jumlah</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <p>api maps</p>
-                                                                        <br>
-                                                                        <p style="font-size: 8pt; margin-top: -10%">
-                                                                            pembelian api untuk map</p>
-                                                                    </td>
-                                                                    <td><span class="badge" style="border-radius:2px">1</span></td>
-                                                                    <td>385.000,00</td>
-                                                                    <td>385.000,00</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="float: right; margin-bottom: -5%">
-                                                            <!-- Card start -->
-                                                            <div class="card">
-                                                                <div class="card-body">
-                                                                    <li class="list-group-item">Subtotal: 9000000 </li>
-                                                                    <li class="list-group-item">Ppn(20%): 9000000 </li>
-                                                                    <li class="list-group-item">PPH(12%): 9000000 </li>
-                                                                    <li class="list-group-item">Total: 9000000 </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <!-- Card end -->
-                                                            <div class="modal fade" id="payment" tabindex="-1" aria-labelledby="paymentTitle" aria-hidden="true">
-                                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                                                    <div class="modal-content" style="margin-top: -10%">
-                                                                        <div class="modal-header">
-                                                                            <h5 class="modal-title" id="paymentTitle">Pembayaran</h5>
-                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                        </div>
-                                                                        <div class="modal-body">
-                                                                            <div class="field-wrapper">
-                                                                                <label for="subjudul" class="field-label">Kategori<span class="text-danger">*</span></label>
-                                                                                <input type="text" class="form-control datepicker" style="border-radius: 10px">
-                                                                            </div>
-                                                                            <div class="field-wrapper">
-                                                                                <label for="subjudul" class="field-label">Jumlah<span class="text-danger">*</span></label>
-                                                                                <input type="number" class="form-control datepicker" style="border-radius: 10px">
-                                                                            </div>
-                                                                            <div class="field-wrapper">
-                                                                                <label for="subjudul" class="field-label">Metode Pembayaran<span class="text-danger">*</span></label>
-                                                                                <select class="select-single js-states" title="Select Product Category" data-live-search="true" style="border-radius: 10px">
-                                                                                    <option>Cash</option>
-                                                                                    <option>Transfer</option>
-                                                                                </select>
-                                                                            </div>
-                                                                            <div class="field-wrapper">
-                                                                                <label for="subjudul" class="field-label">Akun<span class="text-danger">*</span></label>
-                                                                                <select class="select-single js-states" title="Select Product Category" data-live-search="true" style="border-radius: 20px">
-                                                                                    <option>Adi</option>
-                                                                                    <option>Rudi</option>
-                                                                                </select>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="modal-footer">
-                                                                            <button type="button" class="text-white" style="background-color:rgb(255, 0, 0); border:none; border-radius:2px; width:20%; height:25px; color:white" data-bs-dismiss="modal">Batal</button>
-                                                                            <button type="button" class="text-white" style="background-color: #55be0e; border:none; border-radius:2px; width:30%; height:25px; color:white">Simpan</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </form>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
 
                     <!-- Row end -->
 

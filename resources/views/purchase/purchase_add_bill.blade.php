@@ -43,6 +43,8 @@
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/search-filter/custom-search-filter.css")}}">
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.css")}}"/>
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/daterange/daterange.css")}}">
+    <link rel="stylesheet" href="{{ asset("Gmbslagi/vendor/bs-select/bs-select.css") }}" />
+
         <style>
         .toggle-container {
       display: flex;
@@ -243,7 +245,14 @@
                                                     <table class="table table-borderless">
                                                       <thead>
                                                         <tr>
-                                                          <th>Item</th>
+                                                          <th>
+                                                            <button class="edit-icon" style="background-color: transparent;border:none" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                                              <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20">
+                                                                <path d="M180-180h44l443-443-44-44-443 443v44Zm614-486L666-794l42-42q17-17 42-17t42 17l44 44q17 17 17 42t-17 42l-42 42Zm-42 42L248-120H120v-128l504-504 128 128Zm-107-21-22-22 44 44-22-22Z"/>
+                                                              </svg>
+                                                            </button>
+                                                            Item
+                                                          </th>
                                                           <th>Deskripsi</th>
                                                           <th>Kuantitas</th>
                                                           <th>Harga</th>
@@ -374,6 +383,54 @@
                                                       </div>
                                                     </div>
                                                     <!-- Modal end -->
+                                                      <!-- Modal start -->
+                                                  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content" style="margin-top: -20%;">
+                                                    <div class="modal-header" style="margin-bottom: -1%">
+                                                        <h5 class="modal-title" id="exampleModalLabel" >Edit Kolom</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <form>
+                                                         <div class="field-wrapper m-0">
+                                                          <label for="nama">Nama Item</label>
+                                                            <select class="select-single js-states" title="Select Product Category" data-live-search="true">
+                                                              <option>Item</option>
+                                                              <option>Layanan</option>
+                                                              <option>Produk</option>
+                                                            </select>
+                                                          
+                                                         </div>
+<!--  -->                                                  <div class="field-wrapper m-0">
+                                                          <label for="nama">Nama Harga</label>
+                                                          <select class="select-single js-states" title="Select Product Category" data-live-search="true">
+                                                            <option>Harga</option>
+                                                            <option>Tarif</option>
+                                                          </select>
+
+                                                        </div>
+                                                        <label for="nama">Nama Kuantitas</label>
+                                                        <div class="field-wrapper m-0" style="display: flex; flex-direction: row;">
+                                                          <select class="select-single js-states" title="Select Product Category" onchange="showInputField(this)">
+                                                            <option>Kuantitas</option>
+                                                            <option>Khusus</option>
+                                                          </select>
+                                                          <div id="customInput" style="display: none; margin-left: 10px;">
+                                                            <input type="text" class="" placeholder="Masukan">
+                                                          </div>
+                                                        </div>
+                                                        
+                                                          
+                                                        </form>
+                                                      </div>
+                                                      <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                      </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!-- Modal end -->
                                                     </div>
                                                 </div>
                                               </div>
@@ -486,6 +543,9 @@
 		<!-- Search Filter JS -->
 		<script src="{{ asset ("Gmbslagi/vendor/search-filter/search-filter.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/search-filter/custom-search-filter.js")}}"></script>
+        	<!-- Bootstrap Select JS -->
+		<script src="{{ asset("Gmbslagi/vendor/bs-select/bs-select.min.js") }}"></script>
+		<script src="{{ asset("Gmbslagi/vendor/bs-select/bs-select-custom.js") }}"></script>
 
 		<!-- Main Js Required -->
 		<script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
@@ -739,6 +799,17 @@
       pajakWrapper.appendChild(newPajakInputWrapper);
     }
   });
+</script>
+<script>
+  function showInputField(selectElement) {
+    var inputField = document.getElementById("customInput");
+    
+    if (selectElement.value === "Khusus") {
+      inputField.style.display = "block";
+    } else {
+      inputField.style.display = "none";
+    }
+  }
 </script>
 	</body>
 
