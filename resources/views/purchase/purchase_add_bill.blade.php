@@ -188,8 +188,7 @@
                                       <div class="row">
                                         <div class="col-md-4">
                                           <div class="field-wrapper mb-3">
-                                            <label for="pemasok" class="field-label">Pemasok <span class="text-danger">*</span></label>
-                                            <select id="pemasok" class="form-control" autocomplete="off">
+                                            <select class="select-single js-states" title="Select Product Category" data-live-search="true">
                                               <option>Rudi</option>
                                               <option selected>Ruli</option>
                                               <option>Adi</option>
@@ -197,40 +196,41 @@
                                               <option>Gembes</option>
                                               <option>Reno</option>
                                               <option>Triski</option>
-                                            </select>
+                                            </select>              
+                                            <div class="field-placeholder">Pemasok <span class="text-danger">*</span></div>
                                           </div>
                                         </div>
                                         <div class="col-md-8">
                                           <div class="row" style="margin-top: -3%">
                                             <div class="col-md-6">
                                               <div class="field-wrapper mb-3">
-                                                <label for="tanggal-tagihan" class="field-label">Tanggal Tagihan</label>
                                                 <input id="tanggal-tagihan" class="form-control datepicker" type="text">
+                                                <div class="field-placeholder">Tanggal Tagihan</div>
                                               </div>
                                             </div>
                                             <div class="col-md-6">
                                               <div class="field-wrapper mb-3">
-                                                <label for="tanggal-pembayaran" class="field-label">Tanggal Pembayaran <span class="text-danger">*</span></label>
-                                                <select id="tanggal-pembayaran" class="form-control" autocomplete="off">
-                                                  <option selected>Jatuh tempo dalam 15 hari</option>
-                                                  <option>Jatuh tempo dalam 30 hari</option>
-                                                  <option>Jatuh tempo dalam 45 hari</option>
-                                                  <option>Jatuh tempo dalam 60 hari</option>
-                                                  <option>Jatuh tempo dalam 90 hari</option>
-                                                  <option>Jatuh tempo saat diterima</option>
-                                                </select>
+                                                <select class="select-single js-states" title="Select Product Category" data-live-search="true">
+                                                    <option selected>Jatuh tempo dalam 15 hari</option>
+                                                    <option>Jatuh tempo dalam 30 hari</option>
+                                                    <option>Jatuh tempo dalam 45 hari</option>
+                                                    <option>Jatuh tempo dalam 60 hari</option>
+                                                    <option>Jatuh tempo dalam 90 hari</option>
+                                                    <option>Jatuh tempo saat diterima</option>
+                                                </select>              
+                                                <div class="field-placeholder">Tanggal Pembayaran <span class="text-danger">*</span></div>
                                               </div>
                                             </div>
                                             <div class="col-md-6">
                                               <div class="field-wrapper mb-3">
-                                                <label for="nomor-faktur" class="field-label">Nomor Faktur</label>
                                                 <input id="nomor-faktur" class="form-control" type="text" placeholder="Masukkan Nomor Faktur">
+                                                <div class="field-placeholder">Nomor Faktur<span class="text-danger">*</span></div>
                                               </div>
                                             </div>
                                             <div class="col-md-6">
                                               <div class="field-wrapper mb-3">
-                                                <label for="nomor-pesanan" class="field-label">Nomor Pesanan</label>
                                                 <input id="nomor-pesanan" class="form-control" type="text" placeholder="Masukkan Nomor Pesanan">
+                                                <div class="field-placeholder">Nomor Pesanan<span class="text-danger">*</span></div>
                                               </div>
                                             </div>
                                           </div>
@@ -469,14 +469,16 @@
                                                            
                                                           </div>
                                                           <div class="flex-grow-0 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="z-index:auto" >
-                                                         
-                                                              <div class="" style="margin-bottom: 15%;z-index:auto">
-                                                                <label for="subjudul" class="field-label">Kategori<span class="text-danger">*</span></label>
-                                                                <select id="dropdown2" style="z-index:auto" class="demo-code-language" style="z-index: auto" placeholder="Kategori baru" autocomplete="off">
-                                                                  <option value="Lainya" selected>Lainya</option>
-                                                                  <option value="Beli Web">Beli Web</option>
-                                                                  <option value="Bulanan">Bulanan</option>
-                                                                </select>
+                                                            <div class="field-wrapper mb-3">
+                                                              <select class="select-single js-states" title="Select Product Category" data-live-search="true">
+                                                                  <option selected>Jatuh tempo dalam 15 hari</option>
+                                                                  <option>Jatuh tempo dalam 30 hari</option>
+                                                                  <option>Jatuh tempo dalam 45 hari</option>
+                                                                  <option>Jatuh tempo dalam 60 hari</option>
+                                                                  <option>Jatuh tempo dalam 90 hari</option>
+                                                                  <option>Jatuh tempo saat diterima</option>
+                                                              </select>              
+                                                              <div class="field-placeholder">Kategori <span class="text-danger">*</span></div>
                                                               </div>
                                                             </div>
                                                         
@@ -701,7 +703,7 @@
       <td>
         <div id="pajak-wrapper">
           <div class="field-wrapper mb-1 pajak-input-wrapper">
-            <input type="number" name="pajak[]" style="border-radius:2px" class="form-control pajak-input">
+            <input type="number" name="pajak[]" style="border-radius:2px" class="form-control">
           </div>
           <div class="add-pajak-wrapper mb-1">
             <button class="btn btn-light add-pajak">

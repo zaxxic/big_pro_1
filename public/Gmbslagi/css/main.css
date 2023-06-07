@@ -3599,7 +3599,7 @@ ul.statistics li .stat-icon i {
 }
 
 .product-card .product-card-body {
-    padding: 1rem 1rem;
+    padding: -1rem 1rem;
     position: relative;
 }
 
@@ -9832,6 +9832,4 @@ label {
             -webkit-box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
             box-shadow: 0 0 0 .2rem rgba(89, 87, 177, .3);
         }
-        .modal-dialog{
-            margin-top: 16% !important;
-        }
+      

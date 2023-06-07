@@ -621,6 +621,14 @@
                                                                                 <a href="{{url('edit_transfer')}}" class="menu-icon icon-edit-2" style="color: rgb(229, 134, 0)" ></a>
                                                                                 <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deletetransfer" style="color: rgb(255, 0, 0)" ></a>
                                                                                 <a href="{{url('show_transfer')}}" class="menu-icon icon-eye1" style="color: rgb(77, 77, 247)" ></a>
+                                                                                <a href="#">
+                                                                                <button type="button"
+                                                                                style="border: none; background:none; color:#333; background:transparent"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target="#payment">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 18%" height="18" viewBox="0 -960 960 960" width="18"><path d="M451-193h55v-52q61-7 95-37.5t34-81.5q0-51-29-83t-98-61q-58-24-84-43t-26-51q0-31 22.5-49t61.5-18q30 0 52 14t37 42l48-23q-17-35-45-55t-66-24v-51h-55v51q-51 7-80.5 37.5T343-602q0 49 30 78t90 54q67 28 92 50.5t25 55.5q0 32-26.5 51.5T487-293q-39 0-69.5-22T375-375l-51 17q21 46 51.5 72.5T451-247v54Zm29 113q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z"/></svg>
+                                                                                </button>
+                                                                            </a>
                                                                             </div>
                                                                         </th>
                                                                     </tr>
@@ -628,6 +636,75 @@
                                                             </table>
 
                                                             <!-- Card end -->
+                                                            <div class="modal fade" id="payment" tabindex="-1" aria-labelledby="paymentTitle"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                <div class="modal-content" style="margin-top: -10%; padding: 0px">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="paymentTitle">Pembayaran</h5>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                            aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="field-wrapper">
+                                                                            <label for="subjudul" class="field-label" style="color:#000000;">Kategori<span class="text-danger">*</span></label>
+                                                                            <input type="text" class="form-control"
+                                                                                style="border-radius: 2px" placeholder="Masukan Kategori">
+                                                                        </div>
+                                                                        <div class="field-wrapper">
+                                                                            <label for="subjudul" class="field-label" style="color:#000000;">Jumlah<span class="text-danger">*</span></label>
+                                                                            <input type="number" class="form-control"
+                                                                                style="border-radius: 2px" placeholder="Masukan Jumlah">
+                                                                        </div>
+                                                                        <div class="field-wrapper">
+                                                                            <label for="subjudul" class="field-label" style="color:#000000;">Metode Pembayaran<span class="text-danger">*</span></label>
+                                                                            <select class="select-single js-states"
+                                                                                title="Select Product Category" data-live-search="true"
+                                                                                style="border-radius: 2px">
+                                                                                <option>Cash</option>
+                                                                                <option>Transfer</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="field-wrapper">
+                                                                            <label for="subjudul" class="field-label" style="color:#000000;">Akun<span class="text-danger">*</span></label>
+                                                                            <select class="select-single js-states"
+                                                                                title="Select Product Category" data-live-search="true"
+                                                                                style="border-radius: 2px">
+                                                                                <option>Adi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                                <option>Rudi</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="text-white"
+                                                                            style="background-color:rgb(255, 0, 0); border:none; border-radius:2px; width:20%; height:25px; color:white"
+                                                                            data-bs-dismiss="modal">Batal</button>
+                                                                        <button type="button" class="text-white"
+                                                                            style="background-color: #55be0e; border:none; border-radius:2px; width:30%; height:25px; color:white">Simpan</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                         </div>
                                                     </div>
                                                 </div>

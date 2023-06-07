@@ -103,7 +103,7 @@
 							<div class="card" style="overflow: hidden">
 								<div class="card-header">
 									<div class="card-title">
-										<h3>Undang Pengguna<button type="button" style="border: none; background:none;">☆</button></h3>
+										<h3>Edit Pengguna<button type="button" style="border: none; background:none;">☆</button></h3>
 									</div>
 								</div>
 								<div class="card-body">

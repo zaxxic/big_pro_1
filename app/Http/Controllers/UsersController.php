@@ -14,4 +14,8 @@ class UsersController extends Controller
     {
         return view('user.add');
     }
+    public function edit_users()
+    {
+        return view('user.edit');
+    }
 }

@@ -127,7 +127,7 @@
 											</div>
 											<div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
 												<!-- Field wrapper start -->
-												<p style="">Logo</p>
+												<p style="">foto</p>
 												<!-- Example of a form that Dropzone can take over -->
 												<form action="/" id="myDropzone" class="dropzone"></form>
 											</div>

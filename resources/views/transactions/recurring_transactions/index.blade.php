@@ -47,14 +47,14 @@
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
     <style>
          .badge-start {
-            border-radius: 30px;
+            border-radius: 2px;
             padding: .35rem .5rem;
             min-width: 60px;
             background: #D8D7FF;
             color: #030179;
         }
          .badge-finish {
-            border-radius: 30px;
+            border-radius: 2px;
             padding: .35rem .5rem;
             min-width: 60px;
             background: #D4FFCD;
@@ -329,12 +329,12 @@
                                 <!-- Card start -->
 
                                 <!-- <div class="card-header"> -->
-                                <div class="card-header">
-                                        <div class=" col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 d-flex">
+                                <div class="card-header row"> 
+                                        <div class=" col-xl-4 col-lg-4 col-md-3 col-sm-3 col-12 d-flex">
                                             <div class="card-title">
                                                 <h3>Transaksi Rutin<button type="button" style="border: none; background:transparent;">☆</button></h3>
                                             </div>
-                                        </div>
+                                        </div>  
 
                                         <!-- <div class="text-end">
 											<a href="create-invoice.html" class="btn btn-primary">Create Invoice</a>
@@ -362,7 +362,6 @@
                                                 </ul>
                                             </div>
                                         </div>
-
                                     </div>
                                     <div id="dropdown-menu">
                                         <button class="dropdown-toggle">&#8942;</button>
