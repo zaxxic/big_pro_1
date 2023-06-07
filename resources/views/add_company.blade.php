@@ -77,150 +77,155 @@
 
                 <!-- Content wrapper start -->
                 <div class="content-wrapper">
-                    <div class="row">
-                        <div class="card-title">
-                            <div class="d-flex flex-wrap">
-                                <h1 class="card-title col-xl-8 col-lg-6 col-md-6 col-sm-6 col-12" style="font-size: 20px;">Dashboard
-
-                                </h1>
-                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                    <!-- Field wrapper start -->
-                                    <div class="field-wrapper">
-                                        <div class="input-group">
-                                            <input type="text" name="datefilter" class="form-control" style="z-index: auto" value="" />
-                                            <span class="input-group-text">
-                                                <i class="icon-calendar1"></i>
-                                            </span>
-                                        </div>
-                                        <div class="field-placeholder">Date Range Auto Apply</div>
-                                    </div>
-                                    <!-- Field wrapper end -->
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true" data-bs-backdrop="static">
-                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header1">
-                                        <h5 class="modal-title1" id="exampleModalCenteredScrollableTitle">Modal title</h5>
-                                    </div>
-                                    <div class="d-flex row ">
-                                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-
-                                                <!-- Field wrapper start -->
-                                                <div class="field-wrapper">
-                                                    <input class="form-control" type="text" placeholder="Masukan Nama">
-                                                    <div class="field-placeholder">Nama <span class="text-danger">*</span></div>
-                                                    <div class="form-text">
-                                                        Silakan masukkan nama lengkap Anda.
-                                                    </div>
-                                                </div>
-                                                <!-- Field wrapper end -->
-                                            </div>
-
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <input class="form-control" type="email" placeholder="Masukan Email">
-                                                <div class="field-placeholder">Email <span class="text-danger">*</span></div>
-                                                <div class="form-text">
-                                                    Kami tidak akan pernah membagikan email Anda kepada siapa pun.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                                            <!-- Field wrapper start -->
-                                            <p style="">Logo</p>
-                                            <!-- Example of a form that Dropzone can take over -->
-                                            <form action="/" id="myDropzone" class="dropzone"></form>
-                                        </div>
-                                        <div class="field-wrapper">
-                                            <input class="form-control" type="text" placeholder="Masukan Nomor Telepon">
-                                            <div class="field-placeholder">Telepon</div>
-                                        </div>
-                                        <!-- Field wrapper end -->
-                                        <div class="field-wrapper">
-                                            <input class="form-control" type="number" placeholder="Masukan Nomor NPWP">
-                                            <div class="field-placeholder">NPWP</div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="modal-footer" style="text-align: center;">
-                                        <button type="button" class="btn btn-primary">Registrasi</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="chart-container">
-                            <h6>Arus kas</h6>
-                            <p>Uang masuk dan keluar dari bisnis Anda</p>
-                            <hr>
-                            <div id="chart"></div>
-                            <br>
-                            <br>
-                            <div class="d-flex flex-column flex-sm-row">
-                                <div class=" col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 mb-3">
-                                    <h6>Arus kas</h6>
-                                    <p>Uang masuk dan keluar dari bisnis Anda</p>
-                                    <hr>
-                                    <div id="chart2"></div>
-                                </div>
-                                <div class="col-2"></div>
-                                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 mb-3">
-                                    <h6>Arus kas</h6>
-                                    <p>Uang masuk dan keluar dari bisnis Anda</p>
-                                    <hr>
-                                    <div id="chart3"></div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column flex-sm-row">
-                                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
-                                    <h6>Hutang</h6>
-                                    <p>Uang masuk dan keluar dari bisnis Anda</p>
-                                    <hr>
-                                    <p id="debtAmount">Total Hutang: $0</p>
-                                    <p id="remainingDebtAmount">Sisa Hutang: $0</p>
-                                    <p id="paidDebtAmount">Telah Dibayar: $0</p>
-                                    <div class="progress-bar-container">
-                                        <div class="progress-bar" id="debtProgressBar"></div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-
-                                </div>
-                                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
-                                    <h6>Piutang</h6>
-                                    <p>Uang masuk dan keluar dari bisnis Anda</p>
-                                    <hr>
-                                    <p id="receivableAmount">Total Piutang: $1000</p>
-                                    <p id="remainingReceivableAmount">Sisa Piutang: $500</p>
-                                    <p id="paidReceivableAmount">Telah Diterima: $0</p>
-                                    <div class="progress-bar-container">
-                                        <div class="progress-bar" id="receivableProgressBar"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Row end -->
-
-                            <!-- Row start -->
-
-                            <!-- Row end -->
-
-                        </div>
-
-                        <div class="app-footer">© Uni Pro Admin 2021</div>
-                    </div>
 
                     <!-- Row start -->
+                    <div class="row gutters">
+                        <div class="">
+                            <div class="card-title">
+                                <div class="d-flex flex-wrap">
+                                    <h1 class="card-title col-xl-8 col-lg-6 col-md-6 col-sm-6 col-12" style="font-size: 20px;">Dashboard
+
+                                    </h1>
+                                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                        <!-- Field wrapper start -->
+                                        <div class="field-wrapper">
+                                            <div class="input-group">
+                                                <input type="text" name="datefilter" class="form-control" style="z-index: auto" value="" />
+                                                <span class="input-group-text">
+                                                    <i class="icon-calendar1"></i>
+                                                </span>
+                                            </div>
+                                            <div class="field-placeholder">Date Range Auto Apply</div>
+                                        </div>
+                                        <!-- Field wrapper end -->
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Modal start -->
+                            <div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header1">
+                                            <h5 class="modal-title1" id="exampleModalCenteredScrollableTitle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inputkan Data Perusahaan</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex row ">
+                                                <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                                                        <!-- Field wrapper start -->
+                                                        <div class="field-wrapper">
+                                                            <input class="form-control" type="text" placeholder="Masukan Nama">
+                                                            <div class="field-placeholder">Nama <span class="text-danger">*</span></div>
+                                                            <div class="form-text">
+                                                                Silakan masukkan nama lengkap Anda.
+                                                            </div>
+                                                        </div>
+                                                        <!-- Field wrapper end -->
+                                                    </div>
+
+
+                                                    <!-- Field wrapper start -->
+                                                    <div class="field-wrapper">
+                                                        <input class="form-control" type="email" placeholder="Masukan Email">
+                                                        <div class="field-placeholder">Email <span class="text-danger">*</span></div>
+                                                        <div class="form-text">
+                                                            Kami tidak akan pernah membagikan email Anda kepada siapa pun.
+                                                        </div>
+                                                        <div class="field-wrapper">
+                                                            <input class="form-control" type="text" placeholder="Masukan Nomor Telepon">
+                                                            <div class="field-placeholder">Telepon</div>
+                                                        </div>
+                                                        <!-- Field wrapper end -->
+                                                        <div class="field-wrapper">
+                                                            <input class="form-control" type="number" placeholder="Masukan Nomor NPWP">
+                                                            <div class="field-placeholder">NPWP</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                                                    <!-- Field wrapper start -->
+                                                    <p style="">Logo</p>
+                                                    <!-- Example of a form that Dropzone can take over -->
+                                                    <form action="/" id="myDropzone" class="dropzone"></form>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer" style="text-align: center;">
+                                            <button type="button" class="btn btn-primary">Registrasi</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <h6>Arus kas</h6>
+                        <p>Uang masuk dan keluar dari bisnis Anda</p>
+                        <hr>
+                        <div id="chart"></div>
+                        <br>
+                        <br>
+                        <div class="d-flex flex-column flex-sm-row">
+                            <div class=" col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 mb-3">
+                                <h6>Arus kas</h6>
+                                <p>Uang masuk dan keluar dari bisnis Anda</p>
+                                <hr>
+                                <div id="chart2"></div>
+                            </div>
+                            <div class="col-2"></div>
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 mb-3">
+                                <h6>Arus kas</h6>
+                                <p>Uang masuk dan keluar dari bisnis Anda</p>
+                                <hr>
+                                <div id="chart3"></div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row">
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                                <h6>Hutang</h6>
+                                <p>Uang masuk dan keluar dari bisnis Anda</p>
+                                <hr>
+                                <p id="debtAmount">Total Hutang: $0</p>
+                                <p id="remainingDebtAmount">Sisa Hutang: $0</p>
+                                <p id="paidDebtAmount">Telah Dibayar: $0</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" id="debtProgressBar"></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                                <h6>Piutang</h6>
+                                <p>Uang masuk dan keluar dari bisnis Anda</p>
+                                <hr>
+                                <p id="receivableAmount">Total Piutang: $1000</p>
+                                <p id="remainingReceivableAmount">Sisa Piutang: $500</p>
+                                <p id="paidReceivableAmount">Telah Diterima: $0</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" id="receivableProgressBar"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row end -->
+
+                        <!-- Row start -->
+
+                        <!-- Row end -->
+
+                    </div>
                     <!-- Content wrapper end -->
 
                     <!-- App footer start -->
+                    <div class="app-footer">© Uni Pro Admin 2021</div>
                     <!-- App footer end -->
 
                 </div>
@@ -306,21 +311,21 @@
             $(document).ready(function() {
                 $('#exampleModalCenteredScrollable').modal('show');
             });
-            //dropzone
+//dropzone
             Dropzone.options.myDropzone = {
-                maxFiles: 1,
-                dictDefaultMessage: "Seret file di sini untuk mengunggah",
-                maxFilesize: 5 * 1024, // 5 MB
+				maxFiles: 1,
+				dictDefaultMessage: "Seret file di sini untuk mengunggah",
+				maxFilesize: 5 * 1024, // 5 MB
 
-                init: function() {
-                    this.on("addedfile", function(file) {
-                        if (this.files.length > 1) {
-                            this.removeFile(this.files[0]); // Hapus file sebelumnya jika ada
-                        }
-                    });
-                }
+				init: function() {
+				this.on("addedfile", function(file) {
+					if (this.files.length > 1) {
+					this.removeFile(this.files[0]); // Hapus file sebelumnya jika ada
+					}
+				});
+				}
 
-            };
+			};
         </script>
 </body>
 

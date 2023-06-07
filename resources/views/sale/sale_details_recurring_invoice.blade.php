@@ -131,17 +131,34 @@
                 <div class="row">
                     <div class="card">
                         <div class="card-header col-12">
+                            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
                             <div class="card-title ">
                                 <h3>Faktur Berulang: FBU-0002
                                 </h3>
-    
-    
+
                             </div>
-                            <div class="badge-finish" style="text-align: center">Terima</div>
-    
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
+                                        <div class="graph-day-selection" role="group" style="margin-left: -30px;margin-right: 10px;">
+                                                <div class="badge-finish" style="text-align: center;">Terima</div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                        </a>
+
+                                        <ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
+                                            <li><a class="dropdown-item-bt" href="#">Duplikat</a></li>
+                                            <li><a class="dropdown-item" href="#">Cetak</a></li>
+                                            <li><a class="dropdown-item-bt" href="#">Unduh PDF</a></li>
+                                            <li><a class="dropdown-item" href="#">Hapus</a></li>
+
+                                        </ul>
+                                    </div>
                         </div>
                         <div class="d-flex row">
-    
+
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="card-body">
                                     <div class="alert alert-primary mb-5"
@@ -190,7 +207,7 @@
                                             <div id="collapseThree" class="accordion-collapse collapse"
                                                 aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                                                 <div class="accordion-body">
-    
+
                                                     <p>dibayar otomatis dengan Faktur: FKR-00001</p>
                                                     <p>dibayar otomatis dengan Faktur: FKR-00002</p>
                                                     <p>dibayar otomatis dengan Faktur: FKR-00003</p>
@@ -268,10 +285,10 @@
                                         </div>
                                     </div>
                                     <!-- Faq end -->
-    
+
                                 </div>
                             </div>
-    
+
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
                                 <form
                                     action="https://www.kodingwife.com/demos/unipro/v1-x/05-desig4-violet/reports.html">
@@ -422,7 +439,7 @@
                                 </form>
                             </div>
                         </div>
-    
+
                     </div>
                 </div>
 
