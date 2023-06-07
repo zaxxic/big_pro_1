@@ -57,11 +57,80 @@
             background-color: #FFFFFF;
             border-color: #fdfdfe;
             box-shadow: 2px 2px 4px rgba(0, 0.2, 0.2, 0.3);
-            border-top: 5px solid orange;
+            border-top: 5px solid #FBD89D;
         }
-        .font-p{
+
+        .font-1 {
             color: #B87708;
         }
+
+        .alert2 {
+            position: relative;
+            padding: 1rem 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid transparent;
+            border-radius: .25rem
+        }
+
+        .alert-light2 {
+            color: #636464;
+            background-color: #FFFFFF;
+            border-color: #fdfdfe;
+            box-shadow: 2px 2px 4px rgba(0, 0.2, 0.2, 0.3);
+            border-top: 5px solid #99C5DB;
+        }
+
+        .font-2 {
+            color: #51B4E8;
+        }
+
+        .font-2 .font-s {
+            color: #00537D;
+        }
+
+        .drop-zone {
+        max-width: 100%; /*max to make it responsive*/
+        height: 50px;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        cursor: pointer;
+        color: lightgrey;
+        border: 4px dashed seagreen;
+        border-radius: 10px;
+      }
+      .drop-zone--over {
+        border-style: solid;
+      }
+      .drop-zone__input {
+        display: none;
+      }
+      .drop-zone__thumb {
+        width: 100px;
+        height: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #ccc;
+        background-size: cover;
+        position: relative;
+      }
+      .drop-zone__thumb::after {
+        content: attr(data-label); /*  displays text of data-lable*/
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px 0;
+        color: white;
+        background: rgba(0, 0, 0, 0.75);
+        text-align: center;
+        font-size: 14px;
+      }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -108,11 +177,31 @@
                             <!-- start -->
                             <div class="row mt-4">
                                 <div class="alert1 alert-light1" role="alert">
-                                    <p class="font-p">Jenis berkas yang diizinkan: XLS,XLSX</p>
-                                    <p class="font-p">Baris maksimal yang diizinkan: 500</p>
+                                    <p class="font-1">Jenis berkas yang diizinkan: XLS,XLSX</p>
+                                    <p class="font-1">Baris maksimal yang diizinkan: 500</p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="alert2 alert-light2" role="alert">
+                                    <p class="font-2">Anda dapat <a href=""><strong class="font-s"> mengunduh</strong></a> berkas contoh dan lengkapi itu dengan data Anda.</p>
                                 </div>
                             </div>
                         </div>
+                        <form action="">
+                            <div class="drop-zone">
+                                <span class="drop-zone__prompt">Drop file or click to upload</span>
+                                <!-- <div class="drop-zone__thumb" data-label="myfile.txt"></div> -->
+                                <input type="file" name="myFile" class="drop-zone__input" />
+                                <!-- add multiple attribute to input to support uploading more than one file-->
+                            </div>
+                        </form>
+
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
+											<div class="d-flex justify-content-end mt-4">
+												<button class="btn btn-outline-secondary1" type="submit" style="border-radius: 2px; margin-right: 1%" href="#">Batal</button>
+												<a href="{{ url('confirm_password') }}"><button class="btn btn-primary" type="submit" style="border-radius: 2px" >Simpan</button></a>
+											</div>
+										</div>
                     </div>
 
                     <!-- Content wrapper end -->
@@ -182,6 +271,77 @@
         <script src="https://unpkg.com/tippy.js@6.3.1/dist/tippy-bundle.umd.js"></script>
 
         <script src="{{ asset("Gmbslagi/js/chart_index.js") }}"></script>
+        <script>
+            document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
+        const dropZoneElement = inputElement.closest(".drop-zone");
+
+        dropZoneElement.addEventListener("click", (event) => {
+          inputElement.click(); /*clicking on input element whenever the dropzone is clicked so file browser is opened*/
+        });
+
+        inputElement.addEventListener("change", (event) => {
+          if (inputElement.files.length) {
+            updateThumbnail(dropZoneElement, inputElement.files[0]);
+          }
+        });
+
+        dropZoneElement.addEventListener("dragover", (event) => {
+          event.preventDefault(); /*this along with prevDef in drop event prevent browser from opening file in a new tab*/
+          dropZoneElement.classList.add("drop-zone--over");
+        });
+        ["dragleave", "dragend"].forEach((type) => {
+          dropZoneElement.addEventListener(type, (event) => {
+            dropZoneElement.classList.remove("drop-zone--over");
+          });
+        });
+        dropZoneElement.addEventListener("drop", (event) => {
+          event.preventDefault();
+          console.log(
+            event.dataTransfer.files
+          ); /*if you console.log only event and check the same data location, you won't see the file due to a chrome bug!*/
+          if (event.dataTransfer.files.length) {
+            inputElement.files =
+              event.dataTransfer.files; /*asigns dragged file to inputElement*/
+
+            updateThumbnail(
+              dropZoneElement,
+              event.dataTransfer.files[0]
+            ); /*thumbnail will only show first file if multiple files are selected*/
+          }
+          dropZoneElement.classList.remove("drop-zone--over");
+        });
+      });
+      function updateThumbnail(dropZoneElement, file) {
+        let thumbnailElement = dropZoneElement.querySelector(
+          ".drop-zone__thumb"
+        );
+        /*remove text prompt*/
+        if (dropZoneElement.querySelector(".drop-zone__prompt")) {
+          dropZoneElement.querySelector(".drop-zone__prompt").remove();
+        }
+
+        /*first time there won't be a thumbnailElement so it has to be created*/
+        if (!thumbnailElement) {
+          thumbnailElement = document.createElement("div");
+          thumbnailElement.classList.add("drop-zone__thumb");
+          dropZoneElement.appendChild(thumbnailElement);
+        }
+        thumbnailElement.dataset.label =
+          file.name; /*takes file name and sets it as dataset label so css can display it*/
+
+        /*show thumbnail for images*/
+        if (file.type.startsWith("image/")) {
+          const reader = new FileReader(); /*lets us read files to data URL*/
+          reader.readAsDataURL(file); /*base 64 format*/
+          reader.onload = () => {
+            thumbnailElement.style.backgroundImage = `url('${reader.result}')`; /*asynchronous call. This function runs once reader is done reading file. reader.result is the base 64 format*/
+            thumbnailElement.style.backgroundPosition = "center";
+          };
+        } else {
+          thumbnailElement.style.backgroundImage = null; /*plain background for non image type files*/
+        }
+      }
+        </script>
 
 </body>
 
