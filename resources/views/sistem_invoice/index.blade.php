@@ -182,7 +182,7 @@
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
                                                 <input class="form-control" type="text" placeholder=" Masukan Prefiks Nomor">
-                                                <div class="field-placeholder">Prefiks Nomor <span class="text-danger">*</span></div>
+                                                <div class="field-placeholder">Prefiks Nomor</div>
                                                 <div class="form-text">
 
                                                 </div>
@@ -196,7 +196,7 @@
                                             <div class="field-wrapper-group">
                                                 <div class="field-wrapper">
                                                     <select class="select-multiple js-states" title="Select Product Category">
-                                                        <option disabled selected>Syarat Pembayaran</option>
+                                                        <option disabled selected>Ketik untuk Mencari</option>
                                                         <option>1</option>
                                                         <option>2</option>
                                                         <option>3</option>
@@ -206,7 +206,7 @@
                                                         <option>7</option>
 
                                                     </select>
-                                                    <div class="field-placeholder">Digit Nomor<span class="text-danger">*</span></div>
+                                                    <div class="field-placeholder">Digit Nomor</div>
                                                 </div>
 
                                             </div>
@@ -217,7 +217,7 @@
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
                                                 <input class="form-control" type="number" placeholder=" Masukan nomor">
-                                                <div class="field-placeholder">Nomor Berikutnya<span class="text-danger">*</span></div>
+                                                <div class="field-placeholder">Nomor Berikutnya</div>
                                                 <div class="form-text">
 
                                                 </div>
@@ -240,7 +240,7 @@
                                                         <option>Jatuh tempo saat diterima</option>
 
                                                     </select>
-                                                    <div class="field-placeholder">Digit Nomor<span class="text-danger">*</span></div>
+                                                    <div class="field-placeholder">Syarat Pembayaran</div>
                                                 </div>
 
                                             </div>
@@ -280,7 +280,7 @@
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
                                                 <textarea class="form-control" rows="2" placeholder="Masukan Catatan"></textarea>
-                                                <div class="field-placeholder">Catatan <span class="text-danger">*</span></div>
+                                                <div class="field-placeholder">Catatan</div>
 
                                             </div>
                                             <!-- Field wrapper end -->
@@ -291,7 +291,7 @@
                                             <!-- Field wrapper start -->
                                             <div class="field-wrapper">
                                                 <textarea class="form-control" rows="2" placeholder="Masukan Footer"></textarea>
-                                                <div class="field-placeholder">Footer <span class="text-danger">*</span></div>
+                                                <div class="field-placeholder">Footer</div>
 
                                             </div>
                                             <!-- Field wrapper end -->

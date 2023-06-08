@@ -205,7 +205,7 @@
                                             <div class="col-md-6">
                                               <div class="field-wrapper mb-3">
                                                 <input id="tanggal-tagihan" class="form-control datepicker" type="text">
-                                                <div class="field-placeholder">Tanggal Tagihan</div>
+                                                <div class="field-placeholder">Tanggal Tagihan<span class="text-danger">*</span></div>
                                               </div>
                                             </div>
                                             <div class="col-md-6">
@@ -230,7 +230,7 @@
                                             <div class="col-md-6">
                                               <div class="field-wrapper mb-3">
                                                 <input id="nomor-pesanan" class="form-control" type="text" placeholder="Masukkan Nomor Pesanan">
-                                                <div class="field-placeholder">Nomor Pesanan<span class="text-danger">*</span></div>
+                                                <div class="field-placeholder">Nomor Pesanan</div>
                                               </div>
                                             </div>
                                           </div>
@@ -439,7 +439,7 @@
 												
                                               <!-- Field wrapper start -->
                                               <div class="field-wrapper">
-                                                <label for="judul" class="field-label">Catatan <span class="text-danger">*</span></label>
+                                                <label for="judul" class="field-label">Catatan</label>
                                                 <textarea class="form-control" placeholder="Masukan Catatan" rows="2"></textarea>
                                               </div>
                                               <!-- Field wrapper end -->                     
