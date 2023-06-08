@@ -40,6 +40,7 @@
     <!-- Search Filter JS -->
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/search-filter.css') }}">
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.css') }}">
+    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/summernote/summernote-bs4.css') }}" />
 
         <!-- Data Tables -->
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4.css")}}" />
@@ -435,12 +436,12 @@
                                                                         </button>
                                                                     </a>
                                                                     <a href="#">
-                                                                        <button type="button"
-                                                                            style="border: none; background:none; color:#333; background:transparent"
+                                                                        <button
+                                                                            type="button"style="border-radius:2px; height: 30px; border:none; color: #333; background-color:transparent;"
                                                                             data-bs-toggle="modal"
-                                                                            data-bs-target="#payment"
+                                                                            data-bs-target="#sendEmail"
                                                                             class="icon-mail">
-                                                                            Kirim email
+                                                                            Kirim Email
                                                                         </button>
                                                                     </a>
                                                                     <a href="#">
@@ -718,15 +719,55 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="text-white"
-                                                    style="background-color:rgb(255, 0, 0); border:none; border-radius:2px; width:20%; height:25px; color:white"
-                                                    data-bs-dismiss="modal">Batal</button>
-                                                <button type="button" class="text-white"
-                                                    style="background-color: #55be0e; border:none; border-radius:2px; width:30%; height:25px; color:white">Simpan</button>
+                                                <button class="btn btn-outline-secondary1" data-bs-dismiss="modal" type="submit" style="border-radius: 2px; margin-right: 1%" href="#">Batal</button>
+                                                <button class="btn btn-primary" type="submit" style="border-radius: 2px">Simpan</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                 <!-- Modal start -->
+                                 <div class="modal fade" id="sendEmail"
+                                 tabindex="-1"
+                                 aria-labelledby="sendEmailTitle"
+                                 aria-hidden="true">
+                                 <div
+                                     class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                     <div class="modal-content">
+                                         <div class="modal-header">
+                                             <h5 class="modal-title"
+                                                 id="sendEmailTitle">Kirim
+                                                 Email</h5>
+                                             <button type="button" class="btn-close"
+                                                 data-bs-dismiss="modal"
+                                                 aria-label="Close"></button>
+                                         </div>
+                                         <div class="modal-body">
+                                             <div class="field-wrapper">
+                                                 <label for="subjudul" class="field-label">Untuk<span
+                                                         class="text-danger">*</span></label>
+                                                 <input type="email" placeholder="Masukan Email Penerima" class="form-control datepicker"
+                                                     style="border-radius: 2px">
+                                             </div>
+                                             <div class="field-wrapper">
+                                                 <label for="subjudul" class="field-label">Subjek<span
+                                                         class="text-danger">*</span></label>
+                                                 <input type="text" placeholder="Masukan Subjek" class="form-control datepicker"
+                                                     style="border-radius: 2px">
+                                             </div>
+                                                 <label for="subjudul" class="field-label">Isi<span
+                                                 class="text-danger">*</span></label>
+                                                 <div class="field-wrapper mb-2">
+                                                     <div class="summernote"></div>
+                                                 </div>
+                                         </div>
+                                         <div class="modal-footer">
+                                             <button class="btn btn-outline-secondary1" data-bs-dismiss="modal" type="submit" style="border-radius: 2px; margin-right: 1%" href="#">Batal</button>
+                                             <button class="btn btn-primary" type="submit" style="border-radius: 2px">Simpan</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <!-- Modal end -->
                                 <!-- Modal start -->
                                 <div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1"
                                     aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
@@ -851,7 +892,22 @@
 
     <!-- Main Js Required -->
     <script src="{{ asset('Gmbslagi/js/main.js') }}"></script>
-
+    <script src="{{ asset('Gmbslagi/vendor/summernote/summernote-bs4.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $('.summernote').summernote({
+                height: 210,
+                tabsize: 2,
+                focus: true,
+                toolbar: [
+                    ['font', ['bold', 'underline', 'clear']],
+                    ['para', ['ul', 'ol']],
+                    ['insert', ['link', 'picture', 'video']],
+                    ['view', ['fullscreen', 'codeview', 'help']],
+                ]
+            });
+        });
+    </script>
     <script>
         const checkboxes = document.querySelectorAll('.other-checkbox');
                 const selectAllCheckbox = document.querySelector('#select-all-checkbox');

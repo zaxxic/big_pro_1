@@ -289,7 +289,7 @@
                                                                     </div>
                                                             </div>
                                                             <div class="modal-footer">
-                                                                <button class="btn btn-outline-secondary1" type="submit" style="border-radius: 2px; margin-right: 1%" href="#">Batal</button>
+                                                                <button class="btn btn-outline-secondary1" data-bs-dismiss="modal" type="submit" style="border-radius: 2px; margin-right: 1%" href="#">Batal</button>
                                                                 <button class="btn btn-primary" type="submit" style="border-radius: 2px">Simpan</button>
                                                             </div>
                                                         </div>
