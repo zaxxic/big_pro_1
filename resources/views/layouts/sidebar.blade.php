@@ -7,9 +7,9 @@
         <div class="nav" role="tablist" aria-orientation="vertical">
             <div style="margin-top: 10%;">
                 <div style="border-radius: 100%; overflow: hidden; width: 48px; height: 48px;">
-                    <a class="nav-link-pro " data-tab="tab1" class="logo" style="margin-bottom: 10%;">
+                    <a class="nav-link-pro" data-tab="tab1" class="logo" style="margin-bottom: 10%;">
                         <img src="{{ asset('Gmbslagi/img/better.jpg') }}"
-                            style="width: 48px; height: 48px; margin-bottom: 10%;">
+                            style="width: 48px; height: 48px; margin-bottom: 10%; z-index: 1;">
                     </a>
                 </div>
             </div>
