@@ -437,29 +437,7 @@
                                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
                                                         <div class="modal-body">
-                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                                <div class="field-wrapper">
-                                                                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-12">
-                                                                    <label class="mb-2">Jenis</label>
-                                                                </div>
-                                                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
-                                                                    
-                                                                    </div>
-                                                                    <div class="half-width-container">
-
-                                                                        <input type="radio" name="option" id="option1" value="Option 1" checked>
-                                                                        <label class="label" for="option1">Bank</label>
-
-                                                                        <input type="radio" name="option" id="option2" value="Option 2">
-                                                                        <label class="label" for="option2">Kartu Kredit</label>
-                                                                    </div>
-                                                                </div>
-
-                                                                <!-- Field wrapper start -->
-
-                                                                <!-- Field wrapper end -->
-
-                                                            </div>
+                                                            
                                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                                                                 <!-- Field wrapper start -->
