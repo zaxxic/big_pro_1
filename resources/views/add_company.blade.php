@@ -106,7 +106,7 @@
                             </div>
 
                             <!-- Modal start -->
-                            <div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
+                            <div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true" data-bs-backdrop="static">
                                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header1">
@@ -119,11 +119,8 @@
 
                                                         <!-- Field wrapper start -->
                                                         <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukan Nama">
-                                                            <div class="field-placeholder">Nama <span class="text-danger">*</span></div>
-                                                            <div class="form-text">
-                                                                Silakan masukkan nama lengkap Anda.
-                                                            </div>
+                                                            <input class="form-control" type="text" placeholder="Masukan Nama Perusahaan">
+                                                            <div class="field-placeholder">Nama Perusahaan<span class="text-danger">*</span></div>
                                                         </div>
                                                         <!-- Field wrapper end -->
                                                     </div>
@@ -133,18 +130,15 @@
                                                     <div class="field-wrapper">
                                                         <input class="form-control" type="email" placeholder="Masukan Email">
                                                         <div class="field-placeholder">Email <span class="text-danger">*</span></div>
-                                                        <div class="form-text">
-                                                            Kami tidak akan pernah membagikan email Anda kepada siapa pun.
-                                                        </div>
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukan Nomor Telepon">
-                                                            <div class="field-placeholder">Telepon</div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="number" placeholder="Masukan Nomor NPWP">
-                                                            <div class="field-placeholder">NPWP</div>
-                                                        </div>
+                                                    </div>
+                                                    <div class="field-wrapper">
+                                                        <input class="form-control" type="text" placeholder="Masukan Nomor Telepon">
+                                                        <div class="field-placeholder">Telepon</div>
+                                                    </div>
+                                                    <!-- Field wrapper end -->
+                                                    <div class="field-wrapper">
+                                                        <input class="form-control" type="number" placeholder="Masukan Nomor NPWP">
+                                                        <div class="field-placeholder">NPWP</div>
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
@@ -311,21 +305,21 @@
             $(document).ready(function() {
                 $('#exampleModalCenteredScrollable').modal('show');
             });
-//dropzone
+            //dropzone
             Dropzone.options.myDropzone = {
-				maxFiles: 1,
-				dictDefaultMessage: "Seret file di sini untuk mengunggah",
-				maxFilesize: 5 * 1024, // 5 MB
+                maxFiles: 1,
+                dictDefaultMessage: "Seret file di sini untuk mengunggah",
+                maxFilesize: 5 * 1024, // 5 MB
 
-				init: function() {
-				this.on("addedfile", function(file) {
-					if (this.files.length > 1) {
-					this.removeFile(this.files[0]); // Hapus file sebelumnya jika ada
-					}
-				});
-				}
+                init: function() {
+                    this.on("addedfile", function(file) {
+                        if (this.files.length > 1) {
+                            this.removeFile(this.files[0]); // Hapus file sebelumnya jika ada
+                        }
+                    });
+                }
 
-			};
+            };
         </script>
 </body>
 

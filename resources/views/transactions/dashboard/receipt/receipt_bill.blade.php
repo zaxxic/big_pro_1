@@ -230,19 +230,20 @@
                                 <!-- Card start -->
                                 <div class="card">
 
-                                    <div class="alert alert-primary"
+                                    <!-- <div class="alert alert-primary"
                                     style="border-radius: 2px; border:1px solid #e3e3e3 ; background-color:#ffffff"
-                                    role="alert">
+                                    role="alert"> -->
                                     <p style="font-size:14pt;color:black">Membuat</p>
-                                    <br>
-                                    <p style="font-size:10pt;color:black">Trisqi membuat Transaksi ini pada
+                                    
+                                    <p style="font-size: 10pt; color:black; margin-bottom: 3;">Trisqi membuat Transaksi ini pada
                                         <b>24
                                             mei 2023</b>
                                     </p>
                                     <a href="{{ route('edit_expenditure') }}">
                                     <button
                                         style="background-color: #9a99e2;border-radius:2px;width:80px;border:transparent;height:25px;color:#ffffff">Sunting</button></a>
-                                </div>
+                                        <hr>
+                                <!-- </div> -->
                                 </div>
                                 <!-- Card end -->
 

@@ -46,6 +46,14 @@
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4-custom.css")}}" />
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
     <style>
+         .badge-finish {
+            border-radius: 2px;
+            padding: .35rem .5rem;
+            min-width: 60px;
+            background: #ffffff;
+            color: #0A6D01;
+        }
+
         .lingkaran-warna1 {
 
             width: 15px;
@@ -149,6 +157,43 @@
             outline: 1px solid #f26861;
             -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
             box-shadow: 0 0 0 0.2rem rgba(242, 104, 97, 0.3);
+        }
+
+        #myModal {
+            display: none;
+            /* Modal akan disembunyikan secara default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            /* background-color: rgba(0, 0, 0, 0.5); */
+            /* Warna latar belakang semi-transparan */
+        }
+
+        .modal-content {
+            background-color: #eaeaff;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #eaeaff;
+            width: 80%;
+            left: 17%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
         }
 
         .text {
@@ -490,133 +535,207 @@
                                                 <div class="tab-content" id="pills-tabContent">
                                                     <div class="tab-pane fade show active" id="pills-transactions" role="tabpanel" aria-labelledby="pills-transactions-tab" tabindex="0">
                                                         <div>
-                                                            <div class="table-responsive">
-                                                                <table class="table table-hover">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th scope="col"> <input type="checkbox" id="select-all" onchange="toggleCheckbox()"></th>
-                                                                            <th scope="col">Tanggal</th>
-                                                                            <th scope="col">Nomor</th>
-                                                                            <th scope="col">Jenis</th>
-                                                                            <th scope="col">Kategori</th>
-                                                                            <th></th>
+                                                        <div class="table-responsive">
+                                        <div class="hidden-menu" style="display: none; background-color: #f2f2f2; font-size: 12pt; padding: 10px;">
+                                            <p style="display: inline" id="count-display">&emsp;</p>
+                                            &emsp;<a href="#" title="Hapus"> <i class="icon-trash-2"></i> </a>
+                                        </div>
+                                        <table class="table table-hover">
 
-                                                                            <th scope="col">Akun</th>
-                                                                            <th scope="col">Jumlah</th>
-                                                                            <th scope="col">Aksi</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td name="item" id="checkbox1"><input type="checkbox"></td>
-                                                                            <td>16 Mei 2023</th>
-                                                                            <td>TRA-00038</td>
-                                                                            <td>Pengeluaran</td>
-                                                                            <td>
-                                                                                <div class="lingkaran-warna1">
-                                                                                    &emsp;&emsp;Biaya Lain-Lain
-                                                                                </div>
-                                                                            </td>
-                                                                            <td></td>
-                                                                            <td>Naura Dewi</td>
-                                                                            <td>Rp900.000.000</td>
-                                                                            <th>
-                                                                                <div class="menu-icons" style="font-size: 15px;">
-                                                                                    <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
-                                                                                    <a href="{{url('delete_income')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleteincome"></a>
-                                                                                    <a href="{{url('show_income')}}" class="menu-icon icon-eye1"></a>
-                                                                                </div>
-                                                                            </th>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td name="item" id="checkbox2"><input type="checkbox"></td>
-                                                                            <td>13 Mei 2023</th>
-                                                                            <td>TRA-00037</td>
-                                                                            <td>Pendapatan</td>
-                                                                            <td>
-                                                                                <div class="lingkaran-warna2">
-                                                                                    &emsp;&emsp;Penjualan Website
-                                                                                </div>
-                                                                            </td>
-                                                                            <td></td>
-                                                                            <td>Bpk Yanto</td>
-                                                                            <td>Rp700.000.000</td>
-                                                                            <th>
-                                                                                <div class="menu-icons" style="font-size: 15px;">
-                                                                                    <a href="{{url('edit_expenditure')}}" class="menu-icon icon-edit-2"></a>
-                                                                                      <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
-                                                                                    <a href="{{url('show_expenditure')}}" class="menu-icon icon-eye1"></a>
-                                                                                </div>
-                                                                            </th>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td name="item" id="checkbox3"><input type="checkbox"></td>
-                                                                            <td>23 Mei 2023</th>
-                                                                            <td>TRA-00039</td>
-                                                                            <td>Pendapatan</td>
-                                                                            <td>
-                                                                                <div class="lingkaran-warna3">
-                                                                                    &emsp;&emsp;Penjualan
-                                                                                </div>
-                                                                            </td>
-                                                                            <td></td>
-                                                                            <td>Ugud Budiman</td>
-                                                                            <td>Rp200.000.000</td>
-                                                                            <th>
-                                                                                <div class="menu-icons" style="font-size: 15px;">
-                                                                                    <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
-                                                                                    <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
-                                                                                    <a href="{{url('show_income')}}" class="menu-icon icon-eye1"></a>
-                                                                                </div>
-                                                                            </th>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td name="item" id="checkbox4"><input type="checkbox"></td>
-                                                                            <td>34 Mei 2023</th>
-                                                                            <td>TRA-00040</td>
-                                                                            <td>Pendapatan</td>
-                                                                            <td>
-                                                                                <div class="lingkaran-warna4">
-                                                                                    &emsp;&emsp;Penjualan Website
-                                                                                </div>
-                                                                            </td>
-                                                                            <td></td>
-                                                                            <td>Louis Gunawan</td>
-                                                                            <td>Rp1.000.000.000</td>
-                                                                            <th>
-                                                                                <div class="menu-icons" style="font-size: 15px;">
-                                                                                    <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
-                                                                                    <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
-                                                                                    <a href="{{url('show_income')}}" class="menu-icon icon-eye1"></a>
-                                                                                </div>
-                                                                            </th>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td name="item" id="checkbox5"><input type="checkbox"></td>
-                                                                            <td>34 Mei 2023</th>
-                                                                            <td>TRA-00041</td>
-                                                                            <td>Pengeluaran</td>
-                                                                            <td>
-                                                                                <div class="lingkaran-warna5">
-                                                                                    &emsp;&emsp;Biaya Listik
-                                                                                </div>
-                                                                            </td>
-                                                                            <td></td>
-                                                                            <td>Melati Handoko</td>
-                                                                            <td>Rp1.000.000.000</td>
-                                                                            <th>
-                                                                                <div class="menu-icons" style="font-size: 15px;">
-                                                                                    <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
-                                                                                    <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
-                                                                                    <a href="{{url('show_income')}}" class="menu-icon icon-eye1"></a>
-                                                                                </div>
-                                                                            </th>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
+                                            <thead>
+                                                <tr>
 
-                                                                <!-- Card end -->
+                                                    <th scope="col"> <input type="checkbox" id="select-all-checkbox"></th>
+                                                    <th scope="col">Tanggal</th>
+                                                    <th scope="col">Nomor</th>
+                                                    <th scope="col">Jenis</th>
+                                                    <th scope="col">Kategori</th>
+                                                    <th></th>
+
+                                                    <th scope="col">Akun</th>
+                                                    <th scope="col">Dokumen</th>
+                                                    <th scope="col">Jumlah</th>
+                                                    <th scope="col">Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td name="item" id="checkbox1"><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>16 Mei 2023</th>
+                                                    <td>TRA-00038</td>
+                                                    <td>Pengeluaran</td>
+                                                    <td>
+                                                        <div class="lingkaran-warna1">
+                                                            &emsp;&emsp;Biaya Lain-L...
+                                                        </div>
+                                                    </td>
+                                                    <td></td>
+                                                    <td>Naura Dewi</td>
+                                                    <td>N/A</td>
+                                                    <td>Rp900.000.000</td>
+                                                    <th>
+                                                        <div class="menu-icons" style="font-size: 15px;">
+                                                            <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
+                                                            <a href="{{url('delete_income')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleteincome"></a>
+                                                            <a href="{{route('show_expenditure')}}" class="menu-icon icon-eye1"></a>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                                <!-- <div id="myModal">
+                                                    <div class="modal-content">
+                                                        <span class="close">&times;</span>
+                                                        <p>Isi modal di sini...</p>
+                                                    </div>
+                                                </div> -->
+                                                <tr>
+                                                    <td name="item" id="checkbox2"><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>13 Mei 2023</th>
+                                                    <td>TRA-00037</td>
+                                                    <td>Pendapatan</td>
+                                                    <td>
+                                                        <div class="lingkaran-warna2">
+                                                            &emsp;&emsp;Penjualan W...
+                                                        </div>
+                                                    </td>
+                                                    <td></td>
+                                                    <td>Bpk Yanto</td>
+                                                    <td>N/A</td>
+                                                    <td>Rp700.000.000</td>
+                                                    <th>
+                                                        <div class="menu-icons" style="font-size: 15px;">
+                                                            <a href="{{url('edit_expenditure')}}" class="menu-icon icon-edit-2"></a>
+                                                            <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
+                                                            <a href="{{route('show_income')}}" class="menu-icon icon-eye1"></a>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                                <tr >
+                                                    <td name="item" id="checkbox3"><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>23 Mei 2023</th>
+                                                    <td>TRA-00039</td>
+                                                    <td>Pendapatan</td>
+                                                    <td>
+                                                        <div class="lingkaran-warna3">
+                                                            &emsp;&emsp;Penjualan
+                                                        </div>
+                                                    </td>
+                                                    <td></td>
+                                                    <td>Ugud Budiman</td>
+                                                    <td  id="myButton"><a href="{{url('details')}}">FKR-00002</a>
+                                                    </td>
+                                                    <td>Rp200.000.000</td>
+                                                    <th>
+                                                        <div class="menu-icons" style="font-size: 15px;">
+                                                            <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
+                                                            <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
+                                                            <a href="{{url('receipt_transactions')}}" class="menu-icon icon-eye1"></a>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                                <div id="myModal">
+                                                    <div class="modal-content">
+                                                        <div class="card" style="background-color:  #eaeaff;">
+                                                            <div class="card-header" style="margin-bottom: 2%;">
+                                                                <div class="col-xl-2 col-lg-2 col-md-8 col-sm-8 col-12">
+                                                                    <i class="icon-user1" style="font-size: 23px; color: #5957b1;"></i>
+                                                                </div>
+                                                                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-12">
+                                                                    <span style="color: #000">INV-00002</span> <br>
+                                                                    <span style="color: #000">Ugud</span>
+                                                                </div>
+                                                                <div class="col-xl-4 col-lg-4 col-md-8 col-sm-8 col-12">
+                                                                    <span class="badge-finish" style="float: right; margin-bottom: 10%;">Selesai</span>
+                                                                </div>
                                                             </div>
+                                                            
+                                                        <div class="card-header" style="margin-bottom: 2%;">
+                                                                <div class="col-xl-2 col-lg-2 col-md-8 col-sm-8 col-12">
+                                                                    <i class="icon-local_atm" style="font-size: 23px; color: #5957b1;"></i>
+                                                                </div>
+                                                                <div class="col-xl-10 col-lg-10 col-md-8 col-sm-8 col-12">
+                                                                    <span style="color: #000">Rp200.000.000</span> <br>
+                                                                    <span style="color: #000">2 minggu yang lalu</span>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div class="card-header" style="margin-bottom: 2%;">
+                                                                <div class="col-xl-2 col-lg-2 col-md-8 col-sm-8 col-12">
+                                                                    <i class="icon-tag1" style="font-size: 23px; color: #5957b1;"></i>
+                                                                </div>
+                                                                <div class="col-xl-10 col-lg-10 col-md-8 col-sm-8 col-12">
+                                                                    <span style="color: #000">Bayar Listrik</span> <br>
+                                                                    <span style="color: #000">Rp300.000.000</span>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div class="card-header" style="margin-bottom: 2%;">
+                                                                <div class="col-xl-2 col-lg-2 col-md-8 col-sm-8 col-12">
+                                                                    <i class="icon-attach_money" style="font-size: 23px; color: #5957b1;"></i>
+                                                                </div>
+                                                                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-12">
+                                                                    <span style="color: #000">Dibayar</span> <br>
+                                                                    <span style="color: #000">Total Pembayaran </span>
+                                                                </div>
+                                                                <div class="col-xl-4 col-lg-4 col-md-8 col-sm-8 col-12">
+                                                                    <span class="" style="float: right; color: #000">Rp200.000.000</span>
+                                                                    <span class="" style="float: right; color: #000">Rp500.000.000</span>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <tr>
+                                                    <td name="item" id="checkbox4"><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>34 Mei 2023</th>
+                                                    <td>TRA-00040</td>
+                                                    <td>Pendapatan</td>
+                                                    <td>
+                                                        <div class="lingkaran-warna4">
+                                                            &emsp;&emsp;Penjualan W...
+                                                        </div>
+                                                    </td>
+                                                    <td></td>
+                                                    <td>Louis Gunawan</td>
+                                                    <td ><a href="{{url('bill_detail')}}">N/A </a>
+                                                    </td>
+                                                    <td>Rp1.000.000.000</td>
+                                                    <th>
+                                                        <div class="menu-icons" style="font-size: 15px;">
+                                                            <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
+                                                            <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
+                                                            <a href="{{url('receipt_bill_transactions')}}" class="menu-icon icon-eye1"></a>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                               
+                                                <tr>
+                                                    <td name="item" id="checkbox5"><input type="checkbox" class="other-checkbox"></td>
+                                                    <td>34 Mei 2023</th>
+                                                    <td>TRA-00041</td>
+                                                    <td>Pengeluaran</td>
+                                                    <td>
+                                                        <div class="lingkaran-warna5">
+                                                            &emsp;&emsp;Biaya Listik
+                                                        </div>
+                                                    </td>
+                                                    <td></td>
+                                                    <td>Melati Handoko</td>
+                                                    <td>N/A</td>
+                                                    <td>Rp1.000.000.000</td>
+                                                    <th>
+                                                        <div class="menu-icons" style="font-size: 15px;">
+                                                            <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
+                                                            <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
+                                                            <a href="{{url('show_income')}}" class="menu-icon icon-eye1"></a>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <!-- Card end -->
+                                    </div>
                                                         </div>
                                                     </div>
                                                     <div class="tab-pane fade" id="pills-transfer" role="tabpanel" aria-labelledby="pills-transfer-tab" tabindex="0">
@@ -838,6 +957,32 @@
                 checkboxes[i].checked = selectAllCheckbox.checked;
             }
         }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+                    var modal = document.getElementById("myModal");
+                    var button = document.getElementById("myButton");
+
+                    // Fungsi untuk menampilkan modal saat dihover
+                    function showModal() {
+                        modal.style.display = "block";
+                    }
+
+                    // Fungsi untuk menyembunyikan modal saat keluar dari hover
+                    function hideModal() {
+                        modal.style.display = "none";
+                    }
+
+                    // Tambahkan event listener saat tombol dihover
+                    button.addEventListener("mouseenter", showModal);
+                    button.addEventListener("mouseleave", hideModal);
+
+                    // Hapus event listener saat halaman akan direfresh
+                    window.addEventListener("beforeunload", function() {
+                        button.removeEventListener("mouseenter", showModal);
+                        button.removeEventListener("mouseleave", hideModal);
+                    });
+                });
     </script>
 
 

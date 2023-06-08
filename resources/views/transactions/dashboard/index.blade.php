@@ -46,6 +46,22 @@
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/dataTables.bs4-custom.css")}}" />
     <link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/datatables/buttons.bs.css")}}" />
     <style>
+        .badge-start {
+            border-radius: 2px;
+            padding: .35rem .5rem;
+            min-width: 60px;
+            background: #D8D7FF;
+            color: #030179;
+        }
+
+        .badge-finish {
+            border-radius: 2px;
+            padding: .35rem .5rem;
+            min-width: 60px;
+            background: #ffffff;
+            color: #0A6D01;
+        }
+
         .hidden-menu {
             display: none;
             background-color: #f2f2f2;
@@ -223,16 +239,17 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgba(0, 0, 0, 0.5);
+            /* background-color: rgba(0, 0, 0, 0.5); */
             /* Warna latar belakang semi-transparan */
         }
 
         .modal-content {
-            background-color: #fefefe;
+            background-color: #eaeaff;
             margin: 15% auto;
             padding: 20px;
-            border: 1px solid #888;
+            border: 1px solid #eaeaff;
             width: 80%;
+            left: 17%;
         }
 
         .close {
@@ -639,7 +656,7 @@
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
                                                             <a href="{{url('delete_income')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleteincome"></a>
-                                                            <a href="{{route('receipt_transactions')}}" class="menu-icon icon-eye1"></a>
+                                                            <a href="{{route('show_expenditure')}}" class="menu-icon icon-eye1"></a>
                                                         </div>
                                                     </th>
                                                 </tr>
@@ -667,11 +684,11 @@
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{url('edit_expenditure')}}" class="menu-icon icon-edit-2"></a>
                                                             <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
-                                                            <a href="{{route('receipt_bill_transactions')}}" class="menu-icon icon-eye1"></a>
+                                                            <a href="{{route('show_income')}}" class="menu-icon icon-eye1"></a>
                                                         </div>
                                                     </th>
                                                 </tr>
-                                                <tr id="myButton">
+                                                <tr>
                                                     <td name="item" id="checkbox3"><input type="checkbox" class="other-checkbox"></td>
                                                     <td>23 Mei 2023</th>
                                                     <td>TRA-00039</td>
@@ -683,39 +700,68 @@
                                                     </td>
                                                     <td></td>
                                                     <td>Ugud Budiman</td>
-                                                    <td class="empty-box"><a href="{{url('details')}}">FKR-00002</a>
-                                                        <span>
-                                                            <div class="dropdown-content">
-                                                                <a href="#">
-                                                                    <button type="button" style="border: none; background:none; color:#333; background:transparent" data-bs-toggle="modal" data-bs-target="#payment" class="icon-attach_money">
-                                                                        Bayar
-                                                                    </button>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-printer">
-                                                                        Cetak
-                                                                    </button>
-                                                                </a>
-                                                                <a href="#" class="icon-x-circle" style="color: #333">
-                                                                    <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
-                                                                        Batal</button>
-                                                                </a>
-                                                            </div>
-                                                        </span>
+                                                    <td id="myButton"><a href="{{url('details')}}">FKR-00002</a>
                                                     </td>
                                                     <td>Rp200.000.000</td>
                                                     <th>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
                                                             <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
-                                                            <a href="{{url('show_income')}}" class="menu-icon icon-eye1"></a>
+                                                            <a href="{{url('receipt_transactions')}}" class="menu-icon icon-eye1"></a>
                                                         </div>
                                                     </th>
                                                 </tr>
                                                 <div id="myModal">
                                                     <div class="modal-content">
-                                                        <span class="close">&times;</span>
-                                                        <p>Isi modal di sini...</p>
+                                                        <div class="card" style="background-color:  #eaeaff;">
+                                                            <div class="card-header" style="margin-bottom: 2%;">
+                                                                <div class="col-xl-2 col-lg-2 col-md-8 col-sm-8 col-12">
+                                                                    <i class="icon-user1" style="font-size: 23px; color: #5957b1;"></i>
+                                                                </div>
+                                                                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-12">
+                                                                    <span>INV-00002</span> <br>
+                                                                    <span>Ugud</span>
+                                                                </div>
+                                                                <div class="col-xl-4 col-lg-4 col-md-8 col-sm-8 col-12">
+                                                                    <span class="badge-finish" style="float: right; margin-bottom: 10%;">Selesai</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="card-header" style="margin-bottom: 2%;">
+                                                                <div class="col-xl-2 col-lg-2 col-md-8 col-sm-8 col-12">
+                                                                    <i class="icon-local_atm" style="font-size: 23px; color: #5957b1;"></i>
+                                                                </div>
+                                                                <div class="col-xl-10 col-lg-10 col-md-8 col-sm-8 col-12">
+                                                                    <span>Rp200.000.000</span> <br>
+                                                                    <span>2 minggu yang lalu</span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-header" style="margin-bottom: 2%;">
+                                                                <div class="col-xl-2 col-lg-2 col-md-8 col-sm-8 col-12">
+                                                                    <i class="icon-tag1" style="font-size: 23px; color: #5957b1;"></i>
+                                                                </div>
+                                                                <div class="col-xl-10 col-lg-10 col-md-8 col-sm-8 col-12">
+                                                                    <span>Bayar Listrik</span> <br>
+                                                                    <span>Rp300.000.000</span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-header" style="margin-bottom: 2%;">
+                                                                <div class="col-xl-2 col-lg-2 col-md-8 col-sm-8 col-12">
+                                                                    <i class="icon-attach_money" style="font-size: 23px; color: #5957b1;"></i>
+                                                                </div>
+                                                                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-12">
+                                                                    <span>Dibayar</span> <br>
+                                                                    <span>Total Pembayaran </span>
+                                                                </div>
+                                                                <div class="col-xl-4 col-lg-4 col-md-8 col-sm-8 col-12">
+                                                                    <span class="" style="float: right;">Rp200.000.000</span>
+                                                                    <span class="" style="float: right;">Rp500.000.000</span>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <tr>
@@ -730,35 +776,70 @@
                                                     </td>
                                                     <td></td>
                                                     <td>Louis Gunawan</td>
-                                                    <td class="empty-box"><a href="{{url('bill_detail')}}">TGH-00002</a>
-                                                        <span>
-                                                            <div class="dropdown-content">
-                                                                <a href="#">
-                                                                    <button type="button" style="border: none; background:none; color:#333; background:transparent" data-bs-toggle="modal" data-bs-target="#payment" class="icon-attach_money">
-                                                                        Bayar
-                                                                    </button>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <button type="button" style="border: none; background-color: white; color:#333; background:transparent" class="icon-printer">
-                                                                        Cetak
-                                                                    </button>
-                                                                </a>
-                                                                <a href="#" class="icon-x-circle" style="color: #333">
-                                                                    <button type="button" style="border: none; background-color: white; color:#333; background:transparent">
-                                                                        Batal</button>
-                                                                </a>
-                                                            </div>
-                                                        </span>
+                                                    <td class="empty-box"><a href="{{url('bill_detail')}}">N/A </a>
                                                     </td>
                                                     <td>Rp1.000.000.000</td>
                                                     <th>
                                                         <div class="menu-icons" style="font-size: 15px;">
                                                             <a href="{{url('edit_income')}}" class="menu-icon icon-edit-2"></a>
                                                             <a href="{{url('delete_income')}}" class="menu-icon icon-trash"></a>
-                                                            <a href="{{url('show_income')}}" class="menu-icon icon-eye1"></a>
+                                                            <a href="{{url('receipt_bill_transactions')}}" class="menu-icon icon-eye1"></a>
                                                         </div>
                                                     </th>
                                                 </tr>
+                                                <div id="myModal">
+                                                    <div class="modal-content">
+                                                        <div class="card" style="background-color:  #eaeaff;">
+                                                            <div class="card-header" style="margin-bottom: 2%;">
+                                                                <div class="col-xl-2 col-lg-2 col-md-8 col-sm-8 col-12">
+                                                                    <i class="icon-user1" style="font-size: 23px; color: #5957b1;"></i>
+                                                                </div>
+                                                                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-12">
+                                                                    <span>N/A</span> <br>
+                                                                    <span>Louis Gunawan</span>
+                                                                </div>
+                                                                <div class="col-xl-4 col-lg-4 col-md-8 col-sm-8 col-12">
+                                                                    <span class="badge-finish" style="float: right; margin-bottom: 10%;">Selesai</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="card-header" style="margin-bottom: 2%;">
+                                                                <div class="col-xl-2 col-lg-2 col-md-8 col-sm-8 col-12">
+                                                                    <i class="icon-local_atm" style="font-size: 23px; color: #5957b1;"></i>
+                                                                </div>
+                                                                <div class="col-xl-10 col-lg-10 col-md-8 col-sm-8 col-12">
+                                                                    <span>Rp200.000.000</span> <br>
+                                                                    <span>2 minggu yang lalu</span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-header" style="margin-bottom: 2%;">
+                                                                <div class="col-xl-2 col-lg-2 col-md-8 col-sm-8 col-12">
+                                                                    <i class="icon-tag1" style="font-size: 23px; color: #5957b1;"></i>
+                                                                </div>
+                                                                <div class="col-xl-10 col-lg-10 col-md-8 col-sm-8 col-12">
+                                                                    <span>Bayar Listrik</span> <br>
+                                                                    <span>Rp300.000.000</span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-header" style="margin-bottom: 2%;">
+                                                                <div class="col-xl-2 col-lg-2 col-md-8 col-sm-8 col-12">
+                                                                    <i class="icon-attach_money" style="font-size: 23px; color: #5957b1;"></i>
+                                                                </div>
+                                                                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-12">
+                                                                    <span>Dibayar</span> <br>
+                                                                    <span>Total Pembayaran </span>
+                                                                </div>
+                                                                <div class="col-xl-4 col-lg-4 col-md-8 col-sm-8 col-12">
+                                                                    <span class="" style="float: right;">Rp200.000.000</span>
+                                                                    <span class="" style="float: right;">Rp500.000.000</span>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <tr>
                                                     <td name="item" id="checkbox5"><input type="checkbox" class="other-checkbox"></td>
                                                     <td>34 Mei 2023</th>
@@ -951,23 +1032,30 @@
                     updateCountDisplay(); // Update the count display
                 });
 
-                // Ambil elemen-elemen yang diperlukan
-                var modal = document.getElementById("myModal");
-                var button = document.getElementById("myButton");
-                var close = document.getElementsByClassName("close")[0];
+                document.addEventListener("DOMContentLoaded", function() {
+                    var modal = document.getElementById("myModal");
+                    var button = document.getElementById("myButton");
 
-                // Tambahkan event listener saat tombol di hover
-                button.addEventListener("mouseover", function() {
-                    modal.style.display = "block"; // Tampilkan modal saat di hover
-                });
-                button.addEventListener("mouseleave", function() {
-                    modal.style.display = "none"; // Tampilkan modal saat di hover
-                });
+                    // Fungsi untuk menampilkan modal saat dihover
+                    function showModal() {
+                        modal.style.display = "block";
+                    }
 
-                // Tambahkan event listener saat tombol ditutup
-                // close.addEventListener("click", function() {
-                //     modal.style.display = "none"; 
-                // });
+                    // Fungsi untuk menyembunyikan modal saat keluar dari hover
+                    function hideModal() {
+                        modal.style.display = "none";
+                    }
+
+                    // Tambahkan event listener saat tombol dihover
+                    button.addEventListener("mouseenter", showModal);
+                    button.addEventListener("mouseleave", hideModal);
+
+                    // Hapus event listener saat halaman akan direfresh
+                    window.addEventListener("beforeunload", function() {
+                        button.removeEventListener("mouseenter", showModal);
+                        button.removeEventListener("mouseleave", hideModal);
+                    });
+                });
             </script>
 
 
