@@ -306,7 +306,7 @@
                                                             <td> Adi Alfa R.</td>
                                                             <td>adialfa@gmail.com</td>
                                                             <td>USSR</td>
-                                                            <td>N/A</td>
+                                                            <td>20.000.000</td>
                                                             <th>
                                                                 <div class="menu-icons" style="font-size: 15px;">
                                                                     <a href="{{url('edit_cos')}}" class="menu-icon icon-edit-2" ></a>
@@ -324,7 +324,7 @@
                                                         <td>M Daffa Prasetyo</td>
                                                         <td>daffa@gmail.com</td>
                                                         <td>China</td>
-                                                        <td>N/A</td>
+                                                        <td>15.000.000</td>
                                                         <td>
                                                             <div class="menu-icons" style="font-size: 15px;">
                                                                 <a href="{{url('edit_cos')}}" class="menu-icon icon-edit-2" ></a>
@@ -342,7 +342,7 @@
                                                         <td>Gembes</td>
                                                         <td>gembes@gmail.com</td>
                                                         <td>Meksiko</td>
-                                                        <td>N/A</td>
+                                                        <td>1.000.000</td>
                                                         <td>
                                                             <div class="menu-icons" style="font-size: 15px;">
                                                                 <a href="{{url('edit_cos')}}" class="menu-icon icon-edit-2" ></a>
@@ -358,7 +358,7 @@
                                                         <td>Reno Dhzuri</td>
                                                         <td>reno@gmail.com</td>
                                                         <td>Singapore</td>
-                                                        <td>N/A</td>
+                                                        <td>2.000.000</td>
                                                         <td>
                                                             <div class="menu-icons" style="font-size: 15px;">
                                                                 <a href="{{url('edit_cos')}}" class="menu-icon icon-edit-2" ></a>
@@ -374,7 +374,7 @@
                                                         <td>Triski</td>
                                                         <td>triski@gmail.com</td>
                                                         <td>Indonesia</td>
-                                                        <td>N/A</td>
+                                                        <td>40.000.000</td>
                                                         <td>
                                                             <div class="menu-icons" style="font-size: 15px;">
                                                                 <a href="{{url('edit_cos')}}" class="menu-icon icon-edit-2" ></a>

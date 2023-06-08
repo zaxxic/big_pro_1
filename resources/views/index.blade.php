@@ -114,15 +114,15 @@
                         <br>
                         <div class="d-flex flex-column flex-sm-row">
                             <div class=" col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 mb-3">
-                                <h6>Arus kas</h6>
-                                <p>Uang masuk dan keluar dari bisnis Anda</p>
+                                <h6>Laba Rugi</h6>
+                                <p>Pendapatan dan pengeluaran termasuk faktur dan tagihan belum dibayar</p>
                                 <hr>
                                 <div id="chart2"></div>
                             </div>
                             <div class="col-2"></div>
                             <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 mb-3">
-                                <h6>Arus kas</h6>
-                                <p>Uang masuk dan keluar dari bisnis Anda</p>
+                                <h6>Pengeluaran Berdasarkan Kategori</h6>
+                                <p>Pengeluaran terbesar di berbagai kategori</p>
                                 <hr>
                                 <div id="chart3"></div>
                             </div>
@@ -130,7 +130,7 @@
                         <div class="d-flex flex-column flex-sm-row">
                             <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
                                 <h6>Hutang</h6>
-                                <p>Uang masuk dan keluar dari bisnis Anda</p>
+                                <p>Jumlah yang belum di bayarkan</p>
                                 <hr>
                                 <p id="debtAmount">Total Hutang: $0</p>
                                 <p id="remainingDebtAmount">Sisa Hutang: $0</p>
@@ -144,7 +144,7 @@
                             </div>
                             <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
                                 <h6>Piutang</h6>
-                                <p>Uang masuk dan keluar dari bisnis Anda</p>
+                                <p>Jumlah yang belum di bayarkan</p>
                                 <hr>
                                 <p id="receivableAmount">Total Piutang: $1000</p>
                                 <p id="remainingReceivableAmount">Sisa Piutang: $500</p>
@@ -231,22 +231,22 @@
         <script src="{{ asset("Gmbslagi/js/chart_index.js") }}"></script>
         <script type="text/javascript">
             $(function() {
-            
+
               $('input[name="datefilter"]').daterangepicker({
                   autoUpdateInput: false,
                   locale: {
                       cancelLabel: 'Clear'
                   }
               });
-            
+
               $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
                   $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
               });
-            
+
               $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
                   $(this).val('');
               });
-            
+
             });
             </script>
 </body>
