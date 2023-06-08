@@ -230,7 +230,6 @@
                                                     <div class="menu-icons" style="font-size: 15px;">
                                                         <a href="{{url('edit_users')}}" class="menu-icon icon-edit-2"></a>
                                                             <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
-                                                        <a href="{{url('')}}" class="menu-icon icon-eye1"></a>
                                                     </div>
                                                     </td>
                                                 </tr>
@@ -251,7 +250,6 @@
                                                     <div class="menu-icons" style="font-size: 15px;">
                                                         <a href="{{url('edit_users')}}" class="menu-icon icon-edit-2"></a>
                                                             <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
-                                                        <a href="{{url('')}}" class="menu-icon icon-eye1"></a>
                                                     </div>
                                                     </td>
                                                 </tr>
@@ -272,7 +270,6 @@
                                                     <div class="menu-icons" style="font-size: 15px;">
                                                         <a href="{{url('edit_users')}}" class="menu-icon icon-edit-2"></a>
                                                             <a href="{{url('delete_transfer')}}" class="menu-icon icon-trash" data-bs-toggle="modal" data-bs-target="#deleterole"></a>
-                                                        <a href="{{url('')}}" class="menu-icon icon-eye1"></a>
                                                     </div>
                                                     </td>
                                                 </tr>
