@@ -100,7 +100,7 @@
             </div>
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                 <div class="login-wrapper">
-                    <form action="https://www.kodingwife.com/demos/unipro/v1-x/05-design-violet/crm.html">
+                    <form action="/">
                         <div class="login-screen" style="margin-left: 27px; margin-bottom: 100px;">
                             <div class="login-body">
                                 <a href="crm.html" class="login-logo">
