@@ -37,7 +37,7 @@ var options = {
     colors: ['#5957b1', '#2b86f5', '#95c5ff'],
     series: [
       {
-        name: 'Penghasilan',
+        name: 'Masukan',
         type: 'column',
         data: [21.1, 23, 33.1, 34, 44.1, 44.9, 56.5, 58.5]
       },
@@ -147,12 +147,12 @@ var options = {
     series: [
 
       {
-        name: 'Column A',
+        name: 'Pendapatan',
         type: 'column',
         data: [21.1, 23, 33.1, 34, 44.1, 44.9, 56.5, 58.5]
       },
       {
-        name: "Column B",
+        name: "Biaya",
         type: 'column',
         data: [10, 19, 27, 26, 34, 35, 40, 38]
       },
@@ -236,9 +236,9 @@ var options = {
               }
             }
           },
-        series: [44, 55, 13, 33, 20],
-        labels: ["Apple", "Mango", "Orange", "Banana", "Pineapple"],
-        colors: ["#5957b1", "#2b86f5", "#63a9ff", "#95c5ff", "#c6e0ff"],
+        series: [100, 127, 0],
+        labels: ["Rp.1M-Beli Web", "1,27M-Lainnya", "Rp.0-bulanan"],
+        colors: ["#5957b1", "#2b86f5", "#63a9ff"],
         legend: {
             horizontalAlign: "left",
             offsetX: -5

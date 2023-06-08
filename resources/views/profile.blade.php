@@ -34,10 +34,49 @@
 			************ Vendor Css Files *************
 		************ -->
 		<style>
-			.dropzone-wrapper {
-				width: 100%;
-				height: 300px;
-			}
+			 .drop-zone {
+        max-width: 200px; /*max to make it responsive*/
+        height: 150px;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        cursor: pointer;
+        color: lightgrey;
+        border: 4px dashed black;
+        border-radius: 10px;
+      }
+      .drop-zone--over {
+        border-style: solid;
+      }
+      .drop-zone__input {
+        display: none;
+      }
+      .drop-zone__thumb {
+        width: 100px;
+        height: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #ccc;
+        background-size: cover;
+        position: relative;
+      }
+      .drop-zone__thumb::after {
+        content: attr(data-label); /*  displays text of data-lable*/
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px 0;
+        color: white;
+        background: rgba(0, 0, 0, 0.75);
+        text-align: center;
+        font-size: 14px;
+      }
 		</style>
 		<!-- Mega Menu -->
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/vendor/megamenu/css/megamenu.css")}}">
@@ -101,7 +140,7 @@
 											</div>
 
 											<div class="d-flex row ">
-											<div class="col-xl-9 col-lg-12 col-md-12 col-sm-12" >
+											<div class="col-xl-10 col-lg-12 col-md-12 col-sm-12" >
 											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
 												<!-- Field wrapper start -->
@@ -125,11 +164,18 @@
 													</div>
 											</div>
 											</div>
-											<div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
+											<div class="col-xl-2 col-lg-12 col-md-12 col-sm-12">
 												<!-- Field wrapper start -->
-												<p style="">foto</p>
+
 												<!-- Example of a form that Dropzone can take over -->
-												<form action="/" id="myDropzone" class="dropzone"></form>
+                                                <form action="">
+                                                        <div class="drop-zone">
+                                                            <span class="drop-zone__prompt">klik disini untuk upload foto</span>
+                                                            <!-- <div class="drop-zone__thumb" data-label="myfile.txt"></div> -->
+                                                            <input type="file" name="myFile" class="drop-zone__input" />
+                                                            <!-- add multiple attribute to input to support uploading more than one file-->
+                                                        </div>
+                                                    </form>
 											</div>
 
 
@@ -244,20 +290,76 @@
 		<script src="{{ asset ("Gmbslagi/js/main.js")}}"></script>
         <script src="{{ asset ("Gmbslagi/vendor/dropzone/dropzone.min.js") }}"></script>
 		<script>
-			 Dropzone.options.myDropzone = {
-				maxFiles: 1,
-				dictDefaultMessage: "Seret file di sini untuk mengunggah",
-				maxFilesize: 5 * 1024, // 5 MB
+			   document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
+                const dropZoneElement = inputElement.closest(".drop-zone");
 
-				init: function() {
-				this.on("addedfile", function(file) {
-					if (this.files.length > 1) {
-					this.removeFile(this.files[0]); // Hapus file sebelumnya jika ada
-					}
-				});
-				}
+                dropZoneElement.addEventListener("click", (event) => {
+                    inputElement.click(); /*clicking on input element whenever the dropzone is clicked so file browser is opened*/
+                });
 
-			};
+                inputElement.addEventListener("change", (event) => {
+                    if (inputElement.files.length) {
+                        updateThumbnail(dropZoneElement, inputElement.files[0]);
+                    }
+                });
+
+                dropZoneElement.addEventListener("dragover", (event) => {
+                    event.preventDefault(); /*this along with prevDef in drop event prevent browser from opening file in a new tab*/
+                    dropZoneElement.classList.add("drop-zone--over");
+                });
+                ["dragleave", "dragend"].forEach((type) => {
+                    dropZoneElement.addEventListener(type, (event) => {
+                        dropZoneElement.classList.remove("drop-zone--over");
+                    });
+                });
+                dropZoneElement.addEventListener("drop", (event) => {
+                    event.preventDefault();
+                    console.log(
+                        event.dataTransfer.files
+                    ); /*if you console.log only event and check the same data location, you won't see the file due to a chrome bug!*/
+                    if (event.dataTransfer.files.length) {
+                        inputElement.files =
+                            event.dataTransfer.files; /*asigns dragged file to inputElement*/
+
+                        updateThumbnail(
+                            dropZoneElement,
+                            event.dataTransfer.files[0]
+                        ); /*thumbnail will only show first file if multiple files are selected*/
+                    }
+                    dropZoneElement.classList.remove("drop-zone--over");
+                });
+            });
+
+            function updateThumbnail(dropZoneElement, file) {
+                let thumbnailElement = dropZoneElement.querySelector(
+                    ".drop-zone__thumb"
+                );
+                /*remove text prompt*/
+                if (dropZoneElement.querySelector(".drop-zone__prompt")) {
+                    dropZoneElement.querySelector(".drop-zone__prompt").remove();
+                }
+
+                /*first time there won't be a thumbnailElement so it has to be created*/
+                if (!thumbnailElement) {
+                    thumbnailElement = document.createElement("div");
+                    thumbnailElement.classList.add("drop-zone__thumb");
+                    dropZoneElement.appendChild(thumbnailElement);
+                }
+                thumbnailElement.dataset.label =
+                    file.name; /*takes file name and sets it as dataset label so css can display it*/
+
+                /*show thumbnail for images*/
+                if (file.type.startsWith("image/")) {
+                    const reader = new FileReader(); /*lets us read files to data URL*/
+                    reader.readAsDataURL(file); /*base 64 format*/
+                    reader.onload = () => {
+                        thumbnailElement.style.backgroundImage = `url('${reader.result}')`; /*asynchronous call. This function runs once reader is done reading file. reader.result is the base 64 format*/
+                        thumbnailElement.style.backgroundPosition = "center";
+                    };
+                } else {
+                    thumbnailElement.style.backgroundImage = null; /*plain background for non image type files*/
+                }
+            }
 		  </script>
 
 	</body>
