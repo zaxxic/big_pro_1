@@ -40,6 +40,7 @@
     <!-- Search Filter JS -->
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/search-filter.css') }}">
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/search-filter/custom-search-filter.css') }}">
+    <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/summernote/summernote-bs4.css') }}" />
     <style>
         .tmbl {
 
@@ -131,30 +132,32 @@
                 <div class="row">
                     <div class="card">
                         <div class="card-header col-12">
-                        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
-                            <div class="card-title ">
-                                <h3>Faktur: FKR-00002</h3>
+                            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
+                                <div class="card-title ">
+                                    <h3>Faktur: FKR-00002</h3>
 
-                            </div>
+                                </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-6">
-                                        <div class="graph-day-selection" role="group" style="margin-left: -30px;margin-right: 10px;">
-                                                <div class="badge-finish" style="text-align: center;">Terima</div>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="graph-day-selection" role="group"
+                                    style="margin-left: -30px;margin-right: 10px;">
+                                    <div class="badge-finish" style="text-align: center;">Terima</div>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a class="btn btn-ekspor-primary dropdown icon-dots-three-vertical" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
 
-                                        </a>
+                                </a>
 
-                                        <ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
-                                            <li><a class="dropdown-item-bt" href="#">Duplikat</a></li>
-                                            <li><a class="dropdown-item" href="#">Cetak</a></li>
-                                            <li><a class="dropdown-item-bt" href="#">Unduh PDF</a></li>
-                                            <li><a class="dropdown-item" href="#">Hapus</a></li>
+                                <ul class="dropdown-menu dropdown-menu-lg-end" style="z-index: 100;">
+                                    <li><a class="dropdown-item-bt" href="#">Duplikat</a></li>
+                                    <li><a class="dropdown-item" href="#">Cetak</a></li>
+                                    <li><a class="dropdown-item-bt" href="#">Unduh PDF</a></li>
+                                    <li><a class="dropdown-item" href="#">Hapus</a></li>
 
-                                        </ul>
-                                    </div>
+                                </ul>
+                            </div>
                         </div>
                         <div class="d-flex row">
 
@@ -199,7 +202,8 @@
                                                     <!-- Button trigger modal -->
                                                     <button
                                                         type="button"style="border-radius:2px; width:30%; height: 30px; border:none; background-color:#c5d2fc"
-                                                        data-bs-toggle="modal" data-bs-target="#modals">
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModalCenteredScrollable">
                                                         Kirim Email
                                                     </button>
                                                     <button type="button"
@@ -250,30 +254,43 @@
                                                     <!-- Modal end -->
                                                 </div>
                                                 <!-- Modal start -->
-                                                <div class="modal fade" id="modals" tabindex="-1"
-                                                    aria-labelledby="modalsTitle" aria-hidden="true">
+                                                <div class="modal fade" id="exampleModalCenteredScrollable"
+                                                    tabindex="-1"
+                                                    aria-labelledby="exampleModalCenteredScrollableTitle"
+                                                    aria-hidden="true">
                                                     <div
                                                         class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                                        <div class="modal-content"
-                                                            style="height:100%; margin-top:-10%">
+                                                        <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title" id="modalsTitle">Kirim
+                                                                <h5 class="modal-title"
+                                                                    id="exampleModalCenteredScrollableTitle">Kirim
                                                                     Email</h5>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal"
                                                                     aria-label="Close"></button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                <div class="field-wrapper mb-2">
-                                                                    <div class="summernote"></div>
+                                                                <div class="field-wrapper">
+                                                                    <label for="subjudul" class="field-label">Untuk<span
+                                                                            class="text-danger">*</span></label>
+                                                                    <input type="email" placeholder="Masukan Email Penerima" class="form-control datepicker"
+                                                                        style="border-radius: 2px">
                                                                 </div>
+                                                                <div class="field-wrapper">
+                                                                    <label for="subjudul" class="field-label">Subjek<span
+                                                                            class="text-danger">*</span></label>
+                                                                    <input type="text" placeholder="Masukan Subjek" class="form-control datepicker"
+                                                                        style="border-radius: 2px">
+                                                                </div>
+                                                                    <label for="subjudul" class="field-label">Isi<span
+                                                                    class="text-danger">*</span></label>
+                                                                    <div class="field-wrapper mb-2">
+                                                                        <div class="summernote"></div>
+                                                                    </div>
                                                             </div>
                                                             <div class="modal-footer">
-                                                                <div type="button" class="btn btn-danger"
-                                                                    style="background-color:rgb(255, 0, 0); border:none; border-radius:10px; width:20%; height:25px; color:white"
-                                                                    data-bs-dismiss="modal">Batal</div>
-                                                                <button type="button"
-                                                                    style="background-color: #55be0e; border:none; border-radius:10px; width:30%; height:25px; color:white">Simpan</button>
+                                                                <button class="btn btn-outline-secondary1" type="submit" style="border-radius: 2px; margin-right: 1%" href="#">Batal</button>
+                                                                <button class="btn btn-primary" type="submit" style="border-radius: 2px">Simpan</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -308,9 +325,8 @@
                                                     <p>Tidak Ada Catatan</p>
                                                 </div>
                                                 <!-- Modal start -->
-                                                <div class="modal fade" id="exampleModalExtraLarge"
-                                                    tabindex="-1" aria-labelledby="exampleModalExtraLargeTitle"
-                                                    aria-hidden="true">
+                                                <div class="modal fade" id="exampleModalExtraLarge" tabindex="-1"
+                                                    aria-labelledby="exampleModalExtraLargeTitle" aria-hidden="true">
                                                     <div class="modal-dialog modal-xl">
                                                         <div class="modal-content" style="margin-top: -9%">
                                                             <div class="modal-header">
@@ -337,11 +353,10 @@
                                                                         style="border-radius:10px">
                                                                 </div>
                                                                 <div class="field-wrapper mb-3">
-                                                                    <label for="judul"
-                                                                        class="field-label">Metode Pembayaran <span
+                                                                    <label for="judul" class="field-label">Metode
+                                                                        Pembayaran <span
                                                                             class="text-danger">*</span></label>
-                                                                    <select id="ex-dropdown-input"
-                                                                        autocomplete="off"
+                                                                    <select id="ex-dropdown-input" autocomplete="off"
                                                                         placeholder="How cool is this?"
                                                                         style="border-radius:10px">
                                                                         <option selected>Cash</option>
@@ -351,8 +366,7 @@
                                                                 <div class="field-wrapper mb-3">
                                                                     <label for="judul" class="field-label">Akun
                                                                         <span class="text-danger">*</span></label>
-                                                                    <select id="ex-dropdown-input"
-                                                                        autocomplete="off"
+                                                                    <select id="ex-dropdown-input" autocomplete="off"
                                                                         placeholder="How cool is this?"
                                                                         style="border-radius:10px">
                                                                         <option>Rudi</option>
@@ -465,8 +479,7 @@
                                                             aria-labelledby="paymentTitle" aria-hidden="true">
                                                             <div
                                                                 class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                                                <div class="modal-content"
-                                                                    style="margin-top: -10%">
+                                                                <div class="modal-content" style="margin-top: -10%">
                                                                     <div class="modal-header">
                                                                         <h5 class="modal-title" id="paymentTitle">
                                                                             Pembayaran</h5>
@@ -596,7 +609,22 @@
 
     <!-- Main Js Required -->
     <script src="{{ asset('Gmbslagi/js/main.js') }}"></script>
-
+    <script src="{{ asset('Gmbslagi/vendor/summernote/summernote-bs4.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $('.summernote').summernote({
+                height: 210,
+                tabsize: 2,
+                focus: true,
+                toolbar: [
+                    ['font', ['bold', 'underline', 'clear']],
+                    ['para', ['ul', 'ol']],
+                    ['insert', ['link', 'picture', 'video']],
+                    ['view', ['fullscreen', 'codeview', 'help']],
+                ]
+            });
+        });
+    </script>
 </body>
 
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/accordions.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:35 GMT -->
