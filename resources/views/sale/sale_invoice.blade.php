@@ -131,8 +131,8 @@
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             padding: 10px;
             border-radius: 4px;
-            right: 25px;
-            bottom: -25px;
+            right: -10px;
+            bottom: -41px;
            
             /* Mengarahkan dropdown ke arah kiri */
         }
@@ -191,7 +191,7 @@
             top: -42px;
             left: 0;
             font-size: 12px;
-            background-color: #5957b1;
+            background-color: #1f1e5d;
             color: #fff;
             padding: 3px;
             border-radius: 2px;
@@ -533,7 +533,7 @@
                                                                             data-bs-toggle="modal"
                                                                             data-bs-target="#payment"
                                                                             class="icon-attach_money">
-                                                                            Bayar
+                                                                            BAyar
                                                                         </button>
                                                                     </a>
                                                                     <a href="#">

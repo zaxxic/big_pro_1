@@ -52,7 +52,7 @@
         background-color: #555;
         color: #fff;
         text-align: center;
-        border-radius: 6px;
+        border-radius: 2px;
         padding: 5px;
         position: absolute;
         z-index: 1;
@@ -84,7 +84,7 @@
             position: relative;
             background: #ffffff;
             border: 1px solid #e1e8f3;
-            border-radius: 20px;
+            border-radius: 2px;
             -webkit-box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
             box-shadow: 0 30px 15px -20px rgba(0, 0, 0, .2);
             min-width: 100%;
@@ -203,7 +203,7 @@
                                   </div>                                  
                                   
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                    <button type="button" style="border-radius:10px; width:46%; height: 30px; border:none; background-color:#5BB318; color:white; margin-left:4%">Konfirmasi</button>
+                                    <button type="button" style="border-radius:2px; width:46%; height: 30px; border:none; background-color:#5BB318; color:white; margin-left:4%">Konfirmasi</button>
                                 </div>
                             </div>
                             <!-- Card end -->
@@ -222,11 +222,11 @@
                                                     alt="Uni Pro Admin">
                                             </div>
                                             <div class="ml-2 col-4">
-                                            <p style="float: right">cina baik hati</p>
+                                            <p style="float: right" class="me-2">cina baik hati</p>
                                             <br>
-                                            <p style="float: right">unknown company</p>
+                                            <p style="float: right" class="me-2">unknown company</p>
                                             <br>
-                                            <p style="float: right">cireng@gmail.com</p>
+                                            <p style="float: right" class="me-2">cireng@gmail.com</p>
                                         </div>
                                         </div>
                                         <div class="field-wrapper mb-3">
@@ -234,15 +234,15 @@
                                         </div>
                                         <div class="d-flex" style="margin-top: 2%">
                                         <div class="col-6 ms-3">
-                                            <p>Tagihan Kepada</p>
-                                            <p>Koirul</p>
-                                            <p>1672671</p>
-                                            <p>cireng@gmail.com</p>
+                                            <p style="margin-top:2%">Tagihan Kepada</p>
+                                            <p style="margin-top:2%">Koirul</p>
+                                            <p style="margin-top:2%">1672671</p>
+                                            <p style="margin-top:2%">cireng@gmail.com</p>
                                         </div>
                                         <div class="col-6">
-                                            <p>Nomor faktur: INV-9</p>
-                                            <p>Tanggal faktur: 24 mei 2023</p>
-                                            <p>Tanggal Jatuh Tempo: 24 mei 2023</p>
+                                            <p style="margin-top:2%">Nomor faktur: INV-9</p>
+                                            <p style="margin-top:2%">Tanggal faktur: 24 mei 2023</p>
+                                            <p style="margin-top:2%">Tanggal Jatuh Tempo: 24 mei 2023</p>
                                         </div>
                                     </div>
                                     <div class="table-responsive">
@@ -262,7 +262,7 @@
                                                         <br>
                                                         <p style="font-size: 8pt; margin-top: -10%">pembelian api untuk map</p>
                                                     </td>
-                                                    <td><span class="badge">1</span></td>
+                                                    <td><span class="badge" style="border-radius: 2px">1</span></td>
                                                     <td>385.000,00</td>
                                                     <td>385.000,00</td>
                                                 </tr>

@@ -226,7 +226,7 @@
                 toolbar: [
                     ['font', ['bold', 'underline', 'clear']],
                     ['para', ['ul', 'ol']],
-                    ['insert', ['link', 'picture', 'video']],
+                    ['insert', ['link', 'picture']],
                     ['view', ['fullscreen', 'codeview', 'help']],
                 ]
             });
