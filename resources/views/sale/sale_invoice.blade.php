@@ -399,8 +399,10 @@
 												  <tr>
 													<th scope="col"> <input type="checkbox" id="select-all-checkbox"> </th>
                                                     <th scope="col">Tanggal Jatuh Tempo</th>
+                                                    <th scope="col">Tanggal Faktur</th>
                                                     <th scope="col">Status</th>
                                                     <th scope="col">Pelanggan</th>
+                                                    <th scope="col">Nomor</th>
                                                     <th scope="col">Jumlah</th>
 													<th scope="col">Aksi</th>
 												  </tr>
@@ -410,8 +412,10 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2023</td>
+                                                    <td>13 mei 2023</td>
                                                     <td><span class="badge-sent">Terkirim</span></td>
                                                     <td>koirul</td>
+                                                    <td>FKR-00002</td>
                                                     <td>91.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
@@ -435,7 +439,7 @@
                                                                             style="border: none; background:none; color:#333; background:transparent"
                                                                             data-bs-toggle="modal"
                                                                             data-bs-target="#payment"
-                                                                            class="icon-attach_money">
+                                                                            class="icon-mail">
                                                                             Kirim email
                                                                         </button>
                                                                     </a>
@@ -462,9 +466,11 @@
 												  <!-- Data 2 -->
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
-                                                    <td>12 mei 2024</td>
+                                                    <td>12 mei 2023</td>
+                                                    <td>14 mei 2023</td>
                                                     <td><span class="badge-draft">Konsep</span></td>
                                                     <td>choirul</td>
+                                                    <td>FKR-00001</td>
                                                     <td>80.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
@@ -508,8 +514,10 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>14 mei 2023</td>
+                                                    <td>15 mei 2023</td>
                                                     <td><span class="badge-draft">Konsep</span></td>
                                                     <td>rudi</td>
+                                                    <td>FKR-00003</td>
                                                     <td>100.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
@@ -551,8 +559,10 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>15 mei 2023</td>
+                                                    <td>15 mei 2023</td>
                                                     <td><span class="badge-start">Sebagian</span></td>
-                                                    <td>slemet</td>
+                                                    <td>slamet</td>
+                                                    <td>FKR-00004</td>
                                                     <td>20.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
@@ -594,8 +604,10 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>25 mei 2023</td>
+                                                    <td>25 mei 2023</td>
                                                     <td><span class="badge-finish">Dibayar</span></td>
                                                     <td>wahyu</td>
+                                                    <td>FKR-00005</td>
                                                     <td>45.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">

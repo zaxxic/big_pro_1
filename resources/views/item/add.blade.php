@@ -247,7 +247,7 @@ label {
                                                         <option>Makanan</option>
                                                         <option>Minuman</option>
                                                     </select>
-                                                    <div class="field-placeholder">Digit Nomor<span class="text-danger">*</span></div>
+                                                    <div class="field-placeholder">Kategori<span class="text-danger">*</span></div>
                                                 </div>
 
                                             </div>

@@ -198,15 +198,15 @@
                                                 <div class="accordion-body">
                                                     <!-- Button trigger modal -->
                                                     <button
-                                                        type="button"style="border-radius:10px; width:30%; height: 30px; border:none; background-color:#c5d2fc"
+                                                        type="button"style="border-radius:2px; width:30%; height: 30px; border:none; background-color:#c5d2fc"
                                                         data-bs-toggle="modal" data-bs-target="#modals">
                                                         Kirim Email
                                                     </button>
                                                     <button type="button"
-                                                        style="border-radius:10px; width:30%; height:30px; border:none">Tandai
+                                                        style="border-radius:2px; width:30%; height:30px; border:none">Tandai
                                                         Dikirim</button>
                                                     <button type="button"
-                                                        style="border-radius:10px; width:36%; height:30px; border:none; margin-top:1%"
+                                                        style="border-radius:2px; width:36%; height:30px; border:none; margin-top:1%"
                                                         data-bs-toggle="modal" data-bs-target="#exampleModalLarge">
                                                         Bagikan Tautan
                                                     </button>
@@ -299,7 +299,7 @@
                                                 aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                                                 <div class="accordion-body">
                                                     <button type="button" data-bs-toggle="modal"
-                                                        style="border-radius:10px; width:45%; height:30px; border:none; background-color:#55be0e; color:white"
+                                                        style="border-radius:2px; width:45%; height:30px; border:none; background-color:#55be0e; color:white"
                                                         data-bs-target="#exampleModalExtraLarge">
                                                         Tambahkan Pembayaran
                                                     </button>

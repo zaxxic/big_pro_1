@@ -192,10 +192,10 @@
                                                 <div class="field-wrapper">
                                                     <select class="select-multiple js-states" title="Select Product Category">
                                                         <option disabled selected>Pilih salah satu</option>
-                                                        <option>Pilihan 1</option>
-                                                        <option>Pilihan 2</option>
-                                                        <option>Pilihan 3</option>
-                                                        <option>Pilihan 4</option>
+                                                        <option>AED</option>
+                                                        <option>IDR</option>
+                                                        <option>ALL</option>
+                                                        <option>AUD</option>
 
                                                     </select>
                                                     <div class="field-placeholder">Kode<span class="text-danger">*</span></div>
@@ -225,13 +225,11 @@
                                                 <div class="field-wrapper">
                                                     <select class="select-multiple js-states" title="Select Product Category">
                                                         <option disabled selected>Pilih salah satu</option>
-                                                        <option>Pilihan 1</option>
-                                                        <option>Pilihan 2</option>
-                                                        <option>Pilihan 3</option>
-                                                        <option>Pilihan 4</option>
-
+                                                        <option>Sebelum Jumlah</option>
+                                                        <option>Setelah Jumlah</option>
+                                                        
                                                     </select>
-                                                    <div class="field-placeholder">Kode<span class="text-danger">*</span></div>
+                                                    <div class="field-placeholder">Posisi Simbol<span class="text-danger">*</span></div>
                                                 </div>
 
                                             </div>
@@ -251,26 +249,7 @@
                                             <!-- Field wrapper end -->
 
                                         </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper-group">
-                                                <div class="field-wrapper">
-                                                    <select class="select-multiple js-states" title="Select Product Category">
-                                                        <option disabled selected>Pilih salah satu</option>
-                                                        <option>Pilihan 1</option>
-                                                        <option>Pilihan 2</option>
-                                                        <option>Pilihan 3</option>
-                                                        <option>Pilihan 4</option>
-
-                                                    </select>
-                                                    <div class="field-placeholder">Kode<span class="text-danger">*</span></div>
-                                                </div>
-
-                                            </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
+                                        
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 
                                             <!-- Field wrapper start -->

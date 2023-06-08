@@ -199,7 +199,7 @@
 
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
-													<input class="form-control" type="number" placeholder="Masukan kata sandi lama">
+													<input class="form-control" type="password" placeholder="Masukan kata sandi lama">
 													<div class="field-placeholder">Kata sandi lama</div>
 												</div>
 												<!-- Field wrapper end -->
@@ -209,7 +209,7 @@
 
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
-													<input class="form-control" type="text" placeholder="Masukan kata sandi baru">
+													<input class="form-control" type="password" placeholder="Masukan kata sandi baru">
 													<div class="field-placeholder">Kata sandi baru</div>
 												</div>
 												<!-- Field wrapper end -->
@@ -219,7 +219,7 @@
 
 												<!-- Field wrapper start -->
 												<div class="field-wrapper">
-													<input class="form-control" type="text" placeholder="Masukan konfirmasi kata sandi baru">
+													<input class="form-control" type="password" placeholder="Masukan konfirmasi kata sandi baru">
 													<div class="field-placeholder">Konfirmas kata sandi baru</div>
 												</div>
 												<!-- Field wrapper end -->

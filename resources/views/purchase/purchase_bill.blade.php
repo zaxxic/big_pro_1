@@ -119,6 +119,60 @@
             display: inline-block;
         }
 
+        .hover-trigge1r {
+            cursor: pointer;
+            position: relative;
+        }
+
+        .hover-trigge1r:hover::before {
+            content: attr(data-tooltip_dpt);
+            position: absolute;
+            top: -42px;
+            left: 0;
+
+            font-size: 12px;
+            background-color: #5957b1;
+            color: #fff;
+            padding: 3px;
+            border-radius: 2px;
+        }
+
+        .hover-trigge2r {
+            cursor: pointer;
+            position: relative;
+        }
+
+        .hover-trigge2r:hover::before {
+            content: attr(data-tooltip_buka);
+            position: absolute;
+            top: -42px;
+            left: 0;
+            font-size: 12px;
+            background-color: #5957b1;
+            color: #fff;
+            padding: 3px;
+            border-radius: 2px;
+        }
+
+
+
+        .hover-trigge3r:hover::before {
+            content: attr(data-tooltip_byr);
+            position: absolute;
+            top: -42px;
+            left: 0;
+            font-size: 12px;
+            background-color: #5957b1;
+            color: #fff;
+            padding: 3px;
+            border-radius: 2px;
+        }
+
+        .hover-trigge3r {
+            cursor: pointer;
+            position: relative;
+        }
+
         .dropdown-content {
             display: none;
             position: absolute;
@@ -250,7 +304,7 @@
                                                     <p><b><i>Rp</i></b></p>
                                                 </div>
                                                 <div class="sale-details">
-                                                    <h2>25</h2>
+                                                    <h2 class="hover-trigge1r">25.5M</h2>
                                                     <p>Jatuh Tempo</p>
                                                 </div>
                                                 <div class="sale-graph">
@@ -264,8 +318,8 @@
                                                     <p><b><i>Rp</i></b></p>
                                                 </div>
                                                 <div class="sale-details">
-                                                    <h2>32</h2>
-                                                    <p>Terbuka</p>
+                                                    <h2 class="hover-trigge2r">90.5M</h2>
+                                                    <p>Buka</p>
                                                 </div>
                                                 <div class="sale-graph">
                                                     <div id="sparklineLine2"></div>
@@ -278,8 +332,8 @@
                                                     <p><b><i>Rp</i></b></p>
                                                 </div>
                                                 <div class="sale-details">
-                                                    <h2>19</h2>
-                                                    <p>Konsep</p>
+                                                    <h2 class="hover-trigge3r">90.5M</h2>
+                                                    <p>Dibayar</p>
                                                 </div>
                                                 <div class="sale-graph">
                                                     <div id="sparklineLine3"></div>
@@ -316,6 +370,19 @@
                                               <i class="icon-search"></i><input class="search " type="text" placeholder="Cari atau seleksi hasil.." style="
                                               margin-bottom: 2%; font-size:10pt "/>
                                             </div>
+                                            <script>
+                                                const hoverTrigger = document.querySelector('.hover-trigge1r');
+                                                const tooltipContent1 = '25.500.000.000';
+                                                hoverTrigger.setAttribute('data-tooltip_dpt', tooltipContent1);
+        
+                                                const hoverTrigger2 = document.querySelector('.hover-trigge2r');
+                                                const tooltipContent2 = '25.500';
+                                                hoverTrigger2.setAttribute('data-tooltip_buka', tooltipContent2);
+        
+                                                const hoverTrigger3 = document.querySelector('.hover-trigge3r');
+                                                const tooltipContent3 = '25.500.000';
+                                                hoverTrigger3.setAttribute('data-tooltip_byr', tooltipContent3);
+                                            </script>
                                         </div>
                                         <div class="table-responsive">
 											<div class="hidden-menu" style="display: none; background-color: #f2f2f2; font-size: 12pt; padding: 10px;">
@@ -329,8 +396,10 @@
 												  <tr>
 													<th scope="col"> <input type="checkbox" id="select-all-checkbox"> </th>
                                                     <th scope="col">Tanggal Jatuh Tempo</th>
+                                                    <th scope="col">Tanggal Faktur</th>
                                                     <th scope="col">Status</th>
                                                     <th scope="col">Pemasok</th>
+                                                    <th scope="col">Nomor</th>
                                                     <th scope="col">Jumlah</th>
 													<th scope="col">Aksi</th>
 												  </tr>
@@ -340,8 +409,10 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2023</td>
-                                                    <td><span class="badge-draft">Konsep</span></td>
+                                                    <td>13 mei 2023</td>
+                                                    <td><span class="badge-sent">Terkirim</span></td>
                                                     <td>koirul</td>
+                                                    <th scope="col">TGH-00005</th>
                                                     <td>91.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
@@ -376,8 +447,10 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2024</td>
+                                                    <td>14 mei 2024</td>
                                                     <td><span class="badge-draft">Konsep</span></td>
                                                     <td>choirul</td>
+                                                    <th scope="col">TGH-00004</th>
                                                     <td>80.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
@@ -413,8 +486,10 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>14 mei 2023</td>
+                                                    <td>15 mei 2023</td>
                                                     <td><span class="badge-draft">Konsep</span></td>
                                                     <td>rudi</td>
+                                                    <th scope="col">TGH-00003</th>
                                                     <td>100.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
@@ -448,8 +523,10 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>15 mei 2023</td>
+                                                    <td>15 mei 2023</td>
                                                     <td><span class="badge-start">Sebagian</span></td>
                                                     <td>slemet</td>
+                                                    <th scope="col">TGH-00002</th>
                                                     <td>20.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
@@ -483,8 +560,10 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>25 mei 2023</td>
+                                                    <td>25 mei 2023</td>
                                                     <td><span class="badge-finish">Dibayar</span></td>
                                                     <td>wahyu</td>
+                                                    <th scope="col">TGH-00001</th>
                                                     <td>45.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">

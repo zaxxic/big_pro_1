@@ -137,7 +137,7 @@
 
 </head>
 
-<body >
+<body>
 
     <!-- Page wrapper start -->
     <div class="page-wrapper">
@@ -160,90 +160,98 @@
 
                     <!-- Row start -->
                     <div class="card-body">
-                    <div class="row gutters">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="row gutters">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
-                            <!-- Card start -->
-                            <div class="">
-                            <div class="">
-                            <div class="col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12">
-                                
-                                    <div class="card-title">
-                                        <h3>Tambah Kategori<button type="button" style="border: none; background:none;">☆</button></h3>
-                                    </div>
-                                    <div class="graph-day-selection" role="group" style="margin-left: 60%">
-
-                                    </div>
-                                </div>
-                                </div>
+                                <!-- Card start -->
                                 <div class="">
-                                    <div style="border-bottom: solid grey 1px;margin-bottom:1%; margin-bottom: 2%; margin-top: 2%;">
-                                        <h6>Umum</h6>
-                                        <p>Inklusi pajak dihitung ke dalam harga barang. Pajak majemuk dihitung di atas pajak lainnya. Pajak tetap diterapkan sebagai jumlah, bukan persentase.</p>
-                                    </div>
-                                    <!-- Row start -->
-                                    <div class="row gutters">
+                                    <div class="">
+                                        <div class="col-xl-5 col-lg-5 col-md-2 col-sm-2 col-12">
 
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <input class="form-control" type="text" placeholder=" Masukan Nama">
-                                                <div class="field-placeholder">Nama <span class="text-danger">*</span></div>
-                                                <div class="form-text">
-
-                                                </div>
+                                            <div class="card-title">
+                                                <h3>Tambah Kategori<button type="button" style="border: none; background:none;">☆</button></h3>
                                             </div>
-                                            <!-- Field wrapper end -->
+                                            <div class="graph-day-selection" role="group" style="margin-left: 60%">
 
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper">
-                                                <div class="color-input-container">
-                                                    
-                                                    <div class="field-placeholder">Warna <span class="text-danger">*</span></div>
-                                                    <input type="color" style="width: 14%;background:transparent" id="color-picker">
-                                                    <input type="text" id="hex-input" disabled>
-                                                </div>
                                             </div>
-                                            <!-- Field wrapper end -->
-
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-
-                                            <!-- Field wrapper start -->
-                                            <div class="field-wrapper-group">
-                                            <div class="field-wrapper">
-                                                <select class="select-multiple js-states" title="Select Product Category">
-                                                    <option>Pilihan 1</option>
-                                                    <option>Pilihan 2</option>
-                                                    <option>Pilihan 3</option>
-                                                    <option>Pilihan 4</option>
-
-                                                </select>
-                                                <div class="field-placeholder">Kategori<span class="text-danger">*</span></div>
-                                            </div>
-
-                                        </div>
-                                            <!-- Field wrapper end -->
-
                                         </div>
                                     </div>
-                                    <!-- Row end -->
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
-                                        <div class="d-flex justify-content-end mt-4">
-                                            <button class="btn btn-outline-secondary1" type="submit" style="border-radius: 2px; margin-right: 1%" href="#">Batal</button>
-                                            <button class="btn btn-primary" type="submit" style="border-radius: 2px">Simpan</button>
+                                    <div class="">
+                                        <div style="border-bottom: solid grey 1px;margin-bottom:1%; margin-bottom: 2%; margin-top: 2%;">
+                                            <h6>Umum</h6>
+                                            <p>Inklusi pajak dihitung ke dalam harga barang. Pajak majemuk dihitung di atas pajak lainnya. Pajak tetap diterapkan sebagai jumlah, bukan persentase.</p>
+                                        </div>
+                                        <!-- Row start -->
+                                        <div class="row gutters">
+
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                                <!-- Field wrapper start -->
+                                                <div class="field-wrapper">
+                                                    <input class="form-control" type="text" placeholder=" Masukan Nama">
+                                                    <div class="field-placeholder">Nama <span class="text-danger">*</span></div>
+                                                    <div class="form-text">
+
+                                                    </div>
+                                                </div>
+                                                <!-- Field wrapper end -->
+
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                                <!-- Field wrapper start -->
+                                                <div class="field-wrapper">
+                                                    <div class="color-input-container">
+                                                        
+                                                
+
+                                                       
+                                                            <input class="form-control" type="text" placeholder="Masukkan Warna Kategori">
+                                                      
+                                                      
+                                                            <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                                                        
+                                                        <div class="field-placeholder">Warna <span class="text-danger">*</span></div>
+                                                        <!-- <input type="color" style="width: 14%;background:transparent" id="color-picker">
+                                                        <input type="text" id="hex-input" disabled> -->
+                                                    </div>
+                                                </div>
+                                                <!-- Field wrapper end -->
+
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                                <!-- Field wrapper start -->
+                                                <div class="field-wrapper-group">
+                                                    <div class="field-wrapper">
+                                                        <select class="select-multiple js-states" title="Select Product Category">
+                                                            <option>Pilihan 1</option>
+                                                            <option>Pilihan 2</option>
+                                                            <option>Pilihan 3</option>
+                                                            <option>Pilihan 4</option>
+
+                                                        </select>
+                                                        <div class="field-placeholder">Kategori<span class="text-danger">*</span></div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- Field wrapper end -->
+
+                                            </div>
+                                        </div>
+                                        <!-- Row end -->
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
+                                            <div class="d-flex justify-content-end mt-4">
+                                                <button class="btn btn-outline-secondary1" type="submit" style="border-radius: 2px; margin-right: 1%" href="#">Batal</button>
+                                                <button class="btn btn-primary" type="submit" style="border-radius: 2px">Simpan</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- Card end -->
+                                <!-- Card end -->
 
+                            </div>
                         </div>
-                    </div>
                     </div>
                     <!-- Row end -->
 

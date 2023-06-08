@@ -150,13 +150,10 @@
 										<div class="field-placeholder">Konfirmasi Kata Kunci</div>
 									</div>
 									<div class="actions">
-										<a href="{{('reset_password')}}">Lupa Kata Kunci?</a>
 										<button type="submit" class="btn btn-primary">Daftar</button>
 									</div>
 								</div>
-								<div class="login-footer">
-									<span class="additional-link">Tidak punya akun? <a href="{{("register")}}" class="btn btn-light">Daftar</a></span>
-								</div>
+								
 							</div>
 						</form>
 					</div>

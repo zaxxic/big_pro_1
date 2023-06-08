@@ -160,7 +160,7 @@
                             <div class="" style="">
                                 <div class="row">
                                     <div class="card-title">
-                                        <h3>Tambah Pengeluaran<button type="button" style="border: none; background:none;">☆</button></h3>
+                                        <h3>Sunting Pengeluaran<button type="button" style="border: none; background:none;">☆</button></h3>
                                     </div>
                                 </div>
                                 <div class="">
@@ -357,134 +357,144 @@
 
                                     <!-- Modal account start -->
                                     <form action="">
-                                    <div class="modal fade" id="modalaccount" tabindex="-1" aria-labelledby="modalaccount" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="margin-top: -20px;">
-                                            <div class="modal-content" style="padding: 0px">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Tambah Akun</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                    <div class="field-wrapper">
-                                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
-                                                        <div class="text-radio">Jenis<span class="text-danger">*</span></div>
-                                                    </div>
-                                                        <div class="half-width-container">
+                                            <div class="modal fade" id="modalaccount" tabindex="-1" aria-labelledby="modalaccount" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="margin-top: -20px;">
+                                                    <div class="modal-content" style="padding: 0px; ">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Tambah Akun</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                                <div class="field-wrapper">
+                                                                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-12">
+                                                                    <label class="mb-2">Jenis</label>
+                                                                </div>
+                                                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
+                                                                    
+                                                                    </div>
+                                                                    <div class="half-width-container">
 
-                                                            <input type="radio" name="option" id="option1" value="Option 1" checked>
-                                                            <label class="label" for="option1">Bank</label>
+                                                                        <input type="radio" name="option" id="option1" value="Option 1" checked>
+                                                                        <label class="label" for="option1">Bank</label>
 
-                                                            <input type="radio" name="option" id="option2" value="Option 2">
-                                                            <label class="label" for="option2">Kartu Kredit</label>
+                                                                        <input type="radio" name="option" id="option2" value="Option 2">
+                                                                        <label class="label" for="option2">Kartu Kredit</label>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Field wrapper start -->
+
+                                                                <!-- Field wrapper end -->
+
+                                                            </div>
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                                                                <!-- Field wrapper start -->
+                                                                <div class="field-wrapper">
+                                                                    <label style="float: left;">Nama</label>
+                                                                    <input class="form-control" type="text" placeholder="Masukkan Nama Akun">
+
+                                                                </div>
+                                                                <!-- Field wrapper end -->
+
+                                                            </div>
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
+
+                                                                <!-- Field wrapper start -->
+                                                                <div class="field-wrapper">
+                                                                    <label style="float: left;">Nomor Rekening</label>
+                                                                    <input class="form-control" type="text" placeholder="Masukkan E-mail Akun">
+                                                                </div>
+                                                                <!-- Field wrapper end -->
+
+                                                            </div>
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
+
+                                                                <!-- Field wrapper start -->
+                                                                <div class="field-wrapper">
+                                                                    <label style="float: left;">Mata Uang</label>
+                                                                    <input class="form-control" type="text" placeholder="Masukkan Nomor Telepone Akun">
+                                                                </div>
+                                                                <!-- Field wrapper end -->
+
+                                                            </div>
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
+
+                                                                <!-- Field wrapper start -->
+                                                                <div class="field-wrapper">
+                                                                    <label style="float: left;">Saldo Awal</label>
+                                                                    <input class="form-control" type="text" placeholder="Masukkan NPWP Akun">
+                                                                </div>
+                                                                <!-- Field wrapper end -->
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Simpan</button>
+                                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                                                         </div>
                                                     </div>
-
-                                                    <!-- Field wrapper start -->
-
-                                                    <!-- Field wrapper end -->
-
-                                                </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukkan Nama Pelanggan">
-                                                            <div class="field-placeholder">Nama<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
-
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukkan E-mail Pelanggan">
-                                                            <div class="field-placeholder">Nomor Rekening<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
-
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukkan Nomor Telepone Pelanggan">
-                                                            <div class="field-placeholder">Mata Uang<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
-
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukkan NPWP Pelanggan">
-                                                            <div class="field-placeholder">Saldo Awal<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
-
-                                                    </div>
-                                                </div>
-
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Simpan</button>
-                                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    </form>
+                                        </form>
                                     <!-- Modal account end -->
 
                                     <!-- Modal category start -->
                                     <form action="">
-                                    <div class="modal fade" id="modalcategory" tabindex="-1" aria-labelledby="modalcategory" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"  style="margin-top: -20px;">
-                                            <div class="modal-content" style="padding: 0px">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Tambah Kategori</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukkan Nama Pelanggan">
-                                                            <div class="field-placeholder">Nama<span class="text-danger">*</span></div>
+                                            <div class="modal fade" id="modalcategory" tabindex="-1" aria-labelledby="modalcategory" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="margin-top: -20px;">
+                                                    <div class="modal-content" style="padding: 0px;">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Tambah Kategori</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
-                                                        <!-- Field wrapper end -->
+                                                        <div class="modal-body">
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
+                                                                <!-- Field wrapper start -->
+                                                                <div class="field-wrapper">
+                                                                    <label style="float: left;">Nama</label>
+                                                                    <input class="form-control" type="text" placeholder="Masukkan Nama Kategori">
+                                                                </div>
+                                                                <!-- Field wrapper end -->
 
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <div class="d-flex">
-                                                                <input class="form-control" type="text" placeholder="Masukkan Warna">
-                                                                <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
                                                             </div>
-                                                            <div class="field-placeholder">Warna<span class="text-danger">*</span></div>
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
+
+                                                                <!-- Field wrapper start -->
+                                                                <div class="field-wrapper row">
+                                                                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-12">
+                                                                    <label class="mb-2">Warna</label>
+                                                                </div>
+                                                                    <div class="d-flex">
+                                                                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                                                                        <input class="form-control" type="text" placeholder="Masukkan Warna Kategori">
+                                                                    </div>
+                                                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
+                                                                        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                                                                    </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Field wrapper end -->
+
+                                                            </div>
+
+
+
+
+
+
                                                         </div>
-                                                        <!-- Field wrapper end -->
-
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Simpan</button>
+                                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                                        </div>
                                                     </div>
-
-
-
-
-
-
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Simpan</button>
-                                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    </form>
+                                        </form>
                                     <!-- Modal category end -->
 
                                     <!-- Modal supplier start -->
@@ -503,75 +513,75 @@
 
                                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukkan Nama Pelanggan">
-                                                            <div class="field-placeholder">Nama<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
+                                                                <!-- Field wrapper start -->
+                                                                <div class="field-wrapper">
+                                                                    <label style="float: left;">Nama</label>
+                                                                    <input class="form-control" type="text" placeholder="Masukkan Nama Pemasok">
+                                                                </div>
+                                                                <!-- Field wrapper end -->
 
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
+                                                            </div>
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
 
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="email" placeholder="Masukkan E-mail Pelanggan">
-                                                            <div class="field-placeholder">Email<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
+                                                                <!-- Field wrapper start -->
+                                                                <div class="field-wrapper">
+                                                                    <label style="float: left;">Email</label>
+                                                                    <input class="form-control" type="email" placeholder="Masukkan E-mail Pemasok">
+                                                                </div>
+                                                                <!-- Field wrapper end -->
 
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
+                                                            </div>
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
 
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukkan Nomor Telepone Pelanggan">
-                                                            <div class="field-placeholder">Telepone<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
+                                                                <!-- Field wrapper start -->
+                                                                <div class="field-wrapper">
+                                                                    <label style="float: left;">Telepone</label>
+                                                                    <input class="form-control" type="text" placeholder="Masukkan Nomor Telepone Pemasok">
+                                                                </div>
+                                                                <!-- Field wrapper end -->
 
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
+                                                            </div>
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
 
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukkan NPWP Pelanggan">
-                                                            <div class="field-placeholder">NPWP<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
+                                                                <!-- Field wrapper start -->
+                                                                <div class="field-wrapper">
+                                                                    <label style="float: left;">NPWP</label>
+                                                                    <input class="form-control" type="text" placeholder="Masukkan NPWP Pemasok">
+                                                                </div>
+                                                                <!-- Field wrapper end -->
 
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
+                                                            </div>
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
 
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukkan Mata Uang Pelanggan">
-                                                            <div class="field-placeholder">Mata Uang<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
+                                                                <!-- Field wrapper start -->
+                                                                <div class="field-wrapper">
+                                                                    <label style="float: left;">Mata Uang</label>
+                                                                    <input class="form-control" type="text" placeholder="Masukkan Mata Uang Pemasok">
+                                                                </div>
+                                                                <!-- Field wrapper end -->
 
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
+                                                            </div>
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
 
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <input class="form-control" type="text" placeholder="Masukkan Negara Pelanggan">
-                                                            <div class="field-placeholder">Negara<span class="text-danger">*</span></div>
-                                                        </div>
-                                                        <!-- Field wrapper end -->
+                                                                <!-- Field wrapper start -->
+                                                                <div class="field-wrapper">
+                                                                    <label style="float: left;">Negara</label>
+                                                                    <input class="form-control" type="text" placeholder="Masukkan Negara Pemasok">
+                                                                </div>
+                                                                <!-- Field wrapper end -->
 
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
+                                                            </div>
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 28px;">
 
-                                                        <!-- Field wrapper start -->
-                                                        <div class="field-wrapper">
-                                                            <textarea class="form-control1" rows="2" placeholder="Masukkan Alamat Pelanggan"></textarea>
-                                                            <div class="field-placeholder">Alamat<span class="text-danger">*</span></div>
+                                                                <!-- Field wrapper start -->
+                                                                <div class="field-wrapper">
+                                                                    <label style="float: left;">Alamat</label>
+                                                                    <textarea class="form-control1" rows="2" placeholder="Masukkan Alamat Pelanggan"></textarea>
 
-                                                        </div>
-                                                        <!-- Field wrapper end -->
+                                                                </div>
+                                                                <!-- Field wrapper end -->
 
-                                                    </div>
+                                                            </div>
 
                                                 </div>
                                                 <div class="modal-footer">

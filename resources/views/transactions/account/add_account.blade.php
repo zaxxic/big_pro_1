@@ -340,8 +340,9 @@
 
                                                                 <!-- Field wrapper start -->
                                                                 <div class="field-wrapper">
+                                                                    <label style="float: left;">Nama</label>
                                                                     <input class="form-control" type="text" placeholder="Masukkan Nama Akun">
-                                                                    <div class="field-placeholder">Nama<span class="text-danger">*</span></div>
+                                                                    
                                                                 </div>
                                                                 <!-- Field wrapper end -->
 
@@ -352,6 +353,7 @@
 
                                                                 <div class="field-wrapper-group">
                                                                     <div class="field-wrapper">
+                                                                    <label style="float: left;">Mata Uang</label>
                                                                         <select class="select-multiple js-states" title="Select Product Category">
                                                                             <option>AED</option>
                                                                             <option>AFN</option>
@@ -423,7 +425,6 @@
                                                                             <option>IQD</option>
 
                                                                         </select>
-                                                                        <div class="field-placeholder">Mata Uang<span class="text-danger">*</span></div>
                                                                     </div>
 
                                                                 </div>
@@ -433,8 +434,8 @@
 
                                                                 <!-- Field wrapper start -->
                                                                 <div class="field-wrapper">
+                                                                <label style="float: left;">Kurs</label>
                                                                     <input class="form-control" type="text" placeholder="Masukkan Nomor Telepone Akun">
-                                                                    <div class="field-placeholder">Kurs<span class="text-danger">*</span></div>
                                                                 </div>
                                                                 <!-- Field wrapper end -->
 
@@ -443,8 +444,8 @@
 
                                                                 <!-- Field wrapper start -->
                                                                 <div class="field-wrapper">
+                                                                <label style="float: left;">Saldo Awal</label>
                                                                     <input class="form-control" type="text" placeholder="Masukkan NPWP Akun">
-                                                                    <div class="field-placeholder">Saldo Awal<span class="text-danger">*</span></div>
                                                                 </div>
                                                                 <!-- Field wrapper end -->
 
