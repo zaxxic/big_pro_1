@@ -141,7 +141,7 @@
                                             </li>
                                             <li class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1" role="presentation">
                                                 <div class="nav-pills" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-transfer" type="button" role="tab" aria-controls="pills-transfer" aria-selected="false">
-                                                    <h6 class=""> <i class="fas fa-signal"></i></h6>
+                                                    <h6 class="">  <i class="fas fa-chart-pie"></i></h6>
                                                 </div>
                                             </li>
                                         </ul>
@@ -153,8 +153,8 @@
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="pills-transfer" role="tabpanel" aria-labelledby="pills-transfer-tab" tabindex="0">
-                                                <div>
-                                                            <div id="chart3"></div>
+                                                <div class="col-11">
+                                                            <div id="chart3     "></div>
                                                 </div>
                                             </div>
                                         </div>
