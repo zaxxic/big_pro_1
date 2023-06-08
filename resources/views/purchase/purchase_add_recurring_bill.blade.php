@@ -212,7 +212,7 @@
                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12" style="margin-bottom: 1%;">
                                           <div class="field-wrapper mb-3">
                                               <input class="form-control datepicker" type="text">
-                                              <div class="field-placeholder">Tanggal Tagihan</div>
+                                              <div class="field-placeholder">Tanggal Tagihan<span class="text-danger">*</span></div>
                                           </div>
                                           <div class="field-wrapper mb-3">
                                                 <select class="select-single js-states" title="Select Product Category" data-live-search="true">
@@ -229,7 +229,7 @@
                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                                           <div class="field-wrapper mb-3">
                                               <input class="form-control" type="text" placeholder="Masukkan Nomor Faktur">
-                                              <div class="field-placeholder">Nomor Faktur</div>
+                                              <div class="field-placeholder">Nomor Faktur<span class="text-danger">*</span></div>
                                           </div>
                                           <div class="field-wrapper mb-3">
                                               <input class="form-control" type="text" placeholder="Masukkan Jumlah Pesanan">
@@ -438,8 +438,7 @@
 
                                         <!-- Field wrapper start -->
                                         <div class="field-wrapper">
-                                            <label for="judul" class="field-label">Catatan <span
-                                                    class="text-danger">*</span></label>
+                                            <label for="judul" class="field-label">Catatan</label>
                                             <textarea class="form-control" placeholder="Masukan Catatan" rows="2"></textarea>
                                         </div>
                                         <!-- Field wrapper end -->

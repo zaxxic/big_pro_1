@@ -207,18 +207,18 @@
                                                           <div class="flex-grow-1 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-8" style="margin-bottom: 15%">
                                                             <div class="field-wrapper">
                                                               <input class="form-control" type="text" id="judul" placeholder="Masukkan Judul" style="border-radius: 2px; margin-bottom: 10px;">
-                                                              <div class="field-placeholder">Judul <span class="text-danger">*</span></div>
+                                                              <div class="field-placeholder">Judul </div>
                                                             </div>
                                                             <div class="field-wrapper">
                                                               <input class="form-control" type="text" id="subjudul" placeholder="Masukkan Subjudul" style="border-radius: 2px; margin-bottom: 10px;">
-                                                              <div class="field-placeholder">Subjudul <span class="text-danger">*</span></div>
+                                                              <div class="field-placeholder">Subjudul </div>
                                                             </div>
                                                           </div>
                                                         </div>
                                                             </div>
                                                             <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
                                                               <div id="dropzone" style="height:300px">
-                                                                <label for="subjudul" class="field-label">Logo<span class="text-danger">*</span></label>
+                                                                <label for="subjudul" class="field-label">Logo</label>
                                                                 <form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
                                                                 <div class="dz-message needsclick">
                                                                   <button type="button" class="dz-button">Pilih berkas di sini untuk mengunggah.</button><br>
@@ -259,7 +259,7 @@
                                                   <div class="col-6 ml-5 mr-5" style="margin-right:1%">
                                                   <div class="field-wrapper mb-3">
                                                     <input class="form-control datepicker" type="text">
-                                                    <div class="field-placeholder">Tanggal Faktur</div>
+                                                    <div class="field-placeholder">Tanggal Faktur <span class="text-danger">*</span></div>
                                                   </div>
                                                   <div class="field-wrapper mb-3">
                                                       <select class="select-single js-states" title="Select Product Category" data-live-search="true">
@@ -276,7 +276,7 @@
                                                   <div class="col-6">
                                                   <div class="field-wrapper mb-3">
                                                     <input class="form-control" type="number" placeholder="Masukkan Nomor Faktur">
-                                                    <div class="field-placeholder">Nomor Faktur</div>
+                                                    <div class="field-placeholder">Nomor Faktur <span class="text-danger">*</span></div>
                                                   </div>
                                                   <div class="field-wrapper mb-3">
                                                     <input class="form-control" type="number" placeholder="Masukkan Jumlah Pesanan">
@@ -489,7 +489,7 @@
 												
                                               <!-- Field wrapper start -->
                                               <div class="field-wrapper">
-                                                <label for="judul" class="field-label">Catatan <span class="text-danger">*</span></label>
+                                                <label for="judul" class="field-label">Catatan</label>
                                                 <textarea class="form-control" placeholder="Masukan Catatan" rows="2"></textarea>
                                               </div>
                                               <!-- Field wrapper end -->                     
@@ -512,7 +512,7 @@
                                                   <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                                                     <div class="">
                                                       <div id="dropzone" style="height:300px">
-                                                        <label for="subjudul" class="field-label">Lampiran<span class="text-danger">*</span></label>
+                                                        <label for="subjudul" class="field-label">Lampiran</label>
                                                         <form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload" style="margin-right: 10%">
                                                           <div class="dz-message needsclick">
                                                             <button type="button" class="dz-button">Pilih berkas di sini untuk mengunggah.</button><br>

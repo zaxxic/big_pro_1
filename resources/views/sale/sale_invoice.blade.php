@@ -435,7 +435,7 @@
                                                                             style="border: none; background:none; color:#333; background:transparent"
                                                                             data-bs-toggle="modal"
                                                                             data-bs-target="#payment"
-                                                                            class="icon-attach_money">
+                                                                            class="icon-mail">
                                                                             Kirim email
                                                                         </button>
                                                                     </a>
