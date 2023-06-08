@@ -396,8 +396,10 @@
 												  <tr>
 													<th scope="col"> <input type="checkbox" id="select-all-checkbox"> </th>
                                                     <th scope="col">Tanggal Jatuh Tempo</th>
+                                                    <th scope="col">Tanggal Faktur</th>
                                                     <th scope="col">Status</th>
                                                     <th scope="col">Pemasok</th>
+                                                    <th scope="col">Nomor</th>
                                                     <th scope="col">Jumlah</th>
 													<th scope="col">Aksi</th>
 												  </tr>
@@ -407,8 +409,10 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2023</td>
+                                                    <td>13 mei 2023</td>
                                                     <td><span class="badge-sent">Terkirim</span></td>
                                                     <td>koirul</td>
+                                                    <th scope="col">TGH-00005</th>
                                                     <td>91.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
@@ -443,8 +447,10 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>12 mei 2024</td>
+                                                    <td>14 mei 2024</td>
                                                     <td><span class="badge-draft">Konsep</span></td>
                                                     <td>choirul</td>
+                                                    <th scope="col">TGH-00004</th>
                                                     <td>80.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
@@ -480,8 +486,10 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>14 mei 2023</td>
+                                                    <td>15 mei 2023</td>
                                                     <td><span class="badge-draft">Konsep</span></td>
                                                     <td>rudi</td>
+                                                    <th scope="col">TGH-00003</th>
                                                     <td>100.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
@@ -515,8 +523,10 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>15 mei 2023</td>
+                                                    <td>15 mei 2023</td>
                                                     <td><span class="badge-start">Sebagian</span></td>
                                                     <td>slemet</td>
+                                                    <th scope="col">TGH-00002</th>
                                                     <td>20.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
@@ -550,8 +560,10 @@
 												  <tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
                                                     <td>25 mei 2023</td>
+                                                    <td>25 mei 2023</td>
                                                     <td><span class="badge-finish">Dibayar</span></td>
                                                     <td>wahyu</td>
+                                                    <th scope="col">TGH-00001</th>
                                                     <td>45.000.000,00</td>
 													<td>
                                                        <div class="menu-icons" style="font-size: 15px;">
