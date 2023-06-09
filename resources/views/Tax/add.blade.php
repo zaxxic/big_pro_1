@@ -186,7 +186,7 @@
 
                                                     <!-- Field wrapper start -->
                                                     <div class="field-wrapper">
-                                                        <input class="form-control" name="nama" id="nama" type="text" placeholder=" Masukan Nama">
+                                                        <input class="form-control" name="name" id="name" type="text" placeholder=" Masukan Nama">
                                                         <div class="field-placeholder">Nama <span class="text-danger">*</span></div>
                                                         <div class="form-text">
 
@@ -200,7 +200,7 @@
                                                     <!-- Field wrapper start -->
                                                     <div class="field-wrapper-group">
                                                         <div class="field-wrapper">
-                                                            <select name="jenis" id="jenis" class="select-multiple js-states" title="Select Product Category">
+                                                            <select name="type" id="type" class="select-multiple js-states" title="Select Product Category">
                                                                 <option value="Gabungan">Gabungan</option>
                                                                 <option value="Inklusif">Inklusif</option>
                                                                 <option value="Normal">Normal</option>
@@ -220,7 +220,7 @@
 
                                                     <!-- Field wrapper start -->
                                                     <div class="field-wrapper">
-                                                        <input name="tarif" id="tarif" class="form-control" type="number" placeholder=" Masukan Tarif (%)">
+                                                        <input name="tax_amount" id="tax_amount" class="form-control" type="number" placeholder=" Masukan Tarif (%)">
                                                         <div class="field-placeholder">Tarif (%) <span class="text-danger">*</span></div>
                                                         <div class="form-text">
 

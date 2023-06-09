@@ -186,7 +186,7 @@
 
                                                     <!-- Field wrapper start -->
                                                     <div class="field-wrapper">
-                                                        <input class="form-control" name="nama" id="nama" type="text" value="{{ $data->nama }}">
+                                                        <input class="form-control" name="name" id="name" type="text" value="{{ $data->name }}">
                                                         <div class="field-placeholder">Nama <span class="text-danger">*</span></div>
                                                         <div class="form-text">
 
@@ -200,12 +200,12 @@
                                                     <!-- Field wrapper start -->
                                                     <div class="field-wrapper-group">
                                                         <div class="field-wrapper">
-                                                            <select name="jenis" id="jenis" class="select-multiple js-states" title="Select Product Category">
-                                                                <option value="Gabungan" <?php echo ($data['jenis'] == 'Gabungan') ? 'selected="selected"' : '' ?>>Gabungan</option>
-                                                                <option value="Inklusif" <?php echo ($data['jenis'] == 'Inklusif') ? 'selected="selected"' : '' ?>>Inklusif</option>
-                                                                <option value="Normal" <?php echo ($data['jenis'] == 'Normal') ? 'selected="selected"' : '' ?>>Normal</option>
-                                                                <option value="Pemotongan" <?php echo ($data['jenis'] == 'Pemotongan') ? 'selected="selected"' : '' ?>>Pemotongan</option>
-                                                                <option value="Tetap" <?php echo ($data['jenis'] == 'Tetap') ? 'selected="selected"' : '' ?>>Tetap</option>
+                                                            <select name="type" id="type" class="select-multiple js-states" title="Select Product Category">
+                                                                <option value="Gabungan" <?php echo ($data['type'] == 'Gabungan') ? 'selected="selected"' : '' ?>>Gabungan</option>
+                                                                <option value="Inklusif" <?php echo ($data['type'] == 'Inklusif') ? 'selected="selected"' : '' ?>>Inklusif</option>
+                                                                <option value="Normal" <?php echo ($data['type'] == 'Normal') ? 'selected="selected"' : '' ?>>Normal</option>
+                                                                <option value="Pemotongan" <?php echo ($data['type'] == 'Pemotongan') ? 'selected="selected"' : '' ?>>Pemotongan</option>
+                                                                <option value="Tetap" <?php echo ($data['type'] == 'Tetap') ? 'selected="selected"' : '' ?>>Tetap</option>
 
 
                                                             </select>
@@ -220,7 +220,7 @@
 
                                                     <!-- Field wrapper start -->
                                                     <div class="field-wrapper">
-                                                        <input name="tarif" id="tarif" class="form-control" type="number" value="{{ $data->tarif }}">
+                                                        <input name="tax_amount" id="tax_amount" class="form-control" type="number" value="{{ $data->tax_amount }}">
                                                         <div class="field-placeholder">Tarif (%) <span class="text-danger">*</span></div>
                                                         <div class="form-text">
 

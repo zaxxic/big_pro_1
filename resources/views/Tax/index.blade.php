@@ -233,9 +233,9 @@
 												<!-- Data 1 -->
 												<tr class="table-row">
 													<td><input type="checkbox" class="other-checkbox"></td>
-													<td>{{ $row->nama }}</td>
-													<td>{{ $row->jenis }}</td>
-													<td>{{ $row->tarif }}%</td>
+													<td>{{ $row->name }}</td>
+													<td>{{ $row->type }}</td>
+													<td>{{ $row->tax_amount }}%</td>
 													<td>
 														<div class="menu-icons" style="font-size: 15px;">
 															<a href="{{ route('tax-edit', ['id' => $row->id]) }}" class="menu-icon icon-edit-2"></a>
@@ -274,25 +274,28 @@
 									<!-- Card end -->
 									<!-- Modal start -->
 									<!-- Modal start -->
-									<div class="modal fade" id="deleterole" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleterole" aria-hidden="true">
-										<div class="modal-dialog">
-											<div class="modal-content" style="padding: 0px">
-												<div class="modal-header">
-													<h5 class="modal-title" id="staticBackdropLabel">Hapus Pajak</h5>
-													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-												</div>
-												
-												<div class="modal-body">
-													<p>Anda Yakin Ingin Menghapus Pajak Ini?</p>
-												</div>
-												<div class="modal-footer">
-													<a href="{{ route('tax-delete', ['id' => $row->id]) }}"><button type="button" class="btn btn-danger">Hapus</button></a>
+										<div class="modal fade" id="deleterole" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleterole" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content" style="padding: 0px">
+													<div class="modal-header">
+														<h5 class="modal-title" id="staticBackdropLabel">Hapus Pajak</h5>
+														<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+													</div>
+													
+													<div class="modal-body">
+													
+														<p>Anda Yakin Ingin Menghapus Pajak Ini?</p>
+													</div>
+													<div class="modal-footer">
+														<a href="{{ route('tax-delete', ['id' => $row->id]) }}"><button type="button" class="btn btn-danger">Hapus</button></a>
+														
 
+													</div>
+													
+													
 												</div>
-												
 											</div>
 										</div>
-									</div>
 									<!-- Modal end -->
 									<!-- Modal end -->
 
