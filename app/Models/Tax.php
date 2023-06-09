@@ -10,5 +10,6 @@ class Tax extends Model
     use HasFactory;
 
     protected $guarded = [];
+    
     protected $table='tax';
 }
