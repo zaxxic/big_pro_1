@@ -4,6 +4,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ItemController;
 use Faker\Guesser\Name;
 
+use Illuminate\Foundation\Auth\EmailVerificationRequest;
+use Illuminate\Http\Request;
 use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\TransactionsController;
 use App\Http\Controllers\TransferController;
@@ -41,28 +43,19 @@ use PhpParser\Node\Stmt\Return_;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/',[DashboardController::class,'index'])->name('dashboard');
+
+Route::middleware(['auth', 'verified'])->group(function () {
+    
+    Route::get('/home',[DashboardController::class,'index'])->name('dashboard');
+});
 
 
 Route::get('kalender', function () {
     return view('kalender');
 });
 
-Route::get('login', function () {
-    return view('login');
-});
-Route::get('register', function () {
-    return view('register');
-});
-Route::get('register', function () {
-    return view('register');
-});
-Route::get('reset_password', function () {
-    return view('reset_password');
-});
-Route::get('confirm_password', function () {
-    return view('confirm_password');
-});
+
+
 Route::get('add_company', function () {
     return view('add_company');
 });
@@ -216,3 +209,4 @@ Route::get('/edit-currency',[CurrencyController::class,'currency_edit'])->name('
 
 //Copy Text
 Route::get('copytext', [CopyTextController::class, 'CopyText'])->name('copytext');
+require __DIR__. "/reno.php";
