@@ -754,11 +754,11 @@
                                                  <input type="text" placeholder="Masukan Subjek" class="form-control datepicker"
                                                      style="border-radius: 2px">
                                              </div>
-                                                 <label for="subjudul" class="field-label">Isi<span
-                                                 class="text-danger">*</span></label>
-                                                 <div class="field-wrapper mb-2">
-                                                     <div class="summernote"></div>
-                                                 </div>
+                                                <label for="subjudul" class="field-label">Isi<span
+                                                    class="text-danger">*</span></label>
+                                                    <div class="field-wrapper mb-2">
+                                                        <div class="summernote"></div>
+                                                    </div>
                                          </div>
                                          <div class="modal-footer">
                                              <button class="btn btn-outline-secondary1" data-bs-dismiss="modal" type="submit" style="border-radius: 2px; margin-right: 1%" href="#">Batal</button>
