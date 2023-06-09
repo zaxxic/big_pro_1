@@ -159,10 +159,11 @@ return [
         /*
          * Package Service Providers...
          */
-
+        
         /*
-         * Application Service Providers...
-         */
+        * Application Service Providers...
+        */
+        Spatie\Permission\PermissionServiceProvider::class,
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
