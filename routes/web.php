@@ -216,4 +216,4 @@ Route::get('/edit-currency',[CurrencyController::class,'currency_edit'])->name('
 
 //Copy Text
 Route::get('copytext', [CopyTextController::class, 'CopyText'])->name('copytext');
-require __DIR__."/dapreng.php";require __DIR__. "/reno.php";
+require __DIR__. "/reno.php";

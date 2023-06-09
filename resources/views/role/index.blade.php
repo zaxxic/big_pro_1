@@ -302,9 +302,6 @@
                                             <h3>Peran<button type="button" style="border: none; background:transparent;">☆</button></h3>
                                         </div>
                                     </div>
-                                    @can('')
-                                        
-                                    @endcan
                                     <div class="col-xl-6 col-lg-6 col-md-2 col-sm-2 col-12">
                                         <div class="graph-day-selection" role="group" style="margin-left: 68%">
                                             <a href="{{url('add_role')}}">
