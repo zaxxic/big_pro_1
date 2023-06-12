@@ -22,7 +22,10 @@ return new class extends Migration
             $table->string('city');
             $table->string('province');
             $table->string('postal_code');
+            $table->string('country');
+            $table->string('currency');
             $table->string('phone_number');
+            $table->string('photo');
             $table->foreignId('company_id')->references('id')->on('company')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-	
+
 <!-- Mirrored from www.kodingwife.com/demos/unipro/v1-x/05-design-violet/accordions.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 03:02:35 GMT -->
 <head>
 		<!-- Required meta tags -->
@@ -21,7 +21,7 @@
 		************ -->
 		<!-- Bootstrap css -->
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/css/bootstrap.min.css")}}">
-		
+
 		<!-- Icomoon Font Icons css -->
 		<link rel="stylesheet" href="{{ asset ("Gmbslagi/fonts/style.css")}}">
 
@@ -113,7 +113,7 @@
           .row {
         &:first-child {
           padding-top: 20px;
-        } 
+        }
       }
 
       .cat-title {
@@ -126,7 +126,7 @@
         background-color: white;
         padding: 3px;
         margin-left: 10px;
-        
+
         button {
           padding: 5px;
           line-height: 26px;
@@ -143,7 +143,7 @@
 	<body>
 
 		<!-- Page wrapper start -->
-		<div class="page-wrapper">		
+		<div class="page-wrapper">
 
             <!-- Sidebar wrapper start -->
 			@include('layouts.sidebar')
@@ -156,13 +156,13 @@
 
 				<!-- Page header starts -->
 				<div class="page-header">
-					
+
 					<!-- Row start -->
 					<div class="row gutters">
 						@include('layouts.header')
 
 					</div>
-					<!-- Row end -->					
+					<!-- Row end -->
 
 				</div>
 				<!-- Page header ends -->
@@ -196,7 +196,7 @@
                                               <option>Gembes</option>
                                               <option>Reno</option>
                                               <option>Triski</option>
-                                            </select>              
+                                            </select>
                                             <div class="field-placeholder">Pemasok <span class="text-danger">*</span></div>
                                           </div>
                                         </div>
@@ -217,7 +217,7 @@
                                                     <option>Jatuh tempo dalam 60 hari</option>
                                                     <option>Jatuh tempo dalam 90 hari</option>
                                                     <option>Jatuh tempo saat diterima</option>
-                                                </select>              
+                                                </select>
                                                 <div class="field-placeholder">Tanggal Pembayaran <span class="text-danger">*</span></div>
                                               </div>
                                             </div>
@@ -236,8 +236,8 @@
                                           </div>
                                         </div>
                                       </div>
-                                  
-                                  
+
+
                                               <!-- Row start -->
                                               <div class="row gutters">
                                                 <div class="col-12">
@@ -341,13 +341,13 @@
                                                         </tr>
                                                       </tfoot>
                                                     </table>
-                                                    
-                                                    <button class="btn btn-primary" id="add-row">Tambah Baris</button>                                                  
+
+                                                    <button class="btn btn-primary" id="add-row">Tambah Baris</button>
                                                      <!-- Button trigger modal -->
                                                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                       Tambah Item
                                                     </button>
-  
+
                                                     <!-- Modal start -->
                                                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                       <div class="modal-dialog">
@@ -400,7 +400,7 @@
                                                               <option>Layanan</option>
                                                               <option>Produk</option>
                                                             </select>
-                                                          
+
                                                          </div>
 <!--  -->                                                  <div class="field-wrapper m-0">
                                                           <label for="nama">Nama Harga</label>
@@ -420,8 +420,8 @@
                                                             <input type="text" class="" placeholder="Masukan">
                                                           </div>
                                                         </div>
-                                                        
-                                                          
+
+
                                                         </form>
                                                       </div>
                                                       <div class="modal-footer">
@@ -436,13 +436,13 @@
                                               </div>
                                             <!-- Row end -->
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top: 2%">
-												
+
                                               <!-- Field wrapper start -->
                                               <div class="field-wrapper">
                                                 <label for="judul" class="field-label">Catatan</label>
                                                 <textarea class="form-control" placeholder="Masukan Catatan" rows="2"></textarea>
                                               </div>
-                                              <!-- Field wrapper end -->                     
+                                              <!-- Field wrapper end -->
                                             </div>
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="headingOne">
@@ -457,7 +457,7 @@
                                                     <div class="accordion-body">
                                                         <div class="d-flex row">
                                                           <div class="flex-grow-0 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                                            
+
                                                               <div id="dropzone" style="width: 100%; height:300px; margin-top: 1%">
                                                                 <label for="subjudul" class="field-label">Lampiran</label>
                                                                 <form action="https://www.kodingwife.com/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
@@ -466,7 +466,7 @@
                                                                   </div>
                                                                 </form>
                                                               </div>
-                                                           
+
                                                           </div>
                                                           <div class="flex-grow-0 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="z-index:auto" >
                                                             <div class="field-wrapper mb-3">
@@ -477,11 +477,11 @@
                                                                   <option>Jatuh tempo dalam 60 hari</option>
                                                                   <option>Jatuh tempo dalam 90 hari</option>
                                                                   <option>Jatuh tempo saat diterima</option>
-                                                              </select>              
+                                                              </select>
                                                               <div class="field-placeholder">Kategori <span class="text-danger">*</span></div>
                                                               </div>
                                                             </div>
-                                                        
+
                                                         </div>
                                                       </div>
                                                 </div>
@@ -537,7 +537,7 @@
 		<!-- Megamenu JS -->
 		<script src="{{ asset ("Gmbslagi/vendor/megamenu/js/megamenu.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/megamenu/js/custom.js")}}"></script>
-				
+
 		<!-- Slimscroll JS -->
 		<script src="{{ asset ("Gmbslagi/vendor/slimscroll/slimscroll.min.js")}}"></script>
 		<script src="{{ asset ("Gmbslagi/vendor/slimscroll/custom-scrollbar.js")}}"></script>
@@ -789,7 +789,7 @@
     if (event.target && event.target.classList.contains('add-pajak')) {
       var pajakWrapper = event.target.closest('#pajak-wrapper');
       var pajakInputWrapper = pajakWrapper.querySelector('.pajak-input-wrapper');
-      
+
       var newPajakInputWrapper = pajakInputWrapper.cloneNode(true);
       var deletePajakButton = document.createElement('button');
       deletePajakButton.classList.add('btn', 'btn-light', 'delete-pajak');
@@ -797,7 +797,7 @@
       deletePajakButton.style.width = event.target.offsetWidth + 'px'; // Menyesuaikan lebar tombol dengan tombol "Tambah Pajak"
       deletePajakButton.style.marginTop = '3%'; // Menambahkan margin-top 3%
       newPajakInputWrapper.appendChild(deletePajakButton);
-      
+
       pajakWrapper.appendChild(newPajakInputWrapper);
     }
   });
@@ -805,7 +805,7 @@
 <script>
   function showInputField(selectElement) {
     var inputField = document.getElementById("customInput");
-    
+
     if (selectElement.value === "Khusus") {
       inputField.style.display = "block";
     } else {

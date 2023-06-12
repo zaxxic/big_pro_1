@@ -46,7 +46,7 @@
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/dataTables.bs4-custom.css') }}" />
     <link rel="stylesheet" href="{{ asset('Gmbslagi/vendor/datatables/buttons.bs.css') }}" />
     <style>
-        
+
         .text {
             text-align: center;
             color: #5e6973;
@@ -323,7 +323,7 @@
             border-radius: 5px;
         }
 
- 
+
 
         .hover-trigge3r:hover::before {
             content: attr(data-tooltip_byr);
@@ -400,7 +400,7 @@
 
         <!-- Sidebar wrapper start -->
         @include('layouts.sidebar')
-        
+
         <!-- Sidebar wrapper end -->
 
         <!-- *************
@@ -417,7 +417,7 @@
                             <div class="card">
                                 <div class="card-header">
                                     <div class="card-title">
-                                        <h3>Hada<button type="button" style="border: none; background:none;">☆</button>
+                                        <h3>{{$data->name}}<button type="button" style="border: none; background:none;">☆</button>
                                         </h3>
                                     </div>
                                     <div class="dropdown">
@@ -446,8 +446,8 @@
                                         <span class="tulisan">MH</span>
                                     </div>
                                     <div class="tulisan-kanan">
-                                        <span class="ms-2">Renotamvan87@gmail.com</span>
-                                        <span>083848104646</span>
+                                        <span class="ms-2">{{$data->email}}</span>
+                                        <span>{{$data->phone_number}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -521,28 +521,28 @@
                                     <div style="margin-top: 10%;">
                                         <h6>Mata Uang</h6>
                                     </div>
-                                    <span>Telepon</span>
+                                    <span>{{$data->currency}}</span>
                                     <div style="margin-top: 10%;">
-                                        <h6>0876765567</h6>
+                                        <h6>Telepon</h6>
                                     </div>
-                                    <span>Rupiah</span>
+                                    <span>{{$data->phone_number}}</span>
                                     <div style="margin-top: 10%;">
                                         <h6>Referensi</h6>
                                     </div>
-                                    <span>untuk bla bla bla bla bla abla bla bla bla bla bla bla</span>
+                                    <span>{{ $data->reference }}</span>
                                     <div style="margin-top: 10%;">
                                         <h6>Situus web</h6>
                                     </div>
-                                    <span><a href="http://localhost:8000/show_cos">Web Udin</a> </span>
+                                    <span><a href="http://localhost:8000/show_cos">{{$data->website}}</a> </span>
                                     <div style="margin-top: 10%;">
                                         <h6>NPWP</h6>
                                     </div>
-                                    <span>3238798</span>
+                                    <span>{{ $data->npwp }}</span>
 
                                     <div style="margin-top: 10%;">
                                         <h6>Kode Pos</h6>
                                     </div>
-                                    <span>929292</span>
+                                    <span>{{ $data->postal_code }}</span>
                                 </div>
                             </div>
                         </div>
@@ -590,13 +590,13 @@
                                                             <table class="table table-hover">
                                                                 <thead>
                                                                     <tr>
-                                                                        
+
                                                                         <th scope="col">Tanggal Jatuh Tempo</th>
                                                                         <th scope="col">Tanggal Faktur</th>
                                                                         <th scope="col">Status</th>
                                                                         <th scope="col">Pelanggan</th>
                                                                         <th></th>
-                                                        
+
                                                                         <th scope="col">Nomer</th>
                                                                         <th scope="col">jumlah</th>
                                                                         <th scope="col">Aksi</th>
@@ -604,7 +604,7 @@
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
-                                                                       
+
                                                                         <td>5 hari yang lalu</th>
                                                                         <td>24 mei 2024</td>
                                                                         <td>Terkirim</td>
@@ -691,7 +691,7 @@
                                                                                 <option>Rudi</option>
                                                                             </select>
                                                                         </div>
-                                                                        
+
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="text-white"
@@ -706,7 +706,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                              
+
                                                 <div class="tab-pane fade" id="pills-transfer" role="tabpanel"
                                                     aria-labelledby="pills-transfer-tab" tabindex="0">
                                                     <div>
@@ -714,13 +714,13 @@
                                                             <table class="table table-hover">
                                                                 <thead>
                                                                     <tr>
-                                                                       
+
                                                                         <th scope="col">Tanggal</th>
                                                                         <th scope="col">Nomor</th>
                                                                         <th scope="col">Jenis</th>
                                                                         <th scope="col">Kategori</th>
                                                                         <th></th>
-                        
+
                                                                         <th scope="col">Akun</th>
                                                                         <th scope="col">Jumlah</th>
                                                                         <th scope="col">Aksi</th>
@@ -728,7 +728,7 @@
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
-                                                                      
+
                                                                         <td>16 Mei 2023</th>
                                                                         <td>TRA-00038</td>
                                                                         <td>Pengeluaran</td>
@@ -749,7 +749,7 @@
                                                                         </th>
                                                                     </tr>
                                                                     <tr>
-                                                                      
+
                                                                         <td>13 Mei 2023</th>
                                                                         <td>TRA-00037</td>
                                                                         <td>Pendapatan</td>
@@ -770,7 +770,7 @@
                                                                         </th>
                                                                     </tr>
                                                                     <tr>
-                                                                      
+
                                                                         <td>23 Mei 2023</th>
                                                                         <td>TRA-00039</td>
                                                                         <td>Pendapatan</td>
@@ -791,7 +791,7 @@
                                                                         </th>
                                                                     </tr>
                                                                     <tr>
-                                                                      
+
                                                                         <td>34 Mei 2023</th>
                                                                         <td>TRA-00040</td>
                                                                         <td>Pendapatan</td>
@@ -812,7 +812,7 @@
                                                                         </th>
                                                                     </tr>
                                                                     <tr>
-                                                                      
+
                                                                         <td>34 Mei 2023</th>
                                                                         <td>TRA-00041</td>
                                                                         <td>Pengeluaran</td>

@@ -26,20 +26,6 @@ class InvoiceController extends Controller
     {
         return view('sale.sale_details_recurring_invoice');
     }
-    
-    public function costumers()
-    {
-        return view('sale.costumers');
-    }
-
-    public function add_cos()
-    {
-        return view('sale.add_costumers');
-    }
-    public function details()
-    {
-        return view('sale.sale_details_invoice');
-    }
     public function setting_invoice()
     {
         return view('sistem_invoice.index');
